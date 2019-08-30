@@ -1,0 +1,25 @@
+{
+  "name": "tone-browser",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint *.js *.html",
+    "start": "browser-sync start --server --files \"**/*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shingo45endo/tone-browser.git"
+  },
+  "author": "shingo45endo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shingo45endo/tone-browser/issues"
+  },
+  "homepage": "https://github.com/shingo45endo/tone-browser#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "eslint": "^5.16.0",
+    "eslint-plugin-html": "^6.0.0"
+  }
+}

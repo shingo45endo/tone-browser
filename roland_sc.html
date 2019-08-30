@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>tone-browser</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="module">
+import {html, render} from 'https://unpkg.com/lit-html?module';
+import {formatters as fmt} from './formatters.js';
+
+const templateProgramList = (json) => html`
+	<table class="table table-sm table-hover w-auto mb-0">
+		<thead>
+			<tr>
+				<th class="text-right">BankL</th>
+				<th class="text-right">Prog#</th>
+				<th class="text-right">BankM</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Instrument</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.programs.map((program) => html`
+			<tr>
+				<td class="text-right">${program.bankL}</td>
+				<td class="text-right">${program.prog}</td>
+				<td class="text-right">${program.bankM}</td>
+				<td class="text-right">${getRef(program).replace(/^.*\//u, '')}</td>
+				<td class="text-monospace"><a href="${getRef(program)}">${program.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+function getRef(program) {
+	for (const key of ['tone', 'tone4', 'combi']) {
+		if (program[key] && program[key].$ref) {
+			return program[key].$ref;
+		}
+	}
+	console.assert(false);
+	return null;
+}
+
+const templateProgDrumList = (json) => html`
+	<table class="table table-sm table-hover w-auto mb-0">
+		<thead>
+			<tr>
+				<th class="text-right">BankL</th>
+				<th class="text-right">Prog#</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Instrument</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.progDrums.map((progDrum) => html`
+			<tr>
+				<td class="text-right">${progDrum.bankL}</td>
+				<td class="text-right">${progDrum.prog}</td>
+				<td class="text-right">${progDrum.drumNo}</td>
+				<td class="text-monospace"><a href="${progDrum.drumSet.$ref}">${progDrum.drumSet.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateToneList = (json) => html`
+	<table class="table table-sm table-hover w-auto mb-0">
+		<thead>
+			<tr>
+				<th class="text-right">No.</th>
+				<th>Instrument</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Wave 1</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Wave 2</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.tones.map((tone) => html`
+			<tr>
+				<td class="text-right">${tone.toneNo}</td>
+				<td class="text-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
+				<td class="text-right">${tone.voices[0].waveNo}</td>
+				<td class="text-monospace">${tone.voices[0].wave.name}</td>
+				<td class="text-right">${tone.voices[1] ? tone.voices[1].waveNo : ''}</td>
+				<td class="text-monospace">${tone.voices[1] ? tone.voices[1].wave.name : ''}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateToneList4 = (json) => html`
+	<table class="table table-sm table-hover w-auto mb-0">
+		<thead>
+			<tr>
+				<th class="text-right">No.</th>
+				<th>Instrument</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Wave 1</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Wave 2</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Wave 3</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Wave 4</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.tones4.map((tone) => html`
+			<tr>
+				<td class="text-right">${tone.toneNo}</td>
+				<td class="text-monospace"><a href="#/tones4/${tone.toneNo}">${tone.name}</a></td>
+				<td class="text-right">${tone.voices[0].waveNo}</td>
+				<td class="text-monospace">${tone.voices[0].wave.name}</td>
+				<td class="text-right">${tone.voices[1].waveNo}</td>
+				<td class="text-monospace">${tone.voices[1].wave.name}</td>
+				<td class="text-right">${tone.voices[2].waveNo}</td>
+				<td class="text-monospace">${tone.voices[2].wave.name}</td>
+				<td class="text-right">${tone.voices[3].waveNo}</td>
+				<td class="text-monospace">${tone.voices[3].wave.name}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateCombiList = (json) => html`
+	<table class="table table-sm table-hover w-auto mb-0">
+		<thead>
+			<tr>
+				<th class="text-right">No.</th>
+				<th>Instrument</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Instrument 1</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Instrument 2</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.combis.map((combi) => html`
+			<tr>
+				<td class="text-right">${combi.combiNo}</td>
+				<td class="text-monospace"><a href="#/combis/${combi.combiNo}">${combi.name}</a></td>
+				<td class="text-right">${combi.tones[0].toneNo}</td>
+				<td class="text-monospace"><a href="${combi.tones[0].tone.$ref}">${json.tones[combi.tones[0].toneNo].name}</a></td>
+				<td class="text-right">${combi.tones[1].toneNo}</td>
+				<td class="text-monospace"><a href="${combi.tones[1].tone.$ref}">${json.tones[combi.tones[1].toneNo].name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateWaveList = (json) => html`
+	<table class="table table-sm table-hover w-auto mb-0">
+		<thead>
+			<tr>
+				<th class="text-right">No.</th>
+				<th>Wave</th>
+				<th>Sample Data</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.waves.map((wave) => html`
+			<tr>
+				<td class="text-right">${wave.waveNo}</td>
+				<td class="text-monospace">${wave.name}</td>
+				<td>
+					<table class="table table-sm table-borderless w-auto mb-0">
+						<thead>
+							<tr>
+								<th>Low</th>
+								<th>No.</th>
+								<th>High</th>
+								<th>No.</th>
+								<th>Level</th>
+								<th>Sample No.</th>
+							</tr>
+						<thead>
+						<tbody>
+						${wave.samples.map((sample) => html`
+							<tr>
+								<td class="text-right">${fmt.noteNameR(sample.low)}</td>
+								<td class="text-right text-muted">${sample.low}</td>
+								<td class="text-right">${fmt.noteNameR(sample.high)}</td>
+								<td class="text-right text-muted">${sample.high}</td>
+								<td class="text-right">${sample.level}</td>
+								<td class="text-right">${sample.sampleNo}</td>
+							</tr>
+						`)}
+						<tbody>
+					</table>
+				</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateVoice = (voice, json) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="text-monospace h4">${voice.wave.name}</span></h3>
+		</div>
+		<div class="card-body d-flex flex-row">
+			<table class="table table-sm w-auto mb-0 mr-3">
+				<tbody>
+					<tr>
+						<th>Tone Pan</th>
+						<td class="text-right">${fmt.panpotR(voice.bytes[15])}</td>
+					</tr>
+					<tr>
+						<th>Pan Keyfollow Switch</th>
+						<td class="text-right">${fmt.onOff(voice.bytes[107])}</td>
+					</tr>
+					<tr>
+						<th>Coarse Tune</th>
+						<td class="text-right">${fmt.sint7offset6(voice.bytes[16])}</td>
+					</tr>
+					<tr>
+						<th>Fine Tune</th>
+						<td class="text-right">${fmt.sint7offset6(voice.bytes[17])}</td>
+					</tr>
+					<tr>
+						<th>Pitch Keyfollow</th>
+						<td class="text-right">${voice.bytes[19]}</td>
+					</tr>
+					<tr>
+						<th>Velocity Range Lower</th>
+						<td class="text-right">${voice.bytes[79]}</td>
+					</tr>
+					<tr>
+						<th>Velocity Range Upper</th>
+						<td class="text-right">${voice.bytes[81]}</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- Pitch Env. -->
+			<table class="table table-sm w-auto mb-0 mr-3">
+				<thead>
+					<tr>
+						<th>Pitch Env.</th>
+						<th class="text-right">1</th>
+						<th class="text-right">2</th>
+						<th class="text-right">3</th>
+						<th class="text-right">4</th>
+						<th class="text-right">5</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Time</th>
+						<td class="text-right">${voice.bytes[32]}</td>
+						<td class="text-right">${voice.bytes[33]}</td>
+						<td class="text-right">${voice.bytes[34]}</td>
+						<td class="text-right">${voice.bytes[35]}</td>
+						<td class="text-right">${voice.bytes[36]}</td>
+					</tr>
+					<tr>
+						<th>Level</th>
+						<td class="text-right">${fmt.sint7offset6(voice.bytes[27])}</td>
+						<td class="text-right">${fmt.sint7offset6(voice.bytes[28])}</td>
+						<td class="text-right">${fmt.sint7offset6(voice.bytes[29])}</td>
+						<td class="text-right">${fmt.sint7offset6(voice.bytes[30])}</td>
+						<td class="text-right">${fmt.sint7offset6(voice.bytes[31])}</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- TVF Env. -->
+			<table class="table table-sm w-auto mb-0 mr-3">
+				<thead>
+					<tr>
+						<th>TVF Env.</th>
+						<th class="text-right">1</th>
+						<th class="text-right">2</th>
+						<th class="text-right">3</th>
+						<th class="text-right">4</th>
+						<th class="text-right">5</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Time</th>
+						<td class="text-right">${voice.bytes[63]}</td>
+						<td class="text-right">${voice.bytes[64]}</td>
+						<td class="text-right">${voice.bytes[65]}</td>
+						<td class="text-right">${voice.bytes[66]}</td>
+						<td class="text-right">${voice.bytes[67]}</td>
+					</tr>
+					<tr>
+						<th>Level</th>
+						<td class="text-right">${voice.bytes[58]}</td>
+						<td class="text-right">${voice.bytes[59]}</td>
+						<td class="text-right">${voice.bytes[60]}</td>
+						<td class="text-right">${voice.bytes[61]}</td>
+						<td class="text-right">${voice.bytes[62]}</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- TVA Env. -->
+			<table class="table table-sm w-auto mb-0 mr-3">
+				<thead>
+					<tr>
+						<th>TVA Env.</th>
+						<th class="text-right">1</th>
+						<th class="text-right">2</th>
+						<th class="text-right">3</th>
+						<th class="text-right">4</th>
+						<th class="text-right">5</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Time</th>
+						<td class="text-right">${fmt.mask7(voice.bytes[94])}</td>
+						<td class="text-right">${fmt.mask7(voice.bytes[95])}</td>
+						<td class="text-right">${fmt.mask7(voice.bytes[96])}</td>
+						<td class="text-right">${fmt.mask7(voice.bytes[97])}</td>
+						<td class="text-right">${fmt.mask7(voice.bytes[98])}</td>
+					</tr>
+					<tr>
+						<th>Level</th>
+						<td class="text-right">${voice.bytes[90]}</td>
+						<td class="text-right">${voice.bytes[91]}</td>
+						<td class="text-right">${voice.bytes[92]}</td>
+						<td class="text-right">${voice.bytes[93]}</td>
+						<td class="text-right">-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+`;
+
+const templateTone = (tone, json) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Instrument No.${tone.toneNo}: <span class="text-monospace h4">${tone.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row">
+			<table class="table table-sm w-auto mb-0 mr-3">
+				<tbody>
+					<tr>
+						<th>Patch Level</th>
+						<td class="text-right">${tone.commonBytes[12]}</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-sm w-auto mb-0 mr-3">
+				<tbody>
+					<tr>
+						<th>Random Switch</th>
+						<td class="text-right">${fmt.onOff(tone.commonBytes[34])}</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-sm w-auto mb-0 mr-3">
+				<tbody>
+					<tr>
+						<th>Common 13</th>
+						<td class="text-right">${tone.commonBytes[13]}</td>
+					</tr>
+					<tr>
+						<th>Common 14</th>
+						<td class="text-right">${tone.commonBytes[14]}</td>
+					</tr>
+					<tr>
+						<th>Common 19</th>
+						<td class="text-right">${tone.commonBytes[19]}</td>
+					</tr>
+					<tr>
+						<th>Common 20</th>
+						<td class="text-right">${tone.commonBytes[20]}</td>
+					</tr>
+					<tr>
+						<th>Common 21</th>
+						<td class="text-right">${tone.commonBytes[21]}</td>
+					</tr>
+					<tr>
+						<th>Common 23</th>
+						<td class="text-right">${tone.commonBytes[23]}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	${tone.voices.map((voice) => templateVoice(voice, json))}
+`;
+
+const templateCombi = (combi, json) => html`
+	<h2 class="text-monospace h4">${combi.name}</h2>
+	<nav>
+		<div class="nav nav-tabs" role="tablist">
+			<a id="my-tab-tone0" class="nav-item nav-link active" href="#my-pane-tone0" role="tab" data-toggle="tab">${json.tones[combi.tones[0].toneNo].name}</a>
+			<a id="my-tab-tone1" class="nav-item nav-link" href="#my-pane-tone1" role="tab" data-toggle="tab">${json.tones[combi.tones[1].toneNo].name}</a>
+		</div>
+	</nav>
+	<div class="tab-content mt-2">
+		<div id="my-pane-tone0" class="tab-pane fade show active" role="tabpanel">
+			${templateTone(json.tones[combi.tones[0].toneNo], json)}
+		</div>
+		<div id="my-pane-tone1" class="tab-pane fade" role="tabpanel">
+			${templateTone(json.tones[combi.tones[1].toneNo], json)}
+		</div>
+	</div>
+`;
+
+const templateDrumSet = (drumSet, json) => html`
+	<h2 class="text-monospace h4">${drumSet.name}</h2>
+	<table class="table table-sm table-hover w-auto mb-0">
+		<thead>
+			<tr>
+				<th class="text-right">Note</th>
+				<th class="text-right">No.</th>
+				<th>Name</th>
+				<th class="text-right pl-4">No.</th>
+				<th>Instrument</th>
+				<th class="text-right pl-4">Level</th>
+				<th class="text-right">Pitch</th>
+				<th class="text-right">Group</th>
+				<th class="text-right">Panpot</th>
+				<th class="text-right">Reverb</th>
+				<th class="text-right">Chorus</th>
+				<th class="text-right">Delay</th>
+				<th class="text-right">Note On</th>
+				<th class="text-right">Note Off</th>
+			</tr>
+		</thead>
+		<tbody>
+		${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map((e) => {
+			const [noteNo, note] = e;
+			return html`
+			<tr>
+				<td class="text-right">${fmt.noteNameR(noteNo)}</td>
+				<td class="text-right text-muted">${noteNo}</td>
+				<td class="text-monospace">${note.name}</td>
+				<td class="text-right">${note.toneNo}</td>
+				<td class="text-monospace"><a href="${note.tone.$ref}">${note.tone.name}</a></td>
+				<td class="text-right">${note.level}</td>
+				<td class="text-right">${note.pitch}</td>
+				<td class="text-right">${note.group}</td>
+				<td class="text-right">${fmt.panpotR(note.panpot)}</td>
+				<td class="text-right">${note.reverb}</td>
+				<td class="text-right">${note.chorus}</td>
+				<td class="text-right">${note.delay}</td>
+				<td class="text-right">${fmt.onOff(note.isRxNoteOn)}</td>
+				<td class="text-right">${fmt.onOff(note.isRxNoteOff)}</td>
+			</tr>
+			`;
+		})}
+		</tbody>
+	</table>
+`;
+
+$(async () => {
+	const $modal = $('#my-modal');
+	const modalContent = document.getElementById('my-modal-content');
+
+	$modal.modal('show');
+
+	// Loads a JSON file.
+	const url = (window.location.search.startsWith('?')) ? window.location.search.slice(1) : 'sc-8820.json';
+	const res = await fetch(url);
+	if (!res.ok) {
+		$(modalContent).text(`Error: "${url}" not found.`);
+		return;
+	}
+	const json = await res.json();
+
+	// Adds event handlers.
+	$(window).on('hashchange', handleHashChange);
+	$modal.on('hide.bs.modal', () => {
+		if (window.location.hash !== '' && window.history.length > 2) {
+			window.history.back();
+		} else {
+			window.location.hash = '';
+		}
+	});
+
+	// Renders lists on each tab pane.
+	render(templateProgramList(json), document.getElementById('my-pane-programs'));
+	render(templateProgDrumList(json), document.getElementById('my-pane-progdrums'));
+	render(templateToneList(json), document.getElementById('my-pane-tones'));
+	render(templateToneList4(json), document.getElementById('my-pane-tones4'));
+	render(templateCombiList(json), document.getElementById('my-pane-combis'));
+	render(templateWaveList(json), document.getElementById('my-pane-waves'));
+
+	handleHashChange();
+
+	function handleHashChange() {
+		// Checks whether the current URL hash is a supported format or not.
+		const m = window.location.hash.match(/^#\/(.*)\/(\d+)/u);
+		if (!m) {
+			$modal.modal('hide');
+			return;
+		}
+
+		// Renders information on the modal according to the specified URL hash.
+		const no = Number(m[2]);
+		switch (m[1]) {
+		case 'tones':
+			render(templateTone(json.tones[no], json), modalContent);
+			break;
+		case 'tones4':
+			render(templateTone(json.tones4[no], json), modalContent);
+			break;
+		case 'combis':
+			render(templateCombi(json.combis[no], json), modalContent);
+			break;
+		case 'drumSets':
+			render(templateDrumSet(json.drumSets[no], json), modalContent);
+			break;
+		default:
+			$modal.modal('hide');
+			return;
+		}
+
+		// Shows the modal.
+		$('#my-modal-title').text(window.location.hash);
+		$modal.modal('show');
+	}
+});
+</script>
+<style>
+.modal-xl {
+	min-width: 90%;
+}
+.table tbody > tr > th {
+	font-weight: normal;
+	color: black;
+}
+.table td.text-right {
+	min-width: 2rem;
+}
+.text-muted::before {
+	content: '(';
+}
+.text-muted::after {
+	content: ')';
+}
+</style>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar sticky-top bg-light">
+		<div class="container align-items-start">
+			<h1 class="h5 mt-1 mb-0">tone-browser</h1>
+			<a href="#" class="btn btn-outline-primary py-1">Top</a>
+		</div>
+	</nav>
+
+	<!-- Main screen -->
+	<main class="container mt-2">
+		<nav>
+			<div class="nav nav-tabs" role="tablist">
+				<a id="my-tab-programs" class="nav-item nav-link active" href="#my-pane-programs" role="tab" data-toggle="tab">Programs</a>
+				<a id="my-tab-progdrums" class="nav-item nav-link" href="#my-pane-progdrums" role="tab" data-toggle="tab">Programs (Drumset)</a>
+				<a id="my-tab-tones" class="nav-item nav-link" href="#my-pane-tones" role="tab" data-toggle="tab">Instruments</a>
+				<a id="my-tab-tones4" class="nav-item nav-link" href="#my-pane-tones4" role="tab" data-toggle="tab">Instruments (4-voice)</a>
+				<a id="my-tab-combis" class="nav-item nav-link" href="#my-pane-combis" role="tab" data-toggle="tab">Instruments (Legato)</a>
+				<a id="my-tab-waves" class="nav-item nav-link" href="#my-pane-waves" role="tab" data-toggle="tab">Waves</a>
+			</div>
+		</nav>
+		<div class="tab-content mt-2">
+			<div id="my-pane-programs" class="tab-pane fade show active" role="tabpanel"></div>
+			<div id="my-pane-progdrums" class="tab-pane fade" role="tabpanel"></div>
+			<div id="my-pane-tones" class="tab-pane fade" role="tabpanel"></div>
+			<div id="my-pane-tones4" class="tab-pane fade" role="tabpanel"></div>
+			<div id="my-pane-combis" class="tab-pane fade" role="tabpanel"></div>
+			<div id="my-pane-waves" class="tab-pane fade" role="tabpanel"></div>
+		</div>
+	</main>
+
+	<!--  -->
+	<div id="my-modal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 id="my-modal-title" class="modal-title h6 text-black-50"></h2>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div id="my-modal-content" class="container-fluid">
+						Now loading...
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
