@@ -1,0 +1,26 @@
+.table tbody > tr > th {
+	font-weight: normal;
+	color: black;
+}
+
+.table td.text-right {
+	min-width: 2rem;
+}
+
+.table th {
+	line-height: 1;
+}
+
+.text-muted::before {
+	content: '(';
+}
+
+.text-muted::after {
+	content: ')';
+}
+
+@media (min-width: 1408px) {
+	.modal-xl {
+		max-width: 1348px;
+	}
+}
