@@ -7,6 +7,12 @@ function mask7(value) {
 	return value & 0x7f;
 }
 
+function sint8(value) {
+	const bytes = new Uint8Array([value & 0xff]);
+	const view = new DataView(bytes.buffer);
+	return view.getInt8();
+}
+
 function panpot(value) {
 	return sint7offset6(value).replace(/^-/u, 'L').replace(/^\+/u, 'R');
 }
@@ -34,6 +40,6 @@ function onOff(value) {
 }
 
 export const formatters = {
-	sint7offset6, mask7, panpot, panpotR, noteNameR, noteNameY, onOff,
+	sint7offset6, mask7, sint8, panpot, panpotR, noteNameR, noteNameY, onOff,
 };
 Object.freeze(formatters);
