@@ -92,7 +92,7 @@ const templateVoice = (voice, json) => html`
 					</tr>
 					<tr>
 						<th>Pitch Scaling Rate</th>
-						<td class="text-right">${voice.bytes[17]}</td>
+						<td class="text-right">${fmt.pitchScalingRateMU(voice.bytes[17])}</td>
 					</tr>
 					<tr>
 						<th>Pitch Scaling Center</th>
@@ -140,7 +140,7 @@ const templateVoice = (voice, json) => html`
 					<tbody>
 						<tr>
 							<th>Pitch EG Depth</th>
-							<td class="text-right">${voice.bytes[19]}</td>
+							<td class="text-right">${fmt.pitchEGDepthMU(voice.bytes[19])}</td>
 						</tr>
 						<tr>
 							<th>PEG Depth Level Vel Sens.</th>
@@ -164,7 +164,7 @@ const templateVoice = (voice, json) => html`
 					<tbody>
 						<tr>
 							<th>LFO Wave</th>
-							<td class="text-right">${voice.bytes[7]}</td>
+							<td class="text-right">${fmt.lfoWaveMU(voice.bytes[7])}</td>
 						</tr>
 						<tr>
 							<th>LFO Phase Init</th>
@@ -360,7 +360,7 @@ const templateVoice = (voice, json) => html`
 						</tr>
 						<tr>
 							<th>Pan</th>
-							<td class="text-right">${voice.bytes[67]}</td>
+							<td class="text-right">${fmt.tonePanMU(voice.bytes[67])}</td>
 						</tr>
 						<tr>
 							<th>AEG Rate Scaling</th>
