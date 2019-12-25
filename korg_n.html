@@ -31,7 +31,7 @@ const templateToneList = (json) => html`
 				<td class="text-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
 				<td class="text-right">${(tone.voices[0].toneWave) ? tone.voices[0].toneWaveNo : tone.voices[0].drumSetNo}</td>
 				<td class="text-monospace">${(tone.voices[0].toneWave || tone.voices[0].drumSet).name}</td>
-				<td class="text-right">${tone.voices[1] ? ((tone.voices[0].toneWave) ? tone.voices[0].toneWaveNo : tone.voices[0].drumSetNo) : ''}</td>
+				<td class="text-right">${tone.voices[1] ? ((tone.voices[1].toneWave) ? tone.voices[1].toneWaveNo : tone.voices[1].drumSetNo) : ''}</td>
 				<td class="text-monospace">${tone.voices[1] ? (tone.voices[1].toneWave || tone.voices[1].drumSet).name : ''}</td>
 			</tr>
 		`)}
@@ -655,7 +655,7 @@ $(async () => {
 	<main class="container mt-2">
 		<nav>
 			<div class="nav nav-tabs" role="tablist">
-				<a id="my-tab-tones" class="nav-item nav-link" href="#my-pane-tones" role="tab" data-toggle="tab">Programs</a>
+				<a id="my-tab-tones" class="nav-item nav-link active" href="#my-pane-tones" role="tab" data-toggle="tab">Programs</a>
 				<a id="my-tab-drumsets" class="nav-item nav-link" href="#my-pane-drumsets" role="tab" data-toggle="tab">DrumKits</a>
 				<a id="my-tab-combis" class="nav-item nav-link" href="#my-pane-combis" role="tab" data-toggle="tab">Combinations</a>
 				<a id="my-tab-waves" class="nav-item nav-link" href="#my-pane-waves" role="tab" data-toggle="tab">Samples</a>
