@@ -37094,983 +37094,1171 @@
     },
     {
       "waveNo": 1,
-      "name": "Dr_Stndrd Kit"
+      "name": "KT_Standar"
     },
     {
       "waveNo": 2,
-      "name": "(DrumAdds)"
+      "name": "DR_JamLoop"
     },
     {
       "waveNo": 3,
-      "name": "(Percussi)"
+      "name": "KT_Standar"
     },
     {
       "waveNo": 4,
-      "name": "Pc_SideStick"
+      "name": "DR_SideStk"
     },
     {
       "waveNo": 5,
-      "name": "Pc_Snare 1"
+      "name": "DR_Snare1"
     },
     {
       "waveNo": 6,
-      "name": "Pc_Snare 2"
+      "name": "DR_Snare2"
     },
     {
       "waveNo": 7,
-      "name": "Pc_Snare 3"
+      "name": "DR_Snare3"
     },
     {
       "waveNo": 8,
-      "name": "Pc_Snare 4"
+      "name": "DR_Snare4"
     },
     {
       "waveNo": 9,
-      "name": "Pc_Snare 5"
+      "name": "DR_Snare5"
     },
     {
       "waveNo": 10,
-      "name": "Pc_Snare 6"
+      "name": "DR_Snare6"
     },
     {
       "waveNo": 11,
-      "name": "Pc_SnareBrush"
+      "name": "DR_Brush"
     },
     {
       "waveNo": 12,
-      "name": "Pc_Tom 1"
+      "name": "DR_Tom1"
     },
     {
       "waveNo": 13,
-      "name": "Pc_Tom 2"
+      "name": "DR_Tom2"
     },
     {
       "waveNo": 14,
-      "name": "Pc_Tom 3"
+      "name": "DR_Tom3"
     },
     {
       "waveNo": 15,
-      "name": "Pc_Tom 4"
+      "name": "DR_Tom4"
     },
     {
       "waveNo": 16,
-      "name": "Pc_Tom 5"
+      "name": "DR_Tom5"
     },
     {
       "waveNo": 17,
-      "name": "Pc_Tom 6"
+      "name": "DR_Tom6"
     },
     {
       "waveNo": 18,
-      "name": "Pc_Kick 1"
+      "name": "DR_Kick1"
     },
     {
       "waveNo": 19,
-      "name": "Pc_Kick 2"
+      "name": "DR_Kick2"
     },
     {
       "waveNo": 20,
-      "name": "Pc_Kick 3"
+      "name": "DR_Kick3"
     },
     {
       "waveNo": 21,
-      "name": "Pc_Kick 4"
+      "name": "DR_Kick4"
     },
     {
       "waveNo": 22,
-      "name": "Pc_GranCassa"
+      "name": "DR_GrnCass"
     },
     {
       "waveNo": 23,
-      "name": "Pc_Stick"
+      "name": "DR_Stick"
     },
     {
       "waveNo": 24,
-      "name": "Pc_Cymbal 1"
+      "name": "DR_Cymbal1"
     },
     {
       "waveNo": 25,
-      "name": "Pc_Cymbal 2"
+      "name": "DR_Cymbal2"
     },
     {
       "waveNo": 26,
-      "name": "Pc_Cymbal 3"
+      "name": "DR_Cymbal3"
     },
     {
       "waveNo": 27,
-      "name": "Pc_Cymbal 4"
+      "name": "DR_Cymbal4"
     },
     {
       "waveNo": 28,
-      "name": "(Dr_RCym1)"
+      "name": "DR_RvsCymb"
     },
     {
       "waveNo": 29,
-      "name": "Pc_LoopCymbal"
+      "name": "DR_RpCymba"
     },
     {
       "waveNo": 30,
-      "name": "(Dr_RCym3)"
+      "name": "DR_RvsBD"
     },
     {
       "waveNo": 31,
-      "name": "(Dr_RCym4)"
+      "name": "DR_RvsGrnC"
     },
     {
       "waveNo": 32,
-      "name": "Pc_Agogo"
+      "name": "PC_Agogo"
     },
     {
       "waveNo": 33,
-      "name": "Pc_Castanet"
+      "name": "PC_Castane"
     },
     {
       "waveNo": 34,
-      "name": "Pc_WoodBlock"
+      "name": "PC_WoodBlc"
     },
     {
       "waveNo": 35,
-      "name": "Pc_Taiko"
+      "name": "PC_Taiko"
     },
     {
       "waveNo": 36,
-      "name": "Pc_Triangle"
+      "name": "PC_Triangl"
     },
     {
       "waveNo": 37,
-      "name": "Ap_Grand"
+      "name": "AP_Grand"
     },
     {
       "waveNo": 38,
-      "name": "Ap_Brite"
+      "name": "AP_Brite"
     },
     {
       "waveNo": 39,
-      "name": "Ap_Honky"
+      "name": "AP_Honky"
     },
     {
       "waveNo": 40,
-      "name": "Eb_Finger"
+      "name": "BA_Finger"
     },
     {
       "waveNo": 41,
-      "name": "Eb_Fretless"
+      "name": "BA_Fretles"
     },
     {
       "waveNo": 42,
-      "name": "Eb_Picked"
+      "name": "BA_Picked"
     },
     {
       "waveNo": 43,
-      "name": "Eb_Slap 1"
+      "name": "BA_Slap1"
     },
     {
       "waveNo": 44,
-      "name": "Eb_Slap 2"
+      "name": "BA_Slap2"
     },
     {
       "waveNo": 45,
-      "name": "Eb_Thump"
+      "name": "BA_Thump"
     },
     {
       "waveNo": 46,
-      "name": "Ab_Upright"
+      "name": "BA_Upright"
     },
     {
       "waveNo": 47,
-      "name": "Ar_Trumpet"
+      "name": "BR_Trumpet"
     },
     {
       "waveNo": 48,
-      "name": "Ar_MutedTrp"
+      "name": "BR_MutedTr"
     },
     {
       "waveNo": 49,
-      "name": "Ar_Trombone"
+      "name": "BR_Trombne"
     },
     {
       "waveNo": 50,
-      "name": "Ar_Tuba"
+      "name": "BR_Tuba"
     },
     {
       "waveNo": 51,
-      "name": "Ar_FrenchHorn"
+      "name": "BR_FrncHor"
     },
     {
       "waveNo": 52,
-      "name": "Ar_TrumpetEns"
+      "name": "BR_TPEns"
     },
     {
       "waveNo": 53,
-      "name": "Ch_Aah"
+      "name": "CH_Aah"
     },
     {
       "waveNo": 54,
-      "name": "Ch_Ooh"
+      "name": "CH_Ooh"
     },
     {
       "waveNo": 55,
-      "name": "Ep_DX7"
+      "name": "EP_DX7"
     },
     {
       "waveNo": 56,
-      "name": "Ep_Roads"
+      "name": "EP_Rhodes"
     },
     {
       "waveNo": 57,
-      "name": "Et_Banjo"
+      "name": "FI_Banjo"
     },
     {
       "waveNo": 58,
-      "name": "Et_BagPipe"
+      "name": "FI_BagPipe"
     },
     {
       "waveNo": 59,
-      "name": "Et_Dulcimer"
+      "name": "FI_Dulcime"
     },
     {
       "waveNo": 60,
-      "name": "Et_Harmonica"
+      "name": "FI_Hrmonic"
     },
     {
       "waveNo": 61,
-      "name": "Et_Harp"
+      "name": "FI_Harp"
     },
     {
       "waveNo": 62,
-      "name": "Et_Kalimba"
+      "name": "FI_Kalimba"
     },
     {
       "waveNo": 63,
-      "name": "Et_Koto"
+      "name": "FI_Koto"
     },
     {
       "waveNo": 64,
-      "name": "Et_Ocarina"
+      "name": "FI_Ocarina"
     },
     {
       "waveNo": 65,
-      "name": "(FI_PanFl)"
+      "name": "FI_PanFlut"
     },
     {
       "waveNo": 66,
-      "name": "Et_Shakuhachi"
+      "name": "FI_Shaku"
     },
     {
       "waveNo": 67,
-      "name": "Et_Shamisen"
+      "name": "FI_Shamise"
     },
     {
       "waveNo": 68,
-      "name": "(FI_Shana)"
+      "name": "FI_Tsugaru"
     },
     {
       "waveNo": 69,
-      "name": "Et_Sho"
+      "name": "FI_Sho"
     },
     {
       "waveNo": 70,
-      "name": "Et_Sitar"
+      "name": "FI_Sitar"
     },
     {
       "waveNo": 71,
-      "name": "Ag_Nylon"
+      "name": "GT_Nylon"
     },
     {
       "waveNo": 72,
-      "name": "Ag_Steel"
+      "name": "GT_Steel"
     },
     {
       "waveNo": 73,
-      "name": "Eg_Jazz Gtr"
+      "name": "GT_JazzGtr"
     },
     {
       "waveNo": 74,
-      "name": "Eg_Clean"
+      "name": "GT_Clean"
     },
     {
       "waveNo": 75,
-      "name": "Eg_Muted"
+      "name": "GT_Muted"
     },
     {
       "waveNo": 76,
-      "name": "Eg_Overdrive"
+      "name": "GT_Ovrdriv"
     },
     {
       "waveNo": 77,
-      "name": "Eg_Distortion"
+      "name": "GT_Dist1"
     },
     {
       "waveNo": 78,
-      "name": "Eg_Harmonics1"
+      "name": "GT_Hrmnics"
     },
     {
       "waveNo": 79,
-      "name": "Mk_Accordion"
+      "name": "KY_Accrdio"
     },
     {
       "waveNo": 80,
-      "name": "Mk_Celesta"
+      "name": "KY_Celesta"
     },
     {
       "waveNo": 81,
-      "name": "Mk_Clavi."
+      "name": "KY_Clavine"
     },
     {
       "waveNo": 82,
-      "name": "Mk_Harpsichrd"
+      "name": "KY_Hrpschr"
     },
     {
       "waveNo": 83,
-      "name": "Eo_Drawbar 1"
+      "name": "OR_DrawBar"
     },
     {
       "waveNo": 84,
-      "name": "Eo_Percussive"
+      "name": "OR_Prcssve"
     },
     {
       "waveNo": 85,
-      "name": "Eo_Rock 1"
+      "name": "OR_Rock1"
     },
     {
       "waveNo": 86,
-      "name": "Ao_Pipe"
+      "name": "OR_Pipe"
     },
     {
       "waveNo": 87,
-      "name": "Ao_Reed"
+      "name": "OR_Reed"
     },
     {
       "waveNo": 88,
-      "name": "Bw_Violin"
+      "name": "ST_Violin"
     },
     {
       "waveNo": 89,
-      "name": "Bw_Viola"
+      "name": "ST_Viola"
     },
     {
       "waveNo": 90,
-      "name": "Bw_Cello"
+      "name": "ST_Cello"
     },
     {
       "waveNo": 91,
-      "name": "Bw_ContraBass"
+      "name": "ST_ContraB"
     },
     {
       "waveNo": 92,
-      "name": "Oe_SectionEns"
+      "name": "ST_Ensem1"
     },
     {
       "waveNo": 93,
-      "name": "Oe_Pizzicato"
+      "name": "ST_Pizz"
     },
     {
       "waveNo": 94,
-      "name": "Ow_Square"
+      "name": "SY_Square"
     },
     {
       "waveNo": 95,
-      "name": "Ow_Saw"
+      "name": "SY_Saw"
     },
     {
       "waveNo": 96,
-      "name": "(SY_Trian)"
+      "name": "SY_Triangl"
     },
     {
       "waveNo": 97,
-      "name": "Mb_Bass 1"
+      "name": "SY_Bass1"
     },
     {
       "waveNo": 98,
-      "name": "Mb_Bass 2"
+      "name": "SY_Bass2"
     },
     {
       "waveNo": 99,
-      "name": "Sr_Brass"
+      "name": "SY_Brass"
     },
     {
       "waveNo": 100,
-      "name": "(SY_Choir)"
+      "name": "SY_Choir"
     },
     {
       "waveNo": 101,
-      "name": "(SY_Strng)"
+      "name": "SY_Strings"
     },
     {
       "waveNo": 102,
-      "name": "Lw_Pad 1"
+      "name": "SY_Pad1"
     },
     {
       "waveNo": 103,
-      "name": "(SY_Pad2)"
+      "name": "SY_Pad2"
     },
     {
       "waveNo": 104,
-      "name": "Mw_Mallet"
+      "name": "SY_Mallet"
     },
     {
       "waveNo": 105,
-      "name": "Cp_Glocken"
+      "name": "TP_Glocken"
     },
     {
       "waveNo": 106,
-      "name": "Cp_Marimba"
+      "name": "TP_Marimba"
     },
     {
       "waveNo": 107,
-      "name": "Cp_SteelDrum"
+      "name": "TP_SteelDr"
     },
     {
       "waveNo": 108,
-      "name": "Cp_Timpani"
+      "name": "TP_Timpani"
     },
     {
       "waveNo": 109,
-      "name": "Cp_TinkleBell"
+      "name": "TP_TnklBel"
     },
     {
       "waveNo": 110,
-      "name": "Cp_TublarBell"
+      "name": "TP_TblrBel"
     },
     {
       "waveNo": 111,
-      "name": "Cp_Vibes"
+      "name": "TP_Vibs"
     },
     {
       "waveNo": 112,
-      "name": "Cp_Xylophone"
+      "name": "TP_Xylophn"
     },
     {
       "waveNo": 113,
-      "name": "Rd_Bassoon"
+      "name": "WW_Bassoon"
     },
     {
       "waveNo": 114,
-      "name": "Rd_Clarinet"
+      "name": "WW_Clarine"
     },
     {
       "waveNo": 115,
-      "name": "Rd_EnglshHorn"
+      "name": "WW_EngHorn"
     },
     {
       "waveNo": 116,
-      "name": "Rd_Flute"
+      "name": "WW_Flute"
     },
     {
       "waveNo": 117,
-      "name": "Rd_Oboe"
+      "name": "WW_Oboe"
     },
     {
       "waveNo": 118,
-      "name": "Pi_Piccolo"
+      "name": "WW_Piccolo"
     },
     {
       "waveNo": 119,
-      "name": "Pi_SprRecordr"
+      "name": "WW_SpRcrdr"
     },
     {
       "waveNo": 120,
-      "name": "Rd_SopranoSax"
+      "name": "WW_SpSax"
     },
     {
       "waveNo": 121,
-      "name": "Rd_AltoSax"
+      "name": "WW_AltoSax"
     },
     {
       "waveNo": 122,
-      "name": "(WW_SxTen)"
+      "name": "WW_TnrSax1"
     },
     {
       "waveNo": 123,
-      "name": "Rd_BaritonSax"
+      "name": "WW_BariSax"
     },
     {
       "waveNo": 124,
-      "name": "Ne_Applause"
+      "name": "SE_Applaus"
     },
     {
       "waveNo": 125,
-      "name": "Ne_Bird 1"
+      "name": "SE_Bird1"
     },
     {
       "waveNo": 126,
-      "name": "Ne_Bird 2"
+      "name": "SE_Bird2"
     },
     {
       "waveNo": 127,
-      "name": "Ne_Breath"
+      "name": "SE_Breath"
     },
     {
       "waveNo": 128,
-      "name": "Me_BassSlap"
+      "name": "SE_BsSlap"
     },
     {
       "waveNo": 129,
-      "name": "Ne_Bubble"
+      "name": "SE_Bubble"
     },
     {
       "waveNo": 130,
-      "name": "Ne_CarPass"
+      "name": "SE_CarPass"
     },
     {
       "waveNo": 131,
-      "name": "Ne_CarCrash"
+      "name": "SE_CarCras"
     },
     {
       "waveNo": 132,
-      "name": "Ne_CarStart"
+      "name": "SE_CarStar"
     },
     {
       "waveNo": 133,
-      "name": "Ne_Dog"
+      "name": "SE_Dog"
     },
     {
       "waveNo": 134,
-      "name": "Ne_DoorSlam"
+      "name": "SE_DoorSla"
     },
     {
       "waveNo": 135,
-      "name": "Ne_DoorSqueak"
+      "name": "SE_DoorSqk"
     },
     {
       "waveNo": 136,
-      "name": "Ne_FootStep"
+      "name": "SE_FootSte"
     },
     {
       "waveNo": 137,
-      "name": "Ne_Gallop"
+      "name": "SE_Gallop"
     },
     {
       "waveNo": 138,
-      "name": "Me_GtrStroke"
+      "name": "SE_GtrCttn"
     },
     {
       "waveNo": 139,
-      "name": "Me_GtrFretNz"
+      "name": "SE_GtrFrtN"
     },
     {
       "waveNo": 140,
-      "name": "Ne_Gun"
+      "name": "SE_Gun"
     },
     {
       "waveNo": 141,
-      "name": "Ne_Helicopter"
+      "name": "SE_Helicpt"
     },
     {
       "waveNo": 142,
-      "name": "Ne_HeartBeat"
+      "name": "SE_HeartBt"
     },
     {
       "waveNo": 143,
-      "name": "Me_KeyPad"
+      "name": "SE_KeyPad"
     },
     {
       "waveNo": 144,
-      "name": "Ne_Laughing"
+      "name": "SE_Laughin"
     },
     {
       "waveNo": 145,
-      "name": "Ne_MachineGun"
+      "name": "SE_MachGun"
     },
     {
       "waveNo": 146,
-      "name": "Me_Metronome"
+      "name": "SE_Metro"
     },
     {
       "waveNo": 147,
-      "name": "Mw_Noise"
+      "name": "SE_Noise"
     },
     {
       "waveNo": 148,
-      "name": "Me_OrchHit"
+      "name": "SE_OrchHit"
     },
     {
       "waveNo": 149,
-      "name": "Ne_Punch"
+      "name": "SE_Punch"
     },
     {
       "waveNo": 150,
-      "name": "Ne_Rain"
+      "name": "SE_Rain"
     },
     {
       "waveNo": 151,
-      "name": "Ne_Scream"
+      "name": "SE_Scream"
     },
     {
       "waveNo": 152,
-      "name": "Ne_Stream"
+      "name": "SE_Stream"
     },
     {
       "waveNo": 153,
-      "name": "Ne_Surf"
+      "name": "SE_Surf"
     },
     {
       "waveNo": 154,
-      "name": "Ne_TelDial"
+      "name": "SE_TelDial"
     },
     {
       "waveNo": 155,
-      "name": "Ne_TelRing 1"
+      "name": "SE_TelRing"
     },
     {
       "waveNo": 156,
-      "name": "Ne_Thunder"
+      "name": "SE_Thunder"
     },
     {
       "waveNo": 157,
-      "name": "Ne_TireSkid"
+      "name": "SE_TireSki"
     },
     {
       "waveNo": 158,
-      "name": "Ne_Train"
+      "name": "SE_Train"
     },
     {
       "waveNo": 159,
-      "name": "Ne_Wind"
+      "name": "SE_Wind"
     },
     {
       "waveNo": 160,
-      "name": "(Empty)"
+      "name": "SE_Applaus"
     },
     {
       "waveNo": 161,
-      "name": "(Empty)"
+      "name": "SE_Cat"
     },
     {
       "waveNo": 162,
-      "name": "Ne_TelRing 2"
+      "name": "SE_TelRing"
     },
     {
       "waveNo": 163,
-      "name": "Me_WindChime"
+      "name": "SE_WindChi"
     },
     {
       "waveNo": 164,
-      "name": "(Empty)"
+      "name": "SE_BsSlide"
     },
     {
       "waveNo": 165,
-      "name": "(Empty)"
+      "name": "SE_GtrPcSc"
     },
     {
       "waveNo": 166,
-      "name": "(Empty)"
+      "name": "SE_BrsHit"
     },
     {
       "waveNo": 167,
-      "name": "(Empty)"
+      "name": "SE_Growl"
     },
     {
       "waveNo": 168,
-      "name": "(Empty)"
+      "name": "GT_Clean"
     },
     {
       "waveNo": 169,
-      "name": "(Empty)"
+      "name": "BA_FndrJaz"
     },
     {
       "waveNo": 170,
-      "name": "(Empty)"
+      "name": "BR_FlglHor"
     },
     {
       "waveNo": 171,
-      "name": "(Empty)"
+      "name": "BR_BrsFall"
     },
     {
       "waveNo": 172,
-      "name": "Ep_CP80"
+      "name": "EP_CP80"
     },
     {
       "waveNo": 173,
-      "name": "(Empty)"
+      "name": "GT_Dist2"
     },
     {
       "waveNo": 174,
-      "name": "(Empty)"
+      "name": "GT_StlHrm"
     },
     {
       "waveNo": 175,
-      "name": "(Empty)"
+      "name": "KY_OrgFlut"
     },
     {
       "waveNo": 176,
-      "name": "Rd_SprSaxAtk"
+      "name": "SA_SpSax"
     },
     {
       "waveNo": 177,
-      "name": "Rd_AltoSaxAtk"
+      "name": "SA_AltoSax"
     },
     {
       "waveNo": 178,
-      "name": "(Empty)"
+      "name": "SA_TenorSa"
     },
     {
       "waveNo": 179,
-      "name": "Rd_BariSaxAtk"
+      "name": "SA_BariSax"
     },
     {
       "waveNo": 180,
-      "name": "Oe_StrngEnsLp"
+      "name": "LO_StrEns"
     },
     {
       "waveNo": 181,
-      "name": "(Empty)"
+      "name": "LO_TenorSa"
     },
     {
       "waveNo": 182,
-      "name": "Rd_BariSaxLp"
+      "name": "LO_BariSax"
     },
     {
       "waveNo": 183,
-      "name": "Eg_OvrdriveLp"
+      "name": "LO_Ovrdriv"
     },
     {
       "waveNo": 184,
-      "name": "Rd_TenorSax"
+      "name": "WW_TnrSax2"
     },
     {
       "waveNo": 185,
-      "name": "(Empty)"
+      "name": "WW_BsClari"
     },
     {
       "waveNo": 186,
-      "name": "(Empty)"
+      "name": "PC_Atariga"
     },
     {
       "waveNo": 187,
-      "name": "(Empty)"
+      "name": "TP_LogDrum"
     },
     {
       "waveNo": 188,
-      "name": "Et_Shanai"
+      "name": "FI_Shanai"
     },
     {
       "waveNo": 189,
-      "name": "Me_TublrBelLp"
+      "name": "FL_TblrBel"
     },
     {
       "waveNo": 190,
-      "name": "Ag_12GtrUpper"
+      "name": "GT_12StrUP"
     },
     {
       "waveNo": 191,
-      "name": "Me_XylophonLp"
+      "name": "FL_Xylophn"
     },
     {
       "waveNo": 192,
-      "name": "(Empty)"
+      "name": "RV_RvsSD1"
     },
     {
       "waveNo": 193,
-      "name": "(Empty)"
+      "name": "RV_RvsSD2"
     },
     {
       "waveNo": 194,
-      "name": "(Empty)"
+      "name": "GT_Dist3"
     },
     {
       "waveNo": 195,
-      "name": "Ow_Sine"
+      "name": "FL_Sine"
     },
     {
       "waveNo": 196,
-      "name": "Ow_Digi 1"
+      "name": "SY_Digi01"
     },
     {
       "waveNo": 197,
-      "name": "Ow_Digi 2"
+      "name": "SY_Digi02"
     },
     {
       "waveNo": 198,
-      "name": "Ow_Digi 3"
+      "name": "SY_Digi03"
     },
     {
       "waveNo": 199,
-      "name": "Ow_Digi 4"
+      "name": "SY_Digi04"
     },
     {
       "waveNo": 200,
-      "name": "Ow_Digi 5"
+      "name": "SY_Digi05"
     },
     {
       "waveNo": 201,
-      "name": "Ow_Digi 6"
+      "name": "SY_Digi06"
     },
     {
       "waveNo": 202,
-      "name": "Ow_Digi 7"
+      "name": "SY_Digi07"
     },
     {
       "waveNo": 203,
-      "name": "Ow_Digi 8"
+      "name": "SY_Digi08"
     },
     {
       "waveNo": 204,
-      "name": "Ow_Digi 9"
+      "name": "SY_Digi09"
     },
     {
       "waveNo": 205,
-      "name": "Ow_Digi 10"
+      "name": "SY_Digi10"
     },
     {
       "waveNo": 206,
-      "name": "Ow_Digi 11"
+      "name": "SY_Digi11"
     },
     {
       "waveNo": 207,
-      "name": "Ow_Digi 12"
+      "name": "SY_Digi12"
     },
     {
       "waveNo": 208,
-      "name": "Ow_Digi 13"
+      "name": "SY_Digi13"
     },
     {
       "waveNo": 209,
-      "name": "Ow_Digi 14"
+      "name": "SY_Digi14"
     },
     {
       "waveNo": 210,
-      "name": "Ow_Digi 15"
+      "name": "SY_Digi15"
     },
     {
       "waveNo": 211,
-      "name": "Ow_Digi 16"
+      "name": "SY_Digi16"
     },
     {
       "waveNo": 212,
-      "name": "Ow_Digi 17"
+      "name": "SY_Digi17"
     },
     {
       "waveNo": 213,
-      "name": "Ow_Digi 19"
+      "name": "SY_Digi18"
     },
     {
       "waveNo": 214,
-      "name": "Ow_Digi 20"
+      "name": "SY_Digi19"
     },
     {
       "waveNo": 215,
-      "name": "Ow_Digi 21"
+      "name": "SY_Digi20"
     },
     {
       "waveNo": 216,
-      "name": "Ow_Digi 22"
+      "name": "SY_Digi21"
     },
     {
       "waveNo": 217,
-      "name": "Ow_Digi 23"
+      "name": "SY_Digi22"
     },
     {
       "waveNo": 218,
-      "name": "Ow_Digi 24"
+      "name": "SY_Digi23"
     },
     {
       "waveNo": 219,
-      "name": "Ow_Digi 25"
+      "name": "SY_Digi24"
     },
     {
       "waveNo": 220,
-      "name": "Ow_Digi 26"
+      "name": "SY_Digi25"
     },
     {
       "waveNo": 221,
-      "name": "Ow_Digi 27"
+      "name": "SY_Digi26"
     },
     {
       "waveNo": 222,
-      "name": "Ow_Digi 28"
+      "name": "SY_Digi27"
     },
     {
       "waveNo": 223,
-      "name": "Ow_Digi 29"
+      "name": "SY_Digi28"
     },
     {
       "waveNo": 224,
-      "name": "Ow_Digi 30"
+      "name": "SY_Digi29"
     },
     {
       "waveNo": 225,
-      "name": "Ow_Digi 31"
+      "name": "SY_Digi30"
     },
     {
       "waveNo": 226,
-      "name": "Ow_Digi 32"
+      "name": "SY_Digi31"
     },
     {
       "waveNo": 227,
-      "name": "Lw_Pad 2"
+      "name": "SY_OBE"
     },
     {
       "waveNo": 228,
-      "name": "Ow_Pulse 10"
+      "name": "SY_Pulse10"
     },
     {
       "waveNo": 229,
-      "name": "Ow_Pulse 25"
+      "name": "SY_Pulse25"
     },
     {
       "waveNo": 230,
-      "name": "Lw_Pad 3"
+      "name": "SY_StrJP"
     },
     {
       "waveNo": 231,
-      "name": "Oe_Ensemble"
+      "name": "ST_Ensem2"
     },
     {
       "waveNo": 232,
-      "name": "(Empty)"
+      "name": "CH_StrngAa"
     },
     {
       "waveNo": 233,
-      "name": "(Empty)"
+      "name": "CH_VoiceDo"
     },
     {
       "waveNo": 234,
-      "name": "(Empty)"
+      "name": "CH_Hmn"
     },
     {
       "waveNo": 235,
-      "name": "(Empty)"
+      "name": "CH_MaleAah"
     },
     {
       "waveNo": 236,
-      "name": "Lw_Itopia"
+      "name": "CH_Itopia"
     },
     {
       "waveNo": 237,
-      "name": "Eo_Rock 2"
+      "name": "OR_Rock2"
     },
     {
       "waveNo": 238,
-      "name": "(Empty)"
+      "name": "RV_RvsTom1"
     },
     {
       "waveNo": 239,
-      "name": "(Empty)"
+      "name": "RV_RvsTom2"
     },
     {
       "waveNo": 240,
-      "name": "Eo_Drawbar 2"
+      "name": "OR_Drawbar"
     },
     {
       "waveNo": 241,
-      "name": "Mk_Bandoneon"
+      "name": "KY_Bandneo"
     },
     {
       "waveNo": 242,
-      "name": "Eg_Harmonics2"
+      "name": "GT_Hrmnics"
     },
     {
       "waveNo": 243,
-      "name": "Et_PanFlute"
+      "name": "WW_PanFlut"
     },
     {
       "waveNo": 244,
-      "name": "(Empty)"
+      "name": "BR_MuteTr"
     },
     {
       "waveNo": 245,
-      "name": "Me_Scratch"
+      "name": "SE_Scratch"
+    },
+    {
+      "waveNo": 246,
+      "name": "SE_Hit1"
+    },
+    {
+      "waveNo": 247,
+      "name": "SE_Hit2"
+    },
+    {
+      "waveNo": 248,
+      "name": "SE_BrsHitS"
+    },
+    {
+      "waveNo": 249,
+      "name": "DR_JnglBD1"
+    },
+    {
+      "waveNo": 250,
+      "name": "DR_JnglBD2"
+    },
+    {
+      "waveNo": 251,
+      "name": "DR_JnglBD3"
+    },
+    {
+      "waveNo": 252,
+      "name": "DR_JnglSD1"
+    },
+    {
+      "waveNo": 253,
+      "name": "DR_JnglSD2"
+    },
+    {
+      "waveNo": 254,
+      "name": "DR_JnglSD3"
+    },
+    {
+      "waveNo": 255,
+      "name": "DR_AnalogB"
+    },
+    {
+      "waveNo": 256,
+      "name": "SY_MiniMoo"
+    },
+    {
+      "waveNo": 257,
+      "name": "SY_TB303Sa"
+    },
+    {
+      "waveNo": 258,
+      "name": "SY_CS01"
+    },
+    {
+      "waveNo": 259,
+      "name": "SY_Jupiter"
+    },
+    {
+      "waveNo": 260,
+      "name": "SY_FatSaw"
+    },
+    {
+      "waveNo": 261,
+      "name": "SY_ArpSync"
+    },
+    {
+      "waveNo": 262,
+      "name": "OR_Jazz"
+    },
+    {
+      "waveNo": 263,
+      "name": "OR_Click"
+    },
+    {
+      "waveNo": 264,
+      "name": "OR_Farfiss"
+    },
+    {
+      "waveNo": 265,
+      "name": "OR_Gospel"
+    },
+    {
+      "waveNo": 266,
+      "name": "BA_SlapBas"
+    },
+    {
+      "waveNo": 267,
+      "name": "GT_StratMi"
+    },
+    {
+      "waveNo": 268,
+      "name": "GT_Telecas"
+    },
+    {
+      "waveNo": 269,
+      "name": "DR_AnBDTec"
+    },
+    {
+      "waveNo": 270,
+      "name": "DR_AnBDTec"
+    },
+    {
+      "waveNo": 271,
+      "name": "DR_AnBDTec"
+    },
+    {
+      "waveNo": 272,
+      "name": "DR_808SD"
+    },
+    {
+      "waveNo": 273,
+      "name": "DR_AnalogS"
+    },
+    {
+      "waveNo": 274,
+      "name": "DR_DryBD1"
+    },
+    {
+      "waveNo": 275,
+      "name": "DR_DryBD2"
+    },
+    {
+      "waveNo": 276,
+      "name": "DR_DryBD3"
+    },
+    {
+      "waveNo": 277,
+      "name": "DR_BD1"
+    },
+    {
+      "waveNo": 278,
+      "name": "DR_SD1_RI"
+    },
+    {
+      "waveNo": 279,
+      "name": "DR_78SD"
+    },
+    {
+      "waveNo": 280,
+      "name": "DR_HHClose"
+    },
+    {
+      "waveNo": 281,
+      "name": "DR_HHOpen"
+    },
+    {
+      "waveNo": 282,
+      "name": "DR_HHPedal"
+    },
+    {
+      "waveNo": 283,
+      "name": "DR_AmbSD"
+    },
+    {
+      "waveNo": 284,
+      "name": "DR_DrySD1"
+    },
+    {
+      "waveNo": 285,
+      "name": "DR_DrySD2"
+    },
+    {
+      "waveNo": 286,
+      "name": "DR_SftDryS"
+    },
+    {
+      "waveNo": 287,
+      "name": "DR_SDf"
+    },
+    {
+      "waveNo": 288,
+      "name": "DR_OpenRim"
+    },
+    {
+      "waveNo": 289,
+      "name": "DR_SideStk"
+    },
+    {
+      "waveNo": 290,
+      "name": "BR_Trumpet"
+    },
+    {
+      "waveNo": 291,
+      "name": "BR_Trombne"
+    },
+    {
+      "waveNo": 292,
+      "name": "PC_Handcla"
     }
   ]
 }
