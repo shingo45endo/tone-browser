@@ -183,6 +183,8 @@ const templateWaveList = (json) => html`
 								<th>No.</th>
 								<th>Level</th>
 								<th>Sample No.</th>
+								<th>Orig.</th>
+								<th>No.</th>
 							</tr>
 						<thead>
 						<tbody>
@@ -194,6 +196,8 @@ const templateWaveList = (json) => html`
 								<td class="text-right text-muted">${sample.high}</td>
 								<td class="text-right">${sample.level}</td>
 								<td class="text-right">${sample.sampleNo}</td>
+								<td class="text-right">${fmt.noteNameR(json.samples[sample.sampleNo].bytes[6])}</td>
+								<td class="text-right text-muted">${json.samples[sample.sampleNo].bytes[6]}</td>
 							</tr>
 						`)}
 						<tbody>
