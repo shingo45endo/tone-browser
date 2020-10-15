@@ -188,18 +188,18 @@ const templateWaveList = (json) => html`
 							</tr>
 						<thead>
 						<tbody>
-						${wave.samples.map((sample) => html`
+						${wave.multiSamples.map((multiSample) => html`
 							<tr>
-								<td class="text-right">${fmt.noteNameR(sample.low)}</td>
-								<td class="text-right text-muted">${sample.low}</td>
-								<td class="text-right">${fmt.noteNameR(sample.high)}</td>
-								<td class="text-right text-muted">${sample.high}</td>
-								<td class="text-right">${sample.level}</td>
-								<td class="text-right">${sample.sampleNo}</td>
-								${((sampleNo, sampleBytes) => html`
-								<td class="text-right">${(sampleNo >= 0) ? fmt.noteNameR(sampleBytes.bytes[6]) : '--'}</td>
-								<td class="text-right text-muted">${(sampleNo >= 0) ? sampleBytes.bytes[6] : '--'}</td>
-								`)(sample.sampleNo, json.samples[sample.sampleNo])}
+								<td class="text-right">${fmt.noteNameR(multiSample.low)}</td>
+								<td class="text-right text-muted">${multiSample.low}</td>
+								<td class="text-right">${fmt.noteNameR(multiSample.high)}</td>
+								<td class="text-right text-muted">${multiSample.high}</td>
+								<td class="text-right">${multiSample.level}</td>
+								<td class="text-right">${multiSample.sampleNo}</td>
+								${((sample) => html`
+								<td class="text-right">${(sample) ? fmt.noteNameR(sample.key) : '--'}</td>
+								<td class="text-right text-muted">${(sample) ? sample.key : '--'}</td>
+								`)(json.samples[multiSample.sampleNo])}
 							</tr>
 						`)}
 						<tbody>
