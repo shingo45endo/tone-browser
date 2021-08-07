@@ -1,3 +1,7 @@
+.table {
+	height: fit-content;
+}
+
 .table tbody > tr > th {
 	font-weight: normal;
 	color: black;
