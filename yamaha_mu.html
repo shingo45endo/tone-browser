@@ -284,6 +284,22 @@ const templateVoice = (voice, json) => html`
 							<td class="text-right">${voice.bytes[35]}</td>
 						</tr>
 						<tr>
+							<th>FEG Level Velocity Sens.</th>
+							<td class="text-right">${fmt.sint7offset6(voice.bytes[44])}</td>
+						</tr>
+						<tr>
+							<th>FEG Rate Velocity Sens.</th>
+							<td class="text-right">${fmt.sint7offset6(voice.bytes[45])}</td>
+						</tr>
+						<tr>
+							<th>FEG Rate Scaling</th>
+							<td class="text-right">${fmt.sint7offset6(voice.bytes[46])}</td>
+						</tr>
+						<tr>
+							<th>FEG Rate Scaling Center</th>
+							<td class="text-right">${fmt.noteNameY(voice.bytes[47])}</td>
+						</tr>
+						<tr>
 							<th>Resonance Sensitivity</th>
 							<td class="text-right">${fmt.sint7offset6(voice.bytes[79])}</td>
 						</tr>
