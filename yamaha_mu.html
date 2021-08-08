@@ -17,6 +17,44 @@ function getWaveName(json, waveNo) {
 	return (json.waves[waveNo] || {name: `(Wave #${waveNo})`}).name;
 }
 
+const templateProgramList = (json) => html`
+	<nav>
+		<div class="nav nav-tabs" role="tablist">
+		${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
+			<a id="my-tab-${key}" class="nav-item nav-link${(i === 0) ? ' active' : ''}" href="#my-pane-${key}" role="tab" data-toggle="tab">${key.replace('programs', '')}</a>
+		`)}
+		</div>
+	</nav>
+	<div class="tab-content mt-2">
+		${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
+			<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
+				<table class="table table-sm table-hover w-auto mb-0">
+					<thead>
+						<tr>
+							<th class="text-right">Prog#</th>
+							<th class="text-right">BankM</th>
+							<th class="text-right">BankL</th>
+							<th class="text-right pl-4">No.</th>
+							<th>Voice</th>
+						</tr>
+					</thead>
+					<tbody>
+					${json[key].map((program) => html`
+						<tr>
+							<td class="text-right">${program.prog}</td>
+							<td class="text-right">${program.bankM}</td>
+							<td class="text-right">${program.bankL}</td>
+							<td class="text-right">${program.toneNo}</td>
+							<td class="text-monospace"><a href="${program.tone.$ref}">${program.name}</a></td>
+						</tr>
+					`)}
+					</tbody>
+				</table>
+			</div>
+		`)}
+	</div>
+`;
+
 const templateToneList = (json) => html`
 	<table class="table table-sm table-hover w-auto mb-0">
 		<thead>
@@ -574,6 +612,7 @@ $(async () => {
 	});
 
 	// Renders lists on each tab pane.
+	render(templateProgramList(json), document.getElementById('my-pane-programs'));
 	render(templateToneList(json), document.getElementById('my-pane-tones'));
 	render(templateDrumSetList(json), document.getElementById('my-pane-drumsets'));
 
@@ -620,12 +659,14 @@ $(async () => {
 	<main class="container mt-2">
 		<nav>
 			<div class="nav nav-tabs" role="tablist">
-				<a id="my-tab-tones" class="nav-item nav-link active" href="#my-pane-tones" role="tab" data-toggle="tab">Voices</a>
+				<a id="my-tab-programs" class="nav-item nav-link active" href="#my-pane-programs" role="tab" data-toggle="tab">Programs</a>
+				<a id="my-tab-tones" class="nav-item nav-link" href="#my-pane-tones" role="tab" data-toggle="tab">Voices</a>
 				<a id="my-tab-drumsets" class="nav-item nav-link" href="#my-pane-drumsets" role="tab" data-toggle="tab">DrumKits</a>
 			</div>
 		</nav>
 		<div class="tab-content mt-2">
-			<div id="my-pane-tones" class="tab-pane fade show active" role="tabpanel"></div>
+			<div id="my-pane-programs" class="tab-pane fade show active" role="tabpanel"></div>
+			<div id="my-pane-tones" class="tab-pane fade" role="tabpanel"></div>
 			<div id="my-pane-drumsets" class="tab-pane fade" role="tabpanel"></div>
 		</div>
 	</main>
