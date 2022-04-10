@@ -430,7 +430,7 @@ $(async () => {
 	$modal.modal('show');
 
 	// Loads a JSON file.
-	const url = (window.location.search.startsWith('?')) ? window.location.search.slice(1) : 'mu2000.json';
+	const url = (window.location.search.startsWith('?')) ? window.location.search.slice(1) : 'tg300.json';
 	const res = await fetch(url);
 	if (!res.ok) {
 		$(modalContent).text(`Error: "${url}" not found.`);
