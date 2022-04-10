@@ -87434,5 +87434,587 @@
         "$ref": "#/tones/1350"
       }
     }
+  ],
+  "programsSFX": [
+    {
+      "name": "CuttngNz  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 0,
+      "toneNo": 1295,
+      "tone": {
+        "$ref": "#/tones/1295"
+      }
+    },
+    {
+      "name": "CttngNz2  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 1,
+      "toneNo": 1296,
+      "tone": {
+        "$ref": "#/tones/1296"
+      }
+    },
+    {
+      "name": "DstCutNz  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 2,
+      "toneNo": 1297,
+      "tone": {
+        "$ref": "#/tones/1297"
+      }
+    },
+    {
+      "name": "Str Slap  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 3,
+      "toneNo": 1298,
+      "tone": {
+        "$ref": "#/tones/1298"
+      }
+    },
+    {
+      "name": "B.Slide   ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 4,
+      "toneNo": 1299,
+      "tone": {
+        "$ref": "#/tones/1299"
+      }
+    },
+    {
+      "name": "P.Scrape  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 5,
+      "toneNo": 1300,
+      "tone": {
+        "$ref": "#/tones/1300"
+      }
+    },
+    {
+      "name": "Fl.KClik  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 16,
+      "toneNo": 1301,
+      "tone": {
+        "$ref": "#/tones/1301"
+      }
+    },
+    {
+      "name": "Shower    ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 32,
+      "toneNo": 1302,
+      "tone": {
+        "$ref": "#/tones/1302"
+      }
+    },
+    {
+      "name": "Thunder   ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 33,
+      "toneNo": 1303,
+      "tone": {
+        "$ref": "#/tones/1303"
+      }
+    },
+    {
+      "name": "Wind      ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 34,
+      "toneNo": 1304,
+      "tone": {
+        "$ref": "#/tones/1304"
+      }
+    },
+    {
+      "name": "Stream    ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 35,
+      "toneNo": 1305,
+      "tone": {
+        "$ref": "#/tones/1305"
+      }
+    },
+    {
+      "name": "Bubble    ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 36,
+      "toneNo": 1306,
+      "tone": {
+        "$ref": "#/tones/1306"
+      }
+    },
+    {
+      "name": "Feed      ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 37,
+      "toneNo": 1307,
+      "tone": {
+        "$ref": "#/tones/1307"
+      }
+    },
+    {
+      "name": "Cave      ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 38,
+      "toneNo": 1308,
+      "tone": {
+        "$ref": "#/tones/1308"
+      }
+    },
+    {
+      "name": "Dog       ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 48,
+      "toneNo": 1309,
+      "tone": {
+        "$ref": "#/tones/1309"
+      }
+    },
+    {
+      "name": "Horse     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 49,
+      "toneNo": 1310,
+      "tone": {
+        "$ref": "#/tones/1310"
+      }
+    },
+    {
+      "name": "Tweet 2   ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 50,
+      "toneNo": 1311,
+      "tone": {
+        "$ref": "#/tones/1311"
+      }
+    },
+    {
+      "name": "Kitty     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 51,
+      "toneNo": 1312,
+      "tone": {
+        "$ref": "#/tones/1312"
+      }
+    },
+    {
+      "name": "Growl     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 52,
+      "toneNo": 1313,
+      "tone": {
+        "$ref": "#/tones/1313"
+      }
+    },
+    {
+      "name": "Haunted   ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 53,
+      "toneNo": 1314,
+      "tone": {
+        "$ref": "#/tones/1314"
+      }
+    },
+    {
+      "name": "Ghost     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 54,
+      "toneNo": 1315,
+      "tone": {
+        "$ref": "#/tones/1315"
+      }
+    },
+    {
+      "name": "Maou      ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 55,
+      "toneNo": 1316,
+      "tone": {
+        "$ref": "#/tones/1316"
+      }
+    },
+    {
+      "name": "Insects   ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 56,
+      "toneNo": 1317,
+      "tone": {
+        "$ref": "#/tones/1317"
+      }
+    },
+    {
+      "name": "Bacteria  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 57,
+      "toneNo": 1318,
+      "tone": {
+        "$ref": "#/tones/1318"
+      }
+    },
+    {
+      "name": "PhonCall  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 64,
+      "toneNo": 1319,
+      "tone": {
+        "$ref": "#/tones/1319"
+      }
+    },
+    {
+      "name": "DoorSqek  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 65,
+      "toneNo": 1320,
+      "tone": {
+        "$ref": "#/tones/1320"
+      }
+    },
+    {
+      "name": "DoorSlam  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 66,
+      "toneNo": 1321,
+      "tone": {
+        "$ref": "#/tones/1321"
+      }
+    },
+    {
+      "name": "ScratchC  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 67,
+      "toneNo": 1322,
+      "tone": {
+        "$ref": "#/tones/1322"
+      }
+    },
+    {
+      "name": "ScratchS  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 68,
+      "toneNo": 1323,
+      "tone": {
+        "$ref": "#/tones/1323"
+      }
+    },
+    {
+      "name": "WindChim  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 69,
+      "toneNo": 1324,
+      "tone": {
+        "$ref": "#/tones/1324"
+      }
+    },
+    {
+      "name": "Telphon2  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 70,
+      "toneNo": 1325,
+      "tone": {
+        "$ref": "#/tones/1325"
+      }
+    },
+    {
+      "name": "AnthrScr  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 71,
+      "toneNo": 1326,
+      "tone": {
+        "$ref": "#/tones/1326"
+      }
+    },
+    {
+      "name": "TurnTabl  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 72,
+      "toneNo": 1327,
+      "tone": {
+        "$ref": "#/tones/1327"
+      }
+    },
+    {
+      "name": "CarEIgnt  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 80,
+      "toneNo": 1328,
+      "tone": {
+        "$ref": "#/tones/1328"
+      }
+    },
+    {
+      "name": "CarTSqel  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 81,
+      "toneNo": 1329,
+      "tone": {
+        "$ref": "#/tones/1329"
+      }
+    },
+    {
+      "name": "Car Pass  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 82,
+      "toneNo": 1330,
+      "tone": {
+        "$ref": "#/tones/1330"
+      }
+    },
+    {
+      "name": "CarCrash  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 83,
+      "toneNo": 1331,
+      "tone": {
+        "$ref": "#/tones/1331"
+      }
+    },
+    {
+      "name": "Siren     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 84,
+      "toneNo": 1332,
+      "tone": {
+        "$ref": "#/tones/1332"
+      }
+    },
+    {
+      "name": "Train     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 85,
+      "toneNo": 1333,
+      "tone": {
+        "$ref": "#/tones/1333"
+      }
+    },
+    {
+      "name": "JetPlane  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 86,
+      "toneNo": 1334,
+      "tone": {
+        "$ref": "#/tones/1334"
+      }
+    },
+    {
+      "name": "Starship  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 87,
+      "toneNo": 1335,
+      "tone": {
+        "$ref": "#/tones/1335"
+      }
+    },
+    {
+      "name": "Burst     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 88,
+      "toneNo": 1336,
+      "tone": {
+        "$ref": "#/tones/1336"
+      }
+    },
+    {
+      "name": "Coaster   ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 89,
+      "toneNo": 1337,
+      "tone": {
+        "$ref": "#/tones/1337"
+      }
+    },
+    {
+      "name": "Submarin  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 90,
+      "toneNo": 1338,
+      "tone": {
+        "$ref": "#/tones/1338"
+      }
+    },
+    {
+      "name": "Cnectvty  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 91,
+      "toneNo": 1339,
+      "tone": {
+        "$ref": "#/tones/1339"
+      }
+    },
+    {
+      "name": "Mystery   ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 92,
+      "toneNo": 1340,
+      "tone": {
+        "$ref": "#/tones/1340"
+      }
+    },
+    {
+      "name": "Charging  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 93,
+      "toneNo": 1341,
+      "tone": {
+        "$ref": "#/tones/1341"
+      }
+    },
+    {
+      "name": "Laugh     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 96,
+      "toneNo": 1342,
+      "tone": {
+        "$ref": "#/tones/1342"
+      }
+    },
+    {
+      "name": "Scream    ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 97,
+      "toneNo": 1343,
+      "tone": {
+        "$ref": "#/tones/1343"
+      }
+    },
+    {
+      "name": "Punch     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 98,
+      "toneNo": 1344,
+      "tone": {
+        "$ref": "#/tones/1344"
+      }
+    },
+    {
+      "name": "Heart     ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 99,
+      "toneNo": 1345,
+      "tone": {
+        "$ref": "#/tones/1345"
+      }
+    },
+    {
+      "name": "Footstep  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 100,
+      "toneNo": 1346,
+      "tone": {
+        "$ref": "#/tones/1346"
+      }
+    },
+    {
+      "name": "Applaus2  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 101,
+      "toneNo": 1347,
+      "tone": {
+        "$ref": "#/tones/1347"
+      }
+    },
+    {
+      "name": "MchinGun  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 112,
+      "toneNo": 1348,
+      "tone": {
+        "$ref": "#/tones/1348"
+      }
+    },
+    {
+      "name": "LaserGun  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 113,
+      "toneNo": 1349,
+      "tone": {
+        "$ref": "#/tones/1349"
+      }
+    },
+    {
+      "name": "Xplosion  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 114,
+      "toneNo": 1350,
+      "tone": {
+        "$ref": "#/tones/1350"
+      }
+    },
+    {
+      "name": "Firework  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 115,
+      "toneNo": 1351,
+      "tone": {
+        "$ref": "#/tones/1351"
+      }
+    },
+    {
+      "name": "Fireball  ",
+      "bankM": 64,
+      "bankL": 0,
+      "prog": 116,
+      "toneNo": 1352,
+      "tone": {
+        "$ref": "#/tones/1352"
+      }
+    }
   ]
 }
