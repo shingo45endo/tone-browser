@@ -4,43 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>tone-browser</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="./common.css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link href="./common.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script type="module">
+/* global bootstrap */
 import {html, render} from 'https://unpkg.com/lit-html?module';
 import {formatters as fmt} from './formatters.js';
 
 const templateProgramList = (json) => html`
-	<nav>
-		<div class="nav nav-tabs" role="tablist">
-		${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
-			<a id="my-tab-${key}" class="nav-item nav-link${(i === 0) ? ' active' : ''}" href="#my-pane-${key}" role="tab" data-toggle="tab">${key.replace('programs', '')}</a>
-		`)}
-		</div>
-	</nav>
+	<ul class="nav nav-tabs" role="tablist">
+	${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
+		<li class="nav-item" role="presentation">
+			<button id="my-tab-${key}" class="nav-item nav-link${(i === 0) ? ' active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('programs', '')}</button>
+		</li>
+	`)}
+	</ul>
 	<div class="tab-content mt-2">
 		${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
 			<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
 				<table class="table table-sm table-hover w-auto mb-0">
 					<thead>
 						<tr>
-							<th class="text-right">Prog#</th>
-							<th class="text-right">BankM</th>
-							<th class="text-right">BankL</th>
-							<th class="text-right pl-4">No.</th>
+							<th class="text-end">Prog#</th>
+							<th class="text-end">BankM</th>
+							<th class="text-end">BankL</th>
+							<th class="text-end ps-4">No.</th>
 							<th>Voice</th>
 						</tr>
 					</thead>
 					<tbody>
 					${json[key].map((program) => html`
 						<tr>
-							<td class="text-right">${program.prog}</td>
-							<td class="text-right">${program.bankM}</td>
-							<td class="text-right">${program.bankL}</td>
-							<td class="text-right">${program.toneNo}</td>
-							<td class="text-monospace"><a href="${program.tone.$ref}">${program.name}</a></td>
+							<td class="text-end">${program.prog}</td>
+							<td class="text-end">${program.bankM}</td>
+							<td class="text-end">${program.bankL}</td>
+							<td class="text-end">${program.toneNo}</td>
+							<td class="font-monospace"><a href="${program.tone.$ref}">${program.name}</a></td>
 						</tr>
 					`)}
 					</tbody>
@@ -54,31 +54,31 @@ const templateToneList = (json) => html`
 	<table class="table table-sm table-hover w-auto mb-0">
 		<thead>
 			<tr>
-				<th class="text-right">No.</th>
+				<th class="text-end">No.</th>
 				<th>Voice</th>
-				<th class="text-right pl-4">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Wave 1</th>
-				<th class="text-right pl-4">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Wave 2</th>
-				<th class="text-right pl-4">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Wave 3</th>
-				<th class="text-right pl-4">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Wave 4</th>
 			</tr>
 		</thead>
 		<tbody>
 		${json.tones.map((tone) => html`
 			<tr>
-				<td class="text-right">${tone.toneNo}</td>
-				<td class="text-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
-				<td class="text-right">${tone.voices[0].waveNo}</td>
-				<td class="text-monospace">${tone.voices[0].wave.name}</td>
-				<td class="text-right">${tone.voices[1] ? tone.voices[1].waveNo : ''}</td>
-				<td class="text-monospace">${tone.voices[1] ? tone.voices[1].wave.name : ''}</td>
-				<td class="text-right">${tone.voices[2] ? tone.voices[2].waveNo : ''}</td>
-				<td class="text-monospace">${tone.voices[2] ? tone.voices[2].wave.name : ''}</td>
-				<td class="text-right">${tone.voices[3] ? tone.voices[3].waveNo : ''}</td>
-				<td class="text-monospace">${tone.voices[3] ? tone.voices[3].wave.name : ''}</td>
+				<td class="text-end">${tone.toneNo}</td>
+				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
+				<td class="text-end">${tone.voices[0].waveNo}</td>
+				<td class="font-monospace">${tone.voices[0].wave.name}</td>
+				<td class="text-end">${tone.voices[1] ? tone.voices[1].waveNo : ''}</td>
+				<td class="font-monospace">${tone.voices[1] ? tone.voices[1].wave.name : ''}</td>
+				<td class="text-end">${tone.voices[2] ? tone.voices[2].waveNo : ''}</td>
+				<td class="font-monospace">${tone.voices[2] ? tone.voices[2].wave.name : ''}</td>
+				<td class="text-end">${tone.voices[3] ? tone.voices[3].waveNo : ''}</td>
+				<td class="font-monospace">${tone.voices[3] ? tone.voices[3].wave.name : ''}</td>
 			</tr>
 		`)}
 		</tbody>
@@ -89,15 +89,15 @@ const templateDrumSetList = (json) => html`
 	<table class="table table-sm table-hover w-auto mb-0">
 		<thead>
 			<tr>
-				<th class="text-right pl-4">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Voice</th>
 			</tr>
 		</thead>
 		<tbody>
 		${json.drumSets.map((drumSet) => html`
 			<tr>
-				<td class="text-right">${drumSet.drumSetNo}</td>
-				<td class="text-monospace"><a href="#/drumSets/${drumSet.drumSetNo}">${drumSet.name}</a></td>
+				<td class="text-end">${drumSet.drumSetNo}</td>
+				<td class="font-monospace"><a href="#/drumSets/${drumSet.drumSetNo}">${drumSet.name}</a></td>
 			</tr>
 		`)}
 		</tbody>
@@ -107,78 +107,78 @@ const templateDrumSetList = (json) => html`
 const templateVoice = (voice, json) => html`
 	<div class="card mb-3">
 		<div class="card-header">
-			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="text-monospace h4">${voice.wave.name}</span></h3>
+			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="font-monospace h4">${voice.wave.name}</span></h3>
 		</div>
 		<div class="card-body d-flex flex-row">
-			<table class="table table-sm w-auto mb-0 mr-3">
+			<table class="table table-sm w-auto mb-0 me-3">
 				<tbody>
 					<tr>
 						<th>Note Limit Low</th>
-						<td class="text-right">${fmt.noteNameY(voice.bytes[2])}</td>
+						<td class="text-end">${fmt.noteNameY(voice.bytes[2])}</td>
 					</tr>
 					<tr>
 						<th>Note Limit High</th>
-						<td class="text-right">${fmt.noteNameY(voice.bytes[3])}</td>
+						<td class="text-end">${fmt.noteNameY(voice.bytes[3])}</td>
 					</tr>
 					<tr>
 						<th>Velocity Limit Low</th>
-						<td class="text-right">${voice.bytes[4]}</td>
+						<td class="text-end">${voice.bytes[4]}</td>
 					</tr>
 					<tr>
 						<th>Velocity Limit High</th>
-						<td class="text-right">${voice.bytes[5]}</td>
+						<td class="text-end">${voice.bytes[5]}</td>
 					</tr>
 					<tr>
 						<th>Note Shift</th>
-						<td class="text-right">${fmt.sint7offset6(voice.bytes[15])}</td>
+						<td class="text-end">${fmt.sint7offset6(voice.bytes[15])}</td>
 					</tr>
 					<tr>
 						<th>Detune</th>
-						<td class="text-right">${fmt.sint7offset6(voice.bytes[16])}</td>
+						<td class="text-end">${fmt.sint7offset6(voice.bytes[16])}</td>
 					</tr>
 					<tr>
 						<th>Pitch Scaling Rate</th>
-						<td class="text-right">${fmt.pitchScalingRateMU(voice.bytes[17])}</td>
+						<td class="text-end">${fmt.pitchScalingRateMU(voice.bytes[17])}</td>
 					</tr>
 					<tr>
 						<th>Pitch Scaling Center</th>
-						<td class="text-right">${fmt.noteNameY(voice.bytes[18])}</td>
+						<td class="text-end">${fmt.noteNameY(voice.bytes[18])}</td>
 					</tr>
 					<tr>
 						<th>Element Volume</th>
-						<td class="text-right">${voice.bytes[57]}</td>
+						<td class="text-end">${voice.bytes[57]}</td>
 					</tr>
 				</tbody>
 			</table>
 			<!-- PEG -->
-			<div class="mr-3">
+			<div class="me-3">
 				<table class="table table-sm w-auto">
 					<thead>
 						<tr>
 							<th>PEG Env.</th>
-							<th class="text-right">I</th>
-							<th class="text-right">A</th>
-							<th class="text-right">D1</th>
-							<th class="text-right">D2</th>
-							<th class="text-right">R</th>
+							<th class="text-end">I</th>
+							<th class="text-end">A</th>
+							<th class="text-end">D1</th>
+							<th class="text-end">D2</th>
+							<th class="text-end">R</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<th>Rate</th>
-							<td class="text-right">-</td>
-							<td class="text-right">${voice.bytes[24]}</td>
-							<td class="text-right">${voice.bytes[25]}</td>
-							<td class="text-right">${voice.bytes[26]}</td>
-							<td class="text-right">${voice.bytes[27]}</td>
+							<td class="text-end">-</td>
+							<td class="text-end">${voice.bytes[24]}</td>
+							<td class="text-end">${voice.bytes[25]}</td>
+							<td class="text-end">${voice.bytes[26]}</td>
+							<td class="text-end">${voice.bytes[27]}</td>
 						</tr>
 						<tr>
 							<th>Level</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[28])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[29])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[30])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[31])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[32])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[28])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[29])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[30])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[31])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[32])}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -186,23 +186,23 @@ const templateVoice = (voice, json) => html`
 					<tbody>
 						<tr>
 							<th>Pitch EG Depth</th>
-							<td class="text-right">${fmt.pitchEGDepthMU(voice.bytes[19])}</td>
+							<td class="text-end">${fmt.pitchEGDepthMU(voice.bytes[19])}</td>
 						</tr>
 						<tr>
 							<th>PEG Depth Level Vel Sens.</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[20])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[20])}</td>
 						</tr>
 						<tr>
 							<th>PEG Depth Rate Vel Sens.</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[21])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[21])}</td>
 						</tr>
 						<tr>
 							<th>PEG Depth Rate Scaling</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[22])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[22])}</td>
 						</tr>
 						<tr>
 							<th>PEG Depth Rate Scal. Center</th>
-							<td class="text-right">${fmt.noteNameY(voice.bytes[23])}</td>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[23])}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -210,68 +210,68 @@ const templateVoice = (voice, json) => html`
 					<tbody>
 						<tr>
 							<th>LFO Wave</th>
-							<td class="text-right">${fmt.lfoWaveMU(voice.bytes[7])}</td>
+							<td class="text-end">${fmt.lfoWaveMU(voice.bytes[7])}</td>
 						</tr>
 						<tr>
 							<th>LFO Phase Init</th>
-							<td class="text-right">${fmt.onOff(voice.bytes[8])}</td>
+							<td class="text-end">${fmt.onOff(voice.bytes[8])}</td>
 						</tr>
 						<tr>
 							<th>LFO Speed</th>
-							<td class="text-right">${voice.bytes[9]}</td>
+							<td class="text-end">${voice.bytes[9]}</td>
 						</tr>
 						<tr>
 							<th>PLFO Delay</th>
-							<td class="text-right">${voice.bytes[10]}</td>
+							<td class="text-end">${voice.bytes[10]}</td>
 						</tr>
 						<tr>
 							<th>PLFO Fade Time</th>
-							<td class="text-right">${voice.bytes[11]}</td>
+							<td class="text-end">${voice.bytes[11]}</td>
 						</tr>
 						<tr>
 							<th>LFO PMod</th>
-							<td class="text-right">${voice.bytes[12]}</td>
+							<td class="text-end">${voice.bytes[12]}</td>
 						</tr>
 						<tr>
 							<th>LFO FMod</th>
-							<td class="text-right">${voice.bytes[13]}</td>
+							<td class="text-end">${voice.bytes[13]}</td>
 						</tr>
 						<tr>
 							<th>LFO AMod</th>
-							<td class="text-right">${voice.bytes[14]}</td>
+							<td class="text-end">${voice.bytes[14]}</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<!-- FEG -->
-			<div class="mr-3">
+			<div class="me-3">
 				<table class="table table-sm w-auto">
 					<thead>
 						<tr>
 							<th>FEG Env.</th>
-							<th class="text-right">I</th>
-							<th class="text-right">A</th>
-							<th class="text-right">D1</th>
-							<th class="text-right">D2</th>
-							<th class="text-right">R</th>
+							<th class="text-end">I</th>
+							<th class="text-end">A</th>
+							<th class="text-end">D1</th>
+							<th class="text-end">D2</th>
+							<th class="text-end">R</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<th>Rate</th>
-							<td class="text-right">-</td>
-							<td class="text-right">${voice.bytes[48]}</td>
-							<td class="text-right">${voice.bytes[49]}</td>
-							<td class="text-right">${voice.bytes[50]}</td>
-							<td class="text-right">${voice.bytes[51]}</td>
+							<td class="text-end">-</td>
+							<td class="text-end">${voice.bytes[48]}</td>
+							<td class="text-end">${voice.bytes[49]}</td>
+							<td class="text-end">${voice.bytes[50]}</td>
+							<td class="text-end">${voice.bytes[51]}</td>
 						</tr>
 						<tr>
 							<th>Level</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[52])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[53])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[54])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[55])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[56])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[52])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[53])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[54])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[55])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[56])}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -279,26 +279,26 @@ const templateVoice = (voice, json) => html`
 					<thead>
 						<tr>
 							<th>Filter Scaling</th>
-							<th class="text-right">1</th>
-							<th class="text-right">2</th>
-							<th class="text-right">3</th>
-							<th class="text-right">4</th>
+							<th class="text-end">1</th>
+							<th class="text-end">2</th>
+							<th class="text-end">3</th>
+							<th class="text-end">4</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<th>Break Point</th>
-							<td class="text-right">${voice.bytes[36]}</td>
-							<td class="text-right">${voice.bytes[37]}</td>
-							<td class="text-right">${voice.bytes[38]}</td>
-							<td class="text-right">${voice.bytes[39]}</td>
+							<td class="text-end">${voice.bytes[36]}</td>
+							<td class="text-end">${voice.bytes[37]}</td>
+							<td class="text-end">${voice.bytes[38]}</td>
+							<td class="text-end">${voice.bytes[39]}</td>
 						</tr>
 						<tr>
 							<th>Offset</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[40])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[41])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[42])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[43])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[40])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[41])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[42])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[43])}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -306,80 +306,80 @@ const templateVoice = (voice, json) => html`
 					<tbody>
 						<tr>
 							<th>Filter Curve</th>
-							<td class="text-right">${voice.bytes[6]}</td>
+							<td class="text-end">${voice.bytes[6]}</td>
 						</tr>
 						<tr>
 							<th>Filter Resonance</th>
-							<td class="text-right">${voice.bytes[33]}</td>
+							<td class="text-end">${voice.bytes[33]}</td>
 						</tr>
 						<tr>
 							<th>Filter Cutoff Freq.</th>
-							<td class="text-right">${voice.bytes[35]}</td>
+							<td class="text-end">${voice.bytes[35]}</td>
 						</tr>
 						<tr>
 							<th>FEG Level Velocity Sens.</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[44])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[44])}</td>
 						</tr>
 						<tr>
 							<th>FEG Rate Velocity Sens.</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[45])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[45])}</td>
 						</tr>
 						<tr>
 							<th>FEG Rate Scaling</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[46])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[46])}</td>
 						</tr>
 						<tr>
 							<th>FEG Rate Scaling Center</th>
-							<td class="text-right">${fmt.noteNameY(voice.bytes[47])}</td>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[47])}</td>
 						</tr>
 						<tr>
 							<th>Resonance Sensitivity</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[79])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[79])}</td>
 						</tr>
 						<tr>
 							<th>High Pass Filter Cutoff Freq</th>
-							<td class="text-right">${voice.bytes[80]}</td>
+							<td class="text-end">${voice.bytes[80]}</td>
 						</tr>
 						<tr>
 							<th>FEG Depth</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[82])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[82])}</td>
 						</tr>
 						<tr>
 							<th>FEG Depth Vel Sens.</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[83])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[83])}</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<!-- AEG -->
-			<div class="mr-3">
+			<div class="me-3">
 				<table class="table table-sm w-auto">
 					<thead>
 						<tr>
 							<th>AEG Env.</th>
-							<th class="text-right">I</th>
-							<th class="text-right">A</th>
-							<th class="text-right">D1</th>
-							<th class="text-right">D2</th>
-							<th class="text-right">R</th>
+							<th class="text-end">I</th>
+							<th class="text-end">A</th>
+							<th class="text-end">D1</th>
+							<th class="text-end">D2</th>
+							<th class="text-end">R</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<th>Rate</th>
-							<td class="text-right">-</td>
-							<td class="text-right">${voice.bytes[71]}</td>
-							<td class="text-right">${voice.bytes[72]}</td>
-							<td class="text-right">${voice.bytes[73]}</td>
-							<td class="text-right">${voice.bytes[74]}</td>
+							<td class="text-end">-</td>
+							<td class="text-end">${voice.bytes[71]}</td>
+							<td class="text-end">${voice.bytes[72]}</td>
+							<td class="text-end">${voice.bytes[73]}</td>
+							<td class="text-end">${voice.bytes[74]}</td>
 						</tr>
 						<tr>
 							<th>Level</th>
-							<td class="text-right">${voice.bytes[81]}</td>
-							<td class="text-right">-</td>
-							<td class="text-right">${voice.bytes[75]}</td>
-							<td class="text-right">${voice.bytes[76]}</td>
-							<td class="text-right">-</td>
+							<td class="text-end">${voice.bytes[81]}</td>
+							<td class="text-end">-</td>
+							<td class="text-end">${voice.bytes[75]}</td>
+							<td class="text-end">${voice.bytes[76]}</td>
+							<td class="text-end">-</td>
 						</tr>
 					</tbody>
 				</table>
@@ -387,26 +387,26 @@ const templateVoice = (voice, json) => html`
 					<thead>
 						<tr>
 							<th>Level Scaling</th>
-							<th class="text-right">1</th>
-							<th class="text-right">2</th>
-							<th class="text-right">3</th>
-							<th class="text-right">4</th>
+							<th class="text-end">1</th>
+							<th class="text-end">2</th>
+							<th class="text-end">3</th>
+							<th class="text-end">4</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<th>Break Point</th>
-							<td class="text-right">${voice.bytes[58]}</td>
-							<td class="text-right">${voice.bytes[59]}</td>
-							<td class="text-right">${voice.bytes[60]}</td>
-							<td class="text-right">${voice.bytes[61]}</td>
+							<td class="text-end">${voice.bytes[58]}</td>
+							<td class="text-end">${voice.bytes[59]}</td>
+							<td class="text-end">${voice.bytes[60]}</td>
+							<td class="text-end">${voice.bytes[61]}</td>
 						</tr>
 						<tr>
 							<th>Offset</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[62])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[63])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[64])}</td>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[65])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[62])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[63])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[64])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[65])}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -414,27 +414,27 @@ const templateVoice = (voice, json) => html`
 					<tbody>
 						<tr>
 							<th>Amp Velocity Sens.</th>
-							<td class="text-right">${voice.bytes[34]}</td>
+							<td class="text-end">${voice.bytes[34]}</td>
 						</tr>
 						<tr>
 							<th>Velocity Curve</th>
-							<td class="text-right">${voice.bytes[66]}</td>
+							<td class="text-end">${voice.bytes[66]}</td>
 						</tr>
 						<tr>
 							<th>Pan</th>
-							<td class="text-right">${fmt.tonePanMU(voice.bytes[67])}</td>
+							<td class="text-end">${fmt.tonePanMU(voice.bytes[67])}</td>
 						</tr>
 						<tr>
 							<th>AEG Rate Scaling</th>
-							<td class="text-right">${fmt.sint7offset6(voice.bytes[68])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[68])}</td>
 						</tr>
 						<tr>
 							<th>AEG Rate Scaling Center</th>
-							<td class="text-right">${fmt.noteNameY(voice.bytes[69])}</td>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[69])}</td>
 						</tr>
 						<tr>
 							<th>AEG Key On Delay</th>
-							<td class="text-right">${voice.bytes[70]}</td>
+							<td class="text-end">${voice.bytes[70]}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -446,26 +446,26 @@ const templateVoice = (voice, json) => html`
 const templateTone = (tone, json) => html`
 	<div class="card mb-3">
 		<div class="card-header">
-			<h2 class="h6 mb-0">Voice No.${tone.toneNo}: <span class="text-monospace h4">${tone.name}</span></h2>
+			<h2 class="h6 mb-0">Voice No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
 		</div>
 		<div class="card-body d-flex flex-row">
-			<table class="table table-sm w-auto mb-0 mr-3">
+			<table class="table table-sm w-auto mb-0 me-3">
 				<tbody>
 					<tr>
 						<th>Voice Level</th>
-						<td class="text-right">${tone.commonBytes[1]}</td>
+						<td class="text-end">${tone.commonBytes[1]}</td>
 					</tr>
 				</tbody>
 			</table>
-			<table class="table table-sm w-auto mb-0 mr-3">
+			<table class="table table-sm w-auto mb-0 me-3">
 				<tbody>
 					<tr>
 						<th>Common 12</th>
-						<td class="text-right">${tone.commonBytes[12]}</td>
+						<td class="text-end">${tone.commonBytes[12]}</td>
 					</tr>
 					<tr>
 						<th>Common 13</th>
-						<td class="text-right">${tone.commonBytes[13]}</td>
+						<td class="text-end">${tone.commonBytes[13]}</td>
 					</tr>
 				</tbody>
 			</table>
@@ -475,50 +475,50 @@ const templateTone = (tone, json) => html`
 `;
 
 const templateDrumSet = (drumSet, json) => html`
-	<h2 class="text-monospace h4">${drumSet.name}</h2>
+	<h2 class="font-monospace h4">${drumSet.name}</h2>
 	<table class="table table-sm table-hover w-auto mb-0">
 		<thead>
 			<tr>
-				<th class="text-right">Note</th>
-				<th class="text-right">No.</th>
+				<th class="text-end">Note</th>
+				<th class="text-end">No.</th>
 				<th>Name</th>
-				<th class="text-right pl-4">b00</th>
-				<th class="text-right">b01</th>
-				<th class="text-right">Lev.</th>
-				<th class="text-right">Grp.</th>
-				<th class="text-right">Pan.</th>
-				<th class="text-right">Rev.</th>
-				<th class="text-right">Cho.</th>
-				<th class="text-right">Var.</th>
-				<th class="text-right">Rcv.<br>Note</br>Off</th>
-				<th class="text-right">Rcv.<br>Note</br>On</th>
-				<th class="text-right">b11</th>
-				<th class="text-right">b12</th>
-				<th class="text-right">b13</th>
-				<th class="text-right">b14</th>
-				<th class="text-right">b15</th>
-				<th class="text-right">EQ<br>Bass<br>Freq.</th>
-				<th class="text-right">EQ<br>Treble<br>Freq.</th>
-				<th class="text-right">b20</th>
-				<th class="text-right">Vel.<br>Sens.<br>Pth.</th>
-				<th class="text-right">Vel.<br>Sens.<br>LPF</th>
-				<th class="text-right">Pitch</th>
-				<th class="text-right">b26</th>
-				<th class="text-right">b27</th>
-				<th class="text-right">b28</th>
-				<th class="text-right">b29</th>
-				<th class="text-right">b30</th>
-				<th class="text-right">b31</th>
-				<th class="text-right">b32</th>
-				<th class="text-right">b33</th>
-				<th class="text-right">b34</th>
-				<th class="text-right">b35</th>
-				<th class="text-right">b36</th>
-				<th class="text-right">b37</th>
-				<th class="text-right">b38</th>
-				<th class="text-right">b39</th>
-				<th class="text-right">b40</th>
-				<th class="text-right">b41</th>
+				<th class="text-end ps-4">b00</th>
+				<th class="text-end">b01</th>
+				<th class="text-end">Lev.</th>
+				<th class="text-end">Grp.</th>
+				<th class="text-end">Pan.</th>
+				<th class="text-end">Rev.</th>
+				<th class="text-end">Cho.</th>
+				<th class="text-end">Var.</th>
+				<th class="text-end">Rcv.<br>Note</br>Off</th>
+				<th class="text-end">Rcv.<br>Note</br>On</th>
+				<th class="text-end">b11</th>
+				<th class="text-end">b12</th>
+				<th class="text-end">b13</th>
+				<th class="text-end">b14</th>
+				<th class="text-end">b15</th>
+				<th class="text-end">EQ<br>Bass<br>Freq.</th>
+				<th class="text-end">EQ<br>Treble<br>Freq.</th>
+				<th class="text-end">b20</th>
+				<th class="text-end">Vel.<br>Sens.<br>Pth.</th>
+				<th class="text-end">Vel.<br>Sens.<br>LPF</th>
+				<th class="text-end">Pitch</th>
+				<th class="text-end">b26</th>
+				<th class="text-end">b27</th>
+				<th class="text-end">b28</th>
+				<th class="text-end">b29</th>
+				<th class="text-end">b30</th>
+				<th class="text-end">b31</th>
+				<th class="text-end">b32</th>
+				<th class="text-end">b33</th>
+				<th class="text-end">b34</th>
+				<th class="text-end">b35</th>
+				<th class="text-end">b36</th>
+				<th class="text-end">b37</th>
+				<th class="text-end">b38</th>
+				<th class="text-end">b39</th>
+				<th class="text-end">b40</th>
+				<th class="text-end">b41</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -526,46 +526,46 @@ const templateDrumSet = (drumSet, json) => html`
 			const [noteNo, note] = e;
 			return html`
 			<tr>
-				<td class="text-right">${fmt.noteNameY(noteNo)}</td>
-				<td class="text-right text-muted">${noteNo}</td>
-				<td class="text-monospace">${note.name}</td>
-				<td class="text-right">${note.bytes[0]}</td>
-				<td class="text-right">${note.bytes[1]}</td>
-				<td class="text-right">${note.bytes[2]}</td>
-				<td class="text-right">${note.bytes[3]}</td>
-				<td class="text-right">${fmt.panpotR(note.bytes[4])}</td>
-				<td class="text-right">${note.bytes[5]}</td>
-				<td class="text-right">${note.bytes[6]}</td>
-				<td class="text-right">${note.bytes[7]}</td>
-				<td class="text-right">${fmt.onOff(note.bytes[9])}</td>
-				<td class="text-right">${fmt.onOff(note.bytes[10])}</td>
-				<td class="text-right">${note.bytes[11]}</td>
-				<td class="text-right">${note.bytes[12]}</td>
-				<td class="text-right">${note.bytes[13]}</td>
-				<td class="text-right">${note.bytes[14]}</td>
-				<td class="text-right">${note.bytes[15]}</td>
-				<td class="text-right">${note.bytes[18]}</td>
-				<td class="text-right">${note.bytes[19]}</td>
-				<td class="text-right">${note.bytes[20]}</td>
-				<td class="text-right">${note.bytes[21]}</td>
-				<td class="text-right">${note.bytes[22]}</td>
-				<td class="text-right">${note.bytes[23]}</td>
-				<td class="text-right">${note.bytes[26]}</td>
-				<td class="text-right">${fmt.sint8(note.bytes[27])}</td>
-				<td class="text-right">${fmt.sint8(note.bytes[28])}</td>
-				<td class="text-right">${note.bytes[29]}</td>
-				<td class="text-right">${note.bytes[30]}</td>
-				<td class="text-right">${note.bytes[31]}</td>
-				<td class="text-right">${note.bytes[32]}</td>
-				<td class="text-right">${note.bytes[33]}</td>
-				<td class="text-right">${note.bytes[34]}</td>
-				<td class="text-right">${note.bytes[35]}</td>
-				<td class="text-right">${note.bytes[36]}</td>
-				<td class="text-right">${note.bytes[37]}</td>
-				<td class="text-right">${note.bytes[38]}</td>
-				<td class="text-right">${note.bytes[39]}</td>
-				<td class="text-right">${note.bytes[40]}</td>
-				<td class="text-right">${note.bytes[41]}</td>
+				<td class="text-end">${fmt.noteNameY(noteNo)}</td>
+				<td class="text-end text-muted">${noteNo}</td>
+				<td class="font-monospace">${note.name}</td>
+				<td class="text-end">${note.bytes[0]}</td>
+				<td class="text-end">${note.bytes[1]}</td>
+				<td class="text-end">${note.bytes[2]}</td>
+				<td class="text-end">${note.bytes[3]}</td>
+				<td class="text-end">${fmt.panpotR(note.bytes[4])}</td>
+				<td class="text-end">${note.bytes[5]}</td>
+				<td class="text-end">${note.bytes[6]}</td>
+				<td class="text-end">${note.bytes[7]}</td>
+				<td class="text-end">${fmt.onOff(note.bytes[9])}</td>
+				<td class="text-end">${fmt.onOff(note.bytes[10])}</td>
+				<td class="text-end">${note.bytes[11]}</td>
+				<td class="text-end">${note.bytes[12]}</td>
+				<td class="text-end">${note.bytes[13]}</td>
+				<td class="text-end">${note.bytes[14]}</td>
+				<td class="text-end">${note.bytes[15]}</td>
+				<td class="text-end">${note.bytes[18]}</td>
+				<td class="text-end">${note.bytes[19]}</td>
+				<td class="text-end">${note.bytes[20]}</td>
+				<td class="text-end">${note.bytes[21]}</td>
+				<td class="text-end">${note.bytes[22]}</td>
+				<td class="text-end">${note.bytes[23]}</td>
+				<td class="text-end">${note.bytes[26]}</td>
+				<td class="text-end">${fmt.sint8(note.bytes[27])}</td>
+				<td class="text-end">${fmt.sint8(note.bytes[28])}</td>
+				<td class="text-end">${note.bytes[29]}</td>
+				<td class="text-end">${note.bytes[30]}</td>
+				<td class="text-end">${note.bytes[31]}</td>
+				<td class="text-end">${note.bytes[32]}</td>
+				<td class="text-end">${note.bytes[33]}</td>
+				<td class="text-end">${note.bytes[34]}</td>
+				<td class="text-end">${note.bytes[35]}</td>
+				<td class="text-end">${note.bytes[36]}</td>
+				<td class="text-end">${note.bytes[37]}</td>
+				<td class="text-end">${note.bytes[38]}</td>
+				<td class="text-end">${note.bytes[39]}</td>
+				<td class="text-end">${note.bytes[40]}</td>
+				<td class="text-end">${note.bytes[41]}</td>
 			</tr>
 			`;
 		})}
@@ -573,24 +573,25 @@ const templateDrumSet = (drumSet, json) => html`
 	</table>
 `;
 
-$(async () => {
-	const $modal = $('#my-modal');
+window.addEventListener('DOMContentLoaded', async () => {
+	const elemModal = new bootstrap.Modal(document.getElementById('my-modal'));
 	const modalContent = document.getElementById('my-modal-content');
 
-	$modal.modal('show');
+	elemModal.show();
 
 	// Loads a JSON file.
 	const url = (window.location.search.startsWith('?')) ? window.location.search.slice(1) : 'mu2000.json';
 	const res = await fetch(url);
 	if (!res.ok) {
-		$(modalContent).text(`Error: "${url}" not found.`);
+		modalContent.textContent = `Error: "${url}" not found.`;
 		return;
 	}
 	const json = await res.json();
+	modalContent.textContent = '';
 
 	// Adds event handlers.
-	$(window).on('hashchange', handleHashChange);
-	$modal.on('hide.bs.modal', () => {
+	window.addEventListener('hashchange', handleHashChange);
+	document.getElementById('my-modal').addEventListener('hide.bs.modal', () => {
 		if (window.location.hash !== '' && window.history.length > 2) {
 			window.history.back();
 		} else {
@@ -609,7 +610,7 @@ $(async () => {
 		// Checks whether the current URL hash is a supported format or not.
 		const m = window.location.hash.match(/^#\/(.*)\/(\d+)/u);
 		if (!m) {
-			$modal.modal('hide');
+			elemModal.hide();
 			return;
 		}
 
@@ -623,13 +624,13 @@ $(async () => {
 			render(templateDrumSet(json.drumSets[no], json), modalContent);
 			break;
 		default:
-			$modal.modal('hide');
+			elemModal.hide();
 			return;
 		}
 
 		// Shows the modal.
-		$('#my-modal-title').text(window.location.hash);
-		$modal.modal('show');
+		document.getElementById('my-modal-title').textContent = window.location.hash;
+		elemModal.show();
 	}
 });
 </script>
@@ -644,13 +645,17 @@ $(async () => {
 
 	<!-- Main screen -->
 	<main class="container mt-2">
-		<nav>
-			<div class="nav nav-tabs" role="tablist">
-				<a id="my-tab-programs" class="nav-item nav-link active" href="#my-pane-programs" role="tab" data-toggle="tab">Programs</a>
-				<a id="my-tab-tones" class="nav-item nav-link" href="#my-pane-tones" role="tab" data-toggle="tab">Voices</a>
-				<a id="my-tab-drumsets" class="nav-item nav-link" href="#my-pane-drumsets" role="tab" data-toggle="tab">DrumKits</a>
-			</div>
-		</nav>
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button id="my-tab-programs" class="nav-item nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-programs">Programs</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button id="my-tab-tones" class="nav-item nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tones">Voices</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button id="my-tab-drumsets" class="nav-item nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-drumsets">DrumKits</button>
+			</li>
+		</ul>
 		<div class="tab-content mt-2">
 			<div id="my-pane-programs" class="tab-pane fade show active" role="tabpanel"></div>
 			<div id="my-pane-tones" class="tab-pane fade" role="tabpanel"></div>
@@ -660,15 +665,15 @@ $(async () => {
 
 	<!-- Information modal -->
 	<div id="my-modal" class="modal" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+		<div class="modal-dialog modal-dialog-scrollable modal-xl my-modal-fluid" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h2 id="my-modal-title" class="modal-title h6 text-black-50"></h2>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 				</div>
 				<div class="modal-body">
 					<div id="my-modal-content" class="container-fluid">
-						Now loading...
+						Loading...
 					</div>
 				</div>
 			</div>

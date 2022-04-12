@@ -7,7 +7,7 @@
 	color: black;
 }
 
-.table td.text-right {
+.table td.text-end {
 	min-width: 2rem;
 }
 
@@ -23,8 +23,9 @@
 	content: ')';
 }
 
-@media (min-width: 1408px) {
-	.modal-xl {
-		max-width: 1348px;
+@media (max-width: 1400px) {
+	.modal-dialog.my-modal-fluid {
+		max-width: inherit;
+		width: 95%;
 	}
 }

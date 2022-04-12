@@ -1,8 +1,7 @@
 {
 	"env": {
 		"browser": true,
-		"es2017": true,
-		"jquery": true
+		"es2017": true
 	},
 	"extends": "eslint:all",
 	"parserOptions": {
