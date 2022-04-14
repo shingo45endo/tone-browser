@@ -2,10 +2,8 @@
   "name": "tone-browser",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "lint": "eslint *.js *.html",
-    "start": "browser-sync start --server --files \"**/*\""
+    "lint": "eslint *.js *.html"
   },
   "repository": {
     "type": "git",
@@ -18,8 +16,7 @@
   },
   "homepage": "https://github.com/shingo45endo/tone-browser#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.5",
-    "eslint": "^6.8.0",
-    "eslint-plugin-html": "^6.1.0"
+    "eslint": "^7.32.0",
+    "eslint-plugin-html": "^6.1.2"
   }
 }
