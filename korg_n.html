@@ -140,9 +140,9 @@ const templateVoice = (voice, json) => html`
 			<h3 class="h6 mb-0">Wave No.${(voice.toneWave) ? voice.toneWaveNo : voice.drumSetNo}: <span class="font-monospace h4">${(voice.toneWave || voice.drumSet).name}</span></h3>
 		</div>
 		<div class="card-body d-flex flex-row">
-			<div>
+			<div class="me-3">
 				<!-- OSC -->
-				<table class="table table-sm w-auto mb-0 me-3">
+				<table class="table table-sm w-auto">
 					<tbody>
 						<tr>
 							<th>OSC Octave</th>
@@ -178,7 +178,7 @@ const templateVoice = (voice, json) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto mt-3 mb-0 me-3">
+				<table class="table table-sm w-auto">
 					<tbody>
 						<tr>
 							<th>Pan A/B</th>
@@ -195,50 +195,8 @@ const templateVoice = (voice, json) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="d-flex flex-column justify-content-between">
-				<!-- PitchLFO -->
-				<table class="table table-sm w-auto mb-0 me-3">
-					<tbody>
-						<tr>
-							<th>PitchLFO WaveForm</th>
-							<td class="text-end">${voice.bytes[10]}</td>
-						</tr>
-						<tr>
-							<th>PitchLFO Frequency</th>
-							<td class="text-end">${voice.bytes[11]}</td>
-						</tr>
-						<tr>
-							<th>PitchLFO Delay</th>
-							<td class="text-end">${voice.bytes[12]}</td>
-						</tr>
-						<tr>
-							<th>PitchLFO FadeIn</th>
-							<td class="text-end">${voice.bytes[13]}</td>
-						</tr>
-						<tr>
-							<th>PitchLFO Intensity</th>
-							<td class="text-end">${voice.bytes[14]}</td>
-						</tr>
-					</tbody>
-				</table>
-				<!-- P.EG -->
-				<table class="table table-sm w-auto mt-3 mb-0 me-3">
-					<tbody>
-						<tr>
-							<th>P.EG Intensity</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[15])}</td>
-						</tr>
-						<tr>
-							<th>P.EG IntVelSense</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[16])}</td>
-						</tr>
-						<tr>
-							<th>P.EG TimeVelSense</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[17])}</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-sm w-auto mt-3 mb-0 me-3">
+			<div class="me-3">
+				<table class="table table-sm w-auto">
 					<thead>
 						<tr>
 							<th>P.EG</th>
@@ -265,10 +223,79 @@ const templateVoice = (voice, json) => html`
 						</tr>
 					</tbody>
 				</table>
+				<!-- PitchLFO -->
+				<table class="table table-sm w-auto">
+					<tbody>
+						<tr>
+							<th>PitchLFO WaveForm</th>
+							<td class="text-end">${voice.bytes[10]}</td>
+						</tr>
+						<tr>
+							<th>PitchLFO Frequency</th>
+							<td class="text-end">${voice.bytes[11]}</td>
+						</tr>
+						<tr>
+							<th>PitchLFO Delay</th>
+							<td class="text-end">${voice.bytes[12]}</td>
+						</tr>
+						<tr>
+							<th>PitchLFO FadeIn</th>
+							<td class="text-end">${voice.bytes[13]}</td>
+						</tr>
+						<tr>
+							<th>PitchLFO Intensity</th>
+							<td class="text-end">${voice.bytes[14]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- P.EG -->
+				<table class="table table-sm w-auto">
+					<tbody>
+						<tr>
+							<th>P.EG Intensity</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[15])}</td>
+						</tr>
+						<tr>
+							<th>P.EG IntVelSense</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[16])}</td>
+						</tr>
+						<tr>
+							<th>P.EG TimeVelSense</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[17])}</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			<div class="d-flex flex-column justify-content-between">
+			<div class="me-3">
+				<table class="table table-sm w-auto">
+					<thead>
+						<tr>
+							<th>F.EG</th>
+							<th class="text-end">A</th>
+							<th class="text-end">D</th>
+							<th class="text-end">S</th>
+							<th class="text-end">R</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Time</th>
+							<td class="text-end">${voice.bytes[41]}</td>
+							<td class="text-end">${voice.bytes[43]}</td>
+							<td class="text-end">${voice.bytes[45]}</td>
+							<td class="text-end">${voice.bytes[47]}</td>
+						</tr>
+						<tr>
+							<th>Level</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[42])}</td>
+							<td class="text-end">${fmt.sint8(voice.bytes[44])}</td>
+							<td class="text-end">${fmt.sint8(voice.bytes[46])}</td>
+							<td class="text-end">${fmt.sint8(voice.bytes[48])}</td>
+						</tr>
+					</tbody>
+				</table>
 				<!-- FiltLFO -->
-				<table class="table table-sm w-auto mb-0 me-3">
+				<table class="table table-sm w-auto">
 					<tbody>
 						<tr>
 							<th>FiltLFO WaveForm</th>
@@ -293,7 +320,7 @@ const templateVoice = (voice, json) => html`
 					</tbody>
 				</table>
 				<!-- VDF/Color -->
-				<table class="table table-sm w-auto mt-3 mb-0 me-3">
+				<table class="table table-sm w-auto">
 					<tbody>
 						<tr>
 							<th>VDF Cutoff</th>
@@ -330,7 +357,7 @@ const templateVoice = (voice, json) => html`
 					</tbody>
 				</table>
 				<!-- F.EG -->
-				<table class="table table-sm w-auto mt-3 mb-0 me-3">
+				<table class="table table-sm w-auto">
 					<tbody>
 						<tr>
 							<th>F.EG Intensity</th>
@@ -350,10 +377,12 @@ const templateVoice = (voice, json) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto mt-3 mb-0 me-3">
+			</div>
+			<div class="me-3">
+				<table class="table table-sm w-auto">
 					<thead>
 						<tr>
-							<th>F.EG</th>
+							<th>A.EG</th>
 							<th class="text-end">A</th>
 							<th class="text-end">D</th>
 							<th class="text-end">S</th>
@@ -363,24 +392,22 @@ const templateVoice = (voice, json) => html`
 					<tbody>
 						<tr>
 							<th>Time</th>
-							<td class="text-end">${voice.bytes[41]}</td>
-							<td class="text-end">${voice.bytes[43]}</td>
-							<td class="text-end">${voice.bytes[45]}</td>
-							<td class="text-end">${voice.bytes[47]}</td>
+							<td class="text-end">${voice.bytes[62]}</td>
+							<td class="text-end">${voice.bytes[64]}</td>
+							<td class="text-end">${voice.bytes[66]}</td>
+							<td class="text-end">${voice.bytes[68]}</td>
 						</tr>
 						<tr>
 							<th>Level</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[42])}</td>
-							<td class="text-end">${fmt.sint8(voice.bytes[44])}</td>
-							<td class="text-end">${fmt.sint8(voice.bytes[46])}</td>
-							<td class="text-end">${fmt.sint8(voice.bytes[48])}</td>
+							<td class="text-end">${fmt.sint8(voice.bytes[63])}</td>
+							<td class="text-end">${fmt.sint8(voice.bytes[65])}</td>
+							<td class="text-end">${fmt.sint8(voice.bytes[67])}</td>
+							<td class="text-end">-</td>
 						</tr>
 					</tbody>
 				</table>
-			</div>
-			<div class="d-flex flex-column justify-content-between">
 				<!-- AmpLFO -->
-				<table class="table table-sm w-auto mb-0 me-3">
+				<table class="table table-sm w-auto">
 					<tbody>
 						<tr>
 							<th>AmpLFO WaveForm</th>
@@ -405,7 +432,7 @@ const templateVoice = (voice, json) => html`
 					</tbody>
 				</table>
 				<!-- VDA -->
-				<table class="table table-sm w-auto mt-3 mb-0 me-3">
+				<table class="table table-sm w-auto mb-3">
 					<tbody>
 						<tr>
 							<th>VDA KBDTRK Key</th>
@@ -430,7 +457,7 @@ const templateVoice = (voice, json) => html`
 					</tbody>
 				</table>
 				<!-- A.EG -->
-				<table class="table table-sm w-auto mt-3 mb-0 me-3">
+				<table class="table table-sm w-auto">
 					<tbody>
 						<tr>
 							<th>A.EG LevelVelSense</th>
@@ -443,33 +470,6 @@ const templateVoice = (voice, json) => html`
 						<tr>
 							<th>A.EG TimeVel Sw</th>
 							<td class="text-end">${voice.bytes[61]}</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-sm w-auto mt-3 mb-0 me-3">
-					<thead>
-						<tr>
-							<th>A.EG</th>
-							<th class="text-end">A</th>
-							<th class="text-end">D</th>
-							<th class="text-end">S</th>
-							<th class="text-end">R</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th>Time</th>
-							<td class="text-end">${voice.bytes[62]}</td>
-							<td class="text-end">${voice.bytes[64]}</td>
-							<td class="text-end">${voice.bytes[66]}</td>
-							<td class="text-end">${voice.bytes[68]}</td>
-						</tr>
-						<tr>
-							<th>Level</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[63])}</td>
-							<td class="text-end">${fmt.sint8(voice.bytes[65])}</td>
-							<td class="text-end">${fmt.sint8(voice.bytes[67])}</td>
-							<td class="text-end">-</td>
 						</tr>
 					</tbody>
 				</table>
