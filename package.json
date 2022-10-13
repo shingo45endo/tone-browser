@@ -1,7 +1,7 @@
 {
   "name": "tone-browser",
   "version": "0.1.0",
-  "description": "",
+  "description": "Tone parameters of multi-timbre MIDI sound modules in the 90's.",
   "scripts": {
     "lint": "eslint {*.js,*.html}"
   },
