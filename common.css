@@ -7,6 +7,11 @@
 	color: black;
 }
 
+.table tbody > tr > th::after {
+	content: ':';
+	color: gray;
+}
+
 .table td.text-end {
 	min-width: 2rem;
 }
@@ -15,11 +20,11 @@
 	line-height: 1;
 }
 
-.text-muted::before {
+.table .text-muted::before {
 	content: '(';
 }
 
-.text-muted::after {
+.table .text-muted::after {
 	content: ')';
 }
 
