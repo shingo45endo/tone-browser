@@ -22,32 +22,32 @@ const templateProgramList = (json) => html`
 	`)}
 	</ul>
 	<div class="tab-content mt-2">
-		${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
-			<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
-				<table class="table table-sm table-hover w-auto mb-0">
-					<thead>
-						<tr>
-							<th class="text-end">Prog#</th>
-							<th class="text-end">BankM</th>
-							<th class="text-end">BankL</th>
-							<th class="text-end ps-4">No.</th>
-							<th>Voice</th>
-						</tr>
-					</thead>
-					<tbody>
-					${json[key].map((program) => html`
-						<tr>
-							<td class="text-end">${program.prog}</td>
-							<td class="text-end">${program.bankM}</td>
-							<td class="text-end">${program.bankL}</td>
-							<td class="text-end">${program.toneNo}</td>
-							<td class="font-monospace"><a href="${program.tone.$ref}">${program.name}</a></td>
-						</tr>
-					`)}
-					</tbody>
-				</table>
-			</div>
-		`)}
+	${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
+		<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
+			<table class="table table-sm table-hover w-auto mb-0">
+				<thead>
+					<tr>
+						<th class="text-end">Prog#</th>
+						<th class="text-end">BankM</th>
+						<th class="text-end">BankL</th>
+						<th class="text-end ps-4">No.</th>
+						<th>Voice</th>
+					</tr>
+				</thead>
+				<tbody>
+				${json[key].map((program) => html`
+					<tr>
+						<td class="text-end">${program.prog}</td>
+						<td class="text-end">${program.bankM}</td>
+						<td class="text-end">${program.bankL}</td>
+						<td class="text-end">${program.toneNo}</td>
+						<td class="font-monospace"><a href="${program.tone.$ref}">${program.name}</a></td>
+					</tr>
+				`)}
+				</tbody>
+			</table>
+		</div>
+	`)}
 	</div>
 `;
 
@@ -105,7 +105,7 @@ const templateDrumSetList = (json) => html`
 	</table>
 `;
 
-const templateVoice = (voice, json) => html`
+const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
 			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="font-monospace h4">${voice.wave.name}</span></h3>
@@ -475,7 +475,7 @@ const templateTone = (tone, json) => html`
 	${tone.voices.map((voice) => templateVoice(voice, json))}
 `;
 
-const templateDrumSet = (drumSet, json) => html`
+const templateDrumSet = (drumSet, _) => html`
 	<h2 class="font-monospace h4">${drumSet.name}</h2>
 	<table class="table table-sm table-hover w-auto mb-0">
 		<thead>
@@ -523,9 +523,7 @@ const templateDrumSet = (drumSet, json) => html`
 			</tr>
 		</thead>
 		<tbody>
-		${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map((e) => {
-			const [noteNo, note] = e;
-			return html`
+		${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map(([noteNo, note]) => html`
 			<tr>
 				<td class="text-end">${fmt.noteNameY(noteNo)}</td>
 				<td class="text-end text-muted">${noteNo}</td>
@@ -568,8 +566,7 @@ const templateDrumSet = (drumSet, json) => html`
 				<td class="text-end">${note.bytes[40]}</td>
 				<td class="text-end">${note.bytes[41]}</td>
 			</tr>
-			`;
-		})}
+		`)}
 		</tbody>
 	</table>
 `;

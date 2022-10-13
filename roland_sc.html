@@ -212,7 +212,7 @@ const templateWaveList = (json) => html`
 	</table>
 `;
 
-const templateVoice = (voice, json) => html`
+const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
 			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="font-monospace h4">${voice.wave.name}</span></h3>
@@ -426,7 +426,7 @@ const templateCombi = (combi, json) => html`
 	</div>
 `;
 
-const templateDrumSet = (drumSet, json) => html`
+const templateDrumSet = (drumSet, _) => html`
 	<h2 class="font-monospace h4">${drumSet.name}</h2>
 	<table class="table table-sm table-hover w-auto mb-0">
 		<thead>
@@ -448,9 +448,7 @@ const templateDrumSet = (drumSet, json) => html`
 			</tr>
 		</thead>
 		<tbody>
-		${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map((e) => {
-			const [noteNo, note] = e;
-			return html`
+		${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map(([noteNo, note]) => html`
 			<tr>
 				<td class="text-end">${fmt.noteNameR(noteNo)}</td>
 				<td class="text-end text-muted">${noteNo}</td>
@@ -467,8 +465,7 @@ const templateDrumSet = (drumSet, json) => html`
 				<td class="text-end">${fmt.onOff(note.isRxNoteOn)}</td>
 				<td class="text-end">${fmt.onOff(note.isRxNoteOff)}</td>
 			</tr>
-			`;
-		})}
+		`)}
 		</tbody>
 	</table>
 `;

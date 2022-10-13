@@ -61,7 +61,7 @@ const templateWaveList = (json) => html`
 	</div>
 `;
 
-const templateVoice = (voice, json) => html`
+const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
 			<h3 class="h6 mb-0">Wave No.${(voice.toneWave) ? voice.toneWaveNo : voice.drumSetNo}: <span class="font-monospace h4">${(voice.toneWave ?? voice.drumSet)?.name}</span></h3>

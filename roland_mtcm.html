@@ -97,9 +97,7 @@ const templateDrumSetList = (json) => html`
 			</tr>
 		</thead>
 		<tbody>
-		${(Object.entries(json.drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map((e) => {
-			const [noteNo, note] = e;
-			return html`
+		${(Object.entries(json.drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map(([noteNo, note]) => html`
 			<tr>
 				<td class="text-end">${fmt.noteNameR(noteNo)}</td>
 				<td class="text-end text-muted">${noteNo}</td>
@@ -109,8 +107,7 @@ const templateDrumSetList = (json) => html`
 				<td class="text-end">${panpot(note.panpot)}</td>
 				<td class="text-end">${fmt.onOff(note.isReverbOn)}</td>
 			</tr>
-			`;
-		})}
+		`)}
 		</tbody>
 	</table>
 `;
