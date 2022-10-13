@@ -93,8 +93,9 @@ export function makeDomLoadedHandler(prop, bsGetOrCreateInstance) {
 			}
 		});
 
-		handleHashChange();
+		// Moves to the initial state.
 		elemModalContent.textContent = '';
+		handleHashChange();
 
 		function handleHashChange() {
 			// Checks whether the current URL hash is a supported format or not.
