@@ -411,11 +411,11 @@ const templateTone = (tone, json) => html`
 						</tr>
 						<tr>
 							<th>VDF MG OSC 1</th>
-						<td class="text-end">${((tone.commonBytes[16] & 0x20) !== 0) ? 'On' : 'Off'}</td>
+						<td class="text-end">${fmt.onOff((tone.commonBytes[16] & 0x20) !== 0)}</td>
 						</tr>
 						<tr>
 							<th>VDF MG OSC 2</th>
-						<td class="text-end">${((tone.commonBytes[16] & 0x40) !== 0) ? 'On' : 'Off'}</td>
+						<td class="text-end">${fmt.onOff((tone.commonBytes[16] & 0x40) !== 0)}</td>
 						</tr>
 						<tr>
 							<th>VDF MG Frequency</th>
