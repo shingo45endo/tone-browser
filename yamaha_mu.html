@@ -74,12 +74,12 @@ const templateToneList = (json) => html`
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
 				<td class="text-end">${tone.voices[0].waveNo}</td>
 				<td class="font-monospace">${tone.voices[0].wave.name}</td>
-				<td class="text-end">${tone.voices[1] ? tone.voices[1].waveNo : ''}</td>
-				<td class="font-monospace">${tone.voices[1] ? tone.voices[1].wave.name : ''}</td>
-				<td class="text-end">${tone.voices[2] ? tone.voices[2].waveNo : ''}</td>
-				<td class="font-monospace">${tone.voices[2] ? tone.voices[2].wave.name : ''}</td>
-				<td class="text-end">${tone.voices[3] ? tone.voices[3].waveNo : ''}</td>
-				<td class="font-monospace">${tone.voices[3] ? tone.voices[3].wave.name : ''}</td>
+				<td class="text-end">${tone.voices[1]?.waveNo ?? ''}</td>
+				<td class="font-monospace">${tone.voices[1]?.wave.name ?? ''}</td>
+				<td class="text-end">${tone.voices[2]?.waveNo ?? ''}</td>
+				<td class="font-monospace">${tone.voices[2]?.wave.name ?? ''}</td>
+				<td class="text-end">${tone.voices[3]?.waveNo ?? ''}</td>
+				<td class="font-monospace">${tone.voices[3]?.wave.name ?? ''}</td>
 			</tr>
 		`)}
 		</tbody>

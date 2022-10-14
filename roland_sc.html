@@ -13,6 +13,16 @@ import {html} from 'https://unpkg.com/lit-html?module';
 import {makeDomLoadedHandler} from './common.js';
 import {formatters as fmt} from './formatters.js';
 
+function getRef(program) {
+	for (const key of ['tone', 'tone4', 'combi']) {
+		if (program[key]?.$ref) {
+			return program[key].$ref;
+		}
+	}
+	console.assert(false);
+	return null;
+}
+
 const templateProgramList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
@@ -37,16 +47,6 @@ const templateProgramList = (json) => html`
 		</tbody>
 	</table>
 `;
-
-function getRef(program) {
-	for (const key of ['tone', 'tone4', 'combi']) {
-		if (program[key] && program[key].$ref) {
-			return program[key].$ref;
-		}
-	}
-	console.assert(false);
-	return null;
-}
 
 const templateProgDrumList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
@@ -90,8 +90,8 @@ const templateToneList = (json) => html`
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
 				<td class="text-end">${tone.voices[0].waveNo}</td>
 				<td class="font-monospace">${tone.voices[0].wave.name}</td>
-				<td class="text-end">${tone.voices[1] ? tone.voices[1].waveNo : ''}</td>
-				<td class="font-monospace">${tone.voices[1] ? tone.voices[1].wave.name : ''}</td>
+				<td class="text-end">${tone.voices[1]?.waveNo ?? ''}</td>
+				<td class="font-monospace">${tone.voices[1]?.wave.name ?? ''}</td>
 			</tr>
 		`)}
 		</tbody>
@@ -196,11 +196,11 @@ const templateWaveList = (json) => html`
 								<td class="text-end">${fmt.noteNameR(multiSample.high)}</td>
 								<td class="text-end text-muted">${multiSample.high}</td>
 								<td class="text-end">${multiSample.level}</td>
-								<td class="text-end">${multiSample.sampleNo}</td>
-								${((sample) => html`
+								<td class="text-end">${(multiSample.sampleNo >= 0) ? multiSample.sampleNo : ''}</td>
+							${((sample) => html`
 								<td class="text-end">${(sample) ? fmt.noteNameR(sample.key) : '--'}</td>
-								<td class="text-end text-muted">${(sample) ? sample.key : '--'}</td>
-								`)(json.samples[multiSample.sampleNo])}
+								<td class="text-end text-muted">${sample?.key ?? '--'}</td>
+							`)(json.samples[multiSample.sampleNo])}
 							</tr>
 						`)}
 						<tbody>
