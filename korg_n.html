@@ -14,7 +14,7 @@ import {makeDomLoadedHandler} from './common.js';
 import {formatters as fmt} from './formatters.js';
 
 const templateToneList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">No.</th>
@@ -41,7 +41,7 @@ const templateToneList = (json) => html`
 `;
 
 const templateDrumSetList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end ps-4">No.</th>
@@ -60,7 +60,7 @@ const templateDrumSetList = (json) => html`
 `;
 
 const templateCombiList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">No.</th>
@@ -99,8 +99,8 @@ const templateCombiList = (json) => html`
 `;
 
 const templateWaveList = (json) => html`
-	<div class="d-flex flex-row">
-		<table class="table table-sm table-hover w-auto mb-0">
+	<div class="d-flex flex-row gap-3">
+		<table class="table table-sm table-hover w-auto">
 			<thead>
 				<tr>
 					<th class="text-end">No.</th>
@@ -116,7 +116,7 @@ const templateWaveList = (json) => html`
 			`)}
 			</tbody>
 		</table>
-		<table class="table table-sm table-hover w-auto mb-0 ml-4">
+		<table class="table table-sm table-hover w-auto">
 			<thead>
 				<tr>
 					<th class="text-end">No.</th>
@@ -140,10 +140,10 @@ const templateVoice = (voice, _) => html`
 		<div class="card-header">
 			<h3 class="h6 mb-0">Wave No.${(voice.toneWave) ? voice.toneWaveNo : voice.drumSetNo}: <span class="font-monospace h4">${(voice.toneWave ?? voice.drumSet)?.name}</span></h3>
 		</div>
-		<div class="card-body d-flex flex-row">
-			<div class="me-3">
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
 				<!-- OSC -->
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>OSC Octave</th>
@@ -179,7 +179,7 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>Pan A/B</th>
@@ -196,8 +196,8 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3">
-				<table class="table table-sm w-auto">
+			<div>
+				<table class="table table-sm">
 					<thead>
 						<tr>
 							<th>P.EG</th>
@@ -225,7 +225,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 				<!-- PitchLFO -->
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>PitchLFO WaveForm</th>
@@ -250,7 +250,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 				<!-- P.EG -->
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>P.EG Intensity</th>
@@ -267,8 +267,8 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3">
-				<table class="table table-sm w-auto">
+			<div>
+				<table class="table table-sm">
 					<thead>
 						<tr>
 							<th>F.EG</th>
@@ -296,7 +296,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 				<!-- FiltLFO -->
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>FiltLFO WaveForm</th>
@@ -321,7 +321,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 				<!-- VDF/Color -->
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>VDF Cutoff</th>
@@ -358,7 +358,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 				<!-- F.EG -->
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>F.EG Intensity</th>
@@ -379,8 +379,8 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3">
-				<table class="table table-sm w-auto">
+			<div>
+				<table class="table table-sm">
 					<thead>
 						<tr>
 							<th>A.EG</th>
@@ -408,7 +408,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 				<!-- AmpLFO -->
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>AmpLFO WaveForm</th>
@@ -433,7 +433,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 				<!-- VDA -->
-				<table class="table table-sm w-auto mb-3">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>VDA KBDTRK Key</th>
@@ -458,7 +458,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 				<!-- A.EG -->
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>A.EG LevelVelSense</th>
@@ -484,23 +484,25 @@ const templateTone = (tone, json) => html`
 		<div class="card-header">
 			<h2 class="h6 mb-0">Program No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
 		</div>
-		<div class="card-body d-flex flex-row">
-			<table class="table table-sm w-auto mb-0 me-3">
-				<tbody>
-					<tr>
-						<th>Common 11</th>
-						<td class="text-end">${tone.commonBytes[11]}</td>
-					</tr>
-					<tr>
-						<th>Common 12</th>
-						<td class="text-end">${tone.commonBytes[12]}</td>
-					</tr>
-					<tr>
-						<th>Common 13</th>
-						<td class="text-end">${tone.commonBytes[13]}</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Common 11</th>
+							<td class="text-end">${tone.commonBytes[11]}</td>
+						</tr>
+						<tr>
+							<th>Common 12</th>
+							<td class="text-end">${tone.commonBytes[12]}</td>
+						</tr>
+						<tr>
+							<th>Common 13</th>
+							<td class="text-end">${tone.commonBytes[13]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
 	${tone.voices.map((voice) => templateVoice(voice, json))}
@@ -526,7 +528,7 @@ const templateCombi = (combi, json) => html`
 
 const templateDrumSet = (drumSet, _) => html`
 	<h2 class="font-monospace h4">${drumSet.name}</h2>
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">Note</th>

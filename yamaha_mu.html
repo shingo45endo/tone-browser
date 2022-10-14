@@ -24,7 +24,7 @@ const templateProgramList = (json) => html`
 	<div class="tab-content mt-2">
 	${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
 		<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
-			<table class="table table-sm table-hover w-auto mb-0">
+			<table class="table table-sm table-hover w-auto">
 				<thead>
 					<tr>
 						<th class="text-end">Prog#</th>
@@ -52,7 +52,7 @@ const templateProgramList = (json) => html`
 `;
 
 const templateToneList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">No.</th>
@@ -87,7 +87,7 @@ const templateToneList = (json) => html`
 `;
 
 const templateDrumSetList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end ps-4">No.</th>
@@ -110,50 +110,52 @@ const templateVoice = (voice, _) => html`
 		<div class="card-header">
 			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="font-monospace h4">${voice.wave.name}</span></h3>
 		</div>
-		<div class="card-body d-flex flex-row">
-			<table class="table table-sm w-auto mb-0 me-3">
-				<tbody>
-					<tr>
-						<th>Note Limit Low</th>
-						<td class="text-end">${fmt.noteNameY(voice.bytes[2])}</td>
-					</tr>
-					<tr>
-						<th>Note Limit High</th>
-						<td class="text-end">${fmt.noteNameY(voice.bytes[3])}</td>
-					</tr>
-					<tr>
-						<th>Velocity Limit Low</th>
-						<td class="text-end">${voice.bytes[4]}</td>
-					</tr>
-					<tr>
-						<th>Velocity Limit High</th>
-						<td class="text-end">${voice.bytes[5]}</td>
-					</tr>
-					<tr>
-						<th>Note Shift</th>
-						<td class="text-end">${fmt.sint7offset6(voice.bytes[15])}</td>
-					</tr>
-					<tr>
-						<th>Detune</th>
-						<td class="text-end">${fmt.sint7offset6(voice.bytes[16])}</td>
-					</tr>
-					<tr>
-						<th>Pitch Scaling Rate</th>
-						<td class="text-end">${fmt.pitchScalingRateMU(voice.bytes[17])}</td>
-					</tr>
-					<tr>
-						<th>Pitch Scaling Center</th>
-						<td class="text-end">${fmt.noteNameY(voice.bytes[18])}</td>
-					</tr>
-					<tr>
-						<th>Element Volume</th>
-						<td class="text-end">${voice.bytes[57]}</td>
-					</tr>
-				</tbody>
-			</table>
-			<!-- PEG -->
-			<div class="me-3">
-				<table class="table table-sm w-auto">
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Note Limit Low</th>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[2])}</td>
+						</tr>
+						<tr>
+							<th>Note Limit High</th>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[3])}</td>
+						</tr>
+						<tr>
+							<th>Velocity Limit Low</th>
+							<td class="text-end">${voice.bytes[4]}</td>
+						</tr>
+						<tr>
+							<th>Velocity Limit High</th>
+							<td class="text-end">${voice.bytes[5]}</td>
+						</tr>
+						<tr>
+							<th>Note Shift</th>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[15])}</td>
+						</tr>
+						<tr>
+							<th>Detune</th>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[16])}</td>
+						</tr>
+						<tr>
+							<th>Pitch Scaling Rate</th>
+							<td class="text-end">${fmt.pitchScalingRateMU(voice.bytes[17])}</td>
+						</tr>
+						<tr>
+							<th>Pitch Scaling Center</th>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[18])}</td>
+						</tr>
+						<tr>
+							<th>Element Volume</th>
+							<td class="text-end">${voice.bytes[57]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<!-- PEG -->
+				<table class="table table-sm">
 					<thead>
 						<tr>
 							<th>PEG Env.</th>
@@ -183,7 +185,7 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>Pitch EG Depth</th>
@@ -207,7 +209,7 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>LFO Wave</th>
@@ -244,9 +246,9 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 			</div>
-			<!-- FEG -->
-			<div class="me-3">
-				<table class="table table-sm w-auto">
+			<div>
+				<!-- FEG -->
+				<table class="table table-sm">
 					<thead>
 						<tr>
 							<th>FEG Env.</th>
@@ -276,7 +278,7 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<thead>
 						<tr>
 							<th>Filter Scaling</th>
@@ -303,7 +305,7 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>Filter Curve</th>
@@ -352,9 +354,9 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 			</div>
-			<!-- AEG -->
-			<div class="me-3">
-				<table class="table table-sm w-auto">
+			<div>
+				<!-- AEG -->
+				<table class="table table-sm">
 					<thead>
 						<tr>
 							<th>AEG Env.</th>
@@ -384,7 +386,7 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<thead>
 						<tr>
 							<th>Level Scaling</th>
@@ -411,7 +413,7 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>Amp Velocity Sens.</th>
@@ -449,27 +451,31 @@ const templateTone = (tone, json) => html`
 		<div class="card-header">
 			<h2 class="h6 mb-0">Voice No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
 		</div>
-		<div class="card-body d-flex flex-row">
-			<table class="table table-sm w-auto mb-0 me-3">
-				<tbody>
-					<tr>
-						<th>Voice Level</th>
-						<td class="text-end">${tone.commonBytes[1]}</td>
-					</tr>
-				</tbody>
-			</table>
-			<table class="table table-sm w-auto mb-0 me-3">
-				<tbody>
-					<tr>
-						<th>Common 12</th>
-						<td class="text-end">${tone.commonBytes[12]}</td>
-					</tr>
-					<tr>
-						<th>Common 13</th>
-						<td class="text-end">${tone.commonBytes[13]}</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Voice Level</th>
+							<td class="text-end">${tone.commonBytes[1]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Common 12</th>
+							<td class="text-end">${tone.commonBytes[12]}</td>
+						</tr>
+						<tr>
+							<th>Common 13</th>
+							<td class="text-end">${tone.commonBytes[13]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
 	${tone.voices.map((voice) => templateVoice(voice, json))}
@@ -477,7 +483,7 @@ const templateTone = (tone, json) => html`
 
 const templateDrumSet = (drumSet, _) => html`
 	<h2 class="font-monospace h4">${drumSet.name}</h2>
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">Note</th>

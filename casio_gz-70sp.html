@@ -14,7 +14,7 @@ import {makeDomLoadedHandler} from './common.js';
 import {formatters as fmt} from './formatters.js';
 
 const templateToneList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">No.</th>
@@ -35,7 +35,7 @@ const templateToneList = (json) => html`
 `;
 
 const templateSampleList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end ps-4">No.</th>
@@ -75,53 +75,51 @@ const templateVoice = (voice, _, i) => html`
 			<div class="card-header">
 				<h3 class="h6 mb-0">Sample ${i + 1}</h3>
 			</div>
-			<div class="card-body d-flex flex-row">
-				<div>
-					<table class="table table-sm w-auto">
-						<tbody>
-							<tr>
-								<th>Pitch Key Follow</th>
-								<td class="text-end">${(voice.pitchKeyFollow !== 7) ? `1/${2 ** voice.pitchKeyFollow}` : '-'}</td>
-							</tr>
-							<tr>
-								<th>Pitch Tune</th>
-								<td class="text-end">${voice.pitchTune}</td>
-							</tr>
-							<tr>
-								<th>Panpot</th>
-								<td class="text-end">${voice.panpot}</td>
-							</tr>
-							<tr>
-								<th>Velocity Sensitivity Depth</th>
-								<td class="text-end">${voice.velSensDepth}</td>
-							</tr>
-							<tr>
-								<th>Velocity Sensitivity Offset</th>
-								<td class="text-end">${voice.velSensOffset}</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="table table-sm table-hover w-auto mb-0">
-						<thead>
-							<tr>
-								<th class="text-end">Note</th>
-								<th class="text-end">No.</th>
-								<th class="text-end">Sample No.</th>
-								<th>Sample Name</th>
-							</tr>
-						</thead>
-						<tbody>
-						${voice.samples.map((sample, noteNo) => html`
-							<tr class="${(12 < noteNo && noteNo <= 108) ? '' : 'd-none'}">
-								<td class="text-end">${fmt.noteNameR(noteNo)}</td>
-								<td class="text-end text-muted">${noteNo}</td>
-								<td class="text-end">${sample.sampleNo}</td>
-								<td class="font-monospace">${sample.name}</td>
-							</tr>
-						`)}
-						</tbody>
-					</table>
-				</div>
+			<div class="card-body pb-0">
+				<table class="table table-sm w-auto">
+					<tbody>
+						<tr>
+							<th>Pitch Key Follow</th>
+							<td class="text-end">${(voice.pitchKeyFollow !== 7) ? `1/${2 ** voice.pitchKeyFollow}` : '-'}</td>
+						</tr>
+						<tr>
+							<th>Pitch Tune</th>
+							<td class="text-end">${voice.pitchTune}</td>
+						</tr>
+						<tr>
+							<th>Panpot</th>
+							<td class="text-end">${voice.panpot}</td>
+						</tr>
+						<tr>
+							<th>Velocity Sensitivity Depth</th>
+							<td class="text-end">${voice.velSensDepth}</td>
+						</tr>
+						<tr>
+							<th>Velocity Sensitivity Offset</th>
+							<td class="text-end">${voice.velSensOffset}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm table-hover w-auto">
+					<thead>
+						<tr>
+							<th class="text-end">Note</th>
+							<th class="text-end">No.</th>
+							<th class="text-end">Sample No.</th>
+							<th>Sample</th>
+						</tr>
+					</thead>
+					<tbody>
+					${voice.samples.map((sample, noteNo) => html`
+						<tr class="${(12 < noteNo && noteNo <= 108) ? '' : 'd-none'}">
+							<td class="text-end">${fmt.noteNameR(noteNo)}</td>
+							<td class="text-end text-muted">${noteNo}</td>
+							<td class="text-end">${sample.sampleNo}</td>
+							<td class="font-monospace">${sample.name}</td>
+						</tr>
+					`)}
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>

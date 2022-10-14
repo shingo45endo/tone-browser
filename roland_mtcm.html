@@ -53,7 +53,7 @@ function keyFollow(value) {
 }
 
 const templateToneList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">No.</th>
@@ -84,7 +84,7 @@ const templateToneList = (json) => html`
 `;
 
 const templateDrumSetList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">Note</th>
@@ -113,7 +113,7 @@ const templateDrumSetList = (json) => html`
 `;
 
 const templateSampleList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">No.</th>
@@ -146,9 +146,9 @@ const templateVoice = (voice, json, partialNo) => html`
 		<div class="card-header">
 			<h3 class="h6 mb-0">Partial ${partialNo + 1}: ${(voice.sample) ? html`<span class="font-monospace h4">${voice.sample.name}</span> (No.${voice.sampleNo})` : `Synth (${waveform(voice.bytes[4])})`}</h3>
 		</div>
-		<div class="card-body d-flex flex-row">
-			<div class="me-3">
-				<table class="table table-sm mb-0">
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>WG Pitch Course</th>
@@ -183,7 +183,7 @@ const templateVoice = (voice, json, partialNo) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3">
+			<div>
 				<table class="table table-sm">
 					<thead>
 						<tr>
@@ -230,7 +230,7 @@ const templateVoice = (voice, json, partialNo) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm mb-0">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>P-LFO Rate</th>
@@ -247,7 +247,7 @@ const templateVoice = (voice, json, partialNo) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3 ${(voice.sample) ? 'text-decoration-line-through' : ''}">
+			<div class="${(voice.sample) ? 'text-decoration-line-through' : ''}">
 				<table class="table table-sm">
 					<thead>
 						<tr>
@@ -298,7 +298,7 @@ const templateVoice = (voice, json, partialNo) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm mb-0">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>TVF Cutoff Freq</th>
@@ -323,7 +323,7 @@ const templateVoice = (voice, json, partialNo) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3">
+			<div>
 				<table class="table table-sm">
 					<thead>
 						<tr>
@@ -366,7 +366,7 @@ const templateVoice = (voice, json, partialNo) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm mb-0">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>TVA Level</th>
@@ -404,27 +404,31 @@ const templateTone = (tone, json) => html`
 		<div class="card-header">
 			<h2 class="h6 mb-0">Timbre ${timbreNo(tone.toneNo)}: <span class="font-monospace h4">${tone.name}</span></h2>
 		</div>
-		<div class="card-body d-flex flex-row">
-			<table class="table table-sm w-auto mb-0 me-3">
-				<tbody>
-					<tr>
-						<th>Structure of Partial 1 & 2</th>
-						<td class="text-end">${tone.commonBytes[10]}</td>
-					</tr>
-					<tr>
-						<th>Structure of Partial 3 & 4</th>
-						<td class="text-end">${tone.commonBytes[11]}</td>
-					</tr>
-				</tbody>
-			</table>
-			<table class="table table-sm w-auto mb-0 me-3">
-				<tbody>
-					<tr>
-						<th>Env Mode</th>
-						<td class="text-end">${['Normal', 'No Sustain'][tone.commonBytes[13]] ?? 'Unknown'}</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Structure of Partial 1 & 2</th>
+							<td class="text-end">${tone.commonBytes[10]}</td>
+						</tr>
+						<tr>
+							<th>Structure of Partial 3 & 4</th>
+							<td class="text-end">${tone.commonBytes[11]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Env Mode</th>
+							<td class="text-end">${['Normal', 'No Sustain'][tone.commonBytes[13]] ?? 'Unknown'}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
 	${tone.voices.map((voice, partialNo) => templateVoice(voice, json, partialNo))}

@@ -14,7 +14,7 @@ import {makeDomLoadedHandler} from './common.js';
 import {formatters as fmt} from './formatters.js';
 
 const templateToneList = (json) => html`
-	<table class="table table-sm table-hover w-auto mb-0">
+	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">No.</th>
@@ -42,7 +42,7 @@ const templateToneList = (json) => html`
 
 const templateWaveList = (json) => html`
 	<div class="d-flex flex-row">
-		<table class="table table-sm table-hover w-auto mb-0">
+		<table class="table table-sm table-hover w-auto">
 			<thead>
 				<tr>
 					<th class="text-end">No.</th>
@@ -66,8 +66,8 @@ const templateVoice = (voice, _) => html`
 		<div class="card-header">
 			<h3 class="h6 mb-0">Wave No.${(voice.toneWave) ? voice.toneWaveNo : voice.drumSetNo}: <span class="font-monospace h4">${(voice.toneWave ?? voice.drumSet)?.name}</span></h3>
 		</div>
-		<div class="card-body d-flex flex-row">
-			<div class="me-3">
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
@@ -129,7 +129,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3">
+			<div>
 				<table class="table table-sm">
 					<thead>
 						<tr>
@@ -233,7 +233,7 @@ const templateVoice = (voice, _) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3">
+			<div>
 				<table class="table table-sm">
 					<thead>
 						<tr>
@@ -334,32 +334,34 @@ const templateTone = (tone, json) => html`
 		<div class="card-header">
 			<h2 class="h6 mb-0">Program No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
 		</div>
-		<div class="card-body d-flex flex-row">
-			<table class="table table-sm w-auto me-3">
-				<tbody>
-					<tr>
-						<th>OSC Mode</th>
-						<td class="text-end">${['Single', 'Double', 'Drum'][tone.commonBytes[0]] ?? 'Unknown'}</td>
-					</tr>
-					<tr>
-						<th>OSC Hold</th>
-						<td class="text-end">${((tone.commonBytes[0] & 0x08) !== 0) ? 'On' : 'Off'}</td>
-					</tr>
-					<tr>
-						<th>OSC Interval</th>
-						<td class="text-end">${fmt.sint8(tone.commonBytes[5])}</td>
-					</tr>
-					<tr>
-						<th>OSC Detune </th>
-						<td class="text-end">${fmt.sint8(tone.commonBytes[6])}</td>
-					</tr>
-					<tr>
-						<th>OSC Delay Start</th>
-						<td class="text-end">${tone.commonBytes[7]}</td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="me-3">
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>OSC Mode</th>
+							<td class="text-end">${['Single', 'Double', 'Drum'][tone.commonBytes[0]] ?? 'Unknown'}</td>
+						</tr>
+						<tr>
+							<th>OSC Hold</th>
+							<td class="text-end">${fmt.onOff((tone.commonBytes[0] & 0x08) !== 0)}</td>
+						</tr>
+						<tr>
+							<th>OSC Interval</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[5])}</td>
+						</tr>
+						<tr>
+							<th>OSC Detune </th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[6])}</td>
+						</tr>
+						<tr>
+							<th>OSC Delay Start</th>
+							<td class="text-end">${tone.commonBytes[7]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
 				<table class="table table-sm">
 					<thead>
 						<tr>
@@ -400,7 +402,7 @@ const templateTone = (tone, json) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3">
+			<div>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
@@ -430,7 +432,7 @@ const templateTone = (tone, json) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="me-3">
+			<div>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
@@ -451,7 +453,7 @@ const templateTone = (tone, json) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm w-auto mb-0">
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>Mod Bend VDF Sweep</th>
