@@ -13,6 +13,27 @@ import {html} from 'https://unpkg.com/lit-html?module';
 import {makeDomLoadedHandler} from './common.js';
 import {formatters as fmt} from './formatters.js';
 
+const templateProgDrumList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">Prog#</th>
+				<th class="text-end ps-4">No.</th>
+				<th>Drum Set</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.progDrums.map((progDrum) => html`
+			<tr>
+				<td class="text-end">${progDrum.prog}</td>
+				<td class="text-end">${progDrum.toneNo}</td>
+				<td class="font-monospace"><a href="${progDrum.tone.$ref}">${progDrum.tone.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
 const templateToneList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
@@ -134,8 +155,9 @@ const templateTone = (tone, json) => html`
 
 window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	lists: [
-		{id: 'tones',   label: 'Tones',   renderer: templateToneList},
-		{id: 'samples', label: 'Samples', renderer: templateSampleList},
+		{id: 'progDrums', label: 'Programs (Drum Set)', renderer: templateProgDrumList},
+		{id: 'tones',     label: 'Tones',               renderer: templateToneList},
+		{id: 'samples',   label: 'Samples',             renderer: templateSampleList},
 	],
 	details: {
 		tones: templateTone,

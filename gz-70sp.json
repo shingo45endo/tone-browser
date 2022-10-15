@@ -125116,5 +125116,71 @@
       "endAddr": 2091202,
       "loopAddr": 2091202
     }
+  ],
+  "progDrums": [
+    {
+      "prog": 0,
+      "toneNo": 128,
+      "tone": {
+        "name": "STANDARD SET",
+        "$ref": "#/tones/128"
+      }
+    },
+    {
+      "prog": 8,
+      "toneNo": 129,
+      "tone": {
+        "name": "ROOM SET",
+        "$ref": "#/tones/129"
+      }
+    },
+    {
+      "prog": 16,
+      "toneNo": 130,
+      "tone": {
+        "name": "POWER SET",
+        "$ref": "#/tones/130"
+      }
+    },
+    {
+      "prog": 24,
+      "toneNo": 131,
+      "tone": {
+        "name": "ELECTRONIC SET",
+        "$ref": "#/tones/131"
+      }
+    },
+    {
+      "prog": 25,
+      "toneNo": 132,
+      "tone": {
+        "name": "TR-808 SET",
+        "$ref": "#/tones/132"
+      }
+    },
+    {
+      "prog": 32,
+      "toneNo": 133,
+      "tone": {
+        "name": "JAZZ SET",
+        "$ref": "#/tones/133"
+      }
+    },
+    {
+      "prog": 40,
+      "toneNo": 134,
+      "tone": {
+        "name": "BRUSH SET",
+        "$ref": "#/tones/134"
+      }
+    },
+    {
+      "prog": 48,
+      "toneNo": 135,
+      "tone": {
+        "name": "ORCHESTRA SET",
+        "$ref": "#/tones/135"
+      }
+    }
   ]
 }
