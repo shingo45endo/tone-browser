@@ -39,7 +39,7 @@ const templateToneList = (json) => html`
 		<thead>
 			<tr>
 				<th class="text-end">No.</th>
-				<th>Program</th>
+				<th>Tone</th>
 				<th># of Voice</th>
 			</tr>
 		</thead>
@@ -60,7 +60,7 @@ const templateSampleList = (json) => html`
 		<thead>
 			<tr>
 				<th class="text-end ps-4">No.</th>
-				<th>Name</th>
+				<th>Sample</th>
 				<th class="text-end ps-4">Level</th>
 				<th class="text-end ps-4">Pitch</th>
 				<th class="text-end ps-4">Exp.</th>
@@ -94,7 +94,7 @@ const templateVoice = (voice, _, i) => html`
 	<div class="col-md-6 col-sm-12">
 		<div class="card mb-3">
 			<div class="card-header">
-				<h3 class="h6 mb-0">Sample ${i + 1}</h3>
+				<h3 class="h6 mb-0">Voice ${i + 1}</h3>
 			</div>
 			<div class="card-body pb-0">
 				<table class="table table-sm w-auto">
@@ -147,7 +147,7 @@ const templateVoice = (voice, _, i) => html`
 `;
 
 const templateTone = (tone, json) => html`
-	<h2 class="h6">Program No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
+	<h2 class="h6">Tone No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
 	<div class="row">
 		${tone.voices.map((voice, i) => templateVoice(voice, json, i))}
 	</div>

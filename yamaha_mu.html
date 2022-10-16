@@ -91,7 +91,7 @@ const templateDrumSetList = (json) => html`
 		<thead>
 			<tr>
 				<th class="text-end ps-4">No.</th>
-				<th>Voice</th>
+				<th>Drum Kit</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -482,7 +482,7 @@ const templateTone = (tone, json) => html`
 `;
 
 const templateDrumSet = (drumSet, _) => html`
-	<h2 class="font-monospace h4">${drumSet.name}</h2>
+	<h2 class="h6">Drum Kit No.${drumSet.drumSetNo}: <span class="font-monospace h4">${drumSet.name}</span></h2>
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>

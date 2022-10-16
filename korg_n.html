@@ -45,7 +45,7 @@ const templateDrumSetList = (json) => html`
 		<thead>
 			<tr>
 				<th class="text-end ps-4">No.</th>
-				<th>Voice</th>
+				<th>Drum Kit</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -66,21 +66,21 @@ const templateCombiList = (json) => html`
 				<th class="text-end">No.</th>
 				<th>Combination</th>
 				<th class="text-end ps-4">No.</th>
-				<th>Prog 1</th>
+				<th>Program 1</th>
 				<th class="text-end">No.</th>
-				<th>Prog 2</th>
+				<th>Program 2</th>
 				<th class="text-end">No.</th>
-				<th>Prog 3</th>
+				<th>Program 3</th>
 				<th class="text-end">No.</th>
-				<th>Prog 4</th>
+				<th>Program 4</th>
 				<th class="text-end">No.</th>
-				<th>Prog 5</th>
+				<th>Program 5</th>
 				<th class="text-end">No.</th>
-				<th>Prog 6</th>
+				<th>Program 6</th>
 				<th class="text-end">No.</th>
-				<th>Prog 7</th>
+				<th>Program 7</th>
 				<th class="text-end">No.</th>
-				<th>Prog 8</th>
+				<th>Program 8</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -509,7 +509,7 @@ const templateTone = (tone, json) => html`
 `;
 
 const templateCombi = (combi, json) => html`
-	<h2 class="font-monospace h4">${combi.name}</h2>
+	<h2 class="h6">Combination No.${combi.combiNo}: <span class="font-monospace h4">${combi.name}</span></h2>
 	<ul class="nav nav-tabs" role="tablist">
 	${combi.progs.map((prog, i) => html`
 		<li class="nav-item" role="presentation">
@@ -527,14 +527,14 @@ const templateCombi = (combi, json) => html`
 `;
 
 const templateDrumSet = (drumSet, _) => html`
-	<h2 class="font-monospace h4">${drumSet.name}</h2>
+	<h2 class="h6">Drum Kit No.${drumSet.drumSetNo}: <span class="font-monospace h4">${drumSet.name}</span></h2>
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
 				<th class="text-end">Note</th>
 				<th class="text-end">No.</th>
 				<th class="text-end ps-4">No.</th>
-				<th>Name</th>
+				<th>Drum Sample</th>
 				<th class="text-end">Coarse<br>Tune</th>
 				<th class="text-end">Fine<br>Tune</th>
 				<th class="text-end">Level</th>

@@ -55,7 +55,7 @@ const templateProgDrumList = (json) => html`
 				<th class="text-end">BankL</th>
 				<th class="text-end">Prog#</th>
 				<th class="text-end ps-4">No.</th>
-				<th>Instrument</th>
+				<th>Drum Set</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -421,7 +421,7 @@ const templateTone = (tone, json) => html`
 `;
 
 const templateCombi = (combi, json) => html`
-	<h2 class="font-monospace h4">${combi.name}</h2>
+	<h2 class="h6">Legato No.${combi.combiNo}: <span class="font-monospace h4">${combi.name}</span></h2>
 	<ul class="nav nav-tabs" role="tablist">
 		<li class="nav-item" role="presentation">
 			<button id="my-tab-tone0" class="nav-item nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone0">${json.tones[combi.tones[0].toneNo].name}</button>
@@ -441,7 +441,7 @@ const templateCombi = (combi, json) => html`
 `;
 
 const templateDrumSet = (drumSet, _) => html`
-	<h2 class="font-monospace h4">${drumSet.name}</h2>
+	<h2 class="h6">Drum Set No.${drumSet.drumSetNo}: <span class="font-monospace h4">${drumSet.name}</span></h2>
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>

@@ -73,10 +73,10 @@ const templateToneList = (json) => html`
 			<tr>
 				<td class="text-end font-monospace">${timbreNo(tone.toneNo)}</td>
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
-				${[...tone.voices, null, null, null].slice(0, 4).map((voice) => html`
-					<td class="text-end">${voice?.sampleNo ?? ((voice) ? '-' : '')}</td>
-					<td class="font-monospace">${voice?.sample?.name ?? ((voice) ? '(Synth)' : '')}</td>
-				`)}
+			${[...tone.voices, null, null, null].slice(0, 4).map((voice) => html`
+				<td class="text-end">${voice?.sampleNo ?? ((voice) ? '-' : '')}</td>
+				<td class="font-monospace">${voice?.sample?.name ?? ((voice) ? '(Synth)' : '')}</td>
+			`)}
 			</tr>
 		`)}
 		</tbody>
@@ -166,7 +166,7 @@ const templateVoice = (voice, json, partialNo) => html`
 							<th>WG Pitch Bender Sw.</th>
 							<td class="text-end">${fmt.onOff(voice.bytes[3])}</td>
 						</tr>
-						${(voice.sample) ? '' : html`
+					${(voice.sample) ? '' : html`
 						<tr>
 							<th>WG Waveform</th>
 							<td class="text-end">${waveform(voice.bytes[4])}</td>
@@ -179,7 +179,7 @@ const templateVoice = (voice, json, partialNo) => html`
 							<th>WG PW Velo. Sens.</th>
 							<td class="text-end">${voice.bytes[7] - 7}</td>
 						</tr>
-						`}
+					`}
 					</tbody>
 				</table>
 			</div>
