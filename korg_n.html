@@ -509,7 +509,31 @@ const templateTone = (tone, json) => html`
 `;
 
 const templateCombi = (combi, json) => html`
-	<h2 class="h6">Combination No.${combi.combiNo}: <span class="font-monospace h4">${combi.name}</span></h2>
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Combination No.${combi.combiNo}: <span class="font-monospace h4">${combi.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Own FX BankMSB</th>
+							<td class="text-end">${combi.commonBytes[10]}</td>
+						</tr>
+						<tr>
+							<th>Own FX BankLSB</th>
+							<td class="text-end">${combi.commonBytes[11]}</td>
+						</tr>
+						<tr>
+							<th>Own FX No.</th>
+							<td class="text-end">${combi.commonBytes[12]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 	<ul class="nav nav-tabs" role="tablist">
 	${combi.progs.map((prog, i) => html`
 		<li class="nav-item" role="presentation">
@@ -520,6 +544,128 @@ const templateCombi = (combi, json) => html`
 	<div class="tab-content mt-2">
 	${combi.progs.map((prog, i) => html`
 		<div id="my-pane-tone${i}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
+			<div class="d-flex flex-row gap-3 px-3">
+				<div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Volume</th>
+								<td class="text-end">${prog.bytes[3]}</td>
+							</tr>
+							<tr>
+								<th>Panpot</th>
+								<td class="text-end">${prog.bytes[4]}</td>
+							</tr>
+							<tr>
+								<th>Reverb Send</th>
+								<td class="text-end">${prog.bytes[5]}</td>
+							</tr>
+							<tr>
+								<th>Chorus Send</th>
+								<td class="text-end">${prog.bytes[6]}</td>
+							</tr>
+							<tr>
+								<th>Transpose</th>
+								<td class="text-end">${prog.bytes[11]}</td>
+							</tr>
+							<tr>
+								<th>Detune</th>
+								<td class="text-end">${prog.bytes[12]}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Note Win Bottom</th>
+								<td class="text-end">${prog.bytes[7]}</td>
+							</tr>
+							<tr>
+								<th>Note Win Top</th>
+								<td class="text-end">${prog.bytes[8]}</td>
+							</tr>
+							<tr>
+								<th>Vel Win Bottom</th>
+								<td class="text-end">${prog.bytes[9]}</td>
+							</tr>
+							<tr>
+								<th>Vel Win Top</th>
+								<td class="text-end">${prog.bytes[10]}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Note On/Off Sw.</th>
+								<td class="text-end">${fmt.onOff((prog.bytes[13] & 0x01) === 0)}</td>
+							</tr>
+							<tr>
+								<th>Control Change Sw.</th>
+								<td class="text-end">${fmt.onOff((prog.bytes[13] & 0x02) === 0)}</td>
+							</tr>
+							<tr>
+								<th>Pitch Bend Sw.</th>
+								<td class="text-end">${fmt.onOff((prog.bytes[13] & 0x04) === 0)}</td>
+							</tr>
+							<tr>
+								<th>After Touch Sw.</th>
+								<td class="text-end">${fmt.onOff((prog.bytes[13] & 0x08) === 0)}</td>
+							</tr>
+							<tr>
+								<th>Damper Sw.</th>
+								<td class="text-end">${fmt.onOff((prog.bytes[13] & 0x10) === 0)}</td>
+							</tr>
+							<tr>
+								<th>Portamento Sw.</th>
+								<td class="text-end">${fmt.onOff((prog.bytes[13] & 0x20) === 0)}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Byte 14</th>
+								<td class="text-end">${prog.bytes[14]}</td>
+							</tr>
+							<tr>
+								<th>Byte 15</th>
+								<td class="text-end">${prog.bytes[15]}</td>
+							</tr>
+							<tr>
+								<th>Byte 16</th>
+								<td class="text-end">${prog.bytes[16]}</td>
+							</tr>
+							<tr>
+								<th>Byte 17</th>
+								<td class="text-end">${prog.bytes[17]}</td>
+							</tr>
+							<tr>
+								<th>Byte 18</th>
+								<td class="text-end">${prog.bytes[18]}</td>
+							</tr>
+							<tr>
+								<th>Byte 19</th>
+								<td class="text-end">${prog.bytes[19]}</td>
+							</tr>
+							<tr>
+								<th>Byte 20</th>
+								<td class="text-end">${prog.bytes[20]}</td>
+							</tr>
+							<tr>
+								<th>Byte 21</th>
+								<td class="text-end">${prog.bytes[21]}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 			${templateTone(json.tones[prog.toneNo ?? prog.drumNo], json)}
 		</div>
 	`)}
