@@ -73,7 +73,7 @@ const templateToneList = (json) => html`
 			<tr>
 				<td class="text-end font-monospace">${timbreNo(tone.toneNo)}</td>
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
-			${[...tone.voices, null, null, null].slice(0, 4).map((voice) => html`
+			${[...tone.voices, ...(new Array(4)).fill()].slice(0, 4).map((voice) => html`
 				<td class="text-end">${voice?.sampleNo ?? ((voice) ? '-' : '')}</td>
 				<td class="font-monospace">${voice?.sample?.name ?? ((voice) ? '(Synth)' : '')}</td>
 			`)}
