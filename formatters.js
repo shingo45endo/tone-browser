@@ -23,7 +23,7 @@ function panpotR(value) {
 
 function noteName(value) {
 	const octave = Math.trunc(value / 12) - 1;
-	const name = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'][value % 12];
+	const name = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'][(value + 12) % 12];
 	return `${name}${octave}`;
 }
 
