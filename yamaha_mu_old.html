@@ -15,14 +15,14 @@ import {formatters as fmt} from './formatters.js';
 
 const templateProgramList = (json) => html`
 	<ul class="nav nav-tabs" role="tablist">
-	${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
+	${Object.keys(json).filter((key) => key.startsWith('programs')).map((key, i) => html`
 		<li class="nav-item" role="presentation">
-			<button id="my-tab-${key}" class="nav-item nav-link${(i === 0) ? ' active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('programs', '')}</button>
+			<button id="my-tab-${key}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('programs', '')}</button>
 		</li>
 	`)}
 	</ul>
 	<div class="tab-content mt-2">
-	${Object.keys(json).filter((key) => key.startsWith('program')).map((key, i) => html`
+	${Object.keys(json).filter((key) => key.startsWith('programs')).map((key, i) => html`
 		<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
 			<table class="table table-sm table-hover w-auto">
 				<thead>
