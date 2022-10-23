@@ -64,7 +64,7 @@ const templateWaveList = (json) => html`
 const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
-			<h3 class="h6 mb-0">Wave No.${voice.toneWaveNo ?? voice.drumSetNo}: <span class="font-monospace h4">${voice.toneWave?.name ?? voice.drumSet?.name}</span></h3>
+			<h3 class="h6 mb-0">Multi Sample No.${voice.toneWaveNo ?? voice.drumSetNo}: <span class="font-monospace h4">${voice.toneWave?.name ?? voice.drumSet?.name}</span></h3>
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
@@ -92,7 +92,7 @@ const templateVoice = (voice, _) => html`
 						</tr>
 						<tr>
 							<th>P.MG KeySync</th>
-							<td class="text-end">${((voice.bytes[1] & 0x80) === 0) ? 'On' : 'Off'}</td>
+							<td class="text-end">${fmt.onOff((voice.bytes[1] & 0x80) !== 0)}</td>
 						</tr>
 						<tr>
 							<th>P.MG Frequency</th>
