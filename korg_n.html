@@ -673,55 +673,63 @@ const templateCombi = (combi, json) => html`
 `;
 
 const templateDrumSet = (drumSet, _) => html`
-	<h2 class="h6">Drum Kit No.${drumSet.drumSetNo}: <span class="font-monospace h4">${drumSet.name}</span></h2>
-	<table class="table table-sm table-hover w-auto">
-		<thead>
-			<tr>
-				<th class="text-end">Note</th>
-				<th class="text-end">No.</th>
-				<th class="text-end ps-4">No.</th>
-				<th>Drum Sample</th>
-				<th class="text-end">Coarse<br>Tune</th>
-				<th class="text-end">Fine<br>Tune</th>
-				<th class="text-end">Level</th>
-				<th class="text-end">Excl<br>Group</th>
-				<th class="text-end">Rx<br>Note<br>On</th>
-				<th class="text-end">Rx<br>Note<br>Off</th>
-				<th class="text-end">Multi</th>
-				<th class="text-end">Cutoff</th>
-				<th class="text-end">Color</th>
-				<th class="text-end">Attack<br>Time</th>
-				<th class="text-end">Decay<br>Time</th>
-				<th class="text-end">Panpot</th>
-				<th class="text-end">Rev<br>Send</th>
-				<th class="text-end">Cho<br>Send</th>
-			</tr>
-		</thead>
-		<tbody>
-		${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map(([noteNo, note]) => html`
-			<tr>
-				<td class="text-end">${fmt.noteNameR(noteNo)}</td>
-				<td class="text-end text-muted">${noteNo}</td>
-				<td class="text-end">${note.drumWaveNo}</td>
-				<td class="font-monospace">${note.drumWave.name}</td>
-				<td class="text-end">${fmt.sint8(note.bytes[2])}</td>
-				<td class="text-end">${fmt.sint8(note.bytes[3])}</td>
-				<td class="text-end">${note.bytes[4]}</td>\
-				<td class="text-end">${note.bytes[5]}</td>\
-				<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0001) !== 0)}</td>
-				<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0010) !== 0)}</td>
-				<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0100) !== 0)}</td>
-				<td class="text-end">${fmt.sint8(note.bytes[7])}</td>
-				<td class="text-end">${note.bytes[8]}</td>
-				<td class="text-end">${fmt.sint8(note.bytes[9])}</td>
-				<td class="text-end">${fmt.sint8(note.bytes[10])}</td>
-				<td class="text-end">${fmt.panpotR(note.bytes[11])}</td>
-				<td class="text-end">${note.bytes[12]}</td>
-				<td class="text-end">${note.bytes[13]}</td>
-			</tr>
-		`)}
-		</tbody>
-	</table>
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Drum Kit No.${drumSet.drumSetNo}: <span class="font-monospace h4">${drumSet.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 py-0">
+		</div>
+	</div>
+	<div class="d-flex flex-row gap-3 px-3">
+		<table class="table table-sm table-hover w-auto">
+			<thead>
+				<tr>
+					<th class="text-end">Note</th>
+					<th class="text-end">No.</th>
+					<th class="text-end ps-4">No.</th>
+					<th>Drum Sample</th>
+					<th class="text-end">Coarse<br>Tune</th>
+					<th class="text-end">Fine<br>Tune</th>
+					<th class="text-end">Level</th>
+					<th class="text-end">Excl<br>Group</th>
+					<th class="text-end">Rx<br>Note<br>On</th>
+					<th class="text-end">Rx<br>Note<br>Off</th>
+					<th class="text-end">Multi</th>
+					<th class="text-end">Cutoff</th>
+					<th class="text-end">Color</th>
+					<th class="text-end">Attack<br>Time</th>
+					<th class="text-end">Decay<br>Time</th>
+					<th class="text-end">Panpot</th>
+					<th class="text-end">Rev<br>Send</th>
+					<th class="text-end">Cho<br>Send</th>
+				</tr>
+			</thead>
+			<tbody>
+			${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map(([noteNo, note]) => html`
+				<tr>
+					<td class="text-end">${fmt.noteNameR(noteNo)}</td>
+					<td class="text-end text-muted">${noteNo}</td>
+					<td class="text-end">${note.drumWaveNo}</td>
+					<td class="font-monospace">${note.drumWave.name}</td>
+					<td class="text-end">${fmt.sint8(note.bytes[2])}</td>
+					<td class="text-end">${fmt.sint8(note.bytes[3])}</td>
+					<td class="text-end">${note.bytes[4]}</td>\
+					<td class="text-end">${note.bytes[5]}</td>\
+					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0001) !== 0)}</td>
+					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0010) !== 0)}</td>
+					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0100) !== 0)}</td>
+					<td class="text-end">${fmt.sint8(note.bytes[7])}</td>
+					<td class="text-end">${note.bytes[8]}</td>
+					<td class="text-end">${fmt.sint8(note.bytes[9])}</td>
+					<td class="text-end">${fmt.sint8(note.bytes[10])}</td>
+					<td class="text-end">${fmt.panpotR(note.bytes[11])}</td>
+					<td class="text-end">${note.bytes[12]}</td>
+					<td class="text-end">${note.bytes[13]}</td>
+				</tr>
+			`)}
+			</tbody>
+		</table>
+	</div>
 `;
 
 window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
