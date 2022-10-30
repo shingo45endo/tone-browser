@@ -1,6 +1,6 @@
 import {html, render} from 'https://unpkg.com/lit-html?module';
 
-const templateBody = (lists) => html`
+const htmlBody = `
 	<!-- Navbar -->
 	<nav class="navbar navbar-light bg-light sticky-top">
 		<div class="container align-items-start">
@@ -10,19 +10,7 @@ const templateBody = (lists) => html`
 	</nav>
 
 	<!-- Main screen -->
-	<main class="container mt-2">
-		<ul class="nav nav-tabs" role="tablist">
-		${lists.map((list, i) => html`
-			<li class="nav-item" role="presentation">
-				<button id="my-tab-${list.id}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${list.id}">${list.label}</button>
-			</li>
-		`)}
-		</ul>
-		<div class="tab-content mt-2">
-		${lists.map((list, i) => html`
-			<div id="my-pane-${list.id}" class="tab-pane fade ${(i === 0) ? 'show active' : ''}" role="tabpanel"></div>
-		`)}
-		</div>
+	<main id="my-main" class="container mt-2">
 	</main>
 
 	<!-- Information modal -->
@@ -42,6 +30,21 @@ const templateBody = (lists) => html`
 	</div>
 `;
 
+const templateMainScreen = (lists) => html`
+	<ul class="nav nav-tabs" role="tablist">
+	${lists.map((list, i) => html`
+		<li class="nav-item" role="presentation">
+			<button id="my-tab-${list.id}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${list.id}">${list.label}</button>
+		</li>
+	`)}
+	</ul>
+	<div class="tab-content mt-2">
+	${lists.map((list, i) => html`
+		<div id="my-pane-${list.id}" class="tab-pane fade ${(i === 0) ? 'show active' : ''}" role="tabpanel"></div>
+	`)}
+	</div>
+`;
+
 export function makeDomLoadedHandler(prop, bsGetOrCreateInstance) {
 	console.assert(prop && Array.isArray(prop.lists) && prop.lists.every((e) => e.id && e.label && e.renderer));
 	console.assert(prop && prop.details);
@@ -49,8 +52,7 @@ export function makeDomLoadedHandler(prop, bsGetOrCreateInstance) {
 
 	return async () => {
 		// Renders the body.
-		document.body.innerHTML = '';
-		render(templateBody(prop.lists), document.body);
+		document.body.innerHTML = htmlBody;
 
 		// Prepares for the modal.
 		const elemModal = document.getElementById('my-modal');
@@ -78,8 +80,10 @@ export function makeDomLoadedHandler(prop, bsGetOrCreateInstance) {
 		}
 		const json = await res.json();
 
-		// Renders lists on each tab pane.
-		for (const list of prop.lists) {
+		// Renders tabs and lists on each tab pane.
+		const lists = prop.lists.filter((list) => Object.keys(json).some((key) => key.startsWith(list.id)));
+		render(templateMainScreen(lists), document.getElementById(`my-main`));
+		for (const list of lists) {
 			render(list.renderer(json), document.getElementById(`my-pane-${list.id}`));
 		}
 
