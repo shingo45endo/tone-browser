@@ -735,9 +735,9 @@ const templateDrumSet = (drumSet, _) => html`
 window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	lists: [
 		{id: 'tones',    label: 'Programs',     renderer: templateToneList},
-		{id: 'drumsets', label: 'Drum Kits',    renderer: templateDrumSetList},
+		{id: 'drumSets', label: 'Drum Kits',    renderer: templateDrumSetList},
 		{id: 'combis',   label: 'Combinations', renderer: templateCombiList},
-		{id: 'waves',    label: 'Samples',      renderer: templateWaveList},
+		{id: 'toneWaves',    label: 'Samples',      renderer: templateWaveList},
 	],
 	details: {
 		tones:    templateTone,
