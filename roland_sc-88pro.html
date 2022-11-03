@@ -118,10 +118,10 @@ const templateCombiList = (json) => html`
 			<tr>
 				<td class="text-end">${combi.combiNo}</td>
 				<td class="font-monospace"><a href="#/combis/${combi.combiNo}">${combi.name}</a></td>
-				<td class="text-end">${combi.tones[0].toneNo}</td>
-				<td class="font-monospace"><a href="${combi.tones[0].tone.$ref}">${json.tones[combi.tones[0].toneNo].name}</a></td>
-				<td class="text-end">${combi.tones[1].toneNo}</td>
-				<td class="font-monospace"><a href="${combi.tones[1].tone.$ref}">${json.tones[combi.tones[1].toneNo].name}</a></td>
+				<td class="text-end">${combi.toneSlots[0].toneNo}</td>
+				<td class="font-monospace"><a href="${combi.toneSlots[0].tone.$ref}">${json.tones[combi.toneSlots[0].toneNo].name}</a></td>
+				<td class="text-end">${combi.toneSlots[1].toneNo}</td>
+				<td class="font-monospace"><a href="${combi.toneSlots[1].tone.$ref}">${json.tones[combi.toneSlots[1].toneNo].name}</a></td>
 			</tr>
 		`)}
 		</tbody>
@@ -156,17 +156,17 @@ const templateWaveList = (json) => html`
 							</tr>
 						<thead>
 						<tbody>
-						${wave.multiSamples.map((multiSample) => html`
+						${wave.sampleSlots.map((sampleSlot) => html`
 							<tr>
-								<td class="text-end">${fmt.noteNameR(multiSample.low)}</td>
-								<td class="text-end text-muted">${multiSample.low}</td>
-								<td class="text-end">${fmt.noteNameR(multiSample.high)}</td>
-								<td class="text-end text-muted">${multiSample.high}</td>
-								<td class="text-end">${(multiSample.sampleNo >= 0) ? multiSample.sampleNo : ''}</td>
+								<td class="text-end">${fmt.noteNameR(sampleSlot.low)}</td>
+								<td class="text-end text-muted">${sampleSlot.low}</td>
+								<td class="text-end">${fmt.noteNameR(sampleSlot.high)}</td>
+								<td class="text-end text-muted">${sampleSlot.high}</td>
+								<td class="text-end">${(sampleSlot.sampleNo >= 0) ? sampleSlot.sampleNo : ''}</td>
 							${((sample) => html`
 								<td class="text-end">${(sample) ? fmt.noteNameR(sample.key) : '--'}</td>
 								<td class="text-end text-muted">${sample?.key ?? '--'}</td>
-							`)(json.samples[multiSample.sampleNo])}
+							`)(json.samples[sampleSlot.sampleNo])}
 							</tr>
 						`)}
 						<tbody>
@@ -352,18 +352,18 @@ const templateCombi = (combi, json) => html`
 	</div>
 	<ul class="nav nav-tabs" role="tablist">
 		<li class="nav-item" role="presentation">
-			<button id="my-tab-tone0" class="nav-item nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone0">${json.tones[combi.tones[0].toneNo].name}</button>
+			<button id="my-tab-tone0" class="nav-item nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone0">${json.tones[combi.toneSlots[0].toneNo].name}</button>
 		</li>
 		<li class="nav-item" role="presentation">
-			<button id="my-tab-tone1" class="nav-item nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone1">${json.tones[combi.tones[1].toneNo].name}</button>
+			<button id="my-tab-tone1" class="nav-item nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone1">${json.tones[combi.toneSlots[1].toneNo].name}</button>
 		</li>
 	</ul>
 	<div class="tab-content mt-2">
 		<div id="my-pane-tone0" class="tab-pane fade show active" role="tabpanel">
-			${templateTone(json.tones[combi.tones[0].toneNo], json)}
+			${templateTone(json.tones[combi.toneSlots[0].toneNo], json)}
 		</div>
 		<div id="my-pane-tone1" class="tab-pane fade" role="tabpanel">
-			${templateTone(json.tones[combi.tones[1].toneNo], json)}
+			${templateTone(json.tones[combi.toneSlots[1].toneNo], json)}
 		</div>
 	</div>
 `;
