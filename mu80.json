@@ -15986,7 +15986,7 @@
       ]
     }
   ],
-  "programsXGBasic": [
+  "toneMapsXGBasic": [
     {
       "name": "GrandPno",
       "bankM": 0,
@@ -20838,7 +20838,7 @@
       }
     }
   ],
-  "programsTG300B": [
+  "toneMapsTG300B": [
     {
       "name": "GrandPno",
       "bankM": 0,
@@ -26980,7 +26980,7 @@
       }
     }
   ],
-  "programsSFX": [
+  "toneMapsSFX": [
     {
       "name": "CuttngNz",
       "bankM": 64,

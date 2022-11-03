@@ -72767,7 +72767,7 @@
       }
     }
   ],
-  "programs": [
+  "toneMaps": [
     {
       "bankL": 2,
       "prog": 0,
@@ -81129,7 +81129,7 @@
       }
     }
   ],
-  "progDrums": [
+  "drumMaps": [
     {
       "bankL": 2,
       "prog": 0,

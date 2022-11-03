@@ -13,16 +13,16 @@ import {html} from 'https://unpkg.com/lit-html?module';
 import {makeDomLoadedHandler} from './common.js';
 import {formatters as fmt} from './formatters.js';
 
-const templateProgramList = (json) => html`
+const templateToneMapList = (json) => html`
 	<ul class="nav nav-tabs" role="tablist">
-	${Object.keys(json).filter((key) => key.startsWith('programs')).map((key, i) => html`
+	${Object.keys(json).filter((key) => key.startsWith('toneMaps')).map((key, i) => html`
 		<li class="nav-item" role="presentation">
-			<button id="my-tab-${key}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('programs', '')}</button>
+			<button id="my-tab-${key}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('toneMaps', '')}</button>
 		</li>
 	`)}
 	</ul>
 	<div class="tab-content mt-2">
-	${Object.keys(json).filter((key) => key.startsWith('programs')).map((key, i) => html`
+	${Object.keys(json).filter((key) => key.startsWith('toneMaps')).map((key, i) => html`
 		<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
 			<table class="table table-sm table-hover w-auto">
 				<thead>
@@ -35,13 +35,13 @@ const templateProgramList = (json) => html`
 					</tr>
 				</thead>
 				<tbody>
-				${json[key].map((program) => html`
+				${json[key].map((toneMap) => html`
 					<tr>
-						<td class="text-end">${program.prog}</td>
-						<td class="text-end">${program.bankM}</td>
-						<td class="text-end">${program.bankL}</td>
-						<td class="text-end">${program.toneNo}</td>
-						<td class="font-monospace"><a href="${program.tone.$ref}">${program.name}</a></td>
+						<td class="text-end">${toneMap.prog}</td>
+						<td class="text-end">${toneMap.bankM}</td>
+						<td class="text-end">${toneMap.bankL}</td>
+						<td class="text-end">${toneMap.toneNo}</td>
+						<td class="font-monospace"><a href="${toneMap.tone.$ref}">${toneMap.name}</a></td>
 					</tr>
 				`)}
 				</tbody>
@@ -430,7 +430,7 @@ const templateTone = (tone, json) => html`
 
 window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	lists: [
-		{id: 'programs', label: 'Programs', renderer: templateProgramList},
+		{id: 'toneMaps', label: 'Tone Map', renderer: templateToneMapList},
 		{id: 'tones',    label: 'Voices',   renderer: templateToneList},
 	],
 	details: {

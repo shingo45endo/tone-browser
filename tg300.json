@@ -9418,7 +9418,7 @@
       ]
     }
   ],
-  "programsGM_A": [
+  "toneMapsGM_A": [
     {
       "name": "GrandPno",
       "bankM": 0,
@@ -11370,7 +11370,7 @@
       }
     }
   ],
-  "programsGM_B": [
+  "toneMapsGM_B": [
     {
       "name": "GrandPno",
       "bankM": 0,

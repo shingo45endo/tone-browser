@@ -46189,7 +46189,7 @@
       "name": "GM Stnd#"
     }
   ],
-  "programsXGBasic": [
+  "toneMapsXGBasic": [
     {
       "name": "GrandPno  ",
       "bankM": 0,
@@ -58571,7 +58571,7 @@
       }
     }
   ],
-  "programsXGNative": [
+  "toneMapsXGNative": [
     {
       "name": "GrandP #  ",
       "bankM": 0,
@@ -70953,7 +70953,7 @@
       }
     }
   ],
-  "programsModelExcl": [
+  "toneMapsModelExcl": [
     {
       "name": "MtdClavi  ",
       "bankM": 48,
@@ -71965,7 +71965,7 @@
       }
     }
   ],
-  "programsTG300B": [
+  "toneMapsTG300B": [
     {
       "name": "GrandPno  ",
       "bankM": 0,
@@ -78647,7 +78647,7 @@
       }
     }
   ],
-  "programsGM2Basic": [
+  "toneMapsGM2Basic": [
     {
       "name": "GrandPno  ",
       "bankM": 121,
@@ -81209,7 +81209,7 @@
       }
     }
   ],
-  "programsGM2Native": [
+  "toneMapsGM2Native": [
     {
       "name": "GrandP #  ",
       "bankM": 121,
@@ -83771,7 +83771,7 @@
       }
     }
   ],
-  "programsSFX": [
+  "toneMapsSFX": [
     {
       "name": "CuttngNz  ",
       "bankM": 64,

@@ -26,7 +26,7 @@ function tvaLevel(valueM, valueL) {
 	return (value < 0xffff) ? Math.round(Math.exp((65536 - value) / 13529)) : 0;
 }
 
-const templateProgramList = (json) => html`
+const templateToneMapList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
@@ -38,20 +38,20 @@ const templateProgramList = (json) => html`
 			</tr>
 		</thead>
 		<tbody>
-		${json.programs.map((program) => html`
+		${json.toneMaps.map((toneMap) => html`
 			<tr>
-				<td class="text-end">${program.bankL}</td>
-				<td class="text-end">${program.prog}</td>
-				<td class="text-end">${program.bankM}</td>
-				<td class="text-end">${program?.toneNo ?? program?.combiNo}</td>
-				<td class="font-monospace"><a href="${(program.tone ?? program.combi).$ref}">${(program.tone ?? program.combi).name}</a></td>
+				<td class="text-end">${toneMap.bankL}</td>
+				<td class="text-end">${toneMap.prog}</td>
+				<td class="text-end">${toneMap.bankM}</td>
+				<td class="text-end">${toneMap?.toneNo ?? toneMap?.combiNo}</td>
+				<td class="font-monospace"><a href="${(toneMap.tone ?? toneMap.combi).$ref}">${(toneMap.tone ?? toneMap.combi).name}</a></td>
 			</tr>
 		`)}
 		</tbody>
 	</table>
 `;
 
-const templateProgDrumList = (json) => html`
+const templateDrumMapList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
@@ -62,12 +62,12 @@ const templateProgDrumList = (json) => html`
 			</tr>
 		</thead>
 		<tbody>
-		${json.progDrums.map((progDrum) => html`
+		${json.drumMaps.map((drumMap) => html`
 			<tr>
-				<td class="text-end">${progDrum.bankL}</td>
-				<td class="text-end">${progDrum.prog}</td>
-				<td class="text-end">${progDrum.drumNo}</td>
-				<td class="font-monospace"><a href="${progDrum.drumSet.$ref}">${progDrum.drumSet.name}</a></td>
+				<td class="text-end">${drumMap.bankL}</td>
+				<td class="text-end">${drumMap.prog}</td>
+				<td class="text-end">${drumMap.drumNo}</td>
+				<td class="font-monospace"><a href="${drumMap.drumSet.$ref}">${drumMap.drumSet.name}</a></td>
 			</tr>
 		`)}
 		</tbody>
@@ -418,11 +418,11 @@ const templateDrumSet = (drumSet, _) => html`
 
 window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	lists: [
-		{id: 'programs',  label: 'Programs',             renderer: templateProgramList},
-		{id: 'progDrums', label: 'Programs (Drum Set)',  renderer: templateProgDrumList},
-		{id: 'tones',     label: 'Instruments',          renderer: templateToneList},
-		{id: 'combis',    label: 'Instruments (Legato)', renderer: templateCombiList},
-		{id: 'waves',     label: 'Waves',                renderer: templateWaveList},
+		{id: 'toneMaps', label: 'Tone Map',             renderer: templateToneMapList},
+		{id: 'drumMaps', label: 'Drum Map',             renderer: templateDrumMapList},
+		{id: 'tones',    label: 'Instruments',          renderer: templateToneList},
+		{id: 'combis',   label: 'Instruments (Legato)', renderer: templateCombiList},
+		{id: 'waves',    label: 'Waves',                renderer: templateWaveList},
 	],
 	details: {
 		tones:    templateTone,
