@@ -666,7 +666,7 @@ const templateCombi = (combi, json) => html`
 					</table>
 				</div>
 			</div>
-			${templateTone(json.tones[prog.toneNo ?? prog.drumNo], json)}
+			${templateTone(json.tones[prog.toneNo] ?? json.drums[prog.drumNo], json)}
 		</div>
 	`)}
 	</div>
