@@ -30,10 +30,10 @@ const templateToneList = (json) => html`
 			<tr>
 				<td class="text-end">${tone.toneNo}</td>
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
-				<td class="text-end">${tone.voices[0].toneWaveNo ?? tone.voices[0].drumSetNo}</td>
-				<td class="font-monospace">${tone.voices[0].toneWave?.name ?? tone.voices[0].drumSet?.name}</td>
-				<td class="text-end">${tone.voices[1]?.toneWaveNo ?? tone.voices[1]?.drumSetNo ?? ''}</td>
-				<td class="font-monospace">${tone.voices[1]?.toneWave?.name ?? tone.voices[1]?.drumSet?.name ?? ''}</td>
+				<td class="text-end">${tone.voices[0].waveNo ?? tone.voices[0].drumSetNo}</td>
+				<td class="font-monospace">${tone.voices[0].wave?.name ?? tone.voices[0].drumSet?.name}</td>
+				<td class="text-end">${tone.voices[1]?.waveNo ?? tone.voices[1]?.drumSetNo ?? ''}</td>
+				<td class="font-monospace">${tone.voices[1]?.wave?.name ?? tone.voices[1]?.drumSet?.name ?? ''}</td>
 			</tr>
 		`)}
 		</tbody>
@@ -50,10 +50,10 @@ const templateWaveList = (json) => html`
 				</tr>
 			</thead>
 			<tbody>
-			${json.toneWaves.map((toneWave) => html`
+			${json.waves.map((wave) => html`
 				<tr>
-					<td class="text-end">${toneWave.toneWaveNo}</td>
-					<td class="font-monospace">${toneWave.name}</td>
+					<td class="text-end">${wave.waveNo}</td>
+					<td class="font-monospace">${wave.name}</td>
 				</tr>
 			`)}
 			</tbody>
@@ -64,7 +64,7 @@ const templateWaveList = (json) => html`
 const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
-			<h3 class="h6 mb-0">Multi Sample No.${voice.toneWaveNo ?? voice.drumSetNo}: <span class="font-monospace h4">${voice.toneWave?.name ?? voice.drumSet?.name}</span></h3>
+			<h3 class="h6 mb-0">Multi Sample No.${voice.waveNo ?? voice.drumSetNo}: <span class="font-monospace h4">${voice.wave?.name ?? voice.drumSet?.name}</span></h3>
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
@@ -473,8 +473,8 @@ const templateTone = (tone, json) => html`
 
 window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	lists: [
-		{id: 'tones', label: 'Programs', renderer: templateToneList},
-		{id: 'toneWaves', label: 'Samples',  renderer: templateWaveList},
+		{id: 'tones', label: 'Programs',      renderer: templateToneList},
+		{id: 'waves', label: 'Multi Samples', renderer: templateWaveList},
 	],
 	details: {
 		tones: templateTone,

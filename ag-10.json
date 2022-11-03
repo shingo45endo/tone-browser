@@ -1,475 +1,475 @@
 {
-  "toneWaves": [
+  "waves": [
     {
-      "toneWaveNo": 0,
+      "waveNo": 0,
       "name": "A.Piano 1"
     },
     {
-      "toneWaveNo": 1,
+      "waveNo": 1,
       "name": "A.Piano 2"
     },
     {
-      "toneWaveNo": 2,
+      "waveNo": 2,
       "name": "E.Piano 1"
     },
     {
-      "toneWaveNo": 3,
+      "waveNo": 3,
       "name": "Soft EP"
     },
     {
-      "toneWaveNo": 4,
+      "waveNo": 4,
       "name": "E.Piano 1"
     },
     {
-      "toneWaveNo": 5,
+      "waveNo": 5,
       "name": "Harpsicord"
     },
     {
-      "toneWaveNo": 6,
+      "waveNo": 6,
       "name": "Clav"
     },
     {
-      "toneWaveNo": 7,
+      "waveNo": 7,
       "name": "Clav LP"
     },
     {
-      "toneWaveNo": 8,
+      "waveNo": 8,
       "name": "Celesta"
     },
     {
-      "toneWaveNo": 9,
+      "waveNo": 9,
       "name": "Glocken"
     },
     {
-      "toneWaveNo": 10,
+      "waveNo": 10,
       "name": "Music Box"
     },
     {
-      "toneWaveNo": 11,
+      "waveNo": 11,
       "name": "Vibe"
     },
     {
-      "toneWaveNo": 12,
+      "waveNo": 12,
       "name": "Marimba"
     },
     {
-      "toneWaveNo": 13,
+      "waveNo": 13,
       "name": "Xylophone"
     },
     {
-      "toneWaveNo": 14,
+      "waveNo": 14,
       "name": "Tubular"
     },
     {
-      "toneWaveNo": 15,
+      "waveNo": 15,
       "name": "Santur"
     },
     {
-      "toneWaveNo": 16,
+      "waveNo": 16,
       "name": "Organ 3"
     },
     {
-      "toneWaveNo": 17,
+      "waveNo": 17,
       "name": "PercOrgan2"
     },
     {
-      "toneWaveNo": 18,
+      "waveNo": 18,
       "name": "RotaryOrg1"
     },
     {
-      "toneWaveNo": 19,
+      "waveNo": 19,
       "name": "PipeOrgan3"
     },
     {
-      "toneWaveNo": 20,
+      "waveNo": 20,
       "name": "PipeOrgan1"
     },
     {
-      "toneWaveNo": 21,
+      "waveNo": 21,
       "name": "Musette"
     },
     {
-      "toneWaveNo": 22,
+      "waveNo": 22,
       "name": "Harmonica"
     },
     {
-      "toneWaveNo": 23,
+      "waveNo": 23,
       "name": "Accordion"
     },
     {
-      "toneWaveNo": 24,
+      "waveNo": 24,
       "name": "G.Guitar"
     },
     {
-      "toneWaveNo": 25,
+      "waveNo": 25,
       "name": "F.Guitar"
     },
     {
-      "toneWaveNo": 26,
+      "waveNo": 26,
       "name": "E.Guitar 3"
     },
     {
-      "toneWaveNo": 27,
+      "waveNo": 27,
       "name": "E.Guitar 1"
     },
     {
-      "toneWaveNo": 28,
+      "waveNo": 28,
       "name": "MuteGuitar"
     },
     {
-      "toneWaveNo": 29,
+      "waveNo": 29,
       "name": "Over Drive"
     },
     {
-      "toneWaveNo": 30,
+      "waveNo": 30,
       "name": "DistGuitar"
     },
     {
-      "toneWaveNo": 31,
+      "waveNo": 31,
       "name": "Dist GtrLP"
     },
     {
-      "toneWaveNo": 32,
+      "waveNo": 32,
       "name": "Syn Sine"
     },
     {
-      "toneWaveNo": 33,
+      "waveNo": 33,
       "name": "A.Bass 1"
     },
     {
-      "toneWaveNo": 34,
+      "waveNo": 34,
       "name": "E.Bass 1"
     },
     {
-      "toneWaveNo": 35,
+      "waveNo": 35,
       "name": "Pick Bass1"
     },
     {
-      "toneWaveNo": 36,
+      "waveNo": 36,
       "name": "Fretless"
     },
     {
-      "toneWaveNo": 37,
+      "waveNo": 37,
       "name": "Slap Bass1"
     },
     {
-      "toneWaveNo": 38,
+      "waveNo": 38,
       "name": "Slap Bass2"
     },
     {
-      "toneWaveNo": 39,
+      "waveNo": 39,
       "name": "Saw"
     },
     {
-      "toneWaveNo": 40,
+      "waveNo": 40,
       "name": "SynthBass1"
     },
     {
-      "toneWaveNo": 41,
+      "waveNo": 41,
       "name": "Violin"
     },
     {
-      "toneWaveNo": 42,
+      "waveNo": 42,
       "name": "Cello"
     },
     {
-      "toneWaveNo": 43,
+      "waveNo": 43,
       "name": "StringEns."
     },
     {
-      "toneWaveNo": 44,
+      "waveNo": 44,
       "name": "StrEns.V1"
     },
     {
-      "toneWaveNo": 45,
+      "waveNo": 45,
       "name": "StrEns.V2"
     },
     {
-      "toneWaveNo": 46,
+      "waveNo": 46,
       "name": "StrEns.V3"
     },
     {
-      "toneWaveNo": 47,
+      "waveNo": 47,
       "name": "Pizzicato"
     },
     {
-      "toneWaveNo": 48,
+      "waveNo": 48,
       "name": "Harp"
     },
     {
-      "toneWaveNo": 49,
+      "waveNo": 49,
       "name": "Timpani"
     },
     {
-      "toneWaveNo": 50,
+      "waveNo": 50,
       "name": "AnaStrings"
     },
     {
-      "toneWaveNo": 51,
+      "waveNo": 51,
       "name": "Choir"
     },
     {
-      "toneWaveNo": 52,
+      "waveNo": 52,
       "name": "Voice"
     },
     {
-      "toneWaveNo": 53,
+      "waveNo": 53,
       "name": "Orch Hit"
     },
     {
-      "toneWaveNo": 54,
+      "waveNo": 54,
       "name": "Trumpet"
     },
     {
-      "toneWaveNo": 55,
+      "waveNo": 55,
       "name": "Trombone 2"
     },
     {
-      "toneWaveNo": 56,
+      "waveNo": 56,
       "name": "Tuba"
     },
     {
-      "toneWaveNo": 57,
+      "waveNo": 57,
       "name": "Mute TP"
     },
     {
-      "toneWaveNo": 58,
+      "waveNo": 58,
       "name": "Horn"
     },
     {
-      "toneWaveNo": 59,
+      "waveNo": 59,
       "name": "Trombone 1"
     },
     {
-      "toneWaveNo": 60,
+      "waveNo": 60,
       "name": "Brass 2"
     },
     {
-      "toneWaveNo": 61,
+      "waveNo": 61,
       "name": "PWM"
     },
     {
-      "toneWaveNo": 62,
+      "waveNo": 62,
       "name": "SopranoSax"
     },
     {
-      "toneWaveNo": 63,
+      "waveNo": 63,
       "name": "Alto Sax"
     },
     {
-      "toneWaveNo": 64,
+      "waveNo": 64,
       "name": "Tenor Sax"
     },
     {
-      "toneWaveNo": 65,
+      "waveNo": 65,
       "name": "Bari Sax"
     },
     {
-      "toneWaveNo": 66,
+      "waveNo": 66,
       "name": "Oboe"
     },
     {
-      "toneWaveNo": 67,
+      "waveNo": 67,
       "name": "EnglishHrn"
     },
     {
-      "toneWaveNo": 68,
+      "waveNo": 68,
       "name": "BasoonOboe"
     },
     {
-      "toneWaveNo": 69,
+      "waveNo": 69,
       "name": "Clarinet"
     },
     {
-      "toneWaveNo": 70,
+      "waveNo": 70,
       "name": "Flute"
     },
     {
-      "toneWaveNo": 71,
+      "waveNo": 71,
       "name": "Recorder"
     },
     {
-      "toneWaveNo": 72,
+      "waveNo": 72,
       "name": "Pan Flute"
     },
     {
-      "toneWaveNo": 73,
+      "waveNo": 73,
       "name": "Bottle"
     },
     {
-      "toneWaveNo": 74,
+      "waveNo": 74,
       "name": "Shakuhachi"
     },
     {
-      "toneWaveNo": 75,
+      "waveNo": 75,
       "name": "Sine"
     },
     {
-      "toneWaveNo": 76,
+      "waveNo": 76,
       "name": "Ocarina"
     },
     {
-      "toneWaveNo": 77,
+      "waveNo": 77,
       "name": "Square"
     },
     {
-      "toneWaveNo": 78,
+      "waveNo": 78,
       "name": "Air Vox"
     },
     {
-      "toneWaveNo": 79,
+      "waveNo": 79,
       "name": "Koto"
     },
     {
-      "toneWaveNo": 80,
+      "waveNo": 80,
       "name": "Mega Pad"
     },
     {
-      "toneWaveNo": 81,
+      "waveNo": 81,
       "name": "VS 58"
     },
     {
-      "toneWaveNo": 82,
+      "waveNo": 82,
       "name": "White Pad"
     },
     {
-      "toneWaveNo": 83,
+      "waveNo": 83,
       "name": "Clicker"
     },
     {
-      "toneWaveNo": 84,
+      "waveNo": 84,
       "name": "Syn Vox"
     },
     {
-      "toneWaveNo": 85,
+      "waveNo": 85,
       "name": "Syn Vox LP"
     },
     {
-      "toneWaveNo": 86,
+      "waveNo": 86,
       "name": "BrightBell"
     },
     {
-      "toneWaveNo": 87,
+      "waveNo": 87,
       "name": "B.Bell LP"
     },
     {
-      "toneWaveNo": 88,
+      "waveNo": 88,
       "name": "Ether Bell"
     },
     {
-      "toneWaveNo": 89,
+      "waveNo": 89,
       "name": "Belltree"
     },
     {
-      "toneWaveNo": 90,
+      "waveNo": 90,
       "name": "BelltreeNT"
     },
     {
-      "toneWaveNo": 91,
+      "waveNo": 91,
       "name": "Sitar 1"
     },
     {
-      "toneWaveNo": 92,
+      "waveNo": 92,
       "name": "Banjo"
     },
     {
-      "toneWaveNo": 93,
+      "waveNo": 93,
       "name": "Shamisen"
     },
     {
-      "toneWaveNo": 94,
+      "waveNo": 94,
       "name": "Kalimba"
     },
     {
-      "toneWaveNo": 95,
+      "waveNo": 95,
       "name": "Metal Bell"
     },
     {
-      "toneWaveNo": 96,
+      "waveNo": 96,
       "name": "M.Bell LP"
     },
     {
-      "toneWaveNo": 97,
+      "waveNo": 97,
       "name": "Agogo"
     },
     {
-      "toneWaveNo": 98,
+      "waveNo": 98,
       "name": "Steel Drum"
     },
     {
-      "toneWaveNo": 99,
+      "waveNo": 99,
       "name": "WoodBlock1"
     },
     {
-      "toneWaveNo": 100,
+      "waveNo": 100,
       "name": "Taiko"
     },
     {
-      "toneWaveNo": 101,
+      "waveNo": 101,
       "name": "Melo Tom"
     },
     {
-      "toneWaveNo": 102,
+      "waveNo": 102,
       "name": "Syn Tom 1"
     },
     {
-      "toneWaveNo": 103,
+      "waveNo": 103,
       "name": "Stadium"
     },
     {
-      "toneWaveNo": 104,
+      "waveNo": 104,
       "name": "Stadium NT"
     },
     {
-      "toneWaveNo": 105,
+      "waveNo": 105,
       "name": "CrashLP NT"
     },
     {
-      "toneWaveNo": 106,
+      "waveNo": 106,
       "name": "Gt Scratch"
     },
     {
-      "toneWaveNo": 107,
+      "waveNo": 107,
       "name": "Tap5"
     },
     {
-      "toneWaveNo": 108,
+      "waveNo": 108,
       "name": "Crickets 1"
     },
     {
-      "toneWaveNo": 109,
+      "waveNo": 109,
       "name": "Crickts1NT"
     },
     {
-      "toneWaveNo": 110,
+      "waveNo": 110,
       "name": "Tri Roll"
     },
     {
-      "toneWaveNo": 111,
+      "waveNo": 111,
       "name": "TriRoll NT"
     },
     {
-      "toneWaveNo": 112,
+      "waveNo": 112,
       "name": "Gun Shot"
     },
     {
-      "toneWaveNo": 113,
+      "waveNo": 113,
       "name": "Sitar 1"
     },
     {
-      "toneWaveNo": 114,
+      "waveNo": 114,
       "name": "Sitar 1"
     },
     {
-      "toneWaveNo": 115,
+      "waveNo": 115,
       "name": "SynBass 3"
     },
     {
-      "toneWaveNo": 116,
+      "waveNo": 116,
       "name": "Doo Voice"
     },
     {
-      "toneWaveNo": 117,
+      "waveNo": 117,
       "name": "BrushNoise"
     }
   ],
@@ -480,10 +480,10 @@
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 15, 15, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 0,
-          "toneWave": {
+          "waveNo": 0,
+          "wave": {
             "name": "A.Piano 1",
-            "$ref": "#/toneWaves/0"
+            "$ref": "#/waves/0"
           },
           "octave": 0,
           "bytes": [0, 132, 50, 0, 0, 1, 25, 0, 0, 0, 5, 53, 203, 94, 4, 17, 62, 0, 99, 79, 70, 99, 24, 93, 6, 22, 48, 0, 67, 4, 3, 0, 99, 0, 99, 90, 0, 38, 6, 2, 12, 68, 0, 0]
@@ -496,10 +496,10 @@
       "commonBytes": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 15, 15, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 1,
-          "toneWave": {
+          "waveNo": 1,
+          "wave": {
             "name": "A.Piano 2",
-            "$ref": "#/toneWaves/1"
+            "$ref": "#/waves/1"
           },
           "octave": 0,
           "bytes": [0, 132, 50, 0, 0, 0, 25, 0, 0, 0, 28, 53, 201, 56, 7, 0, 74, 0, 99, 89, 30, 30, 30, 90, 6, 34, 41, 244, 69, 5, 0, 0, 99, 92, 0, 0, 0, 39, 6, 2, 10, 0, 0, 0]
@@ -512,19 +512,19 @@
       "commonBytes": [1, 1, 0, 4, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 15, 15, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 1,
-          "toneWave": {
+          "waveNo": 1,
+          "wave": {
             "name": "A.Piano 2",
-            "$ref": "#/toneWaves/1"
+            "$ref": "#/waves/1"
           },
           "octave": 0,
           "bytes": [0, 132, 50, 0, 0, 1, 25, 0, 0, 0, 33, 53, 197, 67, 9, 30, 63, 0, 99, 69, 66, 94, 30, 85, 6, 23, 48, 0, 69, 27, 0, 0, 99, 88, 0, 0, 0, 32, 6, 2, 10, 0, 0, 0]
         },
         {
-          "toneWaveNo": 4,
-          "toneWave": {
+          "waveNo": 4,
+          "wave": {
             "name": "E.Piano 1",
-            "$ref": "#/toneWaves/4"
+            "$ref": "#/waves/4"
           },
           "octave": 0,
           "bytes": [51, 0, 132, 50, 0, 0, 0, 25, 0, 0, 0, 14, 53, 203, 72, 5, 0, 43, 0, 99, 34, 67, 99, 34, 99, 6, 10, 48, 9, 50, 18, 0, 0, 99, 90, 0, 0, 0, 20, 6, 2, 10, 0, 0]
@@ -537,19 +537,19 @@
       "commonBytes": [1, 0, 0, 1, 0, 0, 250, 0, 99, 99, 99, 99, 99, 99, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 0,
-          "toneWave": {
+          "waveNo": 0,
+          "wave": {
             "name": "A.Piano 1",
-            "$ref": "#/toneWaves/0"
+            "$ref": "#/waves/0"
           },
           "octave": 0,
           "bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 22, 58, 207, 85, 4, 30, 64, 0, 99, 98, 78, 96, 50, 88, 6, 26, 51, 241, 79, 44, 11, 0, 99, 21, 77, 87, 0, 34, 0, 2, 14, 2, 0, 0]
         },
         {
-          "toneWaveNo": 1,
-          "toneWave": {
+          "waveNo": 1,
+          "wave": {
             "name": "A.Piano 2",
-            "$ref": "#/toneWaves/1"
+            "$ref": "#/waves/1"
           },
           "octave": 0,
           "bytes": [48, 0, 0, 42, 2, 1, 4, 0, 0, 0, 0, 28, 19, 206, 87, 6, 3, 33, 0, 99, 98, 30, 30, 30, 77, 0, 26, 51, 0, 70, 6, 0, 0, 99, 91, 0, 0, 0, 33, 2, 0, 10, 0, 0]
@@ -562,10 +562,10 @@
       "commonBytes": [0, 3, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 3,
-          "toneWave": {
+          "waveNo": 3,
+          "wave": {
             "name": "Soft EP",
-            "$ref": "#/toneWaves/3"
+            "$ref": "#/waves/3"
           },
           "octave": 0,
           "bytes": [0, 0, 56, 0, 0, 0, 0, 0, 2, 0, 8, 72, 212, 74, 3, 2, 77, 0, 99, 83, 40, 40, 40, 84, 37, 37, 50, 249, 81, 17, 0, 0, 99, 16, 70, 90, 0, 9, 2, 2, 10, 34, 0, 0]
@@ -578,10 +578,10 @@
       "commonBytes": [0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 56, 0, 0, 0, 0, 0, 0, 0, 7],
       "voices": [
         {
-          "toneWaveNo": 4,
-          "toneWave": {
+          "waveNo": 4,
+          "wave": {
             "name": "E.Piano 1",
-            "$ref": "#/toneWaves/4"
+            "$ref": "#/waves/4"
           },
           "octave": 0,
           "bytes": [0, 0, 56, 0, 0, 0, 0, 0, 7, 0, 21, 53, 201, 68, 15, 10, 69, 0, 99, 89, 41, 99, 25, 99, 50, 19, 37, 86, 73, 18, 0, 0, 99, 90, 0, 0, 0, 12, 6, 2, 2, 0, 0, 0]
@@ -594,10 +594,10 @@
       "commonBytes": [0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 5,
-          "toneWave": {
+          "waveNo": 5,
+          "wave": {
             "name": "Harpsicord",
-            "$ref": "#/toneWaves/5"
+            "$ref": "#/waves/5"
           },
           "octave": 0,
           "bytes": [0, 0, 57, 0, 0, 0, 0, 0, 2, 0, 50, 44, 206, 44, 0, 2, 39, 0, 99, 0, 94, 71, 42, 40, 40, 27, 45, 40, 78, 37, 0, 0, 99, 85, 0, 0, 0, 8, 2, 2, 2, 0, 0, 0]
@@ -610,10 +610,10 @@
       "commonBytes": [0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 6,
-          "toneWave": {
+          "waveNo": 6,
+          "wave": {
             "name": "Clav",
-            "$ref": "#/toneWaves/6"
+            "$ref": "#/waves/6"
           },
           "octave": 0,
           "bytes": [0, 0, 58, 0, 0, 0, 0, 0, 2, 0, 6, 56, 214, 78, 36, 5, 58, 0, 99, 89, 44, 99, 30, 30, 30, 45, 50, 229, 69, 15, 0, 0, 99, 84, 0, 0, 0, 0, 6, 2, 2, 0, 0, 0]
@@ -626,10 +626,10 @@
       "commonBytes": [0, 8, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 8,
-          "toneWave": {
+          "waveNo": 8,
+          "wave": {
             "name": "Celesta",
-            "$ref": "#/toneWaves/8"
+            "$ref": "#/waves/8"
           },
           "octave": 0,
           "bytes": [0, 0, 53, 0, 0, 0, 0, 0, 2, 0, 4, 52, 246, 99, 6, 4, 75, 0, 99, 99, 16, 16, 16, 99, 99, 63, 66, 157, 79, 20, 1, 0, 99, 62, 0, 0, 0, 44, 10, 34, 10, 170, 0, 0]
@@ -642,10 +642,10 @@
       "commonBytes": [0, 9, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 9,
-          "toneWave": {
+          "waveNo": 9,
+          "wave": {
             "name": "Glocken",
-            "$ref": "#/toneWaves/9"
+            "$ref": "#/waves/9"
           },
           "octave": 0,
           "bytes": [0, 128, 5, 0, 0, 0, 0, 0, 3, 0, 0, 60, 224, 71, 0, 32, 29, 0, 99, 91, 48, 99, 26, 96, 0, 48, 66, 44, 71, 11, 0, 0, 99, 62, 0, 0, 0, 58, 0, 0, 2, 0, 0, 0]
@@ -658,10 +658,10 @@
       "commonBytes": [0, 10, 0, 0, 1, 0, 254, 9, 99, 99, 99, 99, 99, 99, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 10,
-          "toneWave": {
+          "waveNo": 10,
+          "wave": {
             "name": "Music Box",
-            "$ref": "#/toneWaves/10"
+            "$ref": "#/waves/10"
           },
           "octave": 0,
           "bytes": [0, 0, 58, 0, 0, 0, 0, 0, 2, 0, 28, 70, 209, 48, 0, 4, 49, 0, 99, 82, 0, 0, 0, 83, 70, 76, 66, 230, 84, 50, 2, 0, 99, 64, 0, 0, 0, 46, 2, 2, 2, 2, 0, 0]
@@ -674,10 +674,10 @@
       "commonBytes": [0, 11, 0, 0, 1, 12, 252, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 53, 1, 17, 0, 0, 0, 0, 0, 6],
       "voices": [
         {
-          "toneWaveNo": 11,
-          "toneWave": {
+          "waveNo": 11,
+          "wave": {
             "name": "Vibe",
-            "$ref": "#/toneWaves/11"
+            "$ref": "#/waves/11"
           },
           "octave": 0,
           "bytes": [0, 128, 49, 28, 0, 0, 0, 0, 3, 0, 5, 55, 195, 80, 1, 7, 48, 0, 99, 79, 56, 54, 52, 85, 20, 62, 53, 226, 66, 20, 2, 0, 99, 77, 0, 0, 0, 39, 14, 2, 10, 170, 0, 0]
@@ -690,10 +690,10 @@
       "commonBytes": [0, 12, 0, 0, 1, 12, 252, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 52, 0, 0, 0, 0, 0, 0, 0, 6],
       "voices": [
         {
-          "toneWaveNo": 12,
-          "toneWave": {
+          "waveNo": 12,
+          "wave": {
             "name": "Marimba",
-            "$ref": "#/toneWaves/12"
+            "$ref": "#/waves/12"
           },
           "octave": 0,
           "bytes": [0, 128, 49, 28, 0, 0, 0, 0, 3, 0, 43, 39, 205, 70, 12, 0, 49, 0, 99, 43, 30, 30, 30, 45, 12, 46, 43, 249, 66, 34, 6, 0, 99, 67, 0, 0, 0, 32, 10, 0, 8, 136, 0, 0]
@@ -706,10 +706,10 @@
       "commonBytes": [0, 13, 0, 0, 255, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 3, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 13,
-          "toneWave": {
+          "waveNo": 13,
+          "wave": {
             "name": "Xylophone",
-            "$ref": "#/toneWaves/13"
+            "$ref": "#/waves/13"
           },
           "octave": 0,
           "bytes": [0, 128, 60, 0, 0, 0, 0, 0, 5, 0, 5, 66, 226, 99, 32, 29, 68, 0, 99, 56, 47, 99, 28, 99, 12, 99, 45, 229, 59, 6, 0, 0, 99, 51, 0, 0, 0, 36, 10, 2, 10, 0, 0, 0]
@@ -722,10 +722,10 @@
       "commonBytes": [0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 14,
-          "toneWave": {
+          "waveNo": 14,
+          "wave": {
             "name": "Tubular",
-            "$ref": "#/toneWaves/14"
+            "$ref": "#/waves/14"
           },
           "octave": 0,
           "bytes": [0, 128, 44, 1, 0, 1, 35, 0, 3, 4, 45, 66, 211, 28, 9, 0, 87, 0, 99, 86, 0, 0, 0, 75, 10, 39, 66, 0, 54, 23, 10, 0, 99, 74, 0, 0, 0, 62, 8, 0, 10, 136, 0, 0]
@@ -738,10 +738,10 @@
       "commonBytes": [0, 15, 0, 0, 0, 0, 247, 3, 157, 0, 0, 0, 0, 0, 0, 0, 96, 53, 0, 0, 0, 0, 0, 0, 0, 6],
       "voices": [
         {
-          "toneWaveNo": 15,
-          "toneWave": {
+          "waveNo": 15,
+          "wave": {
             "name": "Santur",
-            "$ref": "#/toneWaves/15"
+            "$ref": "#/waves/15"
           },
           "octave": 0,
           "bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 4, 84, 218, 55, 0, 9, 49, 0, 99, 84, 40, 38, 38, 76, 15, 49, 66, 224, 49, 59, 18, 0, 99, 68, 0, 0, 0, 47, 0, 8, 10, 136, 0, 0]
@@ -754,10 +754,10 @@
       "commonBytes": [0, 16, 255, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 16,
-          "toneWave": {
+          "waveNo": 16,
+          "wave": {
             "name": "Organ 3",
-            "$ref": "#/toneWaves/16"
+            "$ref": "#/waves/16"
           },
           "octave": 255,
           "bytes": [0, 0, 69, 0, 0, 3, 0, 0, 3, 0, 30, 60, 0, 99, 0, 0, 0, 0, 99, 13, 51, 51, 51, 51, 51, 45, 51, 202, 89, 0, 0, 0, 99, 99, 99, 99, 99, 1, 0, 0, 0, 0, 0, 0]
@@ -770,19 +770,19 @@
       "commonBytes": [1, 17, 255, 17, 255, 0, 6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 32, 40, 0, 22, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 17,
-          "toneWave": {
+          "waveNo": 17,
+          "wave": {
             "name": "PercOrgan2",
-            "$ref": "#/toneWaves/17"
+            "$ref": "#/waves/17"
           },
           "octave": 255,
           "bytes": [0, 0, 56, 2, 0, 14, 0, 0, 2, 0, 65, 54, 226, 99, 0, 0, 0, 0, 10, 0, 0, 0, 0, 50, 50, 53, 48, 210, 66, 0, 0, 0, 99, 99, 99, 99, 99, 0, 0, 0, 0, 0, 0, 0]
         },
         {
-          "toneWaveNo": 17,
-          "toneWave": {
+          "waveNo": 17,
+          "wave": {
             "name": "PercOrgan2",
-            "$ref": "#/toneWaves/17"
+            "$ref": "#/waves/17"
           },
           "octave": 255,
           "bytes": [35, 0, 0, 67, 0, 0, 16, 0, 2, 2, 0, 76, 54, 206, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 48, 210, 87, 0, 0, 0, 99, 99, 99, 99, 99, 0, 0, 0, 0, 0, 0]
@@ -795,10 +795,10 @@
       "commonBytes": [0, 18, 255, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 18,
-          "toneWave": {
+          "waveNo": 18,
+          "wave": {
             "name": "RotaryOrg1",
-            "$ref": "#/toneWaves/18"
+            "$ref": "#/waves/18"
           },
           "octave": 255,
           "bytes": [0, 0, 32, 3, 0, 9, 0, 0, 0, 0, 60, 60, 203, 25, 0, 0, 19, 0, 21, 19, 0, 0, 0, 44, 44, 73, 54, 216, 75, 0, 0, 0, 99, 99, 99, 99, 99, 0, 0, 0, 0, 0, 0, 0]
@@ -811,10 +811,10 @@
       "commonBytes": [0, 19, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 19,
-          "toneWave": {
+          "waveNo": 19,
+          "wave": {
             "name": "PipeOrgan3",
-            "$ref": "#/toneWaves/19"
+            "$ref": "#/waves/19"
           },
           "octave": 255,
           "bytes": [0, 128, 65, 0, 0, 0, 0, 0, 1, 0, 60, 84, 7, 36, 0, 0, 0, 0, 99, 99, 99, 99, 99, 99, 99, 35, 48, 236, 73, 0, 0, 3, 99, 99, 99, 99, 99, 17, 0, 0, 0, 0, 0, 0]
@@ -827,10 +827,10 @@
       "commonBytes": [0, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 20,
-          "toneWave": {
+          "waveNo": 20,
+          "wave": {
             "name": "PipeOrgan1",
-            "$ref": "#/toneWaves/20"
+            "$ref": "#/waves/20"
           },
           "octave": 1,
           "bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 15, 66, 206, 54, 0, 0, 0, 0, 99, 12, 89, 99, 90, 99, 99, 41, 55, 204, 69, 0, 0, 3, 99, 99, 99, 99, 99, 6, 0, 0, 0, 0, 0, 0]
@@ -843,10 +843,10 @@
       "commonBytes": [0, 21, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 3, 0, 38, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 21,
-          "toneWave": {
+          "waveNo": 21,
+          "wave": {
             "name": "Musette",
-            "$ref": "#/toneWaves/21"
+            "$ref": "#/waves/21"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 0, 0, 2, 31, 0, 1, 0, 42, 56, 233, 54, 0, 0, 54, 0, 90, 73, 90, 90, 90, 90, 17, 50, 67, 230, 68, 0, 0, 8, 92, 70, 67, 67, 67, 7, 0, 0, 0, 0, 0, 0]
@@ -859,10 +859,10 @@
       "commonBytes": [0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 63, 10, 16, 0, 1, 1, 246, 17, 2],
       "voices": [
         {
-          "toneWaveNo": 22,
-          "toneWave": {
+          "waveNo": 22,
+          "wave": {
             "name": "Harmonica",
-            "$ref": "#/toneWaves/22"
+            "$ref": "#/waves/22"
           },
           "octave": 0,
           "bytes": [0, 128, 59, 7, 10, 6, 0, 2, 2, 0, 8, 40, 243, 85, 59, 9, 54, 0, 99, 33, 98, 93, 80, 58, 57, 29, 66, 19, 75, 98, 0, 0, 99, 12, 99, 95, 49, 7, 6, 4, 6, 0, 0, 0]
@@ -875,10 +875,10 @@
       "commonBytes": [0, 23, 0, 0, 1, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 3, 0, 38, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 23,
-          "toneWave": {
+          "waveNo": 23,
+          "wave": {
             "name": "Accordion",
-            "$ref": "#/toneWaves/23"
+            "$ref": "#/waves/23"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 0, 0, 2, 31, 0, 1, 0, 45, 66, 246, 44, 0, 0, 54, 0, 99, 73, 90, 90, 90, 85, 17, 27, 110, 231, 74, 0, 0, 8, 92, 70, 67, 67, 67, 7, 0, 0, 0, 0, 0, 0]
@@ -891,10 +891,10 @@
       "commonBytes": [0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 24,
-          "toneWave": {
+          "waveNo": 24,
+          "wave": {
             "name": "G.Guitar",
-            "$ref": "#/toneWaves/24"
+            "$ref": "#/waves/24"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 8, 15, 1, 27, 1, 3, 0, 0, 59, 210, 99, 33, 52, 55, 0, 99, 40, 79, 76, 59, 99, 62, 49, 67, 213, 72, 17, 0, 0, 99, 3, 90, 75, 0, 8, 6, 2, 8, 0, 0, 0]
@@ -907,10 +907,10 @@
       "commonBytes": [0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 253, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 25,
-          "toneWave": {
+          "waveNo": 25,
+          "wave": {
             "name": "F.Guitar",
-            "$ref": "#/toneWaves/25"
+            "$ref": "#/waves/25"
           },
           "octave": 0,
           "bytes": [0, 0, 55, 8, 10, 1, 0, 2, 2, 0, 28, 55, 201, 68, 16, 4, 49, 0, 87, 82, 29, 35, 30, 63, 26, 50, 50, 0, 76, 1, 25, 0, 99, 80, 0, 0, 0, 16, 6, 6, 2, 1, 0, 0]
@@ -923,10 +923,10 @@
       "commonBytes": [0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 26,
-          "toneWave": {
+          "waveNo": 26,
+          "wave": {
             "name": "E.Guitar 3",
-            "$ref": "#/toneWaves/26"
+            "$ref": "#/waves/26"
           },
           "octave": 0,
           "bytes": [0, 128, 54, 0, 59, 0, 30, 1, 5, 0, 21, 45, 205, 65, 9, 5, 39, 0, 99, 63, 58, 98, 0, 30, 0, 62, 60, 228, 66, 61, 0, 0, 99, 76, 0, 0, 0, 10, 2, 102, 2, 0, 0, 0]
@@ -939,10 +939,10 @@
       "commonBytes": [0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 27,
-          "toneWave": {
+          "waveNo": 27,
+          "wave": {
             "name": "E.Guitar 1",
-            "$ref": "#/toneWaves/27"
+            "$ref": "#/waves/27"
           },
           "octave": 0,
           "bytes": [0, 128, 54, 0, 59, 0, 30, 1, 5, 0, 28, 66, 206, 67, 0, 0, 57, 0, 99, 82, 30, 30, 30, 30, 30, 71, 48, 219, 69, 38, 0, 0, 99, 76, 0, 0, 0, 10, 2, 102, 2, 0, 0, 0]
@@ -955,10 +955,10 @@
       "commonBytes": [0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 28,
-          "toneWave": {
+          "waveNo": 28,
+          "wave": {
             "name": "MuteGuitar",
-            "$ref": "#/toneWaves/28"
+            "$ref": "#/waves/28"
           },
           "octave": 0,
           "bytes": [0, 128, 59, 0, 59, 2, 30, 3, 8, 0, 0, 63, 183, 84, 0, 0, 69, 0, 99, 81, 0, 0, 0, 30, 0, 58, 60, 0, 69, 9, 0, 0, 99, 91, 0, 0, 0, 17, 6, 102, 6, 0, 0, 0]
@@ -971,10 +971,10 @@
       "commonBytes": [0, 29, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 58, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 29,
-          "toneWave": {
+          "waveNo": 29,
+          "wave": {
             "name": "Over Drive",
-            "$ref": "#/toneWaves/29"
+            "$ref": "#/waves/29"
           },
           "octave": 0,
           "bytes": [0, 128, 59, 0, 0, 0, 27, 2, 4, 0, 6, 66, 208, 84, 17, 0, 62, 0, 99, 12, 80, 97, 52, 70, 15, 42, 66, 241, 49, 58, 2, 0, 99, 50, 92, 94, 70, 4, 10, 0, 8, 68, 0, 0]
@@ -987,10 +987,10 @@
       "commonBytes": [0, 30, 0, 0, 0, 0, 247, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 58, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 30,
-          "toneWave": {
+          "waveNo": 30,
+          "wave": {
             "name": "DistGuitar",
-            "$ref": "#/toneWaves/30"
+            "$ref": "#/waves/30"
           },
           "octave": 0,
           "bytes": [0, 128, 59, 0, 0, 0, 27, 2, 4, 0, 3, 66, 206, 99, 17, 8, 62, 0, 99, 70, 68, 98, 44, 44, 0, 56, 67, 54, 67, 34, 2, 0, 91, 82, 58, 93, 34, 16, 10, 2, 8, 68, 0, 0]
@@ -1003,19 +1003,19 @@
       "commonBytes": [1, 29, 1, 107, 1, 12, 0, 0, 99, 99, 99, 99, 99, 99, 0, 0, 64, 58, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 29,
-          "toneWave": {
+          "waveNo": 29,
+          "wave": {
             "name": "Over Drive",
-            "$ref": "#/toneWaves/29"
+            "$ref": "#/waves/29"
           },
           "octave": 1,
           "bytes": [98, 128, 59, 0, 0, 0, 27, 0, 4, 0, 16, 74, 193, 38, 17, 8, 66, 0, 99, 78, 80, 99, 64, 44, 0, 81, 67, 0, 68, 58, 2, 0, 99, 30, 30, 30, 30, 0, 10, 2, 8, 68, 0, 0]
         },
         {
-          "toneWaveNo": 107,
-          "toneWave": {
+          "waveNo": 107,
+          "wave": {
             "name": "Tap5",
-            "$ref": "#/toneWaves/107"
+            "$ref": "#/waves/107"
           },
           "octave": 1,
           "bytes": [51, 0, 128, 59, 0, 0, 0, 27, 0, 4, 0, 0, 66, 206, 60, 17, 8, 62, 0, 99, 91, 70, 70, 70, 0, 0, 81, 72, 0, 58, 0, 0, 0, 99, 99, 99, 99, 99, 0, 10, 2, 0, 0, 0]
@@ -1028,10 +1028,10 @@
       "commonBytes": [0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 53, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 33,
-          "toneWave": {
+          "waveNo": 33,
+          "wave": {
             "name": "A.Bass 1",
-            "$ref": "#/toneWaves/33"
+            "$ref": "#/waves/33"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 2, 10, 0, 30, 2, 4, 1, 18, 37, 195, 99, 0, 16, 63, 0, 99, 52, 46, 83, 41, 80, 60, 81, 52, 244, 59, 11, 3, 0, 99, 78, 0, 0, 0, 12, 6, 6, 2, 34, 0, 0]
@@ -1044,10 +1044,10 @@
       "commonBytes": [0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 34,
-          "toneWave": {
+          "waveNo": 34,
+          "wave": {
             "name": "E.Bass 1",
-            "$ref": "#/toneWaves/34"
+            "$ref": "#/waves/34"
           },
           "octave": 0,
           "bytes": [0, 0, 57, 0, 0, 0, 0, 0, 4, 0, 26, 28, 203, 77, 0, 0, 41, 0, 99, 60, 50, 48, 48, 63, 157, 50, 66, 221, 71, 19, 0, 0, 99, 88, 0, 0, 0, 3, 0, 70, 34, 0, 0, 0]
@@ -1060,10 +1060,10 @@
       "commonBytes": [0, 35, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 35,
-          "toneWave": {
+          "waveNo": 35,
+          "wave": {
             "name": "Pick Bass1",
-            "$ref": "#/toneWaves/35"
+            "$ref": "#/waves/35"
           },
           "octave": 0,
           "bytes": [0, 0, 57, 0, 0, 0, 0, 3, 4, 0, 26, 28, 203, 77, 3, 0, 49, 0, 99, 62, 50, 97, 32, 63, 22, 66, 66, 221, 49, 5, 0, 0, 99, 87, 0, 0, 0, 4, 6, 70, 2, 0, 0, 0]
@@ -1076,10 +1076,10 @@
       "commonBytes": [0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 54, 0, 0, 0, 4, 1, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 36,
-          "toneWave": {
+          "waveNo": 36,
+          "wave": {
             "name": "Fretless",
-            "$ref": "#/toneWaves/36"
+            "$ref": "#/waves/36"
           },
           "octave": 0,
           "bytes": [0, 0, 55, 8, 8, 2, 30, 2, 3, 1, 21, 64, 187, 57, 3, 1, 39, 0, 99, 63, 37, 35, 33, 63, 59, 74, 50, 226, 72, 13, 2, 0, 99, 91, 0, 0, 0, 14, 2, 2, 2, 2, 0, 0]
@@ -1092,10 +1092,10 @@
       "commonBytes": [0, 37, 0, 0, 1, 0, 251, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 37,
-          "toneWave": {
+          "waveNo": 37,
+          "wave": {
             "name": "Slap Bass1",
-            "$ref": "#/toneWaves/37"
+            "$ref": "#/waves/37"
           },
           "octave": 0,
           "bytes": [0, 128, 58, 0, 0, 0, 52, 3, 5, 0, 5, 62, 198, 72, 0, 0, 48, 0, 99, 65, 54, 54, 54, 99, 1, 71, 66, 0, 44, 0, 0, 0, 99, 78, 0, 0, 0, 5, 4, 4, 6, 0, 0, 0]
@@ -1108,10 +1108,10 @@
       "commonBytes": [0, 38, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 38,
-          "toneWave": {
+          "waveNo": 38,
+          "wave": {
             "name": "Slap Bass2",
-            "$ref": "#/toneWaves/38"
+            "$ref": "#/waves/38"
           },
           "octave": 0,
           "bytes": [0, 0, 57, 0, 0, 0, 0, 1, 2, 0, 3, 48, 206, 99, 0, 0, 40, 0, 99, 53, 50, 50, 50, 50, 157, 65, 66, 233, 67, 18, 0, 0, 99, 78, 0, 0, 0, 8, 2, 2, 2, 2, 0, 0]
@@ -1124,19 +1124,19 @@
       "commonBytes": [1, 115, 0, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 115,
-          "toneWave": {
+          "waveNo": 115,
+          "wave": {
             "name": "SynBass 3",
-            "$ref": "#/toneWaves/115"
+            "$ref": "#/waves/115"
           },
           "octave": 0,
           "bytes": [0, 128, 57, 0, 0, 0, 0, 2, 5, 0, 0, 48, 228, 95, 63, 5, 27, 0, 99, 42, 25, 96, 20, 50, 0, 40, 48, 236, 49, 23, 0, 0, 99, 90, 11, 99, 8, 11, 2, 38, 2, 0, 0, 0]
         },
         {
-          "toneWaveNo": 39,
-          "toneWave": {
+          "waveNo": 39,
+          "wave": {
             "name": "Saw",
-            "$ref": "#/toneWaves/39"
+            "$ref": "#/waves/39"
           },
           "octave": 0,
           "bytes": [51, 0, 128, 57, 0, 0, 0, 0, 5, 5, 0, 0, 48, 228, 95, 63, 5, 19, 0, 99, 48, 25, 96, 20, 50, 0, 25, 48, 236, 87, 23, 0, 0, 99, 90, 11, 99, 8, 11, 2, 38, 2, 0, 87]
@@ -1149,10 +1149,10 @@
       "commonBytes": [0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 40,
-          "toneWave": {
+          "waveNo": 40,
+          "wave": {
             "name": "SynthBass1",
-            "$ref": "#/toneWaves/40"
+            "$ref": "#/waves/40"
           },
           "octave": 0,
           "bytes": [0, 0, 60, 0, 0, 0, 0, 0, 10, 0, 0, 38, 211, 99, 0, 0, 29, 0, 99, 40, 60, 82, 50, 4, 99, 46, 40, 22, 77, 0, 0, 0, 99, 99, 99, 99, 99, 3, 0, 0, 0, 0, 49, 41]
@@ -1165,10 +1165,10 @@
       "commonBytes": [0, 41, 0, 0, 0, 0, 1, 0, 245, 10, 0, 0, 0, 0, 0, 0, 160, 58, 0, 1, 0, 0, 0, 1, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 41,
-          "toneWave": {
+          "waveNo": 41,
+          "wave": {
             "name": "Violin",
-            "$ref": "#/toneWaves/41"
+            "$ref": "#/waves/41"
           },
           "octave": 0,
           "bytes": [59, 128, 58, 5, 17, 15, 43, 2, 2, 1, 31, 60, 216, 99, 0, 14, 74, 0, 99, 0, 99, 12, 75, 99, 0, 39, 60, 3, 74, 34, 42, 0, 99, 26, 99, 95, 75, 20, 0, 3, 8, 2, 0, 0]
@@ -1181,10 +1181,10 @@
       "commonBytes": [0, 42, 0, 0, 0, 0, 0, 0, 248, 11, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 42,
-          "toneWave": {
+          "waveNo": 42,
+          "wave": {
             "name": "Cello",
-            "$ref": "#/toneWaves/42"
+            "$ref": "#/waves/42"
           },
           "octave": 0,
           "bytes": [4, 128, 56, 10, 15, 15, 47, 2, 2, 0, 32, 66, 204, 43, 0, 0, 29, 0, 95, 94, 58, 57, 61, 60, 42, 39, 47, 58, 80, 34, 7, 5, 87, 95, 94, 93, 92, 16, 0, 0, 8, 137, 0, 0]
@@ -1197,10 +1197,10 @@
       "commonBytes": [0, 42, 0, 0, 0, 0, 1, 0, 247, 11, 0, 0, 0, 0, 0, 0, 160, 58, 0, 1, 0, 0, 0, 1, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 42,
-          "toneWave": {
+          "waveNo": 42,
+          "wave": {
             "name": "Cello",
-            "$ref": "#/toneWaves/42"
+            "$ref": "#/waves/42"
           },
           "octave": 0,
           "bytes": [0, 128, 62, 5, 17, 15, 40, 2, 2, 1, 38, 60, 216, 54, 0, 14, 74, 0, 91, 89, 66, 99, 40, 99, 0, 47, 60, 251, 68, 44, 42, 0, 33, 26, 99, 95, 75, 19, 0, 3, 8, 2, 0, 0]
@@ -1213,10 +1213,10 @@
       "commonBytes": [0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 2, 0, 237, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 42,
-          "toneWave": {
+          "waveNo": 42,
+          "wave": {
             "name": "Cello",
-            "$ref": "#/toneWaves/42"
+            "$ref": "#/waves/42"
           },
           "octave": 0,
           "bytes": [0, 128, 57, 10, 15, 12, 40, 2, 3, 2, 7, 46, 201, 90, 34, 3, 27, 0, 96, 13, 94, 99, 70, 25, 70, 32, 60, 241, 73, 82, 98, 0, 87, 38, 99, 75, 79, 18, 76, 4, 11, 2, 0, 0]
@@ -1229,10 +1229,10 @@
       "commonBytes": [0, 43, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 160, 84, 2, 36, 0, 0, 2, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 43,
-          "toneWave": {
+          "waveNo": 43,
+          "wave": {
             "name": "StringEns.",
-            "$ref": "#/toneWaves/43"
+            "$ref": "#/waves/43"
           },
           "octave": 0,
           "bytes": [0, 131, 85, 0, 0, 3, 0, 0, 0, 0, 0, 65, 206, 72, 0, 0, 7, 0, 99, 99, 99, 99, 87, 79, 99, 38, 48, 243, 81, 17, 54, 15, 99, 88, 85, 81, 85, 42, 0, 0, 8, 1, 0, 0]
@@ -1245,10 +1245,10 @@
       "commonBytes": [0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 47,
-          "toneWave": {
+          "waveNo": 47,
+          "wave": {
             "name": "Pizzicato",
-            "$ref": "#/toneWaves/47"
+            "$ref": "#/waves/47"
           },
           "octave": 0,
           "bytes": [0, 0, 54, 0, 0, 0, 0, 2, 0, 0, 30, 56, 206, 57, 0, 1, 49, 0, 99, 55, 24, 23, 22, 99, 70, 55, 66, 0, 77, 46, 8, 0, 99, 51, 0, 0, 0, 34, 0, 2, 10, 2, 0, 0]
@@ -1261,10 +1261,10 @@
       "commonBytes": [0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 48,
-          "toneWave": {
+          "waveNo": 48,
+          "wave": {
             "name": "Harp",
-            "$ref": "#/toneWaves/48"
+            "$ref": "#/waves/48"
           },
           "octave": 0,
           "bytes": [0, 0, 57, 0, 0, 0, 0, 0, 3, 0, 22, 56, 201, 78, 3, 2, 49, 0, 99, 39, 28, 31, 30, 78, 40, 65, 45, 11, 79, 45, 2, 0, 99, 86, 0, 0, 0, 58, 2, 2, 10, 2, 0, 0]
@@ -1277,10 +1277,10 @@
       "commonBytes": [0, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 49,
-          "toneWave": {
+          "waveNo": 49,
+          "wave": {
             "name": "Timpani",
-            "$ref": "#/toneWaves/49"
+            "$ref": "#/waves/49"
           },
           "octave": 0,
           "bytes": [0, 0, 58, 0, 0, 0, 0, 0, 3, 0, 25, 66, 216, 64, 0, 3, 74, 0, 99, 99, 252, 0, 0, 94, 99, 78, 36, 0, 87, 87, 4, 0, 99, 70, 0, 0, 0, 70, 0, 8, 10, 0, 0, 0]
@@ -1293,10 +1293,10 @@
       "commonBytes": [0, 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 162, 46, 15, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 43,
-          "toneWave": {
+          "waveNo": 43,
+          "wave": {
             "name": "StringEns.",
-            "$ref": "#/toneWaves/43"
+            "$ref": "#/waves/43"
           },
           "octave": 0,
           "bytes": [0, 128, 60, 0, 0, 0, 0, 0, 3, 0, 0, 65, 206, 86, 0, 0, 10, 0, 99, 82, 91, 83, 86, 79, 99, 54, 48, 241, 79, 11, 0, 0, 99, 88, 85, 81, 85, 44, 0, 0, 8, 0, 0, 0]
@@ -1309,10 +1309,10 @@
       "commonBytes": [0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 55, 24, 0, 0, 0, 0, 237, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 45,
-          "toneWave": {
+          "waveNo": 45,
+          "wave": {
             "name": "StrEns.V2",
-            "$ref": "#/toneWaves/45"
+            "$ref": "#/waves/45"
           },
           "octave": 0,
           "bytes": [0, 128, 54, 16, 0, 2, 61, 2, 3, 0, 60, 66, 206, 23, 0, 0, 26, 20, 90, 90, 90, 90, 90, 74, 64, 62, 74, 0, 80, 0, 0, 47, 62, 62, 62, 62, 62, 48, 170, 0, 11, 0, 0, 0]
@@ -1325,19 +1325,19 @@
       "commonBytes": [1, 61, 0, 50, 0, 0, 4, 0, 10, 0, 0, 0, 0, 0, 0, 0, 80, 50, 0, 0, 0, 1, 0, 0, 1, 0],
       "voices": [
         {
-          "toneWaveNo": 61,
-          "toneWave": {
+          "waveNo": 61,
+          "wave": {
             "name": "PWM",
-            "$ref": "#/toneWaves/61"
+            "$ref": "#/waves/61"
           },
           "octave": 0,
           "bytes": [236, 0, 59, 25, 39, 1, 29, 1, 2, 0, 44, 66, 206, 22, 0, 0, 27, 0, 95, 90, 88, 86, 84, 63, 75, 26, 66, 0, 93, 0, 19, 22, 92, 92, 91, 90, 89, 39, 0, 0, 0, 3, 0, 0]
         },
         {
-          "toneWaveNo": 50,
-          "toneWave": {
+          "waveNo": 50,
+          "wave": {
             "name": "AnaStrings",
-            "$ref": "#/toneWaves/50"
+            "$ref": "#/waves/50"
           },
           "octave": 0,
           "bytes": [19, 19, 0, 59, 25, 39, 0, 29, 1, 2, 0, 50, 66, 228, 22, 0, 0, 98, 0, 95, 90, 88, 86, 84, 63, 75, 23, 66, 236, 78, 0, 20, 20, 92, 92, 91, 90, 89, 39, 0, 0, 0, 3, 0]
@@ -1350,10 +1350,10 @@
       "commonBytes": [0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 1, 0, 233, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 50,
-          "toneWave": {
+          "waveNo": 50,
+          "wave": {
             "name": "AnaStrings",
-            "$ref": "#/toneWaves/50"
+            "$ref": "#/waves/50"
           },
           "octave": 0,
           "bytes": [0, 0, 59, 25, 39, 1, 29, 1, 2, 0, 29, 66, 186, 51, 0, 14, 26, 0, 99, 70, 40, 75, 82, 85, 0, 79, 60, 7, 91, 0, 31, 51, 99, 92, 91, 90, 89, 53, 0, 2, 0, 3, 97, 0]
@@ -1366,10 +1366,10 @@
       "commonBytes": [0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 51,
-          "toneWave": {
+          "waveNo": 51,
+          "wave": {
             "name": "Choir",
-            "$ref": "#/toneWaves/51"
+            "$ref": "#/waves/51"
           },
           "octave": 0,
           "bytes": [0, 0, 56, 0, 0, 0, 0, 1, 3, 0, 40, 57, 194, 40, 0, 0, 19, 0, 99, 92, 91, 90, 89, 81, 44, 38, 60, 231, 55, 0, 57, 9, 36, 48, 99, 88, 87, 43, 0, 0, 0, 3, 0, 0]
@@ -1382,10 +1382,10 @@
       "commonBytes": [0, 116, 0, 0, 0, 0, 248, 0, 15, 16, 2, 2, 2, 0, 0, 0, 0, 50, 0, 0, 0, 2, 0, 237, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 116,
-          "toneWave": {
+          "waveNo": 116,
+          "wave": {
             "name": "Doo Voice",
-            "$ref": "#/toneWaves/116"
+            "$ref": "#/waves/116"
           },
           "octave": 0,
           "bytes": [235, 128, 54, 5, 3, 11, 64, 2, 4, 0, 42, 66, 206, 36, 71, 3, 65, 0, 99, 40, 90, 45, 90, 99, 47, 33, 60, 225, 61, 0, 0, 0, 99, 65, 90, 60, 90, 17, 76, 4, 0, 0, 0, 0]
@@ -1398,10 +1398,10 @@
       "commonBytes": [0, 52, 0, 0, 0, 0, 6, 5, 208, 17, 0, 0, 0, 0, 0, 0, 160, 49, 24, 0, 0, 2, 2, 237, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 52,
-          "toneWave": {
+          "waveNo": 52,
+          "wave": {
             "name": "Voice",
-            "$ref": "#/toneWaves/52"
+            "$ref": "#/waves/52"
           },
           "octave": 0,
           "bytes": [12, 128, 55, 16, 3, 10, 64, 3, 4, 0, 68, 51, 0, 13, 71, 3, 23, 21, 99, 49, 80, 76, 92, 53, 40, 79, 59, 188, 83, 98, 0, 10, 99, 35, 99, 84, 80, 35, 76, 21, 6, 0, 0, 0]
@@ -1414,10 +1414,10 @@
       "commonBytes": [0, 53, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 53,
-          "toneWave": {
+          "waveNo": 53,
+          "wave": {
             "name": "Orch Hit",
-            "$ref": "#/toneWaves/53"
+            "$ref": "#/waves/53"
           },
           "octave": 1,
           "bytes": [0, 0, 57, 0, 0, 0, 0, 0, 3, 0, 13, 77, 230, 65, 12, 0, 36, 0, 99, 55, 40, 60, 0, 99, 0, 67, 66, 0, 88, 98, 0, 0, 99, 99, 99, 99, 99, 46, 34, 0, 136, 0, 0, 0]
@@ -1430,10 +1430,10 @@
       "commonBytes": [0, 54, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 58, 4, 3, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 54,
-          "toneWave": {
+          "waveNo": 54,
+          "wave": {
             "name": "Trumpet",
-            "$ref": "#/toneWaves/54"
+            "$ref": "#/waves/54"
           },
           "octave": 0,
           "bytes": [0, 0, 58, 6, 10, 4, 10, 1, 2, 0, 23, 60, 206, 60, 0, 0, 70, 0, 99, 67, 66, 66, 66, 99, 0, 35, 66, 221, 46, 0, 52, 5, 99, 95, 94, 93, 92, 5, 0, 0, 0, 1, 0, 0]
@@ -1446,10 +1446,10 @@
       "commonBytes": [0, 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 55, 24, 0, 0, 3, 1, 243, 10, 0],
       "voices": [
         {
-          "toneWaveNo": 55,
-          "toneWave": {
+          "waveNo": 55,
+          "wave": {
             "name": "Trombone 2",
-            "$ref": "#/toneWaves/55"
+            "$ref": "#/waves/55"
           },
           "octave": 0,
           "bytes": [0, 128, 57, 8, 8, 4, 40, 2, 4, 0, 5, 64, 209, 86, 39, 9, 85, 0, 99, 0, 99, 90, 70, 32, 55, 48, 67, 226, 47, 64, 98, 0, 99, 21, 99, 65, 68, 8, 170, 4, 2, 3, 0, 0]
@@ -1462,10 +1462,10 @@
       "commonBytes": [0, 56, 0, 0, 0, 0, 3, 0, 6, 21, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 4, 0, 14, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 56,
-          "toneWave": {
+          "waveNo": 56,
+          "wave": {
             "name": "Tuba",
-            "$ref": "#/toneWaves/56"
+            "$ref": "#/waves/56"
           },
           "octave": 0,
           "bytes": [24, 0, 55, 14, 21, 6, 0, 2, 3, 0, 61, 21, 206, 64, 0, 9, 35, 18, 82, 60, 42, 42, 42, 59, 0, 66, 65, 222, 82, 0, 69, 0, 99, 96, 96, 87, 87, 10, 0, 3, 0, 1, 0, 0]
@@ -1478,10 +1478,10 @@
       "commonBytes": [0, 57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 58, 14, 5, 0, 2, 1, 245, 7, 2],
       "voices": [
         {
-          "toneWaveNo": 57,
-          "toneWave": {
+          "waveNo": 57,
+          "wave": {
             "name": "Mute TP",
-            "$ref": "#/toneWaves/57"
+            "$ref": "#/waves/57"
           },
           "octave": 0,
           "bytes": [0, 128, 58, 10, 14, 6, 25, 2, 2, 0, 9, 64, 216, 80, 39, 12, 29, 7, 88, 21, 80, 96, 64, 32, 25, 40, 67, 221, 86, 64, 98, 0, 99, 5, 83, 92, 81, 16, 170, 6, 2, 3, 0, 0]
@@ -1494,19 +1494,19 @@
       "commonBytes": [1, 58, 0, 59, 0, 0, 253, 0, 27, 49, 0, 0, 0, 0, 0, 0, 160, 54, 16, 7, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 58,
-          "toneWave": {
+          "waveNo": 58,
+          "wave": {
             "name": "Horn",
-            "$ref": "#/toneWaves/58"
+            "$ref": "#/waves/58"
           },
           "octave": 0,
           "bytes": [3, 128, 58, 5, 25, 3, 25, 1, 3, 0, 11, 66, 0, 59, 0, 0, 39, 0, 99, 85, 84, 83, 82, 92, 99, 50, 41, 0, 65, 0, 77, 12, 99, 99, 99, 99, 99, 20, 0, 0, 0, 1, 0, 0]
         },
         {
-          "toneWaveNo": 59,
-          "toneWave": {
+          "waveNo": 59,
+          "wave": {
             "name": "Trombone 1",
-            "$ref": "#/toneWaves/59"
+            "$ref": "#/waves/59"
           },
           "octave": 0,
           "bytes": [51, 252, 128, 50, 1, 20, 2, 35, 0, 2, 0, 11, 66, 206, 59, 0, 0, 39, 0, 99, 85, 84, 83, 82, 92, 99, 8, 60, 0, 65, 0, 77, 12, 99, 99, 99, 99, 99, 20, 0, 0, 0, 1, 0]
@@ -1519,10 +1519,10 @@
       "commonBytes": [0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 60,
-          "toneWave": {
+          "waveNo": 60,
+          "wave": {
             "name": "Brass 2",
-            "$ref": "#/toneWaves/60"
+            "$ref": "#/waves/60"
           },
           "octave": 0,
           "bytes": [0, 0, 57, 25, 39, 0, 0, 1, 3, 0, 18, 66, 222, 60, 0, 0, 34, 0, 99, 78, 77, 75, 75, 84, 89, 39, 60, 207, 76, 0, 69, 7, 99, 92, 91, 90, 89, 11, 0, 0, 0, 1, 0, 0]
@@ -1535,19 +1535,19 @@
       "commonBytes": [1, 39, 0, 39, 0, 0, 246, 0, 9, 2, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 39,
-          "toneWave": {
+          "waveNo": 39,
+          "wave": {
             "name": "Saw",
-            "$ref": "#/toneWaves/39"
+            "$ref": "#/waves/39"
           },
           "octave": 0,
           "bytes": [98, 0, 60, 0, 0, 1, 25, 3, 6, 0, 35, 66, 206, 63, 0, 0, 59, 14, 99, 66, 30, 30, 30, 30, 0, 28, 50, 9, 81, 98, 0, 0, 99, 61, 50, 85, 45, 20, 0, 0, 2, 0, 0, 0]
         },
         {
-          "toneWaveNo": 39,
-          "toneWave": {
+          "waveNo": 39,
+          "wave": {
             "name": "Saw",
-            "$ref": "#/toneWaves/39"
+            "$ref": "#/waves/39"
           },
           "octave": 0,
           "bytes": [35, 157, 128, 60, 5, 15, 7, 25, 3, 6, 0, 35, 66, 206, 63, 0, 0, 59, 20, 99, 66, 30, 30, 30, 30, 0, 28, 50, 9, 81, 98, 0, 0, 99, 50, 50, 85, 45, 20, 0, 0, 2, 0, 0]
@@ -1560,19 +1560,19 @@
       "commonBytes": [1, 61, 0, 39, 0, 0, 245, 3, 13, 22, 0, 0, 0, 0, 0, 0, 242, 52, 71, 0, 0, 0, 0, 0, 0, 8],
       "voices": [
         {
-          "toneWaveNo": 61,
-          "toneWave": {
+          "waveNo": 61,
+          "wave": {
             "name": "PWM",
-            "$ref": "#/toneWaves/61"
+            "$ref": "#/waves/61"
           },
           "octave": 0,
           "bytes": [0, 128, 59, 0, 0, 0, 0, 3, 6, 0, 0, 36, 226, 78, 0, 27, 50, 13, 99, 69, 68, 68, 68, 79, 0, 49, 57, 210, 81, 0, 0, 0, 99, 86, 56, 88, 51, 22, 0, 1, 0, 0, 0, 0]
         },
         {
-          "toneWaveNo": 39,
-          "toneWave": {
+          "waveNo": 39,
+          "wave": {
             "name": "Saw",
-            "$ref": "#/toneWaves/39"
+            "$ref": "#/waves/39"
           },
           "octave": 0,
           "bytes": [34, 49, 128, 49, 0, 0, 0, 0, 0, 6, 0, 29, 48, 225, 49, 0, 27, 98, 19, 97, 96, 34, 99, 34, 87, 253, 32, 57, 210, 81, 0, 0, 0, 99, 86, 56, 88, 51, 22, 0, 1, 0, 0, 0]
@@ -1585,10 +1585,10 @@
       "commonBytes": [0, 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 54, 16, 2, 0, 1, 1, 244, 0, 2],
       "voices": [
         {
-          "toneWaveNo": 62,
-          "toneWave": {
+          "waveNo": 62,
+          "wave": {
             "name": "SopranoSax",
-            "$ref": "#/toneWaves/62"
+            "$ref": "#/waves/62"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 10, 14, 4, 35, 2, 3, 0, 8, 66, 211, 70, 0, 0, 49, 0, 99, 90, 89, 88, 87, 92, 99, 40, 60, 226, 51, 0, 31, 6, 99, 99, 99, 99, 99, 7, 0, 0, 0, 1, 0, 0]
@@ -1601,10 +1601,10 @@
       "commonBytes": [0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 56, 8, 3, 0, 1, 1, 0, 5, 3],
       "voices": [
         {
-          "toneWaveNo": 63,
-          "toneWave": {
+          "waveNo": 63,
+          "wave": {
             "name": "Alto Sax",
-            "$ref": "#/toneWaves/63"
+            "$ref": "#/waves/63"
           },
           "octave": 0,
           "bytes": [0, 128, 56, 7, 10, 6, 15, 1, 3, 1, 11, 66, 226, 62, 0, 0, 32, 0, 99, 90, 89, 88, 87, 92, 99, 52, 66, 206, 79, 0, 83, 0, 99, 99, 99, 99, 99, 6, 0, 0, 0, 1, 0, 0]
@@ -1617,10 +1617,10 @@
       "commonBytes": [0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 55, 6, 2, 0, 2, 1, 247, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 64,
-          "toneWave": {
+          "waveNo": 64,
+          "wave": {
             "name": "Tenor Sax",
-            "$ref": "#/toneWaves/64"
+            "$ref": "#/waves/64"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 12, 17, 6, 11, 1, 2, 0, 6, 66, 206, 69, 0, 0, 41, 0, 97, 90, 84, 83, 82, 92, 99, 38, 60, 0, 69, 0, 98, 8, 99, 99, 99, 99, 99, 3, 0, 0, 0, 1, 0, 0]
@@ -1633,10 +1633,10 @@
       "commonBytes": [0, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 56, 12, 2, 0, 1, 1, 249, 4, 1],
       "voices": [
         {
-          "toneWaveNo": 65,
-          "toneWave": {
+          "waveNo": 65,
+          "wave": {
             "name": "Bari Sax",
-            "$ref": "#/toneWaves/65"
+            "$ref": "#/waves/65"
           },
           "octave": 0,
           "bytes": [0, 128, 57, 10, 18, 6, 40, 1, 3, 0, 0, 64, 235, 90, 39, 8, 49, 0, 99, 74, 81, 75, 78, 32, 55, 38, 62, 231, 81, 98, 98, 0, 88, 28, 99, 57, 75, 5, 170, 2, 13, 1, 0, 0]
@@ -1649,10 +1649,10 @@
       "commonBytes": [0, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 60, 18, 6, 0, 0, 1, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 66,
-          "toneWave": {
+          "waveNo": 66,
+          "wave": {
             "name": "Oboe",
-            "$ref": "#/toneWaves/66"
+            "$ref": "#/waves/66"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 9, 10, 12, 30, 1, 3, 1, 13, 36, 224, 82, 0, 22, 59, 0, 99, 57, 90, 97, 60, 99, 0, 60, 60, 242, 57, 0, 39, 9, 99, 43, 99, 99, 83, 8, 0, 2, 0, 7, 0, 0]
@@ -1665,10 +1665,10 @@
       "commonBytes": [0, 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 54, 24, 10, 0, 1, 1, 243, 0, 1],
       "voices": [
         {
-          "toneWaveNo": 67,
-          "toneWave": {
+          "waveNo": 67,
+          "wave": {
             "name": "EnglishHrn",
-            "$ref": "#/toneWaves/67"
+            "$ref": "#/waves/67"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 7, 15, 3, 27, 2, 3, 0, 0, 64, 226, 98, 39, 41, 79, 0, 99, 87, 75, 57, 67, 32, 55, 52, 62, 0, 47, 98, 98, 0, 88, 28, 99, 57, 75, 8, 170, 2, 13, 1, 0, 0]
@@ -1681,10 +1681,10 @@
       "commonBytes": [0, 68, 0, 0, 0, 0, 0, 0, 6, 21, 0, 0, 0, 0, 0, 0, 32, 56, 12, 1, 0, 4, 1, 12, 0, 5],
       "voices": [
         {
-          "toneWaveNo": 68,
-          "toneWave": {
+          "waveNo": 68,
+          "wave": {
             "name": "BasoonOboe",
-            "$ref": "#/toneWaves/68"
+            "$ref": "#/waves/68"
           },
           "octave": 0,
           "bytes": [24, 128, 55, 10, 15, 4, 22, 2, 3, 1, 63, 60, 0, 61, 0, 9, 77, 4, 92, 42, 42, 42, 42, 15, 18, 57, 65, 246, 83, 0, 53, 11, 99, 96, 96, 87, 87, 7, 0, 3, 0, 1, 0, 0]
@@ -1697,10 +1697,10 @@
       "commonBytes": [0, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 57, 16, 2, 0, 0, 1, 252, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 69,
-          "toneWave": {
+          "waveNo": 69,
+          "wave": {
             "name": "Clarinet",
-            "$ref": "#/toneWaves/69"
+            "$ref": "#/waves/69"
           },
           "octave": 0,
           "bytes": [0, 128, 58, 8, 8, 4, 2, 1, 3, 0, 14, 66, 214, 56, 0, 0, 39, 0, 99, 88, 81, 88, 71, 47, 45, 47, 66, 19, 75, 0, 0, 0, 99, 83, 84, 86, 84, 7, 0, 0, 0, 0, 0, 0]
@@ -1713,10 +1713,10 @@
       "commonBytes": [0, 70, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 251, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 70,
-          "toneWave": {
+          "waveNo": 70,
+          "wave": {
             "name": "Flute",
-            "$ref": "#/toneWaves/70"
+            "$ref": "#/waves/70"
           },
           "octave": 0,
           "bytes": [0, 128, 57, 10, 18, 5, 0, 1, 2, 0, 17, 76, 241, 69, 0, 0, 64, 0, 99, 60, 60, 60, 60, 99, 0, 60, 60, 0, 72, 0, 75, 0, 49, 37, 99, 62, 85, 3, 0, 0, 0, 2, 0, 0]
@@ -1729,10 +1729,10 @@
       "commonBytes": [0, 70, 0, 0, 0, 0, 0, 0, 99, 99, 99, 99, 99, 99, 0, 0, 160, 59, 12, 3, 0, 0, 2, 251, 0, 2],
       "voices": [
         {
-          "toneWaveNo": 70,
-          "toneWave": {
+          "waveNo": 70,
+          "wave": {
             "name": "Flute",
-            "$ref": "#/toneWaves/70"
+            "$ref": "#/waves/70"
           },
           "octave": 0,
           "bytes": [0, 128, 59, 11, 18, 4, 0, 1, 2, 0, 0, 64, 198, 74, 0, 0, 19, 0, 99, 59, 90, 85, 79, 75, 0, 64, 89, 0, 73, 0, 0, 0, 99, 37, 88, 62, 85, 8, 0, 0, 0, 0, 0, 0]
@@ -1745,10 +1745,10 @@
       "commonBytes": [0, 71, 0, 0, 0, 0, 0, 0, 0, 1, 35, 0, 0, 0, 0, 0, 192, 54, 3, 2, 0, 1, 2, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 71,
-          "toneWave": {
+          "waveNo": 71,
+          "wave": {
             "name": "Recorder",
-            "$ref": "#/toneWaves/71"
+            "$ref": "#/waves/71"
           },
           "octave": 0,
           "bytes": [3, 0, 57, 8, 8, 3, 2, 0, 2, 0, 9, 66, 241, 69, 0, 0, 64, 0, 99, 80, 80, 80, 80, 70, 97, 39, 66, 236, 63, 0, 17, 0, 94, 21, 99, 34, 59, 4, 0, 0, 0, 1, 0, 0]
@@ -1761,10 +1761,10 @@
       "commonBytes": [0, 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 224, 60, 1, 21, 0, 1, 2, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 72,
-          "toneWave": {
+          "waveNo": 72,
+          "wave": {
             "name": "Pan Flute",
-            "$ref": "#/toneWaves/72"
+            "$ref": "#/waves/72"
           },
           "octave": 0,
           "bytes": [0, 0, 60, 10, 39, 3, 2, 1, 3, 0, 40, 66, 197, 51, 0, 98, 65, 11, 99, 53, 55, 67, 55, 90, 97, 40, 60, 0, 82, 0, 53, 11, 99, 99, 99, 99, 99, 7, 0, 1, 0, 1, 0, 0]
@@ -1777,10 +1777,10 @@
       "commonBytes": [0, 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 54, 10, 46, 0, 2, 2, 243, 254, 3],
       "voices": [
         {
-          "toneWaveNo": 73,
-          "toneWave": {
+          "waveNo": 73,
+          "wave": {
             "name": "Bottle",
-            "$ref": "#/toneWaves/73"
+            "$ref": "#/waves/73"
           },
           "octave": 0,
           "bytes": [0, 128, 54, 10, 10, 10, 27, 1, 3, 0, 20, 57, 194, 90, 0, 98, 27, 13, 89, 50, 91, 73, 85, 27, 55, 61, 57, 0, 86, 43, 33, 8, 99, 44, 99, 57, 49, 16, 0, 1, 12, 7, 0, 0]
@@ -1793,10 +1793,10 @@
       "commonBytes": [0, 74, 0, 0, 0, 0, 0, 0, 0, 1, 15, 1, 0, 0, 0, 0, 224, 57, 10, 11, 0, 7, 0, 0, 0, 6],
       "voices": [
         {
-          "toneWaveNo": 74,
-          "toneWave": {
+          "waveNo": 74,
+          "wave": {
             "name": "Shakuhachi",
-            "$ref": "#/toneWaves/74"
+            "$ref": "#/waves/74"
           },
           "octave": 0,
           "bytes": [98, 128, 57, 10, 30, 4, 0, 0, 7, 3, 52, 66, 202, 42, 0, 0, 29, 9, 79, 45, 30, 30, 30, 20, 20, 78, 66, 226, 57, 0, 42, 0, 99, 70, 85, 85, 85, 5, 0, 0, 0, 1, 0, 0]
@@ -1809,10 +1809,10 @@
       "commonBytes": [0, 75, 0, 0, 0, 0, 0, 0, 243, 15, 0, 0, 0, 0, 0, 0, 32, 51, 0, 36, 0, 0, 0, 0, 10, 6],
       "voices": [
         {
-          "toneWaveNo": 75,
-          "toneWave": {
+          "waveNo": 75,
+          "wave": {
             "name": "Sine",
-            "$ref": "#/toneWaves/75"
+            "$ref": "#/waves/75"
           },
           "octave": 0,
           "bytes": [98, 128, 60, 6, 11, 18, 27, 3, 6, 2, 47, 66, 216, 41, 0, 0, 94, 4, 231, 18, 64, 87, 24, 38, 0, 71, 60, 246, 86, 0, 0, 30, 99, 82, 82, 82, 82, 13, 0, 6, 0, 1, 0, 0]
@@ -1825,10 +1825,10 @@
       "commonBytes": [0, 76, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 36, 0, 0, 0, 0, 2, 0],
       "voices": [
         {
-          "toneWaveNo": 76,
-          "toneWave": {
+          "waveNo": 76,
+          "wave": {
             "name": "Ocarina",
-            "$ref": "#/toneWaves/76"
+            "$ref": "#/waves/76"
           },
           "octave": 0,
           "bytes": [0, 0, 58, 6, 11, 3, 0, 1, 3, 2, 58, 54, 206, 54, 0, 0, 19, 0, 99, 0, 20, 20, 20, 20, 20, 61, 54, 229, 84, 0, 0, 0, 99, 99, 99, 99, 99, 3, 0, 0, 0, 0, 0, 0]
@@ -1841,19 +1841,19 @@
       "commonBytes": [1, 77, 0, 77, 0, 0, 9, 2, 5, 13, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 1, 0, 1, 1, 0],
       "voices": [
         {
-          "toneWaveNo": 77,
-          "toneWave": {
+          "waveNo": 77,
+          "wave": {
             "name": "Square",
-            "$ref": "#/toneWaves/77"
+            "$ref": "#/waves/77"
           },
           "octave": 0,
           "bytes": [19, 0, 58, 25, 39, 1, 29, 1, 3, 0, 22, 66, 216, 50, 0, 0, 44, 0, 99, 87, 83, 86, 74, 27, 60, 18, 60, 0, 74, 0, 11, 0, 99, 90, 78, 76, 74, 5, 0, 0, 0, 7, 0, 0]
         },
         {
-          "toneWaveNo": 77,
-          "toneWave": {
+          "waveNo": 77,
+          "wave": {
             "name": "Square",
-            "$ref": "#/toneWaves/77"
+            "$ref": "#/waves/77"
           },
           "octave": 0,
           "bytes": [3, 157, 0, 58, 25, 39, 1, 29, 1, 3, 0, 12, 66, 216, 59, 0, 0, 44, 0, 99, 92, 87, 86, 85, 27, 60, 18, 60, 0, 74, 0, 11, 0, 99, 90, 78, 76, 74, 4, 0, 0, 0, 7, 0]
@@ -1866,19 +1866,19 @@
       "commonBytes": [1, 39, 0, 39, 0, 0, 10, 0, 5, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 39,
-          "toneWave": {
+          "waveNo": 39,
+          "wave": {
             "name": "Saw",
-            "$ref": "#/toneWaves/39"
+            "$ref": "#/waves/39"
           },
           "octave": 0,
           "bytes": [98, 128, 60, 0, 0, 3, 25, 3, 6, 0, 10, 66, 216, 81, 0, 49, 29, 0, 99, 90, 75, 75, 75, 30, 0, 33, 66, 246, 88, 98, 0, 0, 99, 0, 80, 99, 80, 1, 2, 2, 2, 0, 0, 0]
         },
         {
-          "toneWaveNo": 39,
-          "toneWave": {
+          "waveNo": 39,
+          "wave": {
             "name": "Saw",
-            "$ref": "#/toneWaves/39"
+            "$ref": "#/waves/39"
           },
           "octave": 0,
           "bytes": [35, 157, 128, 60, 0, 0, 3, 25, 3, 6, 0, 10, 66, 216, 72, 0, 49, 29, 0, 99, 90, 75, 75, 75, 30, 0, 32, 66, 246, 88, 98, 0, 0, 99, 0, 80, 99, 80, 1, 2, 0, 2, 0, 0]
@@ -1891,19 +1891,19 @@
       "commonBytes": [1, 78, 0, 72, 0, 0, 0, 2, 226, 1, 0, 0, 53, 200, 0, 0, 0, 50, 0, 0, 0, 2, 0, 243, 254, 0],
       "voices": [
         {
-          "toneWaveNo": 78,
-          "toneWave": {
+          "waveNo": 78,
+          "wave": {
             "name": "Air Vox",
-            "$ref": "#/toneWaves/78"
+            "$ref": "#/waves/78"
           },
           "octave": 0,
           "bytes": [236, 128, 52, 10, 0, 5, 27, 0, 3, 0, 24, 66, 194, 66, 0, 0, 29, 0, 99, 34, 69, 73, 69, 22, 55, 55, 57, 246, 75, 43, 0, 5, 99, 36, 30, 10, 30, 0, 0, 0, 12, 0, 0, 0]
         },
         {
-          "toneWaveNo": 72,
-          "toneWave": {
+          "waveNo": 72,
+          "wave": {
             "name": "Pan Flute",
-            "$ref": "#/toneWaves/72"
+            "$ref": "#/waves/72"
           },
           "octave": 0,
           "bytes": [49, 0, 128, 52, 10, 0, 4, 27, 0, 3, 0, 0, 66, 194, 81, 0, 0, 27, 0, 89, 50, 85, 73, 85, 22, 55, 70, 57, 246, 75, 43, 0, 9, 99, 44, 99, 57, 60, 15, 0, 0, 12, 0, 0]
@@ -1916,19 +1916,19 @@
       "commonBytes": [1, 72, 0, 61, 0, 0, 250, 2, 49, 0, 0, 0, 0, 0, 0, 98, 32, 47, 0, 0, 0, 3, 0, 0, 3, 0],
       "voices": [
         {
-          "toneWaveNo": 72,
-          "toneWave": {
+          "waveNo": 72,
+          "wave": {
             "name": "Pan Flute",
-            "$ref": "#/toneWaves/72"
+            "$ref": "#/waves/72"
           },
           "octave": 0,
           "bytes": [56, 0, 59, 5, 8, 9, 7, 1, 4, 0, 16, 70, 210, 86, 0, 0, 39, 0, 99, 35, 48, 95, 45, 20, 0, 58, 79, 40, 91, 21, 17, 5, 99, 59, 80, 20, 80, 0, 0, 0, 23, 3, 0, 0]
         },
         {
-          "toneWaveNo": 61,
-          "toneWave": {
+          "waveNo": 61,
+          "wave": {
             "name": "PWM",
-            "$ref": "#/toneWaves/61"
+            "$ref": "#/waves/61"
           },
           "octave": 0,
           "bytes": [19, 185, 0, 60, 5, 9, 4, 7, 1, 4, 0, 17, 66, 208, 52, 0, 0, 24, 0, 99, 51, 66, 49, 70, 99, 0, 50, 66, 0, 95, 21, 0, 0, 99, 40, 90, 57, 90, 12, 0, 0, 23, 0, 0]
@@ -1941,19 +1941,19 @@
       "commonBytes": [1, 29, 0, 27, 0, 0, 251, 0, 13, 0, 0, 0, 0, 99, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 29,
-          "toneWave": {
+          "waveNo": 29,
+          "wave": {
             "name": "Over Drive",
-            "$ref": "#/toneWaves/29"
+            "$ref": "#/waves/29"
           },
           "octave": 0,
           "bytes": [29, 128, 57, 0, 0, 0, 0, 0, 4, 0, 0, 66, 206, 79, 15, 59, 39, 4, 99, 31, 84, 90, 20, 0, 99, 56, 66, 24, 58, 3, 0, 0, 99, 84, 0, 0, 0, 5, 2, 2, 2, 0, 0, 0]
         },
         {
-          "toneWaveNo": 27,
-          "toneWave": {
+          "waveNo": 27,
+          "wave": {
             "name": "E.Guitar 1",
-            "$ref": "#/toneWaves/27"
+            "$ref": "#/waves/27"
           },
           "octave": 0,
           "bytes": [51, 34, 128, 57, 0, 0, 0, 0, 0, 4, 0, 35, 66, 206, 30, 15, 59, 39, 0, 99, 68, 68, 90, 20, 0, 99, 66, 66, 24, 69, 3, 0, 0, 99, 84, 0, 0, 0, 5, 2, 2, 2, 0, 0]
@@ -1966,19 +1966,19 @@
       "commonBytes": [1, 73, 0, 51, 0, 0, 250, 0, 245, 6, 0, 0, 0, 0, 0, 0, 32, 47, 0, 0, 0, 3, 0, 0, 3, 0],
       "voices": [
         {
-          "toneWaveNo": 73,
-          "toneWave": {
+          "waveNo": 73,
+          "wave": {
             "name": "Bottle",
-            "$ref": "#/toneWaves/73"
+            "$ref": "#/waves/73"
           },
           "octave": 0,
           "bytes": [61, 0, 60, 12, 24, 12, 7, 1, 3, 0, 29, 66, 195, 54, 0, 0, 24, 12, 94, 42, 51, 35, 45, 17, 24, 70, 66, 241, 90, 0, 12, 1, 99, 20, 90, 49, 90, 18, 0, 0, 23, 136, 0, 0]
         },
         {
-          "toneWaveNo": 51,
-          "toneWave": {
+          "waveNo": 51,
+          "wave": {
             "name": "Choir",
-            "$ref": "#/toneWaves/51"
+            "$ref": "#/waves/51"
           },
           "octave": 0,
           "bytes": [35, 220, 0, 60, 12, 24, 37, 7, 2, 3, 0, 6, 63, 230, 59, 0, 0, 24, 2, 99, 70, 70, 70, 70, 29, 24, 96, 66, 241, 90, 0, 11, 7, 99, 90, 90, 90, 90, 18, 0, 0, 23, 136, 0]
@@ -1991,19 +1991,19 @@
       "commonBytes": [1, 61, 0, 61, 255, 7, 254, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 9, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 61,
-          "toneWave": {
+          "waveNo": 61,
+          "wave": {
             "name": "PWM",
-            "$ref": "#/toneWaves/61"
+            "$ref": "#/waves/61"
           },
           "octave": 0,
           "bytes": [0, 0, 59, 0, 0, 2, 0, 2, 6, 0, 0, 66, 212, 90, 0, 0, 39, 0, 99, 93, 24, 82, 20, 99, 0, 75, 66, 0, 90, 98, 0, 0, 99, 82, 40, 90, 40, 32, 0, 0, 2, 0, 97, 0]
         },
         {
-          "toneWaveNo": 61,
-          "toneWave": {
+          "waveNo": 61,
+          "wave": {
             "name": "PWM",
-            "$ref": "#/toneWaves/61"
+            "$ref": "#/waves/61"
           },
           "octave": 255,
           "bytes": [51, 0, 0, 59, 0, 0, 12, 0, 2, 6, 0, 0, 66, 193, 78, 0, 0, 39, 0, 99, 97, 20, 80, 28, 99, 0, 75, 66, 0, 90, 98, 0, 0, 99, 82, 40, 90, 40, 32, 0, 0, 2, 0, 97]
@@ -2016,19 +2016,19 @@
       "commonBytes": [1, 39, 0, 61, 0, 0, 252, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 39,
-          "toneWave": {
+          "waveNo": 39,
+          "wave": {
             "name": "Saw",
-            "$ref": "#/toneWaves/39"
+            "$ref": "#/waves/39"
           },
           "octave": 0,
           "bytes": [0, 0, 59, 10, 10, 2, 25, 2, 6, 0, 11, 66, 206, 60, 0, 0, 34, 0, 99, 55, 65, 79, 65, 99, 0, 66, 50, 246, 85, 98, 0, 0, 99, 50, 60, 85, 50, 5, 0, 0, 2, 0, 0, 0]
         },
         {
-          "toneWaveNo": 61,
-          "toneWave": {
+          "waveNo": 61,
+          "wave": {
             "name": "PWM",
-            "$ref": "#/toneWaves/61"
+            "$ref": "#/waves/61"
           },
           "octave": 0,
           "bytes": [51, 0, 0, 57, 10, 10, 2, 25, 2, 6, 0, 11, 66, 215, 56, 0, 0, 49, 0, 99, 55, 65, 79, 65, 99, 0, 66, 50, 246, 85, 98, 0, 0, 99, 50, 60, 85, 50, 6, 0, 0, 2, 0, 0]
@@ -2041,19 +2041,19 @@
       "commonBytes": [1, 82, 255, 95, 1, 251, 0, 0, 99, 99, 99, 99, 99, 99, 0, 0, 32, 25, 16, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 82,
-          "toneWave": {
+          "waveNo": 82,
+          "wave": {
             "name": "White Pad",
-            "$ref": "#/toneWaves/82"
+            "$ref": "#/waves/82"
           },
           "octave": 255,
           "bytes": [98, 128, 57, 16, 28, 0, 2, 1, 4, 0, 12, 60, 220, 81, 98, 0, 26, 2, 82, 36, 64, 99, 61, 86, 0, 94, 44, 192, 89, 0, 0, 3, 99, 55, 44, 93, 35, 50, 2, 0, 0, 0, 0, 0]
         },
         {
-          "toneWaveNo": 95,
-          "toneWave": {
+          "waveNo": 95,
+          "wave": {
             "name": "Metal Bell",
-            "$ref": "#/toneWaves/95"
+            "$ref": "#/waves/95"
           },
           "octave": 1,
           "bytes": [51, 98, 128, 57, 0, 0, 0, 35, 0, 3, 0, 28, 60, 222, 59, 73, 3, 59, 2, 80, 56, 68, 59, 45, 95, 3, 29, 53, 247, 54, 48, 8, 3, 55, 75, 0, 0, 0, 43, 6, 136, 2, 8, 0]
@@ -2066,10 +2066,10 @@
       "commonBytes": [0, 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 61,
-          "toneWave": {
+          "waveNo": 61,
+          "wave": {
             "name": "PWM",
-            "$ref": "#/toneWaves/61"
+            "$ref": "#/waves/61"
           },
           "octave": 0,
           "bytes": [0, 0, 60, 12, 24, 4, 7, 1, 3, 0, 35, 66, 0, 9, 0, 5, 29, 74, 76, 76, 30, 29, 29, 99, 99, 99, 66, 0, 63, 21, 17, 58, 88, 78, 76, 74, 74, 48, 0, 1, 23, 3, 0, 0]
@@ -2082,19 +2082,19 @@
       "commonBytes": [1, 61, 0, 39, 0, 0, 15, 0, 231, 4, 0, 0, 0, 0, 98, 98, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 61,
-          "toneWave": {
+          "waveNo": 61,
+          "wave": {
             "name": "PWM",
-            "$ref": "#/toneWaves/61"
+            "$ref": "#/waves/61"
           },
           "octave": 0,
           "bytes": [157, 128, 55, 0, 0, 3, 0, 2, 9, 0, 0, 66, 196, 96, 0, 34, 69, 0, 99, 87, 66, 89, 96, 80, 50, 26, 60, 0, 74, 0, 0, 0, 99, 58, 64, 71, 66, 30, 0, 2, 0, 0, 0, 0]
         },
         {
-          "toneWaveNo": 39,
-          "toneWave": {
+          "waveNo": 39,
+          "wave": {
             "name": "Saw",
-            "$ref": "#/toneWaves/39"
+            "$ref": "#/waves/39"
           },
           "octave": 0,
           "bytes": [3, 98, 128, 55, 0, 0, 3, 0, 2, 9, 0, 0, 66, 206, 83, 0, 34, 69, 0, 99, 87, 66, 99, 93, 80, 50, 26, 60, 0, 74, 0, 0, 0, 99, 64, 64, 64, 62, 33, 0, 2, 0, 0, 0]
@@ -2107,10 +2107,10 @@
       "commonBytes": [0, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 78,
-          "toneWave": {
+          "waveNo": 78,
+          "wave": {
             "name": "Air Vox",
-            "$ref": "#/toneWaves/78"
+            "$ref": "#/waves/78"
           },
           "octave": 0,
           "bytes": [0, 0, 60, 12, 24, 4, 7, 1, 3, 0, 48, 66, 208, 25, 0, 0, 49, 0, 92, 76, 30, 29, 28, 99, 99, 99, 66, 236, 83, 21, 38, 20, 88, 74, 72, 70, 69, 48, 0, 0, 23, 3, 0, 0]
@@ -2123,19 +2123,19 @@
       "commonBytes": [1, 82, 0, 81, 0, 0, 249, 8, 0, 0, 0, 0, 0, 0, 0, 0, 32, 54, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 82,
-          "toneWave": {
+          "waveNo": 82,
+          "wave": {
             "name": "White Pad",
-            "$ref": "#/toneWaves/82"
+            "$ref": "#/waves/82"
           },
           "octave": 0,
           "bytes": [0, 128, 57, 0, 42, 12, 30, 0, 5, 0, 23, 66, 225, 10, 25, 7, 33, 9, 91, 71, 25, 38, 30, 97, 0, 90, 52, 248, 49, 1, 12, 20, 85, 84, 33, 70, 33, 42, 6, 2, 2, 1, 0, 0]
         },
         {
-          "toneWaveNo": 81,
-          "toneWave": {
+          "waveNo": 81,
+          "wave": {
             "name": "VS 58",
-            "$ref": "#/toneWaves/81"
+            "$ref": "#/waves/81"
           },
           "octave": 0,
           "bytes": [35, 0, 128, 57, 6, 24, 6, 30, 0, 3, 0, 9, 66, 243, 54, 25, 7, 39, 13, 93, 85, 49, 95, 10, 65, 86, 49, 42, 221, 59, 0, 0, 46, 99, 88, 47, 66, 41, 49, 6, 2, 2, 1, 0]
@@ -2148,19 +2148,19 @@
       "commonBytes": [1, 1, 0, 80, 0, 0, 7, 0, 231, 8, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 1, 0, 0, 1, 0],
       "voices": [
         {
-          "toneWaveNo": 1,
-          "toneWave": {
+          "waveNo": 1,
+          "wave": {
             "name": "A.Piano 2",
-            "$ref": "#/toneWaves/1"
+            "$ref": "#/waves/1"
           },
           "octave": 0,
           "bytes": [98, 128, 49, 10, 20, 11, 29, 0, 2, 0, 12, 66, 206, 78, 0, 0, 17, 14, 95, 67, 68, 86, 60, 73, 75, 84, 66, 49, 81, 0, 11, 34, 18, 62, 91, 90, 89, 52, 0, 0, 0, 3, 0, 0]
         },
         {
-          "toneWaveNo": 80,
-          "toneWave": {
+          "waveNo": 80,
+          "wave": {
             "name": "Mega Pad",
-            "$ref": "#/toneWaves/80"
+            "$ref": "#/waves/80"
           },
           "octave": 0,
           "bytes": [51, 0, 128, 58, 10, 20, 8, 29, 1, 2, 0, 32, 66, 207, 19, 0, 0, 17, 30, 95, 90, 88, 86, 84, 73, 75, 68, 60, 0, 81, 0, 8, 48, 90, 58, 50, 90, 50, 46, 0, 0, 0, 3, 0]
@@ -2173,19 +2173,19 @@
       "commonBytes": [1, 51, 0, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 51,
-          "toneWave": {
+          "waveNo": 51,
+          "wave": {
             "name": "Choir",
-            "$ref": "#/toneWaves/51"
+            "$ref": "#/waves/51"
           },
           "octave": 0,
           "bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 14, 66, 242, 83, 0, 0, 32, 3, 62, 82, 54, 88, 44, 95, 67, 64, 44, 230, 63, 0, 0, 20, 99, 37, 90, 63, 33, 35, 0, 0, 1, 0, 0, 0]
         },
         {
-          "toneWaveNo": 78,
-          "toneWave": {
+          "waveNo": 78,
+          "wave": {
             "name": "Air Vox",
-            "$ref": "#/toneWaves/78"
+            "$ref": "#/waves/78"
           },
           "octave": 0,
           "bytes": [51, 0, 0, 60, 12, 24, 10, 7, 2, 3, 0, 51, 66, 206, 24, 0, 0, 55, 0, 77, 46, 47, 88, 36, 99, 99, 74, 60, 69, 63, 21, 11, 17, 63, 40, 78, 61, 45, 34, 0, 0, 23, 1, 0]
@@ -2198,10 +2198,10 @@
       "commonBytes": [0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 60,
-          "toneWave": {
+          "waveNo": 60,
+          "wave": {
             "name": "Brass 2",
-            "$ref": "#/toneWaves/60"
+            "$ref": "#/waves/60"
           },
           "octave": 0,
           "bytes": [0, 128, 60, 25, 39, 1, 35, 1, 3, 0, 32, 66, 241, 51, 0, 0, 49, 80, 99, 69, 48, 74, 85, 99, 46, 91, 66, 226, 82, 0, 0, 20, 80, 85, 99, 75, 60, 47, 0, 0, 0, 0, 97, 0]
@@ -2214,19 +2214,19 @@
       "commonBytes": [1, 61, 0, 83, 0, 0, 250, 0, 99, 80, 0, 0, 74, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 61,
-          "toneWave": {
+          "waveNo": 61,
+          "wave": {
             "name": "PWM",
-            "$ref": "#/toneWaves/61"
+            "$ref": "#/waves/61"
           },
           "octave": 0,
           "bytes": [0, 0, 57, 0, 0, 0, 0, 3, 4, 0, 0, 66, 218, 71, 13, 11, 49, 0, 99, 7, 82, 93, 20, 80, 84, 72, 66, 233, 74, 5, 4, 0, 99, 10, 89, 88, 0, 46, 10, 2, 138, 2, 0, 0]
         },
         {
-          "toneWaveNo": 83,
-          "toneWave": {
+          "waveNo": 83,
+          "wave": {
             "name": "Clicker",
-            "$ref": "#/toneWaves/83"
+            "$ref": "#/waves/83"
           },
           "octave": 0,
           "bytes": [51, 98, 0, 57, 0, 0, 0, 0, 0, 3, 0, 59, 66, 0, 70, 13, 11, 98, 0, 99, 99, 67, 19, 18, 74, 75, 20, 50, 0, 79, 31, 4, 0, 99, 78, 0, 0, 0, 44, 10, 2, 10, 2, 0]
@@ -2239,19 +2239,19 @@
       "commonBytes": [1, 80, 0, 85, 0, 7, 0, 0, 20, 25, 0, 70, 1, 0, 0, 0, 192, 12, 0, 25, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 80,
-          "toneWave": {
+          "waveNo": 80,
+          "wave": {
             "name": "Mega Pad",
-            "$ref": "#/toneWaves/80"
+            "$ref": "#/waves/80"
           },
           "octave": 0,
           "bytes": [19, 0, 60, 12, 24, 4, 7, 1, 3, 0, 36, 66, 226, 19, 0, 5, 29, 66, 76, 61, 30, 29, 25, 63, 99, 48, 66, 0, 89, 21, 17, 54, 94, 77, 83, 75, 55, 58, 0, 1, 23, 1, 0, 54]
         },
         {
-          "toneWaveNo": 85,
-          "toneWave": {
+          "waveNo": 85,
+          "wave": {
             "name": "Syn Vox LP",
-            "$ref": "#/toneWaves/85"
+            "$ref": "#/waves/85"
           },
           "octave": 0,
           "bytes": [51, 157, 0, 60, 12, 24, 4, 7, 1, 3, 0, 27, 66, 226, 52, 0, 5, 21, 13, 80, 66, 30, 66, 36, 73, 68, 70, 66, 0, 89, 21, 17, 33, 32, 67, 91, 48, 46, 54, 2, 1, 23, 3, 0]
@@ -2264,19 +2264,19 @@
       "commonBytes": [1, 86, 0, 95, 1, 248, 252, 4, 99, 99, 99, 99, 99, 99, 0, 0, 32, 56, 0, 0, 0, 0, 0, 0, 0, 26],
       "voices": [
         {
-          "toneWaveNo": 86,
-          "toneWave": {
+          "waveNo": 86,
+          "wave": {
             "name": "BrightBell",
-            "$ref": "#/toneWaves/86"
+            "$ref": "#/waves/86"
           },
           "octave": 0,
           "bytes": [0, 0, 60, 0, 0, 2, 0, 0, 6, 0, 5, 66, 221, 89, 0, 0, 9, 0, 75, 69, 38, 99, 20, 90, 0, 99, 66, 58, 82, 9, 0, 1, 99, 16, 99, 67, 0, 49, 0, 0, 102, 0, 0, 0]
         },
         {
-          "toneWaveNo": 95,
-          "toneWave": {
+          "waveNo": 95,
+          "wave": {
             "name": "Metal Bell",
-            "$ref": "#/toneWaves/95"
+            "$ref": "#/waves/95"
           },
           "octave": 1,
           "bytes": [51, 98, 0, 60, 0, 0, 2, 0, 0, 6, 0, 0, 72, 218, 57, 0, 0, 9, 0, 99, 69, 61, 99, 20, 99, 0, 75, 66, 25, 82, 9, 0, 1, 99, 63, 0, 0, 0, 49, 0, 0, 102, 0, 0]
@@ -2289,19 +2289,19 @@
       "commonBytes": [1, 50, 0, 24, 0, 0, 251, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 50, 0, 0, 0, 0, 0, 0, 0, 3],
       "voices": [
         {
-          "toneWaveNo": 50,
-          "toneWave": {
+          "waveNo": 50,
+          "wave": {
             "name": "AnaStrings",
-            "$ref": "#/toneWaves/50"
+            "$ref": "#/waves/50"
           },
           "octave": 0,
           "bytes": [0, 0, 58, 0, 0, 0, 52, 0, 2, 2, 29, 60, 206, 60, 0, 0, 49, 0, 84, 43, 58, 99, 50, 80, 50, 44, 48, 243, 82, 0, 0, 0, 99, 78, 50, 91, 45, 46, 0, 0, 0, 0, 0, 0]
         },
         {
-          "toneWaveNo": 24,
-          "toneWave": {
+          "waveNo": 24,
+          "wave": {
             "name": "G.Guitar",
-            "$ref": "#/toneWaves/24"
+            "$ref": "#/waves/24"
           },
           "octave": 0,
           "bytes": [19, 0, 0, 58, 10, 10, 0, 35, 2, 5, 2, 5, 60, 205, 86, 9, 11, 29, 0, 96, 70, 60, 99, 16, 94, 0, 62, 60, 246, 82, 0, 7, 0, 99, 88, 0, 0, 0, 40, 6, 2, 0, 34, 0]
@@ -2314,19 +2314,19 @@
       "commonBytes": [1, 88, 0, 51, 0, 0, 7, 0, 13, 25, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 88,
-          "toneWave": {
+          "waveNo": 88,
+          "wave": {
             "name": "Ether Bell",
-            "$ref": "#/toneWaves/88"
+            "$ref": "#/waves/88"
           },
           "octave": 0,
           "bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 24, 64, 233, 99, 11, 6, 73, 0, 99, 99, 39, 97, 18, 99, 54, 61, 73, 211, 70, 38, 9, 2, 95, 5, 97, 75, 0, 55, 6, 6, 6, 34, 0, 0]
         },
         {
-          "toneWaveNo": 51,
-          "toneWave": {
+          "waveNo": 51,
+          "wave": {
             "name": "Choir",
-            "$ref": "#/toneWaves/51"
+            "$ref": "#/waves/51"
           },
           "octave": 0,
           "bytes": [35, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 51, 64, 235, 48, 0, 10, 63, 0, 99, 77, 44, 67, 30, 99, 54, 77, 76, 59, 70, 38, 3, 0, 99, 78, 0, 0, 0, 55, 0, 38, 2, 34, 0]
@@ -2339,19 +2339,19 @@
       "commonBytes": [1, 104, 0, 78, 0, 0, 0, 0, 99, 84, 188, 80, 80, 80, 44, 56, 35, 77, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 104,
-          "toneWave": {
+          "waveNo": 104,
+          "wave": {
             "name": "Stadium NT",
-            "$ref": "#/toneWaves/104"
+            "$ref": "#/waves/104"
           },
           "octave": 0,
           "bytes": [98, 0, 59, 12, 0, 71, 7, 2, 3, 0, 34, 66, 206, 64, 0, 0, 79, 53, 99, 99, 40, 40, 40, 99, 99, 3, 55, 185, 25, 21, 0, 77, 50, 60, 50, 90, 30, 68, 0, 0, 23, 0, 0, 0]
         },
         {
-          "toneWaveNo": 78,
-          "toneWave": {
+          "waveNo": 78,
+          "wave": {
             "name": "Air Vox",
-            "$ref": "#/toneWaves/78"
+            "$ref": "#/waves/78"
           },
           "octave": 0,
           "bytes": [35, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 27, 66, 236, 52, 0, 0, 39, 70, 40, 64, 84, 98, 35, 70, 92, 47, 60, 0, 79, 0, 0, 50, 99, 80, 80, 92, 85, 60, 0, 0, 0, 0, 97]
@@ -2364,10 +2364,10 @@
       "commonBytes": [0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 51,
-          "toneWave": {
+          "waveNo": 51,
+          "wave": {
             "name": "Choir",
-            "$ref": "#/toneWaves/51"
+            "$ref": "#/waves/51"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 0, 0, 0, 20, 0, 3, 0, 13, 66, 210, 88, 0, 0, 19, 0, 50, 32, 33, 78, 55, 38, 46, 90, 60, 0, 48, 0, 0, 0, 99, 0, 99, 0, 99, 57, 0, 0, 0, 0, 0, 0]
@@ -2380,19 +2380,19 @@
       "commonBytes": [1, 50, 0, 5, 0, 0, 249, 0, 186, 3, 0, 0, 81, 0, 0, 98, 160, 50, 0, 0, 0, 0, 0, 0, 0, 3],
       "voices": [
         {
-          "toneWaveNo": 50,
-          "toneWave": {
+          "waveNo": 50,
+          "wave": {
             "name": "AnaStrings",
-            "$ref": "#/toneWaves/50"
+            "$ref": "#/waves/50"
           },
           "octave": 0,
           "bytes": [0, 0, 53, 0, 0, 0, 52, 0, 2, 2, 9, 60, 206, 85, 0, 0, 59, 0, 84, 55, 58, 99, 50, 99, 50, 78, 48, 243, 66, 0, 0, 0, 99, 78, 75, 50, 75, 43, 0, 0, 0, 0, 0, 0]
         },
         {
-          "toneWaveNo": 5,
-          "toneWave": {
+          "waveNo": 5,
+          "wave": {
             "name": "Harpsicord",
-            "$ref": "#/toneWaves/5"
+            "$ref": "#/waves/5"
           },
           "octave": 0,
           "bytes": [19, 213, 0, 50, 10, 10, 0, 35, 2, 5, 2, 33, 60, 221, 48, 14, 11, 53, 0, 79, 60, 54, 90, 31, 94, 0, 56, 60, 246, 70, 0, 7, 16, 99, 65, 40, 85, 0, 52, 6, 2, 0, 34, 0]
@@ -2405,19 +2405,19 @@
       "commonBytes": [1, 5, 0, 113, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 5,
-          "toneWave": {
+          "waveNo": 5,
+          "wave": {
             "name": "Harpsicord",
-            "$ref": "#/toneWaves/5"
+            "$ref": "#/waves/5"
           },
           "octave": 0,
           "bytes": [0, 128, 57, 0, 0, 0, 0, 0, 4, 0, 35, 60, 204, 47, 0, 0, 79, 0, 99, 50, 73, 97, 30, 70, 40, 28, 43, 235, 39, 25, 0, 0, 99, 22, 26, 44, 0, 34, 6, 0, 10, 0, 0, 0]
         },
         {
-          "toneWaveNo": 113,
-          "toneWave": {
+          "waveNo": 113,
+          "wave": {
             "name": "Sitar 1",
-            "$ref": "#/toneWaves/113"
+            "$ref": "#/waves/113"
           },
           "octave": 0,
           "bytes": [34, 0, 128, 39, 0, 5, 3, 0, 0, 4, 0, 35, 41, 249, 47, 0, 0, 79, 0, 99, 50, 73, 97, 30, 70, 40, 64, 43, 235, 59, 25, 0, 8, 99, 97, 0, 0, 0, 55, 6, 0, 10, 0, 0]
@@ -2430,10 +2430,10 @@
       "commonBytes": [0, 92, 0, 0, 0, 0, 254, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 92,
-          "toneWave": {
+          "waveNo": 92,
+          "wave": {
             "name": "Banjo",
-            "$ref": "#/toneWaves/92"
+            "$ref": "#/waves/92"
           },
           "octave": 0,
           "bytes": [0, 0, 56, 0, 0, 0, 0, 0, 4, 0, 20, 67, 204, 60, 63, 0, 59, 0, 99, 31, 67, 81, 64, 53, 20, 84, 50, 0, 65, 82, 0, 0, 99, 25, 99, 71, 0, 33, 6, 70, 2, 0, 0, 0]
@@ -2446,10 +2446,10 @@
       "commonBytes": [0, 93, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 50, 0, 0, 0, 252, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 93,
-          "toneWave": {
+          "waveNo": 93,
+          "wave": {
             "name": "Shamisen",
-            "$ref": "#/toneWaves/93"
+            "$ref": "#/waves/93"
           },
           "octave": 0,
           "bytes": [0, 0, 56, 0, 0, 0, 0, 1, 2, 0, 29, 56, 216, 50, 49, 0, 53, 0, 99, 40, 67, 88, 0, 63, 37, 87, 50, 14, 29, 56, 0, 0, 99, 28, 90, 73, 0, 41, 6, 70, 8, 0, 0, 0]
@@ -2462,10 +2462,10 @@
       "commonBytes": [0, 79, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 79,
-          "toneWave": {
+          "waveNo": 79,
+          "wave": {
             "name": "Koto",
-            "$ref": "#/toneWaves/79"
+            "$ref": "#/waves/79"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 0, 0, 0, 0, 0, 8, 0, 2, 48, 206, 80, 29, 0, 37, 0, 99, 62, 63, 88, 0, 90, 50, 83, 47, 0, 44, 17, 0, 0, 99, 70, 0, 0, 0, 52, 10, 0, 136, 0, 0, 0]
@@ -2478,10 +2478,10 @@
       "commonBytes": [0, 94, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 94,
-          "toneWave": {
+          "waveNo": 94,
+          "wave": {
             "name": "Kalimba",
-            "$ref": "#/toneWaves/94"
+            "$ref": "#/waves/94"
           },
           "octave": 0,
           "bytes": [0, 0, 59, 0, 0, 0, 0, 0, 5, 0, 0, 56, 225, 99, 22, 2, 55, 0, 99, 68, 0, 0, 0, 65, 0, 81, 43, 0, 73, 73, 0, 0, 99, 99, 0, 0, 0, 53, 6, 102, 10, 0, 0, 0]
@@ -2494,19 +2494,19 @@
       "commonBytes": [1, 5, 0, 7, 0, 0, 244, 0, 34, 7, 0, 78, 36, 0, 0, 200, 96, 50, 0, 0, 0, 1, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 5,
-          "toneWave": {
+          "waveNo": 5,
+          "wave": {
             "name": "Harpsicord",
-            "$ref": "#/toneWaves/5"
+            "$ref": "#/waves/5"
           },
           "octave": 0,
           "bytes": [98, 128, 58, 21, 29, 0, 52, 0, 4, 2, 0, 60, 221, 72, 0, 0, 19, 0, 99, 0, 99, 63, 99, 99, 0, 64, 48, 234, 65, 0, 0, 0, 76, 22, 99, 99, 99, 15, 0, 0, 0, 0, 0, 0]
         },
         {
-          "toneWaveNo": 7,
-          "toneWave": {
+          "waveNo": 7,
+          "wave": {
             "name": "Clav LP",
-            "$ref": "#/toneWaves/7"
+            "$ref": "#/waves/7"
           },
           "octave": 0,
           "bytes": [51, 39, 128, 58, 21, 29, 7, 52, 0, 2, 2, 0, 1, 19, 72, 0, 0, 24, 0, 99, 0, 99, 63, 99, 99, 0, 27, 48, 234, 78, 0, 0, 0, 76, 22, 99, 99, 99, 15, 0, 0, 0, 0, 0]
@@ -2519,19 +2519,19 @@
       "commonBytes": [1, 41, 0, 43, 0, 0, 1, 0, 249, 3, 0, 0, 0, 0, 0, 0, 160, 58, 0, 1, 0, 0, 0, 1, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 41,
-          "toneWave": {
+          "waveNo": 41,
+          "wave": {
             "name": "Violin",
-            "$ref": "#/toneWaves/41"
+            "$ref": "#/waves/41"
           },
           "octave": 0,
           "bytes": [44, 128, 60, 5, 17, 8, 15, 2, 5, 0, 30, 60, 216, 64, 0, 14, 64, 0, 91, 89, 66, 99, 40, 99, 0, 47, 60, 19, 74, 0, 42, 0, 33, 26, 99, 95, 75, 16, 0, 3, 0, 2, 0, 0]
         },
         {
-          "toneWaveNo": 43,
-          "toneWave": {
+          "waveNo": 43,
+          "wave": {
             "name": "StringEns.",
-            "$ref": "#/toneWaves/43"
+            "$ref": "#/waves/43"
           },
           "octave": 0,
           "bytes": [51, 205, 128, 60, 4, 19, 15, 54, 1, 2, 0, 30, 60, 216, 62, 0, 24, 74, 0, 99, 50, 66, 99, 40, 99, 0, 50, 60, 244, 84, 0, 42, 0, 99, 0, 98, 32, 0, 14, 0, 3, 0, 2, 0]
@@ -2544,10 +2544,10 @@
       "commonBytes": [0, 62, 0, 0, 0, 0, 0, 0, 51, 5, 0, 0, 4, 50, 0, 0, 160, 54, 16, 2, 0, 1, 1, 244, 0, 2],
       "voices": [
         {
-          "toneWaveNo": 62,
-          "toneWave": {
+          "waveNo": 62,
+          "wave": {
             "name": "SopranoSax",
-            "$ref": "#/toneWaves/62"
+            "$ref": "#/waves/62"
           },
           "octave": 0,
           "bytes": [14, 128, 58, 8, 10, 4, 35, 1, 6, 2, 10, 66, 98, 72, 0, 0, 54, 4, 99, 41, 83, 88, 60, 92, 99, 54, 77, 39, 77, 0, 31, 0, 99, 99, 99, 99, 99, 6, 0, 0, 0, 1, 0, 0]
@@ -2560,10 +2560,10 @@
       "commonBytes": [0, 95, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 95,
-          "toneWave": {
+          "waveNo": 95,
+          "wave": {
             "name": "Metal Bell",
-            "$ref": "#/toneWaves/95"
+            "$ref": "#/waves/95"
           },
           "octave": 0,
           "bytes": [0, 0, 59, 0, 0, 0, 0, 0, 2, 0, 9, 91, 196, 99, 38, 0, 44, 0, 99, 30, 39, 39, 40, 80, 65, 45, 66, 59, 77, 49, 3, 0, 99, 67, 0, 0, 0, 53, 2, 0, 8, 0, 0, 0]
@@ -2576,10 +2576,10 @@
       "commonBytes": [0, 97, 0, 0, 1, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 2, 0, 252, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 97,
-          "toneWave": {
+          "waveNo": 97,
+          "wave": {
             "name": "Agogo",
-            "$ref": "#/toneWaves/97"
+            "$ref": "#/waves/97"
           },
           "octave": 0,
           "bytes": [0, 128, 56, 24, 44, 6, 46, 2, 3, 0, 0, 64, 229, 99, 0, 0, 49, 0, 99, 88, 252, 0, 0, 99, 45, 92, 39, 0, 64, 98, 0, 0, 99, 99, 0, 0, 0, 15, 0, 0, 2, 0, 58, 0]
@@ -2592,10 +2592,10 @@
       "commonBytes": [0, 98, 0, 0, 1, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 98,
-          "toneWave": {
+          "waveNo": 98,
+          "wave": {
             "name": "Steel Drum",
-            "$ref": "#/toneWaves/98"
+            "$ref": "#/waves/98"
           },
           "octave": 0,
           "bytes": [0, 128, 55, 28, 0, 2, 27, 0, 3, 0, 8, 52, 237, 80, 41, 0, 19, 3, 77, 3, 74, 93, 30, 68, 50, 64, 57, 10, 78, 66, 0, 0, 99, 0, 99, 62, 0, 55, 1, 0, 14, 0, 0, 0]
@@ -2608,10 +2608,10 @@
       "commonBytes": [0, 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 3, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 99,
-          "toneWave": {
+          "waveNo": 99,
+          "wave": {
             "name": "WoodBlock1",
-            "$ref": "#/toneWaves/99"
+            "$ref": "#/waves/99"
           },
           "octave": 0,
           "bytes": [0, 0, 58, 0, 0, 0, 0, 0, 4, 0, 22, 56, 239, 52, 22, 2, 57, 0, 99, 99, 42, 79, 0, 99, 0, 69, 50, 0, 52, 31, 0, 0, 99, 69, 0, 0, 0, 54, 6, 102, 10, 0, 0, 0]
@@ -2624,19 +2624,19 @@
       "commonBytes": [1, 100, 255, 75, 254, 0, 246, 0, 0, 0, 0, 0, 73, 157, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 100,
-          "toneWave": {
+          "waveNo": 100,
+          "wave": {
             "name": "Taiko",
-            "$ref": "#/toneWaves/100"
+            "$ref": "#/waves/100"
           },
           "octave": 255,
           "bytes": [0, 0, 58, 0, 0, 0, 0, 0, 4, 0, 0, 56, 225, 99, 22, 2, 0, 0, 99, 99, 42, 79, 0, 99, 0, 99, 50, 0, 19, 31, 0, 0, 99, 51, 0, 0, 0, 54, 6, 102, 10, 0, 0, 0]
         },
         {
-          "toneWaveNo": 75,
-          "toneWave": {
+          "waveNo": 75,
+          "wave": {
             "name": "Sine",
-            "$ref": "#/toneWaves/75"
+            "$ref": "#/waves/75"
           },
           "octave": 254,
           "bytes": [51, 12, 0, 58, 0, 0, 0, 0, 0, 4, 0, 15, 56, 215, 52, 6, 2, 87, 0, 99, 72, 42, 98, 0, 70, 0, 55, 37, 157, 98, 11, 0, 0, 99, 55, 0, 0, 0, 54, 6, 102, 2, 0, 64]
@@ -2649,10 +2649,10 @@
       "commonBytes": [0, 101, 1, 0, 1, 0, 246, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 101,
-          "toneWave": {
+          "waveNo": 101,
+          "wave": {
             "name": "Melo Tom",
-            "$ref": "#/toneWaves/101"
+            "$ref": "#/waves/101"
           },
           "octave": 1,
           "bytes": [98, 0, 58, 0, 0, 0, 0, 0, 4, 0, 56, 56, 225, 53, 22, 2, 0, 0, 99, 99, 42, 79, 0, 99, 0, 73, 50, 0, 98, 31, 0, 0, 99, 51, 0, 0, 0, 51, 6, 102, 10, 0, 0, 0]
@@ -2665,10 +2665,10 @@
       "commonBytes": [0, 102, 1, 0, 254, 2, 0, 0, 99, 42, 0, 0, 48, 191, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 102,
-          "toneWave": {
+          "waveNo": 102,
+          "wave": {
             "name": "Syn Tom 1",
-            "$ref": "#/toneWaves/102"
+            "$ref": "#/waves/102"
           },
           "octave": 1,
           "bytes": [0, 0, 58, 0, 0, 0, 0, 0, 4, 0, 0, 56, 225, 82, 22, 2, 0, 0, 99, 97, 0, 0, 0, 99, 0, 75, 50, 0, 79, 31, 0, 0, 99, 86, 0, 0, 0, 54, 6, 102, 10, 0, 0, 0]
@@ -2681,10 +2681,10 @@
       "commonBytes": [0, 105, 1, 0, 1, 254, 0, 72, 54, 73, 99, 92, 0, 0, 0, 0, 32, 0, 0, 0, 0, 3, 0, 0, 23, 0],
       "voices": [
         {
-          "toneWaveNo": 105,
-          "toneWave": {
+          "waveNo": 105,
+          "wave": {
             "name": "CrashLP NT",
-            "$ref": "#/toneWaves/105"
+            "$ref": "#/waves/105"
           },
           "octave": 1,
           "bytes": [0, 0, 15, 14, 22, 10, 0, 0, 0, 0, 99, 60, 216, 0, 0, 7, 55, 0, 99, 94, 78, 99, 49, 83, 96, 99, 72, 0, 0, 0, 0, 74, 99, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0]
@@ -2697,10 +2697,10 @@
       "commonBytes": [0, 106, 0, 0, 1, 12, 0, 0, 0, 21, 35, 41, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 106,
-          "toneWave": {
+          "waveNo": 106,
+          "wave": {
             "name": "Gt Scratch",
-            "$ref": "#/toneWaves/106"
+            "$ref": "#/waves/106"
           },
           "octave": 0,
           "bytes": [0, 0, 58, 0, 0, 0, 0, 0, 4, 0, 99, 56, 225, 99, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 51, 50, 0, 71, 31, 0, 0, 99, 31, 99, 37, 0, 14, 6, 102, 10, 0, 0, 0]
@@ -2713,10 +2713,10 @@
       "commonBytes": [0, 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 73,
-          "toneWave": {
+          "waveNo": 73,
+          "wave": {
             "name": "Bottle",
-            "$ref": "#/toneWaves/73"
+            "$ref": "#/waves/73"
           },
           "octave": 0,
           "bytes": [0, 128, 60, 0, 0, 3, 54, 0, 2, 0, 0, 44, 206, 99, 0, 0, 24, 0, 99, 62, 4, 0, 0, 69, 0, 23, 50, 0, 86, 98, 0, 0, 33, 49, 99, 22, 44, 15, 0, 0, 2, 0, 0, 0]
@@ -2729,19 +2729,19 @@
       "commonBytes": [1, 103, 255, 103, 1, 0, 1, 6, 67, 99, 67, 99, 77, 99, 0, 0, 0, 50, 0, 0, 0, 3, 0, 0, 23, 0],
       "voices": [
         {
-          "toneWaveNo": 103,
-          "toneWave": {
+          "waveNo": 103,
+          "wave": {
             "name": "Stadium",
-            "$ref": "#/toneWaves/103"
+            "$ref": "#/waves/103"
           },
           "octave": 255,
           "bytes": [35, 0, 15, 14, 22, 10, 0, 0, 0, 0, 35, 60, 216, 55, 0, 0, 0, 0, 99, 74, 83, 99, 49, 83, 96, 70, 60, 0, 79, 0, 0, 70, 99, 82, 0, 0, 0, 57, 0, 0, 0, 0, 0, 0]
         },
         {
-          "toneWaveNo": 103,
-          "toneWave": {
+          "waveNo": 103,
+          "wave": {
             "name": "Stadium",
-            "$ref": "#/toneWaves/103"
+            "$ref": "#/waves/103"
           },
           "octave": 1,
           "bytes": [3, 92, 0, 15, 14, 22, 10, 0, 0, 0, 0, 35, 60, 216, 55, 0, 0, 0, 0, 99, 74, 83, 99, 49, 83, 96, 47, 60, 0, 79, 0, 0, 70, 99, 82, 0, 0, 0, 61, 0, 0, 0, 0, 0]
@@ -2754,19 +2754,19 @@
       "commonBytes": [1, 108, 1, 109, 254, 0, 0, 0, 99, 99, 99, 99, 99, 99, 0, 0, 192, 54, 3, 2, 0, 1, 2, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 108,
-          "toneWave": {
+          "waveNo": 108,
+          "wave": {
             "name": "Crickets 1",
-            "$ref": "#/toneWaves/108"
+            "$ref": "#/waves/108"
           },
           "octave": 1,
           "bytes": [98, 0, 57, 25, 39, 0, 2, 1, 3, 0, 46, 66, 206, 51, 0, 0, 65, 0, 99, 78, 67, 67, 67, 90, 97, 20, 72, 0, 79, 0, 53, 26, 99, 99, 99, 99, 99, 40, 0, 0, 0, 1, 0, 0]
         },
         {
-          "toneWaveNo": 109,
-          "toneWave": {
+          "waveNo": 109,
+          "wave": {
             "name": "Crickts1NT",
-            "$ref": "#/toneWaves/109"
+            "$ref": "#/waves/109"
           },
           "octave": 254,
           "bytes": [3, 98, 0, 57, 25, 39, 0, 2, 1, 3, 0, 46, 66, 206, 51, 0, 0, 65, 0, 99, 78, 67, 67, 67, 90, 97, 20, 36, 0, 79, 0, 53, 26, 99, 99, 99, 99, 99, 40, 0, 0, 0, 1, 0]
@@ -2779,19 +2779,19 @@
       "commonBytes": [1, 111, 0, 111, 1, 249, 0, 0, 99, 99, 99, 99, 99, 0, 0, 0, 99, 0, 0, 0, 0, 0, 0, 253, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 111,
-          "toneWave": {
+          "waveNo": 111,
+          "wave": {
             "name": "TriRoll NT",
-            "$ref": "#/toneWaves/111"
+            "$ref": "#/waves/111"
           },
           "octave": 0,
           "bytes": [87, 0, 57, 0, 0, 0, 0, 0, 0, 0, 99, 55, 191, 0, 16, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 72, 50, 0, 72, 1, 0, 0, 99, 87, 99, 0, 99, 16, 6, 6, 2, 2, 0, 0]
         },
         {
-          "toneWaveNo": 111,
-          "toneWave": {
+          "waveNo": 111,
+          "wave": {
             "name": "TriRoll NT",
-            "$ref": "#/toneWaves/111"
+            "$ref": "#/waves/111"
           },
           "octave": 1,
           "bytes": [51, 87, 0, 57, 0, 0, 0, 0, 0, 0, 0, 77, 55, 191, 0, 16, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 99, 50, 0, 72, 1, 0, 0, 99, 87, 99, 0, 99, 13, 6, 6, 2, 2, 0]
@@ -2804,19 +2804,19 @@
       "commonBytes": [1, 103, 255, 103, 255, 1, 255, 0, 99, 99, 99, 99, 99, 99, 157, 98, 64, 90, 0, 94, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 103,
-          "toneWave": {
+          "waveNo": 103,
+          "wave": {
             "name": "Stadium",
-            "$ref": "#/toneWaves/103"
+            "$ref": "#/waves/103"
           },
           "octave": 255,
           "bytes": [0, 128, 14, 0, 0, 0, 35, 1, 5, 0, 31, 42, 206, 31, 0, 0, 44, 75, 99, 0, 99, 99, 45, 99, 0, 79, 60, 31, 85, 0, 0, 60, 99, 76, 95, 79, 95, 45, 0, 0, 0, 0, 0, 0]
         },
         {
-          "toneWaveNo": 103,
-          "toneWave": {
+          "waveNo": 103,
+          "wave": {
             "name": "Stadium",
-            "$ref": "#/toneWaves/103"
+            "$ref": "#/waves/103"
           },
           "octave": 255,
           "bytes": [19, 157, 128, 14, 0, 0, 0, 35, 1, 5, 0, 31, 42, 206, 31, 0, 0, 44, 86, 99, 0, 99, 99, 45, 99, 0, 78, 60, 31, 85, 0, 0, 60, 99, 76, 95, 79, 95, 47, 0, 0, 0, 0, 0]
@@ -2829,19 +2829,19 @@
       "commonBytes": [1, 103, 0, 103, 0, 254, 0, 6, 32, 68, 24, 92, 0, 0, 0, 0, 96, 50, 0, 0, 0, 3, 0, 0, 23, 0],
       "voices": [
         {
-          "toneWaveNo": 103,
-          "toneWave": {
+          "waveNo": 103,
+          "wave": {
             "name": "Stadium",
-            "$ref": "#/toneWaves/103"
+            "$ref": "#/waves/103"
           },
           "octave": 0,
           "bytes": [43, 0, 15, 14, 22, 10, 0, 0, 0, 0, 39, 60, 216, 46, 0, 7, 55, 0, 99, 94, 78, 99, 49, 83, 96, 50, 60, 0, 68, 0, 12, 20, 99, 99, 60, 86, 36, 60, 0, 2, 0, 3, 0, 0]
         },
         {
-          "toneWaveNo": 103,
-          "toneWave": {
+          "waveNo": 103,
+          "wave": {
             "name": "Stadium",
-            "$ref": "#/toneWaves/103"
+            "$ref": "#/waves/103"
           },
           "octave": 0,
           "bytes": [3, 43, 0, 15, 14, 22, 10, 0, 0, 0, 0, 39, 60, 216, 47, 0, 7, 55, 0, 99, 94, 78, 99, 49, 83, 96, 50, 60, 0, 68, 0, 12, 20, 99, 99, 60, 86, 36, 60, 0, 2, 0, 3, 0]
@@ -2854,10 +2854,10 @@
       "commonBytes": [0, 112, 1, 0, 0, 0, 0, 0, 99, 99, 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": [
         {
-          "toneWaveNo": 112,
-          "toneWave": {
+          "waveNo": 112,
+          "wave": {
             "name": "Gun Shot",
-            "$ref": "#/toneWaves/112"
+            "$ref": "#/waves/112"
           },
           "octave": 1,
           "bytes": [44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 99, 0, 0, 0, 0, 99, 23, 74, 61, 0, 0, 0, 52, 0, 0, 19, 0, 0, 0, 99, 0, 99, 0, 99, 0, 0, 0, 0, 0, 0, 0]

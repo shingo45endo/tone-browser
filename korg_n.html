@@ -30,10 +30,10 @@ const templateToneList = (json) => html`
 			<tr>
 				<td class="text-end">${tone.toneNo}</td>
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
-				<td class="text-end">${tone.voices[0].toneWaveNo ?? tone.voices[0].drumSetNo}</td>
-				<td class="font-monospace">${tone.voices[0].toneWave?.name ?? tone.voices[0].drumSet?.name}</td>
-				<td class="text-end">${tone.voices[1]?.toneWaveNo ?? tone.voices[1]?.drumSetNo ?? ''}</td>
-				<td class="font-monospace">${tone.voices[1]?.toneWave?.name ?? tone.voices[1]?.drumSet?.name ?? ''}</td>
+				<td class="text-end">${tone.voices[0].waveNo ?? tone.voices[0].drumSetNo}</td>
+				<td class="font-monospace">${tone.voices[0].wave?.name ?? tone.voices[0].drumSet?.name}</td>
+				<td class="text-end">${tone.voices[1]?.waveNo ?? tone.voices[1]?.drumSetNo ?? ''}</td>
+				<td class="font-monospace">${tone.voices[1]?.wave?.name ?? tone.voices[1]?.drumSet?.name ?? ''}</td>
 			</tr>
 		`)}
 		</tbody>
@@ -89,8 +89,8 @@ const templateCombiList = (json) => html`
 				<td class="text-end">${combi.combiNo}</td>
 				<td class="font-monospace"><a href="#/combis/${combi.combiNo}">${combi.name}</a></td>
 			${[...combi.progs, ...(new Array(7)).fill()].slice(0, 8).map((prog) => html`
-				<td class="text-end">${prog?.toneNo ?? prog?.drumNo ?? ''}</td>
-				<td class="font-monospace">${(prog) ? html`<a href="${prog.tone?.$ref ?? prog.drum?.$ref}">${prog.tone?.name ?? prog.drum?.name}</a>` : ''}</td>
+				<td class="text-end">${prog?.toneNo ?? prog?.drumToneNo ?? ''}</td>
+				<td class="font-monospace">${(prog) ? html`<a href="${prog.tone?.$ref ?? prog.drumTone?.$ref}">${prog.tone?.name ?? prog.drumTone?.name}</a>` : ''}</td>
 			`)}
 			</tr>
 		`)}
@@ -99,46 +99,47 @@ const templateCombiList = (json) => html`
 `;
 
 const templateWaveList = (json) => html`
-	<div class="d-flex flex-row gap-3">
-		<table class="table table-sm table-hover w-auto">
-			<thead>
-				<tr>
-					<th class="text-end">No.</th>
-					<th>Multi Sample</th>
-				</tr>
-			</thead>
-			<tbody>
-			${json.toneWaves.map((toneWave) => html`
-				<tr>
-					<td class="text-end">${toneWave.toneWaveNo}</td>
-					<td class="font-monospace">${toneWave.name}</td>
-				</tr>
-			`)}
-			</tbody>
-		</table>
-		<table class="table table-sm table-hover w-auto">
-			<thead>
-				<tr>
-					<th class="text-end">No.</th>
-					<th>Drum Sample</th>
-				</tr>
-			</thead>
-			<tbody>
-			${json.drumWaves.map((drumWave) => html`
-				<tr>
-					<td class="text-end">${drumWave.drumWaveNo}</td>
-					<td class="font-monospace">${drumWave.name}</td>
-				</tr>
-			`)}
-			</tbody>
-		</table>
-	</div>
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">No.</th>
+				<th>Multi Sample</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.waves.map((wave) => html`
+			<tr>
+				<td class="text-end">${wave.waveNo}</td>
+				<td class="font-monospace">${wave.name}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateDrumSampleList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">No.</th>
+				<th>Drum Sample</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumSamples.map((drumSample) => html`
+			<tr>
+				<td class="text-end">${drumSample.drumSampleNo}</td>
+				<td class="font-monospace">${drumSample.name}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
 `;
 
 const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
-			<h3 class="h6 mb-0">Multi Sample No.${voice.toneWaveNo ?? voice.drumSetNo}: <span class="font-monospace h4">${voice.toneWave?.name ?? voice.drumSet?.name}</span></h3>
+			<h3 class="h6 mb-0">Multi Sample No.${voice.waveNo ?? voice.drumSetNo}: <span class="font-monospace h4">${voice.wave?.name ?? voice.drumSet?.name}</span></h3>
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
@@ -537,7 +538,7 @@ const templateCombi = (combi, json) => html`
 	<ul class="nav nav-tabs" role="tablist">
 	${combi.progs.map((prog, i) => html`
 		<li class="nav-item" role="presentation">
-			<button id="my-tab-tone${i}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone${i}">${prog.tone?.name ?? prog.drum?.name}</button>
+			<button id="my-tab-tone${i}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone${i}">${prog.tone?.name ?? prog.drumTone?.name}</button>
 		</li>
 	`)}
 	</ul>
@@ -666,7 +667,7 @@ const templateCombi = (combi, json) => html`
 					</table>
 				</div>
 			</div>
-			${templateTone(json.tones[prog.toneNo] ?? json.drums[prog.drumNo], json)}
+			${templateTone(json.tones[prog.toneNo] ?? json.drumTones[prog.drumToneNo], json)}
 		</div>
 	`)}
 	</div>
@@ -709,8 +710,8 @@ const templateDrumSet = (drumSet, _) => html`
 				<tr>
 					<td class="text-end">${fmt.noteNameR(noteNo)}</td>
 					<td class="text-end text-muted">${noteNo}</td>
-					<td class="text-end">${note.drumWaveNo}</td>
-					<td class="font-monospace">${note.drumWave.name}</td>
+					<td class="text-end">${note.drumSampleNo}</td>
+					<td class="font-monospace">${note.drumSample.name}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[2])}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[3])}</td>
 					<td class="text-end">${note.bytes[4]}</td>\
@@ -734,10 +735,11 @@ const templateDrumSet = (drumSet, _) => html`
 
 window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	lists: [
-		{id: 'tones',    label: 'Programs',     renderer: templateToneList},
-		{id: 'drumSets', label: 'Drum Kits',    renderer: templateDrumSetList},
-		{id: 'combis',   label: 'Combinations', renderer: templateCombiList},
-		{id: 'toneWaves',    label: 'Samples',      renderer: templateWaveList},
+		{id: 'tones',       label: 'Programs',      renderer: templateToneList},
+		{id: 'drumSets',    label: 'Drum Kits',     renderer: templateDrumSetList},
+		{id: 'combis',      label: 'Combinations',  renderer: templateCombiList},
+		{id: 'waves',       label: 'Multi Samples', renderer: templateWaveList},
+		{id: 'drumSamples', label: 'Drum Samples',  renderer: templateDrumSampleList},
 	],
 	details: {
 		tones:    templateTone,
