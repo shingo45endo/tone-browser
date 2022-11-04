@@ -41,7 +41,7 @@ const templateToneMapList = (json) => html`
 				<td class="text-end">${toneMap.prog}</td>
 				<td class="text-end">${toneMap.bankM}</td>
 				<td class="text-end">${getRef(toneMap).replace(/^.*\//u, '')}</td>
-				<td class="font-monospace"><a href="${getRef(toneMap)}">${toneMap.name}</a></td>
+				<td class="font-monospace"><a href="${getRef(toneMap)}">${(toneMap.tone ?? toneMap.tone4 ?? toneMap.combi).name}</a></td>
 			</tr>
 		`)}
 		</tbody>
@@ -63,7 +63,7 @@ const templateDrumMapList = (json) => html`
 			<tr>
 				<td class="text-end">${drumMap.bankL}</td>
 				<td class="text-end">${drumMap.prog}</td>
-				<td class="text-end">${drumMap.drumNo}</td>
+				<td class="text-end">${drumMap.drumSetNo}</td>
 				<td class="font-monospace"><a href="${drumMap.drumSet.$ref}">${drumMap.drumSet.name}</a></td>
 			</tr>
 		`)}
@@ -425,29 +425,7 @@ const templateCombi = (combi, json) => html`
 		<div class="card-header">
 			<h2 class="h6 mb-0">Legato No.${combi.combiNo}: <span class="font-monospace h4">${combi.name}</span></h2>
 		</div>
-		<div class="card-body d-flex flex-row gap-3 pb-0">
-			<div>
-				<table class="table table-sm">
-					<tbody>
-						<tr>
-							<th>Byte 12</th>
-							<td class="text-end">${combi.bytes[12]}</td>
-						</tr>
-						<tr>
-							<th>Byte 13</th>
-							<td class="text-end">${combi.bytes[13]}</td>
-						</tr>
-						<tr>
-							<th>Byte 14</th>
-							<td class="text-end">${combi.bytes[14]}</td>
-						</tr>
-						<tr>
-							<th>Byte 15</th>
-							<td class="text-end">${combi.bytes[15]}</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+		<div class="card-body d-flex flex-row gap-3 py-0">
 		</div>
 	</div>
 	<ul class="nav nav-tabs" role="tablist">

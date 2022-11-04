@@ -131,12 +131,12 @@ const templateVoice = (voice, _, i) => html`
 						</tr>
 					</thead>
 					<tbody>
-					${voice.sampleSlots.map(({sample}, noteNo) => html`
+					${voice.sampleSlots.map((sampleSlot, noteNo) => html`
 						<tr class="${(12 < noteNo && noteNo <= 108) ? '' : 'd-none'}">
 							<td class="text-end">${fmt.noteNameR(noteNo)}</td>
 							<td class="text-end text-muted">${noteNo}</td>
-							<td class="text-end">${sample.sampleNo}</td>
-							<td class="font-monospace">${sample.name}</td>
+							<td class="text-end">${sampleSlot.sampleNo}</td>
+							<td class="font-monospace">${sampleSlot.sample.name}</td>
 						</tr>
 					`)}
 					</tbody>

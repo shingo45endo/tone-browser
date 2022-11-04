@@ -1,4 +1,2310 @@
 {
+  "samples": [
+    {
+      "sampleNo": 0,
+      "name": "Acoustic Bass Drum",
+      "address": 32768,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 1,
+      "name": "Acoustic Snare Drum",
+      "address": 36864,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 2,
+      "name": "Electric Snare Drum",
+      "address": 81920,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 3,
+      "name": "Acoustic Tom Tom",
+      "address": 0,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 4,
+      "name": "Closed Hi-Hat Attack",
+      "address": 57344,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 5,
+      "name": "Open Hi-Hat (Loop)",
+      "address": 40960,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 6,
+      "name": "Crash Cymbal Attack",
+      "address": 61440,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 7,
+      "name": "Crash Cymbal (Loop)",
+      "address": 49152,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 8,
+      "name": "Ride Cymbal",
+      "address": 16384,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 9,
+      "name": "Rim Shot",
+      "address": 90112,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 10,
+      "name": "Hand Clap",
+      "address": 92160,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 11,
+      "name": "Mute Conga",
+      "address": 86016,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 12,
+      "name": "High (Low) Conga",
+      "address": 73728,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 13,
+      "name": "Bongo",
+      "address": 88064,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 14,
+      "name": "Cowbell",
+      "address": 94208,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 15,
+      "name": "Tambourine",
+      "address": 96256,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 16,
+      "name": "Agogo Bell",
+      "address": 98304,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 17,
+      "name": "Claves",
+      "address": 102400,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 18,
+      "name": "Timbale",
+      "address": 65536,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 19,
+      "name": "Cabasa",
+      "address": 104448,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 20,
+      "name": "Acoustic Piano Thump",
+      "address": 131072,
+      "length": 4096,
+      "pitch": 12288,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 21,
+      "name": "Hammond Organ",
+      "address": 135168,
+      "length": 4096,
+      "pitch": 20756,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 22,
+      "name": "Trombone",
+      "address": 139264,
+      "length": 4096,
+      "pitch": 12510,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 23,
+      "name": "Trumpet",
+      "address": 143360,
+      "length": 4096,
+      "pitch": 13602,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 24,
+      "name": "Breath Noise (Loop)",
+      "address": 147456,
+      "length": 4096,
+      "pitch": 20651,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 25,
+      "name": "Clarinet",
+      "address": 151552,
+      "length": 4096,
+      "pitch": 14636,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 26,
+      "name": "Flute",
+      "address": 155648,
+      "length": 4096,
+      "pitch": 15210,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 27,
+      "name": "Steamer",
+      "address": 159744,
+      "length": 4096,
+      "pitch": 16557,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 28,
+      "name": "Shakuhachi",
+      "address": 245760,
+      "length": 4096,
+      "pitch": 18774,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 29,
+      "name": "Alto Sax",
+      "address": 237568,
+      "length": 4096,
+      "pitch": 16736,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 30,
+      "name": "Baritone Sax",
+      "address": 241664,
+      "length": 4096,
+      "pitch": 25016,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 31,
+      "name": "Marimba",
+      "address": 249856,
+      "length": 4096,
+      "pitch": 23112,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 32,
+      "name": "Vibraphone",
+      "address": 253952,
+      "length": 4096,
+      "pitch": 18368,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 33,
+      "name": "Xylophone",
+      "address": 163840,
+      "length": 4096,
+      "pitch": 8812,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 34,
+      "name": "Wind Bell",
+      "address": 167936,
+      "length": 4096,
+      "pitch": 841,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 35,
+      "name": "Fretless Bass",
+      "address": 212992,
+      "length": 8192,
+      "pitch": 23520,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 36,
+      "name": "Slap Bass Attack",
+      "address": 172032,
+      "length": 4096,
+      "pitch": 22861,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 37,
+      "name": "Slap Bass (Loop)",
+      "address": 176128,
+      "length": 2048,
+      "pitch": 22495,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 38,
+      "name": "Acoustic Bass",
+      "address": 184320,
+      "length": 4096,
+      "pitch": 24173,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 39,
+      "name": "Gut Guitar",
+      "address": 188416,
+      "length": 8192,
+      "pitch": 16029,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 40,
+      "name": "Steel Guitar",
+      "address": 204800,
+      "length": 8192,
+      "pitch": 19427,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 41,
+      "name": "Pizzicato Strings",
+      "address": 180224,
+      "length": 4096,
+      "pitch": 11283,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 42,
+      "name": "Harp",
+      "address": 196608,
+      "length": 8192,
+      "pitch": 10524,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 43,
+      "name": "Harpsichord (Loop)",
+      "address": 178176,
+      "length": 2048,
+      "pitch": 28971,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 44,
+      "name": "Contrabass",
+      "address": 229376,
+      "length": 4096,
+      "pitch": 25063,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 45,
+      "name": "Violin",
+      "address": 233472,
+      "length": 4096,
+      "pitch": 16194,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 46,
+      "name": "Timpani",
+      "address": 114688,
+      "length": 16384,
+      "pitch": 24875,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 47,
+      "name": "Orchestra Hit",
+      "address": 106496,
+      "length": 8192,
+      "pitch": 16984,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 48,
+      "name": "Indian Flute",
+      "address": 221184,
+      "length": 2048,
+      "pitch": 12489,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 49,
+      "name": "Hammond Organ (Loop)",
+      "address": 223232,
+      "length": 2048,
+      "pitch": 24889,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 50,
+      "name": "Bell (Loop)",
+      "address": 225280,
+      "length": 2048,
+      "pitch": 9197,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 51,
+      "name": "Telephone Bell (Loop)",
+      "address": 227328,
+      "length": 2048,
+      "pitch": 15872,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 52,
+      "name": "Ethnic (Loop)",
+      "address": 258048,
+      "length": 2048,
+      "pitch": 7432,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 53,
+      "name": "Stainless Steel (Loop)",
+      "address": 260096,
+      "length": 2048,
+      "pitch": 10451,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 54,
+      "name": "Acoustic Bass Drum *",
+      "address": 32768,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 55,
+      "name": "Acoustic Snare Drum *",
+      "address": 36864,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 56,
+      "name": "Electric Snare Drum *",
+      "address": 81920,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 57,
+      "name": "Acoustic Tom Tom *",
+      "address": 0,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 58,
+      "name": "Closed Hi-Hat Attack *",
+      "address": 57344,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 59,
+      "name": "Open Hi-Hat (Loop) *",
+      "address": 40960,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 60,
+      "name": "Crash Cymbal Attack *",
+      "address": 61440,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 61,
+      "name": "Crash Cymbal (Loop) *",
+      "address": 49152,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 62,
+      "name": "Ride Cymbal *",
+      "address": 16384,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 63,
+      "name": "Rim Shot *",
+      "address": 90112,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 64,
+      "name": "Hand Clap *",
+      "address": 92160,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 65,
+      "name": "Mute Conga *",
+      "address": 86016,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 66,
+      "name": "High (Low) Conga *",
+      "address": 73728,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 67,
+      "name": "Bongo *",
+      "address": 88064,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 68,
+      "name": "Cowbell *",
+      "address": 94208,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 69,
+      "name": "Tambourine *",
+      "address": 96256,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 70,
+      "name": "Agogo Bell *",
+      "address": 98304,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 71,
+      "name": "Claves *",
+      "address": 102400,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 72,
+      "name": "Timbale *",
+      "address": 65536,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 73,
+      "name": "Cabasa *",
+      "address": 104448,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 74,
+      "name": "Loop-1",
+      "address": 32768,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 75,
+      "name": "Loop-2",
+      "address": 36864,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 76,
+      "name": "Loop-3",
+      "address": 81920,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 77,
+      "name": "Loop-4",
+      "address": 0,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 78,
+      "name": "Loop-5",
+      "address": 57344,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 79,
+      "name": "Loop-6",
+      "address": 61440,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 80,
+      "name": "Loop-7",
+      "address": 16384,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 81,
+      "name": "Loop-8",
+      "address": 16384,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 82,
+      "name": "Loop-9",
+      "address": 90112,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 83,
+      "name": "Loop-10",
+      "address": 92160,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 84,
+      "name": "Loop-11",
+      "address": 86016,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 85,
+      "name": "Loop-12",
+      "address": 73728,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 86,
+      "name": "Loop-13",
+      "address": 88064,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 87,
+      "name": "Loop-14",
+      "address": 94208,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 88,
+      "name": "Loop-15",
+      "address": 96256,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 89,
+      "name": "Loop-16",
+      "address": 98304,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 90,
+      "name": "Loop-17",
+      "address": 102400,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 91,
+      "name": "Loop-18",
+      "address": 65536,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 92,
+      "name": "Loop-19",
+      "address": 104448,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 93,
+      "name": "Loop-20",
+      "address": 131072,
+      "length": 4096,
+      "pitch": 12288,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 94,
+      "name": "Loop-21",
+      "address": 135168,
+      "length": 4096,
+      "pitch": 20756,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 95,
+      "name": "Loop-22",
+      "address": 139264,
+      "length": 4096,
+      "pitch": 12510,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 96,
+      "name": "Loop-23",
+      "address": 143360,
+      "length": 4096,
+      "pitch": 13602,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 97,
+      "name": "Loop-24",
+      "address": 151552,
+      "length": 4096,
+      "pitch": 14636,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 98,
+      "name": "Loop-25",
+      "address": 155648,
+      "length": 4096,
+      "pitch": 15210,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 99,
+      "name": "Loop-26",
+      "address": 159744,
+      "length": 4096,
+      "pitch": 16557,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 100,
+      "name": "Loop-27",
+      "address": 245760,
+      "length": 4096,
+      "pitch": 18774,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 101,
+      "name": "Loop-28",
+      "address": 237568,
+      "length": 4096,
+      "pitch": 16736,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 102,
+      "name": "Loop-29",
+      "address": 241664,
+      "length": 4096,
+      "pitch": 25016,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 103,
+      "name": "Loop-30",
+      "address": 249856,
+      "length": 4096,
+      "pitch": 23112,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 104,
+      "name": "Loop-31",
+      "address": 253952,
+      "length": 4096,
+      "pitch": 18368,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 105,
+      "name": "Loop-32",
+      "address": 163840,
+      "length": 4096,
+      "pitch": 8812,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 106,
+      "name": "Loop-33",
+      "address": 167936,
+      "length": 4096,
+      "pitch": 841,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 107,
+      "name": "Loop-34",
+      "address": 212992,
+      "length": 8192,
+      "pitch": 23520,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 108,
+      "name": "Loop-35",
+      "address": 172032,
+      "length": 4096,
+      "pitch": 22861,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 109,
+      "name": "Loop-36",
+      "address": 184320,
+      "length": 4096,
+      "pitch": 24173,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 110,
+      "name": "Loop-37",
+      "address": 188416,
+      "length": 8192,
+      "pitch": 16029,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 111,
+      "name": "Loop-38",
+      "address": 204800,
+      "length": 8192,
+      "pitch": 19427,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 112,
+      "name": "Loop-39",
+      "address": 180224,
+      "length": 4096,
+      "pitch": 11283,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 113,
+      "name": "Loop-40",
+      "address": 196608,
+      "length": 8192,
+      "pitch": 10524,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 114,
+      "name": "Loop-41",
+      "address": 229376,
+      "length": 4096,
+      "pitch": 25063,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 115,
+      "name": "Loop-42",
+      "address": 233472,
+      "length": 4096,
+      "pitch": 16194,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 116,
+      "name": "Loop-43",
+      "address": 114688,
+      "length": 16384,
+      "pitch": 24875,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 117,
+      "name": "Loop-44",
+      "address": 106496,
+      "length": 8192,
+      "pitch": 16984,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 118,
+      "name": "Loop-45",
+      "address": 221184,
+      "length": 2048,
+      "pitch": 12489,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 119,
+      "name": "Jam-1 (Loop)",
+      "address": 32768,
+      "length": 32768,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 120,
+      "name": "Jam-2 (Loop)",
+      "address": 65536,
+      "length": 32768,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 121,
+      "name": "Jam-3 (Loop)",
+      "address": 98304,
+      "length": 32768,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 122,
+      "name": "Jam-4 (Loop)",
+      "address": 131072,
+      "length": 32768,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 123,
+      "name": "Jam-5 (Loop)",
+      "address": 163840,
+      "length": 32768,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 124,
+      "name": "Jam-6 (Loop)",
+      "address": 229376,
+      "length": 32768,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 125,
+      "name": "Jam-7 (Loop)",
+      "address": 81920,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 126,
+      "name": "Jam-8 (Loop)",
+      "address": 163840,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 127,
+      "name": "Jam-9 (Loop)",
+      "address": 32768,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 128,
+      "name": "Laugh *",
+      "address": 262144,
+      "length": 16384,
+      "pitch": 16384,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 129,
+      "name": "Applause * ",
+      "address": 278528,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 130,
+      "name": "Windchime *",
+      "address": 294912,
+      "length": 16384,
+      "pitch": 18084,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 131,
+      "name": "Crash *",
+      "address": 311296,
+      "length": 16384,
+      "pitch": 17227,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 132,
+      "name": "Train *",
+      "address": 327680,
+      "length": 16384,
+      "pitch": 16633,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 133,
+      "name": "Windy *",
+      "address": 344064,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 134,
+      "name": "Bird *",
+      "address": 360448,
+      "length": 16384,
+      "pitch": 16628,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 135,
+      "name": "Stream *",
+      "address": 376832,
+      "length": 16384,
+      "pitch": 16509,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 136,
+      "name": "Creak *",
+      "address": 393216,
+      "length": 16384,
+      "pitch": 16384,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 137,
+      "name": "Scream *",
+      "address": 409600,
+      "length": 8192,
+      "pitch": 13988,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 138,
+      "name": "Punch *",
+      "address": 417792,
+      "length": 8192,
+      "pitch": 18084,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 139,
+      "name": "Steps *",
+      "address": 425984,
+      "length": 8192,
+      "pitch": 18084,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 140,
+      "name": "Door Slam *",
+      "address": 434176,
+      "length": 8192,
+      "pitch": 17058,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 141,
+      "name": "Car Start *",
+      "address": 442368,
+      "length": 8192,
+      "pitch": 14780,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 142,
+      "name": "Jetplane *",
+      "address": 450560,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 143,
+      "name": "Gun Shot *",
+      "address": 458752,
+      "length": 8192,
+      "pitch": 13988,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 144,
+      "name": "Horse *",
+      "address": 466944,
+      "length": 8192,
+      "pitch": 18084,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 145,
+      "name": "Thunder *",
+      "address": 475136,
+      "length": 8192,
+      "pitch": 13222,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 146,
+      "name": "Bubble *",
+      "address": 483328,
+      "length": 8192,
+      "pitch": 16426,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 147,
+      "name": "Heart *",
+      "address": 491520,
+      "length": 4096,
+      "pitch": 12288,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 148,
+      "name": "Engine *",
+      "address": 495616,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 149,
+      "name": "Car Stop *",
+      "address": 499712,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 150,
+      "name": "Siren *",
+      "address": 503808,
+      "length": 4096,
+      "pitch": 16116,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 151,
+      "name": "Helicopter *",
+      "address": 507904,
+      "length": 4096,
+      "pitch": 14695,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 152,
+      "name": "Dog Bark *",
+      "address": 512000,
+      "length": 4096,
+      "pitch": 16384,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 153,
+      "name": "Car Pass *",
+      "address": 516096,
+      "length": 2048,
+      "pitch": 16450,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 154,
+      "name": "Male Voice *",
+      "address": 518144,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 155,
+      "name": "Machine Gun *",
+      "address": 520192,
+      "length": 2048,
+      "pitch": 18711,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 156,
+      "name": "Starship *",
+      "address": 522240,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 157,
+      "name": "Laugh (Loop) *",
+      "address": 262144,
+      "length": 16384,
+      "pitch": 16384,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 158,
+      "name": "Applause (Loop) * ",
+      "address": 278528,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 159,
+      "name": "Windchime (Loop) *",
+      "address": 294912,
+      "length": 16384,
+      "pitch": 18084,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 160,
+      "name": "Crash (Loop) *",
+      "address": 311296,
+      "length": 16384,
+      "pitch": 17227,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 161,
+      "name": "Train (Loop) *",
+      "address": 327680,
+      "length": 16384,
+      "pitch": 16633,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 162,
+      "name": "Windy (Loop) *",
+      "address": 344064,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 163,
+      "name": "Bird (Loop) *",
+      "address": 360448,
+      "length": 16384,
+      "pitch": 16628,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 164,
+      "name": "Stream (Loop) *",
+      "address": 376832,
+      "length": 16384,
+      "pitch": 16509,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 165,
+      "name": "Creak (Loop) *",
+      "address": 393216,
+      "length": 16384,
+      "pitch": 16384,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 166,
+      "name": "Scream (Loop) *",
+      "address": 409600,
+      "length": 8192,
+      "pitch": 13988,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 167,
+      "name": "Punch (Loop) *",
+      "address": 417792,
+      "length": 8192,
+      "pitch": 18084,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 168,
+      "name": "Steps (Loop) *",
+      "address": 425984,
+      "length": 8192,
+      "pitch": 18084,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 169,
+      "name": "Door Slam (Loop) *",
+      "address": 434176,
+      "length": 8192,
+      "pitch": 17058,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 170,
+      "name": "Car Start (Loop) *",
+      "address": 442368,
+      "length": 8192,
+      "pitch": 14780,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 171,
+      "name": "Jetplane (Loop) *",
+      "address": 450560,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 172,
+      "name": "Gun Shot (Loop) *",
+      "address": 458752,
+      "length": 8192,
+      "pitch": 13988,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 173,
+      "name": "Horse (Loop) *",
+      "address": 466944,
+      "length": 8192,
+      "pitch": 18084,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 174,
+      "name": "Thunder (Loop) *",
+      "address": 475136,
+      "length": 8192,
+      "pitch": 13222,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 175,
+      "name": "Bubble (Loop) *",
+      "address": 483328,
+      "length": 8192,
+      "pitch": 16426,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 176,
+      "name": "Heart (Loop) *",
+      "address": 491520,
+      "length": 4096,
+      "pitch": 12288,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 177,
+      "name": "Engine (Loop) *",
+      "address": 495616,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 178,
+      "name": "Car Stop (Loop) *",
+      "address": 499712,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 179,
+      "name": "Siren (Loop) *",
+      "address": 503808,
+      "length": 4096,
+      "pitch": 16116,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 180,
+      "name": "Helicopter (Loop) *",
+      "address": 507904,
+      "length": 4096,
+      "pitch": 14695,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 181,
+      "name": "Dog Bark (Loop) *",
+      "address": 512000,
+      "length": 4096,
+      "pitch": 16384,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 182,
+      "name": "Car Pass (Loop) *",
+      "address": 516096,
+      "length": 2048,
+      "pitch": 16450,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 183,
+      "name": "Male Voice (Loop) *",
+      "address": 518144,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 184,
+      "name": "Machine Gun (Loop) *",
+      "address": 520192,
+      "length": 2048,
+      "pitch": 18711,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 185,
+      "name": "Starship (Loop) *",
+      "address": 522240,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": false
+    },
+    {
+      "sampleNo": 186,
+      "name": "Jam-10 (Loop)",
+      "address": 425984,
+      "length": 32768,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 187,
+      "name": "Jam-11 (Loop)",
+      "address": 458752,
+      "length": 32768,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 188,
+      "name": "Jam-12 (Loop)",
+      "address": 491520,
+      "length": 32768,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 189,
+      "name": "Jam-13 (Loop)",
+      "address": 32768,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 190,
+      "name": "Jam-14 (Loop)",
+      "address": 49152,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 191,
+      "name": "Jam-15 (Loop)",
+      "address": 147456,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 192,
+      "name": "Jam-16 (Loop)",
+      "address": 245760,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 193,
+      "name": "Jam-17 (Loop)",
+      "address": 409600,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 194,
+      "name": "Jam-18 (Loop)",
+      "address": 491520,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 195,
+      "name": "Jam-19 (Loop)",
+      "address": 507904,
+      "length": 16384,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 196,
+      "name": "Jam-20 (Loop)",
+      "address": 57344,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 197,
+      "name": "Jam-21 (Loop)",
+      "address": 81920,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 198,
+      "name": "Jam-22 (Loop)",
+      "address": 90112,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 199,
+      "name": "Jam-23 (Loop)",
+      "address": 98304,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 200,
+      "name": "Jam-24 (Loop)",
+      "address": 131072,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 201,
+      "name": "Jam-25 (Loop)",
+      "address": 139264,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 202,
+      "name": "Jam-26 (Loop)",
+      "address": 147456,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 203,
+      "name": "Jam-27 (Loop)",
+      "address": 155648,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 204,
+      "name": "Jam-28 (Loop)",
+      "address": 163840,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 205,
+      "name": "Jam-29 (Loop)",
+      "address": 172032,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 206,
+      "name": "Jam-30 (Loop)",
+      "address": 180224,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 207,
+      "name": "Jam-31 (Loop)",
+      "address": 221184,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 208,
+      "name": "Jam-32 (Loop)",
+      "address": 229376,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 209,
+      "name": "Jam-33 (Loop)",
+      "address": 237568,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 210,
+      "name": "Jam-34 (Loop)",
+      "address": 245760,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 211,
+      "name": "Jam-35 (Loop)",
+      "address": 253952,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 212,
+      "name": "Jam-36 (Loop)",
+      "address": 491520,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 213,
+      "name": "Jam-37 (Loop)",
+      "address": 499712,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 214,
+      "name": "Jam-38 (Loop)",
+      "address": 507904,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 215,
+      "name": "Jam-39 (Loop)",
+      "address": 516096,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 216,
+      "name": "Jam-40 (Loop)",
+      "address": 86016,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 217,
+      "name": "Jam-41 (Loop)",
+      "address": 90112,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 218,
+      "name": "Jam-42 (Loop)",
+      "address": 94208,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 219,
+      "name": "Jam-43 (Loop)",
+      "address": 102400,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 220,
+      "name": "Jam-44 (Loop)",
+      "address": 176128,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 221,
+      "name": "Jam-45 (Loop)",
+      "address": 221184,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 222,
+      "name": "Jam-46 (Loop)",
+      "address": 225280,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 223,
+      "name": "Jam-47 (Loop)",
+      "address": 258048,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 224,
+      "name": "Jam-48 (Loop)",
+      "address": 516096,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 225,
+      "name": "Jam-49 (Loop)",
+      "address": 520192,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": true,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 226,
+      "name": "Shot-1",
+      "address": 8192,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 227,
+      "name": "Shot-2",
+      "address": 24576,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 228,
+      "name": "Shot-3",
+      "address": 122880,
+      "length": 8192,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 229,
+      "name": "Shot-4",
+      "address": 270336,
+      "length": 8192,
+      "pitch": 16384,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 230,
+      "name": "Shot-5",
+      "address": 401408,
+      "length": 8192,
+      "pitch": 16384,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 231,
+      "name": "Shot-6",
+      "address": 69632,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 232,
+      "name": "Shot-7",
+      "address": 77824,
+      "length": 4096,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 233,
+      "name": "Shot-8",
+      "address": 110592,
+      "length": 4096,
+      "pitch": 16984,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 234,
+      "name": "Shot-9",
+      "address": 192512,
+      "length": 4096,
+      "pitch": 16029,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 235,
+      "name": "Shot-10",
+      "address": 208896,
+      "length": 4096,
+      "pitch": 19427,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 236,
+      "name": "Shot-11",
+      "address": 217088,
+      "length": 4096,
+      "pitch": 23520,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 237,
+      "name": "Shot-12",
+      "address": 413696,
+      "length": 4096,
+      "pitch": 13988,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 238,
+      "name": "Shot-13",
+      "address": 421888,
+      "length": 4096,
+      "pitch": 18084,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 239,
+      "name": "Shot-14",
+      "address": 438272,
+      "length": 4096,
+      "pitch": 17058,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 240,
+      "name": "Shot-15",
+      "address": 446464,
+      "length": 4096,
+      "pitch": 14780,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 241,
+      "name": "Shot-16",
+      "address": 462848,
+      "length": 4096,
+      "pitch": 13988,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 242,
+      "name": "Shot-17",
+      "address": 38912,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 243,
+      "name": "Shot-18",
+      "address": 59392,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 244,
+      "name": "Shot-19",
+      "address": 63488,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 245,
+      "name": "Shot-20",
+      "address": 100352,
+      "length": 2048,
+      "pitch": 20480,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 246,
+      "name": "Shot-21",
+      "address": 133120,
+      "length": 2048,
+      "pitch": 12288,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 247,
+      "name": "Shot-22",
+      "address": 145408,
+      "length": 2048,
+      "pitch": 13602,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 248,
+      "name": "Shot-23",
+      "address": 161792,
+      "length": 2048,
+      "pitch": 16557,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 249,
+      "name": "Shot-24",
+      "address": 165888,
+      "length": 2048,
+      "pitch": 8812,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 250,
+      "name": "Shot-25",
+      "address": 169984,
+      "length": 2048,
+      "pitch": 841,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 251,
+      "name": "Shot-26",
+      "address": 182272,
+      "length": 2048,
+      "pitch": 11283,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 252,
+      "name": "Shot-27",
+      "address": 239616,
+      "length": 4096,
+      "pitch": 16736,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 253,
+      "name": "Shot-28",
+      "address": 247808,
+      "length": 4096,
+      "pitch": 18774,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 254,
+      "name": "Shot-29",
+      "address": 251904,
+      "length": 4096,
+      "pitch": 23112,
+      "isLooped": false,
+      "isTunable": true
+    },
+    {
+      "sampleNo": 255,
+      "name": "Shot-30",
+      "address": 514048,
+      "length": 4096,
+      "pitch": 16384,
+      "isLooped": false,
+      "isTunable": true
+    }
+  ],
   "tones": [
     {
       "toneNo": 0,
@@ -2490,385 +4796,385 @@
     },
     {
       "toneNo": 128,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 129,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 130,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 131,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 132,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 133,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 134,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 135,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 136,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 137,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 138,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 139,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 140,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 141,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 142,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 143,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 144,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 145,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 146,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 147,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 148,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 149,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 150,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 151,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 152,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 153,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 154,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 155,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 156,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 157,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 158,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 159,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 160,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 161,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 162,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 163,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 164,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 165,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 166,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 167,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 168,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 169,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 170,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 171,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 172,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 173,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 174,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 175,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 176,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 177,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 178,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 179,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 180,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 181,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 182,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 183,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 184,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 185,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 186,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 187,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 188,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 189,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 190,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
     {
       "toneNo": 191,
-      "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "name": "          ",
       "commonBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "voices": []
     },
@@ -4250,3246 +6556,940 @@
   "drumSet": {
     "notes": {
       "24": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "25": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "26": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "27": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "28": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "29": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "30": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "31": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "32": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "33": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "34": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "35": {
+        "bytes": [64, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 192,
         "tone": {
           "name": "Acou BD   ",
           "$ref": "#/tones/192"
-        },
-        "bytes": [64, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "36": {
+        "bytes": [64, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 192,
         "tone": {
           "name": "Acou BD   ",
           "$ref": "#/tones/192"
-        },
-        "bytes": [64, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "37": {
+        "bytes": [74, 100, 6, 1],
+        "level": 100,
+        "panpot": 6,
+        "isReverbOn": true,
         "toneNo": 202,
         "tone": {
           "name": "Rim Shot  ",
           "$ref": "#/tones/202"
-        },
-        "bytes": [74, 100, 6, 1],
-        "level": 100,
-        "panpot": 6,
-        "isReverbOn": true
+        }
       },
       "38": {
+        "bytes": [65, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 193,
         "tone": {
           "name": "Acou SD   ",
           "$ref": "#/tones/193"
-        },
-        "bytes": [65, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "39": {
+        "bytes": [75, 100, 8, 1],
+        "level": 100,
+        "panpot": 8,
+        "isReverbOn": true,
         "toneNo": 203,
         "tone": {
           "name": "Hand Clap ",
           "$ref": "#/tones/203"
-        },
-        "bytes": [75, 100, 8, 1],
-        "level": 100,
-        "panpot": 8,
-        "isReverbOn": true
+        }
       },
       "40": {
+        "bytes": [69, 100, 6, 1],
+        "level": 100,
+        "panpot": 6,
+        "isReverbOn": true,
         "toneNo": 197,
         "tone": {
           "name": "Elec SD   ",
           "$ref": "#/tones/197"
-        },
-        "bytes": [69, 100, 6, 1],
-        "level": 100,
-        "panpot": 6,
-        "isReverbOn": true
+        }
       },
       "41": {
+        "bytes": [68, 100, 11, 1],
+        "level": 100,
+        "panpot": 11,
+        "isReverbOn": true,
         "toneNo": 196,
         "tone": {
           "name": "AcouLowTom",
           "$ref": "#/tones/196"
-        },
-        "bytes": [68, 100, 11, 1],
-        "level": 100,
-        "panpot": 11,
-        "isReverbOn": true
+        }
       },
       "42": {
+        "bytes": [70, 100, 6, 1],
+        "level": 100,
+        "panpot": 6,
+        "isReverbOn": true,
         "toneNo": 198,
         "tone": {
           "name": "Clsd HiHat",
           "$ref": "#/tones/198"
-        },
-        "bytes": [70, 100, 6, 1],
-        "level": 100,
-        "panpot": 6,
-        "isReverbOn": true
+        }
       },
       "43": {
+        "bytes": [68, 100, 11, 1],
+        "level": 100,
+        "panpot": 11,
+        "isReverbOn": true,
         "toneNo": 196,
         "tone": {
           "name": "AcouLowTom",
           "$ref": "#/tones/196"
-        },
-        "bytes": [68, 100, 11, 1],
-        "level": 100,
-        "panpot": 11,
-        "isReverbOn": true
+        }
       },
       "44": {
+        "bytes": [93, 100, 6, 1],
+        "level": 100,
+        "panpot": 6,
+        "isReverbOn": true,
         "toneNo": 221,
         "tone": {
           "name": "OpenHiHat2",
           "$ref": "#/tones/221"
-        },
-        "bytes": [93, 100, 6, 1],
-        "level": 100,
-        "panpot": 6,
-        "isReverbOn": true
+        }
       },
       "45": {
+        "bytes": [67, 100, 8, 1],
+        "level": 100,
+        "panpot": 8,
+        "isReverbOn": true,
         "toneNo": 195,
         "tone": {
           "name": "AcouMidTom",
           "$ref": "#/tones/195"
-        },
-        "bytes": [67, 100, 8, 1],
-        "level": 100,
-        "panpot": 8,
-        "isReverbOn": true
+        }
       },
       "46": {
+        "bytes": [71, 100, 6, 1],
+        "level": 100,
+        "panpot": 6,
+        "isReverbOn": true,
         "toneNo": 199,
         "tone": {
           "name": "OpenHiHat1",
           "$ref": "#/tones/199"
-        },
-        "bytes": [71, 100, 6, 1],
-        "level": 100,
-        "panpot": 6,
-        "isReverbOn": true
+        }
       },
       "47": {
+        "bytes": [67, 100, 8, 1],
+        "level": 100,
+        "panpot": 8,
+        "isReverbOn": true,
         "toneNo": 195,
         "tone": {
           "name": "AcouMidTom",
           "$ref": "#/tones/195"
-        },
-        "bytes": [67, 100, 8, 1],
-        "level": 100,
-        "panpot": 8,
-        "isReverbOn": true
+        }
       },
       "48": {
+        "bytes": [66, 100, 3, 1],
+        "level": 100,
+        "panpot": 3,
+        "isReverbOn": true,
         "toneNo": 194,
         "tone": {
           "name": "Acou HiTom",
           "$ref": "#/tones/194"
-        },
-        "bytes": [66, 100, 3, 1],
-        "level": 100,
-        "panpot": 3,
-        "isReverbOn": true
+        }
       },
       "49": {
+        "bytes": [72, 100, 6, 1],
+        "level": 100,
+        "panpot": 6,
+        "isReverbOn": true,
         "toneNo": 200,
         "tone": {
           "name": "Crash Cym ",
           "$ref": "#/tones/200"
-        },
-        "bytes": [72, 100, 6, 1],
-        "level": 100,
-        "panpot": 6,
-        "isReverbOn": true
+        }
       },
       "50": {
+        "bytes": [66, 100, 3, 1],
+        "level": 100,
+        "panpot": 3,
+        "isReverbOn": true,
         "toneNo": 194,
         "tone": {
           "name": "Acou HiTom",
           "$ref": "#/tones/194"
-        },
-        "bytes": [66, 100, 3, 1],
-        "level": 100,
-        "panpot": 3,
-        "isReverbOn": true
+        }
       },
       "51": {
+        "bytes": [73, 100, 8, 1],
+        "level": 100,
+        "panpot": 8,
+        "isReverbOn": true,
         "toneNo": 201,
         "tone": {
           "name": "Ride Cym  ",
           "$ref": "#/tones/201"
-        },
-        "bytes": [73, 100, 8, 1],
-        "level": 100,
-        "panpot": 8,
-        "isReverbOn": true
+        }
       },
       "52": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "53": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "54": {
+        "bytes": [86, 100, 9, 1],
+        "level": 100,
+        "panpot": 9,
+        "isReverbOn": true,
         "toneNo": 214,
         "tone": {
           "name": "Tambourine",
           "$ref": "#/tones/214"
-        },
-        "bytes": [86, 100, 9, 1],
-        "level": 100,
-        "panpot": 9,
-        "isReverbOn": true
+        }
       },
       "55": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "56": {
+        "bytes": [76, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 204,
         "tone": {
           "name": "Cowbell   ",
           "$ref": "#/tones/204"
-        },
-        "bytes": [76, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "57": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "58": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "59": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "60": {
+        "bytes": [82, 100, 2, 1],
+        "level": 100,
+        "panpot": 2,
+        "isReverbOn": true,
         "toneNo": 210,
         "tone": {
           "name": "High Bongo",
           "$ref": "#/tones/210"
-        },
-        "bytes": [82, 100, 2, 1],
-        "level": 100,
-        "panpot": 2,
-        "isReverbOn": true
+        }
       },
       "61": {
+        "bytes": [83, 100, 4, 1],
+        "level": 100,
+        "panpot": 4,
+        "isReverbOn": true,
         "toneNo": 211,
         "tone": {
           "name": "Low Bongo ",
           "$ref": "#/tones/211"
-        },
-        "bytes": [83, 100, 4, 1],
-        "level": 100,
-        "panpot": 4,
-        "isReverbOn": true
+        }
       },
       "62": {
+        "bytes": [77, 100, 8, 1],
+        "level": 100,
+        "panpot": 8,
+        "isReverbOn": true,
         "toneNo": 205,
         "tone": {
           "name": "Mt HiConga",
           "$ref": "#/tones/205"
-        },
-        "bytes": [77, 100, 8, 1],
-        "level": 100,
-        "panpot": 8,
-        "isReverbOn": true
+        }
       },
       "63": {
+        "bytes": [78, 100, 9, 1],
+        "level": 100,
+        "panpot": 9,
+        "isReverbOn": true,
         "toneNo": 206,
         "tone": {
           "name": "High Conga",
           "$ref": "#/tones/206"
-        },
-        "bytes": [78, 100, 9, 1],
-        "level": 100,
-        "panpot": 9,
-        "isReverbOn": true
+        }
       },
       "64": {
+        "bytes": [79, 100, 10, 1],
+        "level": 100,
+        "panpot": 10,
+        "isReverbOn": true,
         "toneNo": 207,
         "tone": {
           "name": "Low Conga ",
           "$ref": "#/tones/207"
-        },
-        "bytes": [79, 100, 10, 1],
-        "level": 100,
-        "panpot": 10,
-        "isReverbOn": true
+        }
       },
       "65": {
+        "bytes": [80, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 208,
         "tone": {
           "name": "Hi Timbale",
           "$ref": "#/tones/208"
-        },
-        "bytes": [80, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "66": {
+        "bytes": [81, 100, 5, 1],
+        "level": 100,
+        "panpot": 5,
+        "isReverbOn": true,
         "toneNo": 209,
         "tone": {
           "name": "LowTimbale",
           "$ref": "#/tones/209"
-        },
-        "bytes": [81, 100, 5, 1],
-        "level": 100,
-        "panpot": 5,
-        "isReverbOn": true
+        }
       },
       "67": {
+        "bytes": [84, 100, 2, 1],
+        "level": 100,
+        "panpot": 2,
+        "isReverbOn": true,
         "toneNo": 212,
         "tone": {
           "name": "High Agogo",
           "$ref": "#/tones/212"
-        },
-        "bytes": [84, 100, 2, 1],
-        "level": 100,
-        "panpot": 2,
-        "isReverbOn": true
+        }
       },
       "68": {
+        "bytes": [85, 100, 2, 1],
+        "level": 100,
+        "panpot": 2,
+        "isReverbOn": true,
         "toneNo": 213,
         "tone": {
           "name": "Low Agogo ",
           "$ref": "#/tones/213"
-        },
-        "bytes": [85, 100, 2, 1],
-        "level": 100,
-        "panpot": 2,
-        "isReverbOn": true
+        }
       },
       "69": {
+        "bytes": [91, 100, 9, 1],
+        "level": 100,
+        "panpot": 9,
+        "isReverbOn": true,
         "toneNo": 219,
         "tone": {
           "name": "Cabasa    ",
           "$ref": "#/tones/219"
-        },
-        "bytes": [91, 100, 9, 1],
-        "level": 100,
-        "panpot": 9,
-        "isReverbOn": true
+        }
       },
       "70": {
+        "bytes": [88, 100, 4, 1],
+        "level": 100,
+        "panpot": 4,
+        "isReverbOn": true,
         "toneNo": 216,
         "tone": {
           "name": "Maracas   ",
           "$ref": "#/tones/216"
-        },
-        "bytes": [88, 100, 4, 1],
-        "level": 100,
-        "panpot": 4,
-        "isReverbOn": true
+        }
       },
       "71": {
+        "bytes": [90, 100, 9, 1],
+        "level": 100,
+        "panpot": 9,
+        "isReverbOn": true,
         "toneNo": 218,
         "tone": {
           "name": "SmbaWhis S",
           "$ref": "#/tones/218"
-        },
-        "bytes": [90, 100, 9, 1],
-        "level": 100,
-        "panpot": 9,
-        "isReverbOn": true
+        }
       },
       "72": {
+        "bytes": [89, 100, 9, 1],
+        "level": 100,
+        "panpot": 9,
+        "isReverbOn": true,
         "toneNo": 217,
         "tone": {
           "name": "SmbaWhis L",
           "$ref": "#/tones/217"
-        },
-        "bytes": [89, 100, 9, 1],
-        "level": 100,
-        "panpot": 9,
-        "isReverbOn": true
+        }
       },
       "73": {
+        "bytes": [92, 100, 10, 1],
+        "level": 100,
+        "panpot": 10,
+        "isReverbOn": true,
         "toneNo": 220,
         "tone": {
           "name": "Quijada   ",
           "$ref": "#/tones/220"
-        },
-        "bytes": [92, 100, 10, 1],
-        "level": 100,
-        "panpot": 10,
-        "isReverbOn": true
+        }
       },
       "74": {
+        "bytes": [127, 0, 7, 0],
+        "level": 0,
+        "panpot": 7,
+        "isReverbOn": false,
         "toneNo": 255,
         "tone": {
           "name": "OFF       ",
           "$ref": "#/tones/255"
-        },
-        "bytes": [127, 0, 7, 0],
-        "level": 0,
-        "panpot": 7,
-        "isReverbOn": false
+        }
       },
       "75": {
+        "bytes": [87, 100, 12, 1],
+        "level": 100,
+        "panpot": 12,
+        "isReverbOn": true,
         "toneNo": 215,
         "tone": {
           "name": "Claves    ",
           "$ref": "#/tones/215"
-        },
-        "bytes": [87, 100, 12, 1],
-        "level": 100,
-        "panpot": 12,
-        "isReverbOn": true
+        }
       },
       "76": {
+        "bytes": [94, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 222,
         "tone": {
           "name": "Laughing  ",
           "$ref": "#/tones/222"
-        },
-        "bytes": [94, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "77": {
+        "bytes": [95, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 223,
         "tone": {
           "name": "Screaming ",
           "$ref": "#/tones/223"
-        },
-        "bytes": [95, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "78": {
+        "bytes": [96, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 224,
         "tone": {
           "name": "Punch     ",
           "$ref": "#/tones/224"
-        },
-        "bytes": [96, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "79": {
+        "bytes": [97, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 225,
         "tone": {
           "name": "Heartbeat ",
           "$ref": "#/tones/225"
-        },
-        "bytes": [97, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "80": {
+        "bytes": [98, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 226,
         "tone": {
           "name": "Footsteps1",
           "$ref": "#/tones/226"
-        },
-        "bytes": [98, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "81": {
+        "bytes": [99, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 227,
         "tone": {
           "name": "Footsteps2",
           "$ref": "#/tones/227"
-        },
-        "bytes": [99, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "82": {
+        "bytes": [100, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 228,
         "tone": {
           "name": "Applause  ",
           "$ref": "#/tones/228"
-        },
-        "bytes": [100, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "83": {
+        "bytes": [101, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 229,
         "tone": {
           "name": "Creaking  ",
           "$ref": "#/tones/229"
-        },
-        "bytes": [101, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "84": {
+        "bytes": [102, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 230,
         "tone": {
           "name": "Door      ",
           "$ref": "#/tones/230"
-        },
-        "bytes": [102, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "85": {
+        "bytes": [103, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 231,
         "tone": {
           "name": "Scratch   ",
           "$ref": "#/tones/231"
-        },
-        "bytes": [103, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "86": {
+        "bytes": [104, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 232,
         "tone": {
           "name": "Windchime ",
           "$ref": "#/tones/232"
-        },
-        "bytes": [104, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "87": {
+        "bytes": [105, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 233,
         "tone": {
           "name": "Engine    ",
           "$ref": "#/tones/233"
-        },
-        "bytes": [105, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "88": {
+        "bytes": [106, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 234,
         "tone": {
           "name": "Car-stop  ",
           "$ref": "#/tones/234"
-        },
-        "bytes": [106, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "89": {
+        "bytes": [107, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 235,
         "tone": {
           "name": "Car-pass  ",
           "$ref": "#/tones/235"
-        },
-        "bytes": [107, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "90": {
+        "bytes": [108, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 236,
         "tone": {
           "name": "Crash     ",
           "$ref": "#/tones/236"
-        },
-        "bytes": [108, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "91": {
+        "bytes": [109, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 237,
         "tone": {
           "name": "Siren     ",
           "$ref": "#/tones/237"
-        },
-        "bytes": [109, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "92": {
+        "bytes": [110, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 238,
         "tone": {
           "name": "Train     ",
           "$ref": "#/tones/238"
-        },
-        "bytes": [110, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "93": {
+        "bytes": [111, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 239,
         "tone": {
           "name": "Jet       ",
           "$ref": "#/tones/239"
-        },
-        "bytes": [111, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "94": {
+        "bytes": [112, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 240,
         "tone": {
           "name": "Helicopter",
           "$ref": "#/tones/240"
-        },
-        "bytes": [112, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "95": {
+        "bytes": [113, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 241,
         "tone": {
           "name": "Starship  ",
           "$ref": "#/tones/241"
-        },
-        "bytes": [113, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "96": {
+        "bytes": [114, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 242,
         "tone": {
           "name": "Pistol    ",
           "$ref": "#/tones/242"
-        },
-        "bytes": [114, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "97": {
+        "bytes": [115, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 243,
         "tone": {
           "name": "Machinegun",
           "$ref": "#/tones/243"
-        },
-        "bytes": [115, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "98": {
+        "bytes": [116, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 244,
         "tone": {
           "name": "Lasergun  ",
           "$ref": "#/tones/244"
-        },
-        "bytes": [116, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "99": {
+        "bytes": [117, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 245,
         "tone": {
           "name": "Explosion ",
           "$ref": "#/tones/245"
-        },
-        "bytes": [117, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "100": {
+        "bytes": [118, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 246,
         "tone": {
           "name": "Dog       ",
           "$ref": "#/tones/246"
-        },
-        "bytes": [118, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "101": {
+        "bytes": [119, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 247,
         "tone": {
           "name": "Horse     ",
           "$ref": "#/tones/247"
-        },
-        "bytes": [119, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "102": {
+        "bytes": [120, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 248,
         "tone": {
           "name": "Birds     ",
           "$ref": "#/tones/248"
-        },
-        "bytes": [120, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "103": {
+        "bytes": [121, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 249,
         "tone": {
           "name": "Rain      ",
           "$ref": "#/tones/249"
-        },
-        "bytes": [121, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "104": {
+        "bytes": [122, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 250,
         "tone": {
           "name": "Thunder   ",
           "$ref": "#/tones/250"
-        },
-        "bytes": [122, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "105": {
+        "bytes": [123, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 251,
         "tone": {
           "name": "Wind      ",
           "$ref": "#/tones/251"
-        },
-        "bytes": [123, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "106": {
+        "bytes": [124, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 252,
         "tone": {
           "name": "Waves     ",
           "$ref": "#/tones/252"
-        },
-        "bytes": [124, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "107": {
+        "bytes": [125, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 253,
         "tone": {
           "name": "Stream    ",
           "$ref": "#/tones/253"
-        },
-        "bytes": [125, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       },
       "108": {
+        "bytes": [126, 100, 7, 1],
+        "level": 100,
+        "panpot": 7,
+        "isReverbOn": true,
         "toneNo": 254,
         "tone": {
           "name": "Bubble    ",
           "$ref": "#/tones/254"
-        },
-        "bytes": [126, 100, 7, 1],
-        "level": 100,
-        "panpot": 7,
-        "isReverbOn": true
+        }
       }
     }
-  },
-  "samples": [
-    {
-      "sampleNo": 0,
-      "name": "Acoustic Bass Drum",
-      "address": 32768,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 1,
-      "name": "Acoustic Snare Drum",
-      "address": 36864,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 2,
-      "name": "Electric Snare Drum",
-      "address": 81920,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 3,
-      "name": "Acoustic Tom Tom",
-      "address": 0,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 4,
-      "name": "Closed Hi-Hat Attack",
-      "address": 57344,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 5,
-      "name": "Open Hi-Hat (Loop)",
-      "address": 40960,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 6,
-      "name": "Crash Cymbal Attack",
-      "address": 61440,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 7,
-      "name": "Crash Cymbal (Loop)",
-      "address": 49152,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 8,
-      "name": "Ride Cymbal",
-      "address": 16384,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 9,
-      "name": "Rim Shot",
-      "address": 90112,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 10,
-      "name": "Hand Clap",
-      "address": 92160,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 11,
-      "name": "Mute Conga",
-      "address": 86016,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 12,
-      "name": "High (Low) Conga",
-      "address": 73728,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 13,
-      "name": "Bongo",
-      "address": 88064,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 14,
-      "name": "Cowbell",
-      "address": 94208,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 15,
-      "name": "Tambourine",
-      "address": 96256,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 16,
-      "name": "Agogo Bell",
-      "address": 98304,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 17,
-      "name": "Claves",
-      "address": 102400,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 18,
-      "name": "Timbale",
-      "address": 65536,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 19,
-      "name": "Cabasa",
-      "address": 104448,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 20,
-      "name": "Acoustic Piano Thump",
-      "address": 131072,
-      "length": 4096,
-      "pitch": 12288,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 21,
-      "name": "Hammond Organ",
-      "address": 135168,
-      "length": 4096,
-      "pitch": 20756,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 22,
-      "name": "Trombone",
-      "address": 139264,
-      "length": 4096,
-      "pitch": 12510,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 23,
-      "name": "Trumpet",
-      "address": 143360,
-      "length": 4096,
-      "pitch": 13602,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 24,
-      "name": "Breath Noise (Loop)",
-      "address": 147456,
-      "length": 4096,
-      "pitch": 20651,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 25,
-      "name": "Clarinet",
-      "address": 151552,
-      "length": 4096,
-      "pitch": 14636,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 26,
-      "name": "Flute",
-      "address": 155648,
-      "length": 4096,
-      "pitch": 15210,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 27,
-      "name": "Steamer",
-      "address": 159744,
-      "length": 4096,
-      "pitch": 16557,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 28,
-      "name": "Shakuhachi",
-      "address": 245760,
-      "length": 4096,
-      "pitch": 18774,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 29,
-      "name": "Alto Sax",
-      "address": 237568,
-      "length": 4096,
-      "pitch": 16736,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 30,
-      "name": "Baritone Sax",
-      "address": 241664,
-      "length": 4096,
-      "pitch": 25016,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 31,
-      "name": "Marimba",
-      "address": 249856,
-      "length": 4096,
-      "pitch": 23112,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 32,
-      "name": "Vibraphone",
-      "address": 253952,
-      "length": 4096,
-      "pitch": 18368,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 33,
-      "name": "Xylophone",
-      "address": 163840,
-      "length": 4096,
-      "pitch": 8812,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 34,
-      "name": "Wind Bell",
-      "address": 167936,
-      "length": 4096,
-      "pitch": 841,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 35,
-      "name": "Fretless Bass",
-      "address": 212992,
-      "length": 8192,
-      "pitch": 23520,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 36,
-      "name": "Slap Bass Attack",
-      "address": 172032,
-      "length": 4096,
-      "pitch": 22861,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 37,
-      "name": "Slap Bass (Loop)",
-      "address": 176128,
-      "length": 2048,
-      "pitch": 22495,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 38,
-      "name": "Acoustic Bass",
-      "address": 184320,
-      "length": 4096,
-      "pitch": 24173,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 39,
-      "name": "Gut Guitar",
-      "address": 188416,
-      "length": 8192,
-      "pitch": 16029,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 40,
-      "name": "Steel Guitar",
-      "address": 204800,
-      "length": 8192,
-      "pitch": 19427,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 41,
-      "name": "Pizzicato Strings",
-      "address": 180224,
-      "length": 4096,
-      "pitch": 11283,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 42,
-      "name": "Harp",
-      "address": 196608,
-      "length": 8192,
-      "pitch": 10524,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 43,
-      "name": "Harpsichord (Loop)",
-      "address": 178176,
-      "length": 2048,
-      "pitch": 28971,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 44,
-      "name": "Contrabass",
-      "address": 229376,
-      "length": 4096,
-      "pitch": 25063,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 45,
-      "name": "Violin",
-      "address": 233472,
-      "length": 4096,
-      "pitch": 16194,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 46,
-      "name": "Timpani",
-      "address": 114688,
-      "length": 16384,
-      "pitch": 24875,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 47,
-      "name": "Orchestra Hit",
-      "address": 106496,
-      "length": 8192,
-      "pitch": 16984,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 48,
-      "name": "Indian Flute",
-      "address": 221184,
-      "length": 2048,
-      "pitch": 12489,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 49,
-      "name": "Hammond Organ (Loop)",
-      "address": 223232,
-      "length": 2048,
-      "pitch": 24889,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 50,
-      "name": "Bell (Loop)",
-      "address": 225280,
-      "length": 2048,
-      "pitch": 9197,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 51,
-      "name": "Telephone Bell (Loop)",
-      "address": 227328,
-      "length": 2048,
-      "pitch": 15872,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 52,
-      "name": "Ethnic (Loop)",
-      "address": 258048,
-      "length": 2048,
-      "pitch": 7432,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 53,
-      "name": "Stainless Steel (Loop)",
-      "address": 260096,
-      "length": 2048,
-      "pitch": 10451,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 54,
-      "name": "Acoustic Bass Drum *",
-      "address": 32768,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 55,
-      "name": "Acoustic Snare Drum *",
-      "address": 36864,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 56,
-      "name": "Electric Snare Drum *",
-      "address": 81920,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 57,
-      "name": "Acoustic Tom Tom *",
-      "address": 0,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 58,
-      "name": "Closed Hi-Hat Attack *",
-      "address": 57344,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 59,
-      "name": "Open Hi-Hat (Loop) *",
-      "address": 40960,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 60,
-      "name": "Crash Cymbal Attack *",
-      "address": 61440,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 61,
-      "name": "Crash Cymbal (Loop) *",
-      "address": 49152,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 62,
-      "name": "Ride Cymbal *",
-      "address": 16384,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 63,
-      "name": "Rim Shot *",
-      "address": 90112,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 64,
-      "name": "Hand Clap *",
-      "address": 92160,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 65,
-      "name": "Mute Conga *",
-      "address": 86016,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 66,
-      "name": "High (Low) Conga *",
-      "address": 73728,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 67,
-      "name": "Bongo *",
-      "address": 88064,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 68,
-      "name": "Cowbell *",
-      "address": 94208,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 69,
-      "name": "Tambourine *",
-      "address": 96256,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 70,
-      "name": "Agogo Bell *",
-      "address": 98304,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 71,
-      "name": "Claves *",
-      "address": 102400,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 72,
-      "name": "Timbale *",
-      "address": 65536,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 73,
-      "name": "Cabasa *",
-      "address": 104448,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 74,
-      "name": "Loop-1",
-      "address": 32768,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 75,
-      "name": "Loop-2",
-      "address": 36864,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 76,
-      "name": "Loop-3",
-      "address": 81920,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 77,
-      "name": "Loop-4",
-      "address": 0,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 78,
-      "name": "Loop-5",
-      "address": 57344,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 79,
-      "name": "Loop-6",
-      "address": 61440,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 80,
-      "name": "Loop-7",
-      "address": 16384,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 81,
-      "name": "Loop-8",
-      "address": 16384,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 82,
-      "name": "Loop-9",
-      "address": 90112,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 83,
-      "name": "Loop-10",
-      "address": 92160,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 84,
-      "name": "Loop-11",
-      "address": 86016,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 85,
-      "name": "Loop-12",
-      "address": 73728,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 86,
-      "name": "Loop-13",
-      "address": 88064,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 87,
-      "name": "Loop-14",
-      "address": 94208,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 88,
-      "name": "Loop-15",
-      "address": 96256,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 89,
-      "name": "Loop-16",
-      "address": 98304,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 90,
-      "name": "Loop-17",
-      "address": 102400,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 91,
-      "name": "Loop-18",
-      "address": 65536,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 92,
-      "name": "Loop-19",
-      "address": 104448,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 93,
-      "name": "Loop-20",
-      "address": 131072,
-      "length": 4096,
-      "pitch": 12288,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 94,
-      "name": "Loop-21",
-      "address": 135168,
-      "length": 4096,
-      "pitch": 20756,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 95,
-      "name": "Loop-22",
-      "address": 139264,
-      "length": 4096,
-      "pitch": 12510,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 96,
-      "name": "Loop-23",
-      "address": 143360,
-      "length": 4096,
-      "pitch": 13602,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 97,
-      "name": "Loop-24",
-      "address": 151552,
-      "length": 4096,
-      "pitch": 14636,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 98,
-      "name": "Loop-25",
-      "address": 155648,
-      "length": 4096,
-      "pitch": 15210,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 99,
-      "name": "Loop-26",
-      "address": 159744,
-      "length": 4096,
-      "pitch": 16557,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 100,
-      "name": "Loop-27",
-      "address": 245760,
-      "length": 4096,
-      "pitch": 18774,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 101,
-      "name": "Loop-28",
-      "address": 237568,
-      "length": 4096,
-      "pitch": 16736,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 102,
-      "name": "Loop-29",
-      "address": 241664,
-      "length": 4096,
-      "pitch": 25016,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 103,
-      "name": "Loop-30",
-      "address": 249856,
-      "length": 4096,
-      "pitch": 23112,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 104,
-      "name": "Loop-31",
-      "address": 253952,
-      "length": 4096,
-      "pitch": 18368,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 105,
-      "name": "Loop-32",
-      "address": 163840,
-      "length": 4096,
-      "pitch": 8812,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 106,
-      "name": "Loop-33",
-      "address": 167936,
-      "length": 4096,
-      "pitch": 841,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 107,
-      "name": "Loop-34",
-      "address": 212992,
-      "length": 8192,
-      "pitch": 23520,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 108,
-      "name": "Loop-35",
-      "address": 172032,
-      "length": 4096,
-      "pitch": 22861,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 109,
-      "name": "Loop-36",
-      "address": 184320,
-      "length": 4096,
-      "pitch": 24173,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 110,
-      "name": "Loop-37",
-      "address": 188416,
-      "length": 8192,
-      "pitch": 16029,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 111,
-      "name": "Loop-38",
-      "address": 204800,
-      "length": 8192,
-      "pitch": 19427,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 112,
-      "name": "Loop-39",
-      "address": 180224,
-      "length": 4096,
-      "pitch": 11283,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 113,
-      "name": "Loop-40",
-      "address": 196608,
-      "length": 8192,
-      "pitch": 10524,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 114,
-      "name": "Loop-41",
-      "address": 229376,
-      "length": 4096,
-      "pitch": 25063,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 115,
-      "name": "Loop-42",
-      "address": 233472,
-      "length": 4096,
-      "pitch": 16194,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 116,
-      "name": "Loop-43",
-      "address": 114688,
-      "length": 16384,
-      "pitch": 24875,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 117,
-      "name": "Loop-44",
-      "address": 106496,
-      "length": 8192,
-      "pitch": 16984,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 118,
-      "name": "Loop-45",
-      "address": 221184,
-      "length": 2048,
-      "pitch": 12489,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 119,
-      "name": "Jam-1 (Loop)",
-      "address": 32768,
-      "length": 32768,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 120,
-      "name": "Jam-2 (Loop)",
-      "address": 65536,
-      "length": 32768,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 121,
-      "name": "Jam-3 (Loop)",
-      "address": 98304,
-      "length": 32768,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 122,
-      "name": "Jam-4 (Loop)",
-      "address": 131072,
-      "length": 32768,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 123,
-      "name": "Jam-5 (Loop)",
-      "address": 163840,
-      "length": 32768,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 124,
-      "name": "Jam-6 (Loop)",
-      "address": 229376,
-      "length": 32768,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 125,
-      "name": "Jam-7 (Loop)",
-      "address": 81920,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 126,
-      "name": "Jam-8 (Loop)",
-      "address": 163840,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 127,
-      "name": "Jam-9 (Loop)",
-      "address": 32768,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 128,
-      "name": "Laugh *",
-      "address": 262144,
-      "length": 16384,
-      "pitch": 16384,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 129,
-      "name": "Applause * ",
-      "address": 278528,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 130,
-      "name": "Windchime *",
-      "address": 294912,
-      "length": 16384,
-      "pitch": 18084,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 131,
-      "name": "Crash *",
-      "address": 311296,
-      "length": 16384,
-      "pitch": 17227,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 132,
-      "name": "Train *",
-      "address": 327680,
-      "length": 16384,
-      "pitch": 16633,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 133,
-      "name": "Windy *",
-      "address": 344064,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 134,
-      "name": "Bird *",
-      "address": 360448,
-      "length": 16384,
-      "pitch": 16628,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 135,
-      "name": "Stream *",
-      "address": 376832,
-      "length": 16384,
-      "pitch": 16509,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 136,
-      "name": "Creak *",
-      "address": 393216,
-      "length": 16384,
-      "pitch": 16384,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 137,
-      "name": "Scream *",
-      "address": 409600,
-      "length": 8192,
-      "pitch": 13988,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 138,
-      "name": "Punch *",
-      "address": 417792,
-      "length": 8192,
-      "pitch": 18084,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 139,
-      "name": "Steps *",
-      "address": 425984,
-      "length": 8192,
-      "pitch": 18084,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 140,
-      "name": "Door Slam *",
-      "address": 434176,
-      "length": 8192,
-      "pitch": 17058,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 141,
-      "name": "Car Start *",
-      "address": 442368,
-      "length": 8192,
-      "pitch": 14780,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 142,
-      "name": "Jetplane *",
-      "address": 450560,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 143,
-      "name": "Gun Shot *",
-      "address": 458752,
-      "length": 8192,
-      "pitch": 13988,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 144,
-      "name": "Horse *",
-      "address": 466944,
-      "length": 8192,
-      "pitch": 18084,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 145,
-      "name": "Thunder *",
-      "address": 475136,
-      "length": 8192,
-      "pitch": 13222,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 146,
-      "name": "Bubble *",
-      "address": 483328,
-      "length": 8192,
-      "pitch": 16426,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 147,
-      "name": "Heart *",
-      "address": 491520,
-      "length": 4096,
-      "pitch": 12288,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 148,
-      "name": "Engine *",
-      "address": 495616,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 149,
-      "name": "Car Stop *",
-      "address": 499712,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 150,
-      "name": "Siren *",
-      "address": 503808,
-      "length": 4096,
-      "pitch": 16116,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 151,
-      "name": "Helicopter *",
-      "address": 507904,
-      "length": 4096,
-      "pitch": 14695,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 152,
-      "name": "Dog Bark *",
-      "address": 512000,
-      "length": 4096,
-      "pitch": 16384,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 153,
-      "name": "Car Pass *",
-      "address": 516096,
-      "length": 2048,
-      "pitch": 16450,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 154,
-      "name": "Male Voice *",
-      "address": 518144,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 155,
-      "name": "Machine Gun *",
-      "address": 520192,
-      "length": 2048,
-      "pitch": 18711,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 156,
-      "name": "Starship *",
-      "address": 522240,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 157,
-      "name": "Laugh (Loop) *",
-      "address": 262144,
-      "length": 16384,
-      "pitch": 16384,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 158,
-      "name": "Applause (Loop) * ",
-      "address": 278528,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 159,
-      "name": "Windchime (Loop) *",
-      "address": 294912,
-      "length": 16384,
-      "pitch": 18084,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 160,
-      "name": "Crash (Loop) *",
-      "address": 311296,
-      "length": 16384,
-      "pitch": 17227,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 161,
-      "name": "Train (Loop) *",
-      "address": 327680,
-      "length": 16384,
-      "pitch": 16633,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 162,
-      "name": "Windy (Loop) *",
-      "address": 344064,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 163,
-      "name": "Bird (Loop) *",
-      "address": 360448,
-      "length": 16384,
-      "pitch": 16628,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 164,
-      "name": "Stream (Loop) *",
-      "address": 376832,
-      "length": 16384,
-      "pitch": 16509,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 165,
-      "name": "Creak (Loop) *",
-      "address": 393216,
-      "length": 16384,
-      "pitch": 16384,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 166,
-      "name": "Scream (Loop) *",
-      "address": 409600,
-      "length": 8192,
-      "pitch": 13988,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 167,
-      "name": "Punch (Loop) *",
-      "address": 417792,
-      "length": 8192,
-      "pitch": 18084,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 168,
-      "name": "Steps (Loop) *",
-      "address": 425984,
-      "length": 8192,
-      "pitch": 18084,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 169,
-      "name": "Door Slam (Loop) *",
-      "address": 434176,
-      "length": 8192,
-      "pitch": 17058,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 170,
-      "name": "Car Start (Loop) *",
-      "address": 442368,
-      "length": 8192,
-      "pitch": 14780,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 171,
-      "name": "Jetplane (Loop) *",
-      "address": 450560,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 172,
-      "name": "Gun Shot (Loop) *",
-      "address": 458752,
-      "length": 8192,
-      "pitch": 13988,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 173,
-      "name": "Horse (Loop) *",
-      "address": 466944,
-      "length": 8192,
-      "pitch": 18084,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 174,
-      "name": "Thunder (Loop) *",
-      "address": 475136,
-      "length": 8192,
-      "pitch": 13222,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 175,
-      "name": "Bubble (Loop) *",
-      "address": 483328,
-      "length": 8192,
-      "pitch": 16426,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 176,
-      "name": "Heart (Loop) *",
-      "address": 491520,
-      "length": 4096,
-      "pitch": 12288,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 177,
-      "name": "Engine (Loop) *",
-      "address": 495616,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 178,
-      "name": "Car Stop (Loop) *",
-      "address": 499712,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 179,
-      "name": "Siren (Loop) *",
-      "address": 503808,
-      "length": 4096,
-      "pitch": 16116,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 180,
-      "name": "Helicopter (Loop) *",
-      "address": 507904,
-      "length": 4096,
-      "pitch": 14695,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 181,
-      "name": "Dog Bark (Loop) *",
-      "address": 512000,
-      "length": 4096,
-      "pitch": 16384,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 182,
-      "name": "Car Pass (Loop) *",
-      "address": 516096,
-      "length": 2048,
-      "pitch": 16450,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 183,
-      "name": "Male Voice (Loop) *",
-      "address": 518144,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 184,
-      "name": "Machine Gun (Loop) *",
-      "address": 520192,
-      "length": 2048,
-      "pitch": 18711,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 185,
-      "name": "Starship (Loop) *",
-      "address": 522240,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": false
-    },
-    {
-      "sampleNo": 186,
-      "name": "Jam-10 (Loop)",
-      "address": 425984,
-      "length": 32768,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 187,
-      "name": "Jam-11 (Loop)",
-      "address": 458752,
-      "length": 32768,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 188,
-      "name": "Jam-12 (Loop)",
-      "address": 491520,
-      "length": 32768,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 189,
-      "name": "Jam-13 (Loop)",
-      "address": 32768,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 190,
-      "name": "Jam-14 (Loop)",
-      "address": 49152,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 191,
-      "name": "Jam-15 (Loop)",
-      "address": 147456,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 192,
-      "name": "Jam-16 (Loop)",
-      "address": 245760,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 193,
-      "name": "Jam-17 (Loop)",
-      "address": 409600,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 194,
-      "name": "Jam-18 (Loop)",
-      "address": 491520,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 195,
-      "name": "Jam-19 (Loop)",
-      "address": 507904,
-      "length": 16384,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 196,
-      "name": "Jam-20 (Loop)",
-      "address": 57344,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 197,
-      "name": "Jam-21 (Loop)",
-      "address": 81920,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 198,
-      "name": "Jam-22 (Loop)",
-      "address": 90112,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 199,
-      "name": "Jam-23 (Loop)",
-      "address": 98304,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 200,
-      "name": "Jam-24 (Loop)",
-      "address": 131072,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 201,
-      "name": "Jam-25 (Loop)",
-      "address": 139264,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 202,
-      "name": "Jam-26 (Loop)",
-      "address": 147456,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 203,
-      "name": "Jam-27 (Loop)",
-      "address": 155648,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 204,
-      "name": "Jam-28 (Loop)",
-      "address": 163840,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 205,
-      "name": "Jam-29 (Loop)",
-      "address": 172032,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 206,
-      "name": "Jam-30 (Loop)",
-      "address": 180224,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 207,
-      "name": "Jam-31 (Loop)",
-      "address": 221184,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 208,
-      "name": "Jam-32 (Loop)",
-      "address": 229376,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 209,
-      "name": "Jam-33 (Loop)",
-      "address": 237568,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 210,
-      "name": "Jam-34 (Loop)",
-      "address": 245760,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 211,
-      "name": "Jam-35 (Loop)",
-      "address": 253952,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 212,
-      "name": "Jam-36 (Loop)",
-      "address": 491520,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 213,
-      "name": "Jam-37 (Loop)",
-      "address": 499712,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 214,
-      "name": "Jam-38 (Loop)",
-      "address": 507904,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 215,
-      "name": "Jam-39 (Loop)",
-      "address": 516096,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 216,
-      "name": "Jam-40 (Loop)",
-      "address": 86016,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 217,
-      "name": "Jam-41 (Loop)",
-      "address": 90112,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 218,
-      "name": "Jam-42 (Loop)",
-      "address": 94208,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 219,
-      "name": "Jam-43 (Loop)",
-      "address": 102400,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 220,
-      "name": "Jam-44 (Loop)",
-      "address": 176128,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 221,
-      "name": "Jam-45 (Loop)",
-      "address": 221184,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 222,
-      "name": "Jam-46 (Loop)",
-      "address": 225280,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 223,
-      "name": "Jam-47 (Loop)",
-      "address": 258048,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 224,
-      "name": "Jam-48 (Loop)",
-      "address": 516096,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 225,
-      "name": "Jam-49 (Loop)",
-      "address": 520192,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": true,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 226,
-      "name": "Shot-1",
-      "address": 8192,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 227,
-      "name": "Shot-2",
-      "address": 24576,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 228,
-      "name": "Shot-3",
-      "address": 122880,
-      "length": 8192,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 229,
-      "name": "Shot-4",
-      "address": 270336,
-      "length": 8192,
-      "pitch": 16384,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 230,
-      "name": "Shot-5",
-      "address": 401408,
-      "length": 8192,
-      "pitch": 16384,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 231,
-      "name": "Shot-6",
-      "address": 69632,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 232,
-      "name": "Shot-7",
-      "address": 77824,
-      "length": 4096,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 233,
-      "name": "Shot-8",
-      "address": 110592,
-      "length": 4096,
-      "pitch": 16984,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 234,
-      "name": "Shot-9",
-      "address": 192512,
-      "length": 4096,
-      "pitch": 16029,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 235,
-      "name": "Shot-10",
-      "address": 208896,
-      "length": 4096,
-      "pitch": 19427,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 236,
-      "name": "Shot-11",
-      "address": 217088,
-      "length": 4096,
-      "pitch": 23520,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 237,
-      "name": "Shot-12",
-      "address": 413696,
-      "length": 4096,
-      "pitch": 13988,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 238,
-      "name": "Shot-13",
-      "address": 421888,
-      "length": 4096,
-      "pitch": 18084,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 239,
-      "name": "Shot-14",
-      "address": 438272,
-      "length": 4096,
-      "pitch": 17058,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 240,
-      "name": "Shot-15",
-      "address": 446464,
-      "length": 4096,
-      "pitch": 14780,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 241,
-      "name": "Shot-16",
-      "address": 462848,
-      "length": 4096,
-      "pitch": 13988,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 242,
-      "name": "Shot-17",
-      "address": 38912,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 243,
-      "name": "Shot-18",
-      "address": 59392,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 244,
-      "name": "Shot-19",
-      "address": 63488,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 245,
-      "name": "Shot-20",
-      "address": 100352,
-      "length": 2048,
-      "pitch": 20480,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 246,
-      "name": "Shot-21",
-      "address": 133120,
-      "length": 2048,
-      "pitch": 12288,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 247,
-      "name": "Shot-22",
-      "address": 145408,
-      "length": 2048,
-      "pitch": 13602,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 248,
-      "name": "Shot-23",
-      "address": 161792,
-      "length": 2048,
-      "pitch": 16557,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 249,
-      "name": "Shot-24",
-      "address": 165888,
-      "length": 2048,
-      "pitch": 8812,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 250,
-      "name": "Shot-25",
-      "address": 169984,
-      "length": 2048,
-      "pitch": 841,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 251,
-      "name": "Shot-26",
-      "address": 182272,
-      "length": 2048,
-      "pitch": 11283,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 252,
-      "name": "Shot-27",
-      "address": 239616,
-      "length": 4096,
-      "pitch": 16736,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 253,
-      "name": "Shot-28",
-      "address": 247808,
-      "length": 4096,
-      "pitch": 18774,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 254,
-      "name": "Shot-29",
-      "address": 251904,
-      "length": 4096,
-      "pitch": 23112,
-      "isLooped": false,
-      "isTunable": true
-    },
-    {
-      "sampleNo": 255,
-      "name": "Shot-30",
-      "address": 514048,
-      "length": 4096,
-      "pitch": 16384,
-      "isLooped": false,
-      "isTunable": true
-    }
-  ]
+  }
 }
