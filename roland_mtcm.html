@@ -130,7 +130,7 @@ const templateSampleList = (json) => html`
 			<tr>
 				<td class="text-end">${sample.sampleNo}</td>
 				<td class="font-monospace">${sample.name}</td>
-				<td class="text-end font-monospace">${sample.address.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${sample.addrBegin.toString(16).padStart(6, '0')}</td>
 				<td class="text-end font-monospace">${sample.length.toString(16)}</td>
 				<td class="text-end">${sample.pitch}</td>
 				<td class="text-end">${fmt.onOff(sample.isLooped)}</td>

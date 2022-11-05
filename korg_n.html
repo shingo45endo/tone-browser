@@ -123,6 +123,12 @@ const templateDrumSampleList = (json) => html`
 			<tr>
 				<th class="text-end">No.</th>
 				<th>Drum Sample</th>
+				<th class="text-end">Start Addr.</th>
+				<th class="text-end">Loop Addr.</th>
+				<th class="text-end">End Addr.</th>
+				<th class="text-end">S-E Len.</th>
+				<th class="text-end">S-L Len.</th>
+				<th class="text-end">L-E Len.</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -130,6 +136,12 @@ const templateDrumSampleList = (json) => html`
 			<tr>
 				<td class="text-end">${drumSample.drumSampleNo}</td>
 				<td class="font-monospace">${drumSample.name}</td>
+				<td class="text-end font-monospace">${drumSample.addrBegin.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${drumSample.addrLoop.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${drumSample.addrEnd.toString(16).padStart(6, '0')}</td>
+				<td class="text-end">${drumSample.addrEnd - drumSample.addrBegin}</td>
+				<td class="text-end">${drumSample.addrLoop - drumSample.addrBegin}</td>
+				<td class="text-end">${drumSample.addrEnd - drumSample.addrLoop}</td>
 			</tr>
 		`)}
 		</tbody>

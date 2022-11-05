@@ -65,10 +65,11 @@ const templateSampleList = (json) => html`
 				<th class="text-end ps-4">Pitch</th>
 				<th class="text-end ps-4">Exp.</th>
 				<th class="text-end">Start Addr.</th>
-				<th class="text-end">End Addr.</th>
 				<th class="text-end">Loop Addr.</th>
-				<th class="text-end">Sample Len.</th>
-				<th class="text-end">Loop Len.</th>
+				<th class="text-end">End Addr.</th>
+				<th class="text-end">S-E Len.</th>
+				<th class="text-end">S-L Len.</th>
+				<th class="text-end">L-E Len.</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -79,11 +80,12 @@ const templateSampleList = (json) => html`
 				<td class="text-end">${sample.level}</td>
 				<td class="text-end">${sample.pitch}</td>
 				<td class="text-end">${sample.exponent}</td>
-				<td class="text-end font-monospace">${sample.startAddr.toString(16).padStart(6, '0')}</td>
-				<td class="text-end font-monospace">${sample.endAddr.toString(16).padStart(6, '0')}</td>
-				<td class="text-end font-monospace">${sample.loopAddr.toString(16).padStart(6, '0')}</td>
-				<td class="text-end">${sample.endAddr - sample.startAddr}</td>
-				<td class="text-end">${sample.endAddr - sample.loopAddr}</td>
+				<td class="text-end font-monospace">${sample.addrBegin.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${sample.addrLoop.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${sample.addrEnd.toString(16).padStart(6, '0')}</td>
+				<td class="text-end">${sample.addrEnd - sample.addrBegin}</td>
+				<td class="text-end">${sample.addrLoop - sample.addrBegin}</td>
+				<td class="text-end">${sample.addrEnd - sample.addrLoop}</td>
 			</tr>
 		`)}
 		</tbody>

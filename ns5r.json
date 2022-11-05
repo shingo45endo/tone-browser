@@ -2,1147 +2,2005 @@
 	"drumSamples": [
 		{
 			"drumSampleNo": 0,
-			"name": "Fat Kick  "
+			"name": "Fat Kick  ",
+			"addrBegin": 391645,
+			"addrLoop": 395123,
+			"addrEnd": 395123
 		},
 		{
 			"drumSampleNo": 1,
-			"name": "Rock Kick "
+			"name": "Rock Kick ",
+			"addrBegin": 395124,
+			"addrLoop": 399655,
+			"addrEnd": 399655
 		},
 		{
 			"drumSampleNo": 2,
-			"name": "Ambi.Kick "
+			"name": "Ambi.Kick ",
+			"addrBegin": 399656,
+			"addrLoop": 409161,
+			"addrEnd": 409161
 		},
 		{
 			"drumSampleNo": 3,
-			"name": "Crisp Kick"
+			"name": "Crisp Kick",
+			"addrBegin": 409162,
+			"addrLoop": 410746,
+			"addrEnd": 410746
 		},
 		{
 			"drumSampleNo": 4,
-			"name": "Punch Kick"
+			"name": "Punch Kick",
+			"addrBegin": 410747,
+			"addrLoop": 414410,
+			"addrEnd": 414410
 		},
 		{
 			"drumSampleNo": 5,
-			"name": "Dry Kick  "
+			"name": "Dry Kick  ",
+			"addrBegin": 850933,
+			"addrLoop": 857286,
+			"addrEnd": 857286
 		},
 		{
 			"drumSampleNo": 6,
-			"name": "Real Kick "
+			"name": "Real Kick ",
+			"addrBegin": 414411,
+			"addrLoop": 419350,
+			"addrEnd": 419350
 		},
 		{
 			"drumSampleNo": 7,
-			"name": "Gated Kick"
+			"name": "Gated Kick",
+			"addrBegin": 426479,
+			"addrLoop": 434123,
+			"addrEnd": 434123
 		},
 		{
 			"drumSampleNo": 8,
-			"name": "ProcesKick"
+			"name": "ProcesKick",
+			"addrBegin": 903486,
+			"addrLoop": 908497,
+			"addrEnd": 908497
 		},
 		{
 			"drumSampleNo": 9,
-			"name": "Metal Kick"
+			"name": "Metal Kick",
+			"addrBegin": 434124,
+			"addrLoop": 443845,
+			"addrEnd": 443845
 		},
 		{
 			"drumSampleNo": 10,
-			"name": "Dance Kick"
+			"name": "Dance Kick",
+			"addrBegin": 314510,
+			"addrLoop": 321644,
+			"addrEnd": 321644
 		},
 		{
 			"drumSampleNo": 11,
-			"name": "Syn Kick 1"
+			"name": "Syn Kick 1",
+			"addrBegin": 443846,
+			"addrLoop": 452340,
+			"addrEnd": 453062
 		},
 		{
 			"drumSampleNo": 12,
-			"name": "Syn Kick 2"
+			"name": "Syn Kick 2",
+			"addrBegin": 453064,
+			"addrLoop": 460625,
+			"addrEnd": 460625
 		},
 		{
 			"drumSampleNo": 13,
-			"name": "Syn Kick 3"
+			"name": "Syn Kick 3",
+			"addrBegin": 460626,
+			"addrLoop": 468672,
+			"addrEnd": 468672
 		},
 		{
 			"drumSampleNo": 14,
-			"name": "Syn Kick 4"
+			"name": "Syn Kick 4",
+			"addrBegin": 857515,
+			"addrLoop": 865112,
+			"addrEnd": 865112
 		},
 		{
 			"drumSampleNo": 15,
-			"name": "Orch B.Drm"
+			"name": "Orch B.Drm",
+			"addrBegin": 685494,
+			"addrLoop": 722268,
+			"addrEnd": 730085
 		},
 		{
 			"drumSampleNo": 16,
-			"name": "Snare 1   "
+			"name": "Snare 1   ",
+			"addrBegin": 468673,
+			"addrLoop": 476764,
+			"addrEnd": 476764
 		},
 		{
 			"drumSampleNo": 17,
-			"name": "Snare 2   "
+			"name": "Snare 2   ",
+			"addrBegin": 476765,
+			"addrLoop": 488768,
+			"addrEnd": 488768
 		},
 		{
 			"drumSampleNo": 18,
-			"name": "Snare 3   "
+			"name": "Snare 3   ",
+			"addrBegin": 488769,
+			"addrLoop": 494449,
+			"addrEnd": 494449
 		},
 		{
 			"drumSampleNo": 19,
-			"name": "Snare 4   "
+			"name": "Snare 4   ",
+			"addrBegin": 494450,
+			"addrLoop": 510374,
+			"addrEnd": 510374
 		},
 		{
 			"drumSampleNo": 20,
-			"name": "PicloSnare"
+			"name": "PicloSnare",
+			"addrBegin": 510375,
+			"addrLoop": 515813,
+			"addrEnd": 515813
 		},
 		{
 			"drumSampleNo": 21,
-			"name": "Soft Snare"
+			"name": "Soft Snare",
+			"addrBegin": 515814,
+			"addrLoop": 523763,
+			"addrEnd": 523763
 		},
 		{
 			"drumSampleNo": 22,
-			"name": "LightSnare"
+			"name": "LightSnare",
+			"addrBegin": 730087,
+			"addrLoop": 746170,
+			"addrEnd": 746170
 		},
 		{
 			"drumSampleNo": 23,
-			"name": "Dry Snare "
+			"name": "Dry Snare ",
+			"addrBegin": 870013,
+			"addrLoop": 879514,
+			"addrEnd": 879514
 		},
 		{
 			"drumSampleNo": 24,
-			"name": "TightSnare"
+			"name": "TightSnare",
+			"addrBegin": 523764,
+			"addrLoop": 534109,
+			"addrEnd": 534109
 		},
 		{
 			"drumSampleNo": 25,
-			"name": "Ambi.Snare"
+			"name": "Ambi.Snare",
+			"addrBegin": 534110,
+			"addrLoop": 548751,
+			"addrEnd": 548751
 		},
 		{
 			"drumSampleNo": 26,
-			"name": "Rock Snare"
+			"name": "Rock Snare",
+			"addrBegin": 548752,
+			"addrLoop": 562017,
+			"addrEnd": 562017
 		},
 		{
 			"drumSampleNo": 27,
-			"name": "GatedSnare"
+			"name": "GatedSnare",
+			"addrBegin": 562018,
+			"addrLoop": 576687,
+			"addrEnd": 576687
 		},
 		{
 			"drumSampleNo": 28,
-			"name": "PowerSnare"
+			"name": "PowerSnare",
+			"addrBegin": 971333,
+			"addrLoop": 990941,
+			"addrEnd": 990941
 		},
 		{
 			"drumSampleNo": 29,
-			"name": "RollSnare1"
+			"name": "RollSnare1",
+			"addrBegin": 932956,
+			"addrLoop": 942931,
+			"addrEnd": 951439
 		},
 		{
 			"drumSampleNo": 30,
-			"name": "RollSnare2"
+			"name": "RollSnare2",
+			"addrBegin": 951441,
+			"addrLoop": 956158,
+			"addrEnd": 956158
 		},
 		{
 			"drumSampleNo": 31,
-			"name": "SynSnare 1"
+			"name": "SynSnare 1",
+			"addrBegin": 576688,
+			"addrLoop": 580778,
+			"addrEnd": 580778
 		},
 		{
 			"drumSampleNo": 32,
-			"name": "SynSnare 2"
+			"name": "SynSnare 2",
+			"addrBegin": 956159,
+			"addrLoop": 960161,
+			"addrEnd": 960161
 		},
 		{
 			"drumSampleNo": 33,
-			"name": "VocalSnr 1"
+			"name": "VocalSnr 1",
+			"addrBegin": 894193,
+			"addrLoop": 901626,
+			"addrEnd": 901626
 		},
 		{
 			"drumSampleNo": 34,
-			"name": "VocalSnr 2"
+			"name": "VocalSnr 2",
+			"addrBegin": 901629,
+			"addrLoop": 903483,
+			"addrEnd": 903483
 		},
 		{
 			"drumSampleNo": 35,
-			"name": "Fist      "
+			"name": "Fist      ",
+			"addrBegin": 412452,
+			"addrLoop": 422571,
+			"addrEnd": 422571
 		},
 		{
 			"drumSampleNo": 36,
-			"name": "Brush Slap"
+			"name": "Brush Slap",
+			"addrBegin": 580779,
+			"addrLoop": 589452,
+			"addrEnd": 589452
 		},
 		{
 			"drumSampleNo": 37,
-			"name": "Brush Tap "
+			"name": "Brush Tap ",
+			"addrBegin": 589453,
+			"addrLoop": 594402,
+			"addrEnd": 594402
 		},
 		{
 			"drumSampleNo": 38,
-			"name": "BrushSwish"
+			"name": "BrushSwish",
+			"addrBegin": 705664,
+			"addrLoop": 739581,
+			"addrEnd": 739581
 		},
 		{
 			"drumSampleNo": 39,
-			"name": "BrushSwirl"
+			"name": "BrushSwirl",
+			"addrBegin": 705664,
+			"addrLoop": 707411,
+			"addrEnd": 738307
 		},
 		{
 			"drumSampleNo": 40,
-			"name": "Stick Hit "
+			"name": "Stick Hit ",
+			"addrBegin": 422572,
+			"addrLoop": 429242,
+			"addrEnd": 429242
 		},
 		{
 			"drumSampleNo": 41,
-			"name": "Side Stick"
+			"name": "Side Stick",
+			"addrBegin": 205845,
+			"addrLoop": 210207,
+			"addrEnd": 210207
 		},
 		{
 			"drumSampleNo": 42,
-			"name": "Syn Rim   "
+			"name": "Syn Rim   ",
+			"addrBegin": 210208,
+			"addrLoop": 210939,
+			"addrEnd": 210939
 		},
 		{
 			"drumSampleNo": 43,
-			"name": "Crash Cym "
+			"name": "Crash Cym ",
+			"addrBegin": 990942,
+			"addrLoop": 1019757,
+			"addrEnd": 1038957
 		},
 		{
 			"drumSampleNo": 44,
-			"name": "Crash LP  "
+			"name": "Crash LP  ",
+			"addrBegin": 1019741,
+			"addrLoop": 1019757,
+			"addrEnd": 1038957
 		},
 		{
 			"drumSampleNo": 45,
-			"name": "China Cym "
+			"name": "China Cym ",
+			"addrBegin": 746171,
+			"addrLoop": 756145,
+			"addrEnd": 777395
 		},
 		{
 			"drumSampleNo": 46,
-			"name": "China LP  "
+			"name": "China LP  ",
+			"addrBegin": 756143,
+			"addrLoop": 756145,
+			"addrEnd": 777395
 		},
 		{
 			"drumSampleNo": 47,
-			"name": "Splash Cym"
+			"name": "Splash Cym",
+			"addrBegin": 0,
+			"addrLoop": 11816,
+			"addrEnd": 29893
 		},
 		{
 			"drumSampleNo": 48,
-			"name": "Splash LP "
+			"name": "Splash LP ",
+			"addrBegin": 11779,
+			"addrLoop": 11816,
+			"addrEnd": 29893
 		},
 		{
 			"drumSampleNo": 49,
-			"name": "Orch Cym  "
+			"name": "Orch Cym  ",
+			"addrBegin": 777397,
+			"addrLoop": 788013,
+			"addrEnd": 808040
 		},
 		{
 			"drumSampleNo": 50,
-			"name": "OrchCym LP"
+			"name": "OrchCym LP",
+			"addrBegin": 788007,
+			"addrLoop": 788013,
+			"addrEnd": 808040
 		},
 		{
 			"drumSampleNo": 51,
-			"name": "Tite HH   "
+			"name": "Tite HH   ",
+			"addrBegin": 29895,
+			"addrLoop": 31424,
+			"addrEnd": 31424
 		},
 		{
 			"drumSampleNo": 52,
-			"name": "Close HH  "
+			"name": "Close HH  ",
+			"addrBegin": 571166,
+			"addrLoop": 575395,
+			"addrEnd": 575395
 		},
 		{
 			"drumSampleNo": 53,
-			"name": "Open HH   "
+			"name": "Open HH   ",
+			"addrBegin": 210940,
+			"addrLoop": 229191,
+			"addrEnd": 229191
 		},
 		{
 			"drumSampleNo": 54,
-			"name": "Pedal HH  "
+			"name": "Pedal HH  ",
+			"addrBegin": 594403,
+			"addrLoop": 597335,
+			"addrEnd": 597335
 		},
 		{
 			"drumSampleNo": 55,
-			"name": "CloseSynHH"
+			"name": "CloseSynHH",
+			"addrBegin": 241934,
+			"addrLoop": 245100,
+			"addrEnd": 245100
 		},
 		{
 			"drumSampleNo": 56,
-			"name": "OpenSyn HH"
+			"name": "OpenSyn HH",
+			"addrBegin": 229192,
+			"addrLoop": 238302,
+			"addrEnd": 241932
 		},
 		{
 			"drumSampleNo": 57,
-			"name": "Ride Edge "
+			"name": "Ride Edge ",
+			"addrBegin": 31425,
+			"addrLoop": 62400,
+			"addrEnd": 62400
 		},
 		{
 			"drumSampleNo": 58,
-			"name": "Ride Cup  "
+			"name": "Ride Cup  ",
+			"addrBegin": 62401,
+			"addrLoop": 91474,
+			"addrEnd": 91474
 		},
 		{
 			"drumSampleNo": 59,
-			"name": "Ride Cym 1"
+			"name": "Ride Cym 1",
+			"addrBegin": 808042,
+			"addrLoop": 826793,
+			"addrEnd": 837689
 		},
 		{
 			"drumSampleNo": 60,
-			"name": "Ride Cym 2"
+			"name": "Ride Cym 2",
+			"addrBegin": 837691,
+			"addrLoop": 858214,
+			"addrEnd": 876567
 		},
 		{
 			"drumSampleNo": 61,
-			"name": "Tom 1 Hi  "
+			"name": "Tom 1 Hi  ",
+			"addrBegin": 597336,
+			"addrLoop": 618314,
+			"addrEnd": 618314
 		},
 		{
 			"drumSampleNo": 62,
-			"name": "Tom 1 Lo  "
+			"name": "Tom 1 Lo  ",
+			"addrBegin": 114878,
+			"addrLoop": 134966,
+			"addrEnd": 134966
 		},
 		{
 			"drumSampleNo": 63,
-			"name": "Tom 2 Hi  "
+			"name": "Tom 2 Hi  ",
+			"addrBegin": 879515,
+			"addrLoop": 891892,
+			"addrEnd": 892091
 		},
 		{
 			"drumSampleNo": 64,
-			"name": "Tom 2 Hi V"
+			"name": "Tom 2 Hi V",
+			"addrBegin": 880002,
+			"addrLoop": 891892,
+			"addrEnd": 892091
 		},
 		{
 			"drumSampleNo": 65,
-			"name": "Tom 2 Lo  "
+			"name": "Tom 2 Lo  ",
+			"addrBegin": 892093,
+			"addrLoop": 906374,
+			"addrEnd": 906715
 		},
 		{
 			"drumSampleNo": 66,
-			"name": "Tom 2 Lo V"
+			"name": "Tom 2 Lo V",
+			"addrBegin": 892566,
+			"addrLoop": 906374,
+			"addrEnd": 906715
 		},
 		{
 			"drumSampleNo": 67,
-			"name": "ProcessTom"
+			"name": "ProcessTom",
+			"addrBegin": 134967,
+			"addrLoop": 153283,
+			"addrEnd": 153283
 		},
 		{
 			"drumSampleNo": 68,
-			"name": "OilDrum   "
+			"name": "OilDrum   ",
+			"addrBegin": 387785,
+			"addrLoop": 412451,
+			"addrEnd": 412451
 		},
 		{
 			"drumSampleNo": 69,
-			"name": "Syn Tom 1 "
+			"name": "Syn Tom 1 ",
+			"addrBegin": 322931,
+			"addrLoop": 339681,
+			"addrEnd": 339681
 		},
 		{
 			"drumSampleNo": 70,
-			"name": "SynTom2 Hi"
+			"name": "SynTom2 Hi",
+			"addrBegin": 156101,
+			"addrLoop": 157400,
+			"addrEnd": 157509
 		},
 		{
 			"drumSampleNo": 71,
-			"name": "SynTom2 Lo"
+			"name": "SynTom2 Lo",
+			"addrBegin": 153284,
+			"addrLoop": 155881,
+			"addrEnd": 156099
 		},
 		{
 			"drumSampleNo": 72,
-			"name": "SolidHit  "
+			"name": "SolidHit  ",
+			"addrBegin": 468221,
+			"addrLoop": 479978,
+			"addrEnd": 479978
 		},
 		{
 			"drumSampleNo": 73,
-			"name": "Brush Tom "
+			"name": "Brush Tom ",
+			"addrBegin": 618315,
+			"addrLoop": 632540,
+			"addrEnd": 639372
 		},
 		{
 			"drumSampleNo": 74,
-			"name": "BrushTom V"
+			"name": "BrushTom V",
+			"addrBegin": 618612,
+			"addrLoop": 632540,
+			"addrEnd": 639372
 		},
 		{
 			"drumSampleNo": 75,
-			"name": "Timpani   "
+			"name": "Timpani   ",
+			"addrBegin": 756585,
+			"addrLoop": 773120,
+			"addrEnd": 790520
 		},
 		{
 			"drumSampleNo": 76,
-			"name": "Taiko Hi  "
+			"name": "Taiko Hi  ",
+			"addrBegin": 530741,
+			"addrLoop": 532338,
+			"addrEnd": 532338
 		},
 		{
 			"drumSampleNo": 77,
-			"name": "Taiko Lo  "
+			"name": "Taiko Lo  ",
+			"addrBegin": 247861,
+			"addrLoop": 260628,
+			"addrEnd": 260628
 		},
 		{
 			"drumSampleNo": 78,
-			"name": "Lo Bongo  "
+			"name": "Lo Bongo  ",
+			"addrBegin": 799527,
+			"addrLoop": 805738,
+			"addrEnd": 805738
 		},
 		{
 			"drumSampleNo": 79,
-			"name": "Hi Bongo  "
+			"name": "Hi Bongo  ",
+			"addrBegin": 639374,
+			"addrLoop": 643219,
+			"addrEnd": 643219
 		},
 		{
 			"drumSampleNo": 80,
-			"name": "Slap Bongo"
+			"name": "Slap Bongo",
+			"addrBegin": 260629,
+			"addrLoop": 265718,
+			"addrEnd": 265718
 		},
 		{
 			"drumSampleNo": 81,
-			"name": "Tsuzumi   "
+			"name": "Tsuzumi   ",
+			"addrBegin": 977064,
+			"addrLoop": 986877,
+			"addrEnd": 986877
 		},
 		{
 			"drumSampleNo": 82,
-			"name": "Open Conga"
+			"name": "Open Conga",
+			"addrBegin": 790522,
+			"addrLoop": 799526,
+			"addrEnd": 799526
 		},
 		{
 			"drumSampleNo": 83,
-			"name": "Slap Conga"
+			"name": "Slap Conga",
+			"addrBegin": 265719,
+			"addrLoop": 271733,
+			"addrEnd": 271733
 		},
 		{
 			"drumSampleNo": 84,
-			"name": "Palm Conga"
+			"name": "Palm Conga",
+			"addrBegin": 271734,
+			"addrLoop": 274548,
+			"addrEnd": 274548
 		},
 		{
 			"drumSampleNo": 85,
-			"name": "Mute Conga"
+			"name": "Mute Conga",
+			"addrBegin": 274549,
+			"addrLoop": 283141,
+			"addrEnd": 283141
 		},
 		{
 			"drumSampleNo": 86,
-			"name": "Baya 1    "
+			"name": "Baya 1    ",
+			"addrBegin": 876569,
+			"addrLoop": 884426,
+			"addrEnd": 884426
 		},
 		{
 			"drumSampleNo": 87,
-			"name": "Baya 2    "
+			"name": "Baya 2    ",
+			"addrBegin": 678829,
+			"addrLoop": 684619,
+			"addrEnd": 684919
 		},
 		{
 			"drumSampleNo": 88,
-			"name": "Tabla 1   "
+			"name": "Tabla 1   ",
+			"addrBegin": 891408,
+			"addrLoop": 901039,
+			"addrEnd": 904722
 		},
 		{
 			"drumSampleNo": 89,
-			"name": "Tabla 2   "
+			"name": "Tabla 2   ",
+			"addrBegin": 904724,
+			"addrLoop": 910441,
+			"addrEnd": 910441
 		},
 		{
 			"drumSampleNo": 90,
-			"name": "Tabla 3   "
+			"name": "Tabla 3   ",
+			"addrBegin": 912859,
+			"addrLoop": 920994,
+			"addrEnd": 921923
 		},
 		{
 			"drumSampleNo": 91,
-			"name": "Udu       "
+			"name": "Udu       ",
+			"addrBegin": 1016717,
+			"addrLoop": 1034368,
+			"addrEnd": 1034368
 		},
 		{
 			"drumSampleNo": 92,
-			"name": "Djembe    "
+			"name": "Djembe    ",
+			"addrBegin": 986878,
+			"addrLoop": 994520,
+			"addrEnd": 998453
 		},
 		{
 			"drumSampleNo": 93,
-			"name": "CorkPop   "
+			"name": "CorkPop   ",
+			"addrBegin": 450949,
+			"addrLoop": 461717,
+			"addrEnd": 461717
 		},
 		{
 			"drumSampleNo": 94,
-			"name": "Mute Cuica"
+			"name": "Mute Cuica",
+			"addrBegin": 669508,
+			"addrLoop": 676414,
+			"addrEnd": 676414
 		},
 		{
 			"drumSampleNo": 95,
-			"name": "Open Cuica"
+			"name": "Open Cuica",
+			"addrBegin": 676415,
+			"addrLoop": 683662,
+			"addrEnd": 683662
 		},
 		{
 			"drumSampleNo": 96,
-			"name": "Maracas   "
+			"name": "Maracas   ",
+			"addrBegin": 283142,
+			"addrLoop": 288778,
+			"addrEnd": 288778
 		},
 		{
 			"drumSampleNo": 97,
-			"name": "Cabasa    "
+			"name": "Cabasa    ",
+			"addrBegin": 91475,
+			"addrLoop": 96365,
+			"addrEnd": 96365
 		},
 		{
 			"drumSampleNo": 98,
-			"name": "SynMaracas"
+			"name": "SynMaracas",
+			"addrBegin": 878645,
+			"addrLoop": 879642,
+			"addrEnd": 879642
 		},
 		{
 			"drumSampleNo": 99,
-			"name": "Sagat     "
+			"name": "Sagat     ",
+			"addrBegin": 245101,
+			"addrLoop": 247860,
+			"addrEnd": 247860
 		},
 		{
 			"drumSampleNo": 100,
-			"name": "Tambourine"
+			"name": "Tambourine",
+			"addrBegin": 176862,
+			"addrLoop": 185467,
+			"addrEnd": 185467
 		},
 		{
 			"drumSampleNo": 101,
-			"name": "JingleBell"
+			"name": "JingleBell",
+			"addrBegin": 879645,
+			"addrLoop": 894190,
+			"addrEnd": 894190
 		},
 		{
 			"drumSampleNo": 102,
-			"name": "MarcTree 1"
+			"name": "MarcTree 1",
+			"addrBegin": 34957,
+			"addrLoop": 50060,
+			"addrEnd": 70844
 		},
 		{
 			"drumSampleNo": 103,
-			"name": "MarcTree 2"
+			"name": "MarcTree 2",
+			"addrBegin": 906717,
+			"addrLoop": 952582,
+			"addrEnd": 977062
 		},
 		{
 			"drumSampleNo": 104,
-			"name": "MuteTriang"
+			"name": "MuteTriang",
+			"addrBegin": 288779,
+			"addrLoop": 290260,
+			"addrEnd": 290260
 		},
 		{
 			"drumSampleNo": 105,
-			"name": "OpenTriang"
+			"name": "OpenTriang",
+			"addrBegin": 290261,
+			"addrLoop": 309101,
+			"addrEnd": 313600
 		},
 		{
 			"drumSampleNo": 106,
-			"name": "Flexatone "
+			"name": "Flexatone ",
+			"addrBegin": 998455,
+			"addrLoop": 1009918,
+			"addrEnd": 1016715
 		},
 		{
 			"drumSampleNo": 107,
-			"name": "Agogo     "
+			"name": "Agogo     ",
+			"addrBegin": 96366,
+			"addrLoop": 103922,
+			"addrEnd": 103922
 		},
 		{
 			"drumSampleNo": 108,
-			"name": "Cowbell   "
+			"name": "Cowbell   ",
+			"addrBegin": 921925,
+			"addrLoop": 933540,
+			"addrEnd": 933540
 		},
 		{
 			"drumSampleNo": 109,
-			"name": "SynCowbell"
+			"name": "SynCowbell",
+			"addrBegin": 643220,
+			"addrLoop": 644130,
+			"addrEnd": 644250
 		},
 		{
 			"drumSampleNo": 110,
-			"name": "R-Timbal  "
+			"name": "R-Timbal  ",
+			"addrBegin": 644252,
+			"addrLoop": 652747,
+			"addrEnd": 652747
 		},
 		{
 			"drumSampleNo": 111,
-			"name": "Hi Timbal "
+			"name": "Hi Timbal ",
+			"addrBegin": 103923,
+			"addrLoop": 111324,
+			"addrEnd": 111324
 		},
 		{
 			"drumSampleNo": 112,
-			"name": "Lo Timbal "
+			"name": "Lo Timbal ",
+			"addrBegin": 652748,
+			"addrLoop": 662613,
+			"addrEnd": 662613
 		},
 		{
 			"drumSampleNo": 113,
-			"name": "Timbales  "
+			"name": "Timbales  ",
+			"addrBegin": 908498,
+			"addrLoop": 911588,
+			"addrEnd": 911588
 		},
 		{
 			"drumSampleNo": 114,
-			"name": "WoodBlockH"
+			"name": "WoodBlockH",
+			"addrBegin": 111325,
+			"addrLoop": 113277,
+			"addrEnd": 113277
 		},
 		{
 			"drumSampleNo": 115,
-			"name": "WoodBlockM"
+			"name": "WoodBlockM",
+			"addrBegin": 807725,
+			"addrLoop": 811711,
+			"addrEnd": 811711
 		},
 		{
 			"drumSampleNo": 116,
-			"name": "WoodBlockL"
+			"name": "WoodBlockL",
+			"addrBegin": 805739,
+			"addrLoop": 807724,
+			"addrEnd": 807724
 		},
 		{
 			"drumSampleNo": 117,
-			"name": "Claves    "
+			"name": "Claves    ",
+			"addrBegin": 811712,
+			"addrLoop": 812954,
+			"addrEnd": 812954
 		},
 		{
 			"drumSampleNo": 118,
-			"name": "Syn Claves"
+			"name": "Syn Claves",
+			"addrBegin": 812955,
+			"addrLoop": 813952,
+			"addrEnd": 813952
 		},
 		{
 			"drumSampleNo": 119,
-			"name": "Castanet  "
+			"name": "Castanet  ",
+			"addrBegin": 937530,
+			"addrLoop": 939564,
+			"addrEnd": 939564
 		},
 		{
 			"drumSampleNo": 120,
-			"name": "Castanet V"
+			"name": "Castanet V",
+			"addrBegin": 937944,
+			"addrLoop": 939564,
+			"addrEnd": 939564
 		},
 		{
 			"drumSampleNo": 121,
-			"name": "FingerSnap"
+			"name": "FingerSnap",
+			"addrBegin": 175615,
+			"addrLoop": 176861,
+			"addrEnd": 176861
 		},
 		{
 			"drumSampleNo": 122,
-			"name": "Snap      "
+			"name": "Snap      ",
+			"addrBegin": 204542,
+			"addrLoop": 205844,
+			"addrEnd": 205844
 		},
 		{
 			"drumSampleNo": 123,
-			"name": "Viblaslap "
+			"name": "Viblaslap ",
+			"addrBegin": 1027931,
+			"addrLoop": 1035744,
+			"addrEnd": 1048323
 		},
 		{
 			"drumSampleNo": 124,
-			"name": "Guiro S   "
+			"name": "Guiro S   ",
+			"addrBegin": 672416,
+			"addrLoop": 674342,
+			"addrEnd": 674342
 		},
 		{
 			"drumSampleNo": 125,
-			"name": "Guiro L   "
+			"name": "Guiro L   ",
+			"addrBegin": 313602,
+			"addrLoop": 322384,
+			"addrEnd": 322384
 		},
 		{
 			"drumSampleNo": 126,
-			"name": "Pull 1    "
+			"name": "Pull 1    ",
+			"addrBegin": 461718,
+			"addrLoop": 464783,
+			"addrEnd": 464783
 		},
 		{
 			"drumSampleNo": 127,
-			"name": "Pull 2    "
+			"name": "Pull 2    ",
+			"addrBegin": 464784,
+			"addrLoop": 468220,
+			"addrEnd": 468220
 		},
 		{
 			"drumSampleNo": 128,
-			"name": "Whistle S "
+			"name": "Whistle S ",
+			"addrBegin": 674343,
+			"addrLoop": 678575,
+			"addrEnd": 678575
 		},
 		{
 			"drumSampleNo": 129,
-			"name": "Whistle L "
+			"name": "Whistle L ",
+			"addrBegin": 678576,
+			"addrLoop": 687136,
+			"addrEnd": 687136
 		},
 		{
 			"drumSampleNo": 130,
-			"name": "Hand Claps"
+			"name": "Hand Claps",
+			"addrBegin": 185468,
+			"addrLoop": 193563,
+			"addrEnd": 193563
 		},
 		{
 			"drumSampleNo": 131,
-			"name": "Syn Claps "
+			"name": "Syn Claps ",
+			"addrBegin": 662614,
+			"addrLoop": 672415,
+			"addrEnd": 672415
 		},
 		{
 			"drumSampleNo": 132,
-			"name": "MetalHitHi"
+			"name": "MetalHitHi",
+			"addrBegin": 434390,
+			"addrLoop": 435291,
+			"addrEnd": 435291
 		},
 		{
 			"drumSampleNo": 133,
-			"name": "MetalHitLo"
+			"name": "MetalHitLo",
+			"addrBegin": 429243,
+			"addrLoop": 434389,
+			"addrEnd": 434389
 		},
 		{
 			"drumSampleNo": 134,
-			"name": "Gt Scratch"
+			"name": "Gt Scratch",
+			"addrBegin": 201624,
+			"addrLoop": 231648,
+			"addrEnd": 231648
 		},
 		{
 			"drumSampleNo": 135,
-			"name": "Gtr Slide "
+			"name": "Gtr Slide ",
+			"addrBegin": 858481,
+			"addrLoop": 871114,
+			"addrEnd": 871114
 		},
 		{
 			"drumSampleNo": 136,
-			"name": "GtCutNois1"
+			"name": "GtCutNois1",
+			"addrBegin": 70261,
+			"addrLoop": 73875,
+			"addrEnd": 73875
 		},
 		{
 			"drumSampleNo": 137,
-			"name": "GtCutNois2"
+			"name": "GtCutNois2",
+			"addrBegin": 825001,
+			"addrLoop": 827487,
+			"addrEnd": 827487
 		},
 		{
 			"drumSampleNo": 138,
-			"name": "Chic 1    "
+			"name": "Chic 1    ",
+			"addrBegin": 231649,
+			"addrLoop": 236342,
+			"addrEnd": 236342
 		},
 		{
 			"drumSampleNo": 139,
-			"name": "Chic 2    "
+			"name": "Chic 2    ",
+			"addrBegin": 236343,
+			"addrLoop": 238939,
+			"addrEnd": 238939
 		},
 		{
 			"drumSampleNo": 140,
-			"name": "Bass Slide"
+			"name": "Bass Slide",
+			"addrBegin": 53995,
+			"addrLoop": 70260,
+			"addrEnd": 70260
 		},
 		{
 			"drumSampleNo": 141,
-			"name": "StringSlap"
+			"name": "StringSlap",
+			"addrBegin": 827488,
+			"addrLoop": 834657,
+			"addrEnd": 834657
 		},
 		{
 			"drumSampleNo": 142,
-			"name": "Orch Hit  "
+			"name": "Orch Hit  ",
+			"addrBegin": 911591,
+			"addrLoop": 932955,
+			"addrEnd": 932955
 		},
 		{
 			"drumSampleNo": 143,
-			"name": "ImpactHitL"
+			"name": "ImpactHitL",
+			"addrBegin": 674408,
+			"addrLoop": 687108,
+			"addrEnd": 687108
 		},
 		{
 			"drumSampleNo": 144,
-			"name": "ImpactHitR"
+			"name": "ImpactHitR",
+			"addrBegin": 687109,
+			"addrLoop": 699880,
+			"addrEnd": 699880
 		},
 		{
 			"drumSampleNo": 145,
-			"name": "Rave Hit L"
+			"name": "Rave Hit L",
+			"addrBegin": 676073,
+			"addrLoop": 687108,
+			"addrEnd": 687108
 		},
 		{
 			"drumSampleNo": 146,
-			"name": "Rave Hit R"
+			"name": "Rave Hit R",
+			"addrBegin": 688782,
+			"addrLoop": 699880,
+			"addrEnd": 699880
 		},
 		{
 			"drumSampleNo": 147,
-			"name": "Philly Hit"
+			"name": "Philly Hit",
+			"addrBegin": 699881,
+			"addrLoop": 711460,
+			"addrEnd": 711460
 		},
 		{
 			"drumSampleNo": 148,
-			"name": "BrassFall1"
+			"name": "BrassFall1",
+			"addrBegin": 574158,
+			"addrLoop": 599093,
+			"addrEnd": 599093
 		},
 		{
 			"drumSampleNo": 149,
-			"name": "BrassFall2"
+			"name": "BrassFall2",
+			"addrBegin": 599094,
+			"addrLoop": 622097,
+			"addrEnd": 622097
 		},
 		{
 			"drumSampleNo": 150,
-			"name": "BrassFall3"
+			"name": "BrassFall3",
+			"addrBegin": 622098,
+			"addrLoop": 647724,
+			"addrEnd": 647724
 		},
 		{
 			"drumSampleNo": 151,
-			"name": "BrassFall4"
+			"name": "BrassFall4",
+			"addrBegin": 647725,
+			"addrLoop": 674407,
+			"addrEnd": 674407
 		},
 		{
 			"drumSampleNo": 152,
-			"name": "Zap 1     "
+			"name": "Zap 1     ",
+			"addrBegin": 871115,
+			"addrLoop": 873212,
+			"addrEnd": 873212
 		},
 		{
 			"drumSampleNo": 153,
-			"name": "Zap 2     "
+			"name": "Zap 2     ",
+			"addrBegin": 873215,
+			"addrLoop": 878642,
+			"addrEnd": 878642
 		},
 		{
 			"drumSampleNo": 154,
-			"name": "Scratch Hi"
+			"name": "Scratch Hi",
+			"addrBegin": 322385,
+			"addrLoop": 326539,
+			"addrEnd": 326539
 		},
 		{
 			"drumSampleNo": 155,
-			"name": "Scratch Lo"
+			"name": "Scratch Lo",
+			"addrBegin": 326540,
+			"addrLoop": 333016,
+			"addrEnd": 333016
 		},
 		{
 			"drumSampleNo": 156,
-			"name": "ScratchDbl"
+			"name": "ScratchDbl",
+			"addrBegin": 333017,
+			"addrLoop": 338040,
+			"addrEnd": 338048
 		},
 		{
 			"drumSampleNo": 157,
-			"name": "Scratch a "
+			"name": "Scratch a ",
+			"addrBegin": 517802,
+			"addrLoop": 526918,
+			"addrEnd": 526918
 		},
 		{
 			"drumSampleNo": 158,
-			"name": "Scratch b "
+			"name": "Scratch b ",
+			"addrBegin": 575396,
+			"addrLoop": 582040,
+			"addrEnd": 582040
 		},
 		{
 			"drumSampleNo": 159,
-			"name": "Scratch c "
+			"name": "Scratch c ",
+			"addrBegin": 582041,
+			"addrLoop": 585652,
+			"addrEnd": 585652
 		},
 		{
 			"drumSampleNo": 160,
-			"name": "Sword     "
+			"name": "Sword     ",
+			"addrBegin": 585653,
+			"addrLoop": 588333,
+			"addrEnd": 588333
 		},
 		{
 			"drumSampleNo": 161,
-			"name": "Drop      "
+			"name": "Drop      ",
+			"addrBegin": 448977,
+			"addrLoop": 450028,
+			"addrEnd": 450028
 		},
 		{
 			"drumSampleNo": 162,
-			"name": "BISS      "
+			"name": "BISS      ",
+			"addrBegin": 588334,
+			"addrLoop": 596484,
+			"addrEnd": 596484
 		},
 		{
 			"drumSampleNo": 163,
-			"name": "BOOFN     "
+			"name": "BOOFN     ",
+			"addrBegin": 596485,
+			"addrLoop": 603793,
+			"addrEnd": 603793
 		},
 		{
 			"drumSampleNo": 164,
-			"name": "BOOGETA   "
+			"name": "BOOGETA   ",
+			"addrBegin": 326223,
+			"addrLoop": 326224,
+			"addrEnd": 345680
 		},
 		{
 			"drumSampleNo": 165,
-			"name": "CHLACK    "
+			"name": "CHLACK    ",
+			"addrBegin": 603794,
+			"addrLoop": 617074,
+			"addrEnd": 617074
 		},
 		{
 			"drumSampleNo": 166,
-			"name": "COOSH     "
+			"name": "COOSH     ",
+			"addrBegin": 617075,
+			"addrLoop": 629151,
+			"addrEnd": 629151
 		},
 		{
 			"drumSampleNo": 167,
-			"name": "COUGH     "
+			"name": "COUGH     ",
+			"addrBegin": 629152,
+			"addrLoop": 635690,
+			"addrEnd": 635690
 		},
 		{
 			"drumSampleNo": 168,
-			"name": "ISSH      "
+			"name": "ISSH      ",
+			"addrBegin": 635691,
+			"addrLoop": 648139,
+			"addrEnd": 648139
 		},
 		{
 			"drumSampleNo": 169,
-			"name": "POOM      "
+			"name": "POOM      ",
+			"addrBegin": 648140,
+			"addrLoop": 660587,
+			"addrEnd": 660587
 		},
 		{
 			"drumSampleNo": 170,
-			"name": "Uhhh!     "
+			"name": "Uhhh!     ",
+			"addrBegin": 660588,
+			"addrLoop": 669507,
+			"addrEnd": 669507
 		},
 		{
 			"drumSampleNo": 171,
-			"name": "Samurai!  "
+			"name": "Samurai!  ",
+			"addrBegin": 526919,
+			"addrLoop": 539286,
+			"addrEnd": 539286
 		},
 		{
 			"drumSampleNo": 172,
-			"name": "Growl 1   "
+			"name": "Growl 1   ",
+			"addrBegin": 539287,
+			"addrLoop": 559015,
+			"addrEnd": 559015
 		},
 		{
 			"drumSampleNo": 173,
-			"name": "Monkey 1  "
+			"name": "Monkey 1  ",
+			"addrBegin": 559016,
+			"addrLoop": 563418,
+			"addrEnd": 563418
 		},
 		{
 			"drumSampleNo": 174,
-			"name": "Monkey 2  "
+			"name": "Monkey 2  ",
+			"addrBegin": 563419,
+			"addrLoop": 571165,
+			"addrEnd": 571165
 		},
 		{
 			"drumSampleNo": 175,
-			"name": "Rev.Kick  "
+			"name": "Rev.Kick  ",
+			"addrBegin": 711461,
+			"addrLoop": 717150,
+			"addrEnd": 717150
 		},
 		{
 			"drumSampleNo": 176,
-			"name": "Rev.ConBD "
+			"name": "Rev.ConBD ",
+			"addrBegin": 717151,
+			"addrLoop": 752098,
+			"addrEnd": 752098
 		},
 		{
 			"drumSampleNo": 177,
-			"name": "Rev.Snare1"
+			"name": "Rev.Snare1",
+			"addrBegin": 960162,
+			"addrLoop": 971332,
+			"addrEnd": 971332
 		},
 		{
 			"drumSampleNo": 178,
-			"name": "Rev.Snare2"
+			"name": "Rev.Snare2",
+			"addrBegin": 752099,
+			"addrLoop": 765076,
+			"addrEnd": 765076
 		},
 		{
 			"drumSampleNo": 179,
-			"name": "Rev.Snare3"
+			"name": "Rev.Snare3",
+			"addrBegin": 765077,
+			"addrLoop": 773021,
+			"addrEnd": 773021
 		},
 		{
 			"drumSampleNo": 180,
-			"name": "Rev.Cymbal"
+			"name": "Rev.Cymbal",
+			"addrBegin": 773022,
+			"addrLoop": 795261,
+			"addrEnd": 795261
 		},
 		{
 			"drumSampleNo": 181,
-			"name": "Rev.Tom 1 "
+			"name": "Rev.Tom 1 ",
+			"addrBegin": 795262,
+			"addrLoop": 807367,
+			"addrEnd": 807367
 		},
 		{
 			"drumSampleNo": 182,
-			"name": "Rev.Tom 2 "
+			"name": "Rev.Tom 2 ",
+			"addrBegin": 807368,
+			"addrLoop": 821384,
+			"addrEnd": 821384
 		},
 		{
 			"drumSampleNo": 183,
-			"name": "Kalimba 1 "
+			"name": "Kalimba 1 ",
+			"addrBegin": 597956,
+			"addrLoop": 604213,
+			"addrEnd": 604286
 		},
 		{
 			"drumSampleNo": 184,
-			"name": "Kalimba 2 "
+			"name": "Kalimba 2 ",
+			"addrBegin": 604288,
+			"addrLoop": 607053,
+			"addrEnd": 607271
 		},
 		{
 			"drumSampleNo": 185,
-			"name": "MusicBox 1"
+			"name": "MusicBox 1",
+			"addrBegin": 607273,
+			"addrLoop": 609916,
+			"addrEnd": 609940
 		},
 		{
 			"drumSampleNo": 186,
-			"name": "MusicBox 2"
+			"name": "MusicBox 2",
+			"addrBegin": 609942,
+			"addrLoop": 611801,
+			"addrEnd": 611817
 		},
 		{
 			"drumSampleNo": 187,
-			"name": "Log Drum 1"
+			"name": "Log Drum 1",
+			"addrBegin": 611819,
+			"addrLoop": 614228,
+			"addrEnd": 614470
 		},
 		{
 			"drumSampleNo": 188,
-			"name": "Log Drum 2"
+			"name": "Log Drum 2",
+			"addrBegin": 614472,
+			"addrLoop": 616428,
+			"addrEnd": 616548
 		},
 		{
 			"drumSampleNo": 189,
-			"name": "Log Drum 3"
+			"name": "Log Drum 3",
+			"addrBegin": 616550,
+			"addrLoop": 618251,
+			"addrEnd": 618311
 		},
 		{
 			"drumSampleNo": 190,
-			"name": "Log Drum 4"
+			"name": "Log Drum 4",
+			"addrBegin": 618313,
+			"addrLoop": 619771,
+			"addrEnd": 619801
 		},
 		{
 			"drumSampleNo": 191,
-			"name": "Log Drum 5"
+			"name": "Log Drum 5",
+			"addrBegin": 619803,
+			"addrLoop": 621184,
+			"addrEnd": 621199
 		},
 		{
 			"drumSampleNo": 192,
-			"name": "Marimba 1 "
+			"name": "Marimba 1 ",
+			"addrBegin": 621201,
+			"addrLoop": 624444,
+			"addrEnd": 624602
 		},
 		{
 			"drumSampleNo": 193,
-			"name": "Marimba 2 "
+			"name": "Marimba 2 ",
+			"addrBegin": 624604,
+			"addrLoop": 628087,
+			"addrEnd": 628213
 		},
 		{
 			"drumSampleNo": 194,
-			"name": "Marimba 3 "
+			"name": "Marimba 3 ",
+			"addrBegin": 628215,
+			"addrLoop": 631501,
+			"addrEnd": 631568
 		},
 		{
 			"drumSampleNo": 195,
-			"name": "Marimba 4 "
+			"name": "Marimba 4 ",
+			"addrBegin": 631570,
+			"addrLoop": 634021,
+			"addrEnd": 634063
 		},
 		{
 			"drumSampleNo": 196,
-			"name": "Xylofon 1 "
+			"name": "Xylofon 1 ",
+			"addrBegin": 634562,
+			"addrLoop": 636105,
+			"addrEnd": 636186
 		},
 		{
 			"drumSampleNo": 197,
-			"name": "Xylofon 2 "
+			"name": "Xylofon 2 ",
+			"addrBegin": 636188,
+			"addrLoop": 637501,
+			"addrEnd": 637562
 		},
 		{
 			"drumSampleNo": 198,
-			"name": "Xylofon 3 "
+			"name": "Xylofon 3 ",
+			"addrBegin": 637564,
+			"addrLoop": 638548,
+			"addrEnd": 638598
 		},
 		{
 			"drumSampleNo": 199,
-			"name": "Vibe 1    "
+			"name": "Vibe 1    ",
+			"addrBegin": 642710,
+			"addrLoop": 645163,
+			"addrEnd": 645402
 		},
 		{
 			"drumSampleNo": 200,
-			"name": "Vibe 2    "
+			"name": "Vibe 2    ",
+			"addrBegin": 645404,
+			"addrLoop": 646722,
+			"addrEnd": 646841
 		},
 		{
 			"drumSampleNo": 201,
-			"name": "Vibe 3    "
+			"name": "Vibe 3    ",
+			"addrBegin": 646843,
+			"addrLoop": 647439,
+			"addrEnd": 647499
 		},
 		{
 			"drumSampleNo": 202,
-			"name": "Vibe 4    "
+			"name": "Vibe 4    ",
+			"addrBegin": 647501,
+			"addrLoop": 647891,
+			"addrEnd": 647921
 		},
 		{
 			"drumSampleNo": 203,
-			"name": "Celeste   "
+			"name": "Celeste   ",
+			"addrBegin": 648326,
+			"addrLoop": 654568,
+			"addrEnd": 655606
 		},
 		{
 			"drumSampleNo": 204,
-			"name": "Glocken 1 "
+			"name": "Glocken 1 ",
+			"addrBegin": 657383,
+			"addrLoop": 660237,
+			"addrEnd": 661775
 		},
 		{
 			"drumSampleNo": 205,
-			"name": "Glocken 2 "
+			"name": "Glocken 2 ",
+			"addrBegin": 836594,
+			"addrLoop": 844321,
+			"addrEnd": 844544
 		},
 		{
 			"drumSampleNo": 206,
-			"name": "Glocken 3 "
+			"name": "Glocken 3 ",
+			"addrBegin": 844546,
+			"addrLoop": 850193,
+			"addrEnd": 850304
 		},
 		{
 			"drumSampleNo": 207,
-			"name": "BrightBell"
+			"name": "BrightBell",
+			"addrBegin": 675149,
+			"addrLoop": 676527,
+			"addrEnd": 676573
 		},
 		{
 			"drumSampleNo": 208,
-			"name": "Metal Bell"
+			"name": "Metal Bell",
+			"addrBegin": 685496,
+			"addrLoop": 691181,
+			"addrEnd": 694883
 		},
 		{
 			"drumSampleNo": 209,
-			"name": "Gamelan 1 "
+			"name": "Gamelan 1 ",
+			"addrBegin": 694885,
+			"addrLoop": 701078,
+			"addrEnd": 702130
 		},
 		{
 			"drumSampleNo": 210,
-			"name": "Gamelan 2 "
+			"name": "Gamelan 2 ",
+			"addrBegin": 702132,
+			"addrLoop": 705229,
+			"addrEnd": 705755
 		},
 		{
 			"drumSampleNo": 211,
-			"name": "Pole      "
+			"name": "Pole      ",
+			"addrBegin": 709381,
+			"addrLoop": 714956,
+			"addrEnd": 724428
 		},
 		{
 			"drumSampleNo": 212,
-			"name": "FingCymbal"
+			"name": "FingCymbal",
+			"addrBegin": 855306,
+			"addrLoop": 870864,
+			"addrEnd": 877123
 		},
 		{
 			"drumSampleNo": 213,
-			"name": "Tubular 1 "
+			"name": "Tubular 1 ",
+			"addrBegin": 724430,
+			"addrLoop": 733647,
+			"addrEnd": 737743
 		},
 		{
 			"drumSampleNo": 214,
-			"name": "Tubular 2 "
+			"name": "Tubular 2 ",
+			"addrBegin": 737745,
+			"addrLoop": 742442,
+			"addrEnd": 744498
 		},
 		{
 			"drumSampleNo": 215,
-			"name": "Tubular 3 "
+			"name": "Tubular 3 ",
+			"addrBegin": 751463,
+			"addrLoop": 754384,
+			"addrEnd": 754684
 		},
 		{
 			"drumSampleNo": 216,
-			"name": "ChurchBell"
+			"name": "ChurchBell",
+			"addrBegin": 444230,
+			"addrLoop": 445005,
+			"addrEnd": 500544
 		},
 		{
 			"drumSampleNo": 217,
-			"name": "Gong Hi   "
+			"name": "Gong Hi   ",
+			"addrBegin": 650053,
+			"addrLoop": 660027,
+			"addrEnd": 669891
 		},
 		{
 			"drumSampleNo": 218,
-			"name": "Gong Lo   "
+			"name": "Gong Lo   ",
+			"addrBegin": 650053,
+			"addrLoop": 660027,
+			"addrEnd": 669891
 		},
 		{
 			"drumSampleNo": 219,
-			"name": "MouthHarp1"
+			"name": "MouthHarp1",
+			"addrBegin": 345682,
+			"addrLoop": 353086,
+			"addrEnd": 353305
 		},
 		{
 			"drumSampleNo": 220,
-			"name": "MouthHrp1A"
+			"name": "MouthHrp1A",
+			"addrBegin": 352993,
+			"addrLoop": 353086,
+			"addrEnd": 353305
 		},
 		{
 			"drumSampleNo": 221,
-			"name": "MouthHarp2"
+			"name": "MouthHarp2",
+			"addrBegin": 360623,
+			"addrLoop": 370883,
+			"addrEnd": 371100
 		},
 		{
 			"drumSampleNo": 222,
-			"name": "MouthHrp2A"
+			"name": "MouthHrp2A",
+			"addrBegin": 365512,
+			"addrLoop": 365521,
+			"addrEnd": 365738
 		},
 		{
 			"drumSampleNo": 223,
-			"name": "Spectrum 1"
+			"name": "Spectrum 1",
+			"addrBegin": 668127,
+			"addrLoop": 668723,
+			"addrEnd": 671887
 		},
 		{
 			"drumSampleNo": 224,
-			"name": "Spectrum 2"
+			"name": "Spectrum 2",
+			"addrBegin": 675138,
+			"addrLoop": 675145,
+			"addrEnd": 679333
 		},
 		{
 			"drumSampleNo": 225,
-			"name": "Stadium   "
+			"name": "Stadium   ",
+			"addrBegin": 681108,
+			"addrLoop": 681109,
+			"addrEnd": 705662
 		},
 		{
 			"drumSampleNo": 226,
-			"name": "BrushNoise"
+			"name": "BrushNoise",
+			"addrBegin": 711426,
+			"addrLoop": 711429,
+			"addrEnd": 718010
 		},
 		{
 			"drumSampleNo": 227,
-			"name": "WhiteNoise"
+			"name": "WhiteNoise",
+			"addrBegin": 1018478,
+			"addrLoop": 1019743,
+			"addrEnd": 1027929
 		},
 		{
 			"drumSampleNo": 228,
-			"name": "Jetstar   "
+			"name": "Jetstar   ",
+			"addrBegin": 0,
+			"addrLoop": 23583,
+			"addrEnd": 34955
 		},
 		{
 			"drumSampleNo": 229,
-			"name": "Thing     "
+			"name": "Thing     ",
+			"addrBegin": 157511,
+			"addrLoop": 157512,
+			"addrEnd": 171991
 		},
 		{
 			"drumSampleNo": 230,
-			"name": "Tri Roll  "
+			"name": "Tri Roll  ",
+			"addrBegin": 786045,
+			"addrLoop": 786046,
+			"addrEnd": 815953
 		},
 		{
 			"drumSampleNo": 231,
-			"name": "Clicker 1 "
+			"name": "Clicker 1 ",
+			"addrBegin": 815955,
+			"addrLoop": 815956,
+			"addrEnd": 818206
 		},
 		{
 			"drumSampleNo": 232,
-			"name": "Clicker 2 "
+			"name": "Clicker 2 ",
+			"addrBegin": 818208,
+			"addrLoop": 818209,
+			"addrEnd": 820459
 		},
 		{
 			"drumSampleNo": 233,
-			"name": "Clicker 3 "
+			"name": "Clicker 3 ",
+			"addrBegin": 820461,
+			"addrLoop": 820462,
+			"addrEnd": 822712
 		},
 		{
 			"drumSampleNo": 234,
-			"name": "Cast Roll "
+			"name": "Cast Roll ",
+			"addrBegin": 669893,
+			"addrLoop": 671962,
+			"addrEnd": 678827
 		},
 		{
 			"drumSampleNo": 235,
-			"name": "Lore      "
+			"name": "Lore      ",
+			"addrBegin": 143681,
+			"addrLoop": 143682,
+			"addrEnd": 162233
 		},
 		{
 			"drumSampleNo": 236,
-			"name": "Waterphone"
+			"name": "Waterphone",
+			"addrBegin": 70846,
+			"addrLoop": 73240,
+			"addrEnd": 86415
 		},
 		{
 			"drumSampleNo": 237,
-			"name": "Crickets  "
+			"name": "Crickets  ",
+			"addrBegin": 822714,
+			"addrLoop": 822715,
+			"addrEnd": 839099
 		},
 		{
 			"drumSampleNo": 238,
-			"name": "Tron Up   "
+			"name": "Tron Up   ",
+			"addrBegin": 182598,
+			"addrLoop": 184244,
+			"addrEnd": 207934
 		},
 		{
 			"drumSampleNo": 239,
-			"name": "Flute FX  "
+			"name": "Flute FX  ",
+			"addrBegin": 207936,
+			"addrLoop": 209586,
+			"addrEnd": 219803
 		},
 		{
 			"drumSampleNo": 240,
-			"name": "Flutter   "
+			"name": "Flutter   ",
+			"addrBegin": 219805,
+			"addrLoop": 221796,
+			"addrEnd": 228304
 		},
 		{
 			"drumSampleNo": 241,
-			"name": "Harp Up   "
+			"name": "Harp Up   ",
+			"addrBegin": 228306,
+			"addrLoop": 243121,
+			"addrEnd": 257965
 		},
 		{
 			"drumSampleNo": 242,
-			"name": "Jung Gliss"
+			"name": "Jung Gliss",
+			"addrBegin": 257967,
+			"addrLoop": 276996,
+			"addrEnd": 296739
 		},
 		{
 			"drumSampleNo": 243,
-			"name": "MalletLoop"
+			"name": "MalletLoop",
+			"addrBegin": 296741,
+			"addrLoop": 296742,
+			"addrEnd": 322943
 		},
 		{
 			"drumSampleNo": 244,
-			"name": "Rain      "
+			"name": "Rain      ",
+			"addrBegin": 572578,
+			"addrLoop": 572910,
+			"addrEnd": 608491
 		},
 		{
 			"drumSampleNo": 245,
-			"name": "Thunder   "
+			"name": "Thunder   ",
+			"addrBegin": 608493,
+			"addrLoop": 736937,
+			"addrEnd": 736937
 		},
 		{
 			"drumSampleNo": 246,
-			"name": "Wind      "
+			"name": "Wind      ",
+			"addrBegin": 1004523,
+			"addrLoop": 1022539,
+			"addrEnd": 1046558
 		},
 		{
 			"drumSampleNo": 247,
-			"name": "Seashore  "
+			"name": "Seashore  ",
+			"addrBegin": 736938,
+			"addrLoop": 881916,
+			"addrEnd": 881916
 		},
 		{
 			"drumSampleNo": 248,
-			"name": "Seashore V"
+			"name": "Seashore V",
+			"addrBegin": 785734,
+			"addrLoop": 881916,
+			"addrEnd": 881916
 		},
 		{
 			"drumSampleNo": 249,
-			"name": "Stream    "
+			"name": "Stream    ",
+			"addrBegin": 881917,
+			"addrLoop": 896224,
+			"addrEnd": 928795
 		},
 		{
 			"drumSampleNo": 250,
-			"name": "Bubble    "
+			"name": "Bubble    ",
+			"addrBegin": 928797,
+			"addrLoop": 939492,
+			"addrEnd": 966602
 		},
 		{
 			"drumSampleNo": 251,
-			"name": "Bird 1    "
+			"name": "Bird 1    ",
+			"addrBegin": 544358,
+			"addrLoop": 544359,
+			"addrEnd": 572576
 		},
 		{
 			"drumSampleNo": 252,
-			"name": "Bird 2    "
+			"name": "Bird 2    ",
+			"addrBegin": 993687,
+			"addrLoop": 996723,
+			"addrEnd": 996723
 		},
 		{
 			"drumSampleNo": 253,
-			"name": "Kitty     "
+			"name": "Kitty     ",
+			"addrBegin": 966604,
+			"addrLoop": 993686,
+			"addrEnd": 993686
 		},
 		{
 			"drumSampleNo": 254,
-			"name": "Dog       "
+			"name": "Dog       ",
+			"addrBegin": 494767,
+			"addrLoop": 498660,
+			"addrEnd": 498660
 		},
 		{
 			"drumSampleNo": 255,
-			"name": "Growl 2   "
+			"name": "Growl 2   ",
+			"addrBegin": 996724,
+			"addrLoop": 1020919,
+			"addrEnd": 1020919
 		},
 		{
 			"drumSampleNo": 256,
-			"name": "Gallop    "
+			"name": "Gallop    ",
+			"addrBegin": 498661,
+			"addrLoop": 507536,
+			"addrEnd": 544356
 		},
 		{
 			"drumSampleNo": 257,
-			"name": "Laughing  "
+			"name": "Laughing  ",
+			"addrBegin": 0,
+			"addrLoop": 31835,
+			"addrEnd": 31835
 		},
 		{
 			"drumSampleNo": 258,
-			"name": "Laughing V"
+			"name": "Laughing V",
+			"addrBegin": 8731,
+			"addrLoop": 31835,
+			"addrEnd": 31835
 		},
 		{
 			"drumSampleNo": 259,
-			"name": "Scream    "
+			"name": "Scream    ",
+			"addrBegin": 31836,
+			"addrLoop": 53994,
+			"addrEnd": 53994
 		},
 		{
 			"drumSampleNo": 260,
-			"name": "Punch     "
+			"name": "Punch     ",
+			"addrBegin": 1039306,
+			"addrLoop": 1048553,
+			"addrEnd": 1048553
 		},
 		{
 			"drumSampleNo": 261,
-			"name": "Hart Beat "
+			"name": "Hart Beat ",
+			"addrBegin": 272799,
+			"addrLoop": 289078,
+			"addrEnd": 289078
 		},
 		{
 			"drumSampleNo": 262,
-			"name": "Footstep 1"
+			"name": "Footstep 1",
+			"addrBegin": 19057,
+			"addrLoop": 23062,
+			"addrEnd": 23062
 		},
 		{
 			"drumSampleNo": 263,
-			"name": "Footstep 2"
+			"name": "Footstep 2",
+			"addrBegin": 73876,
+			"addrLoop": 79047,
+			"addrEnd": 79047
 		},
 		{
 			"drumSampleNo": 264,
-			"name": "Applause 1"
+			"name": "Applause 1",
+			"addrBegin": 79048,
+			"addrLoop": 88661,
+			"addrEnd": 113847
 		},
 		{
 			"drumSampleNo": 265,
-			"name": "Applause 2"
+			"name": "Applause 2",
+			"addrBegin": 1030883,
+			"addrLoop": 1030884,
+			"addrEnd": 1041959
 		},
 		{
 			"drumSampleNo": 266,
-			"name": "Telephone1"
+			"name": "Telephone1",
+			"addrBegin": 1020920,
+			"addrLoop": 1026600,
+			"addrEnd": 1029760
 		},
 		{
 			"drumSampleNo": 267,
-			"name": "Telephone2"
+			"name": "Telephone2",
+			"addrBegin": 270310,
+			"addrLoop": 270340,
+			"addrEnd": 271712
 		},
 		{
 			"drumSampleNo": 268,
-			"name": "Door Creak"
+			"name": "Door Creak",
+			"addrBegin": 113849,
+			"addrLoop": 144328,
+			"addrEnd": 144328
 		},
 		{
 			"drumSampleNo": 269,
-			"name": "Door Slam "
+			"name": "Door Slam ",
+			"addrBegin": 144329,
+			"addrLoop": 157602,
+			"addrEnd": 157602
 		},
 		{
 			"drumSampleNo": 270,
-			"name": "Car Engine"
+			"name": "Car Engine",
+			"addrBegin": 1007880,
+			"addrLoop": 1038778,
+			"addrEnd": 1048437
 		},
 		{
 			"drumSampleNo": 271,
-			"name": "Car Stop  "
+			"name": "Car Stop  ",
+			"addrBegin": 64125,
+			"addrLoop": 87895,
+			"addrEnd": 87895
 		},
 		{
 			"drumSampleNo": 272,
-			"name": "Car Pass  "
+			"name": "Car Pass  ",
+			"addrBegin": 181351,
+			"addrLoop": 240043,
+			"addrEnd": 240043
 		},
 		{
 			"drumSampleNo": 273,
-			"name": "Car Crash "
+			"name": "Car Crash ",
+			"addrBegin": 240044,
+			"addrLoop": 276375,
+			"addrEnd": 276375
 		},
 		{
 			"drumSampleNo": 274,
-			"name": "GlassBreak"
+			"name": "GlassBreak",
+			"addrBegin": 435535,
+			"addrLoop": 448976,
+			"addrEnd": 448976
 		},
 		{
 			"drumSampleNo": 275,
-			"name": "Siren     "
+			"name": "Siren     ",
+			"addrBegin": 276376,
+			"addrLoop": 277404,
+			"addrEnd": 296357
 		},
 		{
 			"drumSampleNo": 276,
-			"name": "Train     "
+			"name": "Train     ",
+			"addrBegin": 296359,
+			"addrLoop": 308844,
+			"addrEnd": 345640
 		},
 		{
 			"drumSampleNo": 277,
-			"name": "Helicopter"
+			"name": "Helicopter",
+			"addrBegin": 345642,
+			"addrLoop": 349833,
+			"addrEnd": 379794
 		},
 		{
 			"drumSampleNo": 278,
-			"name": "Gun Shot 1"
+			"name": "Gun Shot 1",
+			"addrBegin": 193564,
+			"addrLoop": 204541,
+			"addrEnd": 204541
 		},
 		{
 			"drumSampleNo": 279,
-			"name": "Gun Shot 2"
+			"name": "Gun Shot 2",
+			"addrBegin": 379796,
+			"addrLoop": 403952,
+			"addrEnd": 403952
 		},
 		{
 			"drumSampleNo": 280,
-			"name": "MachineGun"
+			"name": "MachineGun",
+			"addrBegin": 403953,
+			"addrLoop": 409274,
+			"addrEnd": 417018
 		},
 		{
 			"drumSampleNo": 281,
-			"name": "Laser Gun "
+			"name": "Laser Gun ",
+			"addrBegin": 417020,
+			"addrLoop": 427846,
+			"addrEnd": 427846
 		},
 		{
 			"drumSampleNo": 282,
-			"name": "Explosion "
+			"name": "Explosion ",
+			"addrBegin": 427847,
+			"addrLoop": 494766,
+			"addrEnd": 494766
 		},
 		{
 			"drumSampleNo": 283,
-			"name": "HandDrill "
+			"name": "HandDrill ",
+			"addrBegin": 479979,
+			"addrLoop": 517792,
+			"addrEnd": 517800
 		},
 		{
 			"drumSampleNo": 284,
-			"name": "Metronome1"
+			"name": "Metronome1",
+			"addrBegin": 687137,
+			"addrLoop": 687365,
+			"addrEnd": 687365
 		},
 		{
 			"drumSampleNo": 285,
-			"name": "Metronome2"
+			"name": "Metronome2",
+			"addrBegin": 687366,
+			"addrLoop": 687632,
+			"addrEnd": 687632
 		}
 	],
 	"waves": [
