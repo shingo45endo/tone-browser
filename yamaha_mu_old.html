@@ -41,7 +41,7 @@ const templateToneMapList = (json) => html`
 						<td class="text-end">${toneMap.bankM}</td>
 						<td class="text-end">${toneMap.bankL}</td>
 						<td class="text-end">${toneMap.toneNo}</td>
-						<td class="font-monospace"><a href="${toneMap.tone.$ref}">${toneMap.tone.name}</a></td>
+						<td class="font-monospace"><a href="${toneMap.toneRef.$ref}">${toneMap.toneRef.name}</a></td>
 					</tr>
 				`)}
 				</tbody>
@@ -69,9 +69,9 @@ const templateToneList = (json) => html`
 				<td class="text-end">${tone.toneNo}</td>
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
 				<td class="text-end">${tone.voices[0].waveNo}</td>
-				<td class="font-monospace">${tone.voices[0].wave.name}</td>
+				<td class="font-monospace">${tone.voices[0].waveRef.name}</td>
 				<td class="text-end">${tone.voices[1]?.waveNo ?? ''}</td>
-				<td class="font-monospace">${tone.voices[1]?.wave.name ?? ''}</td>
+				<td class="font-monospace">${tone.voices[1]?.waveRef.name ?? ''}</td>
 			</tr>
 		`)}
 		</tbody>
@@ -81,7 +81,7 @@ const templateToneList = (json) => html`
 const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
-			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="font-monospace h4">${voice.wave.name}</span></h3>
+			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="font-monospace h4">${voice.waveRef.name}</span></h3>
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>

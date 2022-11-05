@@ -13,10 +13,10 @@ import {html} from 'https://unpkg.com/lit-html?module';
 import {makeDomLoadedHandler} from './common.js';
 import {formatters as fmt} from './formatters.js';
 
-function getRef(program) {
-	for (const key of ['tone', 'tone4', 'combi']) {
-		if (program[key]?.$ref) {
-			return program[key].$ref;
+function getRef(toneMap) {
+	for (const key of ['toneRef', 'combiRef']) {
+		if (toneMap[key]?.$ref) {
+			return toneMap[key].$ref;
 		}
 	}
 	console.assert(false);
@@ -41,7 +41,7 @@ const templateToneMapList = (json) => html`
 				<td class="text-end">${toneMap.prog}</td>
 				<td class="text-end">${toneMap.bankM}</td>
 				<td class="text-end">${getRef(toneMap).replace(/^.*\//u, '')}</td>
-				<td class="font-monospace"><a href="${getRef(toneMap)}">${(toneMap.tone ?? toneMap.tone4 ?? toneMap.combi).name}</a></td>
+				<td class="font-monospace"><a href="${getRef(toneMap)}">${(toneMap.toneRef ?? toneMap.combiRef).name}</a></td>
 			</tr>
 		`)}
 		</tbody>
@@ -64,7 +64,7 @@ const templateDrumMapList = (json) => html`
 				<td class="text-end">${drumMap.bankL}</td>
 				<td class="text-end">${drumMap.prog}</td>
 				<td class="text-end">${drumMap.drumSetNo}</td>
-				<td class="font-monospace"><a href="${drumMap.drumSet.$ref}">${drumMap.drumSet.name}</a></td>
+				<td class="font-monospace"><a href="${drumMap.drumSetRef.$ref}">${drumMap.drumSetRef.name}</a></td>
 			</tr>
 		`)}
 		</tbody>
@@ -89,9 +89,9 @@ const templateToneList = (json) => html`
 				<td class="text-end">${tone.toneNo}</td>
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
 				<td class="text-end">${tone.voices[0].waveNo}</td>
-				<td class="font-monospace">${tone.voices[0].wave.name}</td>
+				<td class="font-monospace">${tone.voices[0].waveRef.name}</td>
 				<td class="text-end">${tone.voices[1]?.waveNo ?? ''}</td>
-				<td class="font-monospace">${tone.voices[1]?.wave.name ?? ''}</td>
+				<td class="font-monospace">${tone.voices[1]?.waveRef.name ?? ''}</td>
 			</tr>
 		`)}
 		</tbody>
@@ -120,13 +120,13 @@ const templateToneList4 = (json) => html`
 				<td class="text-end">${tone.toneNo}</td>
 				<td class="font-monospace"><a href="#/tones4/${tone.toneNo}">${tone.name}</a></td>
 				<td class="text-end">${tone.voices[0].waveNo}</td>
-				<td class="font-monospace">${tone.voices[0].wave.name}</td>
+				<td class="font-monospace">${tone.voices[0].waveRef.name}</td>
 				<td class="text-end">${tone.voices[1].waveNo}</td>
-				<td class="font-monospace">${tone.voices[1].wave.name}</td>
+				<td class="font-monospace">${tone.voices[1].waveRef.name}</td>
 				<td class="text-end">${tone.voices[2].waveNo}</td>
-				<td class="font-monospace">${tone.voices[2].wave.name}</td>
+				<td class="font-monospace">${tone.voices[2].waveRef.name}</td>
 				<td class="text-end">${tone.voices[3].waveNo}</td>
-				<td class="font-monospace">${tone.voices[3].wave.name}</td>
+				<td class="font-monospace">${tone.voices[3].waveRef.name}</td>
 			</tr>
 		`)}
 		</tbody>
@@ -151,9 +151,9 @@ const templateCombiList = (json) => html`
 				<td class="text-end">${combi.combiNo}</td>
 				<td class="font-monospace"><a href="#/combis/${combi.combiNo}">${combi.name}</a></td>
 				<td class="text-end">${combi.toneSlots[0].toneNo}</td>
-				<td class="font-monospace"><a href="${combi.toneSlots[0].tone.$ref}">${json.tones[combi.toneSlots[0].toneNo].name}</a></td>
+				<td class="font-monospace"><a href="${combi.toneSlots[0].toneRef.$ref}">${combi.toneSlots[0].toneRef.name}</a></td>
 				<td class="text-end">${combi.toneSlots[1].toneNo}</td>
-				<td class="font-monospace"><a href="${combi.toneSlots[1].tone.$ref}">${json.tones[combi.toneSlots[1].toneNo].name}</a></td>
+				<td class="font-monospace"><a href="${combi.toneSlots[1].toneRef.$ref}">${combi.toneSlots[0].toneRef.name}</a></td>
 			</tr>
 		`)}
 		</tbody>
@@ -248,7 +248,7 @@ const templateSampleList = (json) => html`
 const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
-			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="font-monospace h4">${voice.wave.name}</span></h3>
+			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="font-monospace h4">${voice.waveRef.name}</span></h3>
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
@@ -463,10 +463,10 @@ const templateCombi = (combi, json) => html`
 	</div>
 	<ul class="nav nav-tabs" role="tablist">
 		<li class="nav-item" role="presentation">
-			<button id="my-tab-tone0" class="nav-item nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone0">${json.tones[combi.toneSlots[0].toneNo].name}</button>
+			<button id="my-tab-tone0" class="nav-item nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone0">${combi.toneSlots[0].toneRef.name}</button>
 		</li>
 		<li class="nav-item" role="presentation">
-			<button id="my-tab-tone1" class="nav-item nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone1">${json.tones[combi.toneSlots[1].toneNo].name}</button>
+			<button id="my-tab-tone1" class="nav-item nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone1">${combi.toneSlots[1].toneRef.name}</button>
 		</li>
 	</ul>
 	<div class="tab-content mt-2">
@@ -514,7 +514,7 @@ const templateDrumSet = (drumSet, _) => html`
 					<td class="text-end text-muted">${noteNo}</td>
 					<td class="font-monospace">${note.name}</td>
 					<td class="text-end">${note.toneNo}</td>
-					<td class="font-monospace"><a href="${note.tone.$ref}">${note.tone.name}</a></td>
+					<td class="font-monospace"><a href="${note.toneRef.$ref}">${note.toneRef.name}</a></td>
 					<td class="text-end">${note.level}</td>
 					<td class="text-end">${note.pitch}</td>
 					<td class="text-end">${note.group}</td>

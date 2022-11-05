@@ -102,7 +102,7 @@ const templateDrumSetList = (json) => html`
 				<td class="text-end">${fmt.noteNameR(noteNo)}</td>
 				<td class="text-end text-muted">${noteNo}</td>
 				<td class="text-end font-monospace">${timbreNo(note.toneNo)}</td>
-				<td class="font-monospace"><a href="${note.tone.$ref}">${note.tone.name}</a></td>
+				<td class="font-monospace"><a href="${note.toneRef.$ref}">${note.toneRef.name}</a></td>
 				<td class="text-end">${note.level}</td>
 				<td class="text-end">${panpot(note.panpot)}</td>
 				<td class="text-end">${fmt.onOff(note.isReverbOn)}</td>

@@ -27,7 +27,7 @@ const templateDrumMapList = (json) => html`
 			<tr>
 				<td class="text-end">${drumMap.prog}</td>
 				<td class="text-end">${drumMap.toneNo}</td>
-				<td class="font-monospace"><a href="${drumMap.tone.$ref}">${drumMap.tone.name}</a></td>
+				<td class="font-monospace"><a href="${drumMap.toneRef.$ref}">${drumMap.toneRef.name}</a></td>
 			</tr>
 		`)}
 		</tbody>
@@ -138,7 +138,7 @@ const templateVoice = (voice, _, i) => html`
 							<td class="text-end">${fmt.noteNameR(noteNo)}</td>
 							<td class="text-end text-muted">${noteNo}</td>
 							<td class="text-end">${sampleSlot.sampleNo}</td>
-							<td class="font-monospace">${sampleSlot.sample.name}</td>
+							<td class="font-monospace">${sampleSlot.sampleRef.name}</td>
 						</tr>
 					`)}
 					</tbody>
