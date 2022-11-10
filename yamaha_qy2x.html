@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tone-browser</title>
+<link href="./common.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="module">
+/* global bootstrap */
+import {html} from 'https://unpkg.com/lit-html?module';
+import {makeDomLoadedHandler} from './common.js';
+import {formatters as fmt} from './formatters.js';
+
+function nibbleToUint8(nibbleH, nibbleL) {
+	return (new Uint8Array([((nibbleH & 0x0f) << 4) | (nibbleL & 0x0f)]))[0];
+}
+
+function panpot(value) {
+	const pan = (value < 8) ? value : value - 16;
+	return `${'L±R'[Math.sign(pan) + 1]}${Math.abs(pan)}`;
+}
+
+const templateToneMapList = (json) => html`
+	<ul class="nav nav-tabs" role="tablist">
+	${Object.keys(json).filter((key) => key.startsWith('toneMaps')).map((key, i) => html`
+		<li class="nav-item" role="presentation">
+			<button id="my-tab-${key}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('toneMaps', '')}</button>
+		</li>
+	`)}
+	</ul>
+	<div class="tab-content mt-2">
+	${Object.keys(json).filter((key) => key.startsWith('toneMaps')).map((key, i) => html`
+		<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
+			<table class="table table-sm table-hover w-auto">
+				<thead>
+					<tr>
+						<th class="text-end">Prog#</th>
+						<th class="text-end ps-4">No.</th>
+						<th>Voice</th>
+					</tr>
+				</thead>
+				<tbody>
+				${json[key].map((toneMap) => html`
+					<tr>
+						<td class="text-end">${toneMap.prog}</td>
+						<td class="text-end">${toneMap.toneNo}</td>
+						<td class="font-monospace"><a href="${toneMap.toneRef.$ref}">${toneMap.toneRef.name}</a></td>
+					</tr>
+				`)}
+				</tbody>
+			</table>
+		</div>
+	`)}
+	</div>
+`;
+
+const templateDrumMapList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">Prog#</th>
+				<th class="text-end ps-4">No.</th>
+				<th>Drum Set</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumMaps.map((drumMap) => html`
+			<tr>
+				<td class="text-end">${drumMap.prog}</td>
+				<td class="text-end">${drumMap.drumSetNo}</td>
+				<td class="font-monospace"><a href="${drumMap.drumSetRef.$ref}">${drumMap.drumSetRef.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateToneList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">No.</th>
+				<th>Voice</th>
+				<th class="text-end ps-4">No.</th>
+				<th>Wave 1</th>
+				<th class="text-end ps-4">No.</th>
+				<th>Wave 2</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.tones.map((tone) => html`
+			<tr>
+				<td class="text-end">${tone.toneNo}</td>
+				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
+				<td class="text-end">${tone.voices[0].waveNo}</td>
+				<td class="font-monospace">${tone.voices[0].waveRef.name}</td>
+				<td class="text-end">${tone.voices[1]?.waveNo ?? ''}</td>
+				<td class="font-monospace">${tone.voices[1]?.waveRef.name ?? ''}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateWaveList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">No.</th>
+				<th>Wave</th>
+				<th>Sample Data</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.waves.map((wave) => html`
+			<tr>
+				<td class="text-end">${wave.waveNo}</td>
+				<td class="font-monospace">${wave.name}</td>
+				<td>
+					<table class="table table-sm table-borderless w-auto">
+						<thead>
+							<tr>
+								<th>Low</th>
+								<th>No.</th>
+								<th>High</th>
+								<th>No.</th>
+								<th>Sample No.</th>
+							</tr>
+						<thead>
+						<tbody>
+						${wave.sampleSlots.map((sampleSlot) => html`
+							<tr>
+								<td class="text-end">${fmt.noteNameR(sampleSlot.low)}</td>
+								<td class="text-end text-muted">${sampleSlot.low}</td>
+								<td class="text-end">${fmt.noteNameR(sampleSlot.high)}</td>
+								<td class="text-end text-muted">${sampleSlot.high}</td>
+								<td class="text-end">${sampleSlot.sampleNo}</td>
+							</tr>
+						`)}
+						<tbody>
+					</table>
+				</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateDrumWaveList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">No.</th>
+				<th>Drum Wave</th>
+				<th class="text-end">Sample No.</th>
+				<th class="text-end ps-4">b02</th>
+				<th class="text-end">b03</th>
+				<th class="text-end">b04</th>
+				<th class="text-end">b05</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumWaves.map((drumWave) => html`
+			<tr>
+				<td class="text-end">${drumWave.drumWaveNo}</td>
+				<td class="font-monospace">${drumWave.name}</td>
+				<td class="text-end">${drumWave.sampleNo}</td>
+				<td class="text-end">${(new DataView((new Uint8Array([drumWave.bytes[2]])).buffer)).getInt8()}</td>
+				<td class="text-end">${drumWave.bytes[3]}</td>
+				<td class="text-end">${drumWave.bytes[4]}</td>
+				<td class="text-end">${drumWave.bytes[5]}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+/*
+const templateSampleList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end ps-4">No.</th>
+				<th>Sample</th>
+				<th class="text-end">Start Addr.</th>
+				<th class="text-end">Loop Addr.</th>
+				<th class="text-end">End Addr.</th>
+				<th class="text-end">S-E Len.</th>
+				<th class="text-end">S-L Len.</th>
+				<th class="text-end">L-E Len.</th>
+				<th class="text-end">AR</th>
+				<th class="text-end">D1</th>
+				<th class="text-end">DL</th>
+				<th class="text-end">D2</th>
+				<th class="text-end">RR</th>
+				<th class="text-end">Rate<br>Cor.</th>
+				<th class="text-end">LFO</th>
+				<th class="text-end">Vib.</th>
+				<th class="text-end">AM</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.samples.map((sample) => html`
+			<tr>
+				<td class="text-end">${sample.sampleNo}</td>
+				<td class="font-monospace">${sample.name}</td>
+				<td class="text-end font-monospace">${sample.addrBegin.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${sample.addrLoop.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${sample.addrEnd.toString(16).padStart(6, '0')}</td>
+				<td class="text-end">${sample.addrEnd - sample.addrBegin}</td>
+				<td class="text-end">${sample.addrLoop - sample.addrBegin}</td>
+				<td class="text-end">${sample.addrEnd - sample.addrLoop}</td>
+				<td class="text-end">${sample.bytes[8] >> 4}</td>
+				<td class="text-end">${sample.bytes[8] & 0x0f}</td>
+				<td class="text-end">${sample.bytes[9] >> 4}</td>
+				<td class="text-end">${sample.bytes[9] & 0x0f}</td>
+				<td class="text-end">${sample.bytes[10] & 0x0f}</td>
+				<td class="text-end">${sample.bytes[10] >> 4}</td>
+				<td class="text-end">${(sample.bytes[7] >> 3) & 0x07}</td>
+				<td class="text-end">${sample.bytes[7] & 0x07}</td>
+				<td class="text-end">${sample.bytes[11] & 0x07}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+*/
+
+const templateDrumSetList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end ps-4">No.</th>
+				<th>Drum Kit</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumSets.map((drumSet) => html`
+			<tr>
+				<td class="text-end">${drumSet.drumSetNo}</td>
+				<td class="font-monospace"><a href="#/drumSets/${drumSet.drumSetNo}">${drumSet.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateVoice = (voice, _) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h3 class="h6 mb-0">Wave No.${voice.waveNo}: <span class="font-monospace h4">${voice.waveRef.name}</span></h3>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Note Shift</th>
+							<td class="text-end">${fmt.sint7offset6(voice.pitch)}</td>
+						</tr>
+						<tr>
+							<th>Detune</th>
+							<td class="text-end">${fmt.sint7offset6(voice.detune)}</td>
+						</tr>
+						<tr>
+							<th>Pitch Scaling Rate</th>
+							<td class="text-end">${fmt.pitchScalingRateMU(voice.pitchRateScaling)}</td>
+						</tr>
+						<tr>
+							<th>Pitch Scaling Center</th>
+							<td class="text-end">${fmt.noteNameY(voice.pitchRateScalingNote)}</td>
+						</tr>
+						<tr>
+							<th>Element Volume</th>
+							<td class="text-end">${voice.level}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<!-- AEG -->
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<th>AEG Env.</th>
+							<th class="text-end">A</th>
+							<th class="text-end">R</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Rate</th>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[2])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[3])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<th>Level Scaling</th>
+							<th class="text-end">1</th>
+							<th class="text-end">2</th>
+							<th class="text-end">3</th>
+							<th class="text-end">4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Break Point</th>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[4])}</td>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[5])}</td>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[6])}</td>
+							<td class="text-end">${fmt.noteNameY(voice.bytes[7])}</td>
+						</tr>
+						<tr>
+							<th>Offset</th>
+							<td class="text-end">${nibbleToUint8(voice.bytes[8], voice.bytes[9]) - 128}</td>
+							<td class="text-end">${nibbleToUint8(voice.bytes[10], voice.bytes[11]) - 128}</td>
+							<td class="text-end">${nibbleToUint8(voice.bytes[12], voice.bytes[13]) - 128}</td>
+							<td class="text-end">${nibbleToUint8(voice.bytes[14], voice.bytes[15]) - 128}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Panpot</th>
+							<td class="text-end">${panpot(voice.bytes[16])}</td>
+						</tr>
+						<tr>
+							<th>Velocity Curve</th>
+							<td class="text-end">${voice.bytes[20]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+`;
+
+const templateTone = (tone, json) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Voice No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Portamento Time</th>
+							<td class="text-end">${tone.commonBytes[5]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Mod LFO Pitch Depth</th>
+							<td class="text-end">${tone.commonBytes[6]}</td>
+						</tr>
+						<tr>
+							<th>CAf LFO Pitch Depth</th>
+							<td class="text-end">${tone.commonBytes[8]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	${tone.voices.map((voice) => templateVoice(voice, json))}
+`;
+
+const templateDrumSet = (drumSet, _) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Drum Kit No.${drumSet.drumSetNo}: <span class="font-monospace h4">${drumSet.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 py-0">
+		</div>
+	</div>
+	<div class="d-flex flex-row gap-3 px-3">
+		<table class="table table-sm table-hover w-auto">
+			<thead>
+				<tr>
+					<th class="text-end">Note</th>
+					<th class="text-end">No.</th>
+					<th>Name</th>
+					<th class="text-end">No.</th>
+					<th>Drum Wave Name</th>
+				</tr>
+			</thead>
+			<tbody>
+			${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map(([noteNo, note]) => html`
+				<tr>
+					<td class="text-end">${fmt.noteNameY(noteNo)}</td>
+					<td class="text-end text-muted">${noteNo}</td>
+					<td class="font-monospace">${note.name}</td>
+					<td class="text-end">${note.drumWaveNo}</td>
+					<td class="font-monospace">${note.drumWaveRef.name}</td>
+				</tr>
+			`)}
+			</tbody>
+		</table>
+	</div>
+`;
+
+window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
+	lists: [
+		{id: 'toneMaps',  label: 'Tone Map',   renderer: templateToneMapList},
+		{id: 'drumMaps',  label: 'Drum Map',   renderer: templateDrumMapList},
+		{id: 'tones',     label: 'Voices',     renderer: templateToneList},
+		{id: 'waves',     label: 'Waves',      renderer: templateWaveList},
+		{id: 'drumWaves', label: 'Drum Waves', renderer: templateDrumWaveList},
+//		{id: 'samples',   label: 'Samples',    renderer: templateSampleList},
+		{id: 'drumSets',  label: 'Drum Kits',  renderer: templateDrumSetList},
+	],
+	details: {
+		tones:    templateTone,
+		drumSets: templateDrumSet,
+	},
+}, bootstrap.Modal.getOrCreateInstance.bind(bootstrap.Modal)));
+</script>
+<body>
+</body>
+</html>
