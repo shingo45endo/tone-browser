@@ -13,12 +13,12 @@ import {html} from 'https://unpkg.com/lit-html?module';
 import {makeDomLoadedHandler} from './common.js';
 import {formatters as fmt} from './formatters.js';
 
-function nibbleToSint8(nibbleH, nibbleL) {
-	return (new Int8Array([((nibbleH & 0x0f) << 4) | (nibbleL & 0x0f)]))[0];
+function nibbleToUint8(nibbleH, nibbleL) {
+	return (new Uint8Array([((nibbleH & 0x0f) << 4) | (nibbleL & 0x0f)]))[0];
 }
 
 function panpot(value) {
-	const pan = (value < 8) ? value : 15 - value;
+	const pan = (value < 8) ? value : value - 16;
 	return `${'L±R'[Math.sign(pan) + 1]}${Math.abs(pan)}`;
 }
 
@@ -371,10 +371,10 @@ const templateVoice = (voice, _) => html`
 						</tr>
 						<tr>
 							<th>Offset</th>
-							<td class="text-end">${nibbleToSint8(voice.bytes[8], voice.bytes[9])}</td>
-							<td class="text-end">${nibbleToSint8(voice.bytes[10], voice.bytes[11])}</td>
-							<td class="text-end">${nibbleToSint8(voice.bytes[12], voice.bytes[13])}</td>
-							<td class="text-end">${nibbleToSint8(voice.bytes[14], voice.bytes[15])}</td>
+							<td class="text-end">${nibbleToUint8(voice.bytes[8], voice.bytes[9]) - 128}</td>
+							<td class="text-end">${nibbleToUint8(voice.bytes[10], voice.bytes[11]) - 128}</td>
+							<td class="text-end">${nibbleToUint8(voice.bytes[12], voice.bytes[13]) - 128}</td>
+							<td class="text-end">${nibbleToUint8(voice.bytes[14], voice.bytes[15]) - 128}</td>
 						</tr>
 					</tbody>
 				</table>
