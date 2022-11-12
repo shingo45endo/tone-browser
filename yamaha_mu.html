@@ -51,6 +51,42 @@ const templateToneMapList = (json) => html`
 	</div>
 `;
 
+const templateDrumMapList = (json) => html`
+<ul class="nav nav-tabs" role="tablist">
+	${Object.keys(json).filter((key) => key.startsWith('drumMaps')).map((key, i) => html`
+		<li class="nav-item" role="presentation">
+			<button id="my-tab-${key}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('drumMaps', '')}</button>
+		</li>
+	`)}
+	</ul>
+	<div class="tab-content mt-2">
+	${Object.keys(json).filter((key) => key.startsWith('drumMaps')).map((key, i) => html`
+		<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
+			<table class="table table-sm table-hover w-auto">
+				<thead>
+					<tr>
+						<th class="text-end">BankM</th>
+						<th class="text-end">Prog#</th>
+						<th class="text-end ps-4">No.</th>
+						<th>Drum Kit</th>
+					</tr>
+				</thead>
+				<tbody>
+				${json[key].map((drumMap) => html`
+					<tr>
+						<td class="text-end">${drumMap.bankM}</td>
+						<td class="text-end">${drumMap.prog}</td>
+						<td class="text-end">${drumMap.drumSetNo}</td>
+						<td class="font-monospace"><a href="${drumMap.drumSetRef.$ref}">${drumMap.drumSetRef.name}</a></td>
+					</tr>
+				`)}
+				</tbody>
+			</table>
+		</div>
+	`)}
+	</div>
+`;
+
 const templateToneList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
@@ -588,6 +624,7 @@ const templateDrumSet = (drumSet, _) => html`
 window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	lists: [
 		{id: 'toneMaps', label: 'Tone Map',  renderer: templateToneMapList},
+		{id: 'drumMaps', label: 'Drum Map',  renderer: templateDrumMapList},
 		{id: 'tones',    label: 'Voices',    renderer: templateToneList},
 		{id: 'drumSets', label: 'Drum Kits', renderer: templateDrumSetList},
 	],
