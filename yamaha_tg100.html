@@ -36,8 +36,8 @@ const templateToneMapList = (json) => html`
 			<table class="table table-sm table-hover w-auto">
 				<thead>
 					<tr>
-						<th class="text-end">Prog#</th>
 						<th class="text-end">BankM</th>
+						<th class="text-end">Prog#</th>
 						<th class="text-end ps-4">No.</th>
 						<th>Voice</th>
 					</tr>
@@ -45,8 +45,8 @@ const templateToneMapList = (json) => html`
 				<tbody>
 				${json[key].map((toneMap) => html`
 					<tr>
-						<td class="text-end">${toneMap.prog}</td>
 						<td class="text-end">${toneMap.bankM}</td>
+						<td class="text-end">${toneMap.prog}</td>
 						<td class="text-end">${toneMap.toneNo}</td>
 						<td class="font-monospace"><a href="${toneMap.toneRef.$ref}">${toneMap.toneRef.name}</a></td>
 					</tr>
