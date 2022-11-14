@@ -75,7 +75,7 @@ const templateToneList = (json) => html`
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
 			${[...tone.voices, ...(new Array(4)).fill()].slice(0, 4).map((voice) => html`
 				<td class="text-end">${voice?.sampleNo ?? ((voice) ? '-' : '')}</td>
-				<td class="font-monospace">${voice?.sample?.name ?? ((voice) ? '(Synth)' : '')}</td>
+				<td class="font-monospace">${voice?.sampleRef?.name ?? ((voice) ? '(Synth)' : '')}</td>
 			`)}
 			</tr>
 		`)}
@@ -144,7 +144,7 @@ const templateSampleList = (json) => html`
 const templateVoice = (voice, json, partialNo) => html`
 	<div class="card mb-3">
 		<div class="card-header">
-			<h3 class="h6 mb-0">Partial ${partialNo + 1}: ${(voice.sample) ? html`<span class="font-monospace h4">${voice.sample.name}</span> (No.${voice.sampleNo})` : `Synth (${waveform(voice.bytes[4])})`}</h3>
+			<h3 class="h6 mb-0">Partial ${partialNo + 1}: ${(voice.sampleRef) ? html`<span class="font-monospace h4">${voice.sampleRef.name}</span> (No.${voice.sampleNo})` : `Synth (${waveform(voice.bytes[4])})`}</h3>
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
@@ -166,7 +166,7 @@ const templateVoice = (voice, json, partialNo) => html`
 							<th>WG Pitch Bender Sw.</th>
 							<td class="text-end">${fmt.onOff(voice.bytes[3])}</td>
 						</tr>
-					${(voice.sample) ? '' : html`
+					${(voice.sampleRef) ? '' : html`
 						<tr>
 							<th>WG Waveform</th>
 							<td class="text-end">${waveform(voice.bytes[4])}</td>
@@ -247,7 +247,7 @@ const templateVoice = (voice, json, partialNo) => html`
 					</tbody>
 				</table>
 			</div>
-			<div class="${(voice.sample) ? 'text-decoration-line-through' : ''}">
+			<div class="${(voice.sampleRef) ? 'text-decoration-line-through' : ''}">
 				<table class="table table-sm">
 					<thead>
 						<tr>
