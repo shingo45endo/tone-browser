@@ -106,7 +106,6 @@ const templateWaveList = (json) => html`
 								<th>No.</th>
 								<th>High</th>
 								<th>No.</th>
-								<th>Level</th>
 								<th>Sample No.</th>
 								<th>Orig.</th>
 								<th>No.</th>
@@ -119,7 +118,6 @@ const templateWaveList = (json) => html`
 								<td class="text-end text-muted">${sampleSlot.low}</td>
 								<td class="text-end">${fmt.noteNameR(sampleSlot.high)}</td>
 								<td class="text-end text-muted">${sampleSlot.high}</td>
-								<td class="text-end">${sampleSlot.level}</td>
 								<td class="text-end">${(sampleSlot.sampleNo >= 0) ? sampleSlot.sampleNo : ''}</td>
 							${((sample) => html`
 								<td class="text-end">${(sample) ? fmt.noteNameR(sample.key) : '--'}</td>
