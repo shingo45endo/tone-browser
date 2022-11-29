@@ -52,7 +52,7 @@ const templateToneMapList = (json) => html`
 `;
 
 const templateDrumMapList = (json) => html`
-<ul class="nav nav-tabs" role="tablist">
+	<ul class="nav nav-tabs" role="tablist">
 	${Object.keys(json).filter((key) => key.startsWith('drumMaps')).map((key, i) => html`
 		<li class="nav-item" role="presentation">
 			<button id="my-tab-${key}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('drumMaps', '')}</button>
@@ -533,7 +533,7 @@ const templateDrumSet = (drumSet, _) => html`
 					<th class="text-end">No.</th>
 					<th>Name</th>
 					<th class="text-end ps-4">b00</th>
-					<th class="text-end">b01</th>
+					<th class="text-end">Fine</th>
 					<th class="text-end">Lev.</th>
 					<th class="text-end">Grp.</th>
 					<th class="text-end">Pan.</th>
@@ -601,7 +601,7 @@ const templateDrumSet = (drumSet, _) => html`
 					<td class="text-end">${note.bytes[26]}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[27])}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[28])}</td>
-					<td class="text-end">${note.bytes[29]}</td>
+					<td class="text-end">${fmt.sint8(note.bytes[29])}</td>
 					<td class="text-end">${note.bytes[30]}</td>
 					<td class="text-end">${note.bytes[31]}</td>
 					<td class="text-end">${note.bytes[32]}</td>
