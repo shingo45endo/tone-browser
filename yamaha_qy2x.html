@@ -132,9 +132,9 @@ const templateWaveList = (json) => html`
 						<tbody>
 						${wave.sampleSlots.map((sampleSlot) => html`
 							<tr>
-								<td class="text-end">${fmt.noteNameR(sampleSlot.low)}</td>
+								<td class="text-end">${fmt.noteNameY(sampleSlot.low)}</td>
 								<td class="text-end text-muted">${sampleSlot.low}</td>
-								<td class="text-end">${fmt.noteNameR(sampleSlot.high)}</td>
+								<td class="text-end">${fmt.noteNameY(sampleSlot.high)}</td>
 								<td class="text-end text-muted">${sampleSlot.high}</td>
 								<td class="text-end">${sampleSlot.sampleNo}</td>
 							</tr>
