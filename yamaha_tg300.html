@@ -112,6 +112,48 @@ const templateToneList = (json) => html`
 	</table>
 `;
 
+const templateWaveList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">No.</th>
+				<th>Wave</th>
+				<th>Sample Data</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.waves.map((wave) => html`
+			<tr>
+				<td class="text-end">${wave.waveNo}</td>
+				<td class="font-monospace">${wave.name}</td>
+				<td>
+					<table class="table table-sm table-borderless w-auto">
+						<thead>
+							<tr>
+								<th>Low</th>
+								<th>No.</th>
+								<th>High</th>
+								<th>No.</th>
+							</tr>
+						<thead>
+						<tbody>
+						${wave.sampleSlots.map((sampleSlot) => html`
+							<tr>
+								<td class="text-end">${fmt.noteNameY(sampleSlot.low)}</td>
+								<td class="text-end text-muted">${sampleSlot.low}</td>
+								<td class="text-end">${fmt.noteNameY(sampleSlot.high)}</td>
+								<td class="text-end text-muted">${sampleSlot.high}</td>
+							</tr>
+						`)}
+						<tbody>
+					</table>
+				</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
 const templateDrumSetList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
@@ -572,6 +614,7 @@ window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 		{id: 'toneMaps', label: 'Tone Map',  renderer: templateToneMapList},
 		{id: 'drumMaps', label: 'Drum Map',  renderer: templateDrumMapList},
 		{id: 'tones',    label: 'Voices',    renderer: templateToneList},
+		{id: 'waves',    label: 'Waves',     renderer: templateWaveList},
 		{id: 'drumSets', label: 'Drum Kits', renderer: templateDrumSetList},
 	],
 	details: {
