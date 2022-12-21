@@ -4,7 +4,7 @@ const htmlBody = `
 	<!-- Navbar -->
 	<nav class="navbar navbar-light bg-light sticky-top">
 		<div class="container align-items-start">
-			<h1 class="h5 mt-1 mb-0"><a href="./" class="navbar-brand">tone-browser</a></h1>
+			<h1 class="h5 mt-1 mb-0"><a href="./" class="navbar-brand">tone-browser</a><span class="text-muted">(<a id="my-json" class="text-reset"></a>)</span></h1>
 			<a href="#" class="btn btn-outline-primary py-1">Top</a>
 		</div>
 	</nav>
@@ -46,13 +46,20 @@ const templateMainScreen = (lists) => html`
 `;
 
 export function makeDomLoadedHandler(prop, bsGetOrCreateInstance) {
-	console.assert(prop && Array.isArray(prop.lists) && prop.lists.every((e) => e.id && e.label && e.renderer));
-	console.assert(prop && prop.details);
+	console.assert(Array.isArray(prop?.lists) && prop.lists.every((e) => e.id && e.label && e.renderer));
+	console.assert(prop?.details);
 	console.assert(bsGetOrCreateInstance);
 
 	return async () => {
 		// Renders the body.
 		document.body.innerHTML = htmlBody;
+
+		// Makes a download link for JSON file.
+		const jsonName = window.location.search.slice(1);
+		const elemJsonName = document.getElementById('my-json');
+		elemJsonName.href = jsonName;
+		elemJsonName.download = jsonName;
+		elemJsonName.textContent = jsonName;
 
 		// Prepares for the modal.
 		const elemModal = document.getElementById('my-modal');
@@ -71,18 +78,17 @@ export function makeDomLoadedHandler(prop, bsGetOrCreateInstance) {
 		}
 
 		// Loads a JSON file.
-		const url = window.location.search.slice(1);
-		const res = await fetch(url);
+		const res = await fetch(jsonName);
 		if (!res.ok) {
 			elemModalTitle.textContent = 'Error';
-			elemModalContent.textContent = `"${url}" not found.`;
+			elemModalContent.textContent = `"${jsonName}" not found.`;
 			return;
 		}
 		const json = await res.json();
 
 		// Renders tabs and lists on each tab pane.
 		const lists = prop.lists.filter((list) => Object.keys(json).some((key) => key.startsWith(list.id)));
-		render(templateMainScreen(lists), document.getElementById(`my-main`));
+		render(templateMainScreen(lists), document.getElementById('my-main'));
 		for (const list of lists) {
 			render(list.renderer(json), document.getElementById(`my-pane-${list.id}`));
 		}
