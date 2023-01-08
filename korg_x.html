@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tone-browser</title>
+<link href="./common.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="module">
+/* global bootstrap */
+import {html} from 'https://unpkg.com/lit-html?module';
+import {makeDomLoadedHandler} from './common.js';
+import {formatters as fmt} from './formatters.js';
+
+function getRef(ref, json) {
+	const paths = ref.split('/');
+	console.assert(paths[0] === '#');
+
+	let obj = json;
+	for (const path of paths.slice(1)) {
+		obj = obj[path];
+		if (!obj) {
+			return null;
+		}
+	}
+
+	return obj;
+}
+
+function panAB(value) {
+	return {
+		0x00: 'A15',
+		0x01: 'A14',
+		0x02: 'A13',
+		0x03: 'A12',
+		0x04: 'A11',
+		0x05: 'A10',
+		0x06: 'A09',
+		0x07: 'A08',
+		0x08: 'A07',
+		0x09: 'A06',
+		0x0a: 'A05',
+		0x0b: 'A04',
+		0x0c: 'A03',
+		0x0d: 'A02',
+		0x0e: 'A01',
+		0x0f: 'CNT',
+		0x10: 'B01',
+		0x11: 'B02',
+		0x12: 'B03',
+		0x13: 'B04',
+		0x14: 'B05',
+		0x15: 'B06',
+		0x16: 'B07',
+		0x17: 'B08',
+		0x18: 'B09',
+		0x19: 'B10',
+		0x1a: 'B11',
+		0x1b: 'B12',
+		0x1c: 'B13',
+		0x1d: 'B14',
+		0x1e: 'B15',
+		0x1f: 'PRG',
+		0xff: 'OFF',
+	}[value] ?? 'Unknown';
+}
+
+function pan34(value) {
+	switch (value) {
+	case 0x00:
+		return 'OFF';
+	case 0x01:
+		return 'R';
+	case 0x65:
+		return 'L';
+	default:
+		if (0x02 <= value && value <= 0x64) {
+			const panL = value - 1;
+			const panR = 101 - value;
+			return `${String(panL).padStart(2, '0')}:${String(panR).padStart(2, '0')}`;
+		}
+		break;
+	}
+
+	return 'Unknown';
+}
+
+function effectType(value) {
+	return [
+		'No Effect',
+		'Hall',
+		'Ensemble Hall',
+		'Concert Hall',
+		'Room',
+		'Large Room',
+		'Live Stage',
+		'Wet Plate',
+		'Dry Plate',
+		'Spring Reverb',
+		'Early Reflection 1',
+		'Early Reflection 2',
+		'Early Reflection 3',
+		'Stereo Delay',
+		'Cross Delay',
+		'Dual Mono Delay',
+		'Multi-Tap Delay 1',
+		'Multi-Tap Delay 2',
+		'Multi-Tap Delay 3',
+		'Chorus 1',
+		'Chorus 2',
+		'Quadrature Chorus',
+		'Crossover Chorus',
+		'Harmonic Chorus',
+		'Symphonic Ensemble',
+		'Flanger 1',
+		'Flanger 2',
+		'Crossover Flanger',
+		'Exciter',
+		'Enhancer',
+		'Distortion',
+		'Overdrive',
+		'Stereo Phaser 1',
+		'Stereo Phaser 2',
+		'Rotary Speaker',
+		'Auto Pan',
+		'Tremolo',
+		'Parametric EQ',
+		'Chorus-Delay',
+		'Flanger-Delay',
+		'Delay/Hall Reverb',
+		'Delay/Room Reverb',
+		'Delay/Chorus',
+		'Delay/Flanger',
+		'Delay/Distortion',
+		'Delay/OverDrive',
+		'Delay/Phaser',
+		'Delay/Rotary Speaker',
+	][value] ?? 'Unknown';
+}
+
+const templateToneList = (json) => html`
+	<ul class="nav nav-tabs" role="tablist">
+	${Object.keys(json).filter((key) => key.startsWith('tones')).map((key, i) => html`
+		<li class="nav-item" role="presentation">
+			<button id="my-tab-${key}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('tones', '')}</button>
+		</li>
+	`)}
+	</ul>
+	<div class="tab-content mt-2">
+	${Object.keys(json).filter((key) => key.startsWith('tones')).map((key, i) => html`
+		<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
+			<table class="table table-sm table-hover w-auto">
+				<thead>
+					<tr>
+						<th class="text-end">No.</th>
+						<th>Program</th>
+						<th class="text-end ps-4">No.</th>
+						<th>Multi Sample 1</th>
+						<th class="text-end ps-4">No.</th>
+						<th>Multi Sample 2</th>
+					</tr>
+				</thead>
+				<tbody>
+				${json[key].map((tone) => html`
+					<tr>
+						<td class="text-end">${tone.toneNo}</td>
+						<td class="font-monospace"><a href="#/${key}/${tone.toneNo}">${tone.name}</a></td>
+						<td class="text-end">${tone.voices[0].waveNo ?? tone.voices[0].drumSetNo}</td>
+						<td class="font-monospace">${tone.voices[0].waveRef?.name ?? tone.voices[0].drumSetRef?.name}</td>
+						<td class="text-end">${tone.voices[1]?.waveNo ?? tone.voices[1]?.drumSetNo ?? ''}</td>
+						<td class="font-monospace">${tone.voices[1]?.waveRef?.name ?? tone.voices[1]?.drumSetRef?.name ?? ''}</td>
+					</tr>
+				`)}
+				</tbody>
+			</table>
+		</div>
+	`)}
+	</div>
+`;
+
+const templateCombiList = (json) => html`
+	<ul class="nav nav-tabs" role="tablist">
+	${Object.keys(json).filter((key) => key.startsWith('combis')).map((key, i) => html`
+		<li class="nav-item" role="presentation">
+			<button id="my-tab-${key}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-${key}">${key.replace('combis', '')}</button>
+		</li>
+	`)}
+	</ul>
+	<div class="tab-content mt-2">
+	${Object.keys(json).filter((key) => key.startsWith('combis')).map((key, i) => html`
+		<div id="my-pane-${key}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
+			<table class="table table-sm table-hover w-auto">
+				<thead>
+					<tr>
+						<th class="text-end">No.</th>
+						<th>Combination</th>
+						<th class="text-end ps-4">No.</th>
+						<th>Program 1</th>
+						<th class="text-end">No.</th>
+						<th>Program 2</th>
+						<th class="text-end">No.</th>
+						<th>Program 3</th>
+						<th class="text-end">No.</th>
+						<th>Program 4</th>
+						<th class="text-end">No.</th>
+						<th>Program 5</th>
+						<th class="text-end">No.</th>
+						<th>Program 6</th>
+						<th class="text-end">No.</th>
+						<th>Program 7</th>
+						<th class="text-end">No.</th>
+						<th>Program 8</th>
+					</tr>
+				</thead>
+				<tbody>
+				${json[key].map((combi) => html`
+					<tr>
+						<td class="text-end">${combi.combiNo}</td>
+						<td class="font-monospace"><a href="#/${key}/${combi.combiNo}">${combi.name}</a></td>
+					${[...combi.toneSlots, ...(new Array(7)).fill()].slice(0, 8).map((toneSlot) => html`
+						<td class="text-end">${toneSlot?.toneNo ?? toneSlot?.drumToneNo ?? ''}</td>
+						<td class="font-monospace">${(toneSlot) ? html`<a href="${toneSlot.toneRef?.$ref ?? toneSlot.drumToneRef?.$ref}">${toneSlot.toneRef?.name ?? toneSlot.drumToneRef?.name}</a>` : ''}</td>
+					`)}
+					</tr>
+				`)}
+				</tbody>
+			</table>
+		</div>
+	`)}
+	</div>
+`;
+
+const templateWaveList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">No.</th>
+				<th>Multi Sample</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.waves.map((wave) => html`
+			<tr>
+				<td class="text-end">${wave.waveNo}</td>
+				<td class="font-monospace">${wave.name}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateDrumSampleList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">No.</th>
+				<th>Drum Sample</th>
+				<th class="text-end">Start Addr.</th>
+				<th class="text-end">Loop Addr.</th>
+				<th class="text-end">End Addr.</th>
+				<th class="text-end">S-E Len.</th>
+				<th class="text-end">S-L Len.</th>
+				<th class="text-end">L-E Len.</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumSamples.map((drumSample) => html`
+			<tr>
+				<td class="text-end">${drumSample.drumSampleNo}</td>
+				<td class="font-monospace">${drumSample.name}</td>
+				<td class="text-end font-monospace">${drumSample.addrBegin.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${drumSample.addrLoop.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${drumSample.addrEnd.toString(16).padStart(6, '0')}</td>
+				<td class="text-end">${drumSample.addrEnd - drumSample.addrBegin}</td>
+				<td class="text-end">${drumSample.addrLoop - drumSample.addrBegin}</td>
+				<td class="text-end">${drumSample.addrEnd - drumSample.addrLoop}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateVoice = (voice, _) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h3 class="h6 mb-0">Multi Sample No.${voice.waveNo ?? voice.drumSetNo}: <span class="font-monospace h4">${voice.waveRef?.name ?? voice.drumSetRef?.name}</span></h3>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Octave</th>
+							<td class="text-end">${fmt.sint8(voice.octave)}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>P.EG Intensity</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[0])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>P.MG Waveform</th>
+							<td class="text-end">${['Tri', 'SawUp', 'SawDn', 'Sq', 'Random'][voice.bytes[1] & 0x07] ?? 'Unknown'}</td>
+						</tr>
+						<tr>
+							<th>P.MG KeySync</th>
+							<td class="text-end">${fmt.onOff((voice.bytes[1] & 0x80) !== 0)}</td>
+						</tr>
+						<tr>
+							<th>P.MG Frequency</th>
+							<td class="text-end">${voice.bytes[2]}</td>
+						</tr>
+						<tr>
+							<th>P.MG Delay</th>
+							<td class="text-end">${voice.bytes[3]}</td>
+						</tr>
+						<tr>
+							<th>P.MG Fade In</th>
+							<td class="text-end">${voice.bytes[4]}</td>
+						</tr>
+						<tr>
+							<th>P.MG Intensity</th>
+							<td class="text-end">${voice.bytes[5]}</td>
+						</tr>
+						<tr>
+							<th>P.MG Freq Mod by KbdTrk</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[6])}</td>
+						</tr>
+						<tr>
+							<th>P.MG Int Mod by AftT</th>
+							<td class="text-end">${voice.bytes[7]}</td>
+						</tr>
+						<tr>
+							<th>P.MG Int Mod by JS</th>
+							<td class="text-end">${voice.bytes[8]}</td>
+						</tr>
+						<tr>
+							<th>P.MG Freq Mod by AftT+JS</th>
+							<td class="text-end">${voice.bytes[9]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<th>F.EG</th>
+							<th class="text-end">A</th>
+							<th class="text-end">D</th>
+							<th class="text-end">S</th>
+							<th class="text-end">R</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Time</th>
+							<td class="text-end">${voice.bytes[17]}</td>
+							<td class="text-end">${voice.bytes[19]}</td>
+							<td class="text-end">${voice.bytes[21]}</td>
+							<td class="text-end">${voice.bytes[23]}</td>
+						</tr>
+						<tr>
+							<th>Level</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[18])}</td>
+							<td class="text-end">${fmt.sint8(voice.bytes[20])}</td>
+							<td class="text-end">${fmt.sint8(voice.bytes[22])}</td>
+							<td class="text-end">${fmt.sint8(voice.bytes[24])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<th>F.EG Time</th>
+							<th class="text-end">A</th>
+							<th class="text-end">D</th>
+							<th class="text-end">S</th>
+							<th class="text-end">R</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>KbdTrk</th>
+							<td class="text-end">${((voice.bytes[38] & 0x01) !== 0) ? '+-'[((voice.bytes[38] & 0x10) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[38] & 0x02) !== 0) ? '+-'[((voice.bytes[38] & 0x20) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[38] & 0x04) !== 0) ? '+-'[((voice.bytes[38] & 0x40) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[38] & 0x08) !== 0) ? '+-'[((voice.bytes[38] & 0x80) === 0) ? 0 : 1] : ''}</td>
+						</tr>
+						<tr>
+							<th>VelSense</th>
+							<td class="text-end">${((voice.bytes[39] & 0x01) !== 0) ? '+-'[((voice.bytes[39] & 0x10) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[39] & 0x02) !== 0) ? '+-'[((voice.bytes[39] & 0x20) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[39] & 0x04) !== 0) ? '+-'[((voice.bytes[39] & 0x40) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[39] & 0x08) !== 0) ? '+-'[((voice.bytes[39] & 0x80) === 0) ? 0 : 1] : ''}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>VDF Cutoff</th>
+							<td class="text-end">${voice.bytes[10]}</td>
+						</tr>
+						<tr>
+							<th>VDF KbdTrk Key</th>
+							<td class="text-end">${fmt.noteNameR(voice.bytes[11])}</td>
+						</tr>
+						<tr>
+							<th>VDF KbdTrk Mode</th>
+							<td class="text-end">${['Off', 'Low', 'High', 'All'][voice.bytes[45] & 0x03]}</td>
+						</tr>
+						<tr>
+							<th>VDF KbdTrk</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[12])}</td>
+						</tr>
+						<tr>
+							<th>Color Intensity</th>
+							<td class="text-end">${voice.bytes[43]}</td>
+						</tr>
+						<tr>
+							<th>Color VelSense</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[44])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>F.EG Intensity</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[13])}</td>
+						</tr>
+						<tr>
+							<th>F.EG Time KbdTrk</th>
+							<td class="text-end">${voice.bytes[14]}</td>
+						</tr>
+						<tr>
+							<th>F.EG Time VelSense</th>
+							<td class="text-end">${voice.bytes[15]}</td>
+						</tr>
+						<tr>
+							<th>F.EG Int VelSense</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[16])}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<th>A.EG</th>
+							<th class="text-end">A</th>
+							<th class="text-end">D</th>
+							<th class="text-end">S</th>
+							<th class="text-end">R</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Time</th>
+							<td class="text-end">${voice.bytes[31]}</td>
+							<td class="text-end">${voice.bytes[33]}</td>
+							<td class="text-end">${voice.bytes[35]}</td>
+							<td class="text-end">${voice.bytes[37]}</td>
+						</tr>
+						<tr>
+							<th>Level</th>
+							<td class="text-end">${voice.bytes[32]}</td>
+							<td class="text-end">${voice.bytes[34]}</td>
+							<td class="text-end">${voice.bytes[36]}</td>
+							<td class="text-end">-</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<th>F.EG Time</th>
+							<th class="text-end">A</th>
+							<th class="text-end">D</th>
+							<th class="text-end">S</th>
+							<th class="text-end">R</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>KbdTrk</th>
+							<td class="text-end">${((voice.bytes[40] & 0x01) !== 0) ? '+-'[((voice.bytes[40] & 0x10) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[40] & 0x02) !== 0) ? '+-'[((voice.bytes[40] & 0x20) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[40] & 0x04) !== 0) ? '+-'[((voice.bytes[40] & 0x40) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[40] & 0x08) !== 0) ? '+-'[((voice.bytes[40] & 0x80) === 0) ? 0 : 1] : ''}</td>
+						</tr>
+						<tr>
+							<th>VelSense</th>
+							<td class="text-end">${((voice.bytes[41] & 0x01) !== 0) ? '+-'[((voice.bytes[41] & 0x10) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[41] & 0x02) !== 0) ? '+-'[((voice.bytes[41] & 0x20) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[41] & 0x04) !== 0) ? '+-'[((voice.bytes[41] & 0x40) === 0) ? 0 : 1] : ''}</td>
+							<td class="text-end">${((voice.bytes[41] & 0x08) !== 0) ? '+-'[((voice.bytes[41] & 0x80) === 0) ? 0 : 1] : ''}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>OSC Level</th>
+							<td class="text-end">${voice.bytes[25]}</td>
+						</tr>
+						<tr>
+							<th>VDA KbdTrk Key</th>
+							<td class="text-end">${fmt.noteNameR(voice.bytes[26])}</td>
+						</tr>
+						<tr>
+							<th>VDA KbdTrk Mode</th>
+							<td class="text-end">${['Off', 'Low', 'High', 'All'][(voice.bytes[45] >> 4) & 0x03]}</td>
+						</tr>
+						<tr>
+							<th>VDA KbdTrk</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[27])}</td>
+						</tr>
+						<tr>
+							<th>VDA VelSense</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[28])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>A.EG Time KbdTrk</th>
+							<td class="text-end">${voice.bytes[29]}</td>
+						</tr>
+						<tr>
+							<th>A.EG Time VelSense</th>
+							<td class="text-end">${voice.bytes[30]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>A:B Pan</th>
+							<td class="text-end">${panAB(voice.bytes[46])}</td>
+						</tr>
+						<tr>
+							<th>Effect C Send Level</th>
+							<td class="text-end">${(voice.bytes[42] >> 4) & 0x0f}</td>
+						</tr>
+						<tr>
+							<th>Effect D Send Level</th>
+							<td class="text-end">${voice.bytes[42] & 0x0f}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+`;
+
+const templateEffect = (effectBytes) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<div class="row">
+				<div class="col">
+					<h2 class="h6 mb-0">Effect 1 No.${effectBytes[0]}: <span class="font-monospace h4">${effectType(effectBytes[0])}</span></h2>
+				</div>
+				<div class="col">
+					<h2 class="h6 mb-0">Effect 2 No.${effectBytes[1]}: <span class="font-monospace h4">${effectType(effectBytes[1])}</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="card-body pb-0">
+			<div class="row">
+				<div class="col d-flex flex-row gap-3">
+					<div>
+						<table class="table table-sm">
+							<tbody>
+								<tr>
+									<th>L-Ch. On/Off</th>
+									<td class="text-end">${fmt.onOff((effectBytes[8] & 0x01) !== 0)}</td>
+								</tr>
+								<tr>
+									<th>L-Ch. Balance</th>
+									<td class="text-end">${effectBytes[2]}</td>
+								</tr>
+								<tr>
+									<th>R-Ch. On/Off</th>
+									<td class="text-end">${fmt.onOff((effectBytes[8] & 0x02) !== 0)}</td>
+								</tr>
+								<tr>
+									<th>R-Ch. Balance</th>
+									<td class="text-end">${effectBytes[3]}</td>
+								</tr>
+								<tr>
+									<th>Mod Source</th>
+									<td class="text-end">${effectBytes[17]}</td>
+								</tr>
+								<tr>
+									<th>Mod Amount</th>
+									<td class="text-end">${effectBytes[18]}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<table class="table table-sm">
+							<tbody>
+								<tr>
+									<th>Parameter 0</th>
+									<td class="text-end">${effectBytes[9]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 1</th>
+									<td class="text-end">${effectBytes[10]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 2</th>
+									<td class="text-end">${effectBytes[11]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 3</th>
+									<td class="text-end">${effectBytes[12]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 4</th>
+									<td class="text-end">${effectBytes[13]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 5</th>
+									<td class="text-end">${effectBytes[14]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 6</th>
+									<td class="text-end">${effectBytes[15]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 7</th>
+									<td class="text-end">${effectBytes[16]}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col d-flex flex-row gap-3">
+					<div>
+						<table class="table table-sm">
+							<tbody>
+								<tr>
+									<th>L-Ch. On/Off</th>
+									<td class="text-end">${fmt.onOff((effectBytes[8] & 0x04) !== 0)}</td>
+								</tr>
+								<tr>
+									<th>L-Ch. Balance</th>
+									<td class="text-end">${effectBytes[4]}</td>
+								</tr>
+								<tr>
+									<th>R-Ch. On/Off</th>
+									<td class="text-end">${fmt.onOff((effectBytes[8] & 0x08) !== 0)}</td>
+								</tr>
+								<tr>
+									<th>R-Ch. Balance</th>
+									<td class="text-end">${effectBytes[5]}</td>
+								</tr>
+								<tr>
+									<th>Mod Source</th>
+									<td class="text-end">${effectBytes[27]}</td>
+								</tr>
+								<tr>
+									<th>Mod Amount</th>
+									<td class="text-end">${effectBytes[28]}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<table class="table table-sm">
+							<tbody>
+								<tr>
+									<th>Parameter 0</th>
+									<td class="text-end">${effectBytes[19]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 1</th>
+									<td class="text-end">${effectBytes[20]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 2</th>
+									<td class="text-end">${effectBytes[21]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 3</th>
+									<td class="text-end">${effectBytes[22]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 4</th>
+									<td class="text-end">${effectBytes[23]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 5</th>
+									<td class="text-end">${effectBytes[24]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 6</th>
+									<td class="text-end">${effectBytes[25]}</td>
+								</tr>
+								<tr>
+									<th>Parameter 7</th>
+									<td class="text-end">${effectBytes[26]}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="d-flex flex-row gap-3">
+				<div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Effect I/O</th>
+								<td class="text-end">${['Serial', 'Parallel', 'Parallel 2', 'Parallel 3'][(effectBytes[8] >> 4) & 0x03] ?? 'Unknown'}</td>
+							</tr>
+							<tr>
+								<th>Output 3 Pan</th>
+								<td class="text-end">${pan34(effectBytes[6])}</td>
+							</tr>
+							<tr>
+								<th>Output 4 Pan</th>
+								<td class="text-end">${pan34(effectBytes[7])}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+`;
+
+const templateTone = (tone, json) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Program No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>OSC Mode</th>
+							<td class="text-end">${['Single', 'Double', 'Drum'][tone.commonBytes[10]] ?? 'Unknown'}</td>
+						</tr>
+						<tr>
+							<th>OSC Hold</th>
+							<td class="text-end">${fmt.onOff((tone.commonBytes[10] & 0x08) !== 0)}</td>
+						</tr>
+						<tr>
+							<th>OSC Interval</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[18])}</td>
+						</tr>
+						<tr>
+							<th>OSC Detune </th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[19])}</td>
+						</tr>
+						<tr>
+							<th>OSC Delay Start</th>
+							<td class="text-end">${tone.commonBytes[20]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<th>P.EG</th>
+							<th class="text-end">S</th>
+							<th class="text-end">A</th>
+							<th class="text-end">D</th>
+							<th class="text-end">R</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Time</th>
+							<td class="text-end">-</td>
+							<td class="text-end">${tone.commonBytes[22]}</td>
+							<td class="text-end">${tone.commonBytes[24]}</td>
+							<td class="text-end">${tone.commonBytes[25]}</td>
+						</tr>
+						<tr>
+							<th>Level</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[21])}</td>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[23])}</td>
+							<td class="text-end">-</td>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[26])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>P.EG TimeVelSense</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[27])}</td>
+						</tr>
+						<tr>
+							<th>P.EG LevelVelSense</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[28])}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>VDF MG Waveform</th>
+							<td class="text-end">${['Tri', 'SawUp', 'SawDn', 'Sq', 'Random'][tone.commonBytes[29] & 0x07] ?? 'Unknown'}</td>
+						</tr>
+						<tr>
+							<th>VDF MG OSC 1</th>
+						<td class="text-end">${fmt.onOff((tone.commonBytes[29] & 0x20) !== 0)}</td>
+						</tr>
+						<tr>
+							<th>VDF MG OSC 2</th>
+						<td class="text-end">${fmt.onOff((tone.commonBytes[29] & 0x40) !== 0)}</td>
+						</tr>
+						<tr>
+							<th>VDF MG Frequency</th>
+							<td class="text-end">${tone.commonBytes[30]}</td>
+						</tr>
+						<tr>
+							<th>VDF MG Delay</th>
+							<td class="text-end">${tone.commonBytes[31]}</td>
+						</tr>
+						<tr>
+							<th>VDF MG Intensity</th>
+							<td class="text-end">${tone.commonBytes[32]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>AftT Bend Range</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[33])}</td>
+						</tr>
+						<tr>
+							<th>AftT VDF Cutoff</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[34])}</td>
+						</tr>
+						<tr>
+							<th>AftT VDF MG</th>
+							<td class="text-end">${tone.commonBytes[35]}</td>
+						</tr>
+						<tr>
+							<th>AftT VDA Amp</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[36])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>JS Bend Range</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[37])}</td>
+						</tr>
+						<tr>
+							<th>JS Bend VDF Sweep</th>
+							<td class="text-end">${fmt.sint8(tone.commonBytes[38])}</td>
+						</tr>
+						<tr>
+							<th>JS VDF MG Intensity</th>
+							<td class="text-end">${tone.commonBytes[39]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	${tone.voices.map((voice) => templateVoice(voice, json))}
+	${templateEffect(tone.effectBytes)}
+`;
+
+
+const templateCombi = (combi, json) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Combination No.${combi.combiNo}: <span class="font-monospace h4">${combi.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 py-0">
+		</div>
+	</div>
+	${templateEffect(combi.effectBytes)}
+	<ul class="nav nav-tabs" role="tablist">
+	${combi.toneSlots.map((toneSlot, i) => html`
+		<li class="nav-item" role="presentation">
+			<button id="my-tab-tone${i}" class="nav-item nav-link ${(i === 0) ? 'active' : ''}" role="tab" data-bs-toggle="tab" data-bs-target="#my-pane-tone${i}">${toneSlot.toneRef?.name ?? toneSlot.drumToneRef?.name}</button>
+		</li>
+	`)}
+	</ul>
+	<div class="tab-content mt-2">
+	${combi.toneSlots.map((toneSlot, i) => html`
+		<div id="my-pane-tone${i}" class="tab-pane fade${(i === 0) ? ' show active' : ''}" role="tabpanel">
+			<div class="d-flex flex-row gap-3 px-3">
+				<div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Output Level</th>
+								<td class="text-end">${toneSlot.bytes[1]}</td>
+							</tr>
+							<tr>
+								<th>Transpose</th>
+								<td class="text-end">${fmt.sint8(toneSlot.bytes[2])}</td>
+							</tr>
+							<tr>
+								<th>Detune</th>
+								<td class="text-end">${fmt.sint8(toneSlot.bytes[3])}</td>
+							</tr>
+							<tr>
+								<th>A:B Pan</th>
+								<td class="text-end">${panAB(toneSlot.bytes[4])}</td>
+							</tr>
+							<tr>
+								<th>Effect C Send Level</th>
+								<td class="text-end">${(toneSlot.bytes[5] >> 4) & 0x0f}</td>
+							</tr>
+							<tr>
+								<th>Effect D Send Level</th>
+								<td class="text-end">${toneSlot.bytes[5] & 0x0f}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Note Win Bottom</th>
+								<td class="text-end">${fmt.noteNameR(toneSlot.bytes[7])}</td>
+							</tr>
+							<tr>
+								<th>Note Win Top</th>
+								<td class="text-end">${fmt.noteNameR(toneSlot.bytes[6])}</td>
+							</tr>
+							<tr>
+								<th>Vel Win Bottom</th>
+								<td class="text-end">${toneSlot.bytes[9]}</td>
+							</tr>
+							<tr>
+								<th>Vel Win Top</th>
+								<td class="text-end">${toneSlot.bytes[8]}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Program Change Sw.</th>
+								<td class="text-end">${fmt.onOff((toneSlot.bytes[10] & 0x01) !== 0)}</td>
+							</tr>
+							<tr>
+								<th>Damper Sw.</th>
+								<td class="text-end">${fmt.onOff((toneSlot.bytes[10] & 0x02) !== 0)}</td>
+							</tr>
+							<tr>
+								<th>After Touch Sw.</th>
+								<td class="text-end">${fmt.onOff((toneSlot.bytes[10] & 0x04) !== 0)}</td>
+							</tr>
+							<tr>
+								<th>Control Change Sw.</th>
+								<td class="text-end">${fmt.onOff((toneSlot.bytes[10] & 0x08) !== 0)}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			${templateTone(getRef(toneSlot.toneRef.$ref, json), json)}
+		</div>
+	`)}
+	</div>
+`;
+
+window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
+	lists: [
+		{id: 'tones',       label: 'Programs',      renderer: templateToneList},
+		{id: 'combis',      label: 'Combinations',  renderer: templateCombiList},
+		{id: 'waves',       label: 'Multi Samples', renderer: templateWaveList},
+		{id: 'drumSamples', label: 'Drum Samples',  renderer: templateDrumSampleList},
+	],
+	details: {
+		tonesA:  templateTone,
+		tonesB:  templateTone,
+		tonesGM: templateTone,
+		combisA: templateCombi,
+		combisB: templateCombi,
+	},
+}, bootstrap.Modal.getOrCreateInstance.bind(bootstrap.Modal)));
+</script>
+<body>
+</body>
+</html>
