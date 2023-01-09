@@ -33641,7 +33641,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 54, 236, 99, 0, 0, 25, 0, 99, 0, 99, 0, 99, 99, 99, 56, 60, 0, 89, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 85, 0, 0, 1, 15],
-					"drumSetNo": 1
+					"drumSetNo": 1,
+					"drumSetRef": {
+						"$ref": "#/drumSetsA/1",
+						"name": "[KrazyKit]"
+					}
 				}
 			]
 		},
@@ -33879,7 +33883,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 99, 0, 0, 25, 0, 99, 0, 99, 0, 99, 99, 99, 44, 60, 0, 89, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 85, 0, 0, 0, 15],
-					"drumSetNo": 0
+					"drumSetNo": 0,
+					"drumSetRef": {
+						"$ref": "#/drumSetsA/0",
+						"name": "[ComboKit]"
+					}
 				}
 			]
 		},
@@ -36082,7 +36090,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 99, 0, 0, 25, 0, 99, 0, 99, 0, 99, 99, 99, 44, 60, 0, 89, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 85, 0, 0, 0, 15],
-					"drumSetNo": 0
+					"drumSetNo": 0,
+					"drumSetRef": {
+						"$ref": "#/drumSetsB/0",
+						"name": "Total Kit "
+					}
 				}
 			]
 		},
@@ -37539,7 +37551,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 54, 236, 99, 0, 0, 25, 0, 99, 0, 99, 0, 99, 99, 99, 80, 60, 0, 89, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 85, 0, 0, 1, 15],
-					"drumSetNo": 1
+					"drumSetNo": 1,
+					"drumSetRef": {
+						"$ref": "#/drumSetsB/1",
+						"name": "ProducrKit"
+					}
 				}
 			]
 		},
@@ -40726,7 +40742,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 73, 48, 203, 36, 0, 0, 99, 0, 99, 0, 99, 0, 99, 99, 99, 56, 60, 0, 78, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 3, 15],
-					"drumSetNo": 8
+					"drumSetNo": 0,
+					"drumSetRef": {
+						"$ref": "#/drumSetsGM/0",
+						"name": "GM Kit    "
+					}
 				}
 			]
 		},
@@ -40739,7 +40759,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 73, 48, 203, 36, 0, 0, 99, 0, 99, 0, 99, 0, 99, 99, 99, 56, 60, 0, 78, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 3, 15],
-					"drumSetNo": 9
+					"drumSetNo": 1,
+					"drumSetRef": {
+						"$ref": "#/drumSetsGM/1",
+						"name": "Power Kit "
+					}
 				}
 			]
 		},
@@ -40752,7 +40776,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 73, 48, 203, 36, 0, 0, 99, 0, 99, 0, 99, 0, 99, 99, 99, 56, 60, 0, 78, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 3, 15],
-					"drumSetNo": 10
+					"drumSetNo": 2,
+					"drumSetRef": {
+						"$ref": "#/drumSetsGM/2",
+						"name": "Analog Kit"
+					}
 				}
 			]
 		},
@@ -40765,7 +40793,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 73, 48, 203, 36, 0, 0, 99, 0, 99, 0, 99, 0, 99, 99, 99, 56, 60, 0, 78, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 3, 15],
-					"drumSetNo": 11
+					"drumSetNo": 3,
+					"drumSetRef": {
+						"$ref": "#/drumSetsGM/3",
+						"name": "Jazz Kit  "
+					}
 				}
 			]
 		},
@@ -40778,7 +40810,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 73, 48, 203, 36, 0, 0, 99, 0, 99, 0, 99, 0, 99, 99, 99, 56, 59, 0, 78, 99, 78, 1, 99, 83, 0, 0, 0, 0, 0, 0, 17, 1, 68, 0, 0, 51, 15],
-					"drumSetNo": 12
+					"drumSetNo": 4,
+					"drumSetRef": {
+						"$ref": "#/drumSetsGM/4",
+						"name": "Brush kit "
+					}
 				}
 			]
 		},
@@ -40791,7 +40827,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 73, 48, 203, 36, 0, 0, 99, 0, 99, 0, 99, 0, 99, 99, 99, 56, 60, 0, 78, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 3, 15],
-					"drumSetNo": 13
+					"drumSetNo": 5,
+					"drumSetRef": {
+						"$ref": "#/drumSetsGM/5",
+						"name": "Perc Kit  "
+					}
 				}
 			]
 		},
@@ -40804,7 +40844,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 73, 48, 203, 36, 0, 0, 99, 0, 99, 0, 99, 0, 99, 99, 99, 56, 60, 0, 78, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 3, 15],
-					"drumSetNo": 14
+					"drumSetNo": 6,
+					"drumSetRef": {
+						"$ref": "#/drumSetsGM/6",
+						"name": "Dance Kit "
+					}
 				}
 			]
 		},
@@ -40817,7 +40861,11 @@
 				{
 					"octave": 0,
 					"bytes": [0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 73, 48, 203, 36, 0, 0, 99, 0, 99, 0, 99, 0, 99, 99, 99, 56, 60, 0, 78, 0, 0, 0, 99, 83, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 3, 15],
-					"drumSetNo": 15
+					"drumSetNo": 7,
+					"drumSetRef": {
+						"$ref": "#/drumSetsGM/7",
+						"name": "Orch Kit  "
+					}
 				}
 			]
 		}
@@ -49816,6 +49864,5724 @@
 					}
 				}
 			]
+		}
+	],
+	"drumSetsA": [
+		{
+			"drumSetNo": 0,
+			"name": "[ComboKit]",
+			"notes": {
+				"35": {
+					"bytes": [47, 0, 35, 15, 0, 35, 46, 0, 243, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 46,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/46",
+						"name": "Orch Crash"
+					}
+				},
+				"36": {
+					"bytes": [1, 0, 36, 15, 206, 36, 71, 0, 241, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 0,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/0",
+						"name": "Fat Kick  "
+					}
+				},
+				"37": {
+					"bytes": [2, 0, 37, 15, 186, 37, 99, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 1,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/1",
+						"name": "Rock Kick "
+					}
+				},
+				"38": {
+					"bytes": [3, 0, 38, 15, 0, 38, 61, 0, 205, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 2,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/2",
+						"name": "Ambi.Kick "
+					}
+				},
+				"39": {
+					"bytes": [13, 0, 39, 15, 50, 39, 93, 0, 207, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 12,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/12",
+						"name": "Syn Kick 3"
+					}
+				},
+				"40": {
+					"bytes": [8, 0, 40, 15, 0, 40, 91, 0, 236, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 7,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/7",
+						"name": "Gated Kick"
+					}
+				},
+				"41": {
+					"bytes": [19, 0, 41, 15, 60, 41, 51, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 18,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/18",
+						"name": "PicloSnare"
+					}
+				},
+				"42": {
+					"bytes": [20, 0, 42, 15, 40, 42, 68, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 19,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/19",
+						"name": "Soft Snare"
+					}
+				},
+				"43": {
+					"bytes": [28, 0, 43, 15, 0, 43, 58, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 27,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/27",
+						"name": "GatedSnare"
+					}
+				},
+				"44": {
+					"bytes": [30, 0, 44, 15, 70, 44, 79, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 29,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/29",
+						"name": "Syn Snare1"
+					}
+				},
+				"45": {
+					"bytes": [15, 0, 45, 15, 0, 45, 61, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 14,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/14",
+						"name": "Snare 1   "
+					}
+				},
+				"46": {
+					"bytes": [37, 0, 46, 15, 0, 46, 79, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"47": {
+					"bytes": [27, 0, 47, 15, 0, 47, 53, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 26,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/26",
+						"name": "Rock Snare"
+					}
+				},
+				"48": {
+					"bytes": [60, 0, 48, 9, 226, 54, 94, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"49": {
+					"bytes": [61, 0, 49, 5, 0, 54, 40, 0, 226, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"50": {
+					"bytes": [60, 0, 50, 15, 0, 49, 73, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"51": {
+					"bytes": [61, 0, 51, 11, 226, 53, 40, 0, 233, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"52": {
+					"bytes": [60, 0, 52, 21, 80, 49, 99, 0, 37, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"53": {
+					"bytes": [49, 0, 53, 57, 0, 53, 21, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"54": {
+					"bytes": [61, 0, 54, 19, 206, 54, 40, 0, 243, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"55": {
+					"bytes": [167, 0, 55, 57, 0, 55, 21, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 166,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/166",
+						"name": "Close HH  "
+					}
+				},
+				"56": {
+					"bytes": [61, 0, 56, 25, 0, 54, 40, 0, 246, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"57": {
+					"bytes": [50, 0, 57, 57, 0, 57, 15, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"58": {
+					"bytes": [86, 0, 58, 12, 0, 58, 89, 0, 236, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"59": {
+					"bytes": [51, 0, 59, 57, 60, 59, 246, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 50,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/50",
+						"name": "Pedal HH  "
+					}
+				},
+				"60": {
+					"bytes": [41, 0, 60, 6, 0, 60, 62, 0, 246, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"61": {
+					"bytes": [41, 0, 61, 24, 30, 59, 63, 0, 246, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"62": {
+					"bytes": [55, 0, 62, 5, 0, 62, 80, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"63": {
+					"bytes": [56, 0, 63, 5, 0, 63, 20, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 55,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/55",
+						"name": "Ride Cup  "
+					}
+				},
+				"64": {
+					"bytes": [83, 0, 64, 6, 0, 64, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 82,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/82",
+						"name": "SynMaracas"
+					}
+				},
+				"65": {
+					"bytes": [82, 0, 65, 6, 0, 65, 7, 0, 196, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"66": {
+					"bytes": [95, 0, 66, 15, 196, 66, 30, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 94,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/94",
+						"name": "Hand Claps"
+					}
+				},
+				"67": {
+					"bytes": [67, 0, 67, 18, 0, 67, 99, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"68": {
+					"bytes": [69, 0, 68, 20, 0, 68, 45, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 68,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/68",
+						"name": "Slap Bongo"
+					}
+				},
+				"69": {
+					"bytes": [68, 0, 69, 22, 0, 69, 45, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"70": {
+					"bytes": [87, 0, 70, 15, 206, 70, 54, 0, 223, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 86,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/86",
+						"name": "Cowbell   "
+					}
+				},
+				"71": {
+					"bytes": [72, 0, 71, 10, 206, 75, 79, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"72": {
+					"bytes": [72, 0, 72, 8, 30, 72, 79, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"73": {
+					"bytes": [91, 0, 73, 10, 0, 73, 50, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"74": {
+					"bytes": [84, 0, 74, 76, 0, 74, 40, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"75": {
+					"bytes": [90, 0, 75, 20, 0, 75, 50, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"76": {
+					"bytes": [85, 0, 76, 76, 0, 76, 40, 0, 240, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"77": {
+					"bytes": [57, 0, 77, 5, 0, 77, 32, 0, 246, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 56,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/56",
+						"name": "Ride Cym 1"
+					}
+				},
+				"78": {
+					"bytes": [58, 0, 78, 5, 0, 78, 32, 0, 245, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 57,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/57",
+						"name": "Ride Cym 2"
+					}
+				},
+				"79": {
+					"bytes": [43, 0, 79, 22, 216, 80, 34, 0, 235, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 42,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/42",
+						"name": "China Cym "
+					}
+				},
+				"80": {
+					"bytes": [24, 0, 80, 111, 0, 80, 57, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 23,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/23",
+						"name": "Rev Snare "
+					}
+				},
+				"81": {
+					"bytes": [23, 0, 81, 111, 0, 81, 70, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 22,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/22",
+						"name": "Ambi.Snare"
+					}
+				},
+				"82": {
+					"bytes": [25, 0, 82, 143, 0, 82, 50, 0, 34, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 24,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/24",
+						"name": "RollSnare1"
+					}
+				},
+				"83": {
+					"bytes": [26, 0, 83, 143, 0, 83, 50, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 25,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/25",
+						"name": "RollSnare2"
+					}
+				},
+				"84": {
+					"bytes": [45, 0, 84, 8, 236, 85, 39, 0, 229, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 44,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/44",
+						"name": "Splash Cym"
+					}
+				},
+				"85": {
+					"bytes": [168, 0, 85, 15, 216, 85, 52, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 167,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/167",
+						"name": "Stick Hit "
+					}
+				},
+				"86": {
+					"bytes": [96, 0, 86, 15, 0, 86, 40, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 95,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/95",
+						"name": "Syn Claps "
+					}
+				},
+				"87": {
+					"bytes": [71, 0, 87, 12, 40, 87, 39, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 70,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/70",
+						"name": "Syn Claves"
+					}
+				},
+				"88": {
+					"bytes": [63, 0, 88, 21, 0, 92, 99, 0, 222, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"89": {
+					"bytes": [63, 0, 89, 9, 50, 84, 70, 0, 212, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"90": {
+					"bytes": [38, 0, 90, 18, 50, 90, 90, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 37,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/37",
+						"name": "Syn Rim   "
+					}
+				},
+				"91": {
+					"bytes": [54, 0, 91, 22, 0, 92, 25, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 53,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/53",
+						"name": "Sagat     "
+					}
+				},
+				"92": {
+					"bytes": [102, 0, 92, 15, 176, 93, 60, 0, 237, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 101,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/101",
+						"name": "Thing     "
+					}
+				},
+				"94": {
+					"bytes": [148, 0, 94, 9, 246, 94, 38, 0, 244, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				},
+				"96": {
+					"bytes": [202, 0, 96, 21, 206, 96, 98, 0, 240, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 201,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/201",
+						"name": "Windbell  "
+					}
+				}
+			}
+		},
+		{
+			"drumSetNo": 1,
+			"name": "[KrazyKit]",
+			"notes": {
+				"35": {
+					"bytes": [192, 0, 35, 15, 0, 35, 246, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 191,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/191",
+						"name": "Growl!    "
+					}
+				},
+				"36": {
+					"bytes": [1, 0, 36, 15, 0, 36, 41, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 0,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/0",
+						"name": "Fat Kick  "
+					}
+				},
+				"37": {
+					"bytes": [183, 0, 37, 47, 0, 37, 24, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 182,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/182",
+						"name": "BOOFN     "
+					}
+				},
+				"38": {
+					"bytes": [16, 0, 38, 15, 0, 38, 29, 0, 0, 136, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 15,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/15",
+						"name": "Snare 2   "
+					}
+				},
+				"39": {
+					"bytes": [189, 0, 39, 47, 0, 39, 27, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 188,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/188",
+						"name": "POOM      "
+					}
+				},
+				"40": {
+					"bytes": [187, 0, 40, 47, 0, 40, 25, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 186,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/186",
+						"name": "COUGH     "
+					}
+				},
+				"41": {
+					"bytes": [182, 0, 41, 47, 0, 41, 25, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 181,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/181",
+						"name": "BISS      "
+					}
+				},
+				"42": {
+					"bytes": [174, 0, 42, 4, 0, 42, 0, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 173,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/173",
+						"name": "Pull 1    "
+					}
+				},
+				"43": {
+					"bytes": [188, 0, 43, 47, 0, 43, 25, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 187,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/187",
+						"name": "ISSH      "
+					}
+				},
+				"44": {
+					"bytes": [172, 0, 44, 15, 0, 56, 10, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 171,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/171",
+						"name": "Drop      "
+					}
+				},
+				"45": {
+					"bytes": [186, 0, 45, 47, 0, 45, 37, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 185,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/185",
+						"name": "COOSH     "
+					}
+				},
+				"46": {
+					"bytes": [175, 0, 46, 25, 0, 46, 36, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 174,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/174",
+						"name": "Pull 2    "
+					}
+				},
+				"47": {
+					"bytes": [185, 0, 47, 47, 0, 47, 45, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 184,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/184",
+						"name": "CHLACK    "
+					}
+				},
+				"48": {
+					"bytes": [184, 0, 48, 47, 246, 48, 25, 0, 249, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 183,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/183",
+						"name": "BOOGETA   "
+					}
+				},
+				"49": {
+					"bytes": [171, 0, 49, 9, 246, 52, 25, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 170,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/170",
+						"name": "GlassBreak"
+					}
+				},
+				"51": {
+					"bytes": [171, 0, 51, 21, 0, 51, 15, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 170,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/170",
+						"name": "GlassBreak"
+					}
+				},
+				"52": {
+					"bytes": [192, 0, 52, 242, 236, 59, 12, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 191,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/191",
+						"name": "Growl!    "
+					}
+				},
+				"53": {
+					"bytes": [192, 0, 53, 236, 236, 54, 12, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 191,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/191",
+						"name": "Growl!    "
+					}
+				},
+				"54": {
+					"bytes": [181, 0, 54, 6, 246, 57, 22, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 180,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/180",
+						"name": "Sword     "
+					}
+				},
+				"55": {
+					"bytes": [181, 0, 55, 24, 50, 54, 22, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 180,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/180",
+						"name": "Sword     "
+					}
+				},
+				"56": {
+					"bytes": [166, 0, 56, 79, 226, 62, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 165,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/165",
+						"name": "Fist      "
+					}
+				},
+				"57": {
+					"bytes": [166, 0, 57, 111, 0, 57, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 165,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/165",
+						"name": "Fist      "
+					}
+				},
+				"58": {
+					"bytes": [205, 0, 58, 79, 176, 63, 234, 0, 241, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 204,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/204",
+						"name": "Tron Up   "
+					}
+				},
+				"59": {
+					"bytes": [205, 0, 59, 111, 0, 53, 235, 0, 238, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 204,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/204",
+						"name": "Tron Up   "
+					}
+				},
+				"60": {
+					"bytes": [173, 0, 60, 22, 246, 65, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 172,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/172",
+						"name": "CorkPop   "
+					}
+				},
+				"61": {
+					"bytes": [173, 0, 61, 8, 0, 61, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 172,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/172",
+						"name": "CorkPop   "
+					}
+				},
+				"62": {
+					"bytes": [177, 0, 62, 235, 226, 66, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 176,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/176",
+						"name": "HandDrill "
+					}
+				},
+				"63": {
+					"bytes": [177, 0, 63, 243, 0, 63, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 176,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/176",
+						"name": "HandDrill "
+					}
+				},
+				"64": {
+					"bytes": [190, 0, 64, 233, 246, 67, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 189,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/189",
+						"name": "Uhhh!     "
+					}
+				},
+				"65": {
+					"bytes": [190, 0, 65, 245, 226, 65, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 189,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/189",
+						"name": "Uhhh!     "
+					}
+				},
+				"66": {
+					"bytes": [191, 0, 66, 243, 216, 68, 15, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 190,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/190",
+						"name": "Samurai!  "
+					}
+				},
+				"67": {
+					"bytes": [191, 0, 67, 235, 0, 67, 15, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 190,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/190",
+						"name": "Samurai!  "
+					}
+				},
+				"68": {
+					"bytes": [201, 0, 68, 230, 206, 71, 70, 0, 241, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 200,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/200",
+						"name": "Jetstar   "
+					}
+				},
+				"69": {
+					"bytes": [201, 0, 69, 248, 0, 69, 70, 0, 245, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 200,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/200",
+						"name": "Jetstar   "
+					}
+				},
+				"70": {
+					"bytes": [212, 0, 70, 143, 216, 79, 0, 0, 235, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 211,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/211",
+						"name": "MouthHarp1"
+					}
+				},
+				"71": {
+					"bytes": [214, 0, 71, 143, 216, 80, 0, 0, 244, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 213,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/213",
+						"name": "MouthHarp2"
+					}
+				},
+				"72": {
+					"bytes": [213, 0, 72, 143, 216, 81, 0, 0, 241, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 212,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/212",
+						"name": "MouthHrp1A"
+					}
+				},
+				"73": {
+					"bytes": [200, 0, 73, 15, 0, 85, 0, 0, 227, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 199,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/199",
+						"name": "WhiteNoise"
+					}
+				},
+				"74": {
+					"bytes": [32, 0, 74, 15, 216, 77, 0, 0, 0, 136, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 31,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/31",
+						"name": "Gun Shot  "
+					}
+				},
+				"75": {
+					"bytes": [97, 0, 75, 12, 0, 75, 226, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 96,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/96",
+						"name": "Zap 1     "
+					}
+				},
+				"76": {
+					"bytes": [98, 0, 76, 18, 0, 76, 219, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 97,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/97",
+						"name": "Zap 2     "
+					}
+				},
+				"77": {
+					"bytes": [193, 0, 77, 232, 0, 77, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 192,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/192",
+						"name": "Monkey 1  "
+					}
+				},
+				"78": {
+					"bytes": [194, 0, 78, 232, 0, 78, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 193,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/193",
+						"name": "Monkey 2  "
+					}
+				},
+				"79": {
+					"bytes": [170, 0, 79, 24, 236, 86, 250, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 169,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/169",
+						"name": "MetalHitLo"
+					}
+				},
+				"80": {
+					"bytes": [169, 0, 80, 24, 0, 92, 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 168,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/168",
+						"name": "MetalHitHi"
+					}
+				},
+				"81": {
+					"bytes": [147, 0, 81, 239, 0, 81, 1, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 146,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/146",
+						"name": "Gt Slide  "
+					}
+				},
+				"82": {
+					"bytes": [199, 0, 82, 15, 0, 94, 241, 0, 246, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 198,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/198",
+						"name": "Gong Lo   "
+					}
+				},
+				"83": {
+					"bytes": [208, 0, 83, 175, 0, 83, 0, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 207,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/207",
+						"name": "Cast Roll "
+					}
+				},
+				"84": {
+					"bytes": [108, 0, 84, 175, 0, 84, 6, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"85": {
+					"bytes": [165, 0, 85, 15, 0, 85, 241, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 164,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/164",
+						"name": "OilDrum   "
+					}
+				},
+				"86": {
+					"bytes": [176, 0, 86, 15, 0, 98, 247, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 175,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/175",
+						"name": "SolidHit  "
+					}
+				},
+				"87": {
+					"bytes": [102, 0, 87, 15, 236, 94, 247, 0, 247, 136, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 101,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/101",
+						"name": "Thing     "
+					}
+				},
+				"88": {
+					"bytes": [197, 0, 88, 25, 0, 88, 253, 0, 232, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 196,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/196",
+						"name": "FingCymbal"
+					}
+				},
+				"89": {
+					"bytes": [180, 0, 89, 207, 0, 89, 0, 0, 246, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 179,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/179",
+						"name": "Scratch c "
+					}
+				},
+				"90": {
+					"bytes": [178, 0, 90, 207, 0, 90, 241, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 177,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/177",
+						"name": "Scratch a "
+					}
+				},
+				"91": {
+					"bytes": [179, 0, 91, 207, 0, 91, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 178,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/178",
+						"name": "Scratch b "
+					}
+				},
+				"92": {
+					"bytes": [99, 0, 92, 207, 0, 92, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 98,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/98",
+						"name": "Scratch Hi"
+					}
+				},
+				"93": {
+					"bytes": [100, 0, 93, 207, 246, 93, 238, 0, 251, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 99,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/99",
+						"name": "Scratch Lo"
+					}
+				},
+				"94": {
+					"bytes": [101, 0, 94, 207, 176, 97, 235, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 100,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/100",
+						"name": "ScratchDbl"
+					}
+				},
+				"96": {
+					"bytes": [162, 0, 96, 15, 90, 94, 13, 0, 215, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 161,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/161",
+						"name": "Orch Hit  "
+					}
+				}
+			}
+		}
+	],
+	"drumSetsB": [
+		{
+			"drumSetNo": 0,
+			"name": "Total Kit ",
+			"notes": {
+				"35": {
+					"bytes": [47, 0, 35, 15, 0, 35, 0, 0, 249, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 46,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/46",
+						"name": "Orch Crash"
+					}
+				},
+				"36": {
+					"bytes": [1, 0, 36, 15, 206, 36, 71, 0, 241, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 0,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/0",
+						"name": "Fat Kick  "
+					}
+				},
+				"37": {
+					"bytes": [6, 0, 37, 15, 0, 35, 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 5,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/5",
+						"name": "Real Kick "
+					}
+				},
+				"38": {
+					"bytes": [3, 0, 38, 15, 0, 38, 61, 0, 205, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 2,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/2",
+						"name": "Ambi.Kick "
+					}
+				},
+				"39": {
+					"bytes": [13, 0, 39, 15, 50, 39, 93, 0, 207, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 12,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/12",
+						"name": "Syn Kick 3"
+					}
+				},
+				"40": {
+					"bytes": [8, 0, 40, 15, 0, 40, 91, 0, 236, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 7,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/7",
+						"name": "Gated Kick"
+					}
+				},
+				"41": {
+					"bytes": [19, 0, 41, 15, 60, 41, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 18,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/18",
+						"name": "PicloSnare"
+					}
+				},
+				"42": {
+					"bytes": [20, 0, 42, 15, 40, 42, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 19,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/19",
+						"name": "Soft Snare"
+					}
+				},
+				"43": {
+					"bytes": [28, 0, 43, 15, 0, 43, 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 27,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/27",
+						"name": "GatedSnare"
+					}
+				},
+				"44": {
+					"bytes": [30, 0, 44, 15, 70, 44, 79, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 29,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/29",
+						"name": "Syn Snare1"
+					}
+				},
+				"45": {
+					"bytes": [15, 0, 45, 15, 0, 45, 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 14,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/14",
+						"name": "Snare 1   "
+					}
+				},
+				"46": {
+					"bytes": [37, 0, 46, 15, 0, 46, 79, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"47": {
+					"bytes": [27, 0, 47, 15, 0, 47, 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 26,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/26",
+						"name": "Rock Snare"
+					}
+				},
+				"48": {
+					"bytes": [60, 0, 48, 9, 226, 54, 94, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"49": {
+					"bytes": [61, 0, 49, 12, 186, 50, 40, 0, 226, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"50": {
+					"bytes": [60, 0, 50, 15, 0, 49, 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"51": {
+					"bytes": [61, 0, 51, 18, 50, 43, 60, 0, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"52": {
+					"bytes": [59, 0, 52, 21, 0, 52, 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 58,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/58",
+						"name": "Tom Hi    "
+					}
+				},
+				"53": {
+					"bytes": [49, 0, 53, 50, 0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"54": {
+					"bytes": [52, 0, 54, 114, 0, 54, 246, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 51,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/51",
+						"name": "CloseSynHH"
+					}
+				},
+				"55": {
+					"bytes": [49, 0, 55, 50, 0, 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"56": {
+					"bytes": [53, 0, 56, 114, 0, 56, 246, 0, 213, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 52,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/52",
+						"name": "Open SynHH"
+					}
+				},
+				"57": {
+					"bytes": [50, 0, 57, 50, 0, 57, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"58": {
+					"bytes": [86, 0, 58, 12, 0, 58, 89, 0, 236, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"59": {
+					"bytes": [51, 0, 59, 50, 60, 59, 246, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 50,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/50",
+						"name": "Pedal HH  "
+					}
+				},
+				"60": {
+					"bytes": [41, 0, 60, 12, 0, 60, 55, 0, 235, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"61": {
+					"bytes": [41, 0, 61, 18, 30, 59, 60, 0, 230, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"62": {
+					"bytes": [55, 0, 62, 12, 0, 62, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"63": {
+					"bytes": [56, 0, 63, 12, 0, 63, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 55,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/55",
+						"name": "Ride Cup  "
+					}
+				},
+				"64": {
+					"bytes": [83, 0, 64, 15, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 82,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/82",
+						"name": "SynMaracas"
+					}
+				},
+				"65": {
+					"bytes": [82, 0, 65, 15, 0, 65, 7, 0, 196, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"66": {
+					"bytes": [95, 0, 66, 15, 196, 66, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 94,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/94",
+						"name": "Hand Claps"
+					}
+				},
+				"67": {
+					"bytes": [67, 0, 67, 15, 0, 67, 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"68": {
+					"bytes": [69, 0, 68, 15, 0, 68, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 68,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/68",
+						"name": "Slap Bongo"
+					}
+				},
+				"69": {
+					"bytes": [68, 0, 69, 15, 0, 69, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"70": {
+					"bytes": [87, 0, 70, 15, 206, 70, 54, 0, 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 86,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/86",
+						"name": "Cowbell   "
+					}
+				},
+				"71": {
+					"bytes": [72, 0, 71, 18, 206, 75, 79, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"72": {
+					"bytes": [72, 0, 72, 12, 30, 72, 79, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"73": {
+					"bytes": [91, 0, 73, 12, 0, 73, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"74": {
+					"bytes": [84, 0, 74, 143, 0, 74, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"75": {
+					"bytes": [90, 0, 75, 18, 0, 75, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"76": {
+					"bytes": [85, 0, 76, 143, 0, 76, 40, 0, 240, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"77": {
+					"bytes": [99, 0, 77, 73, 176, 82, 20, 0, 201, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 98,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/98",
+						"name": "Scratch Hi"
+					}
+				},
+				"78": {
+					"bytes": [100, 0, 78, 79, 0, 78, 249, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 99,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/99",
+						"name": "Scratch Lo"
+					}
+				},
+				"79": {
+					"bytes": [101, 0, 79, 85, 226, 87, 10, 0, 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 100,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/100",
+						"name": "ScratchDbl"
+					}
+				},
+				"80": {
+					"bytes": [24, 0, 80, 175, 0, 80, 57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 23,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/23",
+						"name": "Rev Snare "
+					}
+				},
+				"81": {
+					"bytes": [23, 0, 81, 175, 0, 81, 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 22,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/22",
+						"name": "Ambi.Snare"
+					}
+				},
+				"82": {
+					"bytes": [25, 0, 82, 207, 0, 82, 50, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 24,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/24",
+						"name": "RollSnare1"
+					}
+				},
+				"83": {
+					"bytes": [26, 0, 83, 207, 0, 83, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 25,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/25",
+						"name": "RollSnare2"
+					}
+				},
+				"84": {
+					"bytes": [136, 0, 84, 15, 0, 84, 0, 0, 217, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 135,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/135",
+						"name": "Pole      "
+					}
+				},
+				"85": {
+					"bytes": [31, 0, 85, 15, 166, 94, 27, 0, 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 30,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/30",
+						"name": "Syn Snare2"
+					}
+				},
+				"86": {
+					"bytes": [96, 0, 86, 15, 0, 86, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 95,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/95",
+						"name": "Syn Claps "
+					}
+				},
+				"87": {
+					"bytes": [71, 0, 87, 12, 40, 87, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 70,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/70",
+						"name": "Syn Claves"
+					}
+				},
+				"88": {
+					"bytes": [63, 0, 88, 21, 0, 92, 99, 0, 222, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"89": {
+					"bytes": [63, 0, 89, 9, 50, 84, 70, 0, 212, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"90": {
+					"bytes": [38, 0, 90, 18, 50, 90, 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 37,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/37",
+						"name": "Syn Rim   "
+					}
+				},
+				"91": {
+					"bytes": [64, 0, 91, 21, 0, 99, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 63,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/63",
+						"name": "Syn Tom 2 "
+					}
+				},
+				"93": {
+					"bytes": [64, 0, 93, 15, 0, 95, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 63,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/63",
+						"name": "Syn Tom 2 "
+					}
+				},
+				"95": {
+					"bytes": [64, 0, 95, 9, 0, 93, 89, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 63,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/63",
+						"name": "Syn Tom 2 "
+					}
+				},
+				"96": {
+					"bytes": [148, 0, 96, 15, 0, 96, 0, 0, 240, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				}
+			}
+		},
+		{
+			"drumSetNo": 1,
+			"name": "ProducrKit",
+			"notes": {
+				"36": {
+					"bytes": [5, 0, 36, 31, 0, 36, 39, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 4,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/4",
+						"name": "Punch Kick"
+					}
+				},
+				"37": {
+					"bytes": [4, 0, 37, 31, 0, 37, 18, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 3,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/3",
+						"name": "Crisp Kick"
+					}
+				},
+				"38": {
+					"bytes": [1, 0, 38, 31, 0, 38, 241, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 0,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/0",
+						"name": "Fat Kick  "
+					}
+				},
+				"39": {
+					"bytes": [6, 0, 39, 31, 0, 39, 27, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 5,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/5",
+						"name": "Real Kick "
+					}
+				},
+				"40": {
+					"bytes": [2, 0, 40, 31, 0, 40, 12, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 1,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/1",
+						"name": "Rock Kick "
+					}
+				},
+				"41": {
+					"bytes": [3, 0, 41, 31, 0, 41, 19, 0, 223, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 2,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/2",
+						"name": "Ambi.Kick "
+					}
+				},
+				"42": {
+					"bytes": [8, 0, 42, 31, 0, 42, 0, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 7,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/7",
+						"name": "Gated Kick"
+					}
+				},
+				"43": {
+					"bytes": [10, 0, 43, 31, 10, 43, 15, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 9,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/9",
+						"name": "Metal Kick"
+					}
+				},
+				"44": {
+					"bytes": [9, 0, 44, 31, 0, 44, 226, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 8,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/8",
+						"name": "ProcesKick"
+					}
+				},
+				"45": {
+					"bytes": [7, 0, 45, 31, 0, 45, 217, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 6,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/6",
+						"name": "Dance Kick"
+					}
+				},
+				"46": {
+					"bytes": [13, 0, 46, 31, 0, 46, 36, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 12,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/12",
+						"name": "Syn Kick 3"
+					}
+				},
+				"47": {
+					"bytes": [11, 0, 47, 31, 0, 47, 217, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 10,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/10",
+						"name": "Syn Kick 1"
+					}
+				},
+				"48": {
+					"bytes": [12, 0, 48, 31, 0, 48, 232, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 11,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/11",
+						"name": "Syn Kick 2"
+					}
+				},
+				"49": {
+					"bytes": [14, 0, 49, 15, 0, 49, 232, 0, 217, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 13,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/13",
+						"name": "Orch B.Drm"
+					}
+				},
+				"50": {
+					"bytes": [15, 0, 50, 15, 0, 50, 229, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 14,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/14",
+						"name": "Snare 1   "
+					}
+				},
+				"51": {
+					"bytes": [20, 0, 51, 15, 0, 51, 237, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 19,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/19",
+						"name": "Soft Snare"
+					}
+				},
+				"52": {
+					"bytes": [16, 0, 52, 15, 0, 52, 247, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 15,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/15",
+						"name": "Snare 2   "
+					}
+				},
+				"53": {
+					"bytes": [19, 0, 53, 15, 0, 53, 229, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 18,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/18",
+						"name": "PicloSnare"
+					}
+				},
+				"54": {
+					"bytes": [18, 0, 54, 15, 0, 54, 200, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 17,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/17",
+						"name": "Snare 4   "
+					}
+				},
+				"55": {
+					"bytes": [17, 0, 55, 15, 0, 55, 229, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 16,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/16",
+						"name": "Snare 3   "
+					}
+				},
+				"56": {
+					"bytes": [21, 0, 56, 15, 0, 56, 238, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 20,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/20",
+						"name": "LightSnare"
+					}
+				},
+				"57": {
+					"bytes": [28, 0, 57, 15, 0, 57, 229, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 27,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/27",
+						"name": "GatedSnare"
+					}
+				},
+				"58": {
+					"bytes": [22, 0, 58, 15, 0, 58, 235, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 21,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/21",
+						"name": "TightSnare"
+					}
+				},
+				"59": {
+					"bytes": [29, 0, 59, 15, 0, 59, 235, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 28,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/28",
+						"name": "PowerSnare"
+					}
+				},
+				"60": {
+					"bytes": [23, 0, 60, 15, 0, 60, 229, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 22,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/22",
+						"name": "Ambi.Snare"
+					}
+				},
+				"61": {
+					"bytes": [24, 0, 61, 15, 0, 61, 229, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 23,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/23",
+						"name": "Rev Snare "
+					}
+				},
+				"62": {
+					"bytes": [27, 0, 62, 15, 0, 62, 229, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 26,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/26",
+						"name": "Rock Snare"
+					}
+				},
+				"63": {
+					"bytes": [25, 0, 63, 143, 0, 63, 238, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 24,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/24",
+						"name": "RollSnare1"
+					}
+				},
+				"64": {
+					"bytes": [26, 0, 64, 143, 0, 64, 247, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 25,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/25",
+						"name": "RollSnare2"
+					}
+				},
+				"65": {
+					"bytes": [37, 0, 65, 15, 0, 65, 229, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"66": {
+					"bytes": [30, 0, 66, 15, 0, 66, 249, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 29,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/29",
+						"name": "Syn Snare1"
+					}
+				},
+				"67": {
+					"bytes": [31, 0, 67, 15, 0, 67, 247, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 30,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/30",
+						"name": "Syn Snare2"
+					}
+				},
+				"68": {
+					"bytes": [32, 0, 68, 15, 0, 68, 226, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 31,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/31",
+						"name": "Gun Shot  "
+					}
+				},
+				"69": {
+					"bytes": [39, 0, 69, 15, 0, 81, 232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 38,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/38",
+						"name": "VocalSnr 1"
+					}
+				},
+				"70": {
+					"bytes": [34, 0, 70, 15, 0, 70, 241, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 33,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/33",
+						"name": "BrushSwish"
+					}
+				},
+				"71": {
+					"bytes": [35, 0, 71, 47, 0, 71, 241, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 34,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/34",
+						"name": "BrushSwirl"
+					}
+				},
+				"72": {
+					"bytes": [36, 0, 72, 47, 0, 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 35,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/35",
+						"name": "Brush Tap "
+					}
+				},
+				"73": {
+					"bytes": [33, 0, 73, 47, 0, 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 32,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/32",
+						"name": "Brush Slap"
+					}
+				},
+				"74": {
+					"bytes": [49, 0, 74, 79, 0, 74, 226, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"75": {
+					"bytes": [50, 0, 75, 79, 0, 75, 226, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"76": {
+					"bytes": [51, 0, 76, 79, 0, 76, 226, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 50,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/50",
+						"name": "Pedal HH  "
+					}
+				},
+				"77": {
+					"bytes": [52, 0, 77, 127, 0, 77, 223, 0, 0, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 51,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/51",
+						"name": "CloseSynHH"
+					}
+				},
+				"78": {
+					"bytes": [53, 0, 78, 127, 0, 78, 223, 0, 206, 153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 52,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/52",
+						"name": "Open SynHH"
+					}
+				},
+				"79": {
+					"bytes": [41, 0, 79, 24, 0, 79, 250, 0, 238, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"80": {
+					"bytes": [45, 0, 80, 12, 0, 80, 0, 0, 214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 44,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/44",
+						"name": "Splash Cym"
+					}
+				},
+				"81": {
+					"bytes": [43, 0, 81, 5, 0, 81, 215, 0, 238, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 42,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/42",
+						"name": "China Cym "
+					}
+				},
+				"82": {
+					"bytes": [55, 0, 82, 14, 0, 82, 241, 0, 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"83": {
+					"bytes": [56, 0, 83, 14, 0, 83, 238, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 55,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/55",
+						"name": "Ride Cup  "
+					}
+				},
+				"84": {
+					"bytes": [57, 0, 84, 3, 0, 84, 241, 0, 244, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 56,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/56",
+						"name": "Ride Cym 1"
+					}
+				},
+				"85": {
+					"bytes": [58, 0, 85, 20, 0, 85, 226, 0, 245, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 57,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/57",
+						"name": "Ride Cym 2"
+					}
+				},
+				"86": {
+					"bytes": [60, 0, 86, 5, 0, 91, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"87": {
+					"bytes": [60, 0, 87, 15, 0, 87, 247, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"88": {
+					"bytes": [59, 0, 88, 25, 0, 88, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 58,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/58",
+						"name": "Tom Hi    "
+					}
+				},
+				"89": {
+					"bytes": [61, 0, 89, 5, 206, 95, 235, 0, 226, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"90": {
+					"bytes": [61, 0, 90, 25, 40, 85, 211, 0, 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"91": {
+					"bytes": [63, 0, 91, 5, 176, 93, 229, 0, 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"92": {
+					"bytes": [62, 0, 92, 25, 246, 94, 229, 0, 213, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 61,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/61",
+						"name": "SynTom1 Hi"
+					}
+				},
+				"94": {
+					"bytes": [64, 0, 94, 15, 176, 96, 238, 0, 251, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 63,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/63",
+						"name": "Syn Tom 2 "
+					}
+				},
+				"95": {
+					"bytes": [65, 0, 95, 5, 236, 98, 214, 0, 228, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 64,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/64",
+						"name": "Brush Tom "
+					}
+				},
+				"96": {
+					"bytes": [65, 0, 96, 25, 0, 93, 214, 0, 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 64,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/64",
+						"name": "Brush Tom "
+					}
+				}
+			}
+		}
+	],
+	"drumSetsGM": [
+		{
+			"drumSetNo": 0,
+			"name": "GM Kit    ",
+			"notes": {
+				"28": {
+					"bytes": [2, 0, 28, 15, 0, 28, 99, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 1,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/1",
+						"name": "Rock Kick "
+					}
+				},
+				"29": {
+					"bytes": [17, 0, 29, 15, 0, 28, 11, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 16,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/16",
+						"name": "Snare 3   "
+					}
+				},
+				"30": {
+					"bytes": [50, 0, 30, 53, 0, 30, 241, 0, 174, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"31": {
+					"bytes": [1, 0, 31, 15, 0, 31, 35, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 0,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/0",
+						"name": "Fat Kick  "
+					}
+				},
+				"32": {
+					"bytes": [110, 0, 32, 15, 176, 37, 50, 0, 219, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 109,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/109",
+						"name": "Timbales  "
+					}
+				},
+				"33": {
+					"bytes": [15, 0, 33, 207, 10, 30, 25, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 14,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/14",
+						"name": "Snare 1   "
+					}
+				},
+				"34": {
+					"bytes": [25, 0, 34, 207, 0, 34, 21, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 24,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/24",
+						"name": "RollSnare1"
+					}
+				},
+				"35": {
+					"bytes": [6, 0, 35, 15, 90, 33, 70, 0, 186, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 5,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/5",
+						"name": "Real Kick "
+					}
+				},
+				"36": {
+					"bytes": [9, 0, 36, 15, 0, 37, 45, 0, 186, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 8,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/8",
+						"name": "ProcesKick"
+					}
+				},
+				"37": {
+					"bytes": [37, 0, 37, 15, 0, 37, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"38": {
+					"bytes": [27, 0, 38, 15, 0, 38, 12, 0, 209, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 26,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/26",
+						"name": "Rock Snare"
+					}
+				},
+				"39": {
+					"bytes": [95, 0, 39, 12, 0, 39, 24, 0, 199, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 94,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/94",
+						"name": "Hand Claps"
+					}
+				},
+				"40": {
+					"bytes": [21, 0, 40, 15, 0, 40, 27, 0, 212, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 20,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/20",
+						"name": "LightSnare"
+					}
+				},
+				"41": {
+					"bytes": [60, 0, 41, 4, 246, 47, 70, 0, 226, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"42": {
+					"bytes": [49, 0, 42, 53, 0, 42, 20, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"43": {
+					"bytes": [60, 0, 43, 8, 216, 46, 70, 0, 224, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"44": {
+					"bytes": [51, 0, 44, 53, 0, 44, 241, 0, 196, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 50,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/50",
+						"name": "Pedal HH  "
+					}
+				},
+				"45": {
+					"bytes": [60, 0, 45, 12, 70, 45, 70, 0, 222, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"46": {
+					"bytes": [50, 0, 46, 53, 0, 46, 241, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"47": {
+					"bytes": [59, 0, 47, 18, 0, 50, 99, 0, 218, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 58,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/58",
+						"name": "Tom Hi    "
+					}
+				},
+				"48": {
+					"bytes": [59, 0, 48, 22, 0, 48, 99, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 58,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/58",
+						"name": "Tom Hi    "
+					}
+				},
+				"49": {
+					"bytes": [41, 0, 49, 21, 50, 49, 57, 0, 243, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"50": {
+					"bytes": [59, 0, 50, 26, 0, 45, 99, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 58,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/58",
+						"name": "Tom Hi    "
+					}
+				},
+				"51": {
+					"bytes": [55, 0, 51, 9, 0, 51, 10, 0, 7, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"52": {
+					"bytes": [43, 0, 52, 12, 0, 52, 0, 0, 236, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 42,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/42",
+						"name": "China Cym "
+					}
+				},
+				"53": {
+					"bytes": [56, 0, 53, 9, 0, 53, 0, 0, 9, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 55,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/55",
+						"name": "Ride Cup  "
+					}
+				},
+				"54": {
+					"bytes": [86, 0, 54, 16, 0, 54, 17, 0, 242, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"55": {
+					"bytes": [45, 0, 55, 18, 0, 57, 50, 0, 226, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 44,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/44",
+						"name": "Splash Cym"
+					}
+				},
+				"56": {
+					"bytes": [87, 0, 56, 18, 0, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 86,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/86",
+						"name": "Cowbell   "
+					}
+				},
+				"57": {
+					"bytes": [41, 0, 57, 9, 80, 54, 47, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"58": {
+					"bytes": [105, 0, 58, 6, 0, 58, 99, 0, 221, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 104,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/104",
+						"name": "Vibraslap "
+					}
+				},
+				"59": {
+					"bytes": [57, 0, 59, 9, 0, 59, 0, 0, 241, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 56,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/56",
+						"name": "Ride Cym 1"
+					}
+				},
+				"60": {
+					"bytes": [68, 0, 60, 23, 0, 60, 65, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"61": {
+					"bytes": [67, 0, 61, 23, 0, 61, 77, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"62": {
+					"bytes": [75, 0, 62, 8, 50, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 74,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/74",
+						"name": "Mute Conga"
+					}
+				},
+				"63": {
+					"bytes": [72, 0, 63, 9, 70, 62, 50, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"64": {
+					"bytes": [72, 0, 64, 8, 0, 67, 50, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"65": {
+					"bytes": [90, 0, 65, 18, 0, 65, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"66": {
+					"bytes": [91, 0, 66, 19, 0, 66, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"67": {
+					"bytes": [66, 0, 67, 6, 0, 67, 15, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"68": {
+					"bytes": [66, 0, 68, 6, 216, 73, 15, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"69": {
+					"bytes": [82, 0, 69, 6, 0, 69, 70, 0, 175, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"70": {
+					"bytes": [81, 0, 70, 6, 0, 70, 70, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 80,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/80",
+						"name": "Maracas   "
+					}
+				},
+				"71": {
+					"bytes": [151, 0, 71, 88, 0, 71, 249, 0, 176, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 150,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/150",
+						"name": "Whistle S "
+					}
+				},
+				"72": {
+					"bytes": [152, 0, 72, 88, 246, 74, 236, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 151,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/151",
+						"name": "Whistle L "
+					}
+				},
+				"73": {
+					"bytes": [106, 0, 73, 118, 0, 73, 231, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 105,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/105",
+						"name": "Guiro S   "
+					}
+				},
+				"74": {
+					"bytes": [107, 0, 74, 118, 0, 74, 224, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 106,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/106",
+						"name": "Guiro L   "
+					}
+				},
+				"75": {
+					"bytes": [70, 0, 75, 19, 50, 75, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 69,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/69",
+						"name": "Claves    "
+					}
+				},
+				"76": {
+					"bytes": [93, 0, 76, 22, 0, 81, 6, 0, 189, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 92,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/92",
+						"name": "WoodBlock2"
+					}
+				},
+				"77": {
+					"bytes": [94, 0, 77, 21, 0, 77, 28, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 93,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/93",
+						"name": "WoodBlock3"
+					}
+				},
+				"78": {
+					"bytes": [103, 0, 78, 137, 0, 78, 214, 0, 238, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 102,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/102",
+						"name": "Mute Cuica"
+					}
+				},
+				"79": {
+					"bytes": [104, 0, 79, 137, 0, 79, 218, 0, 246, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 103,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/103",
+						"name": "Open Cuica"
+					}
+				},
+				"80": {
+					"bytes": [84, 0, 80, 166, 0, 80, 72, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"81": {
+					"bytes": [85, 0, 81, 166, 0, 81, 99, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"82": {
+					"bytes": [82, 0, 82, 21, 70, 81, 70, 0, 166, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"83": {
+					"bytes": [150, 0, 83, 24, 0, 83, 0, 0, 216, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 149,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/149",
+						"name": "JingleBell"
+					}
+				},
+				"84": {
+					"bytes": [148, 0, 84, 25, 0, 84, 30, 0, 231, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				},
+				"85": {
+					"bytes": [108, 0, 85, 7, 0, 85, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"86": {
+					"bytes": [37, 0, 86, 7, 226, 94, 196, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"87": {
+					"bytes": [155, 0, 87, 7, 0, 87, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 154,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/154",
+						"name": "Taiko Lo  "
+					}
+				}
+			}
+		},
+		{
+			"drumSetNo": 1,
+			"name": "Power Kit ",
+			"notes": {
+				"28": {
+					"bytes": [3, 0, 28, 15, 0, 28, 36, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 2,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/2",
+						"name": "Ambi.Kick "
+					}
+				},
+				"29": {
+					"bytes": [27, 0, 29, 15, 0, 29, 12, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 26,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/26",
+						"name": "Rock Snare"
+					}
+				},
+				"30": {
+					"bytes": [50, 0, 30, 53, 0, 30, 241, 0, 174, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"31": {
+					"bytes": [8, 0, 31, 15, 0, 31, 62, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 7,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/7",
+						"name": "Gated Kick"
+					}
+				},
+				"32": {
+					"bytes": [110, 0, 32, 15, 176, 37, 50, 0, 219, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 109,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/109",
+						"name": "Timbales  "
+					}
+				},
+				"33": {
+					"bytes": [22, 0, 33, 15, 0, 33, 41, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 21,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/21",
+						"name": "TightSnare"
+					}
+				},
+				"34": {
+					"bytes": [24, 0, 34, 15, 216, 34, 21, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 23,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/23",
+						"name": "Rev Snare "
+					}
+				},
+				"35": {
+					"bytes": [8, 0, 35, 15, 0, 37, 62, 0, 204, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 7,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/7",
+						"name": "Gated Kick"
+					}
+				},
+				"36": {
+					"bytes": [10, 0, 36, 15, 0, 38, 80, 0, 246, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 9,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/9",
+						"name": "Metal Kick"
+					}
+				},
+				"37": {
+					"bytes": [37, 0, 37, 15, 0, 37, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"38": {
+					"bytes": [29, 0, 38, 15, 0, 38, 27, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 28,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/28",
+						"name": "PowerSnare"
+					}
+				},
+				"39": {
+					"bytes": [95, 0, 39, 12, 0, 39, 24, 0, 199, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 94,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/94",
+						"name": "Hand Claps"
+					}
+				},
+				"40": {
+					"bytes": [28, 0, 40, 15, 0, 40, 23, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 27,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/27",
+						"name": "GatedSnare"
+					}
+				},
+				"41": {
+					"bytes": [61, 0, 41, 4, 216, 48, 10, 0, 226, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"42": {
+					"bytes": [49, 0, 42, 53, 0, 42, 20, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"43": {
+					"bytes": [61, 0, 43, 8, 216, 46, 10, 0, 231, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"44": {
+					"bytes": [51, 0, 44, 53, 0, 44, 241, 0, 196, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 50,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/50",
+						"name": "Pedal HH  "
+					}
+				},
+				"45": {
+					"bytes": [61, 0, 45, 12, 0, 45, 10, 0, 236, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"46": {
+					"bytes": [50, 0, 46, 53, 0, 46, 241, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"47": {
+					"bytes": [61, 0, 47, 18, 60, 44, 10, 0, 241, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"48": {
+					"bytes": [61, 0, 48, 22, 80, 42, 10, 0, 246, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"49": {
+					"bytes": [41, 0, 49, 21, 50, 49, 57, 0, 243, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"50": {
+					"bytes": [61, 0, 50, 26, 50, 40, 10, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"51": {
+					"bytes": [55, 0, 51, 9, 0, 51, 10, 0, 7, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"52": {
+					"bytes": [43, 0, 52, 12, 0, 52, 0, 0, 236, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 42,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/42",
+						"name": "China Cym "
+					}
+				},
+				"53": {
+					"bytes": [56, 0, 53, 9, 0, 53, 0, 0, 9, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 55,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/55",
+						"name": "Ride Cup  "
+					}
+				},
+				"54": {
+					"bytes": [86, 0, 54, 16, 0, 54, 17, 0, 242, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"55": {
+					"bytes": [45, 0, 55, 18, 0, 57, 50, 0, 226, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 44,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/44",
+						"name": "Splash Cym"
+					}
+				},
+				"56": {
+					"bytes": [87, 0, 56, 18, 0, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 86,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/86",
+						"name": "Cowbell   "
+					}
+				},
+				"57": {
+					"bytes": [41, 0, 57, 9, 80, 54, 47, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"58": {
+					"bytes": [105, 0, 58, 6, 0, 58, 99, 0, 221, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 104,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/104",
+						"name": "Vibraslap "
+					}
+				},
+				"59": {
+					"bytes": [57, 0, 59, 9, 0, 59, 0, 0, 241, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 56,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/56",
+						"name": "Ride Cym 1"
+					}
+				},
+				"60": {
+					"bytes": [68, 0, 60, 23, 0, 60, 65, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"61": {
+					"bytes": [67, 0, 61, 23, 0, 61, 77, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"62": {
+					"bytes": [75, 0, 62, 8, 50, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 74,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/74",
+						"name": "Mute Conga"
+					}
+				},
+				"63": {
+					"bytes": [72, 0, 63, 9, 70, 62, 50, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"64": {
+					"bytes": [72, 0, 64, 8, 0, 67, 50, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"65": {
+					"bytes": [90, 0, 65, 18, 0, 65, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"66": {
+					"bytes": [91, 0, 66, 19, 0, 66, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"67": {
+					"bytes": [66, 0, 67, 6, 0, 67, 15, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"68": {
+					"bytes": [66, 0, 68, 6, 216, 73, 15, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"69": {
+					"bytes": [82, 0, 69, 6, 0, 69, 70, 0, 175, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"70": {
+					"bytes": [81, 0, 70, 6, 0, 70, 70, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 80,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/80",
+						"name": "Maracas   "
+					}
+				},
+				"71": {
+					"bytes": [151, 0, 71, 88, 0, 71, 249, 0, 176, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 150,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/150",
+						"name": "Whistle S "
+					}
+				},
+				"72": {
+					"bytes": [152, 0, 72, 88, 246, 74, 236, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 151,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/151",
+						"name": "Whistle L "
+					}
+				},
+				"73": {
+					"bytes": [106, 0, 73, 118, 0, 73, 231, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 105,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/105",
+						"name": "Guiro S   "
+					}
+				},
+				"74": {
+					"bytes": [107, 0, 74, 118, 0, 74, 224, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 106,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/106",
+						"name": "Guiro L   "
+					}
+				},
+				"75": {
+					"bytes": [70, 0, 75, 19, 50, 75, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 69,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/69",
+						"name": "Claves    "
+					}
+				},
+				"76": {
+					"bytes": [93, 0, 76, 22, 0, 81, 6, 0, 189, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 92,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/92",
+						"name": "WoodBlock2"
+					}
+				},
+				"77": {
+					"bytes": [94, 0, 77, 21, 0, 77, 28, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 93,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/93",
+						"name": "WoodBlock3"
+					}
+				},
+				"78": {
+					"bytes": [103, 0, 78, 137, 0, 78, 214, 0, 238, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 102,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/102",
+						"name": "Mute Cuica"
+					}
+				},
+				"79": {
+					"bytes": [104, 0, 79, 137, 0, 79, 218, 0, 246, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 103,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/103",
+						"name": "Open Cuica"
+					}
+				},
+				"80": {
+					"bytes": [84, 0, 80, 166, 0, 80, 72, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"81": {
+					"bytes": [85, 0, 81, 166, 0, 81, 99, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"82": {
+					"bytes": [82, 0, 82, 21, 70, 81, 70, 0, 166, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"83": {
+					"bytes": [150, 0, 83, 24, 0, 83, 0, 0, 216, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 149,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/149",
+						"name": "JingleBell"
+					}
+				},
+				"84": {
+					"bytes": [148, 0, 84, 25, 0, 84, 30, 0, 231, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				},
+				"85": {
+					"bytes": [108, 0, 85, 7, 0, 85, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"86": {
+					"bytes": [37, 0, 86, 7, 226, 94, 196, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"87": {
+					"bytes": [155, 0, 87, 7, 0, 87, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 154,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/154",
+						"name": "Taiko Lo  "
+					}
+				}
+			}
+		},
+		{
+			"drumSetNo": 2,
+			"name": "Analog Kit",
+			"notes": {
+				"28": {
+					"bytes": [13, 0, 28, 15, 90, 27, 99, 0, 184, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 12,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/12",
+						"name": "Syn Kick 3"
+					}
+				},
+				"29": {
+					"bytes": [31, 0, 29, 15, 226, 29, 70, 0, 227, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 30,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/30",
+						"name": "Syn Snare2"
+					}
+				},
+				"30": {
+					"bytes": [53, 0, 30, 53, 0, 29, 241, 0, 184, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 52,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/52",
+						"name": "Open SynHH"
+					}
+				},
+				"31": {
+					"bytes": [7, 0, 31, 15, 0, 31, 33, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 6,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/6",
+						"name": "Dance Kick"
+					}
+				},
+				"32": {
+					"bytes": [110, 0, 32, 15, 176, 37, 50, 0, 219, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 109,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/109",
+						"name": "Timbales  "
+					}
+				},
+				"33": {
+					"bytes": [23, 0, 33, 15, 0, 33, 11, 0, 193, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 22,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/22",
+						"name": "Ambi.Snare"
+					}
+				},
+				"34": {
+					"bytes": [24, 0, 34, 15, 216, 34, 21, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 23,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/23",
+						"name": "Rev Snare "
+					}
+				},
+				"35": {
+					"bytes": [4, 0, 35, 15, 206, 38, 76, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 3,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/3",
+						"name": "Crisp Kick"
+					}
+				},
+				"36": {
+					"bytes": [11, 0, 36, 15, 0, 39, 21, 0, 200, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 10,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/10",
+						"name": "Syn Kick 1"
+					}
+				},
+				"37": {
+					"bytes": [38, 0, 37, 15, 0, 37, 29, 0, 174, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 37,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/37",
+						"name": "Syn Rim   "
+					}
+				},
+				"38": {
+					"bytes": [30, 0, 38, 15, 50, 38, 78, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 29,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/29",
+						"name": "Syn Snare1"
+					}
+				},
+				"39": {
+					"bytes": [96, 0, 39, 12, 0, 39, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 95,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/95",
+						"name": "Syn Claps "
+					}
+				},
+				"40": {
+					"bytes": [21, 0, 40, 15, 0, 39, 27, 0, 253, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 20,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/20",
+						"name": "LightSnare"
+					}
+				},
+				"41": {
+					"bytes": [63, 0, 41, 4, 226, 50, 80, 0, 207, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"42": {
+					"bytes": [52, 0, 42, 53, 0, 42, 251, 0, 162, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 51,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/51",
+						"name": "CloseSynHH"
+					}
+				},
+				"43": {
+					"bytes": [63, 0, 43, 8, 206, 49, 80, 0, 204, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"44": {
+					"bytes": [52, 0, 44, 53, 0, 44, 231, 0, 173, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 51,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/51",
+						"name": "CloseSynHH"
+					}
+				},
+				"45": {
+					"bytes": [63, 0, 45, 12, 0, 47, 80, 0, 200, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"46": {
+					"bytes": [53, 0, 46, 53, 0, 46, 241, 0, 223, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 52,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/52",
+						"name": "Open SynHH"
+					}
+				},
+				"47": {
+					"bytes": [63, 0, 47, 18, 70, 46, 80, 0, 196, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"48": {
+					"bytes": [63, 0, 48, 22, 80, 44, 80, 0, 192, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"49": {
+					"bytes": [53, 0, 49, 21, 0, 58, 54, 0, 230, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 52,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/52",
+						"name": "Open SynHH"
+					}
+				},
+				"50": {
+					"bytes": [63, 0, 50, 26, 10, 41, 80, 0, 192, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 62,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/62",
+						"name": "SynTom1 Lo"
+					}
+				},
+				"51": {
+					"bytes": [55, 0, 51, 9, 0, 51, 10, 0, 7, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"52": {
+					"bytes": [43, 0, 52, 12, 0, 52, 0, 0, 236, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 42,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/42",
+						"name": "China Cym "
+					}
+				},
+				"53": {
+					"bytes": [56, 0, 53, 9, 0, 53, 0, 0, 9, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 55,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/55",
+						"name": "Ride Cup  "
+					}
+				},
+				"54": {
+					"bytes": [86, 0, 54, 15, 0, 54, 17, 0, 242, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"55": {
+					"bytes": [45, 0, 55, 18, 0, 57, 50, 0, 226, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 44,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/44",
+						"name": "Splash Cym"
+					}
+				},
+				"56": {
+					"bytes": [88, 0, 56, 18, 0, 55, 15, 0, 193, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 87,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/87",
+						"name": "SynCowbell"
+					}
+				},
+				"57": {
+					"bytes": [41, 0, 57, 9, 80, 54, 47, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"58": {
+					"bytes": [105, 0, 58, 6, 0, 58, 99, 0, 221, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 104,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/104",
+						"name": "Vibraslap "
+					}
+				},
+				"59": {
+					"bytes": [57, 0, 59, 9, 0, 59, 0, 0, 241, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 56,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/56",
+						"name": "Ride Cym 1"
+					}
+				},
+				"60": {
+					"bytes": [68, 0, 60, 23, 0, 60, 65, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"61": {
+					"bytes": [67, 0, 61, 23, 0, 61, 77, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"62": {
+					"bytes": [62, 0, 62, 8, 40, 56, 23, 0, 184, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 61,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/61",
+						"name": "SynTom1 Hi"
+					}
+				},
+				"63": {
+					"bytes": [62, 0, 63, 8, 166, 64, 23, 0, 184, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 61,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/61",
+						"name": "SynTom1 Hi"
+					}
+				},
+				"64": {
+					"bytes": [62, 0, 64, 8, 236, 72, 23, 0, 199, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 61,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/61",
+						"name": "SynTom1 Hi"
+					}
+				},
+				"65": {
+					"bytes": [90, 0, 65, 18, 0, 65, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"66": {
+					"bytes": [91, 0, 66, 19, 0, 66, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"67": {
+					"bytes": [66, 0, 67, 6, 0, 67, 15, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"68": {
+					"bytes": [66, 0, 68, 6, 216, 73, 15, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"69": {
+					"bytes": [82, 0, 69, 6, 0, 69, 70, 0, 175, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"70": {
+					"bytes": [83, 0, 70, 6, 0, 70, 70, 0, 175, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 82,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/82",
+						"name": "SynMaracas"
+					}
+				},
+				"71": {
+					"bytes": [151, 0, 71, 88, 0, 71, 249, 0, 176, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 150,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/150",
+						"name": "Whistle S "
+					}
+				},
+				"72": {
+					"bytes": [152, 0, 72, 88, 246, 74, 236, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 151,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/151",
+						"name": "Whistle L "
+					}
+				},
+				"73": {
+					"bytes": [106, 0, 73, 118, 0, 73, 231, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 105,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/105",
+						"name": "Guiro S   "
+					}
+				},
+				"74": {
+					"bytes": [107, 0, 74, 118, 0, 74, 224, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 106,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/106",
+						"name": "Guiro L   "
+					}
+				},
+				"75": {
+					"bytes": [71, 0, 75, 19, 0, 75, 246, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 70,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/70",
+						"name": "Syn Claves"
+					}
+				},
+				"76": {
+					"bytes": [93, 0, 76, 22, 0, 81, 6, 0, 189, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 92,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/92",
+						"name": "WoodBlock2"
+					}
+				},
+				"77": {
+					"bytes": [94, 0, 77, 21, 0, 77, 28, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 93,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/93",
+						"name": "WoodBlock3"
+					}
+				},
+				"78": {
+					"bytes": [103, 0, 78, 137, 0, 78, 214, 0, 238, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 102,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/102",
+						"name": "Mute Cuica"
+					}
+				},
+				"79": {
+					"bytes": [104, 0, 79, 137, 0, 79, 218, 0, 246, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 103,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/103",
+						"name": "Open Cuica"
+					}
+				},
+				"80": {
+					"bytes": [84, 0, 80, 166, 0, 80, 72, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"81": {
+					"bytes": [85, 0, 81, 166, 0, 81, 99, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"82": {
+					"bytes": [82, 0, 82, 21, 70, 81, 70, 0, 166, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"83": {
+					"bytes": [150, 0, 83, 24, 0, 83, 0, 0, 216, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 149,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/149",
+						"name": "JingleBell"
+					}
+				},
+				"84": {
+					"bytes": [148, 0, 84, 25, 0, 84, 30, 0, 231, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				},
+				"85": {
+					"bytes": [108, 0, 85, 7, 0, 85, 0, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"86": {
+					"bytes": [37, 0, 86, 7, 226, 94, 196, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"87": {
+					"bytes": [155, 0, 87, 7, 0, 87, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 154,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/154",
+						"name": "Taiko Lo  "
+					}
+				}
+			}
+		},
+		{
+			"drumSetNo": 3,
+			"name": "Jazz Kit  ",
+			"notes": {
+				"28": {
+					"bytes": [4, 0, 28, 15, 0, 28, 75, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 3,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/3",
+						"name": "Crisp Kick"
+					}
+				},
+				"29": {
+					"bytes": [18, 0, 29, 15, 20, 28, 99, 0, 250, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 17,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/17",
+						"name": "Snare 4   "
+					}
+				},
+				"30": {
+					"bytes": [50, 0, 30, 53, 0, 30, 241, 0, 174, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"31": {
+					"bytes": [3, 0, 31, 15, 50, 30, 62, 0, 172, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 2,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/2",
+						"name": "Ambi.Kick "
+					}
+				},
+				"32": {
+					"bytes": [110, 0, 32, 15, 176, 37, 50, 0, 219, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 109,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/109",
+						"name": "Timbales  "
+					}
+				},
+				"33": {
+					"bytes": [26, 0, 33, 207, 0, 33, 33, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 25,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/25",
+						"name": "RollSnare2"
+					}
+				},
+				"34": {
+					"bytes": [25, 0, 34, 207, 0, 34, 21, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 24,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/24",
+						"name": "RollSnare1"
+					}
+				},
+				"35": {
+					"bytes": [5, 0, 35, 15, 0, 35, 99, 0, 186, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 4,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/4",
+						"name": "Punch Kick"
+					}
+				},
+				"36": {
+					"bytes": [2, 0, 36, 15, 50, 35, 99, 0, 172, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 1,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/1",
+						"name": "Rock Kick "
+					}
+				},
+				"37": {
+					"bytes": [37, 0, 37, 15, 0, 37, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"38": {
+					"bytes": [20, 0, 38, 15, 0, 38, 31, 0, 209, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 19,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/19",
+						"name": "Soft Snare"
+					}
+				},
+				"39": {
+					"bytes": [95, 0, 39, 12, 0, 39, 24, 0, 199, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 94,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/94",
+						"name": "Hand Claps"
+					}
+				},
+				"40": {
+					"bytes": [16, 0, 40, 15, 0, 40, 60, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 15,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/15",
+						"name": "Snare 2   "
+					}
+				},
+				"41": {
+					"bytes": [60, 0, 41, 4, 246, 47, 67, 0, 226, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"42": {
+					"bytes": [49, 0, 42, 53, 0, 42, 20, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"43": {
+					"bytes": [60, 0, 43, 8, 216, 46, 70, 0, 224, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"44": {
+					"bytes": [51, 0, 44, 53, 0, 44, 241, 0, 196, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 50,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/50",
+						"name": "Pedal HH  "
+					}
+				},
+				"45": {
+					"bytes": [60, 0, 45, 12, 70, 45, 70, 0, 222, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 59,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/59",
+						"name": "Tom Lo    "
+					}
+				},
+				"46": {
+					"bytes": [50, 0, 46, 53, 0, 46, 241, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"47": {
+					"bytes": [59, 0, 47, 18, 0, 50, 99, 0, 218, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 58,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/58",
+						"name": "Tom Hi    "
+					}
+				},
+				"48": {
+					"bytes": [59, 0, 48, 22, 0, 48, 99, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 58,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/58",
+						"name": "Tom Hi    "
+					}
+				},
+				"49": {
+					"bytes": [41, 0, 49, 21, 50, 49, 57, 0, 243, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"50": {
+					"bytes": [59, 0, 50, 26, 0, 45, 99, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 58,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/58",
+						"name": "Tom Hi    "
+					}
+				},
+				"51": {
+					"bytes": [58, 0, 51, 9, 0, 51, 13, 0, 241, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 57,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/57",
+						"name": "Ride Cym 2"
+					}
+				},
+				"52": {
+					"bytes": [43, 0, 52, 12, 0, 52, 0, 0, 236, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 42,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/42",
+						"name": "China Cym "
+					}
+				},
+				"53": {
+					"bytes": [57, 0, 53, 9, 0, 53, 8, 0, 241, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 56,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/56",
+						"name": "Ride Cym 1"
+					}
+				},
+				"54": {
+					"bytes": [86, 0, 54, 15, 0, 54, 17, 0, 242, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"55": {
+					"bytes": [45, 0, 55, 18, 0, 57, 50, 0, 226, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 44,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/44",
+						"name": "Splash Cym"
+					}
+				},
+				"56": {
+					"bytes": [87, 0, 56, 18, 0, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 86,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/86",
+						"name": "Cowbell   "
+					}
+				},
+				"57": {
+					"bytes": [41, 0, 57, 9, 80, 54, 47, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"58": {
+					"bytes": [105, 0, 58, 6, 0, 58, 99, 0, 221, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 104,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/104",
+						"name": "Vibraslap "
+					}
+				},
+				"59": {
+					"bytes": [55, 0, 59, 9, 0, 59, 0, 0, 7, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"60": {
+					"bytes": [68, 0, 60, 23, 0, 60, 65, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"61": {
+					"bytes": [67, 0, 61, 23, 0, 61, 77, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"62": {
+					"bytes": [75, 0, 62, 8, 50, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 74,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/74",
+						"name": "Mute Conga"
+					}
+				},
+				"63": {
+					"bytes": [72, 0, 63, 8, 70, 62, 50, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"64": {
+					"bytes": [72, 0, 64, 8, 0, 67, 50, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"65": {
+					"bytes": [90, 0, 65, 18, 0, 65, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"66": {
+					"bytes": [91, 0, 66, 19, 0, 66, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"67": {
+					"bytes": [66, 0, 67, 6, 0, 67, 15, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"68": {
+					"bytes": [66, 0, 68, 6, 216, 73, 15, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"69": {
+					"bytes": [82, 0, 69, 6, 0, 69, 70, 0, 175, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"70": {
+					"bytes": [81, 0, 70, 6, 0, 70, 70, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 80,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/80",
+						"name": "Maracas   "
+					}
+				},
+				"71": {
+					"bytes": [151, 0, 71, 88, 0, 71, 249, 0, 176, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 150,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/150",
+						"name": "Whistle S "
+					}
+				},
+				"72": {
+					"bytes": [152, 0, 72, 88, 246, 74, 236, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 151,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/151",
+						"name": "Whistle L "
+					}
+				},
+				"73": {
+					"bytes": [106, 0, 73, 118, 0, 73, 231, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 105,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/105",
+						"name": "Guiro S   "
+					}
+				},
+				"74": {
+					"bytes": [107, 0, 74, 118, 0, 74, 224, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 106,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/106",
+						"name": "Guiro L   "
+					}
+				},
+				"75": {
+					"bytes": [70, 0, 75, 19, 50, 75, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 69,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/69",
+						"name": "Claves    "
+					}
+				},
+				"76": {
+					"bytes": [93, 0, 76, 22, 0, 81, 6, 0, 189, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 92,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/92",
+						"name": "WoodBlock2"
+					}
+				},
+				"77": {
+					"bytes": [94, 0, 77, 21, 0, 77, 28, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 93,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/93",
+						"name": "WoodBlock3"
+					}
+				},
+				"78": {
+					"bytes": [103, 0, 78, 137, 0, 78, 214, 0, 238, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 102,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/102",
+						"name": "Mute Cuica"
+					}
+				},
+				"79": {
+					"bytes": [104, 0, 79, 137, 0, 79, 218, 0, 246, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 103,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/103",
+						"name": "Open Cuica"
+					}
+				},
+				"80": {
+					"bytes": [84, 0, 80, 166, 0, 80, 72, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"81": {
+					"bytes": [85, 0, 81, 166, 0, 81, 99, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"82": {
+					"bytes": [82, 0, 82, 21, 70, 81, 70, 0, 166, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"83": {
+					"bytes": [150, 0, 83, 24, 0, 83, 0, 0, 216, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 149,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/149",
+						"name": "JingleBell"
+					}
+				},
+				"84": {
+					"bytes": [148, 0, 84, 25, 0, 84, 30, 0, 231, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				},
+				"85": {
+					"bytes": [108, 0, 85, 7, 0, 85, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"86": {
+					"bytes": [37, 0, 86, 7, 226, 94, 196, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"87": {
+					"bytes": [155, 0, 87, 7, 0, 87, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 154,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/154",
+						"name": "Taiko Lo  "
+					}
+				}
+			}
+		},
+		{
+			"drumSetNo": 4,
+			"name": "Brush kit ",
+			"notes": {
+				"28": {
+					"bytes": [4, 0, 28, 15, 0, 28, 75, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 3,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/3",
+						"name": "Crisp Kick"
+					}
+				},
+				"29": {
+					"bytes": [109, 0, 29, 15, 0, 29, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 108,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/108",
+						"name": "FingerSnap"
+					}
+				},
+				"30": {
+					"bytes": [50, 0, 30, 53, 0, 30, 241, 0, 174, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"31": {
+					"bytes": [3, 0, 31, 15, 50, 30, 62, 0, 172, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 2,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/2",
+						"name": "Ambi.Kick "
+					}
+				},
+				"32": {
+					"bytes": [110, 0, 32, 15, 176, 37, 50, 0, 219, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 109,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/109",
+						"name": "Timbales  "
+					}
+				},
+				"33": {
+					"bytes": [33, 0, 33, 207, 0, 33, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 32,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/32",
+						"name": "Brush Slap"
+					}
+				},
+				"34": {
+					"bytes": [25, 0, 34, 207, 0, 34, 21, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 24,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/24",
+						"name": "RollSnare1"
+					}
+				},
+				"35": {
+					"bytes": [5, 0, 35, 15, 0, 35, 99, 0, 186, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 4,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/4",
+						"name": "Punch Kick"
+					}
+				},
+				"36": {
+					"bytes": [2, 0, 36, 15, 50, 35, 99, 0, 172, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 1,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/1",
+						"name": "Rock Kick "
+					}
+				},
+				"37": {
+					"bytes": [37, 0, 37, 15, 0, 37, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"38": {
+					"bytes": [36, 0, 38, 15, 0, 38, 10, 0, 211, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 35,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/35",
+						"name": "Brush Tap "
+					}
+				},
+				"39": {
+					"bytes": [33, 0, 39, 15, 0, 39, 62, 0, 199, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 32,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/32",
+						"name": "Brush Slap"
+					}
+				},
+				"40": {
+					"bytes": [34, 0, 40, 15, 226, 40, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 33,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/33",
+						"name": "BrushSwish"
+					}
+				},
+				"41": {
+					"bytes": [65, 0, 41, 4, 206, 48, 67, 0, 226, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 64,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/64",
+						"name": "Brush Tom "
+					}
+				},
+				"42": {
+					"bytes": [49, 0, 42, 53, 0, 42, 20, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"43": {
+					"bytes": [65, 0, 43, 8, 206, 48, 70, 0, 226, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 64,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/64",
+						"name": "Brush Tom "
+					}
+				},
+				"44": {
+					"bytes": [51, 0, 44, 53, 0, 44, 241, 0, 196, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 50,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/50",
+						"name": "Pedal HH  "
+					}
+				},
+				"45": {
+					"bytes": [65, 0, 45, 12, 0, 48, 70, 0, 226, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 64,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/64",
+						"name": "Brush Tom "
+					}
+				},
+				"46": {
+					"bytes": [50, 0, 46, 53, 0, 46, 241, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"47": {
+					"bytes": [65, 0, 47, 18, 0, 47, 70, 0, 226, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 64,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/64",
+						"name": "Brush Tom "
+					}
+				},
+				"48": {
+					"bytes": [65, 0, 48, 22, 0, 45, 70, 0, 221, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 64,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/64",
+						"name": "Brush Tom "
+					}
+				},
+				"49": {
+					"bytes": [41, 0, 49, 21, 50, 49, 57, 0, 243, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"50": {
+					"bytes": [65, 0, 50, 26, 40, 44, 60, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 64,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/64",
+						"name": "Brush Tom "
+					}
+				},
+				"51": {
+					"bytes": [58, 0, 51, 9, 0, 51, 13, 0, 241, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 57,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/57",
+						"name": "Ride Cym 2"
+					}
+				},
+				"52": {
+					"bytes": [43, 0, 52, 12, 0, 52, 0, 0, 236, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 42,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/42",
+						"name": "China Cym "
+					}
+				},
+				"53": {
+					"bytes": [57, 0, 53, 9, 0, 53, 8, 0, 241, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 56,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/56",
+						"name": "Ride Cym 1"
+					}
+				},
+				"54": {
+					"bytes": [86, 0, 54, 15, 0, 54, 17, 0, 242, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"55": {
+					"bytes": [45, 0, 55, 18, 0, 57, 50, 0, 226, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 44,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/44",
+						"name": "Splash Cym"
+					}
+				},
+				"56": {
+					"bytes": [87, 0, 56, 18, 0, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 86,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/86",
+						"name": "Cowbell   "
+					}
+				},
+				"57": {
+					"bytes": [41, 0, 57, 9, 80, 54, 47, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"58": {
+					"bytes": [105, 0, 58, 6, 0, 58, 99, 0, 221, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 104,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/104",
+						"name": "Vibraslap "
+					}
+				},
+				"59": {
+					"bytes": [55, 0, 59, 9, 0, 59, 2, 0, 7, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"60": {
+					"bytes": [68, 0, 60, 23, 0, 60, 65, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"61": {
+					"bytes": [67, 0, 61, 22, 0, 61, 77, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"62": {
+					"bytes": [75, 0, 62, 8, 50, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 74,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/74",
+						"name": "Mute Conga"
+					}
+				},
+				"63": {
+					"bytes": [72, 0, 63, 8, 70, 62, 50, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"64": {
+					"bytes": [72, 0, 64, 8, 0, 67, 50, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"65": {
+					"bytes": [90, 0, 65, 18, 0, 65, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"66": {
+					"bytes": [91, 0, 66, 19, 0, 66, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"67": {
+					"bytes": [66, 0, 67, 6, 0, 67, 15, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"68": {
+					"bytes": [66, 0, 68, 6, 216, 73, 15, 0, 216, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"69": {
+					"bytes": [82, 0, 69, 6, 0, 69, 70, 0, 175, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"70": {
+					"bytes": [81, 0, 70, 6, 0, 70, 70, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 80,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/80",
+						"name": "Maracas   "
+					}
+				},
+				"71": {
+					"bytes": [151, 0, 71, 88, 0, 71, 249, 0, 176, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 150,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/150",
+						"name": "Whistle S "
+					}
+				},
+				"72": {
+					"bytes": [152, 0, 72, 88, 246, 74, 236, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 151,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/151",
+						"name": "Whistle L "
+					}
+				},
+				"73": {
+					"bytes": [106, 0, 73, 118, 0, 73, 231, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 105,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/105",
+						"name": "Guiro S   "
+					}
+				},
+				"74": {
+					"bytes": [107, 0, 74, 118, 0, 74, 224, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 106,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/106",
+						"name": "Guiro L   "
+					}
+				},
+				"75": {
+					"bytes": [70, 0, 75, 19, 50, 75, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 69,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/69",
+						"name": "Claves    "
+					}
+				},
+				"76": {
+					"bytes": [93, 0, 76, 22, 0, 81, 6, 0, 189, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 92,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/92",
+						"name": "WoodBlock2"
+					}
+				},
+				"77": {
+					"bytes": [94, 0, 77, 21, 0, 77, 28, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 93,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/93",
+						"name": "WoodBlock3"
+					}
+				},
+				"78": {
+					"bytes": [103, 0, 78, 137, 0, 78, 214, 0, 238, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 102,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/102",
+						"name": "Mute Cuica"
+					}
+				},
+				"79": {
+					"bytes": [104, 0, 79, 137, 0, 79, 218, 0, 246, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 103,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/103",
+						"name": "Open Cuica"
+					}
+				},
+				"80": {
+					"bytes": [84, 0, 80, 166, 0, 80, 72, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"81": {
+					"bytes": [85, 0, 81, 166, 0, 81, 99, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"82": {
+					"bytes": [82, 0, 82, 21, 70, 81, 70, 0, 166, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"83": {
+					"bytes": [150, 0, 83, 24, 0, 83, 0, 0, 216, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 149,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/149",
+						"name": "JingleBell"
+					}
+				},
+				"84": {
+					"bytes": [148, 0, 84, 25, 0, 84, 30, 0, 231, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				},
+				"85": {
+					"bytes": [108, 0, 85, 7, 0, 85, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"86": {
+					"bytes": [37, 0, 86, 7, 226, 94, 196, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"87": {
+					"bytes": [155, 0, 87, 7, 0, 87, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 154,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/154",
+						"name": "Taiko Lo  "
+					}
+				}
+			}
+		},
+		{
+			"drumSetNo": 5,
+			"name": "Perc Kit  ",
+			"notes": {
+				"28": {
+					"bytes": [68, 0, 28, 7, 0, 28, 20, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"29": {
+					"bytes": [67, 0, 29, 7, 0, 29, 20, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"30": {
+					"bytes": [86, 0, 30, 15, 0, 30, 50, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"31": {
+					"bytes": [66, 0, 31, 21, 0, 31, 10, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"32": {
+					"bytes": [39, 0, 32, 15, 0, 44, 216, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 38,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/38",
+						"name": "VocalSnr 1"
+					}
+				},
+				"33": {
+					"bytes": [66, 0, 33, 21, 216, 38, 10, 0, 216, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"34": {
+					"bytes": [69, 0, 34, 9, 0, 34, 20, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 68,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/68",
+						"name": "Slap Bongo"
+					}
+				},
+				"35": {
+					"bytes": [94, 0, 35, 8, 0, 35, 15, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 93,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/93",
+						"name": "WoodBlock3"
+					}
+				},
+				"36": {
+					"bytes": [70, 0, 36, 8, 0, 36, 20, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 69,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/69",
+						"name": "Claves    "
+					}
+				},
+				"37": {
+					"bytes": [93, 0, 37, 22, 0, 37, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 92,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/92",
+						"name": "WoodBlock2"
+					}
+				},
+				"38": {
+					"bytes": [87, 0, 38, 15, 0, 38, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 86,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/86",
+						"name": "Cowbell   "
+					}
+				},
+				"39": {
+					"bytes": [92, 0, 39, 15, 0, 39, 38, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 91,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/91",
+						"name": "WoodBlock1"
+					}
+				},
+				"40": {
+					"bytes": [108, 0, 40, 15, 50, 40, 85, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"41": {
+					"bytes": [77, 0, 41, 7, 0, 41, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 76,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/76",
+						"name": "Baya 2    "
+					}
+				},
+				"42": {
+					"bytes": [82, 0, 42, 8, 70, 41, 60, 0, 166, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"43": {
+					"bytes": [76, 0, 43, 8, 50, 42, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 75,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/75",
+						"name": "Baya 1    "
+					}
+				},
+				"44": {
+					"bytes": [81, 0, 44, 8, 0, 44, 40, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 80,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/80",
+						"name": "Maracas   "
+					}
+				},
+				"45": {
+					"bytes": [77, 0, 45, 9, 0, 41, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 76,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/76",
+						"name": "Baya 2    "
+					}
+				},
+				"46": {
+					"bytes": [82, 0, 46, 8, 0, 46, 35, 0, 206, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"47": {
+					"bytes": [80, 0, 47, 53, 0, 47, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 79,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/79",
+						"name": "Tabla 3   "
+					}
+				},
+				"48": {
+					"bytes": [79, 0, 48, 54, 0, 48, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 78,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/78",
+						"name": "Tabla 2   "
+					}
+				},
+				"49": {
+					"bytes": [105, 0, 49, 22, 0, 49, 56, 0, 227, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 104,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/104",
+						"name": "Vibraslap "
+					}
+				},
+				"50": {
+					"bytes": [78, 0, 50, 55, 0, 50, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 77,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/77",
+						"name": "Tabla 1   "
+					}
+				},
+				"51": {
+					"bytes": [84, 0, 51, 102, 0, 51, 80, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"52": {
+					"bytes": [14, 0, 52, 15, 0, 64, 90, 0, 236, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 13,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/13",
+						"name": "Orch B.Drm"
+					}
+				},
+				"53": {
+					"bytes": [85, 0, 53, 102, 0, 53, 80, 0, 232, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"54": {
+					"bytes": [106, 0, 54, 86, 0, 54, 20, 0, 236, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 105,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/105",
+						"name": "Guiro S   "
+					}
+				},
+				"55": {
+					"bytes": [150, 0, 55, 15, 0, 55, 20, 0, 216, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 149,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/149",
+						"name": "JingleBell"
+					}
+				},
+				"56": {
+					"bytes": [107, 0, 56, 86, 0, 56, 20, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 106,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/106",
+						"name": "Guiro L   "
+					}
+				},
+				"57": {
+					"bytes": [148, 0, 57, 8, 0, 57, 65, 0, 232, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				},
+				"58": {
+					"bytes": [102, 0, 58, 21, 0, 70, 236, 0, 243, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 101,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/101",
+						"name": "Thing     "
+					}
+				},
+				"59": {
+					"bytes": [81, 0, 59, 7, 0, 63, 90, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 80,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/80",
+						"name": "Maracas   "
+					}
+				},
+				"60": {
+					"bytes": [95, 0, 60, 9, 0, 60, 28, 0, 231, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 94,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/94",
+						"name": "Hand Claps"
+					}
+				},
+				"61": {
+					"bytes": [96, 0, 61, 21, 0, 61, 27, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 95,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/95",
+						"name": "Syn Claps "
+					}
+				},
+				"62": {
+					"bytes": [100, 0, 62, 8, 0, 62, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 99,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/99",
+						"name": "Scratch Lo"
+					}
+				},
+				"63": {
+					"bytes": [99, 0, 63, 22, 0, 63, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 98,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/98",
+						"name": "Scratch Hi"
+					}
+				},
+				"64": {
+					"bytes": [101, 0, 64, 15, 0, 64, 40, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 100,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/100",
+						"name": "ScratchDbl"
+					}
+				},
+				"65": {
+					"bytes": [151, 0, 65, 134, 0, 65, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 150,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/150",
+						"name": "Whistle S "
+					}
+				},
+				"66": {
+					"bytes": [152, 0, 66, 134, 246, 68, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 151,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/151",
+						"name": "Whistle L "
+					}
+				},
+				"67": {
+					"bytes": [73, 0, 67, 22, 0, 67, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 72,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/72",
+						"name": "Slap Conga"
+					}
+				},
+				"68": {
+					"bytes": [75, 0, 68, 22, 70, 67, 40, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 74,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/74",
+						"name": "Mute Conga"
+					}
+				},
+				"69": {
+					"bytes": [72, 0, 69, 22, 0, 69, 40, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"70": {
+					"bytes": [72, 0, 70, 22, 0, 75, 40, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"71": {
+					"bytes": [103, 0, 71, 21, 0, 71, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 102,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/102",
+						"name": "Mute Cuica"
+					}
+				},
+				"72": {
+					"bytes": [104, 0, 72, 21, 0, 72, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 103,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/103",
+						"name": "Open Cuica"
+					}
+				},
+				"73": {
+					"bytes": [110, 0, 73, 9, 0, 73, 25, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 109,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/109",
+						"name": "Timbales  "
+					}
+				},
+				"74": {
+					"bytes": [89, 0, 74, 9, 0, 74, 20, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 88,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/88",
+						"name": "R-Timbal  "
+					}
+				},
+				"75": {
+					"bytes": [90, 0, 75, 9, 0, 75, 20, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"76": {
+					"bytes": [91, 0, 76, 9, 0, 76, 20, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"77": {
+					"bytes": [71, 0, 77, 23, 0, 77, 25, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 70,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/70",
+						"name": "Syn Claves"
+					}
+				},
+				"78": {
+					"bytes": [88, 0, 78, 8, 0, 78, 25, 0, 195, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 87,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/87",
+						"name": "SynCowbell"
+					}
+				},
+				"79": {
+					"bytes": [109, 0, 79, 15, 0, 79, 72, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 108,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/108",
+						"name": "FingerSnap"
+					}
+				},
+				"80": {
+					"bytes": [154, 0, 80, 15, 0, 80, 70, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 153,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/153",
+						"name": "Taiko Hi  "
+					}
+				},
+				"81": {
+					"bytes": [155, 0, 81, 15, 0, 93, 99, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 154,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/154",
+						"name": "Taiko Lo  "
+					}
+				},
+				"82": {
+					"bytes": [98, 0, 82, 15, 0, 82, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 97,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/97",
+						"name": "Zap 2     "
+					}
+				},
+				"83": {
+					"bytes": [25, 0, 83, 175, 0, 83, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 24,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/24",
+						"name": "RollSnare1"
+					}
+				},
+				"84": {
+					"bytes": [26, 0, 84, 175, 0, 84, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 25,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/25",
+						"name": "RollSnare2"
+					}
+				},
+				"85": {
+					"bytes": [47, 0, 85, 207, 50, 84, 20, 0, 240, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 46,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/46",
+						"name": "Orch Crash"
+					}
+				},
+				"86": {
+					"bytes": [47, 0, 86, 207, 90, 85, 99, 0, 185, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 46,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/46",
+						"name": "Orch Crash"
+					}
+				},
+				"105": {
+					"bytes": [162, 0, 105, 15, 70, 94, 40, 0, 226, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 161,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/161",
+						"name": "Orch Hit  "
+					}
+				}
+			}
+		},
+		{
+			"drumSetNo": 6,
+			"name": "Dance Kit ",
+			"notes": {
+				"28": {
+					"bytes": [4, 0, 28, 15, 0, 28, 99, 0, 176, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 3,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/3",
+						"name": "Crisp Kick"
+					}
+				},
+				"29": {
+					"bytes": [19, 0, 29, 15, 0, 29, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 18,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/18",
+						"name": "PicloSnare"
+					}
+				},
+				"30": {
+					"bytes": [50, 0, 30, 53, 0, 30, 241, 0, 174, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"31": {
+					"bytes": [12, 0, 31, 15, 0, 31, 36, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 11,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/11",
+						"name": "Syn Kick 2"
+					}
+				},
+				"32": {
+					"bytes": [37, 0, 32, 15, 0, 32, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"33": {
+					"bytes": [22, 0, 33, 15, 0, 33, 17, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 21,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/21",
+						"name": "TightSnare"
+					}
+				},
+				"34": {
+					"bytes": [24, 0, 34, 15, 216, 34, 21, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 23,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/23",
+						"name": "Rev Snare "
+					}
+				},
+				"35": {
+					"bytes": [3, 0, 35, 15, 0, 35, 99, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 2,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/2",
+						"name": "Ambi.Kick "
+					}
+				},
+				"36": {
+					"bytes": [7, 0, 36, 15, 0, 36, 60, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 6,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/6",
+						"name": "Dance Kick"
+					}
+				},
+				"37": {
+					"bytes": [37, 0, 37, 15, 0, 37, 232, 0, 174, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"38": {
+					"bytes": [31, 0, 38, 15, 0, 38, 51, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 30,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/30",
+						"name": "Syn Snare2"
+					}
+				},
+				"39": {
+					"bytes": [95, 0, 39, 12, 0, 39, 24, 0, 199, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 94,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/94",
+						"name": "Hand Claps"
+					}
+				},
+				"40": {
+					"bytes": [23, 0, 40, 15, 0, 40, 247, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 22,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/22",
+						"name": "Ambi.Snare"
+					}
+				},
+				"41": {
+					"bytes": [61, 0, 41, 7, 216, 48, 0, 0, 226, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"42": {
+					"bytes": [49, 0, 42, 53, 0, 42, 20, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"43": {
+					"bytes": [61, 0, 43, 8, 216, 46, 10, 0, 224, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"44": {
+					"bytes": [51, 0, 44, 53, 0, 44, 241, 0, 170, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 50,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/50",
+						"name": "Pedal HH  "
+					}
+				},
+				"45": {
+					"bytes": [61, 0, 45, 14, 0, 45, 10, 0, 222, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"46": {
+					"bytes": [50, 0, 46, 53, 0, 46, 241, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"47": {
+					"bytes": [61, 0, 47, 16, 50, 43, 10, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"48": {
+					"bytes": [61, 0, 48, 21, 80, 42, 10, 0, 250, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"49": {
+					"bytes": [41, 0, 49, 21, 50, 49, 57, 0, 233, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"50": {
+					"bytes": [61, 0, 50, 24, 0, 38, 10, 0, 221, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 60,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/60",
+						"name": "ProcessTom"
+					}
+				},
+				"51": {
+					"bytes": [55, 0, 51, 9, 226, 51, 10, 0, 7, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"52": {
+					"bytes": [43, 0, 52, 9, 186, 55, 0, 0, 222, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 42,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/42",
+						"name": "China Cym "
+					}
+				},
+				"53": {
+					"bytes": [56, 0, 53, 9, 50, 53, 0, 0, 9, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 55,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/55",
+						"name": "Ride Cup  "
+					}
+				},
+				"54": {
+					"bytes": [86, 0, 54, 16, 0, 54, 17, 0, 242, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"55": {
+					"bytes": [45, 0, 55, 12, 0, 55, 0, 0, 209, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 44,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/44",
+						"name": "Splash Cym"
+					}
+				},
+				"56": {
+					"bytes": [87, 0, 56, 18, 0, 56, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 86,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/86",
+						"name": "Cowbell   "
+					}
+				},
+				"57": {
+					"bytes": [41, 0, 57, 9, 80, 54, 99, 0, 231, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"58": {
+					"bytes": [105, 0, 58, 6, 0, 58, 99, 0, 207, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 104,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/104",
+						"name": "Vibraslap "
+					}
+				},
+				"59": {
+					"bytes": [55, 0, 59, 9, 50, 59, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"60": {
+					"bytes": [68, 0, 60, 23, 0, 60, 99, 0, 231, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"61": {
+					"bytes": [67, 0, 61, 23, 0, 61, 77, 0, 231, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"62": {
+					"bytes": [75, 0, 62, 8, 50, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 74,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/74",
+						"name": "Mute Conga"
+					}
+				},
+				"63": {
+					"bytes": [72, 0, 63, 9, 70, 62, 0, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"64": {
+					"bytes": [72, 0, 64, 8, 0, 67, 50, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"65": {
+					"bytes": [90, 0, 65, 18, 0, 65, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"66": {
+					"bytes": [91, 0, 66, 19, 0, 66, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"67": {
+					"bytes": [66, 0, 67, 6, 0, 67, 15, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"68": {
+					"bytes": [66, 0, 68, 6, 216, 73, 15, 0, 198, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"69": {
+					"bytes": [82, 0, 69, 6, 0, 69, 70, 0, 175, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"70": {
+					"bytes": [81, 0, 70, 6, 0, 70, 70, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 80,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/80",
+						"name": "Maracas   "
+					}
+				},
+				"71": {
+					"bytes": [151, 0, 71, 88, 0, 71, 249, 0, 176, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 150,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/150",
+						"name": "Whistle S "
+					}
+				},
+				"72": {
+					"bytes": [152, 0, 72, 88, 246, 74, 236, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 151,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/151",
+						"name": "Whistle L "
+					}
+				},
+				"73": {
+					"bytes": [106, 0, 73, 118, 0, 73, 231, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 105,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/105",
+						"name": "Guiro S   "
+					}
+				},
+				"74": {
+					"bytes": [107, 0, 74, 118, 0, 74, 224, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 106,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/106",
+						"name": "Guiro L   "
+					}
+				},
+				"75": {
+					"bytes": [70, 0, 75, 19, 50, 75, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 69,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/69",
+						"name": "Claves    "
+					}
+				},
+				"76": {
+					"bytes": [93, 0, 76, 22, 0, 81, 50, 0, 189, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 92,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/92",
+						"name": "WoodBlock2"
+					}
+				},
+				"77": {
+					"bytes": [94, 0, 77, 21, 0, 77, 28, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 93,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/93",
+						"name": "WoodBlock3"
+					}
+				},
+				"78": {
+					"bytes": [103, 0, 78, 137, 0, 78, 214, 0, 238, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 102,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/102",
+						"name": "Mute Cuica"
+					}
+				},
+				"79": {
+					"bytes": [104, 0, 79, 137, 0, 79, 218, 0, 246, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 103,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/103",
+						"name": "Open Cuica"
+					}
+				},
+				"80": {
+					"bytes": [84, 0, 80, 166, 0, 80, 72, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"81": {
+					"bytes": [85, 0, 81, 166, 0, 81, 99, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"82": {
+					"bytes": [82, 0, 82, 21, 70, 81, 70, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"83": {
+					"bytes": [150, 0, 83, 24, 0, 83, 0, 0, 216, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 149,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/149",
+						"name": "JingleBell"
+					}
+				},
+				"84": {
+					"bytes": [148, 0, 84, 25, 0, 84, 244, 0, 224, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				},
+				"85": {
+					"bytes": [108, 0, 85, 7, 0, 85, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"86": {
+					"bytes": [37, 0, 86, 7, 226, 94, 196, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"87": {
+					"bytes": [155, 0, 87, 7, 0, 87, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 154,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/154",
+						"name": "Taiko Lo  "
+					}
+				}
+			}
+		},
+		{
+			"drumSetNo": 7,
+			"name": "Orch Kit  ",
+			"notes": {
+				"27": {
+					"bytes": [49, 0, 27, 53, 0, 27, 15, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 48,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/48",
+						"name": "Tite HH   "
+					}
+				},
+				"28": {
+					"bytes": [51, 0, 28, 53, 0, 28, 241, 0, 170, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 50,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/50",
+						"name": "Pedal HH  "
+					}
+				},
+				"29": {
+					"bytes": [50, 0, 29, 53, 0, 29, 8, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 49,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/49",
+						"name": "Open HH   "
+					}
+				},
+				"30": {
+					"bytes": [55, 0, 30, 9, 226, 30, 10, 0, 7, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 54,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/54",
+						"name": "Ride Edge "
+					}
+				},
+				"35": {
+					"bytes": [6, 0, 35, 15, 0, 35, 99, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 5,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/5",
+						"name": "Real Kick "
+					}
+				},
+				"36": {
+					"bytes": [14, 0, 36, 15, 0, 36, 60, 0, 228, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 13,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/13",
+						"name": "Orch B.Drm"
+					}
+				},
+				"37": {
+					"bytes": [37, 0, 37, 15, 0, 37, 232, 0, 174, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"38": {
+					"bytes": [26, 0, 38, 15, 0, 38, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 25,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/25",
+						"name": "RollSnare2"
+					}
+				},
+				"39": {
+					"bytes": [108, 0, 39, 9, 0, 39, 34, 0, 199, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"40": {
+					"bytes": [26, 0, 40, 15, 0, 40, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 25,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/25",
+						"name": "RollSnare2"
+					}
+				},
+				"53": {
+					"bytes": [153, 0, 53, 9, 0, 46, 0, 0, 229, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 152,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/152",
+						"name": "Timpani   "
+					}
+				},
+				"54": {
+					"bytes": [86, 0, 54, 16, 0, 54, 17, 0, 242, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 85,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/85",
+						"name": "Tambourine"
+					}
+				},
+				"55": {
+					"bytes": [45, 0, 55, 12, 0, 55, 0, 0, 209, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 44,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/44",
+						"name": "Splash Cym"
+					}
+				},
+				"56": {
+					"bytes": [87, 0, 56, 18, 0, 56, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 86,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/86",
+						"name": "Cowbell   "
+					}
+				},
+				"57": {
+					"bytes": [41, 0, 57, 9, 0, 57, 45, 0, 231, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 40,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/40",
+						"name": "Crash Cym "
+					}
+				},
+				"58": {
+					"bytes": [105, 0, 58, 6, 0, 58, 99, 0, 207, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 104,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/104",
+						"name": "Vibraslap "
+					}
+				},
+				"59": {
+					"bytes": [47, 0, 59, 8, 50, 59, 10, 0, 241, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 46,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/46",
+						"name": "Orch Crash"
+					}
+				},
+				"60": {
+					"bytes": [68, 0, 60, 23, 0, 60, 99, 0, 231, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 67,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/67",
+						"name": "Hi Bongo  "
+					}
+				},
+				"61": {
+					"bytes": [67, 0, 61, 23, 0, 61, 77, 0, 231, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 66,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/66",
+						"name": "Lo Bongo  "
+					}
+				},
+				"62": {
+					"bytes": [75, 0, 62, 8, 50, 56, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 74,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/74",
+						"name": "Mute Conga"
+					}
+				},
+				"63": {
+					"bytes": [72, 0, 63, 9, 70, 62, 0, 0, 243, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"64": {
+					"bytes": [72, 0, 64, 8, 0, 67, 50, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 71,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/71",
+						"name": "Open Conga"
+					}
+				},
+				"65": {
+					"bytes": [90, 0, 65, 18, 0, 65, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 89,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/89",
+						"name": "Hi Timbal "
+					}
+				},
+				"66": {
+					"bytes": [91, 0, 66, 19, 0, 66, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 90,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/90",
+						"name": "Lo Timbal "
+					}
+				},
+				"67": {
+					"bytes": [66, 0, 67, 6, 0, 67, 15, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"68": {
+					"bytes": [66, 0, 68, 6, 216, 73, 15, 0, 198, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 65,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/65",
+						"name": "Agogo     "
+					}
+				},
+				"69": {
+					"bytes": [82, 0, 69, 6, 0, 69, 70, 0, 175, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"70": {
+					"bytes": [81, 0, 70, 6, 0, 70, 70, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 80,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/80",
+						"name": "Maracas   "
+					}
+				},
+				"71": {
+					"bytes": [151, 0, 71, 88, 0, 71, 249, 0, 176, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 150,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/150",
+						"name": "Whistle S "
+					}
+				},
+				"72": {
+					"bytes": [152, 0, 72, 88, 246, 74, 236, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 151,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/151",
+						"name": "Whistle L "
+					}
+				},
+				"73": {
+					"bytes": [106, 0, 73, 118, 0, 73, 231, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 105,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/105",
+						"name": "Guiro S   "
+					}
+				},
+				"74": {
+					"bytes": [107, 0, 74, 118, 0, 74, 224, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 106,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/106",
+						"name": "Guiro L   "
+					}
+				},
+				"75": {
+					"bytes": [70, 0, 75, 19, 50, 75, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 69,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/69",
+						"name": "Claves    "
+					}
+				},
+				"76": {
+					"bytes": [93, 0, 76, 22, 0, 81, 50, 0, 189, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 92,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/92",
+						"name": "WoodBlock2"
+					}
+				},
+				"77": {
+					"bytes": [94, 0, 77, 21, 0, 77, 28, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 93,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/93",
+						"name": "WoodBlock3"
+					}
+				},
+				"78": {
+					"bytes": [103, 0, 78, 137, 0, 78, 214, 0, 238, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 102,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/102",
+						"name": "Mute Cuica"
+					}
+				},
+				"79": {
+					"bytes": [104, 0, 79, 137, 0, 79, 218, 0, 246, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 103,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/103",
+						"name": "Open Cuica"
+					}
+				},
+				"80": {
+					"bytes": [84, 0, 80, 166, 0, 80, 72, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 83,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/83",
+						"name": "MuteTriang"
+					}
+				},
+				"81": {
+					"bytes": [85, 0, 81, 166, 0, 81, 99, 0, 231, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 84,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/84",
+						"name": "OpenTriang"
+					}
+				},
+				"82": {
+					"bytes": [82, 0, 82, 21, 70, 81, 70, 0, 166, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 81,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/81",
+						"name": "Cabasa    "
+					}
+				},
+				"83": {
+					"bytes": [150, 0, 83, 24, 0, 83, 0, 0, 216, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 149,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/149",
+						"name": "JingleBell"
+					}
+				},
+				"84": {
+					"bytes": [148, 0, 84, 25, 0, 84, 244, 0, 224, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 147,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/147",
+						"name": "Bell Tree "
+					}
+				},
+				"85": {
+					"bytes": [108, 0, 85, 7, 0, 85, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 107,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/107",
+						"name": "Castanet  "
+					}
+				},
+				"86": {
+					"bytes": [37, 0, 86, 7, 226, 94, 196, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 36,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/36",
+						"name": "Side Stick"
+					}
+				},
+				"87": {
+					"bytes": [155, 0, 87, 7, 0, 87, 99, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+					"drumSampleNo": 154,
+					"drumSampleRef": {
+						"$ref": "#/drumSamples/154",
+						"name": "Taiko Lo  "
+					}
+				}
+			}
 		}
 	]
 }
