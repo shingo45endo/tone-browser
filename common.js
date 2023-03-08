@@ -4,7 +4,7 @@ const htmlBody = `
 	<!-- Navbar -->
 	<nav class="navbar navbar-light bg-light sticky-top">
 		<div class="container align-items-start">
-			<h1 class="h5 mt-1 mb-0"><a href="./" class="navbar-brand">tone-browser</a><span class="text-muted">(<a id="my-json" class="text-reset"></a>)</span></h1>
+			<h1 class="h6"><a href="./" class="navbar-brand">tone-browser</a><span class="text-muted">(<a id="my-json" class="text-reset"></a>)</span></h1>
 			<a href="#" class="btn btn-outline-primary py-1">Top</a>
 		</div>
 	</nav>
