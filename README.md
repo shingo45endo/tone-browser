@@ -42,6 +42,8 @@ This application displays the tone parameters of 90's multi-timbre MIDI sound mo
 	* GMega
 * Casio
 	* GZ-70SP
+* Akai
+	* SG01k
 
 
 What does "Tone Parameters" mean?

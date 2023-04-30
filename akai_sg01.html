@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tone-browser</title>
+<link href="./common.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="module">
+/* global bootstrap */
+import {html} from 'https://unpkg.com/lit-html?module';
+import {makeDomLoadedHandler} from './common.js';
+import {formatters as fmt} from './formatters.js';
+
+function toSint16(valueL, valueM) {
+	return (new DataView((new Uint8Array([valueL, valueM])).buffer)).getInt16(0, true);
+}
+
+function modSource(value) {
+	return [
+		'No Source',
+		'Modwheel',
+		'Bend',
+		'Pressure',
+		'External',
+		'Velocity',
+		'Key',
+		'LFO1',
+		'LFO2',
+		'Env1',
+		'Env2',
+		'!Modwheel',
+		'!Bend',
+		'!External',
+		'Env3',
+	][value] ?? 'Unknown';
+}
+
+function output(value) {
+	return {
+		0: 'Output 1',
+		1: 'Output 2',
+		2: 'Output 3',
+		3: 'Output 4',
+		4: 'Output 5',
+		5: 'Output 6',
+		6: 'Output 7',
+		7: 'Output 8',
+		8: 'FX',
+		9: 'Reverb',
+		10: 'Reverb + FX',
+		255: 'Off',
+	}[value] ?? 'Unknown';
+}
+
+const templateToneMapList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">Prog#</th>
+				<th class="text-end">BankM</th>
+				<th class="text-end ps-4">No.</th>
+				<th>Program</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.toneMaps.map((toneMap) => html`
+			<tr>
+				<td class="text-end">${toneMap.prog}</td>
+				<td class="text-end">${toneMap.bankM}</td>
+				<td class="text-end">${toneMap.toneNo}</td>
+				<td class="font-monospace"><a href="${toneMap.toneRef.$ref}">${toneMap.toneRef.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateDrumMapList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">Prog#</th>
+				<th class="text-end ps-4">No.</th>
+				<th>Drum Set</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumMaps.map((drumMap) => html`
+			<tr>
+				<td class="text-end">${drumMap.prog}</td>
+				<td class="text-end">${drumMap.toneNo}</td>
+				<td class="font-monospace"><a href="${drumMap.toneRef.$ref}">${drumMap.toneRef.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateToneList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end">No.</th>
+				<th>Program</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.tones.map((tone) => html`
+			<tr>
+				<td class="text-end">${tone.toneNo}</td>
+				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateSampleList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end ps-4">No.</th>
+				<th>Sample</th>
+				<th class="text-end ps-4">Key</th>
+				<th class="text-end ps-4">Pitch</th>
+				<th class="text-end ps-4">Rate</th>
+				<th class="text-end">Start Addr.</th>
+				<th class="text-end">End Addr.</th>
+				<th class="text-end">Length</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.samples.map((sample) => html`
+			<tr>
+				<td class="text-end">${sample.sampleNo}</td>
+				<td class="font-monospace">${sample.name}</td>
+				<td class="text-end">${fmt.noteNameY(sample.key)}</td>
+				<td class="text-end">${sample.pitch.toFixed(3)}</td>
+				<td class="text-end">${sample.sampleRate}</td>
+				<td class="text-end font-monospace">${sample.addrBegin.toString(16).padStart(6, '0')}</td>
+				<td class="text-end font-monospace">${sample.addrEnd.toString(16).padStart(6, '0')}</td>
+				<td class="text-end">${sample.addrEnd - sample.addrBegin}</td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateWave = (wave, _) => html`
+	${wave.sampleSlots.map((sampleSlot, i) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">
+				Keygroup #${i + 1} (${fmt.noteNameY(sampleSlot.low)}~${fmt.noteNameY(sampleSlot.high)}): 
+				${sampleSlot.sampleSlots.map((sample, i) => html`
+					${(i > 0) ? ' / ' : ''}
+					<span class="font-monospace h4">${sample.sampleRef.name}</span> (No.${sample.sampleNo})
+				`)}
+			</h2>
+		</div>
+		<div class="card-body pb-2">
+			<div class=" d-flex flex-row gap-3">
+				<div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Key Range Low</th>
+								<td class="text-end">${fmt.noteNameY(sampleSlot.low)}</td>
+							</tr>
+							<tr>
+								<th>Key Range High</th>
+								<td class="text-end">${fmt.noteNameY(sampleSlot.high)}</td>
+							</tr>
+							<tr>
+								<th>Tune Offset</th>
+								<td class="text-end">${toSint16(sampleSlot.bytes[5], sampleSlot.bytes[6])}</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Filter Freq</th>
+								<td class="text-end">${sampleSlot.bytes[7]}</td>
+							</tr>
+							<tr>
+								<th>Key > Filter Freq</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[8])}</td>
+							</tr>
+							<tr>
+								<th>Velocity > Filter Freq</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[9])}</td>
+							</tr>
+							<tr>
+								<th>Pressure > Filter Freq</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[10])}</td>
+							</tr>
+							<tr>
+								<th>Env. > Filter Freq</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[11])}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<table class="table table-sm">
+						<thead>
+							<tr>
+								<th>Env2 (Filter)</th>
+								<th class="text-end">A</th>
+								<th class="text-end">D</th>
+								<th class="text-end">S</th>
+								<th class="text-end">R</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Rate</th>
+								<td class="text-end">${sampleSlot.bytes[20]}</td>
+								<td class="text-end">${sampleSlot.bytes[21]}</td>
+								<td class="text-end">-</td>
+								<td class="text-end">${sampleSlot.bytes[23]}</td>
+							</tr>
+							<tr>
+								<th>Level</th>
+								<td class="text-end">-</td>
+								<td class="text-end">-</td>
+								<td class="text-end">${sampleSlot.bytes[22]}</td>
+								<td class="text-end">-</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Velocity > Attack</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[24])}</td>
+							</tr>
+							<tr>
+								<th>Velocity > Release</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[25])}</td>
+							</tr>
+							<tr>
+								<th>Off-Velocity > Release</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[26])}</td>
+							</tr>
+							<tr>
+								<th>Key > Decay & Release</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[27])}</td>
+							</tr>
+							<tr>
+								<th>Velocity > Amount</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[28])}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<table class="table table-sm">
+						<thead>
+							<tr>
+								<th>Env1 (Amp.)</th>
+								<th class="text-end">A</th>
+								<th class="text-end">D</th>
+								<th class="text-end">S</th>
+								<th class="text-end">R</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Rate</th>
+								<td class="text-end">${sampleSlot.bytes[12]}</td>
+								<td class="text-end">${sampleSlot.bytes[13]}</td>
+								<td class="text-end">-</td>
+								<td class="text-end">${sampleSlot.bytes[14]}</td>
+							</tr>
+							<tr>
+								<th>Level</th>
+								<td class="text-end">-</td>
+								<td class="text-end">-</td>
+								<td class="text-end">${sampleSlot.bytes[15]}</td>
+								<td class="text-end">-</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Velocity > Attack</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[16])}</td>
+							</tr>
+							<tr>
+								<th>Velocity > Release</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[17])}</td>
+							</tr>
+							<tr>
+								<th>Off-Velocity > Release</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[18])}</td>
+							</tr>
+							<tr>
+								<th>Key > Decay & Release</th>
+								<td class="text-end">${fmt.sint8(sampleSlot.bytes[19])}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row row-cols-2">
+			${sampleSlot.sampleSlots.map((sample) => html`
+				<div class="col-12 col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="h6 mb-0">Sample No.${sample.sampleNo}: <span class="font-monospace h5">${sample.sampleRef.name}</span></h3>
+						</div>
+						<div class="card-body py-0">
+							<table class="table table-sm mb-2 py-0">
+								<tbody>
+									<tr>
+										<th>Velocity Range Low</th>
+										<td class="text-end">${sample.bytes[12]}</td>
+									</tr>
+									<tr>
+										<th>Velocity Range High</th>
+										<td class="text-end">${sample.bytes[13]}</td>
+									</tr>
+									<tr>
+										<th>Tune Offset</th>
+										<td class="text-end">${toSint16(sample.bytes[14], sample.bytes[15])}</td>
+									</tr>
+									<tr>
+										<th>Loudness Offset</th>
+										<td class="text-end">${fmt.sint8(sample.bytes[16])}</td>
+									</tr>
+									<tr>
+										<th>Filter Freq Offset</th>
+										<td class="text-end">${fmt.sint8(sample.bytes[17])}</td>
+									</tr>
+									<tr>
+										<th>Pan Offset</th>
+										<td class="text-end">${fmt.sint8(sample.bytes[18])}</td>
+									</tr>
+									<tr>
+										<th>Low Velocity Clossfade Factor</th>
+										<td class="text-end">${(sample.bytes[20] === 0xff) ? '-' : sample.bytes[20]}</td>
+									</tr>
+									<tr>
+										<th>High Velocity Clossfade Factor</th>
+										<td class="text-end">${(sample.bytes[21] === 0xff) ? '-' : sample.bytes[21]}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			`)}
+			</div>
+		</div>
+	</div>
+	`)}`;
+
+const templateTone = (tone, json) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Program No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 pb-0">
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Play Range Low</th>
+							<td class="text-end">${fmt.noteNameY(tone.bytes[19])}</td>
+						</tr>
+						<tr>
+							<th>Play Range High</th>
+							<td class="text-end">${fmt.noteNameY(tone.bytes[20])}</td>
+						</tr>
+						<tr>
+							<th>Output</th>
+							<td class="text-end">${output(tone.bytes[22])}</td>
+						</tr>
+						<tr>
+							<th>Keygroup Clossfade</th>
+							<td class="text-end">${fmt.onOff(tone.bytes[41])}</td>
+						</tr>
+						<tr>
+							<th>Mono Legato</th>
+							<td class="text-end">${fmt.onOff(tone.bytes[72])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Stereo Level</th>
+							<td class="text-end">${tone.bytes[23]}</td>
+						</tr>
+						<tr>
+							<th>Stereo Pan</th>
+							<td class="text-end">${fmt.sint8(tone.bytes[24])}</td>
+						</tr>
+						<tr>
+							<th>Basic Loudness</th>
+							<td class="text-end">${tone.bytes[25]}</td>
+						</tr>
+						<tr>
+							<th>Velocity > Loudness</th>
+							<td class="text-end">${tone.bytes[26]}</td>
+						</tr>
+						<tr>
+							<th>Key > Loudness</th>
+							<td class="text-end">${tone.bytes[27]}</td>
+						</tr>
+						<tr>
+							<th>Pressure > Loudness</th>
+							<td class="text-end">${tone.bytes[28]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Soft Pedal Loudness Reduction</th>
+							<td class="text-end">${tone.bytes[62]}</td>
+						</tr>
+						<tr>
+							<th>Soft Pedal Attack Stretch</th>
+							<td class="text-end">${tone.bytes[63]}</td>
+						</tr>
+						<tr>
+							<th>Soft Pedal Filter Close</th>
+							<td class="text-end">${tone.bytes[64]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>LFO1 Rate</th>
+							<td class="text-end">${tone.bytes[33]}</td>
+						</tr>
+						<tr>
+							<th>LFO1 Depth</th>
+							<td class="text-end">${tone.bytes[34]}</td>
+						</tr>
+						<tr>
+							<th>LFO1 Delay</th>
+							<td class="text-end">${tone.bytes[35]}</td>
+						</tr>
+						<tr>
+							<th>Modwheel > LFO1 Depth</th>
+							<td class="text-end">${tone.bytes[36]}</td>
+						</tr>
+						<tr>
+							<th>Pressure > LFO1 Depth</th>
+							<td class="text-end">${tone.bytes[37]}</td>
+						</tr>
+						<tr>
+							<th>Velocity > LFO1 Depth</th>
+							<td class="text-end">${tone.bytes[38]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>LFO2 Rate</th>
+							<td class="text-end">${tone.bytes[29]}</td>
+						</tr>
+						<tr>
+							<th>LFO2 Depth</th>
+							<td class="text-end">${tone.bytes[30]}</td>
+						</tr>
+						<tr>
+							<th>LFO2 Delay</th>
+							<td class="text-end">${tone.bytes[31]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Key > LFO Rate</th>
+							<td class="text-end">${tone.bytes[67]}</td>
+						</tr>
+						<tr>
+							<th>Key > LFO Depth</th>
+							<td class="text-end">${tone.bytes[68]}</td>
+						</tr>
+						<tr>
+							<th>Key > LFO Delay</th>
+							<td class="text-end">${tone.bytes[69]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>LFO De-Sync</th>
+							<td class="text-end">${fmt.onOff(tone.bytes[59])}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<table class="table table-sm caption-top">
+					<caption>Modulation Source</caption>
+					<tbody>
+						<tr>
+							<th>Pan 1</th>
+							<td class="text-end">${modSource(tone.bytes[76])}</td>
+						</tr>
+						<tr>
+							<th>Pan 2</th>
+							<td class="text-end">${modSource(tone.bytes[77])}</td>
+						</tr>
+						<tr>
+							<th>Pan 3</th>
+							<td class="text-end">${modSource(tone.bytes[78])}</td>
+						</tr>
+						<tr>
+							<th>Amp. 1</th>
+							<td class="text-end">${modSource(tone.bytes[79])}</td>
+						</tr>
+						<tr>
+							<th>Amp. 2</th>
+							<td class="text-end">${modSource(tone.bytes[80])}</td>
+						</tr>
+						<tr>
+							<th>Amp. 3</th>
+							<td class="text-end">${modSource(tone.bytes[88])}</td>
+						</tr>
+						<tr>
+							<th>LFO1 Speed</th>
+							<td class="text-end">${modSource(tone.bytes[81])}</td>
+						</tr>
+						<tr>
+							<th>LFO1 Depth</th>
+							<td class="text-end">${modSource(tone.bytes[82])}</td>
+						</tr>
+						<tr>
+							<th>LFO1 Delay</th>
+							<td class="text-end">${modSource(tone.bytes[83])}</td>
+						</tr>
+						<tr>
+							<th>Filter Freq 1</th>
+							<td class="text-end">${modSource(tone.bytes[84])}</td>
+						</tr>
+						<tr>
+							<th>Filter Freq 2</th>
+							<td class="text-end">${modSource(tone.bytes[85])}</td>
+						</tr>
+						<tr>
+							<th>Filter Freq 3</th>
+							<td class="text-end">${modSource(tone.bytes[86])}</td>
+						</tr>
+						<tr>
+							<th>Pitch</th>
+							<td class="text-end">${modSource(tone.bytes[87])}</td>
+						</tr>
+					</tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	${templateWave(json.waves[tone.toneNo])}
+`;
+
+window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
+	lists: [
+		{id: 'toneMaps', label: 'Tone Map', renderer: templateToneMapList},
+		{id: 'drumMaps', label: 'Drum Map', renderer: templateDrumMapList},
+		{id: 'tones',    label: 'Programs', renderer: templateToneList},
+		{id: 'samples',  label: 'Samples',  renderer: templateSampleList},
+	],
+	details: {
+		tones: templateTone,
+	},
+}, bootstrap.Modal.getOrCreateInstance.bind(bootstrap.Modal)));
+</script>
+<body>
+</body>
+</html>
