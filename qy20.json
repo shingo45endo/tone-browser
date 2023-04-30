@@ -13845,7 +13845,7 @@
 	],
 	"drumMaps": [
 		{
-			"prog": "0",
+			"prog": 0,
 			"drumSetNo": 0,
 			"drumSetRef": {
 				"$ref": "#/drumSets/0",
@@ -13853,7 +13853,7 @@
 			}
 		},
 		{
-			"prog": "16",
+			"prog": 16,
 			"drumSetNo": 3,
 			"drumSetRef": {
 				"$ref": "#/drumSets/3",
@@ -13861,7 +13861,7 @@
 			}
 		},
 		{
-			"prog": "24",
+			"prog": 24,
 			"drumSetNo": 5,
 			"drumSetRef": {
 				"$ref": "#/drumSets/5",
@@ -13869,7 +13869,7 @@
 			}
 		},
 		{
-			"prog": "25",
+			"prog": 25,
 			"drumSetNo": 4,
 			"drumSetRef": {
 				"$ref": "#/drumSets/4",
@@ -13877,7 +13877,7 @@
 			}
 		},
 		{
-			"prog": "32",
+			"prog": 32,
 			"drumSetNo": 6,
 			"drumSetRef": {
 				"$ref": "#/drumSets/6",
@@ -13885,7 +13885,7 @@
 			}
 		},
 		{
-			"prog": "40",
+			"prog": 40,
 			"drumSetNo": 7,
 			"drumSetRef": {
 				"$ref": "#/drumSets/7",
