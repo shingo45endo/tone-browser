@@ -1,4 +1,4 @@
-import {html, render} from 'https://unpkg.com/lit-html?module';
+import {html, render} from 'https://unpkg.com/lit-html@2.8.0?module';
 
 const htmlBody = `
 	<!-- Navbar -->
