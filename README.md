@@ -15,6 +15,7 @@ This application displays the tone parameters of 90's multi-timbre MIDI sound mo
 	* SC-88Pro
 	* SC-88VL
 	* SC-88
+	* PMA-5
 	* XP-10
 	* SC-55mkII
 	* SC-33
