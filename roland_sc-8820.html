@@ -216,8 +216,9 @@ const templateSampleList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end ps-4">No.</th>
+				<th class="text-end">No.</th>
 				<th class="text-end ps-4">Key</th>
+				<th class="text-end">No.</th>
 				<th class="text-end">Bank</th>
 				<th class="text-end">Start Addr.</th>
 				<th class="text-end">Loop Addr.</th>
@@ -231,7 +232,8 @@ const templateSampleList = (json) => html`
 		${json.samples.map((sample) => html`
 			<tr>
 				<td class="text-end">${sample.sampleNo}</td>
-				<td class="text-end">${sample.key}</td>
+				<td class="text-end">${fmt.noteNameR(sample.key)}</td>
+				<td class="text-end text-muted">${sample.key}</td>
 				<td class="text-end">${sample.bank}</td>
 				<td class="text-end font-monospace">${sample.addrBegin.toString(16).padStart(6, '0')}</td>
 				<td class="text-end font-monospace">${sample.addrLoop.toString(16).padStart(6, '0')}</td>
