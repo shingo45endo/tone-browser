@@ -22,6 +22,7 @@ This application displays the tone parameters of 90's multi-timbre MIDI sound mo
 	* SC-33
 	* SC-55 Ver.2.00 / Ver.1.20 / Ver.1.00
 	* RA-90
+	* CM-32P
 	* CM-32L
 * Yamaha
 	* MU2000EX

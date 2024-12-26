@@ -1,0 +1,7919 @@
+{
+	"samples": [
+		{
+			"sampleNo": 0,
+			"bytes": [191, 255, 134, 197, 95, 252, 41, 64, 48, 70],
+			"key": 48,
+			"addrBegin": 196543,
+			"sampleLen": 24517,
+			"loopLen": 10748,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 1,
+			"bytes": [130, 95, 16, 246, 94, 132, 36, 64, 55, 66],
+			"key": 55,
+			"addrBegin": 24450,
+			"sampleLen": 24310,
+			"loopLen": 9348,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 2,
+			"bytes": [170, 160, 3, 58, 95, 200, 36, 65, 64, 69],
+			"key": 64,
+			"addrBegin": 237738,
+			"sampleLen": 24378,
+			"loopLen": 9416,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 3,
+			"bytes": [187, 191, 1, 133, 127, 80, 59, 63, 66, 76],
+			"key": 66,
+			"addrBegin": 114619,
+			"sampleLen": 32645,
+			"loopLen": 15184,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 4,
+			"bytes": [44, 96, 4, 4, 96, 8, 4, 67, 71, 65],
+			"key": 71,
+			"addrBegin": 24620,
+			"sampleLen": 24580,
+			"loopLen": 1032,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 5,
+			"bytes": [242, 79, 20, 194, 77, 164, 9, 65, 79, 71],
+			"key": 79,
+			"addrBegin": 20466,
+			"sampleLen": 19906,
+			"loopLen": 2468,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 6,
+			"bytes": [182, 229, 20, 62, 71, 72, 9, 66, 89, 79],
+			"key": 89,
+			"addrBegin": 58806,
+			"sampleLen": 18238,
+			"loopLen": 2376,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 7,
+			"bytes": [144, 148, 32, 152, 47, 80, 1, 68, 94, 96],
+			"key": 94,
+			"addrBegin": 38032,
+			"sampleLen": 12184,
+			"loopLen": 336,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 8,
+			"bytes": [255, 98, 37, 89, 37, 236, 6, 62, 109, 77],
+			"key": 109,
+			"addrBegin": 90879,
+			"sampleLen": 9561,
+			"loopLen": 1772,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 9,
+			"bytes": [67, 63, 2, 17, 127, 124, 58, 64, 45, 71],
+			"key": 45,
+			"addrBegin": 147267,
+			"sampleLen": 32529,
+			"loopLen": 14972,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 10,
+			"bytes": [245, 191, 0, 231, 127, 188, 60, 64, 50, 72],
+			"key": 50,
+			"addrBegin": 49141,
+			"sampleLen": 32743,
+			"loopLen": 15548,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 11,
+			"bytes": [221, 63, 1, 219, 127, 252, 50, 64, 59, 78],
+			"key": 59,
+			"addrBegin": 81885,
+			"sampleLen": 32731,
+			"loopLen": 13052,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 12,
+			"bytes": [3, 64, 0, 241, 127, 160, 40, 64, 66, 78],
+			"key": 66,
+			"addrBegin": 16387,
+			"sampleLen": 32753,
+			"loopLen": 10400,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 13,
+			"bytes": [4, 64, 6, 224, 95, 4, 4, 68, 71, 72],
+			"key": 71,
+			"addrBegin": 147460,
+			"sampleLen": 24544,
+			"loopLen": 1028,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 14,
+			"bytes": [73, 144, 18, 195, 88, 28, 8, 65, 76, 67],
+			"key": 76,
+			"addrBegin": 168009,
+			"sampleLen": 22723,
+			"loopLen": 2076,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 15,
+			"bytes": [135, 49, 3, 33, 111, 184, 6, 62, 81, 81],
+			"key": 81,
+			"addrBegin": 209287,
+			"sampleLen": 28449,
+			"loopLen": 1720,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 16,
+			"bytes": [44, 128, 5, 236, 95, 232, 1, 75, 87, 67],
+			"key": 87,
+			"addrBegin": 98348,
+			"sampleLen": 24556,
+			"loopLen": 488,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 17,
+			"bytes": [25, 52, 18, 47, 92, 248, 26, 62, 97, 77],
+			"key": 97,
+			"addrBegin": 144409,
+			"sampleLen": 23599,
+			"loopLen": 6904,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 18,
+			"bytes": [67, 63, 2, 17, 127, 124, 58, 64, 45, 48],
+			"key": 45,
+			"addrBegin": 147267,
+			"sampleLen": 32529,
+			"loopLen": 14972,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 19,
+			"bytes": [245, 191, 0, 231, 127, 188, 60, 64, 50, 49],
+			"key": 50,
+			"addrBegin": 49141,
+			"sampleLen": 32743,
+			"loopLen": 15548,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 20,
+			"bytes": [221, 63, 1, 219, 127, 252, 50, 64, 59, 55],
+			"key": 59,
+			"addrBegin": 81885,
+			"sampleLen": 32731,
+			"loopLen": 13052,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 21,
+			"bytes": [3, 64, 0, 241, 127, 160, 40, 64, 66, 55],
+			"key": 66,
+			"addrBegin": 16387,
+			"sampleLen": 32753,
+			"loopLen": 10400,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 22,
+			"bytes": [4, 64, 6, 224, 95, 4, 4, 68, 71, 49],
+			"key": 71,
+			"addrBegin": 147460,
+			"sampleLen": 24544,
+			"loopLen": 1028,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 23,
+			"bytes": [73, 144, 18, 195, 88, 28, 8, 65, 76, 44],
+			"key": 76,
+			"addrBegin": 168009,
+			"sampleLen": 22723,
+			"loopLen": 2076,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 24,
+			"bytes": [135, 49, 3, 33, 111, 184, 6, 62, 81, 58],
+			"key": 81,
+			"addrBegin": 209287,
+			"sampleLen": 28449,
+			"loopLen": 1720,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 25,
+			"bytes": [44, 128, 5, 236, 95, 232, 1, 75, 87, 44],
+			"key": 87,
+			"addrBegin": 98348,
+			"sampleLen": 24556,
+			"loopLen": 488,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 26,
+			"bytes": [25, 52, 18, 47, 92, 248, 26, 62, 97, 54],
+			"key": 97,
+			"addrBegin": 144409,
+			"sampleLen": 23599,
+			"loopLen": 6904,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 27,
+			"bytes": [104, 238, 23, 248, 14, 172, 0, 75, 54, 76],
+			"key": 54,
+			"addrBegin": 257640,
+			"sampleLen": 3832,
+			"loopLen": 172,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 28,
+			"bytes": [137, 138, 39, 127, 18, 216, 0, 88, 50, 95],
+			"key": 50,
+			"addrBegin": 232073,
+			"sampleLen": 4735,
+			"loopLen": 216,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 29,
+			"bytes": [220, 237, 36, 40, 39, 212, 5, 64, 58, 77],
+			"key": 58,
+			"addrBegin": 60892,
+			"sampleLen": 10024,
+			"loopLen": 1492,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 30,
+			"bytes": [33, 79, 23, 15, 55, 44, 6, 61, 57, 76],
+			"key": 57,
+			"addrBegin": 216865,
+			"sampleLen": 14095,
+			"loopLen": 1580,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 31,
+			"bytes": [204, 218, 33, 240, 43, 100, 2, 75, 68, 78],
+			"key": 68,
+			"addrBegin": 121548,
+			"sampleLen": 11248,
+			"loopLen": 612,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 32,
+			"bytes": [125, 119, 36, 151, 39, 176, 1, 68, 76, 80],
+			"key": 76,
+			"addrBegin": 30589,
+			"sampleLen": 10135,
+			"loopLen": 432,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 33,
+			"bytes": [135, 207, 37, 253, 34, 140, 1, 69, 81, 78],
+			"key": 81,
+			"addrBegin": 118663,
+			"sampleLen": 8957,
+			"loopLen": 396,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 34,
+			"bytes": [34, 183, 39, 126, 12, 108, 1, 64, 98, 91],
+			"key": 98,
+			"addrBegin": 243490,
+			"sampleLen": 3198,
+			"loopLen": 364,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 35,
+			"bytes": [115, 58, 39, 37, 21, 244, 0, 82, 48, 79],
+			"key": 48,
+			"addrBegin": 211571,
+			"sampleLen": 5413,
+			"loopLen": 244,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 36,
+			"bytes": [118, 119, 39, 18, 19, 172, 0, 81, 54, 82],
+			"key": 54,
+			"addrBegin": 227190,
+			"sampleLen": 4882,
+			"loopLen": 172,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 37,
+			"bytes": [198, 3, 35, 226, 40, 228, 1, 66, 60, 77],
+			"key": 60,
+			"addrBegin": 197574,
+			"sampleLen": 10466,
+			"loopLen": 484,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 38,
+			"bytes": [79, 172, 37, 53, 35, 68, 1, 71, 62, 78],
+			"key": 62,
+			"addrBegin": 109647,
+			"sampleLen": 9013,
+			"loopLen": 324,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 39,
+			"bytes": [139, 204, 35, 225, 39, 136, 2, 72, 67, 77],
+			"key": 67,
+			"addrBegin": 248971,
+			"sampleLen": 10209,
+			"loopLen": 648,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 40,
+			"bytes": [187, 50, 32, 217, 49, 228, 1, 64, 74, 80],
+			"key": 74,
+			"addrBegin": 12987,
+			"sampleLen": 12761,
+			"loopLen": 484,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 41,
+			"bytes": [130, 0, 32, 54, 50, 212, 1, 68, 81, 78],
+			"key": 81,
+			"addrBegin": 130,
+			"sampleLen": 12854,
+			"loopLen": 468,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 42,
+			"bytes": [133, 242, 37, 135, 34, 24, 1, 71, 87, 80],
+			"key": 87,
+			"addrBegin": 127621,
+			"sampleLen": 8839,
+			"loopLen": 280,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 43,
+			"bytes": [136, 143, 38, 152, 27, 24, 1, 70, 87, 79],
+			"key": 87,
+			"addrBegin": 167816,
+			"sampleLen": 7064,
+			"loopLen": 280,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 44,
+			"bytes": [234, 207, 39, 6, 12, 188, 0, 89, 97, 78],
+			"key": 97,
+			"addrBegin": 249834,
+			"sampleLen": 3078,
+			"loopLen": 188,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 45,
+			"bytes": [231, 159, 6, 213, 95, 44, 14, 64, 41, 77],
+			"key": 41,
+			"addrBegin": 172007,
+			"sampleLen": 24533,
+			"loopLen": 3628,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 46,
+			"bytes": [223, 63, 19, 73, 86, 160, 10, 61, 46, 70],
+			"key": 46,
+			"addrBegin": 212959,
+			"sampleLen": 22089,
+			"loopLen": 2720,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 47,
+			"bytes": [188, 122, 17, 180, 92, 44, 11, 64, 51, 68],
+			"key": 51,
+			"addrBegin": 96956,
+			"sampleLen": 23732,
+			"loopLen": 2860,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 48,
+			"bytes": [123, 190, 16, 221, 94, 248, 8, 64, 60, 77],
+			"key": 60,
+			"addrBegin": 48763,
+			"sampleLen": 24285,
+			"loopLen": 2296,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 49,
+			"bytes": [1, 0, 20, 239, 79, 64, 4, 64, 65, 75],
+			"key": 65,
+			"addrBegin": 1,
+			"sampleLen": 20463,
+			"loopLen": 1088,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 50,
+			"bytes": [181, 157, 20, 255, 71, 28, 6, 69, 74, 77],
+			"key": 74,
+			"addrBegin": 40373,
+			"sampleLen": 18431,
+			"loopLen": 1564,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 51,
+			"bytes": [223, 63, 19, 73, 86, 160, 10, 61, 46, 70],
+			"key": 46,
+			"addrBegin": 212959,
+			"sampleLen": 22089,
+			"loopLen": 2720,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 52,
+			"bytes": [188, 122, 17, 180, 92, 44, 11, 64, 51, 68],
+			"key": 51,
+			"addrBegin": 96956,
+			"sampleLen": 23732,
+			"loopLen": 2860,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 53,
+			"bytes": [123, 190, 16, 221, 94, 248, 8, 64, 60, 77],
+			"key": 60,
+			"addrBegin": 48763,
+			"sampleLen": 24285,
+			"loopLen": 2296,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 54,
+			"bytes": [1, 0, 20, 239, 79, 64, 4, 64, 65, 75],
+			"key": 65,
+			"addrBegin": 1,
+			"sampleLen": 20463,
+			"loopLen": 1088,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 55,
+			"bytes": [181, 157, 20, 255, 71, 28, 6, 69, 74, 73],
+			"key": 74,
+			"addrBegin": 40373,
+			"sampleLen": 18431,
+			"loopLen": 1564,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 56,
+			"bytes": [231, 159, 6, 213, 95, 44, 14, 64, 53, 79],
+			"key": 53,
+			"addrBegin": 172007,
+			"sampleLen": 24533,
+			"loopLen": 3628,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 57,
+			"bytes": [223, 63, 19, 73, 86, 160, 10, 61, 58, 71],
+			"key": 58,
+			"addrBegin": 212959,
+			"sampleLen": 22089,
+			"loopLen": 2720,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 58,
+			"bytes": [188, 122, 17, 180, 92, 44, 11, 64, 63, 64],
+			"key": 63,
+			"addrBegin": 96956,
+			"sampleLen": 23732,
+			"loopLen": 2860,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 59,
+			"bytes": [123, 190, 16, 221, 94, 248, 8, 64, 72, 76],
+			"key": 72,
+			"addrBegin": 48763,
+			"sampleLen": 24285,
+			"loopLen": 2296,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 60,
+			"bytes": [1, 0, 20, 239, 79, 64, 4, 64, 77, 74],
+			"key": 77,
+			"addrBegin": 1,
+			"sampleLen": 20463,
+			"loopLen": 1088,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 61,
+			"bytes": [181, 157, 20, 255, 71, 28, 6, 69, 86, 81],
+			"key": 86,
+			"addrBegin": 40373,
+			"sampleLen": 18431,
+			"loopLen": 1564,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 62,
+			"bytes": [234, 241, 39, 174, 9, 52, 1, 64, 44, 55],
+			"key": 44,
+			"addrBegin": 258538,
+			"sampleLen": 2478,
+			"loopLen": 308,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 63,
+			"bytes": [141, 231, 39, 91, 10, 208, 0, 77, 51, 49],
+			"key": 51,
+			"addrBegin": 255885,
+			"sampleLen": 2651,
+			"loopLen": 208,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 64,
+			"bytes": [91, 170, 39, 197, 12, 136, 0, 64, 58, 71],
+			"key": 58,
+			"addrBegin": 240219,
+			"sampleLen": 3269,
+			"loopLen": 136,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 65,
+			"bytes": [109, 244, 35, 143, 11, 92, 0, 92, 65, 75],
+			"key": 65,
+			"addrBegin": 259181,
+			"sampleLen": 2959,
+			"loopLen": 92,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 66,
+			"bytes": [162, 195, 39, 70, 12, 208, 0, 90, 70, 64],
+			"key": 70,
+			"addrBegin": 246690,
+			"sampleLen": 3142,
+			"loopLen": 208,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 67,
+			"bytes": [153, 44, 22, 123, 60, 48, 1, 63, 44, 78],
+			"key": 44,
+			"addrBegin": 142489,
+			"sampleLen": 15483,
+			"loopLen": 304,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 68,
+			"bytes": [22, 105, 22, 150, 59, 56, 3, 74, 51, 59],
+			"key": 51,
+			"addrBegin": 157974,
+			"sampleLen": 15254,
+			"loopLen": 824,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 69,
+			"bytes": [157, 239, 21, 251, 60, 168, 2, 62, 58, 72],
+			"key": 58,
+			"addrBegin": 126877,
+			"sampleLen": 15611,
+			"loopLen": 680,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 70,
+			"bytes": [133, 222, 22, 99, 56, 144, 3, 67, 65, 66],
+			"key": 65,
+			"addrBegin": 188037,
+			"sampleLen": 14435,
+			"loopLen": 912,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 71,
+			"bytes": [233, 22, 23, 55, 56, 36, 7, 67, 70, 81],
+			"key": 70,
+			"addrBegin": 202473,
+			"sampleLen": 14391,
+			"loopLen": 1828,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 72,
+			"bytes": [44, 150, 19, 112, 83, 84, 14, 65, 32, 71],
+			"key": 32,
+			"addrBegin": 235052,
+			"sampleLen": 21360,
+			"loopLen": 3668,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 73,
+			"bytes": [150, 100, 32, 246, 47, 144, 12, 66, 49, 71],
+			"key": 49,
+			"addrBegin": 25750,
+			"sampleLen": 12278,
+			"loopLen": 3216,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 74,
+			"bytes": [243, 219, 39, 153, 11, 152, 0, 80, 84, 80],
+			"key": 84,
+			"addrBegin": 252915,
+			"sampleLen": 2969,
+			"loopLen": 152,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 75,
+			"bytes": [49, 192, 4, 255, 95, 252, 15, 67, 35, 82],
+			"key": 35,
+			"addrBegin": 49201,
+			"sampleLen": 24575,
+			"loopLen": 4092,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 76,
+			"bytes": [165, 175, 21, 247, 63, 88, 8, 68, 44, 76],
+			"key": 44,
+			"addrBegin": 110501,
+			"sampleLen": 16375,
+			"loopLen": 2136,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 77,
+			"bytes": [89, 221, 38, 251, 23, 60, 4, 64, 58, 77],
+			"key": 58,
+			"addrBegin": 187737,
+			"sampleLen": 6139,
+			"loopLen": 1084,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 78,
+			"bytes": [85, 245, 38, 251, 23, 60, 4, 59, 58, 73],
+			"key": 58,
+			"addrBegin": 193877,
+			"sampleLen": 6139,
+			"loopLen": 1084,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 79,
+			"bytes": [53, 55, 38, 179, 30, 176, 2, 70, 61, 69],
+			"key": 61,
+			"addrBegin": 145205,
+			"sampleLen": 7859,
+			"loopLen": 688,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 80,
+			"bytes": [43, 191, 7, 245, 63, 136, 13, 64, 45, 60],
+			"key": 45,
+			"addrBegin": 245547,
+			"sampleLen": 16373,
+			"loopLen": 3464,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 81,
+			"bytes": [245, 44, 21, 187, 65, 68, 9, 64, 50, 75],
+			"key": 50,
+			"addrBegin": 77045,
+			"sampleLen": 16827,
+			"loopLen": 2372,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 82,
+			"bytes": [225, 81, 33, 183, 46, 76, 0, 64, 68, 79],
+			"key": 68,
+			"addrBegin": 86497,
+			"sampleLen": 11959,
+			"loopLen": 76,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 83,
+			"bytes": [16, 21, 38, 36, 34, 204, 0, 77, 51, 81],
+			"key": 51,
+			"addrBegin": 136464,
+			"sampleLen": 8740,
+			"loopLen": 204,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 84,
+			"bytes": [1, 36, 39, 111, 22, 204, 0, 76, 63, 81],
+			"key": 63,
+			"addrBegin": 205825,
+			"sampleLen": 5743,
+			"loopLen": 204,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 85,
+			"bytes": [12, 157, 103, 76, 13, 4, 0, 64, 32, 64],
+			"key": 32,
+			"addrBegin": 236812,
+			"sampleLen": 3404,
+			"loopLen": 4,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 86,
+			"bytes": [12, 157, 103, 76, 13, 4, 0, 64, 39, 64],
+			"key": 39,
+			"addrBegin": 236812,
+			"sampleLen": 3404,
+			"loopLen": 4,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 87,
+			"bytes": [12, 157, 103, 76, 13, 4, 0, 64, 46, 64],
+			"key": 46,
+			"addrBegin": 236812,
+			"sampleLen": 3404,
+			"loopLen": 4,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 88,
+			"bytes": [177, 110, 149, 243, 64, 240, 64, 64, 53, 60],
+			"key": 53,
+			"addrBegin": 93873,
+			"sampleLen": 16627,
+			"loopLen": 16624,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 89,
+			"bytes": [173, 164, 150, 215, 57, 212, 57, 64, 57, 69],
+			"key": 57,
+			"addrBegin": 173229,
+			"sampleLen": 14807,
+			"loopLen": 14804,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 90,
+			"bytes": [49, 134, 151, 71, 53, 68, 53, 64, 61, 72],
+			"key": 61,
+			"addrBegin": 230961,
+			"sampleLen": 13639,
+			"loopLen": 13636,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 91,
+			"bytes": [121, 187, 151, 235, 50, 232, 50, 64, 66, 83],
+			"key": 66,
+			"addrBegin": 244601,
+			"sampleLen": 13035,
+			"loopLen": 13032,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 92,
+			"bytes": [161, 164, 163, 231, 39, 228, 39, 64, 71, 60],
+			"key": 71,
+			"addrBegin": 238753,
+			"sampleLen": 10215,
+			"loopLen": 10212,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 93,
+			"bytes": [245, 34, 161, 235, 46, 232, 46, 64, 73, 79],
+			"key": 73,
+			"addrBegin": 74485,
+			"sampleLen": 12011,
+			"loopLen": 12008,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 94,
+			"bytes": [177, 110, 149, 243, 64, 240, 64, 64, 65, 55],
+			"key": 65,
+			"addrBegin": 93873,
+			"sampleLen": 16627,
+			"loopLen": 16624,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 95,
+			"bytes": [173, 164, 150, 215, 57, 212, 57, 64, 69, 55],
+			"key": 69,
+			"addrBegin": 173229,
+			"sampleLen": 14807,
+			"loopLen": 14804,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 96,
+			"bytes": [49, 134, 151, 71, 53, 68, 53, 64, 73, 76],
+			"key": 73,
+			"addrBegin": 230961,
+			"sampleLen": 13639,
+			"loopLen": 13636,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 97,
+			"bytes": [121, 187, 151, 235, 50, 232, 50, 64, 78, 83],
+			"key": 78,
+			"addrBegin": 244601,
+			"sampleLen": 13035,
+			"loopLen": 13032,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 98,
+			"bytes": [161, 164, 163, 231, 39, 228, 39, 64, 83, 57],
+			"key": 83,
+			"addrBegin": 238753,
+			"sampleLen": 10215,
+			"loopLen": 10212,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 99,
+			"bytes": [245, 34, 161, 235, 46, 232, 46, 64, 85, 79],
+			"key": 85,
+			"addrBegin": 74485,
+			"sampleLen": 12011,
+			"loopLen": 12008,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 100,
+			"bytes": [90, 29, 145, 94, 93, 224, 58, 64, 53, 77],
+			"key": 53,
+			"addrBegin": 73050,
+			"sampleLen": 23902,
+			"loopLen": 15072,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 101,
+			"bytes": [87, 190, 130, 45, 115, 168, 68, 64, 66, 74],
+			"key": 66,
+			"addrBegin": 179799,
+			"sampleLen": 29485,
+			"loopLen": 17576,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 102,
+			"bytes": [4, 0, 132, 36, 96, 244, 75, 64, 72, 76],
+			"key": 72,
+			"addrBegin": 4,
+			"sampleLen": 24612,
+			"loopLen": 19444,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 103,
+			"bytes": [51, 32, 133, 245, 95, 16, 50, 64, 78, 64],
+			"key": 78,
+			"addrBegin": 73779,
+			"sampleLen": 24565,
+			"loopLen": 12816,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 104,
+			"bytes": [131, 0, 16, 253, 94, 200, 70, 64, 89, 45],
+			"key": 89,
+			"addrBegin": 131,
+			"sampleLen": 24317,
+			"loopLen": 18120,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 105,
+			"bytes": [90, 29, 145, 94, 93, 224, 58, 64, 65, 77],
+			"key": 65,
+			"addrBegin": 73050,
+			"sampleLen": 23902,
+			"loopLen": 15072,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 106,
+			"bytes": [87, 190, 130, 45, 115, 168, 68, 64, 78, 74],
+			"key": 78,
+			"addrBegin": 179799,
+			"sampleLen": 29485,
+			"loopLen": 17576,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 107,
+			"bytes": [4, 0, 132, 36, 96, 244, 75, 64, 84, 76],
+			"key": 84,
+			"addrBegin": 4,
+			"sampleLen": 24612,
+			"loopLen": 19444,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 108,
+			"bytes": [51, 32, 133, 245, 95, 16, 50, 64, 90, 64],
+			"key": 90,
+			"addrBegin": 73779,
+			"sampleLen": 24565,
+			"loopLen": 12816,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 109,
+			"bytes": [131, 0, 16, 253, 94, 200, 70, 64, 101, 45],
+			"key": 101,
+			"addrBegin": 131,
+			"sampleLen": 24317,
+			"loopLen": 18120,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 110,
+			"bytes": [154, 128, 33, 46, 46, 24, 13, 64, 74, 70],
+			"key": 74,
+			"addrBegin": 98458,
+			"sampleLen": 11822,
+			"loopLen": 3352,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 111,
+			"bytes": [180, 79, 36, 200, 39, 76, 9, 64, 62, 72],
+			"key": 62,
+			"addrBegin": 20404,
+			"sampleLen": 10184,
+			"loopLen": 2380,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 112,
+			"bytes": [23, 159, 36, 149, 39, 108, 12, 65, 76, 71],
+			"key": 76,
+			"addrBegin": 40727,
+			"sampleLen": 10133,
+			"loopLen": 3180,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 113,
+			"bytes": [223, 39, 36, 209, 39, 92, 14, 64, 63, 69],
+			"key": 63,
+			"addrBegin": 10207,
+			"sampleLen": 10193,
+			"loopLen": 3676,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 114,
+			"bytes": [24, 60, 37, 228, 38, 112, 10, 64, 81, 69],
+			"key": 81,
+			"addrBegin": 80920,
+			"sampleLen": 9956,
+			"loopLen": 2672,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 115,
+			"bytes": [75, 100, 39, 41, 19, 52, 1, 75, 56, 68],
+			"key": 56,
+			"addrBegin": 222283,
+			"sampleLen": 4905,
+			"loopLen": 308,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 116,
+			"bytes": [83, 13, 39, 173, 22, 232, 0, 86, 73, 69],
+			"key": 73,
+			"addrBegin": 200019,
+			"sampleLen": 5805,
+			"loopLen": 232,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 117,
+			"bytes": [75, 100, 39, 41, 19, 52, 1, 75, 61, 68],
+			"key": 61,
+			"addrBegin": 222283,
+			"sampleLen": 4905,
+			"loopLen": 308,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 118,
+			"bytes": [83, 13, 39, 173, 22, 232, 0, 86, 78, 69],
+			"key": 78,
+			"addrBegin": 200019,
+			"sampleLen": 5805,
+			"loopLen": 232,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 119,
+			"bytes": [27, 197, 38, 61, 24, 4, 2, 72, 73, 74],
+			"key": 73,
+			"addrBegin": 181531,
+			"sampleLen": 6205,
+			"loopLen": 516,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 120,
+			"bytes": [154, 79, 39, 174, 20, 172, 0, 67, 78, 67],
+			"key": 78,
+			"addrBegin": 216986,
+			"sampleLen": 5294,
+			"loopLen": 172,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 121,
+			"bytes": [157, 233, 19, 3, 22, 48, 1, 74, 84, 76],
+			"key": 84,
+			"addrBegin": 256413,
+			"sampleLen": 5635,
+			"loopLen": 304,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 122,
+			"bytes": [33, 171, 38, 247, 25, 164, 2, 64, 88, 63],
+			"key": 88,
+			"addrBegin": 174881,
+			"sampleLen": 6647,
+			"loopLen": 676,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 123,
+			"bytes": [42, 196, 32, 134, 47, 252, 7, 64, 47, 80],
+			"key": 47,
+			"addrBegin": 50218,
+			"sampleLen": 12166,
+			"loopLen": 2044,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 124,
+			"bytes": [4, 0, 36, 216, 39, 8, 4, 71, 54, 71],
+			"key": 54,
+			"addrBegin": 4,
+			"sampleLen": 10200,
+			"loopLen": 1032,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 125,
+			"bytes": [174, 124, 35, 242, 39, 248, 3, 68, 59, 94],
+			"key": 59,
+			"addrBegin": 228526,
+			"sampleLen": 10226,
+			"loopLen": 1016,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 126,
+			"bytes": [191, 6, 34, 169, 43, 188, 3, 66, 64, 83],
+			"key": 64,
+			"addrBegin": 132799,
+			"sampleLen": 11177,
+			"loopLen": 956,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 127,
+			"bytes": [177, 243, 32, 67, 47, 64, 3, 69, 68, 91],
+			"key": 68,
+			"addrBegin": 62385,
+			"sampleLen": 12099,
+			"loopLen": 832,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 128,
+			"bytes": [202, 174, 33, 254, 43, 200, 2, 77, 71, 68],
+			"key": 71,
+			"addrBegin": 110282,
+			"sampleLen": 11262,
+			"loopLen": 712,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 129,
+			"bytes": [219, 176, 34, 153, 41, 216, 1, 65, 78, 70],
+			"key": 78,
+			"addrBegin": 176347,
+			"sampleLen": 10649,
+			"loopLen": 472,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 130,
+			"bytes": [32, 93, 34, 220, 41, 120, 1, 72, 82, 69],
+			"key": 82,
+			"addrBegin": 154912,
+			"sampleLen": 10716,
+			"loopLen": 376,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 131,
+			"bytes": [255, 134, 34, 217, 41, 192, 1, 70, 83, 82],
+			"key": 83,
+			"addrBegin": 165631,
+			"sampleLen": 10713,
+			"loopLen": 448,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 132,
+			"bytes": [212, 114, 38, 176, 28, 148, 1, 64, 90, 84],
+			"key": 90,
+			"addrBegin": 160468,
+			"sampleLen": 7344,
+			"loopLen": 404,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 133,
+			"bytes": [42, 196, 32, 134, 47, 252, 7, 67, 59, 77],
+			"key": 59,
+			"addrBegin": 50218,
+			"sampleLen": 12166,
+			"loopLen": 2044,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 134,
+			"bytes": [4, 0, 36, 216, 39, 8, 4, 66, 66, 74],
+			"key": 66,
+			"addrBegin": 4,
+			"sampleLen": 10200,
+			"loopLen": 1032,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 135,
+			"bytes": [174, 124, 35, 242, 39, 248, 3, 59, 71, 83],
+			"key": 71,
+			"addrBegin": 228526,
+			"sampleLen": 10226,
+			"loopLen": 1016,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 136,
+			"bytes": [191, 6, 34, 169, 43, 188, 3, 66, 76, 80],
+			"key": 76,
+			"addrBegin": 132799,
+			"sampleLen": 11177,
+			"loopLen": 956,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 137,
+			"bytes": [177, 243, 32, 67, 47, 64, 3, 63, 80, 84],
+			"key": 80,
+			"addrBegin": 62385,
+			"sampleLen": 12099,
+			"loopLen": 832,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 138,
+			"bytes": [202, 174, 33, 254, 43, 200, 2, 73, 83, 62],
+			"key": 83,
+			"addrBegin": 110282,
+			"sampleLen": 11262,
+			"loopLen": 712,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 139,
+			"bytes": [219, 176, 34, 153, 41, 216, 1, 64, 90, 67],
+			"key": 90,
+			"addrBegin": 176347,
+			"sampleLen": 10649,
+			"loopLen": 472,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 140,
+			"bytes": [32, 93, 34, 220, 41, 120, 1, 67, 94, 66],
+			"key": 94,
+			"addrBegin": 154912,
+			"sampleLen": 10716,
+			"loopLen": 376,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 141,
+			"bytes": [255, 134, 34, 217, 41, 192, 1, 65, 95, 73],
+			"key": 95,
+			"addrBegin": 165631,
+			"sampleLen": 10713,
+			"loopLen": 448,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 142,
+			"bytes": [212, 114, 38, 176, 28, 148, 1, 74, 102, 91],
+			"key": 102,
+			"addrBegin": 160468,
+			"sampleLen": 7344,
+			"loopLen": 404,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 143,
+			"bytes": [117, 218, 34, 79, 41, 136, 4, 65, 52, 62],
+			"key": 52,
+			"addrBegin": 186997,
+			"sampleLen": 10575,
+			"loopLen": 1160,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 144,
+			"bytes": [106, 50, 34, 178, 42, 48, 1, 63, 56, 80],
+			"key": 56,
+			"addrBegin": 143978,
+			"sampleLen": 10930,
+			"loopLen": 304,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 145,
+			"bytes": [171, 44, 35, 1, 40, 132, 1, 75, 59, 71],
+			"key": 59,
+			"addrBegin": 208043,
+			"sampleLen": 10241,
+			"loopLen": 388,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 146,
+			"bytes": [175, 84, 35, 253, 39, 192, 0, 68, 64, 77],
+			"key": 64,
+			"addrBegin": 218287,
+			"sampleLen": 10237,
+			"loopLen": 192,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 147,
+			"bytes": [91, 136, 37, 241, 35, 172, 0, 78, 66, 79],
+			"key": 66,
+			"addrBegin": 100443,
+			"sampleLen": 9201,
+			"loopLen": 172,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 148,
+			"bytes": [233, 85, 38, 231, 28, 4, 2, 65, 71, 63],
+			"key": 71,
+			"addrBegin": 153065,
+			"sampleLen": 7399,
+			"loopLen": 516,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 149,
+			"bytes": [176, 198, 36, 40, 39, 204, 1, 63, 73, 60],
+			"key": 73,
+			"addrBegin": 50864,
+			"sampleLen": 10024,
+			"loopLen": 460,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 150,
+			"bytes": [8, 21, 37, 12, 39, 248, 0, 53, 81, 88],
+			"key": 81,
+			"addrBegin": 70920,
+			"sampleLen": 9996,
+			"loopLen": 248,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 151,
+			"bytes": [117, 218, 34, 79, 41, 136, 4, 65, 64, 58],
+			"key": 64,
+			"addrBegin": 186997,
+			"sampleLen": 10575,
+			"loopLen": 1160,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 152,
+			"bytes": [106, 50, 34, 178, 42, 48, 1, 65, 68, 76],
+			"key": 68,
+			"addrBegin": 143978,
+			"sampleLen": 10930,
+			"loopLen": 304,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 153,
+			"bytes": [171, 44, 35, 1, 40, 132, 1, 78, 71, 70],
+			"key": 71,
+			"addrBegin": 208043,
+			"sampleLen": 10241,
+			"loopLen": 388,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 154,
+			"bytes": [175, 84, 35, 253, 39, 192, 0, 70, 76, 84],
+			"key": 76,
+			"addrBegin": 218287,
+			"sampleLen": 10237,
+			"loopLen": 192,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 155,
+			"bytes": [91, 136, 37, 241, 35, 172, 0, 76, 78, 77],
+			"key": 78,
+			"addrBegin": 100443,
+			"sampleLen": 9201,
+			"loopLen": 172,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 156,
+			"bytes": [233, 85, 38, 231, 28, 4, 2, 69, 83, 64],
+			"key": 83,
+			"addrBegin": 153065,
+			"sampleLen": 7399,
+			"loopLen": 516,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 157,
+			"bytes": [176, 198, 36, 40, 39, 204, 1, 62, 85, 58],
+			"key": 85,
+			"addrBegin": 50864,
+			"sampleLen": 10024,
+			"loopLen": 460,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 158,
+			"bytes": [8, 21, 37, 12, 39, 248, 0, 49, 93, 83],
+			"key": 93,
+			"addrBegin": 70920,
+			"sampleLen": 9996,
+			"loopLen": 248,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 159,
+			"bytes": [27, 224, 133, 229, 95, 160, 50, 64, 65, 77],
+			"key": 65,
+			"addrBegin": 122907,
+			"sampleLen": 24549,
+			"loopLen": 12960,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 160,
+			"bytes": [113, 215, 145, 167, 92, 84, 24, 64, 77, 76],
+			"key": 77,
+			"addrBegin": 120689,
+			"sampleLen": 23719,
+			"loopLen": 6228,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 161,
+			"bytes": [134, 95, 135, 162, 95, 28, 41, 64, 86, 52],
+			"key": 86,
+			"addrBegin": 221062,
+			"sampleLen": 24482,
+			"loopLen": 10524,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 162,
+			"bytes": [27, 224, 133, 229, 95, 160, 50, 64, 77, 76],
+			"key": 77,
+			"addrBegin": 122907,
+			"sampleLen": 24549,
+			"loopLen": 12960,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 163,
+			"bytes": [113, 215, 145, 167, 92, 84, 24, 64, 89, 74],
+			"key": 89,
+			"addrBegin": 120689,
+			"sampleLen": 23719,
+			"loopLen": 6228,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 164,
+			"bytes": [134, 95, 135, 162, 95, 28, 41, 64, 98, 51],
+			"key": 98,
+			"addrBegin": 221062,
+			"sampleLen": 24482,
+			"loopLen": 10524,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 165,
+			"bytes": [16, 233, 82, 204, 86, 4, 0, 64, 73, 27],
+			"key": 73,
+			"addrBegin": 190736,
+			"sampleLen": 22220,
+			"loopLen": 4,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 166,
+			"bytes": [97, 253, 23, 15, 1, 12, 1, 64, 72, 64],
+			"key": 72,
+			"addrBegin": 261473,
+			"sampleLen": 271,
+			"loopLen": 268,
+			"loopMode": 0
+		},
+		{
+			"sampleNo": 167,
+			"bytes": [113, 254, 23, 15, 1, 12, 1, 64, 72, 64],
+			"key": 72,
+			"addrBegin": 261745,
+			"sampleLen": 271,
+			"loopLen": 268,
+			"loopMode": 0
+		}
+	],
+	"tones": [
+		{
+			"toneNo": 0,
+			"name": "A.PIANO 1 ",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 49, 32, 3, 0, 64, 64, 0, 1],
+			"voices": [
+				{
+					"bytes": [30, 39, 46, 52, 61, 71, 83, 96, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 255, 255, 255, 127, 127, 100, 64, 0, 56, 127, 103, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 30,
+							"sampleNo": 0,
+							"sampleRef": {
+								"$ref": "#/samples/0"
+							}
+						},
+						{
+							"low": 31,
+							"high": 39,
+							"sampleNo": 1,
+							"sampleRef": {
+								"$ref": "#/samples/1"
+							}
+						},
+						{
+							"low": 40,
+							"high": 46,
+							"sampleNo": 2,
+							"sampleRef": {
+								"$ref": "#/samples/2"
+							}
+						},
+						{
+							"low": 47,
+							"high": 52,
+							"sampleNo": 3,
+							"sampleRef": {
+								"$ref": "#/samples/3"
+							}
+						},
+						{
+							"low": 53,
+							"high": 61,
+							"sampleNo": 4,
+							"sampleRef": {
+								"$ref": "#/samples/4"
+							}
+						},
+						{
+							"low": 62,
+							"high": 71,
+							"sampleNo": 5,
+							"sampleRef": {
+								"$ref": "#/samples/5"
+							}
+						},
+						{
+							"low": 72,
+							"high": 83,
+							"sampleNo": 6,
+							"sampleRef": {
+								"$ref": "#/samples/6"
+							}
+						},
+						{
+							"low": 84,
+							"high": 96,
+							"sampleNo": 7,
+							"sampleRef": {
+								"$ref": "#/samples/7"
+							}
+						},
+						{
+							"low": 97,
+							"high": 127,
+							"sampleNo": 8,
+							"sampleRef": {
+								"$ref": "#/samples/8"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [30, 39, 46, 52, 61, 71, 83, 96, 255, 255, 255, 9, 10, 11, 12, 13, 14, 15, 16, 17, 255, 255, 255, 127, 127, 100, 65, 0, 57, 127, 103, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 30,
+							"sampleNo": 9,
+							"sampleRef": {
+								"$ref": "#/samples/9"
+							}
+						},
+						{
+							"low": 31,
+							"high": 39,
+							"sampleNo": 10,
+							"sampleRef": {
+								"$ref": "#/samples/10"
+							}
+						},
+						{
+							"low": 40,
+							"high": 46,
+							"sampleNo": 11,
+							"sampleRef": {
+								"$ref": "#/samples/11"
+							}
+						},
+						{
+							"low": 47,
+							"high": 52,
+							"sampleNo": 12,
+							"sampleRef": {
+								"$ref": "#/samples/12"
+							}
+						},
+						{
+							"low": 53,
+							"high": 61,
+							"sampleNo": 13,
+							"sampleRef": {
+								"$ref": "#/samples/13"
+							}
+						},
+						{
+							"low": 62,
+							"high": 71,
+							"sampleNo": 14,
+							"sampleRef": {
+								"$ref": "#/samples/14"
+							}
+						},
+						{
+							"low": 72,
+							"high": 83,
+							"sampleNo": 15,
+							"sampleRef": {
+								"$ref": "#/samples/15"
+							}
+						},
+						{
+							"low": 84,
+							"high": 96,
+							"sampleNo": 16,
+							"sampleRef": {
+								"$ref": "#/samples/16"
+							}
+						},
+						{
+							"low": 97,
+							"high": 127,
+							"sampleNo": 17,
+							"sampleRef": {
+								"$ref": "#/samples/17"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 1,
+			"name": "A.PIANO 2 ",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 50, 32, 3, 0, 64, 55, 3, 0],
+			"voices": [
+				{
+					"bytes": [31, 40, 48, 54, 64, 74, 85, 98, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 255, 255, 255, 127, 127, 100, 64, 0, 56, 127, 103, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 31,
+							"sampleNo": 0,
+							"sampleRef": {
+								"$ref": "#/samples/0"
+							}
+						},
+						{
+							"low": 32,
+							"high": 40,
+							"sampleNo": 1,
+							"sampleRef": {
+								"$ref": "#/samples/1"
+							}
+						},
+						{
+							"low": 41,
+							"high": 48,
+							"sampleNo": 2,
+							"sampleRef": {
+								"$ref": "#/samples/2"
+							}
+						},
+						{
+							"low": 49,
+							"high": 54,
+							"sampleNo": 3,
+							"sampleRef": {
+								"$ref": "#/samples/3"
+							}
+						},
+						{
+							"low": 55,
+							"high": 64,
+							"sampleNo": 4,
+							"sampleRef": {
+								"$ref": "#/samples/4"
+							}
+						},
+						{
+							"low": 65,
+							"high": 74,
+							"sampleNo": 5,
+							"sampleRef": {
+								"$ref": "#/samples/5"
+							}
+						},
+						{
+							"low": 75,
+							"high": 85,
+							"sampleNo": 6,
+							"sampleRef": {
+								"$ref": "#/samples/6"
+							}
+						},
+						{
+							"low": 86,
+							"high": 98,
+							"sampleNo": 7,
+							"sampleRef": {
+								"$ref": "#/samples/7"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 8,
+							"sampleRef": {
+								"$ref": "#/samples/8"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [31, 40, 48, 54, 64, 74, 85, 98, 255, 255, 255, 9, 10, 11, 12, 13, 14, 15, 16, 17, 255, 255, 255, 127, 127, 100, 65, 0, 57, 127, 105, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 31,
+							"sampleNo": 9,
+							"sampleRef": {
+								"$ref": "#/samples/9"
+							}
+						},
+						{
+							"low": 32,
+							"high": 40,
+							"sampleNo": 10,
+							"sampleRef": {
+								"$ref": "#/samples/10"
+							}
+						},
+						{
+							"low": 41,
+							"high": 48,
+							"sampleNo": 11,
+							"sampleRef": {
+								"$ref": "#/samples/11"
+							}
+						},
+						{
+							"low": 49,
+							"high": 54,
+							"sampleNo": 12,
+							"sampleRef": {
+								"$ref": "#/samples/12"
+							}
+						},
+						{
+							"low": 55,
+							"high": 64,
+							"sampleNo": 13,
+							"sampleRef": {
+								"$ref": "#/samples/13"
+							}
+						},
+						{
+							"low": 65,
+							"high": 74,
+							"sampleNo": 14,
+							"sampleRef": {
+								"$ref": "#/samples/14"
+							}
+						},
+						{
+							"low": 75,
+							"high": 85,
+							"sampleNo": 15,
+							"sampleRef": {
+								"$ref": "#/samples/15"
+							}
+						},
+						{
+							"low": 86,
+							"high": 98,
+							"sampleNo": 16,
+							"sampleRef": {
+								"$ref": "#/samples/16"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 17,
+							"sampleRef": {
+								"$ref": "#/samples/17"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 2,
+			"name": "A.PIANO 3 ",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 51, 32, 3, 0, 54, 41, 3, 0],
+			"voices": [
+				{
+					"bytes": [35, 44, 52, 58, 68, 80, 93, 101, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 255, 255, 255, 127, 127, 100, 65, 0, 58, 127, 106, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 35,
+							"sampleNo": 0,
+							"sampleRef": {
+								"$ref": "#/samples/0"
+							}
+						},
+						{
+							"low": 36,
+							"high": 44,
+							"sampleNo": 1,
+							"sampleRef": {
+								"$ref": "#/samples/1"
+							}
+						},
+						{
+							"low": 45,
+							"high": 52,
+							"sampleNo": 2,
+							"sampleRef": {
+								"$ref": "#/samples/2"
+							}
+						},
+						{
+							"low": 53,
+							"high": 58,
+							"sampleNo": 3,
+							"sampleRef": {
+								"$ref": "#/samples/3"
+							}
+						},
+						{
+							"low": 59,
+							"high": 68,
+							"sampleNo": 4,
+							"sampleRef": {
+								"$ref": "#/samples/4"
+							}
+						},
+						{
+							"low": 69,
+							"high": 80,
+							"sampleNo": 5,
+							"sampleRef": {
+								"$ref": "#/samples/5"
+							}
+						},
+						{
+							"low": 81,
+							"high": 93,
+							"sampleNo": 6,
+							"sampleRef": {
+								"$ref": "#/samples/6"
+							}
+						},
+						{
+							"low": 94,
+							"high": 101,
+							"sampleNo": 7,
+							"sampleRef": {
+								"$ref": "#/samples/7"
+							}
+						},
+						{
+							"low": 102,
+							"high": 127,
+							"sampleNo": 8,
+							"sampleRef": {
+								"$ref": "#/samples/8"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [35, 44, 52, 58, 68, 80, 93, 101, 255, 255, 255, 9, 10, 11, 12, 13, 14, 15, 16, 17, 255, 255, 255, 127, 127, 100, 67, 0, 60, 127, 106, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 35,
+							"sampleNo": 9,
+							"sampleRef": {
+								"$ref": "#/samples/9"
+							}
+						},
+						{
+							"low": 36,
+							"high": 44,
+							"sampleNo": 10,
+							"sampleRef": {
+								"$ref": "#/samples/10"
+							}
+						},
+						{
+							"low": 45,
+							"high": 52,
+							"sampleNo": 11,
+							"sampleRef": {
+								"$ref": "#/samples/11"
+							}
+						},
+						{
+							"low": 53,
+							"high": 58,
+							"sampleNo": 12,
+							"sampleRef": {
+								"$ref": "#/samples/12"
+							}
+						},
+						{
+							"low": 59,
+							"high": 68,
+							"sampleNo": 13,
+							"sampleRef": {
+								"$ref": "#/samples/13"
+							}
+						},
+						{
+							"low": 69,
+							"high": 80,
+							"sampleNo": 14,
+							"sampleRef": {
+								"$ref": "#/samples/14"
+							}
+						},
+						{
+							"low": 81,
+							"high": 93,
+							"sampleNo": 15,
+							"sampleRef": {
+								"$ref": "#/samples/15"
+							}
+						},
+						{
+							"low": 94,
+							"high": 101,
+							"sampleNo": 16,
+							"sampleRef": {
+								"$ref": "#/samples/16"
+							}
+						},
+						{
+							"low": 102,
+							"high": 127,
+							"sampleNo": 17,
+							"sampleRef": {
+								"$ref": "#/samples/17"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 3,
+			"name": "A.PIANO 4 ",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 52, 32, 3, 0, 64, 5, 0, 1],
+			"voices": [
+				{
+					"bytes": [35, 44, 52, 58, 68, 80, 93, 101, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 255, 255, 255, 127, 127, 100, 64, 0, 56, 127, 104, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 35,
+							"sampleNo": 0,
+							"sampleRef": {
+								"$ref": "#/samples/0"
+							}
+						},
+						{
+							"low": 36,
+							"high": 44,
+							"sampleNo": 1,
+							"sampleRef": {
+								"$ref": "#/samples/1"
+							}
+						},
+						{
+							"low": 45,
+							"high": 52,
+							"sampleNo": 2,
+							"sampleRef": {
+								"$ref": "#/samples/2"
+							}
+						},
+						{
+							"low": 53,
+							"high": 58,
+							"sampleNo": 3,
+							"sampleRef": {
+								"$ref": "#/samples/3"
+							}
+						},
+						{
+							"low": 59,
+							"high": 68,
+							"sampleNo": 4,
+							"sampleRef": {
+								"$ref": "#/samples/4"
+							}
+						},
+						{
+							"low": 69,
+							"high": 80,
+							"sampleNo": 5,
+							"sampleRef": {
+								"$ref": "#/samples/5"
+							}
+						},
+						{
+							"low": 81,
+							"high": 93,
+							"sampleNo": 6,
+							"sampleRef": {
+								"$ref": "#/samples/6"
+							}
+						},
+						{
+							"low": 94,
+							"high": 101,
+							"sampleNo": 7,
+							"sampleRef": {
+								"$ref": "#/samples/7"
+							}
+						},
+						{
+							"low": 102,
+							"high": 127,
+							"sampleNo": 8,
+							"sampleRef": {
+								"$ref": "#/samples/8"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [35, 44, 52, 58, 68, 80, 93, 101, 255, 255, 255, 18, 19, 20, 21, 22, 23, 24, 25, 26, 255, 255, 255, 127, 127, 100, 65, 0, 57, 127, 104, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 35,
+							"sampleNo": 18,
+							"sampleRef": {
+								"$ref": "#/samples/18"
+							}
+						},
+						{
+							"low": 36,
+							"high": 44,
+							"sampleNo": 19,
+							"sampleRef": {
+								"$ref": "#/samples/19"
+							}
+						},
+						{
+							"low": 45,
+							"high": 52,
+							"sampleNo": 20,
+							"sampleRef": {
+								"$ref": "#/samples/20"
+							}
+						},
+						{
+							"low": 53,
+							"high": 58,
+							"sampleNo": 21,
+							"sampleRef": {
+								"$ref": "#/samples/21"
+							}
+						},
+						{
+							"low": 59,
+							"high": 68,
+							"sampleNo": 22,
+							"sampleRef": {
+								"$ref": "#/samples/22"
+							}
+						},
+						{
+							"low": 69,
+							"high": 80,
+							"sampleNo": 23,
+							"sampleRef": {
+								"$ref": "#/samples/23"
+							}
+						},
+						{
+							"low": 81,
+							"high": 93,
+							"sampleNo": 24,
+							"sampleRef": {
+								"$ref": "#/samples/24"
+							}
+						},
+						{
+							"low": 94,
+							"high": 101,
+							"sampleNo": 25,
+							"sampleRef": {
+								"$ref": "#/samples/25"
+							}
+						},
+						{
+							"low": 102,
+							"high": 127,
+							"sampleNo": 26,
+							"sampleRef": {
+								"$ref": "#/samples/26"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 4,
+			"name": "A.PIANO 5 ",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 53, 32, 0, 0, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [33, 41, 48, 54, 64, 74, 87, 98, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 255, 255, 255, 127, 127, 100, 64, 0, 56, 127, 103, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 33,
+							"sampleNo": 0,
+							"sampleRef": {
+								"$ref": "#/samples/0"
+							}
+						},
+						{
+							"low": 34,
+							"high": 41,
+							"sampleNo": 1,
+							"sampleRef": {
+								"$ref": "#/samples/1"
+							}
+						},
+						{
+							"low": 42,
+							"high": 48,
+							"sampleNo": 2,
+							"sampleRef": {
+								"$ref": "#/samples/2"
+							}
+						},
+						{
+							"low": 49,
+							"high": 54,
+							"sampleNo": 3,
+							"sampleRef": {
+								"$ref": "#/samples/3"
+							}
+						},
+						{
+							"low": 55,
+							"high": 64,
+							"sampleNo": 4,
+							"sampleRef": {
+								"$ref": "#/samples/4"
+							}
+						},
+						{
+							"low": 65,
+							"high": 74,
+							"sampleNo": 5,
+							"sampleRef": {
+								"$ref": "#/samples/5"
+							}
+						},
+						{
+							"low": 75,
+							"high": 87,
+							"sampleNo": 6,
+							"sampleRef": {
+								"$ref": "#/samples/6"
+							}
+						},
+						{
+							"low": 88,
+							"high": 98,
+							"sampleNo": 7,
+							"sampleRef": {
+								"$ref": "#/samples/7"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 8,
+							"sampleRef": {
+								"$ref": "#/samples/8"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 5,
+			"name": "A.PIANO 6 ",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 54, 32, 2, 10, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [33, 41, 48, 54, 64, 74, 87, 98, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 255, 255, 255, 127, 127, 100, 65, 0, 56, 127, 105, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 33,
+							"sampleNo": 0,
+							"sampleRef": {
+								"$ref": "#/samples/0"
+							}
+						},
+						{
+							"low": 34,
+							"high": 41,
+							"sampleNo": 1,
+							"sampleRef": {
+								"$ref": "#/samples/1"
+							}
+						},
+						{
+							"low": 42,
+							"high": 48,
+							"sampleNo": 2,
+							"sampleRef": {
+								"$ref": "#/samples/2"
+							}
+						},
+						{
+							"low": 49,
+							"high": 54,
+							"sampleNo": 3,
+							"sampleRef": {
+								"$ref": "#/samples/3"
+							}
+						},
+						{
+							"low": 55,
+							"high": 64,
+							"sampleNo": 4,
+							"sampleRef": {
+								"$ref": "#/samples/4"
+							}
+						},
+						{
+							"low": 65,
+							"high": 74,
+							"sampleNo": 5,
+							"sampleRef": {
+								"$ref": "#/samples/5"
+							}
+						},
+						{
+							"low": 75,
+							"high": 87,
+							"sampleNo": 6,
+							"sampleRef": {
+								"$ref": "#/samples/6"
+							}
+						},
+						{
+							"low": 88,
+							"high": 98,
+							"sampleNo": 7,
+							"sampleRef": {
+								"$ref": "#/samples/7"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 8,
+							"sampleRef": {
+								"$ref": "#/samples/8"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 6,
+			"name": "A.PIANO 7 ",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 55, 32, 0, 0, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [33, 41, 48, 54, 64, 74, 87, 98, 255, 255, 255, 9, 10, 11, 12, 13, 14, 15, 16, 17, 255, 255, 255, 127, 127, 100, 64, 0, 56, 127, 106, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 33,
+							"sampleNo": 9,
+							"sampleRef": {
+								"$ref": "#/samples/9"
+							}
+						},
+						{
+							"low": 34,
+							"high": 41,
+							"sampleNo": 10,
+							"sampleRef": {
+								"$ref": "#/samples/10"
+							}
+						},
+						{
+							"low": 42,
+							"high": 48,
+							"sampleNo": 11,
+							"sampleRef": {
+								"$ref": "#/samples/11"
+							}
+						},
+						{
+							"low": 49,
+							"high": 54,
+							"sampleNo": 12,
+							"sampleRef": {
+								"$ref": "#/samples/12"
+							}
+						},
+						{
+							"low": 55,
+							"high": 64,
+							"sampleNo": 13,
+							"sampleRef": {
+								"$ref": "#/samples/13"
+							}
+						},
+						{
+							"low": 65,
+							"high": 74,
+							"sampleNo": 14,
+							"sampleRef": {
+								"$ref": "#/samples/14"
+							}
+						},
+						{
+							"low": 75,
+							"high": 87,
+							"sampleNo": 15,
+							"sampleRef": {
+								"$ref": "#/samples/15"
+							}
+						},
+						{
+							"low": 88,
+							"high": 98,
+							"sampleNo": 16,
+							"sampleRef": {
+								"$ref": "#/samples/16"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 17,
+							"sampleRef": {
+								"$ref": "#/samples/17"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 7,
+			"name": "A.PIANO 8 ",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 56, 32, 2, 10, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [33, 41, 48, 54, 64, 74, 87, 98, 255, 255, 255, 9, 10, 11, 12, 13, 14, 15, 16, 17, 255, 255, 255, 127, 127, 100, 65, 0, 57, 127, 106, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 33,
+							"sampleNo": 9,
+							"sampleRef": {
+								"$ref": "#/samples/9"
+							}
+						},
+						{
+							"low": 34,
+							"high": 41,
+							"sampleNo": 10,
+							"sampleRef": {
+								"$ref": "#/samples/10"
+							}
+						},
+						{
+							"low": 42,
+							"high": 48,
+							"sampleNo": 11,
+							"sampleRef": {
+								"$ref": "#/samples/11"
+							}
+						},
+						{
+							"low": 49,
+							"high": 54,
+							"sampleNo": 12,
+							"sampleRef": {
+								"$ref": "#/samples/12"
+							}
+						},
+						{
+							"low": 55,
+							"high": 64,
+							"sampleNo": 13,
+							"sampleRef": {
+								"$ref": "#/samples/13"
+							}
+						},
+						{
+							"low": 65,
+							"high": 74,
+							"sampleNo": 14,
+							"sampleRef": {
+								"$ref": "#/samples/14"
+							}
+						},
+						{
+							"low": 75,
+							"high": 87,
+							"sampleNo": 15,
+							"sampleRef": {
+								"$ref": "#/samples/15"
+							}
+						},
+						{
+							"low": 88,
+							"high": 98,
+							"sampleNo": 16,
+							"sampleRef": {
+								"$ref": "#/samples/16"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 17,
+							"sampleRef": {
+								"$ref": "#/samples/17"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 8,
+			"name": "A.PIANO 9 ",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 57, 32, 0, 20, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [35, 44, 52, 58, 68, 80, 93, 101, 255, 255, 255, 9, 10, 11, 12, 13, 14, 15, 16, 17, 255, 255, 255, 127, 127, 100, 65, 0, 57, 127, 107, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 35,
+							"sampleNo": 9,
+							"sampleRef": {
+								"$ref": "#/samples/9"
+							}
+						},
+						{
+							"low": 36,
+							"high": 44,
+							"sampleNo": 10,
+							"sampleRef": {
+								"$ref": "#/samples/10"
+							}
+						},
+						{
+							"low": 45,
+							"high": 52,
+							"sampleNo": 11,
+							"sampleRef": {
+								"$ref": "#/samples/11"
+							}
+						},
+						{
+							"low": 53,
+							"high": 58,
+							"sampleNo": 12,
+							"sampleRef": {
+								"$ref": "#/samples/12"
+							}
+						},
+						{
+							"low": 59,
+							"high": 68,
+							"sampleNo": 13,
+							"sampleRef": {
+								"$ref": "#/samples/13"
+							}
+						},
+						{
+							"low": 69,
+							"high": 80,
+							"sampleNo": 14,
+							"sampleRef": {
+								"$ref": "#/samples/14"
+							}
+						},
+						{
+							"low": 81,
+							"high": 93,
+							"sampleNo": 15,
+							"sampleRef": {
+								"$ref": "#/samples/15"
+							}
+						},
+						{
+							"low": 94,
+							"high": 101,
+							"sampleNo": 16,
+							"sampleRef": {
+								"$ref": "#/samples/16"
+							}
+						},
+						{
+							"low": 102,
+							"high": 127,
+							"sampleNo": 17,
+							"sampleRef": {
+								"$ref": "#/samples/17"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 9,
+			"name": "A.PIANO 10",
+			"commonBytes": [65, 46, 80, 73, 65, 78, 79, 32, 49, 48, 2, 8, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [35, 44, 52, 58, 68, 80, 93, 101, 255, 255, 255, 9, 10, 11, 12, 13, 14, 15, 16, 17, 255, 255, 255, 127, 127, 100, 65, 0, 57, 127, 108, 192],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 35,
+							"sampleNo": 9,
+							"sampleRef": {
+								"$ref": "#/samples/9"
+							}
+						},
+						{
+							"low": 36,
+							"high": 44,
+							"sampleNo": 10,
+							"sampleRef": {
+								"$ref": "#/samples/10"
+							}
+						},
+						{
+							"low": 45,
+							"high": 52,
+							"sampleNo": 11,
+							"sampleRef": {
+								"$ref": "#/samples/11"
+							}
+						},
+						{
+							"low": 53,
+							"high": 58,
+							"sampleNo": 12,
+							"sampleRef": {
+								"$ref": "#/samples/12"
+							}
+						},
+						{
+							"low": 59,
+							"high": 68,
+							"sampleNo": 13,
+							"sampleRef": {
+								"$ref": "#/samples/13"
+							}
+						},
+						{
+							"low": 69,
+							"high": 80,
+							"sampleNo": 14,
+							"sampleRef": {
+								"$ref": "#/samples/14"
+							}
+						},
+						{
+							"low": 81,
+							"high": 93,
+							"sampleNo": 15,
+							"sampleRef": {
+								"$ref": "#/samples/15"
+							}
+						},
+						{
+							"low": 94,
+							"high": 101,
+							"sampleNo": 16,
+							"sampleRef": {
+								"$ref": "#/samples/16"
+							}
+						},
+						{
+							"low": 102,
+							"high": 127,
+							"sampleNo": 17,
+							"sampleRef": {
+								"$ref": "#/samples/17"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 10,
+			"name": "E.PIANO 1 ",
+			"commonBytes": [69, 46, 80, 73, 65, 78, 79, 32, 49, 32, 3, 5, 53, 72, 3, 1],
+			"voices": [
+				{
+					"bytes": [33, 41, 50, 60, 70, 80, 98, 255, 255, 255, 255, 27, 28, 29, 30, 31, 32, 33, 34, 255, 255, 255, 255, 121, 127, 112, 127, 0, 73, 127, 99, 81],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 33,
+							"sampleNo": 27,
+							"sampleRef": {
+								"$ref": "#/samples/27"
+							}
+						},
+						{
+							"low": 34,
+							"high": 41,
+							"sampleNo": 28,
+							"sampleRef": {
+								"$ref": "#/samples/28"
+							}
+						},
+						{
+							"low": 42,
+							"high": 50,
+							"sampleNo": 29,
+							"sampleRef": {
+								"$ref": "#/samples/29"
+							}
+						},
+						{
+							"low": 51,
+							"high": 60,
+							"sampleNo": 30,
+							"sampleRef": {
+								"$ref": "#/samples/30"
+							}
+						},
+						{
+							"low": 61,
+							"high": 70,
+							"sampleNo": 31,
+							"sampleRef": {
+								"$ref": "#/samples/31"
+							}
+						},
+						{
+							"low": 71,
+							"high": 80,
+							"sampleNo": 32,
+							"sampleRef": {
+								"$ref": "#/samples/32"
+							}
+						},
+						{
+							"low": 81,
+							"high": 98,
+							"sampleNo": 33,
+							"sampleRef": {
+								"$ref": "#/samples/33"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 34,
+							"sampleRef": {
+								"$ref": "#/samples/34"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [31, 41, 47, 53, 64, 74, 80, 86, 96, 255, 255, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 255, 255, 121, 127, 112, 127, 0, 67, 127, 99, 113],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 31,
+							"sampleNo": 35,
+							"sampleRef": {
+								"$ref": "#/samples/35"
+							}
+						},
+						{
+							"low": 32,
+							"high": 41,
+							"sampleNo": 36,
+							"sampleRef": {
+								"$ref": "#/samples/36"
+							}
+						},
+						{
+							"low": 42,
+							"high": 47,
+							"sampleNo": 37,
+							"sampleRef": {
+								"$ref": "#/samples/37"
+							}
+						},
+						{
+							"low": 48,
+							"high": 53,
+							"sampleNo": 38,
+							"sampleRef": {
+								"$ref": "#/samples/38"
+							}
+						},
+						{
+							"low": 54,
+							"high": 64,
+							"sampleNo": 39,
+							"sampleRef": {
+								"$ref": "#/samples/39"
+							}
+						},
+						{
+							"low": 65,
+							"high": 74,
+							"sampleNo": 40,
+							"sampleRef": {
+								"$ref": "#/samples/40"
+							}
+						},
+						{
+							"low": 75,
+							"high": 80,
+							"sampleNo": 41,
+							"sampleRef": {
+								"$ref": "#/samples/41"
+							}
+						},
+						{
+							"low": 81,
+							"high": 86,
+							"sampleNo": 42,
+							"sampleRef": {
+								"$ref": "#/samples/42"
+							}
+						},
+						{
+							"low": 87,
+							"high": 96,
+							"sampleNo": 43,
+							"sampleRef": {
+								"$ref": "#/samples/43"
+							}
+						},
+						{
+							"low": 97,
+							"high": 127,
+							"sampleNo": 44,
+							"sampleRef": {
+								"$ref": "#/samples/44"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 11,
+			"name": "E.PIANO 2 ",
+			"commonBytes": [69, 46, 80, 73, 65, 78, 79, 32, 50, 32, 0, 15, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [33, 41, 50, 60, 70, 80, 98, 255, 255, 255, 255, 27, 28, 29, 30, 31, 32, 33, 34, 255, 255, 255, 255, 121, 127, 112, 127, 0, 67, 127, 99, 241],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 33,
+							"sampleNo": 27,
+							"sampleRef": {
+								"$ref": "#/samples/27"
+							}
+						},
+						{
+							"low": 34,
+							"high": 41,
+							"sampleNo": 28,
+							"sampleRef": {
+								"$ref": "#/samples/28"
+							}
+						},
+						{
+							"low": 42,
+							"high": 50,
+							"sampleNo": 29,
+							"sampleRef": {
+								"$ref": "#/samples/29"
+							}
+						},
+						{
+							"low": 51,
+							"high": 60,
+							"sampleNo": 30,
+							"sampleRef": {
+								"$ref": "#/samples/30"
+							}
+						},
+						{
+							"low": 61,
+							"high": 70,
+							"sampleNo": 31,
+							"sampleRef": {
+								"$ref": "#/samples/31"
+							}
+						},
+						{
+							"low": 71,
+							"high": 80,
+							"sampleNo": 32,
+							"sampleRef": {
+								"$ref": "#/samples/32"
+							}
+						},
+						{
+							"low": 81,
+							"high": 98,
+							"sampleNo": 33,
+							"sampleRef": {
+								"$ref": "#/samples/33"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 34,
+							"sampleRef": {
+								"$ref": "#/samples/34"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 12,
+			"name": "E.PIANO 3 ",
+			"commonBytes": [69, 46, 80, 73, 65, 78, 79, 32, 51, 32, 2, 5, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [33, 41, 50, 60, 70, 80, 98, 255, 255, 255, 255, 27, 28, 29, 30, 31, 32, 33, 34, 255, 255, 255, 255, 110, 127, 101, 127, 0, 67, 127, 99, 165],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 33,
+							"sampleNo": 27,
+							"sampleRef": {
+								"$ref": "#/samples/27"
+							}
+						},
+						{
+							"low": 34,
+							"high": 41,
+							"sampleNo": 28,
+							"sampleRef": {
+								"$ref": "#/samples/28"
+							}
+						},
+						{
+							"low": 42,
+							"high": 50,
+							"sampleNo": 29,
+							"sampleRef": {
+								"$ref": "#/samples/29"
+							}
+						},
+						{
+							"low": 51,
+							"high": 60,
+							"sampleNo": 30,
+							"sampleRef": {
+								"$ref": "#/samples/30"
+							}
+						},
+						{
+							"low": 61,
+							"high": 70,
+							"sampleNo": 31,
+							"sampleRef": {
+								"$ref": "#/samples/31"
+							}
+						},
+						{
+							"low": 71,
+							"high": 80,
+							"sampleNo": 32,
+							"sampleRef": {
+								"$ref": "#/samples/32"
+							}
+						},
+						{
+							"low": 81,
+							"high": 98,
+							"sampleNo": 33,
+							"sampleRef": {
+								"$ref": "#/samples/33"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 34,
+							"sampleRef": {
+								"$ref": "#/samples/34"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 13,
+			"name": "E.PIANO 4 ",
+			"commonBytes": [69, 46, 80, 73, 65, 78, 79, 32, 52, 32, 0, 15, 64, 0, 1, 0],
+			"voices": [
+				{
+					"bytes": [31, 41, 47, 53, 64, 74, 80, 86, 96, 255, 255, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 255, 255, 123, 127, 117, 127, 0, 67, 127, 99, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 31,
+							"sampleNo": 35,
+							"sampleRef": {
+								"$ref": "#/samples/35"
+							}
+						},
+						{
+							"low": 32,
+							"high": 41,
+							"sampleNo": 36,
+							"sampleRef": {
+								"$ref": "#/samples/36"
+							}
+						},
+						{
+							"low": 42,
+							"high": 47,
+							"sampleNo": 37,
+							"sampleRef": {
+								"$ref": "#/samples/37"
+							}
+						},
+						{
+							"low": 48,
+							"high": 53,
+							"sampleNo": 38,
+							"sampleRef": {
+								"$ref": "#/samples/38"
+							}
+						},
+						{
+							"low": 54,
+							"high": 64,
+							"sampleNo": 39,
+							"sampleRef": {
+								"$ref": "#/samples/39"
+							}
+						},
+						{
+							"low": 65,
+							"high": 74,
+							"sampleNo": 40,
+							"sampleRef": {
+								"$ref": "#/samples/40"
+							}
+						},
+						{
+							"low": 75,
+							"high": 80,
+							"sampleNo": 41,
+							"sampleRef": {
+								"$ref": "#/samples/41"
+							}
+						},
+						{
+							"low": 81,
+							"high": 86,
+							"sampleNo": 42,
+							"sampleRef": {
+								"$ref": "#/samples/42"
+							}
+						},
+						{
+							"low": 87,
+							"high": 96,
+							"sampleNo": 43,
+							"sampleRef": {
+								"$ref": "#/samples/43"
+							}
+						},
+						{
+							"low": 97,
+							"high": 127,
+							"sampleNo": 44,
+							"sampleRef": {
+								"$ref": "#/samples/44"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 14,
+			"name": "E.PIANO 5 ",
+			"commonBytes": [69, 46, 80, 73, 65, 78, 79, 32, 53, 32, 2, 8, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [31, 41, 47, 53, 64, 74, 80, 86, 96, 255, 255, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 255, 255, 108, 127, 104, 127, 0, 67, 127, 99, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 31,
+							"sampleNo": 35,
+							"sampleRef": {
+								"$ref": "#/samples/35"
+							}
+						},
+						{
+							"low": 32,
+							"high": 41,
+							"sampleNo": 36,
+							"sampleRef": {
+								"$ref": "#/samples/36"
+							}
+						},
+						{
+							"low": 42,
+							"high": 47,
+							"sampleNo": 37,
+							"sampleRef": {
+								"$ref": "#/samples/37"
+							}
+						},
+						{
+							"low": 48,
+							"high": 53,
+							"sampleNo": 38,
+							"sampleRef": {
+								"$ref": "#/samples/38"
+							}
+						},
+						{
+							"low": 54,
+							"high": 64,
+							"sampleNo": 39,
+							"sampleRef": {
+								"$ref": "#/samples/39"
+							}
+						},
+						{
+							"low": 65,
+							"high": 74,
+							"sampleNo": 40,
+							"sampleRef": {
+								"$ref": "#/samples/40"
+							}
+						},
+						{
+							"low": 75,
+							"high": 80,
+							"sampleNo": 41,
+							"sampleRef": {
+								"$ref": "#/samples/41"
+							}
+						},
+						{
+							"low": 81,
+							"high": 86,
+							"sampleNo": 42,
+							"sampleRef": {
+								"$ref": "#/samples/42"
+							}
+						},
+						{
+							"low": 87,
+							"high": 96,
+							"sampleNo": 43,
+							"sampleRef": {
+								"$ref": "#/samples/43"
+							}
+						},
+						{
+							"low": 97,
+							"high": 127,
+							"sampleNo": 44,
+							"sampleRef": {
+								"$ref": "#/samples/44"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 15,
+			"name": "A.GUITAR 1",
+			"commonBytes": [65, 46, 71, 85, 73, 84, 65, 82, 32, 49, 0, 0, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [43, 48, 53, 61, 72, 255, 255, 255, 255, 255, 255, 45, 46, 47, 48, 49, 50, 255, 255, 255, 255, 255, 255, 113, 127, 104, 83, 0, 83, 127, 127, 48],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 43,
+							"sampleNo": 45,
+							"sampleRef": {
+								"$ref": "#/samples/45"
+							}
+						},
+						{
+							"low": 44,
+							"high": 48,
+							"sampleNo": 46,
+							"sampleRef": {
+								"$ref": "#/samples/46"
+							}
+						},
+						{
+							"low": 49,
+							"high": 53,
+							"sampleNo": 47,
+							"sampleRef": {
+								"$ref": "#/samples/47"
+							}
+						},
+						{
+							"low": 54,
+							"high": 61,
+							"sampleNo": 48,
+							"sampleRef": {
+								"$ref": "#/samples/48"
+							}
+						},
+						{
+							"low": 62,
+							"high": 72,
+							"sampleNo": 49,
+							"sampleRef": {
+								"$ref": "#/samples/49"
+							}
+						},
+						{
+							"low": 73,
+							"high": 127,
+							"sampleNo": 50,
+							"sampleRef": {
+								"$ref": "#/samples/50"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 16,
+			"name": "A.GUITAR 2",
+			"commonBytes": [65, 46, 71, 85, 73, 84, 65, 82, 32, 50, 2, 4, 59, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [43, 48, 53, 61, 72, 255, 255, 255, 255, 255, 255, 45, 46, 47, 48, 49, 50, 255, 255, 255, 255, 255, 255, 105, 127, 92, 77, 0, 83, 127, 127, 112],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 43,
+							"sampleNo": 45,
+							"sampleRef": {
+								"$ref": "#/samples/45"
+							}
+						},
+						{
+							"low": 44,
+							"high": 48,
+							"sampleNo": 46,
+							"sampleRef": {
+								"$ref": "#/samples/46"
+							}
+						},
+						{
+							"low": 49,
+							"high": 53,
+							"sampleNo": 47,
+							"sampleRef": {
+								"$ref": "#/samples/47"
+							}
+						},
+						{
+							"low": 54,
+							"high": 61,
+							"sampleNo": 48,
+							"sampleRef": {
+								"$ref": "#/samples/48"
+							}
+						},
+						{
+							"low": 62,
+							"high": 72,
+							"sampleNo": 49,
+							"sampleRef": {
+								"$ref": "#/samples/49"
+							}
+						},
+						{
+							"low": 73,
+							"high": 127,
+							"sampleNo": 50,
+							"sampleRef": {
+								"$ref": "#/samples/50"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 17,
+			"name": "A.GUITAR 3",
+			"commonBytes": [65, 46, 71, 85, 73, 84, 65, 82, 32, 51, 1, 5, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [45, 50, 56, 66, 78, 255, 255, 255, 255, 255, 255, 45, 46, 47, 48, 49, 50, 255, 255, 255, 255, 255, 255, 106, 127, 92, 81, 0, 83, 127, 127, 112],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 45,
+							"sampleNo": 45,
+							"sampleRef": {
+								"$ref": "#/samples/45"
+							}
+						},
+						{
+							"low": 46,
+							"high": 50,
+							"sampleNo": 46,
+							"sampleRef": {
+								"$ref": "#/samples/46"
+							}
+						},
+						{
+							"low": 51,
+							"high": 56,
+							"sampleNo": 47,
+							"sampleRef": {
+								"$ref": "#/samples/47"
+							}
+						},
+						{
+							"low": 57,
+							"high": 66,
+							"sampleNo": 48,
+							"sampleRef": {
+								"$ref": "#/samples/48"
+							}
+						},
+						{
+							"low": 67,
+							"high": 78,
+							"sampleNo": 49,
+							"sampleRef": {
+								"$ref": "#/samples/49"
+							}
+						},
+						{
+							"low": 79,
+							"high": 127,
+							"sampleNo": 50,
+							"sampleRef": {
+								"$ref": "#/samples/50"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [45, 50, 56, 66, 78, 255, 255, 255, 255, 255, 255, 51, 52, 53, 54, 55, 55, 255, 255, 255, 255, 255, 255, 127, 127, 110, 109, 0, 83, 127, 127, 112],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 45,
+							"sampleNo": 51,
+							"sampleRef": {
+								"$ref": "#/samples/51"
+							}
+						},
+						{
+							"low": 46,
+							"high": 50,
+							"sampleNo": 52,
+							"sampleRef": {
+								"$ref": "#/samples/52"
+							}
+						},
+						{
+							"low": 51,
+							"high": 56,
+							"sampleNo": 53,
+							"sampleRef": {
+								"$ref": "#/samples/53"
+							}
+						},
+						{
+							"low": 57,
+							"high": 66,
+							"sampleNo": 54,
+							"sampleRef": {
+								"$ref": "#/samples/54"
+							}
+						},
+						{
+							"low": 67,
+							"high": 78,
+							"sampleNo": 55,
+							"sampleRef": {
+								"$ref": "#/samples/55"
+							}
+						},
+						{
+							"low": 79,
+							"high": 127,
+							"sampleNo": 55,
+							"sampleRef": {
+								"$ref": "#/samples/55"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 18,
+			"name": "A.GUITAR 4",
+			"commonBytes": [65, 46, 71, 85, 73, 84, 65, 82, 32, 52, 1, 0, 68, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [43, 48, 53, 61, 72, 255, 255, 255, 255, 255, 255, 45, 46, 47, 48, 49, 50, 255, 255, 255, 255, 255, 255, 109, 126, 96, 92, 0, 75, 127, 127, 49],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 43,
+							"sampleNo": 45,
+							"sampleRef": {
+								"$ref": "#/samples/45"
+							}
+						},
+						{
+							"low": 44,
+							"high": 48,
+							"sampleNo": 46,
+							"sampleRef": {
+								"$ref": "#/samples/46"
+							}
+						},
+						{
+							"low": 49,
+							"high": 53,
+							"sampleNo": 47,
+							"sampleRef": {
+								"$ref": "#/samples/47"
+							}
+						},
+						{
+							"low": 54,
+							"high": 61,
+							"sampleNo": 48,
+							"sampleRef": {
+								"$ref": "#/samples/48"
+							}
+						},
+						{
+							"low": 62,
+							"high": 72,
+							"sampleNo": 49,
+							"sampleRef": {
+								"$ref": "#/samples/49"
+							}
+						},
+						{
+							"low": 73,
+							"high": 127,
+							"sampleNo": 50,
+							"sampleRef": {
+								"$ref": "#/samples/50"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [55, 60, 65, 73, 84, 255, 255, 255, 255, 255, 255, 56, 57, 58, 59, 60, 61, 255, 255, 255, 255, 255, 255, 127, 126, 107, 109, 0, 75, 127, 127, 49],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 55,
+							"sampleNo": 56,
+							"sampleRef": {
+								"$ref": "#/samples/56"
+							}
+						},
+						{
+							"low": 56,
+							"high": 60,
+							"sampleNo": 57,
+							"sampleRef": {
+								"$ref": "#/samples/57"
+							}
+						},
+						{
+							"low": 61,
+							"high": 65,
+							"sampleNo": 58,
+							"sampleRef": {
+								"$ref": "#/samples/58"
+							}
+						},
+						{
+							"low": 66,
+							"high": 73,
+							"sampleNo": 59,
+							"sampleRef": {
+								"$ref": "#/samples/59"
+							}
+						},
+						{
+							"low": 74,
+							"high": 84,
+							"sampleNo": 60,
+							"sampleRef": {
+								"$ref": "#/samples/60"
+							}
+						},
+						{
+							"low": 85,
+							"high": 127,
+							"sampleNo": 61,
+							"sampleRef": {
+								"$ref": "#/samples/61"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 19,
+			"name": "A.GUITAR 5",
+			"commonBytes": [65, 46, 71, 85, 73, 84, 65, 82, 32, 53, 4, 0, 7, 100, 0, 0],
+			"voices": [
+				{
+					"bytes": [43, 48, 53, 61, 72, 255, 255, 255, 255, 255, 255, 45, 46, 47, 48, 49, 50, 255, 255, 255, 255, 255, 255, 105, 89, 111, 127, 0, 75, 127, 123, 1],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 43,
+							"sampleNo": 45,
+							"sampleRef": {
+								"$ref": "#/samples/45"
+							}
+						},
+						{
+							"low": 44,
+							"high": 48,
+							"sampleNo": 46,
+							"sampleRef": {
+								"$ref": "#/samples/46"
+							}
+						},
+						{
+							"low": 49,
+							"high": 53,
+							"sampleNo": 47,
+							"sampleRef": {
+								"$ref": "#/samples/47"
+							}
+						},
+						{
+							"low": 54,
+							"high": 61,
+							"sampleNo": 48,
+							"sampleRef": {
+								"$ref": "#/samples/48"
+							}
+						},
+						{
+							"low": 62,
+							"high": 72,
+							"sampleNo": 49,
+							"sampleRef": {
+								"$ref": "#/samples/49"
+							}
+						},
+						{
+							"low": 73,
+							"high": 127,
+							"sampleNo": 50,
+							"sampleRef": {
+								"$ref": "#/samples/50"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [43, 48, 53, 61, 72, 255, 255, 255, 255, 255, 255, 45, 46, 47, 48, 49, 50, 255, 255, 255, 255, 255, 255, 127, 126, 101, 115, 0, 75, 127, 127, 1],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 43,
+							"sampleNo": 45,
+							"sampleRef": {
+								"$ref": "#/samples/45"
+							}
+						},
+						{
+							"low": 44,
+							"high": 48,
+							"sampleNo": 46,
+							"sampleRef": {
+								"$ref": "#/samples/46"
+							}
+						},
+						{
+							"low": 49,
+							"high": 53,
+							"sampleNo": 47,
+							"sampleRef": {
+								"$ref": "#/samples/47"
+							}
+						},
+						{
+							"low": 54,
+							"high": 61,
+							"sampleNo": 48,
+							"sampleRef": {
+								"$ref": "#/samples/48"
+							}
+						},
+						{
+							"low": 62,
+							"high": 72,
+							"sampleNo": 49,
+							"sampleRef": {
+								"$ref": "#/samples/49"
+							}
+						},
+						{
+							"low": 73,
+							"high": 127,
+							"sampleNo": 50,
+							"sampleRef": {
+								"$ref": "#/samples/50"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 20,
+			"name": "E.GUITAR 1",
+			"commonBytes": [69, 46, 71, 85, 73, 84, 65, 82, 32, 49, 4, 0, 24, 100, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 56, 63, 68, 255, 255, 255, 255, 255, 255, 255, 62, 63, 64, 65, 66, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 127, 0, 104, 127, 127, 113],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 62,
+							"sampleRef": {
+								"$ref": "#/samples/62"
+							}
+						},
+						{
+							"low": 50,
+							"high": 56,
+							"sampleNo": 63,
+							"sampleRef": {
+								"$ref": "#/samples/63"
+							}
+						},
+						{
+							"low": 57,
+							"high": 63,
+							"sampleNo": 64,
+							"sampleRef": {
+								"$ref": "#/samples/64"
+							}
+						},
+						{
+							"low": 64,
+							"high": 68,
+							"sampleNo": 65,
+							"sampleRef": {
+								"$ref": "#/samples/65"
+							}
+						},
+						{
+							"low": 69,
+							"high": 127,
+							"sampleNo": 66,
+							"sampleRef": {
+								"$ref": "#/samples/66"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [49, 56, 63, 68, 255, 255, 255, 255, 255, 255, 255, 67, 68, 69, 70, 71, 255, 255, 255, 255, 255, 255, 255, 127, 127, 113, 88, 0, 86, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 67,
+							"sampleRef": {
+								"$ref": "#/samples/67"
+							}
+						},
+						{
+							"low": 50,
+							"high": 56,
+							"sampleNo": 68,
+							"sampleRef": {
+								"$ref": "#/samples/68"
+							}
+						},
+						{
+							"low": 57,
+							"high": 63,
+							"sampleNo": 69,
+							"sampleRef": {
+								"$ref": "#/samples/69"
+							}
+						},
+						{
+							"low": 64,
+							"high": 68,
+							"sampleNo": 70,
+							"sampleRef": {
+								"$ref": "#/samples/70"
+							}
+						},
+						{
+							"low": 69,
+							"high": 127,
+							"sampleNo": 71,
+							"sampleRef": {
+								"$ref": "#/samples/71"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 21,
+			"name": "E.GUITAR 2",
+			"commonBytes": [69, 46, 71, 85, 73, 84, 65, 82, 32, 50, 0, 0, 24, 100, 2, 0],
+			"voices": [
+				{
+					"bytes": [49, 56, 63, 68, 255, 255, 255, 255, 255, 255, 255, 62, 63, 64, 65, 66, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 127, 0, 104, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 62,
+							"sampleRef": {
+								"$ref": "#/samples/62"
+							}
+						},
+						{
+							"low": 50,
+							"high": 56,
+							"sampleNo": 63,
+							"sampleRef": {
+								"$ref": "#/samples/63"
+							}
+						},
+						{
+							"low": 57,
+							"high": 63,
+							"sampleNo": 64,
+							"sampleRef": {
+								"$ref": "#/samples/64"
+							}
+						},
+						{
+							"low": 64,
+							"high": 68,
+							"sampleNo": 65,
+							"sampleRef": {
+								"$ref": "#/samples/65"
+							}
+						},
+						{
+							"low": 69,
+							"high": 127,
+							"sampleNo": 66,
+							"sampleRef": {
+								"$ref": "#/samples/66"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 22,
+			"name": "E.GUITAR 3",
+			"commonBytes": [69, 46, 71, 85, 73, 84, 65, 82, 32, 51, 0, 0, 24, 100, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 56, 63, 68, 255, 255, 255, 255, 255, 255, 255, 67, 68, 69, 70, 71, 255, 255, 255, 255, 255, 255, 255, 127, 127, 121, 88, 0, 86, 127, 127, 113],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 67,
+							"sampleRef": {
+								"$ref": "#/samples/67"
+							}
+						},
+						{
+							"low": 50,
+							"high": 56,
+							"sampleNo": 68,
+							"sampleRef": {
+								"$ref": "#/samples/68"
+							}
+						},
+						{
+							"low": 57,
+							"high": 63,
+							"sampleNo": 69,
+							"sampleRef": {
+								"$ref": "#/samples/69"
+							}
+						},
+						{
+							"low": 64,
+							"high": 68,
+							"sampleNo": 70,
+							"sampleRef": {
+								"$ref": "#/samples/70"
+							}
+						},
+						{
+							"low": 69,
+							"high": 127,
+							"sampleNo": 71,
+							"sampleRef": {
+								"$ref": "#/samples/71"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 23,
+			"name": "E.GUITAR 4",
+			"commonBytes": [69, 46, 71, 85, 73, 84, 65, 82, 32, 52, 2, 7, 24, 100, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 56, 63, 68, 255, 255, 255, 255, 255, 255, 255, 67, 68, 69, 70, 71, 255, 255, 255, 255, 255, 255, 255, 113, 127, 111, 88, 0, 86, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 67,
+							"sampleRef": {
+								"$ref": "#/samples/67"
+							}
+						},
+						{
+							"low": 50,
+							"high": 56,
+							"sampleNo": 68,
+							"sampleRef": {
+								"$ref": "#/samples/68"
+							}
+						},
+						{
+							"low": 57,
+							"high": 63,
+							"sampleNo": 69,
+							"sampleRef": {
+								"$ref": "#/samples/69"
+							}
+						},
+						{
+							"low": 64,
+							"high": 68,
+							"sampleNo": 70,
+							"sampleRef": {
+								"$ref": "#/samples/70"
+							}
+						},
+						{
+							"low": 69,
+							"high": 127,
+							"sampleNo": 71,
+							"sampleRef": {
+								"$ref": "#/samples/71"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 24,
+			"name": "SLAP 1    ",
+			"commonBytes": [83, 76, 65, 80, 32, 49, 32, 32, 32, 32, 0, 15, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [20, 40, 65, 255, 255, 255, 255, 255, 255, 255, 255, 72, 72, 73, 74, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 117, 127, 0, 73, 127, 127, 112],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 20,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 21,
+							"high": 40,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 41,
+							"high": 65,
+							"sampleNo": 73,
+							"sampleRef": {
+								"$ref": "#/samples/73"
+							}
+						},
+						{
+							"low": 66,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 25,
+			"name": "SLAP 2    ",
+			"commonBytes": [83, 76, 65, 80, 32, 50, 32, 32, 32, 32, 2, 10, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [20, 40, 65, 255, 255, 255, 255, 255, 255, 255, 255, 72, 72, 73, 74, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 117, 127, 0, 73, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 20,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 21,
+							"high": 40,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 41,
+							"high": 65,
+							"sampleNo": 73,
+							"sampleRef": {
+								"$ref": "#/samples/73"
+							}
+						},
+						{
+							"low": 66,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 26,
+			"name": "SLAP 3    ",
+			"commonBytes": [83, 76, 65, 80, 32, 51, 32, 32, 32, 32, 0, 15, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [47, 65, 255, 255, 255, 255, 255, 255, 255, 255, 255, 72, 73, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 117, 127, 0, 73, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 47,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 48,
+							"high": 65,
+							"sampleNo": 73,
+							"sampleRef": {
+								"$ref": "#/samples/73"
+							}
+						},
+						{
+							"low": 66,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 27,
+			"name": "SLAP 4    ",
+			"commonBytes": [83, 76, 65, 80, 32, 52, 32, 32, 32, 32, 2, 10, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [47, 65, 255, 255, 255, 255, 255, 255, 255, 255, 255, 72, 73, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 117, 127, 0, 73, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 47,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 48,
+							"high": 65,
+							"sampleNo": 73,
+							"sampleRef": {
+								"$ref": "#/samples/73"
+							}
+						},
+						{
+							"low": 66,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 28,
+			"name": "SLAP 5    ",
+			"commonBytes": [83, 76, 65, 80, 32, 53, 32, 32, 32, 32, 4, 15, 64, 100, 0, 0],
+			"voices": [
+				{
+					"bytes": [50, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 72, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 117, 127, 0, 73, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 50,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 51,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [65, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 73, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 117, 127, 0, 73, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 65,
+							"sampleNo": 73,
+							"sampleRef": {
+								"$ref": "#/samples/73"
+							}
+						},
+						{
+							"low": 66,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 29,
+			"name": "SLAP 6    ",
+			"commonBytes": [83, 76, 65, 80, 32, 54, 32, 32, 32, 32, 4, 15, 64, 100, 0, 0],
+			"voices": [
+				{
+					"bytes": [20, 40, 65, 255, 255, 255, 255, 255, 255, 255, 255, 72, 72, 73, 74, 255, 255, 255, 255, 255, 255, 255, 255, 118, 83, 117, 127, 0, 73, 127, 127, 112],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 20,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 21,
+							"high": 40,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 41,
+							"high": 65,
+							"sampleNo": 73,
+							"sampleRef": {
+								"$ref": "#/samples/73"
+							}
+						},
+						{
+							"low": 66,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [20, 40, 65, 255, 255, 255, 255, 255, 255, 255, 255, 72, 72, 73, 74, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 105, 88, 0, 73, 127, 127, 112],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 20,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 21,
+							"high": 40,
+							"sampleNo": 72,
+							"sampleRef": {
+								"$ref": "#/samples/72"
+							}
+						},
+						{
+							"low": 41,
+							"high": 65,
+							"sampleNo": 73,
+							"sampleRef": {
+								"$ref": "#/samples/73"
+							}
+						},
+						{
+							"low": 66,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 30,
+			"name": "SLAP 7    ",
+			"commonBytes": [83, 76, 65, 80, 32, 55, 32, 32, 32, 32, 0, 15, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [40, 60, 255, 255, 255, 255, 255, 255, 255, 255, 255, 75, 76, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 120, 114, 0, 66, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 40,
+							"sampleNo": 75,
+							"sampleRef": {
+								"$ref": "#/samples/75"
+							}
+						},
+						{
+							"low": 41,
+							"high": 60,
+							"sampleNo": 76,
+							"sampleRef": {
+								"$ref": "#/samples/76"
+							}
+						},
+						{
+							"low": 61,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 31,
+			"name": "SLAP 8    ",
+			"commonBytes": [83, 76, 65, 80, 32, 56, 32, 32, 32, 32, 2, 6, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [40, 60, 255, 255, 255, 255, 255, 255, 255, 255, 255, 75, 76, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 120, 114, 0, 66, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 40,
+							"sampleNo": 75,
+							"sampleRef": {
+								"$ref": "#/samples/75"
+							}
+						},
+						{
+							"low": 41,
+							"high": 60,
+							"sampleNo": 76,
+							"sampleRef": {
+								"$ref": "#/samples/76"
+							}
+						},
+						{
+							"low": 61,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 32,
+			"name": "SLAP 9    ",
+			"commonBytes": [83, 76, 65, 80, 32, 57, 32, 32, 32, 32, 0, 15, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [47, 60, 255, 255, 255, 255, 255, 255, 255, 255, 255, 75, 76, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 120, 114, 0, 66, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 47,
+							"sampleNo": 75,
+							"sampleRef": {
+								"$ref": "#/samples/75"
+							}
+						},
+						{
+							"low": 48,
+							"high": 60,
+							"sampleNo": 76,
+							"sampleRef": {
+								"$ref": "#/samples/76"
+							}
+						},
+						{
+							"low": 61,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 33,
+			"name": "SLAP 10   ",
+			"commonBytes": [83, 76, 65, 80, 32, 49, 48, 32, 32, 32, 2, 6, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [47, 60, 255, 255, 255, 255, 255, 255, 255, 255, 255, 75, 76, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 120, 114, 0, 66, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 47,
+							"sampleNo": 75,
+							"sampleRef": {
+								"$ref": "#/samples/75"
+							}
+						},
+						{
+							"low": 48,
+							"high": 60,
+							"sampleNo": 76,
+							"sampleRef": {
+								"$ref": "#/samples/76"
+							}
+						},
+						{
+							"low": 61,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 34,
+			"name": "SLAP 11   ",
+			"commonBytes": [83, 76, 65, 80, 32, 49, 49, 32, 32, 32, 4, 15, 64, 100, 0, 0],
+			"voices": [
+				{
+					"bytes": [53, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 75, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 120, 114, 0, 66, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 53,
+							"sampleNo": 75,
+							"sampleRef": {
+								"$ref": "#/samples/75"
+							}
+						},
+						{
+							"low": 54,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [60, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 76, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 120, 114, 0, 66, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 60,
+							"sampleNo": 76,
+							"sampleRef": {
+								"$ref": "#/samples/76"
+							}
+						},
+						{
+							"low": 61,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 35,
+			"name": "SLAP 12   ",
+			"commonBytes": [83, 76, 65, 80, 32, 49, 50, 32, 32, 32, 4, 15, 64, 100, 0, 0],
+			"voices": [
+				{
+					"bytes": [20, 40, 60, 255, 255, 255, 255, 255, 255, 255, 255, 75, 75, 76, 74, 255, 255, 255, 255, 255, 255, 255, 255, 118, 80, 117, 127, 0, 73, 127, 127, 112],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 20,
+							"sampleNo": 75,
+							"sampleRef": {
+								"$ref": "#/samples/75"
+							}
+						},
+						{
+							"low": 21,
+							"high": 40,
+							"sampleNo": 75,
+							"sampleRef": {
+								"$ref": "#/samples/75"
+							}
+						},
+						{
+							"low": 41,
+							"high": 60,
+							"sampleNo": 76,
+							"sampleRef": {
+								"$ref": "#/samples/76"
+							}
+						},
+						{
+							"low": 61,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [20, 40, 60, 255, 255, 255, 255, 255, 255, 255, 255, 75, 75, 76, 74, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 105, 88, 0, 73, 127, 127, 112],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 20,
+							"sampleNo": 75,
+							"sampleRef": {
+								"$ref": "#/samples/75"
+							}
+						},
+						{
+							"low": 21,
+							"high": 40,
+							"sampleNo": 75,
+							"sampleRef": {
+								"$ref": "#/samples/75"
+							}
+						},
+						{
+							"low": 41,
+							"high": 60,
+							"sampleNo": 76,
+							"sampleRef": {
+								"$ref": "#/samples/76"
+							}
+						},
+						{
+							"low": 61,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 36,
+			"name": "FINGERED 1",
+			"commonBytes": [70, 73, 78, 71, 69, 82, 69, 68, 32, 49, 0, 7, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [36, 41, 72, 255, 255, 255, 255, 255, 255, 255, 255, 77, 78, 79, 74, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 101, 0, 73, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 36,
+							"sampleNo": 77,
+							"sampleRef": {
+								"$ref": "#/samples/77"
+							}
+						},
+						{
+							"low": 37,
+							"high": 41,
+							"sampleNo": 78,
+							"sampleRef": {
+								"$ref": "#/samples/78"
+							}
+						},
+						{
+							"low": 42,
+							"high": 72,
+							"sampleNo": 79,
+							"sampleRef": {
+								"$ref": "#/samples/79"
+							}
+						},
+						{
+							"low": 73,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 37,
+			"name": "FINGERED 2",
+			"commonBytes": [70, 73, 78, 71, 69, 82, 69, 68, 32, 50, 2, 7, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [36, 41, 72, 255, 255, 255, 255, 255, 255, 255, 255, 77, 78, 79, 74, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 109, 88, 0, 78, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 36,
+							"sampleNo": 77,
+							"sampleRef": {
+								"$ref": "#/samples/77"
+							}
+						},
+						{
+							"low": 37,
+							"high": 41,
+							"sampleNo": 78,
+							"sampleRef": {
+								"$ref": "#/samples/78"
+							}
+						},
+						{
+							"low": 42,
+							"high": 72,
+							"sampleNo": 79,
+							"sampleRef": {
+								"$ref": "#/samples/79"
+							}
+						},
+						{
+							"low": 73,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 38,
+			"name": "PICKED 1  ",
+			"commonBytes": [80, 73, 67, 75, 69, 68, 32, 49, 32, 32, 0, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [36, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 80, 81, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 101, 88, 0, 78, 127, 127, 243],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 36,
+							"sampleNo": 80,
+							"sampleRef": {
+								"$ref": "#/samples/80"
+							}
+						},
+						{
+							"low": 37,
+							"high": 127,
+							"sampleNo": 81,
+							"sampleRef": {
+								"$ref": "#/samples/81"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 39,
+			"name": "PICKED 2  ",
+			"commonBytes": [80, 73, 67, 75, 69, 68, 32, 50, 32, 32, 2, 7, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [36, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 80, 81, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 123, 127, 104, 88, 0, 58, 127, 127, 117],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 36,
+							"sampleNo": 80,
+							"sampleRef": {
+								"$ref": "#/samples/80"
+							}
+						},
+						{
+							"low": 37,
+							"high": 127,
+							"sampleNo": 81,
+							"sampleRef": {
+								"$ref": "#/samples/81"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 40,
+			"name": "FRETLESS 1",
+			"commonBytes": [70, 82, 69, 84, 76, 69, 83, 83, 32, 49, 0, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [86, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 82, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 96, 127, 127, 0, 67, 127, 121, 3],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 86,
+							"sampleNo": 82,
+							"sampleRef": {
+								"$ref": "#/samples/82"
+							}
+						},
+						{
+							"low": 87,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 41,
+			"name": "FRETLESS 2",
+			"commonBytes": [70, 82, 69, 84, 76, 69, 83, 83, 32, 50, 2, 10, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [86, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 82, 74, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 96, 127, 127, 0, 67, 127, 121, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 86,
+							"sampleNo": 82,
+							"sampleRef": {
+								"$ref": "#/samples/82"
+							}
+						},
+						{
+							"low": 87,
+							"high": 127,
+							"sampleNo": 74,
+							"sampleRef": {
+								"$ref": "#/samples/74"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 42,
+			"name": "AC.BASS   ",
+			"commonBytes": [65, 67, 46, 66, 65, 83, 83, 32, 32, 32, 3, 0, 69, 81, 0, 1],
+			"voices": [
+				{
+					"bytes": [36, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 83, 84, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 106, 127, 127, 0, 88, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 36,
+							"sampleNo": 83,
+							"sampleRef": {
+								"$ref": "#/samples/83"
+							}
+						},
+						{
+							"low": 37,
+							"high": 127,
+							"sampleNo": 84,
+							"sampleRef": {
+								"$ref": "#/samples/84"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [35, 43, 255, 255, 255, 255, 255, 255, 255, 255, 255, 85, 86, 87, 255, 255, 255, 255, 255, 255, 255, 255, 255, 92, 127, 83, 127, 80, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 35,
+							"sampleNo": 85,
+							"sampleRef": {
+								"$ref": "#/samples/85"
+							}
+						},
+						{
+							"low": 36,
+							"high": 43,
+							"sampleNo": 86,
+							"sampleRef": {
+								"$ref": "#/samples/86"
+							}
+						},
+						{
+							"low": 44,
+							"high": 127,
+							"sampleNo": 87,
+							"sampleRef": {
+								"$ref": "#/samples/87"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 43,
+			"name": "CHOIR 1   ",
+			"commonBytes": [67, 72, 79, 73, 82, 32, 49, 32, 32, 32, 0, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [53, 58, 62, 67, 71, 255, 255, 255, 255, 255, 255, 88, 89, 90, 91, 92, 93, 255, 255, 255, 255, 255, 255, 127, 51, 127, 127, 127, 127, 127, 88, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 53,
+							"sampleNo": 88,
+							"sampleRef": {
+								"$ref": "#/samples/88"
+							}
+						},
+						{
+							"low": 54,
+							"high": 58,
+							"sampleNo": 89,
+							"sampleRef": {
+								"$ref": "#/samples/89"
+							}
+						},
+						{
+							"low": 59,
+							"high": 62,
+							"sampleNo": 90,
+							"sampleRef": {
+								"$ref": "#/samples/90"
+							}
+						},
+						{
+							"low": 63,
+							"high": 67,
+							"sampleNo": 91,
+							"sampleRef": {
+								"$ref": "#/samples/91"
+							}
+						},
+						{
+							"low": 68,
+							"high": 71,
+							"sampleNo": 92,
+							"sampleRef": {
+								"$ref": "#/samples/92"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 93,
+							"sampleRef": {
+								"$ref": "#/samples/93"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 44,
+			"name": "CHOIR 2   ",
+			"commonBytes": [67, 72, 79, 73, 82, 32, 50, 32, 32, 32, 0, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [53, 58, 62, 67, 71, 255, 255, 255, 255, 255, 255, 88, 89, 90, 91, 92, 93, 255, 255, 255, 255, 255, 255, 96, 75, 110, 92, 127, 127, 127, 103, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 53,
+							"sampleNo": 88,
+							"sampleRef": {
+								"$ref": "#/samples/88"
+							}
+						},
+						{
+							"low": 54,
+							"high": 58,
+							"sampleNo": 89,
+							"sampleRef": {
+								"$ref": "#/samples/89"
+							}
+						},
+						{
+							"low": 59,
+							"high": 62,
+							"sampleNo": 90,
+							"sampleRef": {
+								"$ref": "#/samples/90"
+							}
+						},
+						{
+							"low": 63,
+							"high": 67,
+							"sampleNo": 91,
+							"sampleRef": {
+								"$ref": "#/samples/91"
+							}
+						},
+						{
+							"low": 68,
+							"high": 71,
+							"sampleNo": 92,
+							"sampleRef": {
+								"$ref": "#/samples/92"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 93,
+							"sampleRef": {
+								"$ref": "#/samples/93"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 45,
+			"name": "CHOIR 3   ",
+			"commonBytes": [67, 72, 79, 73, 82, 32, 51, 32, 32, 32, 1, 83, 88, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [53, 58, 62, 67, 71, 255, 255, 255, 255, 255, 255, 88, 89, 90, 91, 92, 93, 255, 255, 255, 255, 255, 255, 127, 51, 127, 127, 127, 127, 127, 88, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 53,
+							"sampleNo": 88,
+							"sampleRef": {
+								"$ref": "#/samples/88"
+							}
+						},
+						{
+							"low": 54,
+							"high": 58,
+							"sampleNo": 89,
+							"sampleRef": {
+								"$ref": "#/samples/89"
+							}
+						},
+						{
+							"low": 59,
+							"high": 62,
+							"sampleNo": 90,
+							"sampleRef": {
+								"$ref": "#/samples/90"
+							}
+						},
+						{
+							"low": 63,
+							"high": 67,
+							"sampleNo": 91,
+							"sampleRef": {
+								"$ref": "#/samples/91"
+							}
+						},
+						{
+							"low": 68,
+							"high": 71,
+							"sampleNo": 92,
+							"sampleRef": {
+								"$ref": "#/samples/92"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 93,
+							"sampleRef": {
+								"$ref": "#/samples/93"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [65, 70, 74, 79, 83, 255, 255, 255, 255, 255, 255, 94, 95, 96, 97, 98, 99, 255, 255, 255, 255, 255, 255, 127, 51, 127, 127, 127, 127, 127, 88, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 65,
+							"sampleNo": 94,
+							"sampleRef": {
+								"$ref": "#/samples/94"
+							}
+						},
+						{
+							"low": 66,
+							"high": 70,
+							"sampleNo": 95,
+							"sampleRef": {
+								"$ref": "#/samples/95"
+							}
+						},
+						{
+							"low": 71,
+							"high": 74,
+							"sampleNo": 96,
+							"sampleRef": {
+								"$ref": "#/samples/96"
+							}
+						},
+						{
+							"low": 75,
+							"high": 79,
+							"sampleNo": 97,
+							"sampleRef": {
+								"$ref": "#/samples/97"
+							}
+						},
+						{
+							"low": 80,
+							"high": 83,
+							"sampleNo": 98,
+							"sampleRef": {
+								"$ref": "#/samples/98"
+							}
+						},
+						{
+							"low": 84,
+							"high": 127,
+							"sampleNo": 99,
+							"sampleRef": {
+								"$ref": "#/samples/99"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 46,
+			"name": "CHOIR 4   ",
+			"commonBytes": [67, 72, 79, 73, 82, 32, 52, 32, 32, 32, 1, 25, 87, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [53, 58, 62, 67, 71, 255, 255, 255, 255, 255, 255, 88, 89, 90, 91, 92, 93, 255, 255, 255, 255, 255, 255, 96, 75, 110, 92, 127, 127, 127, 103, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 53,
+							"sampleNo": 88,
+							"sampleRef": {
+								"$ref": "#/samples/88"
+							}
+						},
+						{
+							"low": 54,
+							"high": 58,
+							"sampleNo": 89,
+							"sampleRef": {
+								"$ref": "#/samples/89"
+							}
+						},
+						{
+							"low": 59,
+							"high": 62,
+							"sampleNo": 90,
+							"sampleRef": {
+								"$ref": "#/samples/90"
+							}
+						},
+						{
+							"low": 63,
+							"high": 67,
+							"sampleNo": 91,
+							"sampleRef": {
+								"$ref": "#/samples/91"
+							}
+						},
+						{
+							"low": 68,
+							"high": 71,
+							"sampleNo": 92,
+							"sampleRef": {
+								"$ref": "#/samples/92"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 93,
+							"sampleRef": {
+								"$ref": "#/samples/93"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [65, 70, 74, 79, 83, 255, 255, 255, 255, 255, 255, 94, 95, 96, 97, 98, 99, 255, 255, 255, 255, 255, 255, 96, 75, 110, 92, 127, 127, 127, 103, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 65,
+							"sampleNo": 94,
+							"sampleRef": {
+								"$ref": "#/samples/94"
+							}
+						},
+						{
+							"low": 66,
+							"high": 70,
+							"sampleNo": 95,
+							"sampleRef": {
+								"$ref": "#/samples/95"
+							}
+						},
+						{
+							"low": 71,
+							"high": 74,
+							"sampleNo": 96,
+							"sampleRef": {
+								"$ref": "#/samples/96"
+							}
+						},
+						{
+							"low": 75,
+							"high": 79,
+							"sampleNo": 97,
+							"sampleRef": {
+								"$ref": "#/samples/97"
+							}
+						},
+						{
+							"low": 80,
+							"high": 83,
+							"sampleNo": 98,
+							"sampleRef": {
+								"$ref": "#/samples/98"
+							}
+						},
+						{
+							"low": 84,
+							"high": 127,
+							"sampleNo": 99,
+							"sampleRef": {
+								"$ref": "#/samples/99"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 47,
+			"name": "STRINGS 1 ",
+			"commonBytes": [83, 84, 82, 73, 78, 71, 83, 32, 49, 32, 0, 15, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 60, 70, 86, 255, 255, 255, 255, 255, 255, 255, 100, 101, 102, 103, 104, 255, 255, 255, 255, 255, 255, 255, 127, 64, 127, 127, 127, 127, 127, 92, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 100,
+							"sampleRef": {
+								"$ref": "#/samples/100"
+							}
+						},
+						{
+							"low": 50,
+							"high": 60,
+							"sampleNo": 101,
+							"sampleRef": {
+								"$ref": "#/samples/101"
+							}
+						},
+						{
+							"low": 61,
+							"high": 70,
+							"sampleNo": 102,
+							"sampleRef": {
+								"$ref": "#/samples/102"
+							}
+						},
+						{
+							"low": 71,
+							"high": 86,
+							"sampleNo": 103,
+							"sampleRef": {
+								"$ref": "#/samples/103"
+							}
+						},
+						{
+							"low": 87,
+							"high": 127,
+							"sampleNo": 104,
+							"sampleRef": {
+								"$ref": "#/samples/104"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 48,
+			"name": "STRINGS 2 ",
+			"commonBytes": [83, 84, 82, 73, 78, 71, 83, 32, 50, 32, 0, 15, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 60, 70, 86, 255, 255, 255, 255, 255, 255, 255, 100, 101, 102, 103, 104, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 127, 127, 127, 127, 106, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 100,
+							"sampleRef": {
+								"$ref": "#/samples/100"
+							}
+						},
+						{
+							"low": 50,
+							"high": 60,
+							"sampleNo": 101,
+							"sampleRef": {
+								"$ref": "#/samples/101"
+							}
+						},
+						{
+							"low": 61,
+							"high": 70,
+							"sampleNo": 102,
+							"sampleRef": {
+								"$ref": "#/samples/102"
+							}
+						},
+						{
+							"low": 71,
+							"high": 86,
+							"sampleNo": 103,
+							"sampleRef": {
+								"$ref": "#/samples/103"
+							}
+						},
+						{
+							"low": 87,
+							"high": 127,
+							"sampleNo": 104,
+							"sampleRef": {
+								"$ref": "#/samples/104"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 49,
+			"name": "STRINGS 3 ",
+			"commonBytes": [83, 84, 82, 73, 78, 71, 83, 32, 51, 32, 1, 15, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 60, 70, 86, 255, 255, 255, 255, 255, 255, 255, 100, 101, 102, 103, 104, 255, 255, 255, 255, 255, 255, 255, 117, 64, 117, 127, 117, 127, 127, 92, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 100,
+							"sampleRef": {
+								"$ref": "#/samples/100"
+							}
+						},
+						{
+							"low": 50,
+							"high": 60,
+							"sampleNo": 101,
+							"sampleRef": {
+								"$ref": "#/samples/101"
+							}
+						},
+						{
+							"low": 61,
+							"high": 70,
+							"sampleNo": 102,
+							"sampleRef": {
+								"$ref": "#/samples/102"
+							}
+						},
+						{
+							"low": 71,
+							"high": 86,
+							"sampleNo": 103,
+							"sampleRef": {
+								"$ref": "#/samples/103"
+							}
+						},
+						{
+							"low": 87,
+							"high": 127,
+							"sampleNo": 104,
+							"sampleRef": {
+								"$ref": "#/samples/104"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [61, 72, 82, 98, 255, 255, 255, 255, 255, 255, 255, 105, 106, 107, 108, 109, 255, 255, 255, 255, 255, 255, 255, 117, 127, 117, 127, 117, 127, 127, 90, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 61,
+							"sampleNo": 105,
+							"sampleRef": {
+								"$ref": "#/samples/105"
+							}
+						},
+						{
+							"low": 62,
+							"high": 72,
+							"sampleNo": 106,
+							"sampleRef": {
+								"$ref": "#/samples/106"
+							}
+						},
+						{
+							"low": 73,
+							"high": 82,
+							"sampleNo": 107,
+							"sampleRef": {
+								"$ref": "#/samples/107"
+							}
+						},
+						{
+							"low": 83,
+							"high": 98,
+							"sampleNo": 108,
+							"sampleRef": {
+								"$ref": "#/samples/108"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 109,
+							"sampleRef": {
+								"$ref": "#/samples/109"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 50,
+			"name": "STRINGS 4 ",
+			"commonBytes": [83, 84, 82, 73, 78, 71, 83, 32, 52, 32, 1, 15, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 60, 70, 86, 255, 255, 255, 255, 255, 255, 255, 100, 101, 102, 103, 104, 255, 255, 255, 255, 255, 255, 255, 117, 127, 117, 127, 117, 127, 127, 107, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 100,
+							"sampleRef": {
+								"$ref": "#/samples/100"
+							}
+						},
+						{
+							"low": 50,
+							"high": 60,
+							"sampleNo": 101,
+							"sampleRef": {
+								"$ref": "#/samples/101"
+							}
+						},
+						{
+							"low": 61,
+							"high": 70,
+							"sampleNo": 102,
+							"sampleRef": {
+								"$ref": "#/samples/102"
+							}
+						},
+						{
+							"low": 71,
+							"high": 86,
+							"sampleNo": 103,
+							"sampleRef": {
+								"$ref": "#/samples/103"
+							}
+						},
+						{
+							"low": 87,
+							"high": 127,
+							"sampleNo": 104,
+							"sampleRef": {
+								"$ref": "#/samples/104"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [61, 72, 82, 98, 255, 255, 255, 255, 255, 255, 255, 105, 106, 107, 108, 109, 255, 255, 255, 255, 255, 255, 255, 117, 127, 117, 127, 117, 127, 127, 107, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 61,
+							"sampleNo": 105,
+							"sampleRef": {
+								"$ref": "#/samples/105"
+							}
+						},
+						{
+							"low": 62,
+							"high": 72,
+							"sampleNo": 106,
+							"sampleRef": {
+								"$ref": "#/samples/106"
+							}
+						},
+						{
+							"low": 73,
+							"high": 82,
+							"sampleNo": 107,
+							"sampleRef": {
+								"$ref": "#/samples/107"
+							}
+						},
+						{
+							"low": 83,
+							"high": 98,
+							"sampleNo": 108,
+							"sampleRef": {
+								"$ref": "#/samples/108"
+							}
+						},
+						{
+							"low": 99,
+							"high": 127,
+							"sampleNo": 109,
+							"sampleRef": {
+								"$ref": "#/samples/109"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 51,
+			"name": "E.ORGAN 1 ",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 49, 32, 0, 20, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 110, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 120, 127, 115, 127, 110, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 127,
+							"sampleNo": 110,
+							"sampleRef": {
+								"$ref": "#/samples/110"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 52,
+			"name": "E.ORGAN 2 ",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 50, 32, 2, 7, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 110, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 97, 127, 97, 127, 96, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 127,
+							"sampleNo": 110,
+							"sampleRef": {
+								"$ref": "#/samples/110"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 53,
+			"name": "E.ORGAN 3 ",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 51, 32, 0, 20, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [52, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 111, 112, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 126, 127, 116, 127, 115, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 52,
+							"sampleNo": 111,
+							"sampleRef": {
+								"$ref": "#/samples/111"
+							}
+						},
+						{
+							"low": 53,
+							"high": 127,
+							"sampleNo": 112,
+							"sampleRef": {
+								"$ref": "#/samples/112"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 54,
+			"name": "E.ORGAN 4 ",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 52, 32, 2, 6, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [52, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 111, 112, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 94, 127, 97, 127, 97, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 52,
+							"sampleNo": 111,
+							"sampleRef": {
+								"$ref": "#/samples/111"
+							}
+						},
+						{
+							"low": 53,
+							"high": 127,
+							"sampleNo": 112,
+							"sampleRef": {
+								"$ref": "#/samples/112"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 55,
+			"name": "E.ORGAN 5 ",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 53, 32, 0, 20, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [69, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 113, 114, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 110, 127, 110, 127, 110, 127, 127, 123, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 69,
+							"sampleNo": 113,
+							"sampleRef": {
+								"$ref": "#/samples/113"
+							}
+						},
+						{
+							"low": 70,
+							"high": 127,
+							"sampleNo": 114,
+							"sampleRef": {
+								"$ref": "#/samples/114"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 56,
+			"name": "E.ORGAN 6 ",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 54, 32, 2, 6, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [69, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 113, 114, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 112, 127, 112, 127, 104, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 69,
+							"sampleNo": 113,
+							"sampleRef": {
+								"$ref": "#/samples/113"
+							}
+						},
+						{
+							"low": 70,
+							"high": 127,
+							"sampleNo": 114,
+							"sampleRef": {
+								"$ref": "#/samples/114"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 57,
+			"name": "E.ORGAN 7 ",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 55, 32, 0, 20, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [71, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 115, 116, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 110, 127, 110, 127, 110, 127, 127, 123, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 71,
+							"sampleNo": 115,
+							"sampleRef": {
+								"$ref": "#/samples/115"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 116,
+							"sampleRef": {
+								"$ref": "#/samples/116"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 58,
+			"name": "E.ORGAN 8 ",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 56, 32, 2, 20, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [71, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 115, 116, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 110, 127, 110, 127, 110, 127, 127, 123, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 71,
+							"sampleNo": 115,
+							"sampleRef": {
+								"$ref": "#/samples/115"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 116,
+							"sampleRef": {
+								"$ref": "#/samples/116"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 59,
+			"name": "E.ORGAN 9 ",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 57, 32, 1, 20, 63, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 110, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 120, 114, 102, 127, 109, 92, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 127,
+							"sampleNo": 110,
+							"sampleRef": {
+								"$ref": "#/samples/110"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [52, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 111, 112, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 127, 101, 118, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 52,
+							"sampleNo": 111,
+							"sampleRef": {
+								"$ref": "#/samples/111"
+							}
+						},
+						{
+							"low": 53,
+							"high": 127,
+							"sampleNo": 112,
+							"sampleRef": {
+								"$ref": "#/samples/112"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 60,
+			"name": "E.ORGAN 10",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 49, 48, 1, 20, 33, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [52, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 111, 112, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 123, 96, 123, 127, 90, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 52,
+							"sampleNo": 111,
+							"sampleRef": {
+								"$ref": "#/samples/111"
+							}
+						},
+						{
+							"low": 53,
+							"high": 127,
+							"sampleNo": 112,
+							"sampleRef": {
+								"$ref": "#/samples/112"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [69, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 113, 114, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 123, 96, 123, 127, 114, 88, 127, 123, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 69,
+							"sampleNo": 113,
+							"sampleRef": {
+								"$ref": "#/samples/113"
+							}
+						},
+						{
+							"low": 70,
+							"high": 127,
+							"sampleNo": 114,
+							"sampleRef": {
+								"$ref": "#/samples/114"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 61,
+			"name": "E.ORGAN 11",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 49, 49, 1, 20, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 110, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 120, 127, 115, 127, 110, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 127,
+							"sampleNo": 110,
+							"sampleRef": {
+								"$ref": "#/samples/110"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [71, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 115, 116, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 127, 109, 127, 127, 123, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 71,
+							"sampleNo": 115,
+							"sampleRef": {
+								"$ref": "#/samples/115"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 116,
+							"sampleRef": {
+								"$ref": "#/samples/116"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 62,
+			"name": "E.ORGAN 12",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 49, 50, 1, 20, 74, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [71, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 115, 116, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 116, 127, 118, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 71,
+							"sampleNo": 115,
+							"sampleRef": {
+								"$ref": "#/samples/115"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 116,
+							"sampleRef": {
+								"$ref": "#/samples/116"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [64, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 117, 118, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 105, 3, 110, 127, 123, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 64,
+							"sampleNo": 117,
+							"sampleRef": {
+								"$ref": "#/samples/117"
+							}
+						},
+						{
+							"low": 65,
+							"high": 127,
+							"sampleNo": 118,
+							"sampleRef": {
+								"$ref": "#/samples/118"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 63,
+			"name": "E.ORGAN 13",
+			"commonBytes": [69, 46, 79, 82, 71, 65, 78, 32, 49, 51, 1, 20, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [69, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 113, 114, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 110, 127, 110, 127, 110, 127, 127, 123, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 69,
+							"sampleNo": 113,
+							"sampleRef": {
+								"$ref": "#/samples/113"
+							}
+						},
+						{
+							"low": 70,
+							"high": 127,
+							"sampleNo": 114,
+							"sampleRef": {
+								"$ref": "#/samples/114"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [71, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 115, 116, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 0, 127, 0, 127, 127, 123, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 71,
+							"sampleNo": 115,
+							"sampleRef": {
+								"$ref": "#/samples/115"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 116,
+							"sampleRef": {
+								"$ref": "#/samples/116"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 64,
+			"name": "SOFT TP 1 ",
+			"commonBytes": [83, 79, 70, 84, 32, 84, 80, 32, 49, 32, 0, 7, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [69, 73, 79, 255, 255, 255, 255, 255, 255, 255, 255, 119, 120, 121, 122, 255, 255, 255, 255, 255, 255, 255, 255, 127, 115, 127, 127, 127, 127, 127, 123, 102],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 69,
+							"sampleNo": 119,
+							"sampleRef": {
+								"$ref": "#/samples/119"
+							}
+						},
+						{
+							"low": 70,
+							"high": 73,
+							"sampleNo": 120,
+							"sampleRef": {
+								"$ref": "#/samples/120"
+							}
+						},
+						{
+							"low": 74,
+							"high": 79,
+							"sampleNo": 121,
+							"sampleRef": {
+								"$ref": "#/samples/121"
+							}
+						},
+						{
+							"low": 80,
+							"high": 127,
+							"sampleNo": 122,
+							"sampleRef": {
+								"$ref": "#/samples/122"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 65,
+			"name": "SOFT TP 2 ",
+			"commonBytes": [83, 79, 70, 84, 32, 84, 80, 32, 50, 32, 2, 7, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [69, 73, 79, 255, 255, 255, 255, 255, 255, 255, 255, 119, 120, 121, 122, 255, 255, 255, 255, 255, 255, 255, 255, 120, 115, 120, 127, 120, 127, 127, 123, 102],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 69,
+							"sampleNo": 119,
+							"sampleRef": {
+								"$ref": "#/samples/119"
+							}
+						},
+						{
+							"low": 70,
+							"high": 73,
+							"sampleNo": 120,
+							"sampleRef": {
+								"$ref": "#/samples/120"
+							}
+						},
+						{
+							"low": 74,
+							"high": 79,
+							"sampleNo": 121,
+							"sampleRef": {
+								"$ref": "#/samples/121"
+							}
+						},
+						{
+							"low": 80,
+							"high": 127,
+							"sampleNo": 122,
+							"sampleRef": {
+								"$ref": "#/samples/122"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 66,
+			"name": "SOFT TP 3 ",
+			"commonBytes": [83, 79, 70, 84, 32, 84, 80, 32, 51, 32, 0, 7, 63, 62, 0, 0],
+			"voices": [
+				{
+					"bytes": [69, 73, 79, 255, 255, 255, 255, 255, 255, 255, 255, 119, 120, 121, 122, 255, 255, 255, 255, 255, 255, 255, 255, 127, 115, 101, 92, 86, 88, 127, 123, 102],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 69,
+							"sampleNo": 119,
+							"sampleRef": {
+								"$ref": "#/samples/119"
+							}
+						},
+						{
+							"low": 70,
+							"high": 73,
+							"sampleNo": 120,
+							"sampleRef": {
+								"$ref": "#/samples/120"
+							}
+						},
+						{
+							"low": 74,
+							"high": 79,
+							"sampleNo": 121,
+							"sampleRef": {
+								"$ref": "#/samples/121"
+							}
+						},
+						{
+							"low": 80,
+							"high": 127,
+							"sampleNo": 122,
+							"sampleRef": {
+								"$ref": "#/samples/122"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 67,
+			"name": "TP / TRB 1",
+			"commonBytes": [84, 80, 32, 47, 32, 84, 82, 66, 32, 49, 0, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 54, 59, 65, 69, 73, 77, 82, 87, 255, 255, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 255, 255, 127, 127, 127, 127, 126, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 123,
+							"sampleRef": {
+								"$ref": "#/samples/123"
+							}
+						},
+						{
+							"low": 50,
+							"high": 54,
+							"sampleNo": 124,
+							"sampleRef": {
+								"$ref": "#/samples/124"
+							}
+						},
+						{
+							"low": 55,
+							"high": 59,
+							"sampleNo": 125,
+							"sampleRef": {
+								"$ref": "#/samples/125"
+							}
+						},
+						{
+							"low": 60,
+							"high": 65,
+							"sampleNo": 126,
+							"sampleRef": {
+								"$ref": "#/samples/126"
+							}
+						},
+						{
+							"low": 66,
+							"high": 69,
+							"sampleNo": 127,
+							"sampleRef": {
+								"$ref": "#/samples/127"
+							}
+						},
+						{
+							"low": 70,
+							"high": 73,
+							"sampleNo": 128,
+							"sampleRef": {
+								"$ref": "#/samples/128"
+							}
+						},
+						{
+							"low": 74,
+							"high": 77,
+							"sampleNo": 129,
+							"sampleRef": {
+								"$ref": "#/samples/129"
+							}
+						},
+						{
+							"low": 78,
+							"high": 82,
+							"sampleNo": 130,
+							"sampleRef": {
+								"$ref": "#/samples/130"
+							}
+						},
+						{
+							"low": 83,
+							"high": 87,
+							"sampleNo": 131,
+							"sampleRef": {
+								"$ref": "#/samples/131"
+							}
+						},
+						{
+							"low": 88,
+							"high": 127,
+							"sampleNo": 132,
+							"sampleRef": {
+								"$ref": "#/samples/132"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 68,
+			"name": "TP / TRB 2",
+			"commonBytes": [84, 80, 32, 47, 32, 84, 82, 66, 32, 50, 0, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [41, 46, 51, 57, 61, 65, 69, 74, 79, 255, 255, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 255, 255, 127, 127, 127, 127, 126, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 41,
+							"sampleNo": 123,
+							"sampleRef": {
+								"$ref": "#/samples/123"
+							}
+						},
+						{
+							"low": 42,
+							"high": 46,
+							"sampleNo": 124,
+							"sampleRef": {
+								"$ref": "#/samples/124"
+							}
+						},
+						{
+							"low": 47,
+							"high": 51,
+							"sampleNo": 125,
+							"sampleRef": {
+								"$ref": "#/samples/125"
+							}
+						},
+						{
+							"low": 52,
+							"high": 57,
+							"sampleNo": 126,
+							"sampleRef": {
+								"$ref": "#/samples/126"
+							}
+						},
+						{
+							"low": 58,
+							"high": 61,
+							"sampleNo": 127,
+							"sampleRef": {
+								"$ref": "#/samples/127"
+							}
+						},
+						{
+							"low": 62,
+							"high": 65,
+							"sampleNo": 128,
+							"sampleRef": {
+								"$ref": "#/samples/128"
+							}
+						},
+						{
+							"low": 66,
+							"high": 69,
+							"sampleNo": 129,
+							"sampleRef": {
+								"$ref": "#/samples/129"
+							}
+						},
+						{
+							"low": 70,
+							"high": 74,
+							"sampleNo": 130,
+							"sampleRef": {
+								"$ref": "#/samples/130"
+							}
+						},
+						{
+							"low": 75,
+							"high": 79,
+							"sampleNo": 131,
+							"sampleRef": {
+								"$ref": "#/samples/131"
+							}
+						},
+						{
+							"low": 80,
+							"high": 127,
+							"sampleNo": 132,
+							"sampleRef": {
+								"$ref": "#/samples/132"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 69,
+			"name": "TP / TRB 3",
+			"commonBytes": [84, 80, 32, 47, 32, 84, 82, 66, 32, 51, 0, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [57, 62, 67, 72, 77, 81, 85, 90, 95, 255, 255, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 255, 255, 127, 127, 127, 127, 126, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 57,
+							"sampleNo": 123,
+							"sampleRef": {
+								"$ref": "#/samples/123"
+							}
+						},
+						{
+							"low": 58,
+							"high": 62,
+							"sampleNo": 124,
+							"sampleRef": {
+								"$ref": "#/samples/124"
+							}
+						},
+						{
+							"low": 63,
+							"high": 67,
+							"sampleNo": 125,
+							"sampleRef": {
+								"$ref": "#/samples/125"
+							}
+						},
+						{
+							"low": 68,
+							"high": 72,
+							"sampleNo": 126,
+							"sampleRef": {
+								"$ref": "#/samples/126"
+							}
+						},
+						{
+							"low": 73,
+							"high": 77,
+							"sampleNo": 127,
+							"sampleRef": {
+								"$ref": "#/samples/127"
+							}
+						},
+						{
+							"low": 78,
+							"high": 81,
+							"sampleNo": 128,
+							"sampleRef": {
+								"$ref": "#/samples/128"
+							}
+						},
+						{
+							"low": 82,
+							"high": 85,
+							"sampleNo": 129,
+							"sampleRef": {
+								"$ref": "#/samples/129"
+							}
+						},
+						{
+							"low": 86,
+							"high": 90,
+							"sampleNo": 130,
+							"sampleRef": {
+								"$ref": "#/samples/130"
+							}
+						},
+						{
+							"low": 91,
+							"high": 95,
+							"sampleNo": 131,
+							"sampleRef": {
+								"$ref": "#/samples/131"
+							}
+						},
+						{
+							"low": 96,
+							"high": 127,
+							"sampleNo": 132,
+							"sampleRef": {
+								"$ref": "#/samples/132"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 70,
+			"name": "TP / TRB 4",
+			"commonBytes": [84, 80, 32, 47, 32, 84, 82, 66, 32, 52, 0, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 54, 59, 65, 69, 73, 77, 82, 87, 255, 255, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 255, 255, 127, 127, 80, 91, 74, 87, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 123,
+							"sampleRef": {
+								"$ref": "#/samples/123"
+							}
+						},
+						{
+							"low": 50,
+							"high": 54,
+							"sampleNo": 124,
+							"sampleRef": {
+								"$ref": "#/samples/124"
+							}
+						},
+						{
+							"low": 55,
+							"high": 59,
+							"sampleNo": 125,
+							"sampleRef": {
+								"$ref": "#/samples/125"
+							}
+						},
+						{
+							"low": 60,
+							"high": 65,
+							"sampleNo": 126,
+							"sampleRef": {
+								"$ref": "#/samples/126"
+							}
+						},
+						{
+							"low": 66,
+							"high": 69,
+							"sampleNo": 127,
+							"sampleRef": {
+								"$ref": "#/samples/127"
+							}
+						},
+						{
+							"low": 70,
+							"high": 73,
+							"sampleNo": 128,
+							"sampleRef": {
+								"$ref": "#/samples/128"
+							}
+						},
+						{
+							"low": 74,
+							"high": 77,
+							"sampleNo": 129,
+							"sampleRef": {
+								"$ref": "#/samples/129"
+							}
+						},
+						{
+							"low": 78,
+							"high": 82,
+							"sampleNo": 130,
+							"sampleRef": {
+								"$ref": "#/samples/130"
+							}
+						},
+						{
+							"low": 83,
+							"high": 87,
+							"sampleNo": 131,
+							"sampleRef": {
+								"$ref": "#/samples/131"
+							}
+						},
+						{
+							"low": 88,
+							"high": 127,
+							"sampleNo": 132,
+							"sampleRef": {
+								"$ref": "#/samples/132"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 71,
+			"name": "TP / TRB 5",
+			"commonBytes": [84, 80, 32, 47, 32, 84, 82, 66, 32, 53, 2, 7, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 54, 59, 65, 69, 73, 77, 82, 87, 255, 255, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 255, 255, 116, 127, 116, 127, 116, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 123,
+							"sampleRef": {
+								"$ref": "#/samples/123"
+							}
+						},
+						{
+							"low": 50,
+							"high": 54,
+							"sampleNo": 124,
+							"sampleRef": {
+								"$ref": "#/samples/124"
+							}
+						},
+						{
+							"low": 55,
+							"high": 59,
+							"sampleNo": 125,
+							"sampleRef": {
+								"$ref": "#/samples/125"
+							}
+						},
+						{
+							"low": 60,
+							"high": 65,
+							"sampleNo": 126,
+							"sampleRef": {
+								"$ref": "#/samples/126"
+							}
+						},
+						{
+							"low": 66,
+							"high": 69,
+							"sampleNo": 127,
+							"sampleRef": {
+								"$ref": "#/samples/127"
+							}
+						},
+						{
+							"low": 70,
+							"high": 73,
+							"sampleNo": 128,
+							"sampleRef": {
+								"$ref": "#/samples/128"
+							}
+						},
+						{
+							"low": 74,
+							"high": 77,
+							"sampleNo": 129,
+							"sampleRef": {
+								"$ref": "#/samples/129"
+							}
+						},
+						{
+							"low": 78,
+							"high": 82,
+							"sampleNo": 130,
+							"sampleRef": {
+								"$ref": "#/samples/130"
+							}
+						},
+						{
+							"low": 83,
+							"high": 87,
+							"sampleNo": 131,
+							"sampleRef": {
+								"$ref": "#/samples/131"
+							}
+						},
+						{
+							"low": 88,
+							"high": 127,
+							"sampleNo": 132,
+							"sampleRef": {
+								"$ref": "#/samples/132"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 72,
+			"name": "TP / TRB 6",
+			"commonBytes": [84, 80, 32, 47, 32, 84, 82, 66, 32, 54, 1, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 54, 59, 65, 69, 73, 77, 82, 87, 255, 255, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 255, 255, 116, 127, 116, 127, 116, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 123,
+							"sampleRef": {
+								"$ref": "#/samples/123"
+							}
+						},
+						{
+							"low": 50,
+							"high": 54,
+							"sampleNo": 124,
+							"sampleRef": {
+								"$ref": "#/samples/124"
+							}
+						},
+						{
+							"low": 55,
+							"high": 59,
+							"sampleNo": 125,
+							"sampleRef": {
+								"$ref": "#/samples/125"
+							}
+						},
+						{
+							"low": 60,
+							"high": 65,
+							"sampleNo": 126,
+							"sampleRef": {
+								"$ref": "#/samples/126"
+							}
+						},
+						{
+							"low": 66,
+							"high": 69,
+							"sampleNo": 127,
+							"sampleRef": {
+								"$ref": "#/samples/127"
+							}
+						},
+						{
+							"low": 70,
+							"high": 73,
+							"sampleNo": 128,
+							"sampleRef": {
+								"$ref": "#/samples/128"
+							}
+						},
+						{
+							"low": 74,
+							"high": 77,
+							"sampleNo": 129,
+							"sampleRef": {
+								"$ref": "#/samples/129"
+							}
+						},
+						{
+							"low": 78,
+							"high": 82,
+							"sampleNo": 130,
+							"sampleRef": {
+								"$ref": "#/samples/130"
+							}
+						},
+						{
+							"low": 83,
+							"high": 87,
+							"sampleNo": 131,
+							"sampleRef": {
+								"$ref": "#/samples/131"
+							}
+						},
+						{
+							"low": 88,
+							"high": 127,
+							"sampleNo": 132,
+							"sampleRef": {
+								"$ref": "#/samples/132"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [61, 66, 71, 77, 81, 85, 89, 94, 99, 255, 255, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 255, 255, 116, 127, 116, 127, 116, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 61,
+							"sampleNo": 133,
+							"sampleRef": {
+								"$ref": "#/samples/133"
+							}
+						},
+						{
+							"low": 62,
+							"high": 66,
+							"sampleNo": 134,
+							"sampleRef": {
+								"$ref": "#/samples/134"
+							}
+						},
+						{
+							"low": 67,
+							"high": 71,
+							"sampleNo": 135,
+							"sampleRef": {
+								"$ref": "#/samples/135"
+							}
+						},
+						{
+							"low": 72,
+							"high": 77,
+							"sampleNo": 136,
+							"sampleRef": {
+								"$ref": "#/samples/136"
+							}
+						},
+						{
+							"low": 78,
+							"high": 81,
+							"sampleNo": 137,
+							"sampleRef": {
+								"$ref": "#/samples/137"
+							}
+						},
+						{
+							"low": 82,
+							"high": 85,
+							"sampleNo": 138,
+							"sampleRef": {
+								"$ref": "#/samples/138"
+							}
+						},
+						{
+							"low": 86,
+							"high": 89,
+							"sampleNo": 139,
+							"sampleRef": {
+								"$ref": "#/samples/139"
+							}
+						},
+						{
+							"low": 90,
+							"high": 94,
+							"sampleNo": 140,
+							"sampleRef": {
+								"$ref": "#/samples/140"
+							}
+						},
+						{
+							"low": 95,
+							"high": 99,
+							"sampleNo": 141,
+							"sampleRef": {
+								"$ref": "#/samples/141"
+							}
+						},
+						{
+							"low": 100,
+							"high": 127,
+							"sampleNo": 142,
+							"sampleRef": {
+								"$ref": "#/samples/142"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 73,
+			"name": "SAX 1     ",
+			"commonBytes": [83, 65, 88, 32, 49, 32, 32, 32, 32, 32, 0, 0, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [52, 56, 59, 63, 67, 71, 77, 255, 255, 255, 255, 143, 144, 145, 146, 147, 148, 149, 150, 255, 255, 255, 255, 120, 127, 120, 127, 120, 127, 127, 127, 113],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 52,
+							"sampleNo": 143,
+							"sampleRef": {
+								"$ref": "#/samples/143"
+							}
+						},
+						{
+							"low": 53,
+							"high": 56,
+							"sampleNo": 144,
+							"sampleRef": {
+								"$ref": "#/samples/144"
+							}
+						},
+						{
+							"low": 57,
+							"high": 59,
+							"sampleNo": 145,
+							"sampleRef": {
+								"$ref": "#/samples/145"
+							}
+						},
+						{
+							"low": 60,
+							"high": 63,
+							"sampleNo": 146,
+							"sampleRef": {
+								"$ref": "#/samples/146"
+							}
+						},
+						{
+							"low": 64,
+							"high": 67,
+							"sampleNo": 147,
+							"sampleRef": {
+								"$ref": "#/samples/147"
+							}
+						},
+						{
+							"low": 68,
+							"high": 71,
+							"sampleNo": 148,
+							"sampleRef": {
+								"$ref": "#/samples/148"
+							}
+						},
+						{
+							"low": 72,
+							"high": 77,
+							"sampleNo": 149,
+							"sampleRef": {
+								"$ref": "#/samples/149"
+							}
+						},
+						{
+							"low": 78,
+							"high": 127,
+							"sampleNo": 150,
+							"sampleRef": {
+								"$ref": "#/samples/150"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 74,
+			"name": "SAX 2     ",
+			"commonBytes": [83, 65, 88, 32, 50, 32, 32, 32, 32, 32, 0, 0, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [46, 50, 53, 57, 61, 65, 71, 255, 255, 255, 255, 143, 144, 145, 146, 147, 148, 149, 150, 255, 255, 255, 255, 120, 127, 120, 127, 120, 127, 127, 127, 113],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 46,
+							"sampleNo": 143,
+							"sampleRef": {
+								"$ref": "#/samples/143"
+							}
+						},
+						{
+							"low": 47,
+							"high": 50,
+							"sampleNo": 144,
+							"sampleRef": {
+								"$ref": "#/samples/144"
+							}
+						},
+						{
+							"low": 51,
+							"high": 53,
+							"sampleNo": 145,
+							"sampleRef": {
+								"$ref": "#/samples/145"
+							}
+						},
+						{
+							"low": 54,
+							"high": 57,
+							"sampleNo": 146,
+							"sampleRef": {
+								"$ref": "#/samples/146"
+							}
+						},
+						{
+							"low": 58,
+							"high": 61,
+							"sampleNo": 147,
+							"sampleRef": {
+								"$ref": "#/samples/147"
+							}
+						},
+						{
+							"low": 62,
+							"high": 65,
+							"sampleNo": 148,
+							"sampleRef": {
+								"$ref": "#/samples/148"
+							}
+						},
+						{
+							"low": 66,
+							"high": 71,
+							"sampleNo": 149,
+							"sampleRef": {
+								"$ref": "#/samples/149"
+							}
+						},
+						{
+							"low": 72,
+							"high": 127,
+							"sampleNo": 150,
+							"sampleRef": {
+								"$ref": "#/samples/150"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 75,
+			"name": "SAX 3     ",
+			"commonBytes": [83, 65, 88, 32, 51, 32, 32, 32, 32, 32, 0, 0, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [58, 62, 65, 69, 73, 77, 83, 255, 255, 255, 255, 143, 144, 145, 146, 147, 148, 149, 150, 255, 255, 255, 255, 120, 127, 120, 127, 120, 127, 127, 127, 113],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 58,
+							"sampleNo": 143,
+							"sampleRef": {
+								"$ref": "#/samples/143"
+							}
+						},
+						{
+							"low": 59,
+							"high": 62,
+							"sampleNo": 144,
+							"sampleRef": {
+								"$ref": "#/samples/144"
+							}
+						},
+						{
+							"low": 63,
+							"high": 65,
+							"sampleNo": 145,
+							"sampleRef": {
+								"$ref": "#/samples/145"
+							}
+						},
+						{
+							"low": 66,
+							"high": 69,
+							"sampleNo": 146,
+							"sampleRef": {
+								"$ref": "#/samples/146"
+							}
+						},
+						{
+							"low": 70,
+							"high": 73,
+							"sampleNo": 147,
+							"sampleRef": {
+								"$ref": "#/samples/147"
+							}
+						},
+						{
+							"low": 74,
+							"high": 77,
+							"sampleNo": 148,
+							"sampleRef": {
+								"$ref": "#/samples/148"
+							}
+						},
+						{
+							"low": 78,
+							"high": 83,
+							"sampleNo": 149,
+							"sampleRef": {
+								"$ref": "#/samples/149"
+							}
+						},
+						{
+							"low": 84,
+							"high": 127,
+							"sampleNo": 150,
+							"sampleRef": {
+								"$ref": "#/samples/150"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 76,
+			"name": "SAX 4     ",
+			"commonBytes": [83, 65, 88, 32, 52, 32, 32, 32, 32, 32, 2, 7, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [52, 56, 59, 63, 67, 71, 77, 255, 255, 255, 255, 143, 144, 145, 146, 147, 148, 149, 150, 255, 255, 255, 255, 112, 127, 112, 127, 112, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 52,
+							"sampleNo": 143,
+							"sampleRef": {
+								"$ref": "#/samples/143"
+							}
+						},
+						{
+							"low": 53,
+							"high": 56,
+							"sampleNo": 144,
+							"sampleRef": {
+								"$ref": "#/samples/144"
+							}
+						},
+						{
+							"low": 57,
+							"high": 59,
+							"sampleNo": 145,
+							"sampleRef": {
+								"$ref": "#/samples/145"
+							}
+						},
+						{
+							"low": 60,
+							"high": 63,
+							"sampleNo": 146,
+							"sampleRef": {
+								"$ref": "#/samples/146"
+							}
+						},
+						{
+							"low": 64,
+							"high": 67,
+							"sampleNo": 147,
+							"sampleRef": {
+								"$ref": "#/samples/147"
+							}
+						},
+						{
+							"low": 68,
+							"high": 71,
+							"sampleNo": 148,
+							"sampleRef": {
+								"$ref": "#/samples/148"
+							}
+						},
+						{
+							"low": 72,
+							"high": 77,
+							"sampleNo": 149,
+							"sampleRef": {
+								"$ref": "#/samples/149"
+							}
+						},
+						{
+							"low": 78,
+							"high": 127,
+							"sampleNo": 150,
+							"sampleRef": {
+								"$ref": "#/samples/150"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 77,
+			"name": "SAX 5     ",
+			"commonBytes": [83, 65, 88, 32, 53, 32, 32, 32, 32, 32, 1, 7, 63, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [52, 56, 59, 63, 67, 71, 77, 255, 255, 255, 255, 143, 144, 145, 146, 147, 148, 149, 150, 255, 255, 255, 255, 112, 127, 112, 127, 112, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 52,
+							"sampleNo": 143,
+							"sampleRef": {
+								"$ref": "#/samples/143"
+							}
+						},
+						{
+							"low": 53,
+							"high": 56,
+							"sampleNo": 144,
+							"sampleRef": {
+								"$ref": "#/samples/144"
+							}
+						},
+						{
+							"low": 57,
+							"high": 59,
+							"sampleNo": 145,
+							"sampleRef": {
+								"$ref": "#/samples/145"
+							}
+						},
+						{
+							"low": 60,
+							"high": 63,
+							"sampleNo": 146,
+							"sampleRef": {
+								"$ref": "#/samples/146"
+							}
+						},
+						{
+							"low": 64,
+							"high": 67,
+							"sampleNo": 147,
+							"sampleRef": {
+								"$ref": "#/samples/147"
+							}
+						},
+						{
+							"low": 68,
+							"high": 71,
+							"sampleNo": 148,
+							"sampleRef": {
+								"$ref": "#/samples/148"
+							}
+						},
+						{
+							"low": 72,
+							"high": 77,
+							"sampleNo": 149,
+							"sampleRef": {
+								"$ref": "#/samples/149"
+							}
+						},
+						{
+							"low": 78,
+							"high": 127,
+							"sampleNo": 150,
+							"sampleRef": {
+								"$ref": "#/samples/150"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [64, 68, 71, 75, 79, 83, 89, 255, 255, 255, 255, 151, 152, 153, 154, 155, 156, 157, 158, 255, 255, 255, 255, 112, 127, 112, 127, 112, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 64,
+							"sampleNo": 151,
+							"sampleRef": {
+								"$ref": "#/samples/151"
+							}
+						},
+						{
+							"low": 65,
+							"high": 68,
+							"sampleNo": 152,
+							"sampleRef": {
+								"$ref": "#/samples/152"
+							}
+						},
+						{
+							"low": 69,
+							"high": 71,
+							"sampleNo": 153,
+							"sampleRef": {
+								"$ref": "#/samples/153"
+							}
+						},
+						{
+							"low": 72,
+							"high": 75,
+							"sampleNo": 154,
+							"sampleRef": {
+								"$ref": "#/samples/154"
+							}
+						},
+						{
+							"low": 76,
+							"high": 79,
+							"sampleNo": 155,
+							"sampleRef": {
+								"$ref": "#/samples/155"
+							}
+						},
+						{
+							"low": 80,
+							"high": 83,
+							"sampleNo": 156,
+							"sampleRef": {
+								"$ref": "#/samples/156"
+							}
+						},
+						{
+							"low": 84,
+							"high": 89,
+							"sampleNo": 157,
+							"sampleRef": {
+								"$ref": "#/samples/157"
+							}
+						},
+						{
+							"low": 90,
+							"high": 127,
+							"sampleNo": 158,
+							"sampleRef": {
+								"$ref": "#/samples/158"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 78,
+			"name": "BRASS 1   ",
+			"commonBytes": [66, 82, 65, 83, 83, 32, 49, 32, 32, 32, 0, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [70, 82, 255, 255, 255, 255, 255, 255, 255, 255, 255, 159, 160, 161, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 127, 127, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 70,
+							"sampleNo": 159,
+							"sampleRef": {
+								"$ref": "#/samples/159"
+							}
+						},
+						{
+							"low": 71,
+							"high": 82,
+							"sampleNo": 160,
+							"sampleRef": {
+								"$ref": "#/samples/160"
+							}
+						},
+						{
+							"low": 83,
+							"high": 127,
+							"sampleNo": 161,
+							"sampleRef": {
+								"$ref": "#/samples/161"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 79,
+			"name": "BRASS 2   ",
+			"commonBytes": [66, 82, 65, 83, 83, 32, 50, 32, 32, 32, 0, 7, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [70, 82, 255, 255, 255, 255, 255, 255, 255, 255, 255, 159, 160, 161, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 117, 76, 96, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 70,
+							"sampleNo": 159,
+							"sampleRef": {
+								"$ref": "#/samples/159"
+							}
+						},
+						{
+							"low": 71,
+							"high": 82,
+							"sampleNo": 160,
+							"sampleRef": {
+								"$ref": "#/samples/160"
+							}
+						},
+						{
+							"low": 83,
+							"high": 127,
+							"sampleNo": 161,
+							"sampleRef": {
+								"$ref": "#/samples/161"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 80,
+			"name": "BRASS 3   ",
+			"commonBytes": [66, 82, 65, 83, 83, 32, 51, 32, 32, 32, 1, 25, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [70, 82, 255, 255, 255, 255, 255, 255, 255, 255, 255, 159, 160, 161, 255, 255, 255, 255, 255, 255, 255, 255, 255, 121, 127, 121, 127, 121, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 70,
+							"sampleNo": 159,
+							"sampleRef": {
+								"$ref": "#/samples/159"
+							}
+						},
+						{
+							"low": 71,
+							"high": 82,
+							"sampleNo": 160,
+							"sampleRef": {
+								"$ref": "#/samples/160"
+							}
+						},
+						{
+							"low": 83,
+							"high": 127,
+							"sampleNo": 161,
+							"sampleRef": {
+								"$ref": "#/samples/161"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [82, 94, 255, 255, 255, 255, 255, 255, 255, 255, 255, 162, 163, 164, 255, 255, 255, 255, 255, 255, 255, 255, 255, 121, 127, 121, 127, 121, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 82,
+							"sampleNo": 162,
+							"sampleRef": {
+								"$ref": "#/samples/162"
+							}
+						},
+						{
+							"low": 83,
+							"high": 94,
+							"sampleNo": 163,
+							"sampleRef": {
+								"$ref": "#/samples/163"
+							}
+						},
+						{
+							"low": 95,
+							"high": 127,
+							"sampleNo": 164,
+							"sampleRef": {
+								"$ref": "#/samples/164"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 81,
+			"name": "BRASS 4   ",
+			"commonBytes": [66, 82, 65, 83, 83, 32, 52, 32, 32, 32, 1, 7, 71, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [70, 82, 255, 255, 255, 255, 255, 255, 255, 255, 255, 159, 160, 161, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 127, 127, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 70,
+							"sampleNo": 159,
+							"sampleRef": {
+								"$ref": "#/samples/159"
+							}
+						},
+						{
+							"low": 71,
+							"high": 82,
+							"sampleNo": 160,
+							"sampleRef": {
+								"$ref": "#/samples/160"
+							}
+						},
+						{
+							"low": 83,
+							"high": 127,
+							"sampleNo": 161,
+							"sampleRef": {
+								"$ref": "#/samples/161"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [64, 68, 71, 75, 79, 83, 89, 255, 255, 255, 255, 151, 152, 153, 154, 155, 156, 157, 158, 255, 255, 255, 255, 127, 127, 127, 127, 104, 88, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 64,
+							"sampleNo": 151,
+							"sampleRef": {
+								"$ref": "#/samples/151"
+							}
+						},
+						{
+							"low": 65,
+							"high": 68,
+							"sampleNo": 152,
+							"sampleRef": {
+								"$ref": "#/samples/152"
+							}
+						},
+						{
+							"low": 69,
+							"high": 71,
+							"sampleNo": 153,
+							"sampleRef": {
+								"$ref": "#/samples/153"
+							}
+						},
+						{
+							"low": 72,
+							"high": 75,
+							"sampleNo": 154,
+							"sampleRef": {
+								"$ref": "#/samples/154"
+							}
+						},
+						{
+							"low": 76,
+							"high": 79,
+							"sampleNo": 155,
+							"sampleRef": {
+								"$ref": "#/samples/155"
+							}
+						},
+						{
+							"low": 80,
+							"high": 83,
+							"sampleNo": 156,
+							"sampleRef": {
+								"$ref": "#/samples/156"
+							}
+						},
+						{
+							"low": 84,
+							"high": 89,
+							"sampleNo": 157,
+							"sampleRef": {
+								"$ref": "#/samples/157"
+							}
+						},
+						{
+							"low": 90,
+							"high": 127,
+							"sampleNo": 158,
+							"sampleRef": {
+								"$ref": "#/samples/158"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 82,
+			"name": "BRASS 5   ",
+			"commonBytes": [66, 82, 65, 83, 83, 32, 53, 32, 32, 32, 1, 25, 81, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [49, 54, 59, 65, 69, 73, 77, 82, 87, 255, 255, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 255, 255, 116, 127, 116, 127, 116, 127, 127, 127, 115],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 49,
+							"sampleNo": 123,
+							"sampleRef": {
+								"$ref": "#/samples/123"
+							}
+						},
+						{
+							"low": 50,
+							"high": 54,
+							"sampleNo": 124,
+							"sampleRef": {
+								"$ref": "#/samples/124"
+							}
+						},
+						{
+							"low": 55,
+							"high": 59,
+							"sampleNo": 125,
+							"sampleRef": {
+								"$ref": "#/samples/125"
+							}
+						},
+						{
+							"low": 60,
+							"high": 65,
+							"sampleNo": 126,
+							"sampleRef": {
+								"$ref": "#/samples/126"
+							}
+						},
+						{
+							"low": 66,
+							"high": 69,
+							"sampleNo": 127,
+							"sampleRef": {
+								"$ref": "#/samples/127"
+							}
+						},
+						{
+							"low": 70,
+							"high": 73,
+							"sampleNo": 128,
+							"sampleRef": {
+								"$ref": "#/samples/128"
+							}
+						},
+						{
+							"low": 74,
+							"high": 77,
+							"sampleNo": 129,
+							"sampleRef": {
+								"$ref": "#/samples/129"
+							}
+						},
+						{
+							"low": 78,
+							"high": 82,
+							"sampleNo": 130,
+							"sampleRef": {
+								"$ref": "#/samples/130"
+							}
+						},
+						{
+							"low": 83,
+							"high": 87,
+							"sampleNo": 131,
+							"sampleRef": {
+								"$ref": "#/samples/131"
+							}
+						},
+						{
+							"low": 88,
+							"high": 127,
+							"sampleNo": 132,
+							"sampleRef": {
+								"$ref": "#/samples/132"
+							}
+						}
+					]
+				},
+				{
+					"bytes": [64, 68, 71, 75, 79, 83, 89, 255, 255, 255, 255, 151, 152, 153, 154, 155, 156, 157, 158, 255, 255, 255, 255, 110, 127, 110, 127, 110, 127, 127, 127, 0],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 64,
+							"sampleNo": 151,
+							"sampleRef": {
+								"$ref": "#/samples/151"
+							}
+						},
+						{
+							"low": 65,
+							"high": 68,
+							"sampleNo": 152,
+							"sampleRef": {
+								"$ref": "#/samples/152"
+							}
+						},
+						{
+							"low": 69,
+							"high": 71,
+							"sampleNo": 153,
+							"sampleRef": {
+								"$ref": "#/samples/153"
+							}
+						},
+						{
+							"low": 72,
+							"high": 75,
+							"sampleNo": 154,
+							"sampleRef": {
+								"$ref": "#/samples/154"
+							}
+						},
+						{
+							"low": 76,
+							"high": 79,
+							"sampleNo": 155,
+							"sampleRef": {
+								"$ref": "#/samples/155"
+							}
+						},
+						{
+							"low": 80,
+							"high": 83,
+							"sampleNo": 156,
+							"sampleRef": {
+								"$ref": "#/samples/156"
+							}
+						},
+						{
+							"low": 84,
+							"high": 89,
+							"sampleNo": 157,
+							"sampleRef": {
+								"$ref": "#/samples/157"
+							}
+						},
+						{
+							"low": 90,
+							"high": 127,
+							"sampleNo": 158,
+							"sampleRef": {
+								"$ref": "#/samples/158"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 83,
+			"name": "ORCH HIT  ",
+			"commonBytes": [79, 82, 67, 72, 32, 72, 73, 84, 32, 32, 0, 0, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 165, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 127, 127, 88, 127, 78, 3],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 127,
+							"sampleNo": 165,
+							"sampleRef": {
+								"$ref": "#/samples/165"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 84,
+			"name": "JIG       ",
+			"commonBytes": [74, 73, 71, 32, 32, 32, 32, 32, 32, 32, 0, 10, 64, 0, 0, 0],
+			"voices": [
+				{
+					"bytes": [52, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 166, 167, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 127, 127, 127, 127, 127, 127, 127, 127, 113],
+					"sampleSlots": [
+						{
+							"low": 0,
+							"high": 52,
+							"sampleNo": 166,
+							"sampleRef": {
+								"$ref": "#/samples/166"
+							}
+						},
+						{
+							"low": 53,
+							"high": 127,
+							"sampleNo": 167,
+							"sampleRef": {
+								"$ref": "#/samples/167"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"toneNo": 85,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 86,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 87,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 88,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 89,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 90,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 91,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 92,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 93,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 94,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 95,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 96,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 97,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 98,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 99,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 100,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 101,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 102,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 103,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 104,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 105,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 106,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 107,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 108,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 109,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 110,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 111,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 112,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 113,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 114,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 115,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 116,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 117,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 118,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 119,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 120,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 121,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 122,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 123,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 124,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 125,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 126,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		},
+		{
+			"toneNo": 127,
+			"name": "          ",
+			"commonBytes": [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 255, 255, 255, 255, 255, 255],
+			"voices": [
+				{
+					"bytes": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+					"sampleSlots": []
+				}
+			]
+		}
+	]
+}
