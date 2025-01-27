@@ -234,7 +234,7 @@ const templateSampleList = (json) => html`
 				<td class="text-end">${sample.sampleNo}</td>
 				<td class="text-end">${fmt.noteNameR(sample.key)}</td>
 				<td class="text-end text-muted">${sample.key}</td>
-				<td class="text-end">${sample.bank}</td>
+				<td class="text-end">${sample.bank.toString(16).padStart(2, '0')}</td>
 				<td class="text-end font-monospace">${sample.addrBegin.toString(16).padStart(6, '0')}</td>
 				<td class="text-end font-monospace">${sample.addrLoop.toString(16).padStart(6, '0')}</td>
 				<td class="text-end font-monospace">${sample.addrEnd.toString(16).padStart(6, '0')}</td>
