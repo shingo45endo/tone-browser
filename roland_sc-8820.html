@@ -119,14 +119,10 @@ const templateToneList4 = (json) => html`
 			<tr>
 				<td class="text-end">${tone.toneNo}</td>
 				<td class="font-monospace"><a href="#/tones4/${tone.toneNo}">${tone.name}</a></td>
-				<td class="text-end">${tone.voices[0].waveNo}</td>
-				<td class="font-monospace">${tone.voices[0].waveRef.name}</td>
-				<td class="text-end">${tone.voices[1].waveNo}</td>
-				<td class="font-monospace">${tone.voices[1].waveRef.name}</td>
-				<td class="text-end">${tone.voices[2].waveNo}</td>
-				<td class="font-monospace">${tone.voices[2].waveRef.name}</td>
-				<td class="text-end">${tone.voices[3].waveNo}</td>
-				<td class="font-monospace">${tone.voices[3].waveRef.name}</td>
+				${tone.voices.map((voice) => html`
+					<td class="text-end">${(voice.waveNo === 65535) ? '-' : voice.waveNo}</td>
+					<td class="font-monospace">${(voice.waveNo === 65535) ? '' : voice.waveRef.name}</td>
+				`)}
 			</tr>
 		`)}
 		</tbody>
