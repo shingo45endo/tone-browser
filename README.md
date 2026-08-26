@@ -11,6 +11,7 @@ What is this?
 This application displays the tone parameters of 90's multi-timbre MIDI sound modules (mainly General MIDI compliant). The following modules are supported:
 
 * Roland
+	* SC-8850
 	* SC-8820
 	* SC-88Pro
 	* SC-88VL
