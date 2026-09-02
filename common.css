@@ -2,22 +2,12 @@
 	height: fit-content;
 }
 
-.table tbody > tr > th {
-	font-weight: normal;
-	color: black;
-}
-
-.table tbody > tr > th::after {
-	content: ':';
-	color: gray;
+.table thead th {
+	line-height: 1;
 }
 
 .table td.text-end {
 	min-width: 2rem;
-}
-
-.table thead th {
-	line-height: 1;
 }
 
 .table .text-muted::before {
@@ -26,6 +16,16 @@
 
 .table .text-muted::after {
 	content: ')';
+}
+
+.card-body .table tbody > tr > th {
+	font-weight: normal;
+	color: black;
+}
+
+.card-body .table tbody > tr > th::after {
+	content: ':';
+	color: gray;
 }
 
 @media (max-width: 1400px) {
