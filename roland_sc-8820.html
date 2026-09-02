@@ -98,7 +98,7 @@ const templateToneList = (json) => html`
 	</table>
 `;
 
-const templateToneList4 = (json) => html`
+const templateTone4List = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
@@ -534,7 +534,7 @@ window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 		{id: 'toneMaps', label: 'Tone Map',              renderer: templateToneMapList},
 		{id: 'drumMaps', label: 'Drum Map',              renderer: templateDrumMapList},
 		{id: 'tones',    label: 'Instruments',           renderer: templateToneList},
-		{id: 'tones4',   label: 'Instruments (4-voice)', renderer: templateToneList4},
+		{id: 'tones4',   label: 'Instruments (4-voice)', renderer: templateTone4List},
 		{id: 'combis',   label: 'Instruments (Legato)',  renderer: templateCombiList},
 		{id: 'waves',    label: 'Waves',                 renderer: templateWaveList},
 		{id: 'samples',  label: 'Samples',               renderer: templateSampleList},
