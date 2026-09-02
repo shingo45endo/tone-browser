@@ -31,7 +31,7 @@ const templateToneList = (json) => html`
 			<table class="table table-sm table-hover w-auto">
 				<thead>
 					<tr>
-						<th class="text-end">No.</th>
+						<th class="text-end ps-4">No.</th>
 						<th>Single Patch</th>
 						<th class="text-end ps-4">No.</th>
 						<th>Wave 1</th>
@@ -42,7 +42,7 @@ const templateToneList = (json) => html`
 				<tbody>
 				${json[key].map((tone) => html`
 					<tr>
-						<td class="text-end">${tone.toneNo}</td>
+						<th class="text-end">${tone.toneNo}</th>
 						<td class="font-monospace"><a href="#/${key}/${tone.toneNo}">${tone.name}</a></td>
 						<td class="text-end">${tone.voices[0]?.waveNo ?? ''}</td>
 						<td class="font-monospace">${tone.voices[0]?.waveRef.name ?? ''}</td>
@@ -71,7 +71,7 @@ const templateDrumToneList = (json) => html`
 			<table class="table table-sm table-hover w-auto">
 				<thead>
 					<tr>
-						<th class="text-end">No.</th>
+						<th class="text-end ps-4">No.</th>
 						<th>Drum Patch</th>
 						<th class="text-end ps-4">No.</th>
 						<th>Drum Wave</th>
@@ -80,7 +80,7 @@ const templateDrumToneList = (json) => html`
 				<tbody>
 				${json[key].map((tone) => html`
 					<tr>
-						<td class="text-end">${tone.drumToneNo}</td>
+						<th class="text-end">${tone.drumToneNo}</th>
 						<td class="font-monospace"><a href="#/${key}/${tone.drumToneNo}">${tone.name}</a></td>
 						<td class="text-end">${tone.voices[0].drumWaveNo}</td>
 						<td class="font-monospace">${tone.voices[0].drumWaveRef.name}</td>
@@ -104,7 +104,7 @@ const templateDrumSetList = (json) => html`
 		<tbody>
 		${json.drumSets.map((drumSet) => html`
 			<tr>
-				<td class="text-end">${drumSet.drumSetNo}</td>
+				<th class="text-end">${drumSet.drumSetNo}</th>
 				<td class="font-monospace"><a href="#/drumSets/${drumSet.drumSetNo}">${drumSet.name}</a></td>
 			</tr>
 		`)}

@@ -78,7 +78,7 @@ const templateToneList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Instrument</th>
 				<th class="text-end ps-4">No.</th>
 				<th>Wave 1</th>
@@ -89,7 +89,7 @@ const templateToneList = (json) => html`
 		<tbody>
 		${json.tones.map((tone) => html`
 			<tr>
-				<td class="text-end">${tone.toneNo}</td>
+				<th class="text-end">${tone.toneNo}</th>
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
 				<td class="text-end">${tone.voices[0].waveNo}</td>
 				<td class="font-monospace">${tone.voices[0].waveRef.name}</td>
@@ -105,7 +105,7 @@ const templateCombiList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Instrument</th>
 				<th class="text-end ps-4">No.</th>
 				<th>Instrument 1</th>
@@ -116,7 +116,7 @@ const templateCombiList = (json) => html`
 		<tbody>
 		${json.combis.map((combi) => html`
 			<tr>
-				<td class="text-end">${combi.combiNo}</td>
+				<th class="text-end">${combi.combiNo}</th>
 				<td class="font-monospace"><a href="#/combis/${combi.combiNo}">${combi.name}</a></td>
 				<td class="text-end">${combi.toneSlots[0].toneNo}</td>
 				<td class="font-monospace"><a href="${combi.toneSlots[0].toneRef.$ref}">${combi.toneSlots[0].toneRef.name}</a></td>
@@ -132,7 +132,7 @@ const templateWaveList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Wave</th>
 				<th>Sample Data</th>
 			</tr>
@@ -140,7 +140,7 @@ const templateWaveList = (json) => html`
 		<tbody>
 		${json.waves.map((wave) => html`
 			<tr>
-				<td class="text-end">${wave.waveNo}</td>
+				<th class="text-end">${wave.waveNo}</th>
 				<td class="font-monospace">${wave.name}</td>
 				<td>
 					<table class="table table-sm table-borderless w-auto">
@@ -182,7 +182,7 @@ const templateSampleList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th class="text-end ps-4">Key</th>
 				<th class="text-end">No.</th>
 				<th class="text-end">Bank</th>
@@ -197,7 +197,7 @@ const templateSampleList = (json) => html`
 		<tbody>
 		${json.samples.map((sample) => html`
 			<tr>
-				<td class="text-end">${sample.sampleNo}</td>
+				<th class="text-end">${sample.sampleNo}</th>
 				<td class="text-end">${fmt.noteNameR(sample.key)}</td>
 				<td class="text-end text-muted">${sample.key}</td>
 				<td class="text-end">${sample.bank.toString(16).padStart(2, '0')}</td>
@@ -224,7 +224,7 @@ const templateDrumSetList = (json) => html`
 		<tbody>
 		${json.drumSets.map((drumSet) => html`
 			<tr>
-				<td class="text-end">${drumSet.drumSetNo}</td>
+				<th class="text-end">${drumSet.drumSetNo}</th>
 				<td class="font-monospace"><a href="#/drumSets/${drumSet.drumSetNo}">${drumSet.name}</a></td>
 			</tr>
 		`)}

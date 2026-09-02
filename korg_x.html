@@ -153,7 +153,7 @@ const templateToneList = (json) => html`
 			<table class="table table-sm table-hover w-auto">
 				<thead>
 					<tr>
-						<th class="text-end">No.</th>
+						<th class="text-end ps-4">No.</th>
 						<th>Program</th>
 						<th class="text-end ps-4">No.</th>
 						<th>Multi Sample 1</th>
@@ -164,7 +164,7 @@ const templateToneList = (json) => html`
 				<tbody>
 				${json[key].map((tone) => html`
 					<tr>
-						<td class="text-end">${tone.toneNo}</td>
+						<th class="text-end">${tone.toneNo}</th>
 						<td class="font-monospace"><a href="#/${key}/${tone.toneNo}">${tone.name}</a></td>
 						<td class="text-end">${tone.voices[0].waveNo ?? tone.voices[0].drumSetNo}</td>
 						<td class="font-monospace">${tone.voices[0].waveRef?.name ?? tone.voices[0].drumSetRef?.name}</td>
@@ -200,7 +200,7 @@ const templateDrumSetList = (json) => html`
 				<tbody>
 				${json[key].map((drumSet) => html`
 					<tr>
-						<td class="text-end">${drumSet.drumSetNo}</td>
+						<th class="text-end">${drumSet.drumSetNo}</th>
 						<td class="font-monospace"><a href="#/${key}/${drumSet.drumSetNo}">${drumSet.name}</a></td>
 					</tr>
 				`)}
@@ -225,7 +225,7 @@ const templateCombiList = (json) => html`
 			<table class="table table-sm table-hover w-auto">
 				<thead>
 					<tr>
-						<th class="text-end">No.</th>
+						<th class="text-end ps-4">No.</th>
 						<th>Combination</th>
 						<th class="text-end ps-4">No.</th>
 						<th>Program 1</th>
@@ -248,7 +248,7 @@ const templateCombiList = (json) => html`
 				<tbody>
 				${json[key].map((combi) => html`
 					<tr>
-						<td class="text-end">${combi.combiNo}</td>
+						<th class="text-end">${combi.combiNo}</th>
 						<td class="font-monospace"><a href="#/${key}/${combi.combiNo}">${combi.name}</a></td>
 					${[...combi.toneSlots, ...(new Array(7)).fill()].slice(0, 8).map((toneSlot) => html`
 						<td class="text-end">${toneSlot?.toneNo ?? toneSlot?.drumToneNo ?? ''}</td>
@@ -267,14 +267,14 @@ const templateWaveList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Multi Sample</th>
 			</tr>
 		</thead>
 		<tbody>
 		${json.waves.map((wave) => html`
 			<tr>
-				<td class="text-end">${wave.waveNo}</td>
+				<th class="text-end">${wave.waveNo}</th>
 				<td class="font-monospace">${wave.name}</td>
 			</tr>
 		`)}
@@ -286,7 +286,7 @@ const templateDrumSampleList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Drum Sample</th>
 				<th class="text-end">Start Addr.</th>
 				<th class="text-end">Loop Addr.</th>
@@ -299,7 +299,7 @@ const templateDrumSampleList = (json) => html`
 		<tbody>
 		${json.drumSamples.map((drumSample) => html`
 			<tr>
-				<td class="text-end">${drumSample.drumSampleNo}</td>
+				<th class="text-end">${drumSample.drumSampleNo}</th>
 				<td class="font-monospace">${drumSample.name}</td>
 				<td class="text-end font-monospace">${drumSample.addrBegin.toString(16).padStart(6, '0')}</td>
 				<td class="text-end font-monospace">${drumSample.addrLoop.toString(16).padStart(6, '0')}</td>

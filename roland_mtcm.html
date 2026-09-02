@@ -56,7 +56,7 @@ const templateToneList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Timbre</th>
 				<th class="text-end ps-4">No.</th>
 				<th>Partial 1</th>
@@ -116,7 +116,7 @@ const templateSampleList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Name</th>
 				<th class="text-end">Address</th>
 				<th class="text-end">Length</th>
@@ -128,7 +128,7 @@ const templateSampleList = (json) => html`
 		<tbody>
 		${json.samples.map((sample) => html`
 			<tr>
-				<td class="text-end">${sample.sampleNo}</td>
+				<th class="text-end">${sample.sampleNo}</th>
 				<td class="font-monospace">${sample.name}</td>
 				<td class="text-end font-monospace">${sample.addrBegin.toString(16).padStart(6, '0')}</td>
 				<td class="text-end font-monospace">${sample.length.toString(16)}</td>

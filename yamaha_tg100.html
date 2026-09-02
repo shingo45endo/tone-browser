@@ -83,7 +83,7 @@ const templateToneList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Voice</th>
 				<th class="text-end ps-4">No.</th>
 				<th>Wave 1</th>
@@ -94,7 +94,7 @@ const templateToneList = (json) => html`
 		<tbody>
 		${json.tones.map((tone) => html`
 			<tr>
-				<td class="text-end">${tone.toneNo}</td>
+				<th class="text-end">${tone.toneNo}</th>
 				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
 				<td class="text-end">${tone.voices[0].waveNo}</td>
 				<td class="font-monospace">${tone.voices[0].waveRef.name}</td>
@@ -110,7 +110,7 @@ const templateWaveList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Wave</th>
 				<th>Sample Data</th>
 			</tr>
@@ -118,7 +118,7 @@ const templateWaveList = (json) => html`
 		<tbody>
 		${json.waves.map((wave) => html`
 			<tr>
-				<td class="text-end">${wave.waveNo}</td>
+				<th class="text-end">${wave.waveNo}</th>
 				<td class="font-monospace">${wave.name}</td>
 				<td>
 					<table class="table table-sm table-borderless w-auto">
@@ -154,7 +154,7 @@ const templateDrumWaveList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">No.</th>
+				<th class="text-end ps-4">No.</th>
 				<th>Drum Wave</th>
 				<th class="text-end">Sample No.</th>
 				<th class="text-end ps-4">b02</th>
@@ -166,7 +166,7 @@ const templateDrumWaveList = (json) => html`
 		<tbody>
 		${json.drumWaves.map((drumWave) => html`
 			<tr>
-				<td class="text-end">${drumWave.drumWaveNo}</td>
+				<th class="text-end">${drumWave.drumWaveNo}</th>
 				<td class="font-monospace">${drumWave.name}</td>
 				<td class="text-end">${drumWave.sampleNo}</td>
 				<td class="text-end">${(new DataView((new Uint8Array([drumWave.bytes[2]])).buffer)).getInt8()}</td>
@@ -205,7 +205,7 @@ const templateSampleList = (json) => html`
 		<tbody>
 		${json.samples.map((sample) => html`
 			<tr>
-				<td class="text-end">${sample.sampleNo}</td>
+				<th class="text-end">${sample.sampleNo}</th>
 				<td class="font-monospace">${sample.name}</td>
 				<td class="text-end font-monospace">${sample.addrBegin.toString(16).padStart(6, '0')}</td>
 				<td class="text-end font-monospace">${sample.addrLoop.toString(16).padStart(6, '0')}</td>
