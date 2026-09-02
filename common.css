@@ -28,6 +28,10 @@
 	color: gray;
 }
 
+table .my-number {
+	width: 3rem;
+}
+
 @media (max-width: 1400px) {
 	.modal-dialog.my-modal-fluid {
 		max-width: inherit;

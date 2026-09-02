@@ -27,10 +27,10 @@ const templateToneMapList = (json) => html`
 			<table class="table table-sm table-hover w-auto">
 				<thead>
 					<tr>
-						<th class="text-end">Prog#</th>
-						<th class="text-end">BankM</th>
-						<th class="text-end">BankL</th>
-						<th class="text-end ps-4">No.</th>
+						<th class="text-end my-number">Prog#</th>
+						<th class="text-end my-number">BankM</th>
+						<th class="text-end my-number">BankL</th>
+						<th class="text-end my-number">No.</th>
 						<th>Voice</th>
 					</tr>
 				</thead>
@@ -65,8 +65,8 @@ const templateDrumMapList = (json) => html`
 			<table class="table table-sm table-hover w-auto">
 				<thead>
 					<tr>
-						<th class="text-end">Prog#</th>
-						<th class="text-end ps-4">No.</th>
+						<th class="text-end my-number">Prog#</th>
+						<th class="text-end my-number">No.</th>
 						<th>Drum Kit</th>
 					</tr>
 				</thead>
@@ -89,11 +89,11 @@ const templateToneList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end ps-4">#</th>
+				<th class="text-end my-number">#</th>
 				<th>Voice</th>
-				<th class="text-end ps-4">No.</th>
+				<th class="text-end my-number">No.</th>
 				<th>Wave 1</th>
-				<th class="text-end ps-4">No.</th>
+				<th class="text-end my-number">No.</th>
 				<th>Wave 2</th>
 			</tr>
 		</thead>
@@ -116,7 +116,7 @@ const templateWaveList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end ps-4">#</th>
+				<th class="text-end my-number">#</th>
 				<th>Wave</th>
 				<th>Sample Data</th>
 			</tr>
@@ -158,7 +158,7 @@ const templateDrumSetList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end ps-4">#</th>
+				<th class="text-end my-number">#</th>
 				<th>Drum Kit</th>
 			</tr>
 		</thead>
@@ -538,7 +538,7 @@ const templateDrumSet = (drumSet, _) => html`
 					<th class="text-end">Note</th>
 					<th class="text-end">No.</th>
 					<th>Name</th>
-					<th class="text-end ps-4">Pitch</th>
+					<th class="text-end">Pitch</th>
 					<th class="text-end">Fine</th>
 					<th class="text-end">Lev.</th>
 					<th class="text-end">Grp.</th>

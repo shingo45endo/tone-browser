@@ -30,10 +30,10 @@ const templateToneMapList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">BankL</th>
-				<th class="text-end">Prog#</th>
-				<th class="text-end">BankM</th>
-				<th class="text-end ps-4">No.</th>
+				<th class="text-end my-number">BankL</th>
+				<th class="text-end my-number">Prog#</th>
+				<th class="text-end my-number">BankM</th>
+				<th class="text-end my-number">No.</th>
 				<th>Instrument</th>
 			</tr>
 		</thead>
@@ -55,9 +55,9 @@ const templateDrumMapList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end">BankL</th>
-				<th class="text-end">Prog#</th>
-				<th class="text-end ps-4">No.</th>
+				<th class="text-end my-number">BankL</th>
+				<th class="text-end my-number">Prog#</th>
+				<th class="text-end my-number">No.</th>
 				<th>Drum Set</th>
 			</tr>
 		</thead>
@@ -78,11 +78,11 @@ const templateToneList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end ps-4">#</th>
+				<th class="text-end my-number">#</th>
 				<th>Instrument</th>
-				<th class="text-end ps-4">No.</th>
+				<th class="text-end my-number">No.</th>
 				<th>Wave 1</th>
-				<th class="text-end ps-4">No.</th>
+				<th class="text-end my-number">No.</th>
 				<th>Wave 2</th>
 			</tr>
 		</thead>
@@ -105,11 +105,11 @@ const templateCombiList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end ps-4">#</th>
+				<th class="text-end my-number">#</th>
 				<th>Instrument</th>
-				<th class="text-end ps-4">No.</th>
+				<th class="text-end my-number">No.</th>
 				<th>Instrument 1</th>
-				<th class="text-end ps-4">No.</th>
+				<th class="text-end my-number">No.</th>
 				<th>Instrument 2</th>
 			</tr>
 		</thead>
@@ -132,7 +132,7 @@ const templateWaveList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end ps-4">#</th>
+				<th class="text-end my-number">#</th>
 				<th>Wave</th>
 				<th>Sample Data</th>
 			</tr>
@@ -182,8 +182,8 @@ const templateSampleList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end ps-4">#</th>
-				<th class="text-end ps-4">Key</th>
+				<th class="text-end my-number">#</th>
+				<th class="text-end">Key</th>
 				<th class="text-end">No.</th>
 				<th class="text-end">Bank</th>
 				<th class="text-end">Start Addr.</th>
@@ -217,7 +217,7 @@ const templateDrumSetList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end ps-4">#</th>
+				<th class="text-end my-number">#</th>
 				<th>Drum Set</th>
 			</tr>
 		</thead>
@@ -436,9 +436,9 @@ const templateDrumSet = (drumSet, _) => html`
 				<tr>
 					<th class="text-end">Note</th>
 					<th class="text-end">No.</th>
-					<th class="text-end ps-4">No.</th>
+					<th class="text-end my-number">No.</th>
 					<th>Instrument</th>
-					<th class="text-end ps-4">Level</th>
+					<th class="text-end">Level</th>
 					<th class="text-end">Pitch</th>
 					<th class="text-end">Group</th>
 					<th class="text-end">Panpot</th>
