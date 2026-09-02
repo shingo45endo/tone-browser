@@ -150,215 +150,216 @@ const templateSampleList = (json) => html`
 
 const templateWave = (wave, _) => html`
 	${wave.sampleSlots.map((sampleSlot, i) => html`
-	<div class="card mb-3">
-		<div class="card-header">
-			<h2 class="h6 mb-0">
-				Keygroup #${i + 1} (${fmt.noteNameY(sampleSlot.low)}~${fmt.noteNameY(sampleSlot.high)}): 
-				${sampleSlot.sampleSlots.map((sample, i) => html`
-					${(i > 0) ? ' / ' : ''}
-					<span class="font-monospace h4">${sample.sampleRef.name}</span> (No.${sample.sampleNo})
-				`)}
-			</h2>
-		</div>
-		<div class="card-body pb-2">
-			<div class=" d-flex flex-row gap-3">
-				<div>
-					<table class="table table-sm">
-						<tbody>
-							<tr>
-								<th>Key Range Low</th>
-								<td class="text-end">${fmt.noteNameY(sampleSlot.low)}</td>
-							</tr>
-							<tr>
-								<th>Key Range High</th>
-								<td class="text-end">${fmt.noteNameY(sampleSlot.high)}</td>
-							</tr>
-							<tr>
-								<th>Tune Offset</th>
-								<td class="text-end">${toSint16(sampleSlot.bytes[5], sampleSlot.bytes[6])}</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="table table-sm">
-						<tbody>
-							<tr>
-								<th>Filter Freq</th>
-								<td class="text-end">${sampleSlot.bytes[7]}</td>
-							</tr>
-							<tr>
-								<th>Key > Filter Freq</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[8])}</td>
-							</tr>
-							<tr>
-								<th>Velocity > Filter Freq</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[9])}</td>
-							</tr>
-							<tr>
-								<th>Pressure > Filter Freq</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[10])}</td>
-							</tr>
-							<tr>
-								<th>Env. > Filter Freq</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[11])}</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div>
-					<table class="table table-sm">
-						<thead>
-							<tr>
-								<th>Env2 (Filter)</th>
-								<th class="text-end">A</th>
-								<th class="text-end">D</th>
-								<th class="text-end">S</th>
-								<th class="text-end">R</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Rate</th>
-								<td class="text-end">${sampleSlot.bytes[20]}</td>
-								<td class="text-end">${sampleSlot.bytes[21]}</td>
-								<td class="text-end">-</td>
-								<td class="text-end">${sampleSlot.bytes[23]}</td>
-							</tr>
-							<tr>
-								<th>Level</th>
-								<td class="text-end">-</td>
-								<td class="text-end">-</td>
-								<td class="text-end">${sampleSlot.bytes[22]}</td>
-								<td class="text-end">-</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="table table-sm">
-						<tbody>
-							<tr>
-								<th>Velocity > Attack</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[24])}</td>
-							</tr>
-							<tr>
-								<th>Velocity > Release</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[25])}</td>
-							</tr>
-							<tr>
-								<th>Off-Velocity > Release</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[26])}</td>
-							</tr>
-							<tr>
-								<th>Key > Decay & Release</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[27])}</td>
-							</tr>
-							<tr>
-								<th>Velocity > Amount</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[28])}</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div>
-					<table class="table table-sm">
-						<thead>
-							<tr>
-								<th>Env1 (Amp.)</th>
-								<th class="text-end">A</th>
-								<th class="text-end">D</th>
-								<th class="text-end">S</th>
-								<th class="text-end">R</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Rate</th>
-								<td class="text-end">${sampleSlot.bytes[12]}</td>
-								<td class="text-end">${sampleSlot.bytes[13]}</td>
-								<td class="text-end">-</td>
-								<td class="text-end">${sampleSlot.bytes[14]}</td>
-							</tr>
-							<tr>
-								<th>Level</th>
-								<td class="text-end">-</td>
-								<td class="text-end">-</td>
-								<td class="text-end">${sampleSlot.bytes[15]}</td>
-								<td class="text-end">-</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="table table-sm">
-						<tbody>
-							<tr>
-								<th>Velocity > Attack</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[16])}</td>
-							</tr>
-							<tr>
-								<th>Velocity > Release</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[17])}</td>
-							</tr>
-							<tr>
-								<th>Off-Velocity > Release</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[18])}</td>
-							</tr>
-							<tr>
-								<th>Key > Decay & Release</th>
-								<td class="text-end">${fmt.sint8(sampleSlot.bytes[19])}</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+		<div class="card mb-3">
+			<div class="card-header">
+				<h2 class="h6 mb-0">
+					Keygroup #${i + 1} (${fmt.noteNameY(sampleSlot.low)}~${fmt.noteNameY(sampleSlot.high)}): 
+					${sampleSlot.sampleSlots.map((sample, i) => html`
+						${(i > 0) ? ' / ' : ''}
+						<span class="font-monospace h4">${sample.sampleRef.name}</span> (No.${sample.sampleNo})
+					`)}
+				</h2>
 			</div>
-			<div class="row row-cols-2">
-			${sampleSlot.sampleSlots.map((sample) => html`
-				<div class="col-12 col-md-6">
-					<div class="card">
-						<div class="card-header">
-							<h3 class="h6 mb-0">Sample No.${sample.sampleNo}: <span class="font-monospace h5">${sample.sampleRef.name}</span></h3>
-						</div>
-						<div class="card-body py-0">
-							<table class="table table-sm mb-2 py-0">
-								<tbody>
-									<tr>
-										<th>Velocity Range Low</th>
-										<td class="text-end">${sample.bytes[12]}</td>
-									</tr>
-									<tr>
-										<th>Velocity Range High</th>
-										<td class="text-end">${sample.bytes[13]}</td>
-									</tr>
-									<tr>
-										<th>Tune Offset</th>
-										<td class="text-end">${toSint16(sample.bytes[14], sample.bytes[15])}</td>
-									</tr>
-									<tr>
-										<th>Loudness Offset</th>
-										<td class="text-end">${fmt.sint8(sample.bytes[16])}</td>
-									</tr>
-									<tr>
-										<th>Filter Freq Offset</th>
-										<td class="text-end">${fmt.sint8(sample.bytes[17])}</td>
-									</tr>
-									<tr>
-										<th>Pan Offset</th>
-										<td class="text-end">${fmt.sint8(sample.bytes[18])}</td>
-									</tr>
-									<tr>
-										<th>Low Velocity Clossfade Factor</th>
-										<td class="text-end">${(sample.bytes[20] === 0xff) ? '-' : sample.bytes[20]}</td>
-									</tr>
-									<tr>
-										<th>High Velocity Clossfade Factor</th>
-										<td class="text-end">${(sample.bytes[21] === 0xff) ? '-' : sample.bytes[21]}</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+			<div class="card-body pb-2">
+				<div class=" d-flex flex-row gap-3">
+					<div>
+						<table class="table table-sm">
+							<tbody>
+								<tr>
+									<th>Key Range Low</th>
+									<td class="text-end">${fmt.noteNameY(sampleSlot.low)}</td>
+								</tr>
+								<tr>
+									<th>Key Range High</th>
+									<td class="text-end">${fmt.noteNameY(sampleSlot.high)}</td>
+								</tr>
+								<tr>
+									<th>Tune Offset</th>
+									<td class="text-end">${toSint16(sampleSlot.bytes[5], sampleSlot.bytes[6])}</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table table-sm">
+							<tbody>
+								<tr>
+									<th>Filter Freq</th>
+									<td class="text-end">${sampleSlot.bytes[7]}</td>
+								</tr>
+								<tr>
+									<th>Key > Filter Freq</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[8])}</td>
+								</tr>
+								<tr>
+									<th>Velocity > Filter Freq</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[9])}</td>
+								</tr>
+								<tr>
+									<th>Pressure > Filter Freq</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[10])}</td>
+								</tr>
+								<tr>
+									<th>Env. > Filter Freq</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[11])}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<table class="table table-sm">
+							<thead>
+								<tr>
+									<th>Env2 (Filter)</th>
+									<th class="text-end">A</th>
+									<th class="text-end">D</th>
+									<th class="text-end">S</th>
+									<th class="text-end">R</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Rate</th>
+									<td class="text-end">${sampleSlot.bytes[20]}</td>
+									<td class="text-end">${sampleSlot.bytes[21]}</td>
+									<td class="text-end">-</td>
+									<td class="text-end">${sampleSlot.bytes[23]}</td>
+								</tr>
+								<tr>
+									<th>Level</th>
+									<td class="text-end">-</td>
+									<td class="text-end">-</td>
+									<td class="text-end">${sampleSlot.bytes[22]}</td>
+									<td class="text-end">-</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table table-sm">
+							<tbody>
+								<tr>
+									<th>Velocity > Attack</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[24])}</td>
+								</tr>
+								<tr>
+									<th>Velocity > Release</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[25])}</td>
+								</tr>
+								<tr>
+									<th>Off-Velocity > Release</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[26])}</td>
+								</tr>
+								<tr>
+									<th>Key > Decay & Release</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[27])}</td>
+								</tr>
+								<tr>
+									<th>Velocity > Amount</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[28])}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<table class="table table-sm">
+							<thead>
+								<tr>
+									<th>Env1 (Amp.)</th>
+									<th class="text-end">A</th>
+									<th class="text-end">D</th>
+									<th class="text-end">S</th>
+									<th class="text-end">R</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Rate</th>
+									<td class="text-end">${sampleSlot.bytes[12]}</td>
+									<td class="text-end">${sampleSlot.bytes[13]}</td>
+									<td class="text-end">-</td>
+									<td class="text-end">${sampleSlot.bytes[14]}</td>
+								</tr>
+								<tr>
+									<th>Level</th>
+									<td class="text-end">-</td>
+									<td class="text-end">-</td>
+									<td class="text-end">${sampleSlot.bytes[15]}</td>
+									<td class="text-end">-</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table table-sm">
+							<tbody>
+								<tr>
+									<th>Velocity > Attack</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[16])}</td>
+								</tr>
+								<tr>
+									<th>Velocity > Release</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[17])}</td>
+								</tr>
+								<tr>
+									<th>Off-Velocity > Release</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[18])}</td>
+								</tr>
+								<tr>
+									<th>Key > Decay & Release</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[19])}</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
-			`)}
+				<div class="row row-cols-2">
+				${sampleSlot.sampleSlots.map((sample) => html`
+					<div class="col-12 col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="h6 mb-0">Sample No.${sample.sampleNo}: <span class="font-monospace h5">${sample.sampleRef.name}</span></h3>
+							</div>
+							<div class="card-body py-0">
+								<table class="table table-sm mb-2 py-0">
+									<tbody>
+										<tr>
+											<th>Velocity Range Low</th>
+											<td class="text-end">${sample.bytes[12]}</td>
+										</tr>
+										<tr>
+											<th>Velocity Range High</th>
+											<td class="text-end">${sample.bytes[13]}</td>
+										</tr>
+										<tr>
+											<th>Tune Offset</th>
+											<td class="text-end">${toSint16(sample.bytes[14], sample.bytes[15])}</td>
+										</tr>
+										<tr>
+											<th>Loudness Offset</th>
+											<td class="text-end">${fmt.sint8(sample.bytes[16])}</td>
+										</tr>
+										<tr>
+											<th>Filter Freq Offset</th>
+											<td class="text-end">${fmt.sint8(sample.bytes[17])}</td>
+										</tr>
+										<tr>
+											<th>Pan Offset</th>
+											<td class="text-end">${fmt.sint8(sample.bytes[18])}</td>
+										</tr>
+										<tr>
+											<th>Low Velocity Clossfade Factor</th>
+											<td class="text-end">${(sample.bytes[20] === 0xff) ? '-' : sample.bytes[20]}</td>
+										</tr>
+										<tr>
+											<th>High Velocity Clossfade Factor</th>
+											<td class="text-end">${(sample.bytes[21] === 0xff) ? '-' : sample.bytes[21]}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				`)}
+				</div>
 			</div>
 		</div>
-	</div>
-	`)}`;
+	`)}
+`;
 
 const templateTone = (tone, json) => html`
 	<div class="card mb-3">
