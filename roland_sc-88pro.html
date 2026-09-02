@@ -213,6 +213,25 @@ const templateSampleList = (json) => html`
 	</table>
 `;
 
+const templateDrumSetList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end ps-4">No.</th>
+				<th>Drum Set</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumSets.map((drumSet) => html`
+			<tr>
+				<td class="text-end">${drumSet.drumSetNo}</td>
+				<td class="font-monospace"><a href="#/drumSets/${drumSet.drumSetNo}">${drumSet.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
 const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
@@ -459,6 +478,7 @@ window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 		{id: 'combis',   label: 'Instruments (Legato)', renderer: templateCombiList},
 		{id: 'waves',    label: 'Waves',                renderer: templateWaveList},
 		{id: 'samples',  label: 'Samples',              renderer: templateSampleList},
+		{id: 'drumSets', label: 'Drum Sets',            renderer: templateDrumSetList},
 	],
 	details: {
 		tones:    templateTone,
