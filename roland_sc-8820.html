@@ -171,17 +171,17 @@ const templateWaveList = (json) => html`
 				<th class="text-end">${wave.waveNo}</th>
 				<td class="font-monospace">${wave.name}</td>
 				<td>
-					<table class="table table-sm table-borderless w-auto">
+					<table class="table table-sm table-borderless mb-0">
 						<thead>
 							<tr>
-								<th>Low</th>
-								<th>No.</th>
-								<th>High</th>
-								<th>No.</th>
-								<th>Level</th>
-								<th>Sample No.</th>
-								<th>Orig.</th>
-								<th>No.</th>
+								<th class="text-end">Low</th>
+								<th class="text-end">No.</th>
+								<th class="text-end">High</th>
+								<th class="text-end">No.</th>
+								<th class="text-end">Level</th>
+								<th class="text-end">Sample No.</th>
+								<th class="text-end">Orig.</th>
+								<th class="text-end">No.</th>
 							</tr>
 						<thead>
 						<tbody>
@@ -505,7 +505,7 @@ const templateDrumSet = (drumSet, _) => html`
 		</div>
 	</div>
 	<div class="d-flex flex-row gap-3 px-3">
-		<table class="table table-sm table-hover w-auto">
+		<table class="table table-sm table-hover w-auto mb-0">
 			<thead>
 				<tr>
 					<th class="text-end">Note</th>
