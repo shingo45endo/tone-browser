@@ -123,11 +123,11 @@ const templateSampleList = (json) => html`
 			<tr>
 				<th class="text-end my-number">#</th>
 				<th>Sample</th>
-				<th class="text-end">Key</th>
-				<th class="text-end">Pitch</th>
-				<th class="text-end">Rate</th>
-				<th class="text-end">Start Addr.</th>
-				<th class="text-end">End Addr.</th>
+				<th class="text-end"><abbr title="Original">Orig.</abbr> Key</th>
+				<th class="text-end">Tune Offset</th>
+				<th class="text-end">Sample Rate</th>
+				<th class="text-end">Start <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end">End <abbr title="Address">Addr.</abbr></th>
 				<th class="text-end">Length</th>
 			</tr>
 		</thead>
@@ -153,16 +153,17 @@ const templateWave = (wave, _) => html`
 		<div class="card mb-3">
 			<div class="card-header">
 				<h2 class="h6 mb-0">
-					Keygroup #${i + 1} (${fmt.noteNameY(sampleSlot.low)}~${fmt.noteNameY(sampleSlot.high)}): 
+					Keygroup ${i + 1} (${fmt.noteNameY(sampleSlot.low)}-${fmt.noteNameY(sampleSlot.high)}):
 					${sampleSlot.sampleSlots.map((sample, i) => html`
 						${(i > 0) ? ' / ' : ''}
 						<span class="font-monospace h4">${sample.sampleRef.name}</span> (No.${sample.sampleNo})
 					`)}
 				</h2>
 			</div>
-			<div class="card-body pb-2">
-				<div class=" d-flex flex-row gap-3">
+			<div class="card-body pb-0">
+				<div class="d-flex flex-row gap-3">
 					<div>
+						<div class="h6" aria-hidden="true">&nbsp;</div>
 						<table class="table table-sm">
 							<tbody>
 								<tr>
@@ -173,46 +174,30 @@ const templateWave = (wave, _) => html`
 									<th>Key Range High</th>
 									<td class="text-end">${fmt.noteNameY(sampleSlot.high)}</td>
 								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<h3 class="h6">Pitch</h3>
+						<table class="table table-sm">
+							<tbody>
 								<tr>
 									<th>Tune Offset</th>
 									<td class="text-end">${toSint16(sampleSlot.bytes[5], sampleSlot.bytes[6])}</td>
 								</tr>
 							</tbody>
 						</table>
-						<table class="table table-sm">
-							<tbody>
-								<tr>
-									<th>Filter Freq</th>
-									<td class="text-end">${sampleSlot.bytes[7]}</td>
-								</tr>
-								<tr>
-									<th>Key > Filter Freq</th>
-									<td class="text-end">${fmt.sint8(sampleSlot.bytes[8])}</td>
-								</tr>
-								<tr>
-									<th>Velocity > Filter Freq</th>
-									<td class="text-end">${fmt.sint8(sampleSlot.bytes[9])}</td>
-								</tr>
-								<tr>
-									<th>Pressure > Filter Freq</th>
-									<td class="text-end">${fmt.sint8(sampleSlot.bytes[10])}</td>
-								</tr>
-								<tr>
-									<th>Env. > Filter Freq</th>
-									<td class="text-end">${fmt.sint8(sampleSlot.bytes[11])}</td>
-								</tr>
-							</tbody>
-						</table>
 					</div>
 					<div>
+						<h3 class="h6">Filter</h3>
 						<table class="table table-sm">
 							<thead>
 								<tr>
 									<th>Env2 (Filter)</th>
-									<th class="text-end">A</th>
-									<th class="text-end">D</th>
-									<th class="text-end">S</th>
-									<th class="text-end">R</th>
+									<th class="text-end"><abbr title="Attack">A</abbr></th>
+									<th class="text-end"><abbr title="Decay">D</abbr></th>
+									<th class="text-end"><abbr title="Sustain">S</abbr></th>
+									<th class="text-end"><abbr title="Release">R</abbr></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -256,16 +241,41 @@ const templateWave = (wave, _) => html`
 								</tr>
 							</tbody>
 						</table>
+						<table class="table table-sm">
+							<tbody>
+								<tr>
+									<th>Filter Frequency</th>
+									<td class="text-end">${sampleSlot.bytes[7]}</td>
+								</tr>
+								<tr>
+									<th>Key > Filter Frequency</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[8])}</td>
+								</tr>
+								<tr>
+									<th>Velocity > Filter Frequency</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[9])}</td>
+								</tr>
+								<tr>
+									<th>Pressure > Filter Frequency</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[10])}</td>
+								</tr>
+								<tr>
+									<th>Env > Filter Frequency</th>
+									<td class="text-end">${fmt.sint8(sampleSlot.bytes[11])}</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					<div>
+						<h3 class="h6">Amp</h3>
 						<table class="table table-sm">
 							<thead>
 								<tr>
-									<th>Env1 (Amp.)</th>
-									<th class="text-end">A</th>
-									<th class="text-end">D</th>
-									<th class="text-end">S</th>
-									<th class="text-end">R</th>
+									<th>Env1 (Amp)</th>
+									<th class="text-end"><abbr title="Attack">A</abbr></th>
+									<th class="text-end"><abbr title="Decay">D</abbr></th>
+									<th class="text-end"><abbr title="Sustain">S</abbr></th>
+									<th class="text-end"><abbr title="Release">R</abbr></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -310,12 +320,12 @@ const templateWave = (wave, _) => html`
 				<div class="row row-cols-2">
 				${sampleSlot.sampleSlots.map((sample) => html`
 					<div class="col-12 col-md-6">
-						<div class="card">
+						<div class="card mb-3">
 							<div class="card-header">
 								<h3 class="h6 mb-0">Sample No.${sample.sampleNo}: <span class="font-monospace h5">${sample.sampleRef.name}</span></h3>
 							</div>
-							<div class="card-body py-0">
-								<table class="table table-sm mb-2 py-0">
+							<div class="card-body pb-0">
+								<table class="table table-sm">
 									<tbody>
 										<tr>
 											<th>Velocity Range Low</th>
@@ -334,7 +344,7 @@ const templateWave = (wave, _) => html`
 											<td class="text-end">${fmt.sint8(sample.bytes[16])}</td>
 										</tr>
 										<tr>
-											<th>Filter Freq Offset</th>
+											<th>Filter Frequency Offset</th>
 											<td class="text-end">${fmt.sint8(sample.bytes[17])}</td>
 										</tr>
 										<tr>
@@ -342,11 +352,11 @@ const templateWave = (wave, _) => html`
 											<td class="text-end">${fmt.sint8(sample.bytes[18])}</td>
 										</tr>
 										<tr>
-											<th>Low Velocity Clossfade Factor</th>
+											<th>Low Velocity Crossfade Factor</th>
 											<td class="text-end">${(sample.bytes[20] === 0xff) ? '-' : sample.bytes[20]}</td>
 										</tr>
 										<tr>
-											<th>High Velocity Clossfade Factor</th>
+											<th>High Velocity Crossfade Factor</th>
 											<td class="text-end">${(sample.bytes[21] === 0xff) ? '-' : sample.bytes[21]}</td>
 										</tr>
 									</tbody>
@@ -368,6 +378,7 @@ const templateTone = (tone, json) => html`
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
+				<div class="h6" aria-hidden="true">&nbsp;</div>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
@@ -379,21 +390,13 @@ const templateTone = (tone, json) => html`
 							<td class="text-end">${fmt.noteNameY(tone.bytes[20])}</td>
 						</tr>
 						<tr>
-							<th>Output</th>
-							<td class="text-end">${output(tone.bytes[22])}</td>
-						</tr>
-						<tr>
-							<th>Keygroup Clossfade</th>
+							<th>Keygroup Crossfade</th>
 							<td class="text-end">${fmt.onOff(tone.bytes[41])}</td>
 						</tr>
 						<tr>
-							<th>Mono Legato</th>
-							<td class="text-end">${fmt.onOff(tone.bytes[72])}</td>
+							<th>Output</th>
+							<td class="text-end">${output(tone.bytes[22])}</td>
 						</tr>
-					</tbody>
-				</table>
-				<table class="table table-sm">
-					<tbody>
 						<tr>
 							<th>Stereo Level</th>
 							<td class="text-end">${tone.bytes[23]}</td>
@@ -402,6 +405,17 @@ const templateTone = (tone, json) => html`
 							<th>Stereo Pan</th>
 							<td class="text-end">${fmt.sint8(tone.bytes[24])}</td>
 						</tr>
+						<tr>
+							<th>Mono Legato</th>
+							<td class="text-end">${fmt.onOff(tone.bytes[72])}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<h3 class="h6">Loudness</h3>
+				<table class="table table-sm">
+					<tbody>
 						<tr>
 							<th>Basic Loudness</th>
 							<td class="text-end">${tone.bytes[25]}</td>
@@ -420,24 +434,9 @@ const templateTone = (tone, json) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm">
-					<tbody>
-						<tr>
-							<th>Soft Pedal Loudness Reduction</th>
-							<td class="text-end">${tone.bytes[62]}</td>
-						</tr>
-						<tr>
-							<th>Soft Pedal Attack Stretch</th>
-							<td class="text-end">${tone.bytes[63]}</td>
-						</tr>
-						<tr>
-							<th>Soft Pedal Filter Close</th>
-							<td class="text-end">${tone.bytes[64]}</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 			<div>
+				<h3 class="h6">LFO</h3>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
@@ -501,15 +500,34 @@ const templateTone = (tone, json) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>LFO De-Sync</th>
+							<th>LFO1 De-Sync</th>
 							<td class="text-end">${fmt.onOff(tone.bytes[59])}</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
-				<table class="table table-sm caption-top">
-					<caption>Modulation Source</caption>
+				<h3 class="h6">Soft Pedal</h3>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Soft Pedal Loudness Reduction</th>
+							<td class="text-end">${tone.bytes[62]}</td>
+						</tr>
+						<tr>
+							<th>Soft Pedal Attack Stretch</th>
+							<td class="text-end">${tone.bytes[63]}</td>
+						</tr>
+						<tr>
+							<th>Soft Pedal Filter Close</th>
+							<td class="text-end">${tone.bytes[64]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<h3 class="h6">Modulation Source</h3>
+				<table class="table table-sm">
 					<tbody>
 						<tr>
 							<th>Pan 1</th>
@@ -524,19 +542,19 @@ const templateTone = (tone, json) => html`
 							<td class="text-end">${modSource(tone.bytes[78])}</td>
 						</tr>
 						<tr>
-							<th>Amp. 1</th>
+							<th>Loudness 1</th>
 							<td class="text-end">${modSource(tone.bytes[79])}</td>
 						</tr>
 						<tr>
-							<th>Amp. 2</th>
+							<th>Loudness 2</th>
 							<td class="text-end">${modSource(tone.bytes[80])}</td>
 						</tr>
 						<tr>
-							<th>Amp. 3</th>
+							<th>Loudness 3</th>
 							<td class="text-end">${modSource(tone.bytes[88])}</td>
 						</tr>
 						<tr>
-							<th>LFO1 Speed</th>
+							<th>LFO1 Rate</th>
 							<td class="text-end">${modSource(tone.bytes[81])}</td>
 						</tr>
 						<tr>
@@ -548,15 +566,15 @@ const templateTone = (tone, json) => html`
 							<td class="text-end">${modSource(tone.bytes[83])}</td>
 						</tr>
 						<tr>
-							<th>Filter Freq 1</th>
+							<th>Filter Frequency 1</th>
 							<td class="text-end">${modSource(tone.bytes[84])}</td>
 						</tr>
 						<tr>
-							<th>Filter Freq 2</th>
+							<th>Filter Frequency 2</th>
 							<td class="text-end">${modSource(tone.bytes[85])}</td>
 						</tr>
 						<tr>
-							<th>Filter Freq 3</th>
+							<th>Filter Frequency 3</th>
 							<td class="text-end">${modSource(tone.bytes[86])}</td>
 						</tr>
 						<tr>
