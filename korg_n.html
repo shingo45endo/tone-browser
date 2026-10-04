@@ -726,8 +726,8 @@ const templateDrumSet = (drumSet, _) => html`
 					<td class="font-monospace">${note.drumSampleRef.name}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[2])}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[3])}</td>
-					<td class="text-end">${note.bytes[4]}</td>\
-					<td class="text-end">${note.bytes[5]}</td>\
+					<td class="text-end">${note.bytes[4]}</td>
+					<td class="text-end">${note.bytes[5]}</td>
 					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0001) !== 0)}</td>
 					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0010) !== 0)}</td>
 					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0100) !== 0)}</td>
@@ -760,6 +760,7 @@ window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	},
 }, bootstrap.Modal.getOrCreateInstance.bind(bootstrap.Modal)));
 </script>
+</head>
 <body>
 </body>
 </html>

@@ -154,7 +154,7 @@ const templateWaveList = (json) => html`
 								<th class="text-end">Orig.</th>
 								<th class="text-end">No.</th>
 							</tr>
-						<thead>
+						</thead>
 						<tbody>
 						${wave.sampleSlots.map((sampleSlot) => html`
 							<tr>
@@ -169,7 +169,7 @@ const templateWaveList = (json) => html`
 							`)(json.samples[sampleSlot.sampleNo])}
 							</tr>
 						`)}
-						<tbody>
+						</tbody>
 					</table>
 				</td>
 			</tr>
@@ -488,6 +488,7 @@ window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	},
 }, bootstrap.Modal.getOrCreateInstance.bind(bootstrap.Modal)));
 </script>
+</head>
 <body>
 </body>
 </html>

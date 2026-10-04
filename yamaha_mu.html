@@ -145,7 +145,7 @@ const templateWaveList = (json) => html`
 								<th class="text-end">High</th>
 								<th class="text-end">No.</th>
 							</tr>
-						<thead>
+						</thead>
 						<tbody>
 						${wave.sampleSlots.map((sampleSlot) => html`
 							<tr>
@@ -155,7 +155,7 @@ const templateWaveList = (json) => html`
 								<td class="text-end text-muted">${sampleSlot.high}</td>
 							</tr>
 						`)}
-						<tbody>
+						</tbody>
 					</table>
 				</td>
 			</tr>
@@ -583,8 +583,8 @@ const templateDrumSet = (drumSet, _) => html`
 					<th class="text-end">Cho.</th>
 					<th class="text-end">Var.</th>
 					<th class="text-end">Key<br>Asgn.</th>
-					<th class="text-end">Rcv.<br>Note</br>Off</th>
-					<th class="text-end">Rcv.<br>Note</br>On</th>
+					<th class="text-end">Rcv.<br>Note<br>Off</th>
+					<th class="text-end">Rcv.<br>Note<br>On</th>
 					<th class="text-end">LPF<br>Cutoff<br>Freq.</th>
 					<th class="text-end">Reso.</th>
 					<th class="text-end">AR</th>
@@ -683,6 +683,7 @@ window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 	},
 }, bootstrap.Modal.getOrCreateInstance.bind(bootstrap.Modal)));
 </script>
+</head>
 <body>
 </body>
 </html>
