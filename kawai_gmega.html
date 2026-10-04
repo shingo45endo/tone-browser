@@ -119,6 +119,38 @@ const templateVoice = (voice, _) => html`
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
+				<div class="h6" aria-hidden="true">&nbsp;</div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Pan</th>
+							<td class="text-end">${fmt.panpot(Math.trunc(voice.bytes[10] / 2))}</td>
+						</tr>
+						<tr>
+							<th>Key On Delay</th>
+							<td class="text-end">${voice.bytes[1]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th><abbr title="Vibrato">Vib</abbr> Shape</th>
+							<td class="text-end">${['TRI', 'SAW', 'SQR', 'RND'][voice.bytes[13]] ?? 'Unknown'}</td>
+						</tr>
+						<tr>
+							<th><abbr title="Vibrato">Vib</abbr> Speed</th>
+							<td class="text-end">${voice.bytes[14]}</td>
+						</tr>
+						<tr>
+							<th><abbr title="Vibrato">Vib</abbr> Depth</th>
+							<td class="text-end">${voice.bytes[15]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<h4 class="h6">DCO</h4>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
@@ -133,36 +165,21 @@ const templateVoice = (voice, _) => html`
 							<th>DCO Fine</th>
 							<td class="text-end">${fmt.sint8(voice.bytes[12])}</td>
 						</tr>
-						<tr>
-							<th>Vib. Shape</th>
-							<td class="text-end">${['TRI', 'SAW', 'SQU', 'RND'][voice.bytes[13]] ?? 'Unknown'}</td>
-						</tr>
-						<tr>
-							<th>Vib. Speed</th>
-							<td class="text-end">${voice.bytes[14]}</td>
-						</tr>
-						<tr>
-							<th>Vib. Depth</th>
-							<td class="text-end">${voice.bytes[15]}</td>
-						</tr>
-						<tr>
-							<th>Key On Delay</th>
-							<td class="text-end">${voice.bytes[1]}</td>
-						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">DCF</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>DCF Env.</th>
-							<th class="text-end">A</th>
-							<th class="text-end">D</th>
-							<th class="text-end">S1</th>
-							<th class="text-end">M</th>
-							<th class="text-end">S2</th>
-							<th class="text-end">R</th>
+							<th>DCF Env</th>
+							<th class="text-end"><abbr title="Attack">A</abbr></th>
+							<th class="text-end"><abbr title="Decay">D</abbr></th>
+							<th class="text-end"><abbr title="Sustain 1">S1</abbr></th>
+							<th class="text-end"><abbr title="Modulation">M</abbr></th>
+							<th class="text-end"><abbr title="Sustain 2">S2</abbr></th>
+							<th class="text-end"><abbr title="Release">R</abbr></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -197,7 +214,7 @@ const templateVoice = (voice, _) => html`
 							<td class="text-end">${voice.bytes[24]}</td>
 						</tr>
 						<tr>
-							<th>DCF Reso. Depth</th>
+							<th>DCF <abbr title="Resonance">Reso</abbr> Depth</th>
 							<td class="text-end">${voice.bytes[26] & 0x03}</td>
 						</tr>
 						<tr>
@@ -205,35 +222,36 @@ const templateVoice = (voice, _) => html`
 							<td class="text-end">${fmt.onOff((voice.bytes[28] & 0x80) === 0)}</td>
 						</tr>
 						<tr>
-							<th>DCF Vel. Curve</th>
+							<th>DCF <abbr title="Velocity">Vel</abbr> Curve</th>
 							<td class="text-end">${((voice.bytes[30] & 0x80) === 0) ? 0 : 1}</td>
 						</tr>
 						<tr>
-							<th>DCF Vel. Depth</th>
+							<th>DCF <abbr title="Velocity">Vel</abbr> Depth</th>
 							<td class="text-end">${Math.trunc(voice.bytes[31] / 2)}</td>
 						</tr>
 						<tr>
-							<th>DCF Vel. Assign</th>
+							<th>DCF <abbr title="Velocity">Vel</abbr> Assign</th>
 							<td class="text-end">${['CTF', 'ENV'][((voice.bytes[29] & 0x80) === 0) ? 0 : 1]}</td>
 						</tr>
 						<tr>
-							<th>DCF Env. Depth</th>
+							<th>DCF Env Depth</th>
 							<td class="text-end">${Math.trunc(voice.bytes[25] / 2)}</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">DCA</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>DCA Env.</th>
-							<th class="text-end">A</th>
-							<th class="text-end">D</th>
-							<th class="text-end">S1</th>
-							<th class="text-end">M</th>
-							<th class="text-end">S2</th>
-							<th class="text-end">R</th>
+							<th>DCA Env</th>
+							<th class="text-end"><abbr title="Attack">A</abbr></th>
+							<th class="text-end"><abbr title="Decay">D</abbr></th>
+							<th class="text-end"><abbr title="Sustain 1">S1</abbr></th>
+							<th class="text-end"><abbr title="Modulation">M</abbr></th>
+							<th class="text-end"><abbr title="Sustain 2">S2</abbr></th>
+							<th class="text-end"><abbr title="Release">R</abbr></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -260,11 +278,11 @@ const templateVoice = (voice, _) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>DCA Vel. Curve</th>
+							<th>DCA <abbr title="Velocity">Vel</abbr> Curve</th>
 							<td class="text-end">${((voice.bytes[9] & 0x80) === 0) ? 0 : 1}</td>
 						</tr>
 						<tr>
-							<th>DCA Vel. Depth</th>
+							<th>DCA <abbr title="Velocity">Vel</abbr> Depth</th>
 							<td class="text-end">${Math.trunc(voice.bytes[16] / 2)}</td>
 						</tr>
 					</tbody>
@@ -292,19 +310,16 @@ const templateDrumVoice = (voice, _) => html`
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
+				<div class="h6" aria-hidden="true">&nbsp;</div>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
+							<th>Pan</th>
+							<td class="text-end">${fmt.panpot(Math.trunc(voice.bytes[10] / 2))}</td>
+						</tr>
+						<tr>
 							<th>Effect Level</th>
 							<td class="text-end">${['HI', 'LO'][((voice.bytes[9] & 0x01) !== 0) ? 0 : 1]}</td>
-						</tr>
-						<tr>
-							<th>DCO Pitch</th>
-							<td class="text-end">${voice.bytes[11]}</td>
-						</tr>
-						<tr>
-							<th>DCO Fine</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[12])}</td>
 						</tr>
 						<tr>
 							<th>Gate Time</th>
@@ -314,13 +329,29 @@ const templateDrumVoice = (voice, _) => html`
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">DCO</h4>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>DCO Pitch</th>
+							<td class="text-end">${voice.bytes[11]}</td>
+						</tr>
+						<tr>
+							<th>DCO Fine</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[12])}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<h4 class="h6">DCF</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>DCF Env.</th>
-							<th class="text-end">A</th>
-							<th class="text-end">D</th>
-							<th class="text-end">S</th>
+							<th>DCF Env</th>
+							<th class="text-end"><abbr title="Attack">A</abbr></th>
+							<th class="text-end"><abbr title="Decay">D</abbr></th>
+							<th class="text-end"><abbr title="Sustain">S</abbr></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -349,35 +380,36 @@ const templateDrumVoice = (voice, _) => html`
 							<td class="text-end">${voice.bytes[24]}</td>
 						</tr>
 						<tr>
-							<th>DCF Reso. Depth</th>
+							<th>DCF <abbr title="Resonance">Reso</abbr> Depth</th>
 							<td class="text-end">${voice.bytes[26] & 0x03}</td>
 						</tr>
 						<tr>
-							<th>DCF Vel. Curve</th>
+							<th>DCF <abbr title="Velocity">Vel</abbr> Curve</th>
 							<td class="text-end">${((voice.bytes[30] & 0x80) === 0) ? 0 : 1}</td>
 						</tr>
 						<tr>
-							<th>DCF Vel. Depth</th>
+							<th>DCF <abbr title="Velocity">Vel</abbr> Depth</th>
 							<td class="text-end">${Math.trunc(voice.bytes[31] / 2)}</td>
 						</tr>
 						<tr>
-							<th>DCF Vel. Assign</th>
+							<th>DCF <abbr title="Velocity">Vel</abbr> Assign</th>
 							<td class="text-end">${['CTF', 'ENV'][((voice.bytes[29] & 0x80) === 0) ? 0 : 1]}</td>
 						</tr>
 						<tr>
-							<th>DCF Env. Depth</th>
+							<th>DCF Env Depth</th>
 							<td class="text-end">${Math.trunc(voice.bytes[25] / 2)}</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">DCA</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>DCA Env.</th>
-							<th class="text-end">A</th>
-							<th class="text-end">D</th>
+							<th>DCA Env</th>
+							<th class="text-end"><abbr title="Attack">A</abbr></th>
+							<th class="text-end"><abbr title="Decay">D</abbr></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -396,11 +428,11 @@ const templateDrumVoice = (voice, _) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>DCA Vel. Curve</th>
+							<th>DCA <abbr title="Velocity">Vel</abbr> Curve</th>
 							<td class="text-end">${((voice.bytes[9] & 0x80) === 0) ? 0 : 1}</td>
 						</tr>
 						<tr>
-							<th>DCA Vel. Depth</th>
+							<th>DCA <abbr title="Velocity">Vel</abbr> Depth</th>
 							<td class="text-end">${Math.trunc(voice.bytes[16] / 2)}</td>
 						</tr>
 					</tbody>
@@ -437,11 +469,11 @@ const templateDrumSet = (drumSet, json) => html`
 					<th class="text-end">No.</th>
 					<th class="text-end my-number">No.</th>
 					<th>Drum Patch</th>
-					<th class="text-end">Level</th>
 					<th class="text-end">Pitch</th>
 					<th class="text-end">Fine</th>
-					<th class="text-end">Panpot</th>
-					<th class="text-end">Reverb</th>
+					<th class="text-end">Level</th>
+					<th class="text-end">Pan</th>
+					<th class="text-end">Effect<br>Level</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -451,9 +483,9 @@ const templateDrumSet = (drumSet, json) => html`
 					<td class="text-end text-muted">${noteNo}</td>
 					<td class="text-end">${note.drumToneNo}</td>
 					<td class="font-monospace"><a href="${note.drumToneRef.$ref}">${note.drumToneRef.name}</a></td>
-					<td class="text-end">${json.drumTonesGM[note.drumToneNo].voices[0].bytes[3]}</td>
 					<td class="text-end">${json.drumTonesGM[note.drumToneNo].voices[0].bytes[11]}</td>
 					<td class="text-end">${toSint8(json.drumTonesGM[note.drumToneNo].voices[0].bytes[12])}</td>
+					<td class="text-end">${json.drumTonesGM[note.drumToneNo].voices[0].bytes[3]}</td>
 					<td class="text-end">${fmt.panpot(Math.trunc(json.drumTonesGM[note.drumToneNo].voices[0].bytes[10] / 2))}</td>
 					<td class="text-end">${['HI', 'LO'][((json.drumTonesGM[note.drumToneNo].voices[0].bytes[9] & 0x01) !== 0) ? 0 : 1]}</td>
 				</tr>
