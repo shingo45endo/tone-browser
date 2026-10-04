@@ -15,7 +15,7 @@ const htmlBody = `
 
 	<!-- Information modal -->
 	<div id="my-modal" class="modal" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-dialog-scrollable modal-xl my-modal-fluid" role="document">
+		<div class="modal-dialog modal-dialog-scrollable my-modal-xxl my-modal-fluid" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h2 id="my-modal-title" class="modal-title h6 text-black-50"></h2>

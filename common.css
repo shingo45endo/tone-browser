@@ -32,9 +32,20 @@ table .my-number {
 	width: 3rem;
 }
 
-@media (max-width: 1400px) {
+body abbr[title] {
+	text-decoration: none;
+	cursor: help;
+}
+
+@media (max-width: 1399.98px) {
 	.modal-dialog.my-modal-fluid {
 		max-width: inherit;
 		width: 95%;
+	}
+}
+
+@media (min-width: 1400px) {
+	.modal-dialog.my-modal-xxl {
+		--bs-modal-width: 1320px;
 	}
 }
