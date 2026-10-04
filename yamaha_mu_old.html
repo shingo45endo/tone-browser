@@ -625,7 +625,7 @@ const templateDrumSet = (drumSet, _) => html`
 				</tr>
 			</thead>
 			<tbody>
-			${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] > b[0])).map(([noteNo, note]) => html`
+			${(Object.entries(drumSet.notes).map((e) => [Number(e[0]), e[1]]).sort((a, b) => a[0] - b[0])).map(([noteNo, note]) => html`
 				<tr>
 				${(note.bytes.length === 42) ? html`
 					<td class="text-end">${fmt.noteNameY(noteNo)}</td>
