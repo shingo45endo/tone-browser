@@ -8571,10 +8571,7 @@
 				{
 					"low": 113,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},
@@ -8972,7 +8969,7 @@
 				},
 				{
 					"low": 98,
-					"high": 128,
+					"high": 127,
 					"sampleNo": 269,
 					"sampleRef": {
 						"$ref": "#/samples/269"
@@ -9179,10 +9176,7 @@
 				{
 					"low": 90,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},

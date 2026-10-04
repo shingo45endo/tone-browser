@@ -12033,10 +12033,7 @@
 				{
 					"low": 112,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},
@@ -14623,10 +14620,7 @@
 				{
 					"low": 90,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},

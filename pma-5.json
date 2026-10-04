@@ -10261,10 +10261,7 @@
 				{
 					"low": 127,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},
@@ -11191,10 +11188,7 @@
 				{
 					"low": 109,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},
@@ -13469,10 +13463,7 @@
 				{
 					"low": 113,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},
@@ -13878,7 +13869,7 @@
 				},
 				{
 					"low": 95,
-					"high": 128,
+					"high": 127,
 					"sampleNo": 459,
 					"sampleRef": {
 						"$ref": "#/samples/459"
@@ -14201,10 +14192,7 @@
 				{
 					"low": 90,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},

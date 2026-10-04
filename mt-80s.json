@@ -8483,10 +8483,7 @@
 				{
 					"low": 113,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},
@@ -8893,10 +8890,7 @@
 				{
 					"low": 111,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},
@@ -9099,10 +9093,7 @@
 				{
 					"low": 90,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},
@@ -11861,10 +11852,7 @@
 				{
 					"low": 0,
 					"high": 59,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				},
 				{
 					"low": 60,
@@ -11891,10 +11879,7 @@
 				{
 					"low": 62,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},

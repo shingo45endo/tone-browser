@@ -14460,10 +14460,7 @@
 				{
 					"low": 90,
 					"high": 127,
-					"sampleNo": 65535,
-					"sampleRef": {
-						"$ref": "#/samples/65535"
-					}
+					"sampleNo": -1
 				}
 			]
 		},
