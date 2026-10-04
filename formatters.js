@@ -43,6 +43,14 @@ function lfoWaveMU(value) {
 	return {0: 'SAW', 1: 'TRI', 2: 'S&H'}[value] ?? '-';
 }
 
+function sampleFormatMU(bitsPerSample, isCompressed) {
+	return (isCompressed) ? 'Comp.' : ({16: '16-bit', 12: '12-bit', 8: '8-bit'}[bitsPerSample] ?? '-');
+}
+
+function loopModeMU(isLooped, isReverse) {
+	return (isReverse) ? 'Backward' : (isLooped) ? 'Forward' : 'Off';
+}
+
 function lfoWaveTG(value) {
 	return {0: 'SAW+', 1: 'TRI+', 2: 'SQU+', 3: 'SAW-', 4: 'TRI-', 5: 'SQU-', 6: 'S&H'}[value] ?? '-';
 }
@@ -61,6 +69,6 @@ function tonePanMU(value) {
 
 export const formatters = {
 	sint7offset6, mask7, sint8, panpot, panpotR, noteNameR, noteNameY, onOff,
-	lfoWaveMU, lfoWaveTG, pitchScalingRateMU, pitchEGDepthMU, tonePanMU,
+	lfoWaveMU, lfoWaveTG, pitchScalingRateMU, pitchEGDepthMU, tonePanMU, sampleFormatMU, loopModeMU,
 };
 Object.freeze(formatters);
