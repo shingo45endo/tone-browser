@@ -52,6 +52,8 @@ This application displays the tone parameters of 90's multi-timbre MIDI sound mo
 	* GZ-70SP
 * Akai
 	* SG01k
+* Suzuki / Nihon Eniac
+	* BH-1000
 
 
 What does "Tone Parameters" mean?
