@@ -40,7 +40,7 @@ const templateToneList = (json) => html`
 			<tr>
 				<th class="text-end my-number">#</th>
 				<th>Tone</th>
-				<th># of Voice</th>
+				<th class="text-end">Voices</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -62,14 +62,15 @@ const templateSampleList = (json) => html`
 				<th class="text-end my-number">#</th>
 				<th>Sample</th>
 				<th class="text-end">Level</th>
+				<th class="text-end"><abbr title="Original">Orig.</abbr> Key</th>
 				<th class="text-end">Pitch</th>
-				<th class="text-end">Exp.</th>
-				<th class="text-end">Start Addr.</th>
-				<th class="text-end">Loop Addr.</th>
-				<th class="text-end">End Addr.</th>
-				<th class="text-end">S-E Len.</th>
-				<th class="text-end">S-L Len.</th>
-				<th class="text-end">L-E Len.</th>
+				<th class="text-end"><abbr title="Exponent">Exp.</abbr></th>
+				<th class="text-end">Start <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end">Loop <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end">End <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end"><abbr title="Start to End">S-E</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end"><abbr title="Start to Loop">S-L</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end"><abbr title="Loop to End">L-E</abbr> <abbr title="Length">Len.</abbr></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -78,6 +79,7 @@ const templateSampleList = (json) => html`
 				<th class="text-end">${sample.sampleNo}</th>
 				<td class="font-monospace">${sample.name}</td>
 				<td class="text-end">${sample.level}</td>
+				<td class="text-end">${fmt.noteNameR(sample.bytes[11])}</td>
 				<td class="text-end">${sample.pitch}</td>
 				<td class="text-end">${sample.exponent}</td>
 				<td class="text-end font-monospace">${sample.addrBegin.toString(16).padStart(6, '0')}</td>
@@ -102,6 +104,10 @@ const templateVoice = (voice, _, i) => html`
 				<table class="table table-sm w-auto">
 					<tbody>
 						<tr>
+							<th>Panpot</th>
+							<td class="text-end">${voice.panpot}</td>
+						</tr>
+						<tr>
 							<th>Pitch Key Follow</th>
 							<td class="text-end">${(voice.pitchKeyFollow !== 7) ? `1/${2 ** voice.pitchKeyFollow}` : '-'}</td>
 						</tr>
@@ -110,16 +116,28 @@ const templateVoice = (voice, _, i) => html`
 							<td class="text-end">${voice.pitchTune}</td>
 						</tr>
 						<tr>
-							<th>Panpot</th>
-							<td class="text-end">${voice.panpot}</td>
+							<th>Pitch Env Key Table</th>
+							<td class="text-end">${voice.bytes[18]}</td>
 						</tr>
 						<tr>
-							<th>Velocity Sensitivity Depth</th>
+							<th>Pitch Env No.</th>
+							<td class="text-end">${voice.bytes[19]}</td>
+						</tr>
+						<tr>
+							<th>Velocity Sens Depth</th>
 							<td class="text-end">${voice.velSensDepth}</td>
 						</tr>
 						<tr>
-							<th>Velocity Sensitivity Offset</th>
+							<th>Velocity Sens Offset</th>
 							<td class="text-end">${voice.velSensOffset}</td>
+						</tr>
+						<tr>
+							<th>Amp Env Key Table</th>
+							<td class="text-end">${voice.bytes[20]}</td>
+						</tr>
+						<tr>
+							<th>Amp Env No.</th>
+							<td class="text-end">${voice.bytes[21]}</td>
 						</tr>
 					</tbody>
 				</table>
