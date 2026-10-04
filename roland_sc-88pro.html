@@ -23,7 +23,15 @@ function toSint16(valueM, valueL) {
 
 function tvaLevel(valueM, valueL) {
 	const value = (valueM << 8) | valueL;
-	return (value < 0xffff) ? Math.round(Math.exp((65536 - value) / 13529)) : 0;
+	return (value < 0xffff) ? Math.round(127 ** (1 - value / 0xffff)) : 0;
+}
+
+function getFilterTypeName(value) {
+	return ({0x00: 'LPF', 0x04: 'BPF', 0x08: 'HPF', 0x0c: 'PKG', 0x20: 'Type 6', 0xff: 'Off'})[value] ?? value;
+}
+
+function getDelayTimeText(value) {
+	return ((value & 0x80) !== 0) ? 'Note Off' : value;
 }
 
 const templateToneMapList = (json) => html`
@@ -150,8 +158,9 @@ const templateWaveList = (json) => html`
 								<th class="text-end">No.</th>
 								<th class="text-end">High</th>
 								<th class="text-end">No.</th>
+								<th class="text-end">Level</th>
 								<th class="text-end">Sample No.</th>
-								<th class="text-end">Orig.</th>
+								<th class="text-end"><abbr title="Original">Orig.</abbr> Key</th>
 								<th class="text-end">No.</th>
 							</tr>
 						</thead>
@@ -162,6 +171,7 @@ const templateWaveList = (json) => html`
 								<td class="text-end text-muted">${sampleSlot.low}</td>
 								<td class="text-end">${fmt.noteNameR(sampleSlot.high)}</td>
 								<td class="text-end text-muted">${sampleSlot.high}</td>
+								<td class="text-end">${tvaLevel(sampleSlot.bytes[2], sampleSlot.bytes[3])}</td>
 								<td class="text-end">${(sampleSlot.sampleNo >= 0) ? sampleSlot.sampleNo : ''}</td>
 							${((sample) => html`
 								<td class="text-end">${(sample) ? fmt.noteNameR(sample.key) : '--'}</td>
@@ -183,15 +193,17 @@ const templateSampleList = (json) => html`
 		<thead>
 			<tr>
 				<th class="text-end my-number">#</th>
-				<th class="text-end">Key</th>
+				<th class="text-end"><abbr title="Original">Orig.</abbr> Key</th>
 				<th class="text-end">No.</th>
 				<th class="text-end">Bank</th>
-				<th class="text-end">Start Addr.</th>
-				<th class="text-end">Loop Addr.</th>
-				<th class="text-end">End Addr.</th>
-				<th class="text-end">S-E Len.</th>
-				<th class="text-end">S-L Len.</th>
-				<th class="text-end">L-E Len.</th>
+				<th class="text-end">Start <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end">Loop <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end">End <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end"><abbr title="Start to End">S-E</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end"><abbr title="Start to Loop">S-L</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end"><abbr title="Loop to End">L-E</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end">Loop Mode</th>
+				<th class="text-end">Fine Tune</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -207,6 +219,8 @@ const templateSampleList = (json) => html`
 				<td class="text-end">${sample.addrEnd - sample.addrBegin}</td>
 				<td class="text-end">${sample.addrLoop - sample.addrBegin}</td>
 				<td class="text-end">${sample.addrEnd - sample.addrLoop}</td>
+				<td class="text-end">${sample.bytes[10]}</td>
+				<td class="text-end">${sample.pitch}</td>
 			</tr>
 		`)}
 		</tbody>
@@ -239,24 +253,9 @@ const templateVoice = (voice, _) => html`
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
+				<div class="h6" aria-hidden="true">&nbsp;</div>
 				<table class="table table-sm">
 					<tbody>
-						<tr>
-							<th>Tone Delay Mode</th>
-							<td class="text-end">${voice.bytes[2]}</td>
-						</tr>
-						<tr>
-							<th>Tone Pan</th>
-							<td class="text-end">${toSint8(voice.bytes[4])}</td>
-						</tr>
-						<tr>
-							<th>Pitch</th>
-							<td class="text-end">${toSint16(voice.bytes[16], voice.bytes[17])}</td>
-						</tr>
-						<tr>
-							<th>Pitch Key Follow</th>
-							<td class="text-end">${voice.bytes[20]}</td>
-						</tr>
 						<tr>
 							<th>Velocity Range Lower</th>
 							<td class="text-end">${voice.bytes[108]}</td>
@@ -265,15 +264,46 @@ const templateVoice = (voice, _) => html`
 							<th>Velocity Range Upper</th>
 							<td class="text-end">${voice.bytes[109]}</td>
 						</tr>
+						<tr>
+							<th>Velocity Out Lower</th>
+							<td class="text-end">${voice.bytes[110]}</td>
+						</tr>
+						<tr>
+							<th>Velocity Out Upper</th>
+							<td class="text-end">${voice.bytes[111]}</td>
+						</tr>
+						<tr>
+							<th>Pan</th>
+							<td class="text-end">${toSint8(voice.bytes[4])}</td>
+						</tr>
+						<tr>
+							<th>Tone Delay Time</th>
+							<td class="text-end">${getDelayTimeText(voice.bytes[2])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 class="h6">LFO2</h4>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Waveform</th>
+							<td class="text-end">${voice.bytes[7]}</td>
+						</tr>
+						<tr>
+							<th>Share LFO</th>
+							<td class="text-end">${fmt.onOff(voice.bytes[8] !== 0)}</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">Pitch</h4>
 				<!-- Pitch Env. -->
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>Pitch Env.</th>
+							<th>Pitch Env</th>
+							<th class="text-end">0</th>
 							<th class="text-end">1</th>
 							<th class="text-end">2</th>
 							<th class="text-end">3</th>
@@ -284,6 +314,7 @@ const templateVoice = (voice, _) => html`
 					<tbody>
 						<tr>
 							<th>Time</th>
+							<td class="text-end">-</td>
 							<td class="text-end">${voice.bytes[42]}</td>
 							<td class="text-end">${voice.bytes[43]}</td>
 							<td class="text-end">${voice.bytes[44]}</td>
@@ -296,17 +327,71 @@ const templateVoice = (voice, _) => html`
 							<td class="text-end">${toSint16(voice.bytes[32], voice.bytes[33]) >> 9}</td>
 							<td class="text-end">${toSint16(voice.bytes[34], voice.bytes[35]) >> 9}</td>
 							<td class="text-end">${toSint16(voice.bytes[36], voice.bytes[37]) >> 9}</td>
+							<td class="text-end">${toSint16(voice.bytes[38], voice.bytes[39]) >> 9}</td>
 							<td class="text-end">${toSint16(voice.bytes[40], voice.bytes[41]) >> 9}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Coarse Tune</th>
+							<td class="text-end">${toSint8(voice.bytes[22])}</td>
+						</tr>
+						<tr>
+							<th>Fine Tune</th>
+							<td class="text-end">${toSint16(voice.bytes[16], voice.bytes[17])}</td>
+						</tr>
+						<tr>
+							<th>Pitch Key Follow</th>
+							<td class="text-end">${toSint16(voice.bytes[20], voice.bytes[21])}</td>
+						</tr>
+						<tr>
+							<th>Random Pitch Depth</th>
+							<td class="text-end">${voice.bytes[19]}</td>
+						</tr>
+						<tr>
+							<th>LFO1 Depth</th>
+							<td class="text-end">${toSint8(voice.bytes[23])}</td>
+						</tr>
+						<tr>
+							<th>LFO2 Depth</th>
+							<td class="text-end">${toSint16(voice.bytes[24], voice.bytes[25])}</td>
+						</tr>
+						<tr>
+							<th>Env Depth</th>
+							<td class="text-end">${toSint16(voice.bytes[26], voice.bytes[27])}</td>
+						</tr>
+						<tr>
+							<th>Env Random Depth</th>
+							<td class="text-end">${toSint16(voice.bytes[28], voice.bytes[29])}</td>
+						</tr>
+						<tr>
+							<th>Env Time Key Follow (T1-T4)</th>
+							<td class="text-end">${toSint8(voice.bytes[52])}</td>
+						</tr>
+						<tr>
+							<th>Env Time Key Follow (T5)</th>
+							<td class="text-end">${toSint8(voice.bytes[53])}</td>
+						</tr>
+						<tr>
+							<th>Env Velocity Sens</th>
+							<td class="text-end">${toSint16(voice.bytes[54], voice.bytes[55])}</td>
+						</tr>
+						<tr>
+							<th>Env Time Velocity Sens</th>
+							<td class="text-end">${toSint8(voice.bytes[56])}</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">TVF</h4>
 				<!-- TVF Env. -->
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>TVF Env.</th>
+							<th>TVF Env</th>
 							<th class="text-end">1</th>
 							<th class="text-end">2</th>
 							<th class="text-end">3</th>
@@ -333,13 +418,62 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Cutoff</th>
+							<td class="text-end">${voice.bytes[60]}</td>
+						</tr>
+						<tr>
+							<th>Resonance</th>
+							<td class="text-end">${voice.bytes[61]}</td>
+						</tr>
+						<tr>
+							<th>Filter Type</th>
+							<td class="text-end">${getFilterTypeName(voice.bytes[62])}</td>
+						</tr>
+						<tr>
+							<th>Cutoff Key Follow</th>
+							<td class="text-end">${toSint16(voice.bytes[66], voice.bytes[67])}</td>
+						</tr>
+						<tr>
+							<th>LFO1 Depth</th>
+							<td class="text-end">${toSint16(voice.bytes[68], voice.bytes[69])}</td>
+						</tr>
+						<tr>
+							<th>LFO2 Depth</th>
+							<td class="text-end">${toSint16(voice.bytes[70], voice.bytes[71])}</td>
+						</tr>
+						<tr>
+							<th>Env Depth</th>
+							<td class="text-end">${voice.bytes[72]}</td>
+						</tr>
+						<tr>
+							<th>Velocity Sens</th>
+							<td class="text-end">${toSint16(voice.bytes[96], voice.bytes[97])}</td>
+						</tr>
+						<tr>
+							<th>Env Time <abbr title="Velocity">Velo</abbr> Sens (T1-T2)</th>
+							<td class="text-end">${toSint8(voice.bytes[98])}</td>
+						</tr>
+						<tr>
+							<th>Env Time <abbr title="Velocity">Velo</abbr> Sens (T3-T5)</th>
+							<td class="text-end">${toSint8(voice.bytes[99])}</td>
+						</tr>
+						<tr>
+							<th>Attack Time to TVF Env</th>
+							<td class="text-end">${fmt.onOff((voice.bytes[5] & 0x10) !== 0)}</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<div>
+				<h4 class="h6">TVA</h4>
 				<!-- TVA Env. -->
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>TVA Env.</th>
+							<th>TVA Env</th>
 							<th class="text-end">1</th>
 							<th class="text-end">2</th>
 							<th class="text-end">3</th>
@@ -364,6 +498,46 @@ const templateVoice = (voice, _) => html`
 							<td class="text-end">${tvaLevel(voice.bytes[126], voice.bytes[127])}</td>
 							<td class="text-end">-</td>
 						</tr>
+						<tr>
+							<th>Curve</th>
+							<td class="text-end">${voice.bytes[133]}</td>
+							<td class="text-end">${voice.bytes[134]}</td>
+							<td class="text-end">${voice.bytes[135]}</td>
+							<td class="text-end">${voice.bytes[136]}</td>
+							<td class="text-end">${voice.bytes[137]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Level</th>
+							<td class="text-end">${tvaLevel(voice.bytes[102], voice.bytes[103])}</td>
+						</tr>
+						<tr>
+							<th>Bias Level</th>
+							<td class="text-end">${toSint16(voice.bytes[106], voice.bytes[107])}</td>
+						</tr>
+						<tr>
+							<th>LFO1 Depth</th>
+							<td class="text-end">${toSint16(voice.bytes[116], voice.bytes[117])}</td>
+						</tr>
+						<tr>
+							<th>LFO2 Depth</th>
+							<td class="text-end">${toSint16(voice.bytes[118], voice.bytes[119])}</td>
+						</tr>
+						<tr>
+							<th>Env Time <abbr title="Velocity">Velo</abbr> Sens (T1-T2)</th>
+							<td class="text-end">${toSint8(voice.bytes[144])}</td>
+						</tr>
+						<tr>
+							<th>Env Time <abbr title="Velocity">Velo</abbr> Sens (T3-T5)</th>
+							<td class="text-end">${toSint8(voice.bytes[145])}</td>
+						</tr>
+						<tr>
+							<th>Random Level Depth</th>
+							<td class="text-end">${(voice.bytes[146] === 255) ? 'Off' : voice.bytes[146]}</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -387,6 +561,18 @@ const templateTone = (tone, json) => html`
 						<tr>
 							<th>Random Switch</th>
 							<td class="text-end">${fmt.onOff((tone.commonBytes[31] & 0x80) !== 0)}</td>
+						</tr>
+						<tr>
+							<th>Voice Steal Mode</th>
+							<td class="text-end">${tone.commonBytes[19]}</td>
+						</tr>
+						<tr>
+							<th>Hold1 Half Damper</th>
+							<td class="text-end">${fmt.onOff(tone.commonBytes[21] !== 0)}</td>
+						</tr>
+						<tr>
+							<th>Hold1 Half Damper Keep</th>
+							<td class="text-end">${fmt.onOff(tone.commonBytes[20] !== 0)}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -438,14 +624,14 @@ const templateDrumSet = (drumSet, _) => html`
 					<th class="text-end">No.</th>
 					<th class="text-end my-number">No.</th>
 					<th>Instrument</th>
-					<th class="text-end">Level</th>
-					<th class="text-end">Pitch</th>
-					<th class="text-end">Group</th>
-					<th class="text-end">Panpot</th>
-					<th class="text-end">Reverb</th>
-					<th class="text-end">Chorus</th>
-					<th class="text-end">Note On</th>
-					<th class="text-end">Note Off</th>
+					<th class="text-end">Pitch Coarse</th>
+					<th class="text-end"><abbr title="Instrument">Inst</abbr> Level</th>
+					<th class="text-end"><abbr title="Instrument">Inst</abbr> Pan</th>
+					<th class="text-end">Reverb Send</th>
+					<th class="text-end">Chorus Send</th>
+					<th class="text-end">Assign Group</th>
+					<th class="text-end"><abbr title="Receive">Rx</abbr> Note Off</th>
+					<th class="text-end"><abbr title="Receive">Rx</abbr> Note On</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -455,14 +641,14 @@ const templateDrumSet = (drumSet, _) => html`
 					<td class="text-end text-muted">${noteNo}</td>
 					<td class="text-end">${note.toneNo}</td>
 					<td class="font-monospace"><a href="${note.toneRef.$ref}">${note.toneRef.name}</a></td>
-					<td class="text-end">${note.level}</td>
 					<td class="text-end">${note.pitch}</td>
-					<td class="text-end">${note.group}</td>
+					<td class="text-end">${note.level}</td>
 					<td class="text-end">${fmt.panpotR(note.panpot)}</td>
 					<td class="text-end">${note.reverb}</td>
 					<td class="text-end">${note.chorus}</td>
-					<td class="text-end">${fmt.onOff(note.isRxNoteOn)}</td>
+					<td class="text-end">${note.group}</td>
 					<td class="text-end">${fmt.onOff(note.isRxNoteOff)}</td>
+					<td class="text-end">${fmt.onOff(note.isRxNoteOn)}</td>
 				</tr>
 			`)}
 			</tbody>
