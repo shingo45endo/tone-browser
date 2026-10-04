@@ -118,9 +118,10 @@ export function makeDomLoadedHandler(prop, bsGetOrCreateInstance) {
 			// Renders information on the modal according to the specified URL hash.
 			const no = Number(m[2]);
 			const id = m[1];
-			if (prop.details[id]) {
+			const item = json[id]?.[no];
+			if (prop.details[id] && item) {
 				elemModalTitle.textContent = window.location.hash;
-				render(prop.details[id](json[id][no], json), elemModalContent);
+				render(prop.details[id](item, json), elemModalContent);
 				bsModal.show();
 			} else {
 				bsModal.hide();
