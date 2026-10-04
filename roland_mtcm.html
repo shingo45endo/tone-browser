@@ -23,7 +23,7 @@ function panpot(value) {
 }
 
 function waveform(value) {
-	return ['SQU', 'SAW'][value >> 1] ?? 'Unknown';
+	return ['SQU', 'SAW'][value & 0x01];
 }
 
 function biasPoint(value) {
@@ -91,9 +91,9 @@ const templateDrumSetList = (json) => html`
 				<th class="text-end">No.</th>
 				<th class="text-end my-number">No.</th>
 				<th>Timbre</th>
-				<th class="text-end">Level</th>
+				<th class="text-end">Output Level</th>
 				<th class="text-end">Panpot</th>
-				<th class="text-end">Reverb</th>
+				<th class="text-end">Reverb Switch</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -118,8 +118,8 @@ const templateSampleList = (json) => html`
 			<tr>
 				<th class="text-end my-number">#</th>
 				<th>Name</th>
-				<th class="text-end">Address</th>
-				<th class="text-end">Length</th>
+				<th class="text-end">Start <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end"><abbr title="Start to End">S-E</abbr> <abbr title="Length">Len.</abbr></th>
 				<th class="text-end">Pitch</th>
 				<th class="text-end">Looped</th>
 				<th class="text-end">Tunable</th>
@@ -148,10 +148,11 @@ const templateVoice = (voice, json, partialNo) => html`
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
+				<h4 class="h6">WG</h4>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>WG Pitch Course</th>
+							<th>WG Pitch Coarse</th>
 							<td class="text-end">${fmt.noteNameR(voice.bytes[0] + 24)}</td>
 						</tr>
 						<tr>
@@ -159,11 +160,11 @@ const templateVoice = (voice, json, partialNo) => html`
 							<td class="text-end">${voice.bytes[1] - 50}</td>
 						</tr>
 						<tr>
-							<th>WG Pitch Key Follow</th>
+							<th>WG Pitch Keyfollow</th>
 							<td class="text-end">${keyFollow(voice.bytes[2])}</td>
 						</tr>
 						<tr>
-							<th>WG Pitch Bender Sw.</th>
+							<th>WG Pitch Bender Switch</th>
 							<td class="text-end">${fmt.onOff(voice.bytes[3])}</td>
 						</tr>
 					${(voice.sampleRef) ? '' : html`
@@ -176,7 +177,7 @@ const templateVoice = (voice, json, partialNo) => html`
 							<td class="text-end">${voice.bytes[6]}</td>
 						</tr>
 						<tr>
-							<th>WG PW Velo. Sens.</th>
+							<th>WG <abbr title="Pulse Width">PW</abbr> Velocity Sense</th>
 							<td class="text-end">${voice.bytes[7] - 7}</td>
 						</tr>
 					`}
@@ -184,10 +185,11 @@ const templateVoice = (voice, json, partialNo) => html`
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">Pitch</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>Pitch Env.</th>
+							<th><abbr title="Pitch">P</abbr>-Env</th>
 							<th class="text-end">0</th>
 							<th class="text-end">1</th>
 							<th class="text-end">2</th>
@@ -217,15 +219,15 @@ const templateVoice = (voice, json, partialNo) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>P-Env Depth</th>
+							<th><abbr title="Pitch">P</abbr>-Env Depth</th>
 							<td class="text-end">${voice.bytes[8]}</td>
 						</tr>
 						<tr>
-							<th>P-Env Velo. Depth</th>
+							<th><abbr title="Pitch">P</abbr>-Env Velocity Sens</th>
 							<td class="text-end">${voice.bytes[9]}</td>
 						</tr>
 						<tr>
-							<th>P-Env Time Key Follow</th>
+							<th><abbr title="Pitch">P</abbr>-Env Time Keyfollow</th>
 							<td class="text-end">${voice.bytes[10]}</td>
 						</tr>
 					</tbody>
@@ -233,25 +235,26 @@ const templateVoice = (voice, json, partialNo) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>P-LFO Rate</th>
+							<th><abbr title="Pitch">P</abbr>-LFO Rate</th>
 							<td class="text-end">${voice.bytes[20]}</td>
 						</tr>
 						<tr>
-							<th>P-LFO Depth</th>
+							<th><abbr title="Pitch">P</abbr>-LFO Depth</th>
 							<td class="text-end">${voice.bytes[21]}</td>
 						</tr>
 						<tr>
-							<th>P-LFO Mod. Sens.</th>
+							<th><abbr title="Pitch">P</abbr>-LFO Modulation Sense</th>
 							<td class="text-end">${voice.bytes[22]}</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div class="${(voice.sampleRef) ? 'text-decoration-line-through' : ''}">
+				<h4 class="h6">TVF</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>TVF Env.</th>
+							<th>TVF Env</th>
 							<th class="text-end">1</th>
 							<th class="text-end">2</th>
 							<th class="text-end">3</th>
@@ -285,15 +288,15 @@ const templateVoice = (voice, json, partialNo) => html`
 							<td class="text-end">${voice.bytes[28]}</td>
 						</tr>
 						<tr>
-							<th>TVF Env Velo. Depth</th>
+							<th>TVF Env Velocity Sense</th>
 							<td class="text-end">${voice.bytes[29]}</td>
 						</tr>
 						<tr>
-							<th>TVF Env Depth Key Follow</th>
+							<th>TVF Env Depth Keyfollow</th>
 							<td class="text-end">${voice.bytes[30]}</td>
 						</tr>
 						<tr>
-							<th>TVF Env Time Key Follow</th>
+							<th>TVF Env Time Keyfollow</th>
 							<td class="text-end">${voice.bytes[31]}</td>
 						</tr>
 					</tbody>
@@ -301,7 +304,7 @@ const templateVoice = (voice, json, partialNo) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>TVF Cutoff Freq</th>
+							<th>TVF Cutoff Frequency</th>
 							<td class="text-end">${voice.bytes[23]}</td>
 						</tr>
 						<tr>
@@ -309,11 +312,11 @@ const templateVoice = (voice, json, partialNo) => html`
 							<td class="text-end">${voice.bytes[24]}</td>
 						</tr>
 						<tr>
-							<th>TVF Key Follow</th>
+							<th>TVF Keyfollow</th>
 							<td class="text-end">${keyFollow(voice.bytes[25])}</td>
 						</tr>
 						<tr>
-							<th>TVF Bias Point/Dir</th>
+							<th>TVF Bias Point/Direction</th>
 							<td class="text-end">${biasPoint(voice.bytes[26])}</td>
 						</tr>
 						<tr>
@@ -324,10 +327,11 @@ const templateVoice = (voice, json, partialNo) => html`
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">TVA</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>TVA Env.</th>
+							<th>TVA Env</th>
 							<th class="text-end">1</th>
 							<th class="text-end">2</th>
 							<th class="text-end">3</th>
@@ -357,11 +361,11 @@ const templateVoice = (voice, json, partialNo) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>TVA Env Time Key Follow</th>
+							<th>TVA Env Time Keyfollow</th>
 							<td class="text-end">${voice.bytes[47]}</td>
 						</tr>
 						<tr>
-							<th>TVA Env Time Velo. Follow</th>
+							<th>TVA Env Time <abbr title="Velocity">V</abbr>-Follow</th>
 							<td class="text-end">${voice.bytes[48]}</td>
 						</tr>
 					</tbody>
@@ -373,7 +377,7 @@ const templateVoice = (voice, json, partialNo) => html`
 							<td class="text-end">${voice.bytes[41]}</td>
 						</tr>
 						<tr>
-							<th>TVA Velo. Sens.</th>
+							<th>TVA Velocity Sense</th>
 							<td class="text-end">${voice.bytes[42] - 50}</td>
 						</tr>
 						<tr>
@@ -402,18 +406,18 @@ const templateVoice = (voice, json, partialNo) => html`
 const templateTone = (tone, json) => html`
 	<div class="card mb-3">
 		<div class="card-header">
-			<h2 class="h6 mb-0">Timbre ${timbreNo(tone.toneNo)}: <span class="font-monospace h4">${tone.name}</span></h2>
+			<h2 class="h6 mb-0">Timbre No.${timbreNo(tone.toneNo)}: <span class="font-monospace h4">${tone.name}</span></h2>
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>Structure of Partial 1 & 2</th>
+							<th>Structure of Partial# 1 & 2</th>
 							<td class="text-end">${tone.commonBytes[10]}</td>
 						</tr>
 						<tr>
-							<th>Structure of Partial 3 & 4</th>
+							<th>Structure of Partial# 3 & 4</th>
 							<td class="text-end">${tone.commonBytes[11]}</td>
 						</tr>
 					</tbody>
