@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tone-browser</title>
+<link href="./common.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script type="module">
+/* global bootstrap */
+import {html} from 'https://unpkg.com/lit-html@2.8.0?module';
+import {makeDomLoadedHandler} from './common.js';
+import {formatters as fmt} from './formatters.js';
+
+function toSint8(value) {
+	return (new Int8Array([value]))[0];
+}
+
+const templateToneList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end my-number">#</th>
+				<th>Single Patch</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.tones.filter((tone) => tone.voices.length > 0).map((tone) => html`
+			<tr>
+				<th class="text-end">${tone.toneNo}</th>
+				<td class="font-monospace"><a href="#/tones/${tone.toneNo}">${tone.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateDrumToneList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end my-number">#</th>
+				<th>Drum Patch</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumTones.map((tone) => html`
+			<tr>
+				<th class="text-end">${tone.drumToneNo}</th>
+				<td class="font-monospace"><a href="#/drumTones/${tone.drumToneNo}">${tone.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+const templateDrumSetList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end my-number">#</th>
+				<th>Drum Kit</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumSets.map((drumSet) => html`
+			<tr>
+				<th class="text-end">${drumSet.drumSetNo}</th>
+				<td class="font-monospace"><a href="#/drumSets/${drumSet.drumSetNo}">${drumSet.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
+// The meanings of the parameters below are guesses from the firmware.
+const templateVoice = (voice, index) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h3 class="h6 mb-0">Voice ${index + 1}</h3>
+		</div>
+		<div class="card-body pb-0">
+			<div class="d-flex flex-row gap-3">
+				<div>
+					<div class="h6" aria-hidden="true">&nbsp;</div>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Level</th>
+								<td class="text-end">${voice.bytes[0] & 0x7f}</td>
+							</tr>
+							<tr>
+								<th>Key Range Type</th>
+								<td class="text-end">${voice.bytes[0] >> 7}</td>
+							</tr>
+							<tr>
+								<th><abbr title="Velocity">Vel</abbr> Curve</th>
+								<td class="text-end">${voice.bytes[5] >> 7}</td>
+							</tr>
+							<tr>
+								<th>Key On Delay</th>
+								<td class="text-end">${voice.bytes[1]}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<h4 class="h6">Pitch Env</h4>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Depth</th>
+								<td class="text-end">${toSint8(voice.bytes[4])}</td>
+							</tr>
+							<tr>
+								<th>Rate</th>
+								<td class="text-end">${voice.bytes[5] & 0x7f}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<h4 class="h6"><abbr title="Vibrato">Vib</abbr></h4>
+					<table class="table table-sm">
+						<tbody>
+							<tr>
+								<th>Shape</th>
+								<td class="text-end">${voice.bytes[3] & 0x03}</td>
+							</tr>
+							<tr>
+								<th>Speed</th>
+								<td class="text-end">${voice.bytes[3] >> 2}</td>
+							</tr>
+							<tr>
+								<th>Depth</th>
+								<td class="text-end">${toSint8(voice.bytes[2])}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<table class="table table-sm table-hover w-auto">
+				<thead>
+					<tr>
+						<th class="text-end">Low</th>
+						<th class="text-end">No.</th>
+						<th class="text-end">High</th>
+						<th class="text-end">No.</th>
+						<th class="text-end">Coarse</th>
+						<th class="text-end">Fine</th>
+						<th class="text-end">Key Track</th>
+						<th class="text-end"><abbr title="Attack">Atk</abbr> Rate</th>
+						<th class="text-end"><abbr title="Attack">Atk</abbr> Level</th>
+						<th class="text-end">Decay Rate</th>
+						<th class="text-end"><abbr title="Sustain">Sus</abbr> Level</th>
+						<th class="text-end">Release Rate</th>
+						<th class="text-end">Bank</th>
+						<th class="text-end">Start <abbr title="Address">Addr.</abbr></th>
+						<th class="text-end">Loop <abbr title="Address">Addr.</abbr></th>
+						<th class="text-end">End <abbr title="Address">Addr.</abbr></th>
+					</tr>
+				</thead>
+				<tbody>
+				${voice.sampleSlots.map((sampleSlot) => html`
+					<tr class="${(sampleSlot.bytes[3] === 0) ? 'opacity-50' : ''}">
+						<td class="text-end">${fmt.noteNameY(sampleSlot.low)}</td>
+						<td class="text-end text-muted">${sampleSlot.low}</td>
+						<td class="text-end">${fmt.noteNameY(sampleSlot.high)}</td>
+						<td class="text-end text-muted">${sampleSlot.high}</td>
+						<td class="text-end">${toSint8(sampleSlot.bytes[0])}</td>
+						<td class="text-end">${toSint8(sampleSlot.bytes[1] & 0xfe)}</td>
+						<td class="text-end">${fmt.onOff((sampleSlot.bytes[1] & 0x01) === 0)}</td>
+						<td class="text-end">${sampleSlot.bytes[2]}</td>
+						<td class="text-end">${sampleSlot.bytes[3]}</td>
+						<td class="text-end">${sampleSlot.bytes[4]}</td>
+						<td class="text-end">${sampleSlot.bytes[5]}</td>
+						<td class="text-end">${sampleSlot.bytes[6]}</td>
+						<td class="text-end">${sampleSlot.bytes[7].toString(16).padStart(2, '0')}</td>
+						<td class="text-end font-monospace">${sampleSlot.bytes[8].toString(16).padStart(2, '0')}</td>
+						<td class="text-end font-monospace">${sampleSlot.bytes[10].toString(16).padStart(2, '0')}</td>
+						<td class="text-end font-monospace">${sampleSlot.bytes[9].toString(16).padStart(2, '0')}</td>
+					</tr>
+				`)}
+				</tbody>
+			</table>
+		</div>
+	</div>
+`;
+
+const templateTone = (tone, _) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Single Patch No.${tone.toneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 py-0">
+		</div>
+	</div>
+	${tone.voices.map(templateVoice)}
+`;
+
+// Only these 3 bytes of the first 12 bytes of a drum patch are used.
+// The last 11 bytes of a drum patch seem to have the same format as a key range of a single patch.
+const templateDrumTone = (tone, _) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Drum Patch No.${tone.drumToneNo}: <span class="font-monospace h4">${tone.name}</span></h2>
+		</div>
+		<div class="card-body pb-0">
+			<table class="table table-sm w-auto">
+				<tbody>
+					<tr>
+						<th>Level</th>
+						<td class="text-end">${tone.voices[0].bytes[0]}</td>
+					</tr>
+					<tr>
+						<th>Pan</th>
+						<td class="text-end">${fmt.panpot((tone.voices[0].bytes[6] >> 4) - 8 + 64)}</td>
+					</tr>
+					<tr>
+						<th>Reverb</th>
+						<td class="text-end">${['LO', 'HI'][tone.voices[0].bytes[7] & 0x01]}</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-sm w-auto">
+				<thead>
+					<tr>
+						<th class="text-end">Coarse</th>
+						<th class="text-end">Fine</th>
+						<th class="text-end">Key Track</th>
+						<th class="text-end"><abbr title="Attack">Atk</abbr> Rate</th>
+						<th class="text-end"><abbr title="Attack">Atk</abbr> Level</th>
+						<th class="text-end">Decay Rate</th>
+						<th class="text-end"><abbr title="Sustain">Sus</abbr> Level</th>
+						<th class="text-end">Release Rate</th>
+						<th class="text-end">Bank</th>
+						<th class="text-end">Start <abbr title="Address">Addr.</abbr></th>
+						<th class="text-end">Loop <abbr title="Address">Addr.</abbr></th>
+						<th class="text-end">End <abbr title="Address">Addr.</abbr></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="text-end">${toSint8(tone.voices[0].bytes[12])}</td>
+						<td class="text-end">${toSint8(tone.voices[0].bytes[13] & 0xfe)}</td>
+						<td class="text-end">${fmt.onOff((tone.voices[0].bytes[13] & 0x01) === 0)}</td>
+						<td class="text-end">${tone.voices[0].bytes[14]}</td>
+						<td class="text-end">${tone.voices[0].bytes[15]}</td>
+						<td class="text-end">${tone.voices[0].bytes[16]}</td>
+						<td class="text-end">${tone.voices[0].bytes[17]}</td>
+						<td class="text-end">${tone.voices[0].bytes[18]}</td>
+						<td class="text-end">${tone.voices[0].bytes[19].toString(16).padStart(2, '0')}</td>
+						<td class="text-end font-monospace">${tone.voices[0].bytes[20].toString(16).padStart(2, '0')}</td>
+						<td class="text-end font-monospace">${tone.voices[0].bytes[22].toString(16).padStart(2, '0')}</td>
+						<td class="text-end font-monospace">${tone.voices[0].bytes[21].toString(16).padStart(2, '0')}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+`;
+
+const templateDrumSet = (drumSet, json) => html`
+	<div class="card mb-3">
+		<div class="card-header">
+			<h2 class="h6 mb-0">Drum Kit No.${drumSet.drumSetNo}: <span class="font-monospace h4">${drumSet.name}</span></h2>
+		</div>
+		<div class="card-body d-flex flex-row gap-3 py-0">
+		</div>
+	</div>
+	<div class="d-flex flex-row gap-3 px-3">
+		<table class="table table-sm table-hover w-auto mb-0">
+			<thead>
+				<tr>
+					<th class="text-end">Note</th>
+					<th class="text-end">No.</th>
+					<th class="text-end my-number">No.</th>
+					<th>Drum Patch</th>
+					<th class="text-end">Coarse</th>
+					<th class="text-end">Fine</th>
+					<th class="text-end">Level</th>
+					<th class="text-end">Pan</th>
+					<th class="text-end">Reverb</th>
+				</tr>
+			</thead>
+			<tbody>
+			${Object.entries(drumSet.notes).map(([noteNo, note]) => html`
+				<tr>
+					<td class="text-end">${fmt.noteNameY(Number(noteNo))}</td>
+					<td class="text-end text-muted">${noteNo}</td>
+					<td class="text-end">${note.drumToneNo}</td>
+					<td class="font-monospace"><a href="${note.drumToneRef.$ref}">${note.drumToneRef.name}</a></td>
+					<td class="text-end">${toSint8(json.drumTones[note.drumToneNo].voices[0].bytes[12])}</td>
+					<td class="text-end">${toSint8(json.drumTones[note.drumToneNo].voices[0].bytes[13] & 0xfe)}</td>
+					<td class="text-end">${json.drumTones[note.drumToneNo].voices[0].bytes[0]}</td>
+					<td class="text-end">${fmt.panpot((json.drumTones[note.drumToneNo].voices[0].bytes[6] >> 4) - 8 + 64)}</td>
+					<td class="text-end">${['LO', 'HI'][json.drumTones[note.drumToneNo].voices[0].bytes[7] & 0x01]}</td>
+				</tr>
+			`)}
+			</tbody>
+		</table>
+	</div>
+`;
+
+window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
+	lists: [
+		{id: 'tones',     label: 'Single Patches', renderer: templateToneList},
+		{id: 'drumTones', label: 'Drum Patches',   renderer: templateDrumToneList},
+		{id: 'drumSets',  label: 'Drum Kits',      renderer: templateDrumSetList},
+	],
+	details: {
+		tones:     templateTone,
+		drumTones: templateDrumTone,
+		drumSets:  templateDrumSet,
+	},
+}, bootstrap.Modal.getOrCreateInstance.bind(bootstrap.Modal)));
+</script>
+</head>
+<body>
+</body>
+</html>

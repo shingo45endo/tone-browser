@@ -47,6 +47,7 @@ This application displays the tone parameters of 90's multi-timbre MIDI sound mo
 	* AG-10
 * Kawai
 	* GMega
+	* GMega LX
 * Casio
 	* GZ-70SP
 * Akai
