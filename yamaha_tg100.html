@@ -228,6 +228,25 @@ const templateSampleList = (json) => html`
 	</table>
 `;
 
+const templateDrumSetList = (json) => html`
+	<table class="table table-sm table-hover w-auto">
+		<thead>
+			<tr>
+				<th class="text-end my-number">No.</th>
+				<th>Drum Kit</th>
+			</tr>
+		</thead>
+		<tbody>
+		${json.drumSets.map((drumSet) => html`
+			<tr>
+				<td class="text-end">${drumSet.drumSetNo}</td>
+				<td class="font-monospace"><a href="#/drumSets/${drumSet.drumSetNo}">${drumSet.name}</a></td>
+			</tr>
+		`)}
+		</tbody>
+	</table>
+`;
+
 const templateVoice = (voice, _) => html`
 	<div class="card mb-3">
 		<div class="card-header">
@@ -472,6 +491,7 @@ window.addEventListener('DOMContentLoaded', makeDomLoadedHandler({
 		{id: 'waves',     label: 'Waves',      renderer: templateWaveList},
 		{id: 'drumWaves', label: 'Drum Waves', renderer: templateDrumWaveList},
 		{id: 'samples',   label: 'Samples',    renderer: templateSampleList},
+		{id: 'drumSets',  label: 'Drum Kits',  renderer: templateDrumSetList},
 	],
 	details: {
 		tones:    templateTone,
