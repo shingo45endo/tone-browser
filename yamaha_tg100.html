@@ -129,6 +129,14 @@ const templateWaveList = (json) => html`
 								<th class="text-end">High</th>
 								<th class="text-end">No.</th>
 								<th class="text-end">Sample No.</th>
+								<th class="text-end">Key</th>
+								<th class="text-end">No.</th>
+								<th class="text-end">Fine</th>
+								<th class="text-end">Attenuation</th>
+								<th class="text-end"><abbr title="Attack Rate">AR</abbr></th>
+								<th class="text-end"><abbr title="Decay1 Rate">D1R</abbr></th>
+								<th class="text-end"><abbr title="Release Rate">RR</abbr></th>
+								<th class="text-end">Rate<br><abbr title="Correction">Cor.</abbr></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -139,6 +147,14 @@ const templateWaveList = (json) => html`
 								<td class="text-end">${fmt.noteNameY(sampleSlot.high)}</td>
 								<td class="text-end text-muted">${sampleSlot.high}</td>
 								<td class="text-end">${sampleSlot.sampleNo}</td>
+								<td class="text-end">${fmt.noteNameY(sampleSlot.bytes[4])}</td>
+								<td class="text-end text-muted">${sampleSlot.bytes[4]}</td>
+								<td class="text-end">${sampleSlot.bytes[5]}</td>
+								<td class="text-end">${sampleSlot.bytes[6]}</td>
+								<td class="text-end">${sampleSlot.bytes[7] >> 4}</td>
+								<td class="text-end">${sampleSlot.bytes[7] & 0x0f}</td>
+								<td class="text-end">${sampleSlot.bytes[8] & 0x0f}</td>
+								<td class="text-end">${sampleSlot.bytes[8] >> 4}</td>
 							</tr>
 						`)}
 						</tbody>
@@ -157,10 +173,11 @@ const templateDrumWaveList = (json) => html`
 				<th class="text-end my-number">#</th>
 				<th>Drum Wave</th>
 				<th class="text-end">Sample No.</th>
-				<th class="text-end">b02</th>
-				<th class="text-end">b03</th>
-				<th class="text-end">b04</th>
-				<th class="text-end">b05</th>
+				<th class="text-end">Pitch<br>Coarse</th>
+				<th class="text-end">Pitch<br>Fine</th>
+				<th class="text-end">Attenuation</th>
+				<th class="text-end">Panpot</th>
+				<th class="text-end">Reverb<br>Depth</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -169,10 +186,11 @@ const templateDrumWaveList = (json) => html`
 				<th class="text-end">${drumWave.drumWaveNo}</th>
 				<td class="font-monospace">${drumWave.name}</td>
 				<td class="text-end">${drumWave.sampleNo}</td>
-				<td class="text-end">${(new DataView((new Uint8Array([drumWave.bytes[2]])).buffer)).getInt8()}</td>
+				<td class="text-end">${fmt.sint8(drumWave.bytes[2])}</td>
 				<td class="text-end">${drumWave.bytes[3]}</td>
 				<td class="text-end">${drumWave.bytes[4]}</td>
-				<td class="text-end">${drumWave.bytes[5]}</td>
+				<td class="text-end">${panpot(drumWave.bytes[5] & 0x0f)}</td>
+				<td class="text-end">${drumWave.bytes[5] >> 4}</td>
 			</tr>
 		`)}
 		</tbody>
@@ -185,21 +203,21 @@ const templateSampleList = (json) => html`
 			<tr>
 				<th class="text-end my-number">#</th>
 				<th>Sample</th>
-				<th class="text-end">Start Addr.</th>
-				<th class="text-end">Loop Addr.</th>
-				<th class="text-end">End Addr.</th>
-				<th class="text-end">S-E Len.</th>
-				<th class="text-end">S-L Len.</th>
-				<th class="text-end">L-E Len.</th>
-				<th class="text-end">AR</th>
-				<th class="text-end">D1</th>
-				<th class="text-end">DL</th>
-				<th class="text-end">D2</th>
-				<th class="text-end">RR</th>
-				<th class="text-end">Rate<br>Cor.</th>
-				<th class="text-end">LFO</th>
-				<th class="text-end">Vib.</th>
-				<th class="text-end">AM</th>
+				<th class="text-end">Start <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end">Loop <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end">End <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end"><abbr title="Start to End">S-E</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end"><abbr title="Start to Loop">S-L</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end"><abbr title="Loop to End">L-E</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end"><abbr title="Attack Rate">AR</abbr></th>
+				<th class="text-end"><abbr title="Decay1 Rate">D1R</abbr></th>
+				<th class="text-end"><abbr title="Decay Level">DL</abbr></th>
+				<th class="text-end"><abbr title="Decay2 Rate">D2R</abbr></th>
+				<th class="text-end"><abbr title="Release Rate">RR</abbr></th>
+				<th class="text-end">Rate<br><abbr title="Correction">Cor.</abbr></th>
+				<th class="text-end">LFO<br>Speed</th>
+				<th class="text-end"><abbr title="Vibrato">Vib</abbr></th>
+				<th class="text-end"><abbr title="Amplitude Modulation">AM</abbr></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -232,14 +250,14 @@ const templateDrumSetList = (json) => html`
 	<table class="table table-sm table-hover w-auto">
 		<thead>
 			<tr>
-				<th class="text-end my-number">No.</th>
+				<th class="text-end my-number">#</th>
 				<th>Drum Kit</th>
 			</tr>
 		</thead>
 		<tbody>
 		${json.drumSets.map((drumSet) => html`
 			<tr>
-				<td class="text-end">${drumSet.drumSetNo}</td>
+				<th class="text-end">${drumSet.drumSetNo}</th>
 				<td class="font-monospace"><a href="#/drumSets/${drumSet.drumSetNo}">${drumSet.name}</a></td>
 			</tr>
 		`)}
@@ -254,79 +272,16 @@ const templateVoice = (voice, _) => html`
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
+				<div class="h6" aria-hidden="true">&nbsp;</div>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>Note Shift</th>
-							<td class="text-end">${fmt.sint7offset6(voice.pitch)}</td>
-						</tr>
-						<tr>
-							<th>Detune</th>
-							<td class="text-end">${fmt.sint7offset6(voice.detune)}</td>
-						</tr>
-						<tr>
-							<th>Pitch Scaling Rate</th>
-							<td class="text-end">${fmt.pitchScalingRateMU(voice.pitchRateScaling)}</td>
-						</tr>
-						<tr>
-							<th>Pitch Scaling Center</th>
-							<td class="text-end">${fmt.noteNameY(voice.pitchRateScalingNote)}</td>
-						</tr>
-						<tr>
-							<th>Element Volume</th>
-							<td class="text-end">${voice.level}</td>
+							<th>Panpot</th>
+							<td class="text-end">${panpot(voice.bytes[16])}</td>
 						</tr>
 					</tbody>
 				</table>
-			</div>
-			<div>
-				<!-- PEG -->
-				<table class="table table-sm">
-					<thead>
-						<tr>
-							<th>PEG Env.</th>
-							<th class="text-end">0</th>
-							<th class="text-end">1</th>
-							<th class="text-end">2</th>
-							<th class="text-end">3</th>
-							<th class="text-end">R</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th>Rate</th>
-							<td class="text-end">-</td>
-							<td class="text-end">${voice.bytes[26]}</td>
-							<td class="text-end">${voice.bytes[27]}</td>
-							<td class="text-end">${voice.bytes[28]}</td>
-							<td class="text-end">${voice.bytes[29]}</td>
-						</tr>
-						<tr>
-							<th>Level</th>
-							<td class="text-end">${fmt.sint7offset6(voice.bytes[30])}</td>
-							<td class="text-end">${fmt.sint7offset6(voice.bytes[31])}</td>
-							<td class="text-end">${fmt.sint7offset6(voice.bytes[32])}</td>
-							<td class="text-end">${fmt.sint7offset6(voice.bytes[33])}</td>
-							<td class="text-end">${fmt.sint7offset6(voice.bytes[34])}</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-sm">
-					<tbody>
-						<tr>
-							<th>Pitch EG Range</th>
-							<td class="text-end">${fmt.pitchEGDepthMU(voice.bytes[23])}</td>
-						</tr>
-						<tr>
-							<th>Pitch EG Level Vel Sw.</th>
-							<td class="text-end">${fmt.onOff(voice.bytes[24] === 0x00)}</td>
-						</tr>
-						<tr>
-							<th>Pitch EG Rate Scaling</th>
-							<td class="text-end">${voice.bytes[25]}</td>
-						</tr>
-					</tbody>
-				</table>
+				<h4 class="h6">LFO</h4>
 				<table class="table table-sm">
 					<tbody>
 						<tr>
@@ -353,13 +308,80 @@ const templateVoice = (voice, _) => html`
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">Pitch</h4>
+				<!-- PEG -->
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<th>PEG</th>
+							<th class="text-end">0</th>
+							<th class="text-end">1</th>
+							<th class="text-end">2</th>
+							<th class="text-end">3</th>
+							<th class="text-end"><abbr title="Release">R</abbr></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Rate</th>
+							<td class="text-end">-</td>
+							<td class="text-end">${voice.bytes[26]}</td>
+							<td class="text-end">${voice.bytes[27]}</td>
+							<td class="text-end">${voice.bytes[28]}</td>
+							<td class="text-end">${voice.bytes[29]}</td>
+						</tr>
+						<tr>
+							<th>Level</th>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[30])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[31])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[32])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[33])}</td>
+							<td class="text-end">${fmt.sint7offset6(voice.bytes[34])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Note Shift</th>
+							<td class="text-end">${fmt.sint7offset6(voice.pitch)}</td>
+						</tr>
+						<tr>
+							<th>Detune</th>
+							<td class="text-end">${fmt.sint7offset6(voice.detune)}</td>
+						</tr>
+						<tr>
+							<th>Pitch Rate Scaling</th>
+							<td class="text-end">${fmt.pitchScalingRateMU(voice.pitchRateScaling)}</td>
+						</tr>
+						<tr>
+							<th>Pitch Rate Scaling Center Note</th>
+							<td class="text-end">${fmt.noteNameY(voice.pitchRateScalingNote)}</td>
+						</tr>
+						<tr>
+							<th>PEG Depth</th>
+							<td class="text-end">${fmt.pitchEGDepthMU(voice.bytes[23])}</td>
+						</tr>
+						<tr>
+							<th>PEG Velocity Switch</th>
+							<td class="text-end">${fmt.onOff(voice.bytes[24] === 0x00)}</td>
+						</tr>
+						<tr>
+							<th>PEG Rate Scaling</th>
+							<td class="text-end">${voice.bytes[25]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<h4 class="h6">Amplitude</h4>
 				<!-- AEG -->
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>AEG Env.</th>
-							<th class="text-end">A</th>
-							<th class="text-end">R</th>
+							<th>EG</th>
+							<th class="text-end"><abbr title="Attack">A</abbr></th>
+							<th class="text-end"><abbr title="Release">R</abbr></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -382,7 +404,7 @@ const templateVoice = (voice, _) => html`
 					</thead>
 					<tbody>
 						<tr>
-							<th>Break Point</th>
+							<th><abbr title="Break Point">BP</abbr></th>
 							<td class="text-end">${fmt.noteNameY(voice.bytes[4])}</td>
 							<td class="text-end">${fmt.noteNameY(voice.bytes[5])}</td>
 							<td class="text-end">${fmt.noteNameY(voice.bytes[6])}</td>
@@ -400,8 +422,8 @@ const templateVoice = (voice, _) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>Panpot</th>
-							<td class="text-end">${panpot(voice.bytes[16])}</td>
+							<th>Element Level</th>
+							<td class="text-end">${voice.level}</td>
 						</tr>
 						<tr>
 							<th>Velocity Curve</th>
@@ -438,7 +460,7 @@ const templateTone = (tone, json) => html`
 							<td class="text-end">${tone.commonBytes[6]}</td>
 						</tr>
 						<tr>
-							<th>CAf LFO Pitch Depth</th>
+							<th><abbr title="Channel Aftertouch">CAf</abbr> LFO Pitch Depth</th>
 							<td class="text-end">${tone.commonBytes[8]}</td>
 						</tr>
 					</tbody>
