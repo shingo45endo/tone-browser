@@ -123,12 +123,12 @@ const templateDrumSampleList = (json) => html`
 			<tr>
 				<th class="text-end my-number">#</th>
 				<th>Drum Sample</th>
-				<th class="text-end">Start Addr.</th>
-				<th class="text-end">Loop Addr.</th>
-				<th class="text-end">End Addr.</th>
-				<th class="text-end">S-E Len.</th>
-				<th class="text-end">S-L Len.</th>
-				<th class="text-end">L-E Len.</th>
+				<th class="text-end">Start <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end">Loop <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end">End <abbr title="Address">Addr.</abbr></th>
+				<th class="text-end"><abbr title="Start to End">S-E</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end"><abbr title="Start to Loop">S-L</abbr> <abbr title="Length">Len.</abbr></th>
+				<th class="text-end"><abbr title="Loop to End">L-E</abbr> <abbr title="Length">Len.</abbr></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -155,6 +155,24 @@ const templateVoice = (voice, _) => html`
 		</div>
 		<div class="card-body d-flex flex-row gap-3 pb-0">
 			<div>
+				<div class="h6" aria-hidden="true">&nbsp;</div>
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>Pan A/B</th>
+							<td class="text-end">${fmt.panpotR(voice.bytes[69])}</td>
+						</tr>
+						<tr>
+							<th>C Send</th>
+							<td class="text-end">${voice.bytes[70]}</td>
+						</tr>
+						<tr>
+							<th>D Send</th>
+							<td class="text-end">${voice.bytes[71]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 class="h6">OSC</h4>
 				<!-- OSC -->
 				<table class="table table-sm">
 					<tbody>
@@ -179,11 +197,11 @@ const templateVoice = (voice, _) => html`
 							<td class="text-end">${fmt.sint8(voice.bytes[6])}</td>
 						</tr>
 						<tr>
-							<th>OSC VelBottom</th>
+							<th>OSC <abbr title="Velocity">Vel</abbr>Bottom</th>
 							<td class="text-end">${voice.bytes[7]}</td>
 						</tr>
 						<tr>
-							<th>OSC VelTop</th>
+							<th>OSC <abbr title="Velocity">Vel</abbr>Top</th>
 							<td class="text-end">${voice.bytes[8]}</td>
 						</tr>
 						<tr>
@@ -192,32 +210,17 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<table class="table table-sm">
-					<tbody>
-						<tr>
-							<th>Pan A/B</th>
-							<td class="text-end">${fmt.panpotR(voice.bytes[69])}</td>
-						</tr>
-						<tr>
-							<th>C Send</th>
-							<td class="text-end">${voice.bytes[70]}</td>
-						</tr>
-						<tr>
-							<th>D Send</th>
-							<td class="text-end">${voice.bytes[71]}</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 			<div>
+				<h4 class="h6">Pitch</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>P.EG</th>
-							<th class="text-end">S</th>
-							<th class="text-end">A</th>
-							<th class="text-end">D</th>
-							<th class="text-end">R</th>
+							<th><abbr title="Pitch EG">P.EG</abbr></th>
+							<th class="text-end"><abbr title="Start">S</abbr></th>
+							<th class="text-end"><abbr title="Attack">A</abbr></th>
+							<th class="text-end"><abbr title="Decay">D</abbr></th>
+							<th class="text-end"><abbr title="Release">R</abbr></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -234,6 +237,23 @@ const templateVoice = (voice, _) => html`
 							<td class="text-end">${fmt.sint8(voice.bytes[20])}</td>
 							<td class="text-end">-</td>
 							<td class="text-end">${fmt.sint8(voice.bytes[23])}</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- P.EG -->
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th><abbr title="Pitch EG">P.EG</abbr> Intensity</th>
+							<td class="text-end">${fmt.sint8(voice.bytes[15])}</td>
+						</tr>
+						<tr>
+							<th><abbr title="Pitch EG">P.EG</abbr> <abbr title="Intensity">Int</abbr><abbr title="Velocity Sense">VelSense</abbr></th>
+							<td class="text-end">${fmt.sint8(voice.bytes[16])}</td>
+						</tr>
+						<tr>
+							<th><abbr title="Pitch EG">P.EG</abbr> Time<abbr title="Velocity Sense">VelSense</abbr></th>
+							<td class="text-end">${fmt.sint8(voice.bytes[17])}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -262,33 +282,17 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<!-- P.EG -->
-				<table class="table table-sm">
-					<tbody>
-						<tr>
-							<th>P.EG Intensity</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[15])}</td>
-						</tr>
-						<tr>
-							<th>P.EG IntVelSense</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[16])}</td>
-						</tr>
-						<tr>
-							<th>P.EG TimeVelSense</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[17])}</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 			<div>
+				<h4 class="h6">VDF</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>F.EG</th>
-							<th class="text-end">A</th>
-							<th class="text-end">D</th>
-							<th class="text-end">S</th>
-							<th class="text-end">R</th>
+							<th><abbr title="Filter EG">F.EG</abbr></th>
+							<th class="text-end"><abbr title="Attack">A</abbr></th>
+							<th class="text-end"><abbr title="Decay / Break Point">D</abbr></th>
+							<th class="text-end"><abbr title="Slope / Sustain">S</abbr></th>
+							<th class="text-end"><abbr title="Release">R</abbr></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -308,28 +312,24 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<!-- FiltLFO -->
+				<!-- F.EG -->
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>FiltLFO WaveForm</th>
-							<td class="text-end">${voice.bytes[24]}</td>
+							<th><abbr title="Filter EG">F.EG</abbr> Intensity</th>
+							<td class="text-end">${voice.bytes[37]}</td>
 						</tr>
 						<tr>
-							<th>FiltLFO Frequency</th>
-							<td class="text-end">${voice.bytes[25]}</td>
+							<th><abbr title="Filter EG">F.EG</abbr> <abbr title="Intensity">Int</abbr><abbr title="Velocity Sense">VelSense</abbr></th>
+							<td class="text-end">${fmt.sint8(voice.bytes[38])}</td>
 						</tr>
 						<tr>
-							<th>FiltLFO Delay</th>
-							<td class="text-end">${voice.bytes[26]}</td>
+							<th><abbr title="Filter EG">F.EG</abbr> Time<abbr title="Velocity Sense">VelSense</abbr></th>
+							<td class="text-end">${voice.bytes[39]}</td>
 						</tr>
 						<tr>
-							<th>FiltLFO FadeIn</th>
-							<td class="text-end">${voice.bytes[27]}</td>
-						</tr>
-						<tr>
-							<th>FiltLFO Intensity</th>
-							<td class="text-end">${voice.bytes[28]}</td>
+							<th><abbr title="Filter EG">F.EG</abbr> Time<abbr title="Velocity">Vel</abbr> <abbr title="Switch">Sw</abbr></th>
+							<td class="text-end">${voice.bytes[40]}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -341,23 +341,23 @@ const templateVoice = (voice, _) => html`
 							<td class="text-end">${voice.bytes[29]}</td>
 						</tr>
 						<tr>
-							<th>VDF KBDTRK Key</th>
+							<th>VDF <abbr title="Keyboard Track">KBDTRK</abbr> Key</th>
 							<td class="text-end">${fmt.noteNameR(voice.bytes[30])}</td>
 						</tr>
 						<tr>
-							<th>VDF KBDTRK Mode</th>
+							<th>VDF <abbr title="Keyboard Track">KBDTRK</abbr> Mode</th>
 							<td class="text-end">${voice.bytes[31]}</td>
 						</tr>
 						<tr>
-							<th>VDF KBDTRK FcInt</th>
+							<th>VDF <abbr title="Keyboard Track">KBDTRK</abbr> <abbr title="Cutoff Intensity">FcInt</abbr></th>
 							<td class="text-end">${fmt.sint8(voice.bytes[32])}</td>
 						</tr>
 						<tr>
-							<th>VDF KBDTRK EgTime</th>
+							<th>VDF <abbr title="Keyboard Track">KBDTRK</abbr> EgTime</th>
 							<td class="text-end">${voice.bytes[33]}</td>
 						</tr>
 						<tr>
-							<th>VDF K.TRK EgTimeSw</th>
+							<th>VDF <abbr title="Keyboard Track">K.TRK</abbr> EgTime<abbr title="Switch">Sw</abbr></th>
 							<td class="text-end">${voice.bytes[34]}</td>
 						</tr>
 						<tr>
@@ -365,42 +365,47 @@ const templateVoice = (voice, _) => html`
 							<td class="text-end">${voice.bytes[35]}</td>
 						</tr>
 						<tr>
-							<th>Color VelSense</th>
+							<th>Color <abbr title="Velocity Sense">VelSense</abbr></th>
 							<td class="text-end">${fmt.sint8(voice.bytes[36])}</td>
 						</tr>
 					</tbody>
 				</table>
-				<!-- F.EG -->
+				<!-- FiltLFO -->
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>F.EG Intensity</th>
-							<td class="text-end">${voice.bytes[37]}</td>
+							<th><abbr title="Filter">Filt</abbr>LFO WaveForm</th>
+							<td class="text-end">${voice.bytes[24]}</td>
 						</tr>
 						<tr>
-							<th>F.EG IntVelSense</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[38])}</td>
+							<th><abbr title="Filter">Filt</abbr>LFO Frequency</th>
+							<td class="text-end">${voice.bytes[25]}</td>
 						</tr>
 						<tr>
-							<th>F.EG TimeVelSense</th>
-							<td class="text-end">${voice.bytes[39]}</td>
+							<th><abbr title="Filter">Filt</abbr>LFO Delay</th>
+							<td class="text-end">${voice.bytes[26]}</td>
 						</tr>
 						<tr>
-							<th>F.EG TimeVel Sw</th>
-							<td class="text-end">${voice.bytes[40]}</td>
+							<th><abbr title="Filter">Filt</abbr>LFO FadeIn</th>
+							<td class="text-end">${voice.bytes[27]}</td>
+						</tr>
+						<tr>
+							<th><abbr title="Filter">Filt</abbr>LFO Intensity</th>
+							<td class="text-end">${voice.bytes[28]}</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
+				<h4 class="h6">VDA</h4>
 				<table class="table table-sm">
 					<thead>
 						<tr>
-							<th>A.EG</th>
-							<th class="text-end">A</th>
-							<th class="text-end">D</th>
-							<th class="text-end">S</th>
-							<th class="text-end">R</th>
+							<th><abbr title="Amp EG">A.EG</abbr></th>
+							<th class="text-end"><abbr title="Attack">A</abbr></th>
+							<th class="text-end"><abbr title="Decay / Break Point">D</abbr></th>
+							<th class="text-end"><abbr title="Slope / Sustain">S</abbr></th>
+							<th class="text-end"><abbr title="Release">R</abbr></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -417,6 +422,48 @@ const templateVoice = (voice, _) => html`
 							<td class="text-end">${fmt.sint8(voice.bytes[65])}</td>
 							<td class="text-end">${fmt.sint8(voice.bytes[67])}</td>
 							<td class="text-end">-</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- A.EG -->
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th><abbr title="Amp EG">A.EG</abbr> Level<abbr title="Velocity Sense">VelSense</abbr></th>
+							<td class="text-end">${fmt.sint8(voice.bytes[59])}</td>
+						</tr>
+						<tr>
+							<th><abbr title="Amp EG">A.EG</abbr> Time<abbr title="Velocity Sense">VelSense</abbr></th>
+							<td class="text-end">${voice.bytes[60]}</td>
+						</tr>
+						<tr>
+							<th><abbr title="Amp EG">A.EG</abbr> Time<abbr title="Velocity">Vel</abbr> <abbr title="Switch">Sw</abbr></th>
+							<td class="text-end">${voice.bytes[61]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- VDA -->
+				<table class="table table-sm">
+					<tbody>
+						<tr>
+							<th>VDA <abbr title="Keyboard Track">KBDTRK</abbr> Key</th>
+							<td class="text-end">${fmt.noteNameR(voice.bytes[54])}</td>
+						</tr>
+						<tr>
+							<th>VDA <abbr title="Keyboard Track">KBDTRK</abbr> Mode</th>
+							<td class="text-end">${voice.bytes[55]}</td>
+						</tr>
+						<tr>
+							<th>VDA <abbr title="Keyboard Track">KBDTRK</abbr> <abbr title="Amp Intensity">AmpInt</abbr></th>
+							<td class="text-end">${fmt.sint8(voice.bytes[56])}</td>
+						</tr>
+						<tr>
+							<th>VDA <abbr title="Keyboard Track">KBDTRK</abbr> EgTime</th>
+							<td class="text-end">${voice.bytes[57]}</td>
+						</tr>
+						<tr>
+							<th>VDA <abbr title="Keyboard Track">K.TRK</abbr> EgTime<abbr title="Switch">Sw</abbr></th>
+							<td class="text-end">${voice.bytes[58]}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -445,48 +492,6 @@ const templateVoice = (voice, _) => html`
 						</tr>
 					</tbody>
 				</table>
-				<!-- VDA -->
-				<table class="table table-sm">
-					<tbody>
-						<tr>
-							<th>VDA KBDTRK Key</th>
-							<td class="text-end">${fmt.noteNameR(voice.bytes[54])}</td>
-						</tr>
-						<tr>
-							<th>VDA KBDTRK Mode</th>
-							<td class="text-end">${voice.bytes[55]}</td>
-						</tr>
-						<tr>
-							<th>VDA KBDTRK AmpInt</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[56])}</td>
-						</tr>
-						<tr>
-							<th>VDA KBDTRK EgTime</th>
-							<td class="text-end">${voice.bytes[57]}</td>
-						</tr>
-						<tr>
-							<th>VDA K.TRK EgTimeSw</th>
-							<td class="text-end">${voice.bytes[58]}</td>
-						</tr>
-					</tbody>
-				</table>
-				<!-- A.EG -->
-				<table class="table table-sm">
-					<tbody>
-						<tr>
-							<th>A.EG LevelVelSense</th>
-							<td class="text-end">${fmt.sint8(voice.bytes[59])}</td>
-						</tr>
-						<tr>
-							<th>A.EG TimeVelSense</th>
-							<td class="text-end">${voice.bytes[60]}</td>
-						</tr>
-						<tr>
-							<th>A.EG TimeVel Sw</th>
-							<td class="text-end">${voice.bytes[61]}</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 		</div>
 	</div>
@@ -502,15 +507,11 @@ const templateTone = (tone, json) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>Byte 11</th>
+							<th><abbr title="Effect">Fx</abbr> BankMSB</th>
 							<td class="text-end">${tone.commonBytes[11]}</td>
 						</tr>
 						<tr>
-							<th>Byte 12</th>
-							<td class="text-end">${tone.commonBytes[12]}</td>
-						</tr>
-						<tr>
-							<th>Byte 13</th>
+							<th><abbr title="Effect">Fx</abbr> Number</th>
 							<td class="text-end">${tone.commonBytes[13]}</td>
 						</tr>
 					</tbody>
@@ -531,15 +532,15 @@ const templateCombi = (combi, json) => html`
 				<table class="table table-sm">
 					<tbody>
 						<tr>
-							<th>Own FX BankMSB</th>
+							<th>Own <abbr title="Effect">FX</abbr> BankMSB</th>
 							<td class="text-end">${combi.commonBytes[10]}</td>
 						</tr>
 						<tr>
-							<th>Own FX BankLSB</th>
+							<th>Own <abbr title="Effect">FX</abbr> BankLSB</th>
 							<td class="text-end">${combi.commonBytes[11]}</td>
 						</tr>
 						<tr>
-							<th>Own FX No.</th>
+							<th>Own <abbr title="Effect">FX</abbr> Number</th>
 							<td class="text-end">${combi.commonBytes[12]}</td>
 						</tr>
 					</tbody>
@@ -562,6 +563,18 @@ const templateCombi = (combi, json) => html`
 					<table class="table table-sm">
 						<tbody>
 							<tr>
+								<th>Bank No. MSB</th>
+								<td class="text-end">${toneSlot.bytes[0]}</td>
+							</tr>
+							<tr>
+								<th>Bank No. LSB</th>
+								<td class="text-end">${toneSlot.bytes[1]}</td>
+							</tr>
+							<tr>
+								<th>Program No.</th>
+								<td class="text-end">${toneSlot.bytes[2]}</td>
+							</tr>
+							<tr>
 								<th>Volume</th>
 								<td class="text-end">${toneSlot.bytes[3]}</td>
 							</tr>
@@ -579,11 +592,11 @@ const templateCombi = (combi, json) => html`
 							</tr>
 							<tr>
 								<th>Transpose</th>
-								<td class="text-end">${toneSlot.bytes[11]}</td>
+								<td class="text-end">${fmt.sint8(toneSlot.bytes[11])}</td>
 							</tr>
 							<tr>
 								<th>Detune</th>
-								<td class="text-end">${toneSlot.bytes[12]}</td>
+								<td class="text-end">${fmt.sint8(toneSlot.bytes[12])}</td>
 							</tr>
 						</tbody>
 					</table>
@@ -592,19 +605,19 @@ const templateCombi = (combi, json) => html`
 					<table class="table table-sm">
 						<tbody>
 							<tr>
-								<th>Note Win Bottom</th>
+								<th>Note <abbr title="Window">Win</abbr> Bottom</th>
 								<td class="text-end">${fmt.noteNameR(toneSlot.bytes[7])}</td>
 							</tr>
 							<tr>
-								<th>Note Win Top</th>
+								<th>Note <abbr title="Window">Win</abbr> Top</th>
 								<td class="text-end">${fmt.noteNameR(toneSlot.bytes[8])}</td>
 							</tr>
 							<tr>
-								<th>Vel Win Bottom</th>
+								<th><abbr title="Velocity">Vel</abbr> <abbr title="Window">Win</abbr> Bottom</th>
 								<td class="text-end">${toneSlot.bytes[9]}</td>
 							</tr>
 							<tr>
-								<th>Vel Win Top</th>
+								<th><abbr title="Velocity">Vel</abbr> <abbr title="Window">Win</abbr> Top</th>
 								<td class="text-end">${toneSlot.bytes[10]}</td>
 							</tr>
 						</tbody>
@@ -614,66 +627,28 @@ const templateCombi = (combi, json) => html`
 					<table class="table table-sm">
 						<tbody>
 							<tr>
-								<th>Note On/Off Sw.</th>
+								<th>Note On/Off <abbr title="Switch">Sw</abbr></th>
 								<td class="text-end">${fmt.onOff((toneSlot.bytes[13] & 0x01) === 0)}</td>
 							</tr>
 							<tr>
-								<th>Control Change Sw.</th>
+								<th>ControlChange <abbr title="Switch">Sw</abbr></th>
 								<td class="text-end">${fmt.onOff((toneSlot.bytes[13] & 0x02) === 0)}</td>
 							</tr>
 							<tr>
-								<th>Pitch Bend Sw.</th>
+								<th>Pitch Bend <abbr title="Switch">Sw</abbr></th>
 								<td class="text-end">${fmt.onOff((toneSlot.bytes[13] & 0x04) === 0)}</td>
 							</tr>
 							<tr>
-								<th>After Touch Sw.</th>
+								<th>After Touch <abbr title="Switch">Sw</abbr></th>
 								<td class="text-end">${fmt.onOff((toneSlot.bytes[13] & 0x08) === 0)}</td>
 							</tr>
 							<tr>
-								<th>Damper Sw.</th>
+								<th>Damper <abbr title="Switch">Sw</abbr></th>
 								<td class="text-end">${fmt.onOff((toneSlot.bytes[13] & 0x10) === 0)}</td>
 							</tr>
 							<tr>
-								<th>Portamento Sw.</th>
+								<th>Portamento <abbr title="Switch">Sw</abbr></th>
 								<td class="text-end">${fmt.onOff((toneSlot.bytes[13] & 0x20) === 0)}</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div>
-					<table class="table table-sm">
-						<tbody>
-							<tr>
-								<th>Byte 14</th>
-								<td class="text-end">${toneSlot.bytes[14]}</td>
-							</tr>
-							<tr>
-								<th>Byte 15</th>
-								<td class="text-end">${toneSlot.bytes[15]}</td>
-							</tr>
-							<tr>
-								<th>Byte 16</th>
-								<td class="text-end">${toneSlot.bytes[16]}</td>
-							</tr>
-							<tr>
-								<th>Byte 17</th>
-								<td class="text-end">${toneSlot.bytes[17]}</td>
-							</tr>
-							<tr>
-								<th>Byte 18</th>
-								<td class="text-end">${toneSlot.bytes[18]}</td>
-							</tr>
-							<tr>
-								<th>Byte 19</th>
-								<td class="text-end">${toneSlot.bytes[19]}</td>
-							</tr>
-							<tr>
-								<th>Byte 20</th>
-								<td class="text-end">${toneSlot.bytes[20]}</td>
-							</tr>
-							<tr>
-								<th>Byte 21</th>
-								<td class="text-end">${toneSlot.bytes[21]}</td>
 							</tr>
 						</tbody>
 					</table>
@@ -704,17 +679,17 @@ const templateDrumSet = (drumSet, _) => html`
 					<th class="text-end">Coarse<br>Tune</th>
 					<th class="text-end">Fine<br>Tune</th>
 					<th class="text-end">Level</th>
-					<th class="text-end">Excl<br>Group</th>
-					<th class="text-end">Rx<br>Note<br>On</th>
-					<th class="text-end">Rx<br>Note<br>Off</th>
-					<th class="text-end">Multi</th>
+					<th class="text-end">Panpot</th>
+					<th class="text-end"><abbr title="Reverb">Rev</abbr><br>Send</th>
+					<th class="text-end"><abbr title="Chorus">Cho</abbr><br>Send</th>
+					<th class="text-end"><abbr title="Exclusive">Excl</abbr><br>Group</th>
+					<th class="text-end">Key<br>Assign</th>
+					<th class="text-end"><abbr title="Receive">Rx</abbr><br>Note<br>Off</th>
+					<th class="text-end"><abbr title="Receive">Rx</abbr><br>Note<br>On</th>
 					<th class="text-end">Cutoff</th>
 					<th class="text-end">Color</th>
 					<th class="text-end">Attack<br>Time</th>
 					<th class="text-end">Decay<br>Time</th>
-					<th class="text-end">Panpot</th>
-					<th class="text-end">Rev<br>Send</th>
-					<th class="text-end">Cho<br>Send</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -727,17 +702,17 @@ const templateDrumSet = (drumSet, _) => html`
 					<td class="text-end">${fmt.sint8(note.bytes[2])}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[3])}</td>
 					<td class="text-end">${note.bytes[4]}</td>
+					<td class="text-end">${fmt.panpotR(note.bytes[11])}</td>
+					<td class="text-end">${note.bytes[12]}</td>
+					<td class="text-end">${note.bytes[13]}</td>
 					<td class="text-end">${note.bytes[5]}</td>
-					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0001) !== 0)}</td>
+					<td class="text-end">${((note.bytes[6] & 0b0100) !== 0) ? 'Multi' : 'Single'}</td>
 					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0010) !== 0)}</td>
-					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0100) !== 0)}</td>
+					<td class="text-end">${fmt.onOff((note.bytes[6] & 0b0001) !== 0)}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[7])}</td>
 					<td class="text-end">${note.bytes[8]}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[9])}</td>
 					<td class="text-end">${fmt.sint8(note.bytes[10])}</td>
-					<td class="text-end">${fmt.panpotR(note.bytes[11])}</td>
-					<td class="text-end">${note.bytes[12]}</td>
-					<td class="text-end">${note.bytes[13]}</td>
 				</tr>
 			`)}
 			</tbody>
